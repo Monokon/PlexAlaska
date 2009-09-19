@@ -17,7 +17,7 @@
 <!-- Main Menu -->
   
 	<string id="31010">MUSIC</string>
-	<string id="31011">GAMES</string>
+	<string id="31011">APP STORE</string>
 	<string id="31012">PICTURES</string>
 	<string id="31013">MOVIES</string>
 	<string id="31014">TV SHOWS</string>
@@ -31,7 +31,7 @@
 
 <!-- Media Window titles -->
  
-	<string id="31030">GAMES</string> 
+	<string id="31030">APP STORE</string>
 	<string id="31031">IMAGES</string>
 	<string id="31032">MOVIES</string> 
 	<string id="31033">TV</string>

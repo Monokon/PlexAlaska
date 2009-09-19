@@ -216,7 +216,7 @@
 					<height>171</height>
 					<posx>50</posx>
 					<posy>91</posy>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<info>ListItem.Thumb</info>
 				</control>			
 			</itemlayout>
 			<focusedlayout width="341" height="341">
@@ -228,43 +228,43 @@
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="171,171" tween="back" easing="out" time="500" start="50" end="100" />
 					</animation>
-					<texture>$INFO[ListItem.Icon]</texture>
+					<info>ListItem.Thumb</info>
 				</control>
 			</focusedlayout>
 			<content>
 				<item id="1">
 					<label>Music</label>
-					<icon>special://skin/media/mainmenu/music.png</icon>
+					<thumb>mainmenu/music.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
 					<visible>!Skin.HasSetting(nomusic)</visible>
 				</item>
 				<item id="2">
-					<label>Games</label>
-					<icon>special://skin/media/mainmenu/games.png</icon>				
-					<onclick>XBMC.ActivateWindow(MyPrograms)</onclick>
+					<label>AppStore</label>
+					<thumb>mainmenu/games.png</thumb>
+					<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/)</onclick>
 					<visible>!Skin.HasSetting(nogames)</visible>
 				</item>
 				<item id="3">
 					<label>Pictures</label>
-					<icon>special://skin/media/mainmenu/pictures.png</icon>			
+					<thumb>mainmenu/pictures.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyPictures)</onclick>
 					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
 				<item id="4">
 					<label>Movies</label>
-					<icon>special://skin/media/mainmenu/movies.png</icon>			
+					<thumb>mainmenu/movies.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
 					<visible>!Skin.HasSetting(nomovies)</visible>
 				</item>
 				<item id="5">
 					<label>31014</label>
-					<icon>special://skin/media/mainmenu/tvshows.png</icon>			
+					<thumb>mainmenu/tvshows.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
 					<visible>!Skin.HasSetting(notvshows)</visible>
 				</item>
 				<item id="6">
 					<label>31015</label>
-					<icon>special://skin/media/mainmenu/videos.png</icon>				
+					<thumb>mainmenu/videos.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
@@ -276,7 +276,7 @@
 				</item>
 				<item id="8">
 					<label>31016</label>
-					<icon>special://skin/media/mainmenu/settings.png</icon>				
+					<thumb>mainmenu/settings.png</thumb>
 					<onclick>XBMC.ActivateWindow(4)</onclick>
 					<visible>!Skin.HasSetting(nosettings)</visible>
 				</item>
@@ -287,7 +287,7 @@
 					<visible>Skin.HasSetting(scripts)</visible>
 				</item>
 				<item id="10">
-					<icon>special://skin/media/mainmenu/playdisc.png</icon>						
+					<thumb>mainmenu/playdisc.png</thumb>
 					<label>31018</label>
 					<onclick>XBMC.PlayDVD</onclick>
 					<visible>System.HasMediadvd</visible>
@@ -299,7 +299,7 @@
 					<visible>Skin.HasSetting(signout)</visible>
 				</item>				
 				<item id="13">
-					<icon>special://skin/media/mainmenu/shutdown.png</icon>				
+					<thumb>mainmenu/shutdown.png</thumb>
 					<label>31019</label>
 					<onclick>XBMC.Shutdown()</onclick>
 					<visible>false</visible>
@@ -337,7 +337,7 @@
 	<include file="Viewtype_PictureGrid.xml" />
 	<include file="Viewtype_MusicWall.xml" />		
 	<include file="Viewtype_List.xml" />		
-	<!--<include file="Viewtype_Landscape.xml" />-->
+	<include file="Viewtype_Landscape.xml" />
 	<include file="Viewtype_Files.xml" />		
 	<include file="Includes_MediaFlags.xml" />	
 	<include file="Includes_Animations.xml" />	
