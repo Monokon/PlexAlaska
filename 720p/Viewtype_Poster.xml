@@ -145,7 +145,7 @@
 
 		</control>
 
-		<include>PosterMediaFlags</include>
+		<!--<include>PosterMediaFlags</include>-->
 
 	</include>
 
