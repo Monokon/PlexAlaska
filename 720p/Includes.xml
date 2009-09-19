@@ -59,7 +59,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/games/default.png" >$INFO[Skin.String(CustomGames)]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/games/default.png" >mainmenu/games/default.png</imagepath>
 				</control>				
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -77,7 +77,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/videos/default.png">$INFO[Skin.String(CustomVideos)]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/videos/default.png">mainmenu/videos/default.png</imagepath>
 				</control>	
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -95,7 +95,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/music/default.png">$INFO[Skin.String(CustomMusic)]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/music/default.png">mainmenu/music/default.png</imagepath>
 				</control>	
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -113,7 +113,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/movies/default.png">$INFO[Skin.String(CustomMovies)]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/movies/default.png">mainmenu/movies/default.png</imagepath>
 				</control>	
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -131,7 +131,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/tvshows/default.png">$INFO[Skin.String(CustomTV)]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/tvshows/default.png">mainmenu/tvshows/default.png</imagepath>
 				</control>	
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -149,7 +149,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/pictures/default.png">$INFO[Skin.String(CustomPictures)]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/pictures/default.png">mainmenu/pictures/default.png</imagepath>
 				</control>	
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -167,7 +167,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/weather/default.png">$INFO[Skin.String(CustomWeather)]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/weather/default.png">mainmenu/weather/default.png</imagepath>
 				</control>	
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -185,7 +185,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/settings/default.png">$INFO[Skin.String(CustomSettings)]</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/settings/default.png">mainmenu/settings/default.png</imagepath>
 				</control>	
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -337,7 +337,7 @@
 	<include file="Viewtype_PictureGrid.xml" />
 	<include file="Viewtype_MusicWall.xml" />		
 	<include file="Viewtype_List.xml" />		
-	<include file="Viewtype_Landscape.xml" />		
+	<!--<include file="Viewtype_Landscape.xml" />-->
 	<include file="Viewtype_Files.xml" />		
 	<include file="Includes_MediaFlags.xml" />	
 	<include file="Includes_Animations.xml" />	
