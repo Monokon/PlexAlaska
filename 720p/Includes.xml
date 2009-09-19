@@ -19,7 +19,7 @@
 			</focusedlayout>
 			<content>
 				<item id="1">
-					<onclick>XBMC.ActivateWindow(MyPrograms)</onclick>
+					<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/)</onclick>
 				</item>
 				<item id="2">
 					<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
@@ -64,7 +64,7 @@
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
 					<include>Object_MainMenuLabel</include>
-					<label>Games</label>
+					<label>Appstore</label>
 				</control>
 				<include>Object_MainMenuShade</include>				
 			</control>
