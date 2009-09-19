@@ -23,16 +23,114 @@
 			<itemlayout width="885" height="49">
 				<control type="label">
 					<posx>125</posx>
-					<posy>0</posy>
-					<width>830</width>
+					<posy>-12</posy>
+					<width>750</width>
 					<height>49</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
-					<textcolor>ListTitleNF</textcolor>
-					<selectedcolor>ListTitleNF</selectedcolor>					
+					<textcolor>ListTitleNF</textcolor>					
+					<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title]</label>
+					<visible>Container.Content(songs)</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="label">
+					<posx>125</posx>
+					<posy>0</posy>
+					<width>750</width>
+					<height>49</height>
+					<aligny>center</aligny>
+					<font>Font_ListTitleNF</font>
+					<textcolor>ListTitleNF</textcolor>					
 					<label>$INFO[ListItem.Label]</label>
+					<visible>![Window.IsActive(25) | Window.IsActive(502)]</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="label">
+					<posx>125</posx>
+					<posy>0</posy>
+					<width>750</width>
+					<height>49</height>
+					<aligny>center</aligny>
+					<font>Font_ListTitleNF</font>
+					<textcolor>ListTitleNF</textcolor>					
+					<label>$INFO[ListItem.Label]</label>
+					<visible>IsEmpty(ListItem.Title) + [Window.IsActive(25) | Window.IsActive(502)]</visible>
+					<include>Animation_HiddenByInfo</include>
 				</control>				
+				<control type="label">
+					<posx>125</posx>
+					<posy>26</posy>
+					<width>750</width>
+					<height>17</height>
+					<aligny>center</aligny>
+					<font>Font_ListDetailNF</font>
+					<textcolor>ListTitleNF</textcolor>					
+					<label>$INFO[ListItem.Artist] - $INFO[ListItem.Album] - $INFO[ListItem.Duration]</label>
+					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(502)</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>				
+				<control type="label">
+					<posx>120</posx>
+					<posy>0</posy>
+					<width>750</width>
+					<height>25</height>
+					<aligny>center</aligny>
+					<font>Font_ListTitleNF</font>
+					<textcolor>ListTitleNF</textcolor>					
+					<label>$INFO[ListItem.Title]</label>
+					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + !Container.Content(episodes)</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>				
+				<control type="label">
+					<posx>120</posx>
+					<posy>0</posy>
+					<width>750</width>
+					<height>25</height>
+					<aligny>center</aligny>
+					<font>Font_ListTitleNF</font>
+					<textcolor>ListTitleNF</textcolor>					
+					<label>$INFO[ListItem.Episode]. $INFO[ListItem.Title]</label>
+					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + Container.Content(episodes)</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="label">
+					<posx>120</posx>
+					<posy>22</posy>
+					<width>750</width>
+					<height>17</height>
+					<aligny>center</aligny>
+					<font>Font_ListDetailNF</font>
+					<textcolor>ListTitleNF</textcolor>					
+					<label>$INFO[ListItem.Duration]</label>
+					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25)</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="label">
+					<posx>120</posx>
+					<posy>22</posy>
+					<width>750</width>
+					<height>17</height>
+					<aligny>center</aligny>
+					<font>Font_ListDetailNF</font>
+					<textcolor>ListTitleNF</textcolor>					
+					<label>AIRED: $INFO[ListItem.Date]</label>
+					<visible>!IsEmpty(ListItem.Date) + Window.IsActive(25) + Container.Content(episodes)</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="label">
+					<posx>120</posx>
+					<posy>22</posy>
+					<width>750</width>
+					<height>17</height>
+					<aligny>center</aligny>
+					<font>Font_ListDetailNF</font>
+					<textcolor>ListTitleNF</textcolor>					
+					<label>EPISODES: $INFO[ListItem.Episode]</label>
+					<visible>!IsEmpty(ListItem.Episode) + Window.IsActive(25) + Container.Content(tvshows)</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>
 			</itemlayout>
+
 			<focusedlayout width="828" height="103">
 				<control type="label">
 					<posx>120</posx>
@@ -41,11 +139,106 @@
 					<height>103</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleBigger</font>
-					<textcolor>ListTitleF</textcolor>
-					<selectedcolor>ListTitleF</selectedcolor>					
+					<textcolor>ListTitleF</textcolor>					
 					<label>$INFO[ListItem.Label]</label>
+					<visible>![Window.IsActive(25) | Window.IsActive(502)]</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="label">
+					<posx>120</posx>
+					<posy>-5</posy>
+					<width>750</width>
+					<height>103</height>
+					<aligny>center</aligny>
+					<font>Font_ListTitleBigger</font>
+					<textcolor>ListTitleF</textcolor>					
+					<label>$INFO[ListItem.Label]</label>
+					<visible>IsEmpty(ListItem.Title) + [Window.IsActive(25) | Window.IsActive(502)]</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>				
+				<control type="label">
+					<posx>120</posx>
+					<posy>16</posy>
+					<width>750</width>
+					<height>25</height>
+					<aligny>center</aligny>
+					<font>Font_ListTitleBig</font>
+					<textcolor>ListTitleF</textcolor>					
+					<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title]</label>
+					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(502)</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>				
+				<control type="label">
+					<posx>120</posx>
+					<posy>12</posy>
+					<width>750</width>
+					<height>25</height>
+					<aligny>center</aligny>
+					<font>Font_ListTitleBigger</font>
+					<textcolor>ListTitleF</textcolor>					
+					<label>$INFO[ListItem.Title]</label>
+					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + !Container.Content(episodes)</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>				
+				<control type="label">
+					<posx>120</posx>
+					<posy>12</posy>
+					<width>750</width>
+					<height>25</height>
+					<aligny>center</aligny>
+					<font>Font_ListTitleBigger</font>
+					<textcolor>ListTitleF</textcolor>					
+					<label>$INFO[ListItem.Episode]. $INFO[ListItem.Title]</label>
+					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + Container.Content(episodes)</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="label">
+					<posx>120</posx>
+					<posy>42</posy>
+					<width>750</width>
+					<height>17</height>
+					<aligny>center</aligny>
+					<font>Font_ListDetail</font>
+					<textcolor>ListTitleF</textcolor>					
+					<label>$INFO[ListItem.Genre]</label>
+					<visible>!IsEmpty(ListItem.Genre) + Window.IsActive(25) + !Container.Content(seasons)</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="label">
+					<posx>120</posx>
+					<posy>42</posy>
+					<width>750</width>
+					<height>17</height>
+					<aligny>center</aligny>
+					<font>Font_ListDetail</font>
+					<textcolor>ListTitleF</textcolor>					
+					<label>$INFO[ListItem.Artist] - $INFO[ListItem.Album] - $INFO[ListItem.Duration]</label>
+					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(502)</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="textbox">
+					<posx>120</posx>
+					<posy>38</posy>
+					<width>750</width>
+					<height>68</height>
+					<font>Font_EpisodePlot2</font>
+					<textcolor>EpisodePlot</textcolor>				
+					<label>$INFO[ListItem.Plot]</label>	
+					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
+					<visible>!IsEmpty(ListItem.Plot) + Window.IsActive(25) + Container.Content(episodes)</visible>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>120</posx>
+					<posy>62</posy>
+					<width>121</width>
+					<height>22</height>
+					<texture>$INFO[ListItem.StarRating]</texture>
+					<visible>[Window.IsActive(25) | Window.IsActive(502)] + ![Container.Content(seasons) | Container.Content(episodes)]</visible>
+					<include>Animation_HiddenByInfo</include>
 				</control>
 			</focusedlayout>
+
 		</control>
 
 		<control type="image">

@@ -87,6 +87,7 @@
 				<font>Font_InfoPlot</font>
 				<textcolor>InfoPlot</textcolor>
 				<info>ListItem.Plot</info>
+				<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
 			</control>			
 		</control>
 

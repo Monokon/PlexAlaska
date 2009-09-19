@@ -316,8 +316,8 @@
 
 	<include name="DialogID">
 		<posx>10</posx>
-		<posy>10</posy>
-		<font>Small</font>
+		<posy>35</posy>
+		<font>Large</font>
 		<textcolor>Red</textcolor>
 		<align>left</align>
 	</include>

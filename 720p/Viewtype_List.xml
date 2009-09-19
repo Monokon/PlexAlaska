@@ -4,8 +4,8 @@
 
 	<include name="Viewtype_List">
 
-<!-- Browser -->
-	
+		<!-- Browser -->
+
 		<control type="fixedlist" id="53">
 			<posx>350</posx>
 			<posy>90</posy>
@@ -146,7 +146,7 @@
 			<texture>list/vignette.png</texture>
 			<visible>Control.IsVisible(53)</visible>
 		</control>	
-		
+
 	</include>
 
 </includes>

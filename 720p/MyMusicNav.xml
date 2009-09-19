@@ -18,6 +18,7 @@
 
 		<include>Viewtype_MusicWall</include>
 		<include>Viewtype_List</include>
+		<include>Viewtype_Files</include>
 
 		<include>Global_ContextFilter</include>
 

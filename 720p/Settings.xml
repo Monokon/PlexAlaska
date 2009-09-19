@@ -88,7 +88,7 @@
 				<item id="9">
 					<label>Alaska</label>
 					<thumb>settings/settings_alaska.png</thumb>
-					<onclick>XBMC.ActivateWindow(20)</onclick>
+					<onclick>XBMC.ActivateWindow(56)</onclick>
 				</item>	
 			</content>
 		</control>

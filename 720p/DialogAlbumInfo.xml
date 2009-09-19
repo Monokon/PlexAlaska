@@ -67,7 +67,7 @@
 			<texturedown flipy="true">-</texturedown>
 			<textureupfocus>-</textureupfocus>
 			<texturedownfocus flipy="true">-</texturedownfocus>
-			<autoscroll delay="6000" time="2000" repeat="10000"/>
+			<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
 		</control>
 		<control type="list" id="50">
 			<description>Tracks</description>

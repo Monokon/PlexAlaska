@@ -118,6 +118,7 @@
 			<height>80</height>
 			<align>left</align>
 			<info>Container(51).ListItem.Plot</info>
+			<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
 			<font>Font_EpisodePlot</font>
 			<textcolor>EpisodePlot</textcolor>
 			<include>Animation_ZoomInZoomOut</include>			
