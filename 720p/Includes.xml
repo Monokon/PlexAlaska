@@ -343,7 +343,7 @@
 	<include file="Viewtype_PictureGrid.xml" />
 	<include file="Viewtype_MusicWall.xml" />		
 	<include file="Viewtype_List.xml" />
-	<!--<include file="Viewtype_Landscape.xml" />-->
+	<include file="Viewtype_Landscape.xml" />
 	<include file="Viewtype_Files.xml" />
 	<include file="Includes_MediaFlags.xml" />	
 	<include file="Includes_Animations.xml" />	
