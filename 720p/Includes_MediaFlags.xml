@@ -24,31 +24,28 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>905</posx>
-				<control type="image">
-					<include>PosterMediaFlagsVars</include>
-					<texture>$INFO[ListItem.Path,,source.png]</texture>
-				</control>
-			</control>
-			<control type="group">
-				<posx>785</posx>
-				<posy>60</posy>
+				<posx>995</posx>
 				<control type="image">
 					<include>PosterMediaFlagsVars</include>
 					<texture>$INFO[ListItem.Path,,resolution.png]</texture>
 				</control>
 			</control>
 			<control type="group">
-				<posx>905</posx>
-				<posy>60</posy>
+				<posx>890</posx>
+				<control type="image">
+					<include>PosterMediaFlagsVars</include>
+					<texture>$INFO[ListItem.Path,,source.png]</texture>
+				</control>
+			</control>
+			<control type="group">
+				<posx>1100</posx>
 				<control type="image">
 					<include>PosterMediaFlagsVars</include>
 					<texture>$INFO[ListItem.Path,,audio.png]</texture>
 				</control>
 			</control>
 			<control type="group">
-				<posx>1025</posx>
-				<posy>60</posy>
+				<posx>1100</posx>
 				<control type="image">
 					<include>PosterMediaFlagsVars</include>
 					<texture>$INFO[ListItem.Path,,audiochannels.png]</texture>
