@@ -59,7 +59,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/games//" >backdrops/games//</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/appstore//" >backdrops/appstore//</imagepath>
 				</control>				
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
