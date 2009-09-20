@@ -20,14 +20,32 @@
 				<posx>785</posx>
 				<control type="image">
 					<include>PosterMediaFlagsVars</include>
-					<texture>flags/default.png</texture>
-					<visible>!Control.IsVisible(81) + !Skin.HasSetting(nodefaultflags)</visible>
-				</control>
-				<control type="image" id="81">
-					<include>PosterMediaFlagsVars</include>
-					<texture fallback="flags/default.png">$INFO[Listitem.studio,flags/studios/,.png]</texture>
+					<texture>$INFO[Listitem.studio,flags/studios/,.png]</texture>
 				</control>
 			</control>
+			<control type="group">
+				<posx>875</posx>
+				<control type="image">
+					<include>PosterMediaFlagsVars</include>
+					<texture>$INFO[ListItem.Path,,resolution.png]</texture>
+				</control>
+			</control>
+			<control type="group">
+				<posx>985</posx>
+				<control type="image">
+					<include>PosterMediaFlagsVars</include>
+					<texture>$INFO[ListItem.Path,,audio.png]</texture>
+				</control>
+			</control>
+			<control type="group">
+				<posx>1100</posx>
+				<control type="image">
+					<include>PosterMediaFlagsVars</include>
+					<texture>$INFO[ListItem.Path,,audiochannels.png]</texture>
+				</control>-->
+			</control>
+
+
 			<!--<control type="group">
 				<posx>995</posx>
 				<control type="image">
