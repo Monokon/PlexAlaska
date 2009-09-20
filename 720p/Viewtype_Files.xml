@@ -216,7 +216,7 @@
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(502)</visible>
 					<include>Animation_HiddenByInfo</include>
 				</control>
-				<control type="textbox">
+				<!--<control type="label">
 					<posx>120</posx>
 					<posy>38</posy>
 					<width>750</width>
@@ -227,7 +227,7 @@
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
 					<visible>!IsEmpty(ListItem.Plot) + Window.IsActive(25) + Container.Content(episodes)</visible>
 					<include>Animation_HiddenByInfo</include>
-				</control>
+				</control>-->
 				<control type="image">
 					<posx>120</posx>
 					<posy>62</posy>
