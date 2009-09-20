@@ -28,7 +28,7 @@
 					<texture fallback="flags/default.png">$INFO[Listitem.studio,flags/studios/,.png]</texture>
 				</control>
 			</control>
-			<control type="group">
+			<!--<control type="group">
 				<posx>995</posx>
 				<control type="image">
 					<include>PosterMediaFlagsVars</include>
@@ -88,7 +88,7 @@
 					<texture>flags/dvd.png</texture>
 					<visible>[substring(listitem.filename,dvd) + !substring(listitem.filename,hddvd) + !substring(listitem.filename,hd-dvd) + !substring(listitem.filename,bluray)] | [substring(listitem.filename,.iso,Right) + !substring(listitem.filename,bluray)] | substring(listitem.filename,.ifo,Right)</visible>
 				</control>				
-			</control>
+			</control>-->
 		</control>
 	</include>
 
