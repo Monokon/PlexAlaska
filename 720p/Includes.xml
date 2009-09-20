@@ -59,7 +59,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/games/default.png" >mainmenu/games/default.png</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/games//" >backdrops/games//</imagepath>
 				</control>				
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -77,7 +77,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/videos/default.png">mainmenu/videos/default.png</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/videos//">backdrops/videos//</imagepath>
 				</control>	
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -95,7 +95,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/music/default.png">mainmenu/music/default.png</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/music//">backdrops/music//</imagepath>
 				</control>	
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -113,7 +113,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/movies/default.png">mainmenu/movies/default.png</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/movies//">backdrops/movies//</imagepath>
 				</control>	
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -131,7 +131,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/tvshows/default.png">mainmenu/tvshows/default.png</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/tvshows//">backdrops/tvshows//</imagepath>
 				</control>	
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -149,7 +149,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/pictures/default.png">mainmenu/pictures/default.png</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/pictures//">backdrops/pictures//</imagepath>
 				</control>	
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -167,7 +167,13 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/weather/default.png">mainmenu/weather/default.png</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/weather//">backdrops/weather//</imagepath>
+					<visible>!Skin.HasSetting(homeweather)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Object_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/weather/weather.png">mainmenu/weather/$INFO[Weather.FanartCode]/</imagepath>
+					<visible>Skin.HasSetting(homeweather)</visible>
 				</control>	
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -185,7 +191,7 @@
 				</animation>			
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/settings/default.png">mainmenu/settings/default.png</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/settings//">backdrops/settings//</imagepath>
 				</control>	
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -506,26 +512,14 @@
 
 	<!-- Home page objects -->
 
-	<include name="Object_MainMenuIconNF">
-		<width>349</width>
-		<height>300</height>
-		<posx>10</posx>
-		<posy>10</posy>
-		<timeperimage>999999</timeperimage>
-		<randomize>true</randomize>
-		<fadetime>400</fadetime>					
-		<aspectratio align="top" scalediffuse="false">stretch</aspectratio>
-		<animation effect="fade" start="100" end="0" time="400" delay="11000">Hidden</animation>		
-	</include>
-
 	<include name="Object_MainMenuIconF">
 		<width>349</width>
-		<height>300</height>
+		<height>260</height>
 		<posx>10</posx>
 		<posy>10</posy>
 		<timeperimage>20000</timeperimage>
 		<randomize>true</randomize>
-		<fadetime>400</fadetime>					
+		<fadetime>1200</fadetime>					
 		<aspectratio align="top" scalediffuse="false">stretch</aspectratio>
 		<animation effect="fade" start="0" end="100" time="400" delay="10000">Visible</animation>
 		<animation effect="fade" start="100" end="0" time="400">Hidden</animation>		
@@ -602,7 +596,7 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>debuggrid.png</texture>
-			<visible>Skin.HasSetting(debugmode)</visible>
+			<visible>Skin.HasSetting(debuggrid)</visible>
 		</control>
 	</include>
 

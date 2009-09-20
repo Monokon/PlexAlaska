@@ -115,17 +115,6 @@
 					<onclick>Skin.ToggleSetting(autoscroll)</onclick>
 					<selected>Skin.HasSetting(autoscroll)</selected>
 				</control>
-				<control type="radiobutton" id="101">
-					<width>740</width>
-					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<label>Debug mode</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<onclick>Skin.ToggleSetting(debugmode)</onclick>
-					<selected>Skin.HasSetting(debugmode)</selected>
-				</control>
 			</control>
 			<control type="grouplist" id="9002">
 				<visible>Container(9000).Hasfocus(2)</visible>
@@ -149,6 +138,17 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(althome)</onclick>
 					<selected>Skin.HasSetting(althome)</selected>
+				</control>
+				<control type="radiobutton" id="201">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+					<label>Conditional Weather</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(homeweather)</onclick>
+					<selected>Skin.HasSetting(homeweather)</selected>
 				</control>
 			</control>
 			<control type="grouplist" id="9003">
@@ -177,7 +177,7 @@
 				<ondown>9004</ondown>
 				<include>Animation_CommonFadeNoHide</include>
 			</control>
-			<control type="grouplist" id="9001">
+			<control type="grouplist" id="9005">
 				<visible>Container(9000).Hasfocus(5)</visible>
 				<posx>360</posx>
 				<posy>150</posy>
@@ -189,6 +189,28 @@
 				<onup>9005</onup>
 				<ondown>9005</ondown>
 				<include>Animation_CommonFadeNoHide</include>
+				<control type="radiobutton" id="500">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+					<label>Debug mode</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(debugmode)</onclick>
+					<selected>Skin.HasSetting(debugmode)</selected>
+				</control>
+				<control type="radiobutton" id="501">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+					<label>Debug Grid</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(debuggrid)</onclick>
+					<selected>Skin.HasSetting(debuggrid)</selected>
+				</control>
 			</control>
 		</control>
 
