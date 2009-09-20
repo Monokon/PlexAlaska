@@ -1,21 +1,21 @@
 <!--Alaska-->
 
 <includes>
-
 	<include name="PosterMediaFlagsVars">
 		<posy>530</posy>
 		<width>89</width>
 		<height>59</height>
-		<colordiffuse>FF474747</colordiffuse>
+		<colordiffuse>CC474747</colordiffuse>
 	</include>
-
 	<include name="PosterMediaFlags">
 		<control type="group">
 			<include>Animation_SlideUpFadeOut</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_ZoomedByMenu</include>
 			<posx>45</posx>
-			<visible>Window.IsActive(25) + Container.Content(movies)</visible>
+			<animation effect="slide" start="0,0" end="-345,-400" condition="Control.IsVisible(52)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,35" condition="Control.IsVisible(55)">Conditional</animation>
+			<visible>Skin.HasSetting(mediaflagson) + [Container.Content(movies) | Container.Content(episodes)]</visible>
 			<control type="group">
 				<posx>785</posx>
 				<control type="image">
@@ -119,5 +119,4 @@
 			</control>-->
 		</control>
 	</include>
-
 </includes>
