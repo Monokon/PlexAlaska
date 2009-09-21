@@ -49,7 +49,7 @@
 	</include>
 
 	<include name="Animation_ZoomedByMenu">
-		<animation type="Conditional" condition="ControlGroup(7000).HasFocus | Window.IsActive(106) | Window.IsActive(111)">
+		<animation type="Conditional" condition="ControlGroup(7000).HasFocus | ControlGroup(7001).HasFocus | Window.IsActive(106) | Window.IsActive(111)">
 			<effect type="zoom" time="600" center="640,360" start="100" end="50" tween="cubic" easing="inout" />
 		</animation>			
 	</include>

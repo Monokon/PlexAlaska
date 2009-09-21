@@ -239,7 +239,8 @@
 			</focusedlayout>
 			<content>
 				<item id="1">
-					<label>Music</label>
+					<description>Music</description>
+					<label>2</label>
 					<thumb>mainmenu/music.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
 					<visible>!Skin.HasSetting(nomusic)</visible>
@@ -251,65 +252,73 @@
 					<visible>!Skin.HasSetting(nogames)</visible>
 				</item>
 				<item id="3">
-					<label>Pictures</label>
+					<description>Picture</description>
+					<label>1</label>
 					<thumb>mainmenu/pictures.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyPictures)</onclick>
 					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
 				<item id="4">
-					<label>Movies</label>
+					<description>Movies</description>
+					<label>342</label>
 					<thumb>mainmenu/movies.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
 					<visible>!Skin.HasSetting(nomovies)</visible>
 				</item>
 				<item id="5">
-					<label>31014</label>
+					<description>Tv Shows</description>
+					<label>20343</label>
 					<thumb>mainmenu/tvshows.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
 					<visible>!Skin.HasSetting(notvshows)</visible>
 				</item>
 				<item id="6">
-					<label>31015</label>
+					<description>Video</description>
+					<label>3</label>
 					<thumb>mainmenu/videos.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
 				<item id="7">
-					<label>31017</label>
-					<include>BackgroundVarsWeather</include>					
+					<description>Weather</description>
+					<label>8</label>
+					<include>BackgroundVarsWeather</include>
 					<onclick>xbmc.activatewindow(2600)</onclick>
 					<visible>Skin.HasSetting(weather)</visible>
 				</item>
 				<item id="8">
-					<label>31016</label>
+					<description>Settings</description>
+					<label>5</label>
 					<thumb>mainmenu/settings.png</thumb>
 					<onclick>XBMC.ActivateWindow(4)</onclick>
 					<visible>!Skin.HasSetting(nosettings)</visible>
 				</item>
 				<item id="9">
-					<include>BackgroundVarsScripts</include>					
+					<description>Scripts</description>
 					<label>31020</label>
 					<onclick>XBMC.ActivateWindow(20)</onclick>
 					<visible>Skin.HasSetting(scripts)</visible>
 				</item>
 				<item id="10">
-					<thumb>mainmenu/playdisc.png</thumb>
+					<description>Play Disc</description>
 					<label>31018</label>
+					<thumb>mainmenu/playdisc.png</thumb>
 					<onclick>XBMC.PlayDVD</onclick>
 					<visible>System.HasMediadvd</visible>
 				</item>
 				<item id="12">
-					<include>BackgroundVarsSignOut</include>					
+					<description>SignOut</description>
 					<label>31209</label>
 					<onclick>System.LogOff</onclick>
 					<visible>Skin.HasSetting(signout)</visible>
-				</item>				
+				</item>
 				<item id="13">
-					<thumb>mainmenu/shutdown.png</thumb>
+					<description>Shutdown</description>
 					<label>31019</label>
+					<thumb>mainmenu/shutdown.png</thumb>
 					<onclick>XBMC.Shutdown()</onclick>
 					<visible>false</visible>
-				</item>			
+				</item>
 			</content>
 		</control>
 		<control type="image">
@@ -341,12 +350,12 @@
 	<include file="Viewtype_Episode.xml" />
 	<include file="Viewtype_Poster.xml" />
 	<include file="Viewtype_PictureGrid.xml" />
-	<include file="Viewtype_MusicWall.xml" />		
+	<include file="Viewtype_MusicWall.xml" />
 	<include file="Viewtype_List.xml" />
 	<include file="Viewtype_Landscape.xml" />
 	<include file="Viewtype_Files.xml" />
-	<include file="Includes_MediaFlags.xml" />	
-	<include file="Includes_Animations.xml" />	
+	<include file="Includes_MediaFlags.xml" />
+	<include file="Includes_Animations.xml" />
 	<include file="Includes_Backgrounds.xml" />
 
 	<!-- Global dimensions -->
@@ -432,7 +441,106 @@
 		<font>Font_Date</font>
 		<textcolor>Date</textcolor>		
 		<align>left</align>				
-	</include>	
+	</include>
+
+	<include name="Animation_Setting_Heading">
+		<animation type="WindowOpen" reversible="false" >
+			<effect type="slide" start="-300,0" end="0,0" time="400" tween="cubic" easing="out" />
+			<effect type="fade" start="0" end="100" time="400" />
+		</animation>
+		<animation type="WindowClose" reversible="false" >
+			<effect type="fade" start="100" end="0" time="400" />
+		</animation>
+	</include>
+
+	<include name="Setting_Heading">
+		<control type="group">
+			<posx>30</posx>
+			<posy>30</posy>
+			<animation type="WindowOpen" reversible="false" condition="Window.Previous(Home)">
+				<effect type="slide" start="0,-100" end="0,0" time="400" tween="cubic" easing="out" />
+				<effect type="fade" start="0" end="100" time="400" />
+			</animation>
+			<animation type="WindowClose" reversible="false" condition="Window.Next(Home)">
+				<effect type="fade" start="100" end="0" time="400" />
+			</animation>
+			<control type="label">
+				<description>Settings</description>
+				<label>5</label>
+				<include>Global_HeadingSectionVars</include>
+			</control>
+			<control type="label">
+				<description>Settings Menu</description>
+				<label>Menu</label>
+				<include>Animation_Setting_Heading</include>
+				<include>Global_HeadingDetailVars</include>
+				<visible>Window.IsActive(4)</visible>
+			</control>
+			<control type="label">
+				<description>Video</description>
+				<label>3</label>
+				<include>Animation_Setting_Heading</include>
+				<include>Global_HeadingDetailVars</include>
+				<visible>Window.IsActive(17)</visible>
+			</control>
+			<control type="label">
+				<description>Picture</description>
+				<label>1</label>
+				<include>Animation_Setting_Heading</include>
+				<include>Global_HeadingDetailVars</include>
+				<visible>Window.IsActive(12)</visible>
+			</control>
+			<control type="label">
+				<description>Appearance</description>
+				<label>480</label>
+				<include>Animation_Setting_Heading</include>
+				<include>Global_HeadingDetailVars</include>
+				<visible>Window.IsActive(19)</visible>
+			</control>
+			<control type="label">
+				<description>Network</description>
+				<label>705</label>
+				<include>Animation_Setting_Heading</include>
+				<include>Global_HeadingDetailVars</include>
+				<visible>Window.IsActive(18)</visible>
+			</control>
+			<control type="label">
+				<description>System</description>
+				<label>13000</label>
+				<include>Animation_Setting_Heading</include>
+				<include>Global_HeadingDetailVars</include>
+				<visible>Window.IsActive(16)</visible>
+			</control>
+			<control type="label">
+				<description>Music</description>
+				<label>2</label>
+				<include>Animation_Setting_Heading</include>
+				<include>Global_HeadingDetailVars</include>
+				<visible>Window.IsActive(15)</visible>
+			</control>
+			<control type="label">
+				<description>Weather</description>
+				<label>8</label>
+				<include>Animation_Setting_Heading</include>
+				<include>Global_HeadingDetailVars</include>
+				<visible>Window.IsActive(14)</visible>
+			</control>
+			<control type="label">
+				<description>Programs</description>
+				<label>0</label>
+				<include>Animation_Setting_Heading</include>
+				<include>Global_HeadingDetailVars</include>
+				<visible>Window.IsActive(13)</visible>
+			</control>
+			<control type="label">
+				<description>Customise</description>
+				<label>CUSTOMISE</label>
+				<include>Animation_Setting_Heading</include>
+				<include>Global_HeadingDetailVars</include>
+				<visible>Window.IsActive(56)</visible>
+			</control>
+		</control>
+	</include>
 
 	<include name="Global_Heading">
 		<control type="group">
@@ -440,45 +548,58 @@
 			<posy>30</posy>
 			<include>Animation_SlideDownFadeOut</include>
 			<control type="label">
-				<label>MOVIES</label>
+				<description>Programs</description>
+				<label>0</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(1)</visible>
+			</control>
+			<control type="label">
+				<description>Movies</description>
+				<label>342</label>
 				<include>Global_HeadingSectionVars</include>
 				<visible>Window.IsActive(25) + Container.Content(movies)</visible>
 			</control>
 			<control type="label">
-				<label>PICTURES</label>
+				<description>Pictures</description>
+				<label>1</label>
 				<include>Global_HeadingSectionVars</include>
 				<visible>Window.IsActive(2) + ![substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)]</visible>
 			</control>
 			<control type="label">
-				<label>PICTURES: $INFO[ListItem.Label]</label>
+				<description>Pictures</description>
+				<label>$LOCALIZE[1]: $INFO[ListItem.Label]</label>
 				<include>Global_HeadingSectionVars</include>
 				<visible>Window.IsActive(2) + [substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)]</visible>
-			</control>				
+			</control>
 			<control type="label">
-				<label>TV SHOWS</label>
+				<description>Tv Shows</description>
+				<label>20343</label>
 				<include>Global_HeadingSectionVars</include>
 				<visible>Window.IsActive(25) + Container.Content(tvshows) | Container.Content(seasons)</visible>
 			</control>
 			<control type="label">
-				<label>TV SHOWS: $INFO[ListItem.TVShowTitle]</label>
+				<description>Tv Shows</description>
+				<label>$LOCALIZE[20343]: $INFO[ListItem.TVShowTitle]</label>
 				<include>Global_HeadingSectionVars</include>
 				<visible>Window.IsActive(25) + Container.Content(episodes)</visible>
 			</control>
 			<control type="label">
-				<label>MUSIC</label>
+				<description>Music</description>
+				<label>2</label>
 				<include>Global_HeadingSectionVars</include>
 				<visible>Window.IsActive(501) | Window.IsActive(502)</visible>
-			</control>			
+			</control>
 			<control type="label">
-				<label>VIDEO</label>
+				<description>Video</description>
+				<label>3</label>
 				<include>Global_HeadingSectionVars</include>
 				<visible>Window.IsActive(24)</visible>
-			</control>			
+			</control>
 			<control type="label">
 				<label>$INFO[Container.NumItems] ITEMS</label>
 				<include>Global_HeadingDetailVars</include>
 				<visible>![Container.Content(episodes) | Window.IsActive(2)]</visible>
-			</control>		
+			</control>
 			<control type="label">
 				<label>SEASON $INFO[ListItem.Season] - $INFO[Container.NumItems] EPISODES</label>
 				<include>Global_HeadingDetailVars</include>
@@ -488,7 +609,7 @@
 				<label>$INFO[ListItem.path][CR]$INFO[Container.NumItems] ITEMS</label>
 				<include>Global_HeadingDetailVars</include>
 				<visible>Window.IsActive(2)</visible>
-			</control>				
+			</control>
 		</control>
 	</include>	
 
@@ -506,7 +627,24 @@
 			<titlecolor>RSSTitle</titlecolor>
 			<urlset>1</urlset>
 			<animation effect="fade" start="100" end="0" time="400">WindowClose</animation>
-			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>			
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<visible>!Skin.HasSetting(largeRSS)</visible>			
+		</control>
+		<control type="rss" id="1">
+			<posx>0</posx>
+			<posy>675</posy>
+			<width>1280</width>
+			<height>40</height>
+			<aligny>bottom</aligny>
+			<font>Font_RSS_Big</font>
+			<textcolor>RSSBody</textcolor>
+			<headlinecolor>RSSHeadline</headlinecolor>
+			<highlightcolor>RSSHighlight</highlightcolor>
+			<titlecolor>RSSTitle</titlecolor>
+			<urlset>1</urlset>
+			<animation effect="fade" start="100" end="0" time="400">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<visible>Skin.HasSetting(largeRSS)</visible>			
 		</control>
 	</include>
 
@@ -563,7 +701,7 @@
 		<aligny>center</aligny>
 		<font>Font_MainMenuLabel</font>
 		<textcolor>MainMenuLabel</textcolor>	
-	</include>	
+	</include>
 
 	<include name="Object_MainMenuLabelBig">
 		<posx>-610</posx>
@@ -575,7 +713,6 @@
 		<font>Font_MainMenu</font>
 		<textcolor>MainMenu</textcolor>
 	</include>
-
 	<!-- Info dialog objects -->
 
 	<include name="Object_MovieInfoLines">
@@ -598,6 +735,22 @@
 			<texture>debuggrid.png</texture>
 			<visible>Skin.HasSetting(debuggrid)</visible>
 		</control>
+	</include>
+
+	<!-- OSD -->
+	<include name="OSDButton">
+		<posx>10</posx>
+		<posy>0</posy>
+		<width>50</width>
+		<height>50</height>
+		<texturefocus>osd/osd_button_focus.png</texturefocus>
+		<texturenofocus>osd/osd_button_focus.png</texturenofocus>
+	</include>
+	<include name="OSDButtonTop">
+		<posx>10</posx>
+		<posy>0</posy>
+		<width>70</width>
+		<height>70</height>
 	</include>
 
 	<!-- Settings objects -->

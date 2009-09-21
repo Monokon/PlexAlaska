@@ -51,6 +51,12 @@
 			<name>Font_RSS</name>
 			<filename>alaska_thin.ttf</filename>
 			<size>21</size>
+		</font>	
+
+		<font>
+			<name>Font_RSS_Big</name>
+			<filename>alaska_light_nocaps.ttf</filename>
+			<size>27</size>
 		</font>
 
 		<font>

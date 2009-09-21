@@ -42,7 +42,7 @@
 						<effect type="zoom" start="80" end="100" center="100,100" time="300" tween="cubic" easing="in" />
 						<effect type="fade" start="40" end="100" time="300" />
 					</animation>
-				</control>			
+				</control>
 			</focusedlayout>
 			<content>
 				<item id="1">
@@ -89,7 +89,7 @@
 					<label>Alaska</label>
 					<thumb>settings/settings_alaska.png</thumb>
 					<onclick>XBMC.ActivateWindow(56)</onclick>
-				</item>	
+				</item>
 			</content>
 		</control>
 
@@ -116,7 +116,7 @@
 			<control type="label">
 				<include>SettingsDetailVars</include>
 				<label>Adjust how XBMC handles video content. Includes stacking options for multi-part files, library database options, and rendering and playback options</label>
-			</control>			
+			</control>
 		</control>
 
 		<control type="group">
@@ -131,7 +131,7 @@
 			<control type="label">
 				<include>SettingsDetailVars</include>
 				<label>Select browsing options for applications and games</label>
-			</control>			
+			</control>
 		</control>
 
 		<control type="group">
@@ -146,7 +146,7 @@
 			<control type="label">
 				<include>SettingsDetailVars</include>
 				<label>Control core hardware and software functions. Includes autorun options, audio and video hardware setup, and parental master lock functions</label>
-			</control>			
+			</control>
 		</control>
 
 		<control type="group">
@@ -161,7 +161,7 @@
 			<control type="label">
 				<include>SettingsDetailVars</include>
 				<label>Adjust how XBMC handles audio content. Includes browsing options for file and database library modes, together with audio hardware setup</label>
-			</control>			
+			</control>
 		</control>
 
 		<control type="group">
@@ -176,7 +176,7 @@
 			<control type="label">
 				<include>SettingsDetailVars</include>
 				<label>Set up region information for XBMC's optional Weather displays</label>
-			</control>			
+			</control>
 		</control>
 
 		<control type="group">
@@ -191,7 +191,7 @@
 			<control type="label">
 				<include>SettingsDetailVars</include>
 				<label>Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed control, and localisation settings</label>
-			</control>			
+			</control>
 		</control>
 
 		<control type="group">
@@ -206,7 +206,7 @@
 			<control type="label">
 				<include>SettingsDetailVars</include>
 				<label>Adjust how XBMC displays personal image collections. Includes screenshot grabbing, special effects and advanced display options</label>
-			</control>			
+			</control>
 		</control>
 
 		<control type="group">
@@ -221,7 +221,7 @@
 			<control type="label">
 				<include>SettingsDetailVars</include>
 				<label>Set up XBMC's network interface. Controls IP assignment, WWW and FTP server settings, SMB client setup, and UPnP configuration</label>
-			</control>			
+			</control>
 		</control>
 
 		<control type="group">
@@ -236,10 +236,11 @@
 			<control type="label">
 				<include>SettingsDetailVars</include>
 				<label>Choose from a variety of advanced settings and customisation options to make the Alaska UI your own</label>
-			</control>			
-		</control>			
+			</control>
+		</control>
 
 		<include>Global_Time</include>
+		<include>Setting_Heading</include>
 		<include>Global_RSS</include>
 
 		<include>Object_DebugGrid</include>

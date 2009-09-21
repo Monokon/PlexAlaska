@@ -6,95 +6,7 @@
 
 	<controls>
 
-		<include>Global_Filter</include>	
-
-		<control type="image">
-			<posx>185</posx>
-			<posy>-100</posy>
-			<height>920</height>
-			<width>920</width>
-			<texture>special://skin/media/settings/settings_video.png</texture>
-			<colordiffuse>33FFFFFF</colordiffuse>
-			<visible>Window.IsActive(MyVideosSettings)</visible>
-			<include>Animation_CommonFadeNoHide</include>
-		</control>	
-
-		<control type="image">
-			<posx>185</posx>
-			<posy>-100</posy>
-			<height>920</height>
-			<width>920</width>
-			<texture>special://skin/media/settings/settings_music.png</texture>
-			<colordiffuse>33FFFFFF</colordiffuse>
-			<visible>Window.IsActive(MyMusicSettings)</visible>
-			<include>Animation_CommonFadeNoHide</include>
-		</control>	
-
-		<control type="image">
-			<posx>185</posx>
-			<posy>-100</posy>
-			<height>920</height>
-			<width>920</width>
-			<texture>special://skin/media/settings/settings_pictures.png</texture>
-			<colordiffuse>33FFFFFF</colordiffuse>
-			<visible>Window.IsActive(MyPicturesSettings)</visible>
-			<include>Animation_CommonFadeNoHide</include>
-		</control>	
-
-		<control type="image">
-			<posx>185</posx>
-			<posy>-100</posy>
-			<height>920</height>
-			<width>920</width>
-			<texture>special://skin/media/settings/settings_programs.png</texture>
-			<colordiffuse>33FFFFFF</colordiffuse>
-			<visible>Window.IsActive(MyProgramsSettings)</visible>
-			<include>Animation_CommonFadeNoHide</include>
-		</control>	
-
-		<control type="image">
-			<posx>185</posx>
-			<posy>-100</posy>
-			<height>920</height>
-			<width>920</width>
-			<texture>special://skin/media/settings/settings_weather.png</texture>
-			<colordiffuse>33FFFFFF</colordiffuse>
-			<visible>Window.IsActive(MyWeatherSettings)</visible>
-			<include>Animation_CommonFadeNoHide</include>
-		</control>	
-
-		<control type="image">
-			<posx>185</posx>
-			<posy>-100</posy>
-			<height>920</height>
-			<width>920</width>
-			<texture>special://skin/media/settings/settings_network.png</texture>
-			<colordiffuse>33FFFFFF</colordiffuse>
-			<visible>Window.IsActive(NetworkSettings)</visible>
-			<include>Animation_CommonFadeNoHide</include>
-		</control>	
-
-		<control type="image">
-			<posx>185</posx>
-			<posy>-100</posy>
-			<height>920</height>
-			<width>920</width>
-			<texture>special://skin/media/settings/settings_system.png</texture>
-			<colordiffuse>33FFFFFF</colordiffuse>
-			<visible>Window.IsActive(SystemSettings)</visible>
-			<include>Animation_CommonFadeNoHide</include>
-		</control>	
-
-		<control type="image">
-			<posx>185</posx>
-			<posy>-100</posy>
-			<height>920</height>
-			<width>920</width>
-			<texture>special://skin/media/settings/settings_appearance.png</texture>
-			<colordiffuse>33FFFFFF</colordiffuse>
-			<visible>Window.IsActive(AppearanceSettings)</visible>
-			<include>Animation_CommonFadeNoHide</include>
-		</control>
+		<include>Global_Filter</include>
 
 		<control type="label">
 			<include>WindowID</include>
@@ -131,7 +43,7 @@
 			<include>Animation_SettingsFloat</include>
 			<include>Animation_ZoomInZoomOut</include>
 			<posx>360</posx>
-			<posy>150</posy>
+			<posy>175</posy>
 			<width>740</width>
 			<height>600</height>
 			<itemgap>6</itemgap>
@@ -186,6 +98,7 @@
 		</control>
 
 		<include>Global_Time</include>
+		<include>Setting_Heading</include>
 		<include>Global_RSS</include>
 
 		<include>Object_DebugGrid</include>
