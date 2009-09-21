@@ -25,8 +25,7 @@
 			<control type="image">
 				<width>292</width>
 				<height>166</height>
-				<texture>black.png</texture>
-				<colordiffuse>19FFFFFF</colordiffuse>
+				<texture>white.png</texture>
 			</control>
 			<control type="videowindow" id="1">
 				<description>Video Preview</description>

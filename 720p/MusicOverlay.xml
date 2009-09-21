@@ -27,8 +27,7 @@
 			<control type="image">
 				<width>166</width>
 				<height>166</height>
-				<texture>black.png</texture>
-				<colordiffuse>19FFFFFF</colordiffuse>
+				<texture>white.png</texture>
 			</control>
 			<control type="image">
 				<posx>2</posx>
@@ -54,8 +53,6 @@
 				<textcolor>NowPlayingArtist</textcolor>
 			</control>
 		</control>
-
-		<include>Object_DebugGrid</include>
 
 	</controls>
 	
