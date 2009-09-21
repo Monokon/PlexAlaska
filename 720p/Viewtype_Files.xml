@@ -18,7 +18,7 @@
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByInfo</include>
 			<itemlayout width="1210" height="49">
-				<control type="label">
+				<!--<control type="label">
 					<posx>480</posx>
 					<posy>-12</posy>
 					<width>750</width>
@@ -28,7 +28,7 @@
 					<textcolor>ListTitleNF</textcolor>
 					<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title]</label>
 					<visible>Container.Content(songs)</visible>
-				</control>
+				</control>-->
 				<control type="label">
 					<posx>480</posx>
 					<posy>0</posy>
