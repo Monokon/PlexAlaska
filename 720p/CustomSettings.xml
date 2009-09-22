@@ -185,6 +185,17 @@
 				<onup>9003</onup>
 				<ondown>9003</ondown>
 				<include>Animation_CommonFadeNoHide</include>
+				<control type="radiobutton" id="301">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+					<label>Use "fixedlist" in poster view</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(fixedlist)</onclick>
+					<selected>Skin.HasSetting(fixedlist)</selected>
+				</control>
 			</control>
 			<control type="grouplist" id="9004">
 				<visible>Container(9000).Hasfocus(4)</visible>
