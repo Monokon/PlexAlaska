@@ -353,6 +353,7 @@
 	<include file="Viewtype_MusicWall.xml" />
 	<include file="Viewtype_List.xml" />
 	<include file="Viewtype_Landscape.xml" />
+	<include file="Viewtype_Fanart.xml" />
 	<include file="Viewtype_Files.xml" />
 	<include file="Includes_MediaFlags.xml" />
 	<include file="Includes_Animations.xml" />
@@ -587,7 +588,19 @@
 				<description>Music</description>
 				<label>2</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(501) | Window.IsActive(502)</visible>
+				<visible>[Window.IsActive(501) | Window.IsActive(502)] + !Container.Content(songs) + !Container.Content(albums)</visible>
+			</control>
+			<control type="label">
+				<description>Music</description>
+				<label>$LOCALIZE[2]: $INFO[ListItem.Artist]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>[Window.IsActive(501) | Window.IsActive(502)] + Container.Content(albums)</visible>
+			</control>
+			<control type="label">
+				<description>Music</description>
+				<label>$LOCALIZE[2]: $INFO[ListItem.Album]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>[Window.IsActive(501) | Window.IsActive(502)] + Container.Content(songs)</visible>
 			</control>
 			<control type="label">
 				<description>Video</description>
@@ -627,7 +640,7 @@
 			<titlecolor>RSSTitle</titlecolor>
 			<urlset>1</urlset>
 			<animation effect="fade" start="100" end="0" time="400">WindowClose</animation>
-			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>			
 			<visible>!Skin.HasSetting(largeRSS)</visible>			
 		</control>
 		<control type="rss" id="1">

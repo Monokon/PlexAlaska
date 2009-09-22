@@ -221,7 +221,7 @@
 				</control>
 			</focusedlayout>
 		</control>
-<!--
+		<!--
 		<control type="image">
 			<posx>0</posx>
 			<posy>270</posy>
@@ -276,6 +276,7 @@
 			<posy>180</posy>
 			<width>468</width>
 			<height>300</height>
+			<fadetime>400</fadetime>
 			<aspectratio align="right" aligny="center">keep</aspectratio>
 			<texture>moviegenres\$INFO[ListItem.Label].jpg</texture>
 			<bordertexture border="8">list/listthumb.png</bordertexture>
@@ -292,15 +293,19 @@
 			</animation>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
-			<visible>Container.Content(Genres)</visible>
+			<visible>Control.IsVisible(55) + Container.Content(Genres)</visible>
 		</control>
-		
+
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture>list/vignette2.png</texture>
+			<texture>list/vignette1.png</texture>
 			<visible>Control.IsVisible(55)</visible>
 		</control>
 
-		<include>PosterMediaFlags</include>
+		<control type="group">
+			<visible>Control.IsVisible(55)</visible>
+			<include>Animation_ZoomedByMenu</include>
+			<include>PosterMediaFlags</include>
+		</control>
 	</include>
 </includes>
