@@ -2,7 +2,7 @@
 
 	<include file="Defaults.xml" />
 	<include file="CommonViews.xml" />
-
+  
 	<include name="home1">
 		<control type="wraplist" id="300">
 			<posx>0</posx>
@@ -329,15 +329,15 @@
 	</include>
 
 
-	<include name="DialogID">
+  <include name="DialogID">
 		<posx>10</posx>
 		<posy>35</posy>
 		<font>Large</font>
 		<textcolor>Red</textcolor>
 		<align>left</align>
 	</include>
-
-	<include name="WindowID">
+	
+  <include name="WindowID">
 		<posx>10</posx>
 		<posy>10</posy>
 		<font>Large</font>
@@ -345,7 +345,7 @@
 		<align>left</align>
 	</include>
 
-	<!--Alaska-->
+<!--Alaska-->
 
 	<include file="Viewtype_Episode.xml" />
 	<include file="Viewtype_Poster.xml" />
@@ -359,17 +359,17 @@
 	<include file="Includes_Animations.xml" />
 	<include file="Includes_Backgrounds.xml" />
 
-	<!-- Global dimensions -->
-
+<!-- Global dimensions -->
+	
 	<include name="Dimensions_Fullscreen">
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>1280</width>
 		<height>720</height>
 	</include>
-
-	<!-- Global objects -->
-
+	
+<!-- Global objects -->
+	
 	<include name="Global_BackgroundFilter">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
@@ -386,7 +386,7 @@
 			<texture>filter.png</texture>
 		</control>
 	</include>
-
+	
 	<include name="Global_Filter">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
@@ -395,7 +395,7 @@
 			<animation effect="fade" start="100" end="80" time="400" condition="[Window.IsActive(2) + [substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)] + !Window.Next(Home)]">Conditional</animation>				
 		</control>
 	</include>
-
+	
 	<include name="Global_ContextFilter">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
@@ -406,7 +406,7 @@
 			<animation effect="fade" start="100" end="0" time="400">Hidden</animation>				
 		</control>
 	</include>	
-
+	
 	<include name="Global_Time">
 		<control type="group">
 			<posx>1250</posx>
@@ -435,7 +435,7 @@
 		<textcolor>Time</textcolor>	
 		<align>left</align>				
 	</include>
-
+	
 	<include name="Global_HeadingDetailVars">
 		<posy>40</posy>
 		<width>800</width>
@@ -443,7 +443,7 @@
 		<textcolor>Date</textcolor>		
 		<align>left</align>				
 	</include>
-
+	
 	<include name="Animation_Setting_Heading">
 		<animation type="WindowOpen" reversible="false" >
 			<effect type="slide" start="-300,0" end="0,0" time="400" tween="cubic" easing="out" />
@@ -453,7 +453,7 @@
 			<effect type="fade" start="100" end="0" time="400" />
 		</animation>
 	</include>
-
+		
 	<include name="Setting_Heading">
 		<control type="group">
 			<posx>30</posx>
@@ -542,7 +542,7 @@
 			</control>
 		</control>
 	</include>
-
+	
 	<include name="Global_Heading">
 		<control type="group">
 			<posx>30</posx>
@@ -625,7 +625,7 @@
 			</control>
 		</control>
 	</include>	
-
+	
 	<include name="Global_RSS">
 		<control type="rss" id="1">
 			<posx>0</posx>
@@ -660,9 +660,9 @@
 			<visible>Skin.HasSetting(largeRSS)</visible>			
 		</control>
 	</include>
-
-	<!-- Home page objects -->
-
+	
+<!-- Home page objects -->
+	
 	<include name="Object_MainMenuIconF">
 		<width>349</width>
 		<height>260</height>
@@ -675,7 +675,7 @@
 		<animation effect="fade" start="0" end="100" time="400" delay="10000">Visible</animation>
 		<animation effect="fade" start="100" end="0" time="400">Hidden</animation>		
 	</include>
-
+	
 	<include name="Object_MainMenuShade">
 		<control type="image">
 			<posx>10</posx>
@@ -685,7 +685,7 @@
 			<texture>mainmenu/homeshade.png</texture>
 		</control>
 	</include>
-
+	
 	<include name="Object_MainMenuFrame">
 		<control type="image">
 			<width>370</width>
@@ -695,7 +695,7 @@
 			<texture>mainmenu/frame.png</texture>
 		</control>	
 	</include>
-
+	
 	<include name="Object_MainMenuBacking">
 		<control type="image">
 			<width>10</width>
@@ -715,7 +715,7 @@
 		<font>Font_MainMenuLabel</font>
 		<textcolor>MainMenuLabel</textcolor>	
 	</include>
-
+	
 	<include name="Object_MainMenuLabelBig">
 		<posx>-610</posx>
 		<posy>200</posy>
@@ -726,7 +726,7 @@
 		<font>Font_MainMenu</font>
 		<textcolor>MainMenu</textcolor>
 	</include>
-	<!-- Info dialog objects -->
+<!-- Info dialog objects -->
 
 	<include name="Object_MovieInfoLines">
 		<control type="image">
@@ -739,8 +739,8 @@
 			<include>Animation_CommonFade</include>
 		</control>
 	</include>
-
-	<!-- Debug objects -->
+	
+<!-- Debug objects -->
 
 	<include name="Object_DebugGrid">
 		<control type="image">
@@ -750,30 +750,13 @@
 		</control>
 	</include>
 
-	<!-- OSD -->
-	<include name="OSDButton">
-		<posx>10</posx>
-		<posy>0</posy>
-		<width>50</width>
-		<height>50</height>
-		<texturefocus>osd/osd_button_focus.png</texturefocus>
-		<texturenofocus>osd/osd_button_focus.png</texturenofocus>
-	</include>
-	<include name="OSDButtonTop">
-		<posx>10</posx>
-		<posy>0</posy>
-		<width>70</width>
-		<height>70</height>
-	</include>
-
 	<!-- Settings objects -->
-
 	<include name="SettingsHeadingVars">
 		<width>300</width>
 		<font>Font_SettingsHeading</font>
 		<textcolor>SettingsHeading</textcolor>
 	</include>
-
+	
 	<include name="SettingsDetailVars">
 		<width>300</width>
 		<posy>50</posy>
@@ -781,8 +764,8 @@
 		<textcolor>SettingsDetail</textcolor>
 		<wrapmultiline>true</wrapmultiline>
 	</include>	
-
-	<!-- Window menus -->
+	
+<!-- Window menus -->
 
 	<include name="WindowMenuVars">
 		<width>1000</width>
@@ -795,7 +778,7 @@
 		<include>Animation_ZoomInMenu</include>		
 		<orientation>horizontal</orientation>	
 	</include>
-
+	
 	<include name="WindowMenuButton">
 		<posx>0</posx>
 		<posy>30</posy>
@@ -805,7 +788,7 @@
 		<font>Font_MenuValue</font>
 		<textcolor>MenuValue</textcolor>
 	</include>
-
+	
 	<include name="WindowMenuLabel">
 		<posx>0</posx>
 		<posy>0</posy>
@@ -816,5 +799,5 @@
 		<textcolor>MenuValue</textcolor>
 		<aligny>bottom</aligny>
 	</include>
-
+	
 </includes>
