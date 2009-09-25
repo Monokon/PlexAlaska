@@ -209,6 +209,17 @@
 				<onup>9004</onup>
 				<ondown>9004</ondown>
 				<include>Animation_CommonFadeNoHide</include>
+				<control type="radiobutton" id="401">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+					<label>Increase fanart visibility</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(increaseFanartVisibility)</onclick>
+					<selected>Skin.HasSetting(increaseFanartVisibility)</selected>
+				</control>
 			</control>
 			<control type="grouplist" id="9005">
 				<visible>Container(9000).Hasfocus(5)</visible>
