@@ -218,8 +218,36 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility)</onclick>
+					<include>ResetFanartVisibilityButtons</include>
+					<onclick>Skin.ToggleSetting(increaseFanartVisibility20)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility)</selected>
 				</control>
+
+				<control type="radiobutton" id="4011">
+					<include>FanartVisibilityButtons</include>
+					<label>- 20% visibility</label>
+					<onclick>Skin.ToggleSetting(increaseFanartVisibility20)</onclick>
+					<selected>Skin.HasSetting(increaseFanartVisibility20)</selected>
+				</control>
+				<control type="radiobutton" id="4012">
+					<include>FanartVisibilityButtons</include>
+					<label>- 30% visibility</label>
+					<onclick>Skin.ToggleSetting(increaseFanartVisibility30)</onclick>
+					<selected>Skin.HasSetting(increaseFanartVisibility30)</selected>
+				</control>
+				<control type="radiobutton" id="4013">
+					<include>FanartVisibilityButtons</include>
+					<label>- 40% visibility</label>
+					<onclick>Skin.ToggleSetting(increaseFanartVisibility40)</onclick>
+					<selected>Skin.HasSetting(increaseFanartVisibility40)</selected>
+				</control>
+				<control type="radiobutton" id="4014">
+					<include>FanartVisibilityButtons</include>
+					<label>- 50% visibility</label>
+					<onclick>Skin.ToggleSetting(increaseFanartVisibility50)</onclick>
+					<selected>Skin.HasSetting(increaseFanartVisibility50)</selected>
+				</control>
+
 			</control>
 			<control type="grouplist" id="9005">
 				<visible>Container(9000).Hasfocus(5)</visible>
