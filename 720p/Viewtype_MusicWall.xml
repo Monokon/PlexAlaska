@@ -39,7 +39,8 @@
 			<ondown>7000</ondown>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_MusicWallFloat</include>
-			<include>Animation_ZoomedByMenu</include>				
+			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByMusicInfo</include>
 			<itemlayout width="223" height="223">
 				<control type="image">
 					<posx>17</posx>
@@ -148,9 +149,10 @@
 			<height>27</height>
 			<visible>Control.IsVisible(50)</visible>
 			<texture flipx="true">pics/picsarrow.png</texture>
-			<include>Animation_ZoomInZoomOut</include>			
+			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_MusicWallFloat</include>
-			<include>Animation_ZoomedByMenu</include>				
+			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByMusicInfo</include>
 		</control>
 		
 		<control type="image">
@@ -158,19 +160,20 @@
 			<posy>516</posy>
 			<width>27</width>
 			<height>27</height>
-			<visible>Control.IsVisible(50)</visible>			
+			<visible>Control.IsVisible(50)</visible>
 			<texture>pics/picsarrow.png</texture>
-			<include>Animation_ZoomInZoomOut</include>			
+			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_MusicWallFloat</include>
-			<include>Animation_ZoomedByMenu</include>				
+			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByMusicInfo</include>
 		</control>		
 		
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="wall/musicwallvignettematte.png">filter.png</texture>
+			<texture diffuse="wall/music_wall_mask.png">filter.png</texture>
 			<visible>Control.IsVisible(50)</visible>
 			<colordiffuse>dfFFFFFF</colordiffuse>
-		</control>		
+		</control>
 		
 	</include>
 

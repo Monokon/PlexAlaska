@@ -71,7 +71,7 @@
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture>list/vignette.png</texture>
+			<texture diffuse="list/list_mask_1.png">filter.png</texture>
 		</control>
 		<control type="image">
 			<posx>0</posx>
@@ -101,7 +101,7 @@
 			<height>350</height>
 			<aspectratio align="right" aligny="center">keep</aspectratio>
 			<texture>$INFO[Container(450).ListItem.Icon]</texture>
-			<bordertexture border="8">list/listthumb.png</bordertexture>
+			<bordertexture border="8">common/thumb_border.png</bordertexture>
 			<bordersize>8</bordersize>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -164,38 +164,35 @@
 			<include>Animation_ZoomInMenu</include>
 			<orientation>horizontal</orientation>
 			<posy>307</posy>
-			<!-- ok -->
+		<!-- ok -->
 			<control type="button" id="7040">
 				<include>WindowMenuLabel</include>
-				<!-- LOC -->
-				<label> - </label>
+<!-- LOC -->	<label> - </label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(413)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-			<!-- cancel -->
+		<!-- cancel -->
 			<control type="button" id="7041">
 				<include>WindowMenuLabel</include>
-				<!-- LOC -->
-				<label> - </label>
+<!-- LOC -->	<label> - </label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(414)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-			<!-- new folder -->
+		<!-- new folder -->
 			<control type="button" id="7042">
 				<include>WindowMenuLabel</include>
-				<!-- LOC -->
-				<label> - </label>
+<!-- LOC -->	<label> - </label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(415)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
 		</control>
-		<!-- Heading -->
+	<!-- Heading -->
 		<control type="group">
 			<posx>30</posx>
 			<posy>30</posy>
@@ -205,8 +202,7 @@
 				<include>Global_HeadingSectionVars</include>
 			</control>
 			<control type="label">
-				<!-- LOC -->
-				<label>$INFO[ListItem.path]</label>
+<!-- LOC -->	<label>$INFO[ListItem.path]</label>
 				<include>Global_HeadingDetailVars</include>
 			</control>
 		</control>

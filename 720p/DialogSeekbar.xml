@@ -112,7 +112,7 @@
 				<width>162</width>
 				<height>243</height>
 				<texture>$INFO[VideoPlayer.Cover]</texture>
-				<bordertexture border="8">list/listthumb.png</bordertexture>
+				<bordertexture border="8">common/thumb_border.png</bordertexture>
 				<bordersize>8</bordersize>
 				<visible>!VideoPlayer.Content(episodes)</visible>
 			</control>
@@ -122,7 +122,7 @@
 				<width>292</width>
 				<height>166</height>
 				<texture>$INFO[VideoPlayer.Cover]</texture>
-				<bordertexture border="8">list/listthumb.png</bordertexture>
+				<bordertexture border="8">common/thumb_border.png</bordertexture>
 				<bordersize>8</bordersize>
 				<aspectratio>stretch</aspectratio>
 				<visible>VideoPlayer.Content(episodes)</visible>

@@ -12,12 +12,21 @@
 	<color name="Date">77686868</color>
 	<color name="RSSBody">FF686868</color>
 	<color name="RSSHighlight">FF686868</color>
-	<color name="RSSHeadline">FF686868</color>	
+	<color name="RSSHeadline">FF686868</color>
 	<color name="RSSTitle">FF686868</color>
-	<color name="NowPlayingArtist">FF686868</color>	
+	<color name="NowPlayingArtist">FF686868</color>
+	<color name="NowPlayingAlbum">cc686868</color>
 	<color name="NowPlayingTrack">FF686868</color>
 	<color name="MediaMenu">77686868</color>
 	
+<!-- OSD -->
+	<color name="OSDPlayingArtist">FF686868</color>
+	<color name="OSDPlayingTrack">FF686868</color>
+	<color name="OSDPlayingAlbum">77686868</color>
+	<color name="OSDPlayingPN">FF686868</color>
+	<color name="OSDDetails">FF686868</color>
+	<color name="OSDTime">B9202020</color>
+	<color name="OSDProgress">55686868</color>
 <!-- Window menu colours -->
 
 	<color name="MenuValue">FF5b5b5b</color>

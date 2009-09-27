@@ -8,7 +8,7 @@
 			<include>DialogID</include>
 			<label>MyMusicPlaylistEditor.xml</label>
 		</control>
-		
+
 		<include>Object_DebugGrid</include>
 
 	</controls>

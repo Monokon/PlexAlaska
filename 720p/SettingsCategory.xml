@@ -13,7 +13,7 @@
 			<label>SettingsCategory.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
-
+		
 		<control type="label">
 			<include>Animation_CommonFadeNoHide</include>
 			<posx>150</posx>
