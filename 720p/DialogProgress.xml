@@ -1,4 +1,4 @@
-<!--Alaska-->
+﻿<!--Alaska-->
 
 <window id="101">
 	<defaultcontrol always="true">10</defaultcontrol>
@@ -99,7 +99,7 @@
 				<label>-</label>
 				<scroll>true</scroll>
 			</control-->
-		</control>
+			</control>
 		<control type="button" id="10">
 			<description>Cancel</description>
 			<posx>-190</posx>

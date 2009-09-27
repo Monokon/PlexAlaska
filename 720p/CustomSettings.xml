@@ -3,37 +3,21 @@
 <window id="56">
 	<defaultcontrol>9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-
 	<controls>
-
-		<include>Global_Filter</include>	
-
-		<control type="image">
-			<posx>185</posx>
-			<posy>-100</posy>
-			<height>920</height>
-			<width>920</width>
-			<texture>special://skin/media/settings/settings_alaska.png</texture>
-			<colordiffuse>33FFFFFF</colordiffuse>
-			<visible>Window.IsActive(56)</visible>
-			<include>Animation_CommonFadeNoHide</include>
-		</control>
-
+		<include>Global_Filter</include>
 		<control type="label">
 			<include>WindowID</include>
 			<label>CustomSettings.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
-
 		<control type="label">
 			<include>Animation_CommonFadeNoHide</include>
 			<posx>150</posx>
 			<posy>125</posy>
 			<font>Font_SettingsHeading</font>
 			<textcolor>SettingsHeading</textcolor>
-			<label>CUSTOMISE</label>
+<!-- LOC --><label>CUSTOMISE</label>
 		</control>
-
 		<control type="list" id="9000">
 			<description>List</description>
 			<posx>150</posx>
@@ -69,33 +53,37 @@
 			</focusedlayout>
 			<content>
 				<item id="1">
-					<label>General</label>
-					<onclick>-</onclick>
+					<description>General</description>
+					<label>128</label>
+					<onclick>SetFocus(9001)</onclick>
 				</item>
 				<item id="2">
-					<label>Home</label>
-					<onclick>-</onclick>
+					<description>Home</description>
+					<label>10000</label>
+					<onclick>SetFocus(9002)</onclick>
 				</item>
 				<item id="3">
+<!-- LOC -->		<description>Views</description>
 					<label>Views</label>
-					<onclick>-</onclick>
+					<onclick>SetFocus(9003)</onclick>
 				</item>
 				<item id="4">
+<!-- LOC -->		<description>Backdrops</description>
 					<label>Backdrops</label>
-					<onclick>-</onclick>
+					<onclick>SetFocus(9004)</onclick>
 				</item>
 				<item id="5">
+<!-- LOC -->		<description>Misc.</description>
 					<label>Misc.</label>
-					<onclick>-</onclick>
+					<onclick>SetFocus(9005)</onclick>
 				</item>
 			</content>
 		</control>
-
 		<control type="group" id="9010">
+			<posy>175</posy>
+			<posx>360</posx>
 			<control type="grouplist" id="9001">
 				<visible>Container(9000).Hasfocus(1)</visible>
-				<posx>360</posx>
-				<posy>150</posy>
 				<width>740</width>
 				<height>600</height>
 				<itemgap>6</itemgap>
@@ -109,7 +97,7 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-					<label>Scroll Plot</label>
+<!-- LOC -->		<label>Scroll Plot</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(autoscroll)</onclick>
@@ -120,7 +108,7 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-					<label>Media Flags</label>
+<!-- LOC -->		<label>Media Flags</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(mediaflagson)</onclick>
@@ -131,7 +119,7 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-					<label>Larger RSS</label>
+<!-- LOC -->		<label>Larger RSS</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(largeRSS)</onclick>
@@ -140,8 +128,6 @@
 			</control>
 			<control type="grouplist" id="9002">
 				<visible>Container(9000).Hasfocus(2)</visible>
-				<posx>360</posx>
-				<posy>150</posy>
 				<width>740</width>
 				<height>600</height>
 				<itemgap>6</itemgap>
@@ -155,18 +141,31 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-					<label>Alt Home</label>
+<!-- LOC -->		<label>Home 2</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<onclick>Skin.ToggleSetting(althome)</onclick>
-					<selected>Skin.HasSetting(althome)</selected>
+					<onclick>Skin.ToggleSetting(home2)</onclick>
+					<onclick>Skin.Reset(home3)</onclick>
+					<selected>Skin.HasSetting(home2)</selected>
 				</control>
 				<control type="radiobutton" id="201">
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-					<label>Conditional Weather</label>
+<!-- LOC -->		<label>Home 3</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(home3)</onclick>
+					<onclick>Skin.Reset(home2)</onclick>
+					<selected>Skin.HasSetting(home3)</selected>
+				</control>
+				<control type="radiobutton" id="202">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+<!-- LOC -->		<label>Conditional Weather</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(homeweather)</onclick>
@@ -175,8 +174,6 @@
 			</control>
 			<control type="grouplist" id="9003">
 				<visible>Container(9000).Hasfocus(3)</visible>
-				<posx>360</posx>
-				<posy>150</posy>
 				<width>740</width>
 				<height>600</height>
 				<itemgap>6</itemgap>
@@ -185,12 +182,23 @@
 				<onup>9003</onup>
 				<ondown>9003</ondown>
 				<include>Animation_CommonFadeNoHide</include>
-				<control type="radiobutton" id="301">
+				<control type="radiobutton" id="300">
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-					<label>Use "fixedlist" in poster view</label>
+<!-- LOC -->		<label>File View Focus Line</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(File_View_Focus_Line)</onclick>
+					<selected>Skin.HasSetting(File_View_Focus_Line)</selected>
+				</control>
+				<control type="radiobutton" id="304">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+<!-- LOC -->		<label>Use "fixedlist" in poster view</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(fixedlist)</onclick>
@@ -199,8 +207,6 @@
 			</control>
 			<control type="grouplist" id="9004">
 				<visible>Container(9000).Hasfocus(4)</visible>
-				<posx>360</posx>
-				<posy>150</posy>
 				<width>740</width>
 				<height>600</height>
 				<itemgap>6</itemgap>
@@ -251,8 +257,6 @@
 			</control>
 			<control type="grouplist" id="9005">
 				<visible>Container(9000).Hasfocus(5)</visible>
-				<posx>360</posx>
-				<posy>150</posy>
 				<width>740</width>
 				<height>600</height>
 				<itemgap>6</itemgap>
@@ -266,7 +270,7 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-					<label>Debug mode</label>
+<!-- LOC -->		<label>Debug mode</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(debugmode)</onclick>
@@ -277,7 +281,7 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-					<label>Debug Grid</label>
+<!-- LOC -->		<label>Debug Grid</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(debuggrid)</onclick>
@@ -285,13 +289,9 @@
 				</control>
 			</control>
 		</control>
-
 		<include>Global_Time</include>
 		<include>Setting_Heading</include>
 		<include>Global_RSS</include>
-
 		<include>Object_DebugGrid</include>
-
 	</controls>
-
 </window>

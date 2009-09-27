@@ -30,7 +30,7 @@
 				<height>50</height>
 				<texture>dialogs/volume_back.png</texture>
 			</control>
-			<control type="progress" id="404">
+  			<control type="progress" id="404">
 				<description>Progressbar</description>
 				<posx>331</posx>
 				<posy>19</posy>
@@ -77,7 +77,7 @@
 				<font>Font_Date</font>
 				<label>$INFO[player.volume]</label>
 			</control>
-
+			
 			<include>Object_DebugGrid</include>
 
 		</control>

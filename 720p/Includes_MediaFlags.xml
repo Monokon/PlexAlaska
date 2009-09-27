@@ -13,7 +13,7 @@
 			<include>Animation_HiddenByInfo</include>
 			<posx>45</posx>
 			<animation effect="slide" start="0,0" end="-345,-400" condition="Control.IsVisible(52)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="0,50" condition="Control.IsVisible(55)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,35" condition="Control.IsVisible(55)">Conditional</animation>
 			<visible>Skin.HasSetting(mediaflagson) + [Container.Content(movies) | Container.Content(episodes)]</visible>
 			<control type="group">
 				<posx>785</posx>

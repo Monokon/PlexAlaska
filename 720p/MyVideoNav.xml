@@ -6,7 +6,7 @@
 	<controls>
 
 		<include>Global_Background</include>
-
+	
 		<control type="largeimage">
 			<include>Dimensions_Fullscreen</include>
 			<fadetime>400</fadetime>
@@ -22,9 +22,9 @@
 		</control>
 
 		<include>Global_Filter</include>
-
+		
 		<include>Object_MovieInfoLines</include>
-
+		
 		<include>Viewtype_Poster</include>
 		<include>Viewtype_Fanart</include>
 		<include>Viewtype_Landscape</include>
@@ -129,11 +129,11 @@
 				</animation>				
 			</control>				
 		</control>
-
+		
 		<include>Global_Time</include>
 		<include>Global_Heading</include>		
 		<include>Global_RSS</include>
-
+		
 		<include>Object_DebugGrid</include>
 
 	</controls>	

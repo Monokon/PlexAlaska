@@ -6,21 +6,21 @@
 	<controls>
 
 		<include>Global_Background</include>
-
+	
 		<control type="largeimage">
 			<include>Dimensions_Fullscreen</include>
 			<fadetime>400</fadetime>
 			<texture>$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<include>Animation_CommonFade</include>
 		</control>
-
+	
 		<include>Global_Filter</include>
 
 		<include>Viewtype_Files</include>
 		<include>Viewtype_MusicWall</include>
 
 		<include>Global_ContextFilter</include>
-
+		
 		<control type="label">
 			<include>WindowID</include>
 			<label>MyMusicSongs.xml</label>
@@ -118,12 +118,12 @@
 				</animation>				
 			</control>				
 		</control>
-
+		
 		<include>Global_Time</include>
 		<include>Global_Heading</include>		
 		<include>Global_RSS</include>
-
+		
 		<include>Object_DebugGrid</include>
-
+	
 	</controls>
 </window>

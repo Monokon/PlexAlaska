@@ -9,7 +9,7 @@
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 
-		<!-- codec infos -->
+	<!-- codec infos -->
 		<control type="group">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -71,7 +71,7 @@
 				<font>Font_Date</font>
 			</control>
 		</control>
-		<!-- Buffering Dialog -->
+	<!-- Buffering Dialog -->
 		<control type="label" id="24">
 			<description>buffering label</description>
 			<posx>210</posx>

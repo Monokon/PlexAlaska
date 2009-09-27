@@ -6,7 +6,7 @@
 	<controls>
 
 		<include>Global_Filter</include>
-
+	
 		<control type="panel" id="60">
 			<posx>200</posx>
 			<posy>200</posy>
@@ -95,7 +95,7 @@
 
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture>mainmenu/vignette.png</texture>
+			<texture diffuse="mainmenu/home_mask.png">filter.png</texture>
 		</control>
 
 		<control type="label">
@@ -118,7 +118,7 @@
 				<label>Adjust how XBMC handles video content. Includes stacking options for multi-part files, library database options, and rendering and playback options</label>
 			</control>
 		</control>
-
+		
 		<control type="group">
 			<posx>130</posx>
 			<posy>180</posy>
@@ -163,7 +163,7 @@
 				<label>Adjust how XBMC handles audio content. Includes browsing options for file and database library modes, together with audio hardware setup</label>
 			</control>
 		</control>
-
+		
 		<control type="group">
 			<posx>85</posx>
 			<posy>180</posy>
@@ -208,7 +208,7 @@
 				<label>Adjust how XBMC displays personal image collections. Includes screenshot grabbing, special effects and advanced display options</label>
 			</control>
 		</control>
-
+		
 		<control type="group">
 			<posx>880</posx>
 			<posy>380</posy>
@@ -238,12 +238,12 @@
 				<label>Choose from a variety of advanced settings and customisation options to make the Alaska UI your own</label>
 			</control>
 		</control>
-
+		
 		<include>Global_Time</include>
 		<include>Setting_Heading</include>
 		<include>Global_RSS</include>
 
 		<include>Object_DebugGrid</include>
-
+		
 	</controls>
 </window>

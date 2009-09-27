@@ -110,7 +110,7 @@
 				</control>
 			</focusedlayout>
 		</control>
-		<!-- Browser label and flags -->
+	<!-- Browser label and flags -->
 		<control type="group">
 			<posx>505</posx>
 			<posy>364</posy>

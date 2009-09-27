@@ -2,7 +2,19 @@
 
 <fonts>
 
-	<fontset id="Default" unicode="true">	
+	<fontset id="Default" unicode="true">
+
+		<font>
+			<name>Font_HomeSelected</name>
+			<filename>alaska_menu.ttf</filename>
+			<size>80</size>
+		</font>
+
+		<font>
+			<name>Font_HomeNotSelected</name>
+			<filename>alaska_black.ttf</filename>
+			<size>40</size>
+		</font>	
 
 		<font>
 			<name>Font_Settings</name>
@@ -51,7 +63,7 @@
 			<name>Font_RSS</name>
 			<filename>alaska_thin.ttf</filename>
 			<size>21</size>
-		</font>	
+		</font>
 
 		<font>
 			<name>Font_RSS_Big</name>
@@ -201,6 +213,13 @@
 			<name>Font_ListTrackNF</name>
 			<filename>alaska_black.ttf</filename>
 			<size>30</size>
+		</font>
+
+		<font>
+			<name>Font_OSDDetail</name>
+			<filename>alaska_regular.ttf</filename>
+			<size>17</size>
+			<linespacing>0.82</linespacing>
 		</font>
 
 		<font>
