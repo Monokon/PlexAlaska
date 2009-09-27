@@ -119,8 +119,8 @@
 			<posy>30</posy>
 			<include>Animation_SlideDownFadeOut</include>
 			<control type="label">
-				<description>Programs</description>
-				<label>0</label>
+				<description>Appstore</description>
+<!-- LOC -->	<label>APPSTORE</label>
 				<include>Global_HeadingSectionVars</include>
 				<visible>Window.IsActive(1)</visible>
 			</control>
