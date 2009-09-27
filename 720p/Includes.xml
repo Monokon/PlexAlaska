@@ -614,9 +614,9 @@
 			</focusedlayout>
 			<content>
 				<item id="1">				
-					<label>PROGRAMS</label>
-					<label2>PROGRAMS</label2>
-					<onclick>XBMC.ActivateWindow(MyPrograms)</onclick>
+<!-- LOC -->		<label>APPSTORE</label>
+<!-- LOC -->		<label2>APPSTORE</label2>
+					<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/)</onclick>
 				</item>
 				<item id="2">
 					<label>VIDEOS</label>
@@ -663,42 +663,42 @@
 		<control type="multiimage">
 			<include>Object_MainMenuBG</include>
 			<visible>Container(300).HasFocus(1)</visible>
-			<imagepath fallback="special://skin/media/backdrops/games/" >$INFO[Skin.String(CustomGames)]</imagepath>
+			<imagepath fallback="special://skin/media/backdrops/appstore//" >backdrops/appstore//</imagepath>
 		</control>
 		<control type="multiimage">
 			<include>Object_MainMenuBG</include>
 			<visible>Container(300).HasFocus(2)</visible>
-			<imagepath fallback="special://skin/media/backdrops/videos/">$INFO[Skin.String(CustomVideos)]</imagepath>
+			<imagepath fallback="special://skin/media/backdrops/videos//">backdrops/videos//</imagepath>
 		</control>
 		<control type="multiimage">
 			<include>Object_MainMenuBG</include>
 			<visible>Container(300).HasFocus(3)</visible>
-			<imagepath fallback="special://skin/media/backdrops/music/">$INFO[Skin.String(CustomMusic)]</imagepath>
+			<imagepath fallback="special://skin/media/backdrops/music//">backdrops/music//</imagepath>
 		</control>
 		<control type="multiimage">
 			<include>Object_MainMenuBG</include>
 			<visible>Container(300).HasFocus(4)</visible>
-			<imagepath fallback="special://skin/media/backdrops/movies/">$INFO[Skin.String(CustomMovies)]</imagepath>
+			<imagepath fallback="special://skin/media/backdrops/movies//">backdrops/movies//</imagepath>
 		</control>
 		<control type="multiimage">
 			<include>Object_MainMenuBG</include>
 			<visible>Container(300).HasFocus(5)</visible>
-			<imagepath fallback="special://skin/media/backdrops/tvshows/">$INFO[Skin.String(CustomTV)]</imagepath>
+			<imagepath fallback="special://skin/media/backdrops/tvshows//">backdrops/tvshows//</imagepath>
 		</control>
 		<control type="multiimage">
 			<include>Object_MainMenuBG</include>
 			<visible>Container(300).HasFocus(6)</visible>
-			<imagepath fallback="special://skin/media/backdrops/pictures/">$INFO[Skin.String(CustomPictures)]</imagepath>
+			<imagepath fallback="special://skin/media/backdrops/pictures//">backdrops/pictures//</imagepath>
 		</control>
 		<control type="multiimage">
 			<include>Object_MainMenuBG</include>
 			<visible>Container(300).HasFocus(7)</visible>
-			<imagepath fallback="special://skin/media/backdrops/weather/">$INFO[Skin.String(CustomWeather)]</imagepath>
+			<imagepath fallback="special://skin/media/backdrops/weather//">backdrops/weather//</imagepath>
 		</control>
 		<control type="multiimage">
 			<include>Object_MainMenuBG</include>
 			<visible>Container(300).HasFocus(8)</visible>
-			<imagepath fallback="special://skin/media/backdrops/settings/">$INFO[Skin.String(CustomSettings)]</imagepath>
+			<imagepath fallback="special://skin/media/backdrops/settings//">backdrops/settings//</imagepath>
 		</control>
 	</include>
 	<include name="Object_MainMenuBG">
