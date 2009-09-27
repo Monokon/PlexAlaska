@@ -39,7 +39,7 @@
 					<font>Font_ListTitleNF</font>
 					<textcolor>ListTitleNF</textcolor>
 					<label>$INFO[ListItem.Label]</label>
-					<visible>![Window.IsActive(25) | Window.IsActive(502) | Window.IsActive(500)]</visible>
+					<visible>![Window.IsActive(25) | Window.IsActive(502) | Window.IsActive(500)] + !Container.Content(songs)</visible>
 				</control>
 				<control type="label">
 					<posx>20</posx>
