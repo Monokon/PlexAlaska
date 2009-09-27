@@ -43,34 +43,23 @@
 			</control>
 			<control type="label">
 				<visible>!Window.IsActive(2006)</visible>
-				<posx>175</posx>
-				<posy>99</posy>
+				<posx>177</posx>
+				<posy>105</posy>
 				<width>1034</width>
-				<font>Font_ListDetail</font>
-				<label>$INFO[MusicPlayer.Artist]</label>
-				<textcolor>NowPlayingArtist</textcolor>
-				<animation effect="fade" start="0" end="100" time="400" delay="400">Visible</animation>
-				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-			</control>
-			<control type="label">
-				<visible>!Window.IsActive(2006)</visible>
-				<posx>175</posx>
-				<posy>143</posy>
-				<width>1034</width>
-				<font>Font_ListDetail</font>
-				<label>$INFO[MusicPlayer.Album]</label>
-				<textcolor>NowPlayingArtist</textcolor>
-				<animation effect="fade" start="0" end="100" time="400" delay="400">Visible</animation>
-				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-			</control>
-			<control type="label">
-				<visible>!Window.IsActive(2006)</visible>
-				<posx>175</posx>
-				<posy>121</posy>
-				<width>1034</width>
-				<font>Font_ListDetail</font>
-				<label>[B]$INFO[MusicPlayer.Title][/B]</label>
+				<font>Font_NowPlayingTrack</font>
+				<label>$INFO[MusicPlayer.Title]</label>
 				<textcolor>NowPlayingTrack</textcolor>
+				<animation effect="fade" start="0" end="100" time="400" delay="400">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			</control>
+			<control type="label">
+				<visible>!Window.IsActive(2006)</visible>
+				<posx>177</posx>
+				<posy>131</posy>
+				<width>1034</width>
+				<font>Font_NowPlayingArtist</font>
+				<label>[B]$INFO[MusicPlayer.Artist][/B] $INFO[MusicPlayer.Album]</label>
+				<textcolor>NowPlayingArtist</textcolor>
 				<animation effect="fade" start="0" end="100" time="400" delay="400">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 			</control>
