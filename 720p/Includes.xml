@@ -275,6 +275,10 @@
 				<item id="8">
 					<onclick>XBMC.ActivateWindow(4)</onclick>
 				</item>
+				<item id="9">
+					<onclick>XBMC.Shutdown()</onclick>
+					<visible>Skin.HasSetting(homequit)</visible>
+				</item>
 			</content>
 		</control>
 
@@ -440,6 +444,26 @@
 				</control>
 				<include>Object_MainMenuShade</include>
 			</control>
+
+			<control type="group">
+				<description>Quit Plex</description>
+				<posx>2800</posx>
+				<posy>0</posy>
+				<animation type="conditional" condition="!Container(300).HasFocus(9)">
+					<effect type="zoom" center="2985,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<control type="multiimage">
+					<include>Object_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/weather//">backdrops/quit//</imagepath>
+				</control>
+				<include>Object_MainMenuFrame</include>
+				<control type="label">
+					<include>Object_MainMenuLabel</include>
+<!-- LOC -->		<label>QUIT PLEX</label>
+				</control>
+				<include>Object_MainMenuShade</include>
+				<visible>Skin.HasSetting(homequit)</visible>
+			</control>
 		</control>
 	</include>
 <!-- Home V.2 -->
@@ -555,9 +579,9 @@
 				<item id="13">
 					<description>Shutdown</description>
 					<label>31019</label>
-					<thumb>mainmenu/shutdown.png</thumb>
+					<thumb>mainmenu/quit.png</thumb>
 					<onclick>XBMC.Shutdown()</onclick>
-					<visible>false</visible>
+					<visible>Skin.HasSetting(homequit)</visible>
 				</item>
 			</content>
 		</control>
@@ -653,6 +677,12 @@
 					<label2>SETTINGS</label2>
 					<onclick>XBMC.ActivateWindow(4)</onclick>
 				</item>
+				<item id="9">
+<!-- LOC -->		<label>QUIT PLEX</label>
+<!-- LOC -->		<label2>QUIT PLEX</label2>
+					<onclick>XBMC.Shutdown(0)</onclick>
+					<visible>Skin.HasSetting(homequit)</visible>
+				</item>
 			</content>
 		</control>
 		<control type="image">
@@ -699,6 +729,11 @@
 			<include>Object_MainMenuBG</include>
 			<visible>Container(300).HasFocus(8)</visible>
 			<imagepath fallback="special://skin/media/backdrops/settings//">backdrops/settings//</imagepath>
+		</control>
+		<control type="multiimage">
+			<include>Object_MainMenuBG</include>
+			<visible>Container(300).HasFocus(9) + Skin.HasSetting(homequit)</visible>
+			<imagepath fallback="special://skin/media/backdrops/settings//">backdrops/quit//</imagepath>
 		</control>
 	</include>
 	<include name="Object_MainMenuBG">

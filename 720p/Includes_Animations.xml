@@ -247,6 +247,7 @@
 		<animation effect="slide" end="-700,0" time="300" condition="Container(300).HasFocus(6)">Conditional</animation>			
 		<animation effect="slide" end="-1050,0" time="300" condition="Container(300).HasFocus(7)">Conditional</animation>
 		<animation effect="slide" end="-1400,0" time="300" condition="Container(300).HasFocus(8)">Conditional</animation>			
+		<animation effect="slide" end="-1750,0" time="300" condition="Container(300).HasFocus(9)">Conditional</animation>
 
 	</include>	
 
