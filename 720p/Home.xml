@@ -33,7 +33,7 @@
 			<angle>0</angle>
 			<align>center</align>
 			<aligny>top</aligny>
-			<visible>Container(300).HasFocus(1) | Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(6) | Container(300).HasFocus(7) | Container(300).HasFocus(8)</visible>
+			<visible>Container(300).HasFocus(1) | Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(6) | Container(300).HasFocus(7) | Container(300).HasFocus(8) | Container(300).HasFocus(9)</visible>
 			<label>$INFO[Container(300).ListItem.Label]</label>
 			<font>Font_MainMenu</font>
 			<textcolor>MainMenu</textcolor>
