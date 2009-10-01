@@ -172,14 +172,6 @@
 			<aspectratio align="bottom">keep</aspectratio>
 		</control>
 		
-		<control type="image">
-			<description>Cover image overlay</description>
-			<width>270</width>
-			<height>300</height>
-			<posy>-180</posy>
-			<texture>osd/nowplaying_overlay.png</texture>
-			<aspectratio align="bottom">keep</aspectratio>
-		</control>
 	</control>
 	    <!-- cd mod -->
 	
