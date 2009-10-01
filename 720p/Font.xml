@@ -264,6 +264,33 @@
 			<name>Font_MainMenuLabel</name>
 			<filename>alaska_regular.ttf</filename>
 			<size>31</size>
+		</font>
+
+		<!-- PlexAeon -->
+		<font>
+			<name>Font_bigtime</name>
+      		<filename>alaska_nowplaying.ttf</filename>
+      		<size>85</size>
+  		</font>
+		<font>
+			<name>Font_OSDMusicArtist</name>
+			<filename>alaska_light.ttf</filename>
+			<size>24</size>
+		</font>
+		<font>
+			<name>Font_OSDMusicTitle</name>
+			<filename>alaska_light.ttf</filename>
+			<size>38</size>
+		</font>
+		<font>
+			<name>Font_Track</name>
+			<filename>alaska_light.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
+			<name>Font_Time_nowplaying</name>
+			<filename>alaska_light.ttf</filename>
+			<size>17</size>
 		</font>	
 
 	</fontset>
