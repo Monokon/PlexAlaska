@@ -72,6 +72,11 @@
 					<label>Backdrops</label>
 					<onclick>SetFocus(9004)</onclick>
 				</item>
+				<item id="6">
+<!-- LOC -->		<description>NowPlaying</description>
+					<label>NowPlaying</label>
+					<onclick>SetFocus(9006)</onclick>
+				</item>
 				<item id="5">
 <!-- LOC -->		<description>Misc.</description>
 					<label>Misc.</label>
@@ -255,6 +260,54 @@
 				</control>
 
 			</control>
+
+
+			<control type="grouplist" id="9006">
+				<visible>Container(9000).Hasfocus(6)</visible>
+				<width>740</width>
+				<height>600</height>
+				<itemgap>6</itemgap>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<onup>9006</onup>
+				<ondown>9006</ondown>
+				<include>Animation_CommonFadeNoHide</include>
+				<control type="button" id="600">
+					<posx>100</posx>
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+<!-- LOC -->		<label>Set path to artist backdrops</label>
+					<label2>$INFO[Skin.String(artistbackdroppath)]</label2>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.SetPath(artistbackdroppath)</onclick>
+				</control>
+				<control type="radiobutton" id="601">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+<!-- LOC -->		<label>Disable filter image in NowPlaying</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(disablenowplayingfilter)</onclick>
+					<selected>Skin.HasSetting(disablenowplayingfilter)</selected>
+				</control>
+				<control type="radiobutton" id="602">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+<!-- LOC -->		<label>Disable progressbar</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(disableprogressbar)</onclick>
+					<selected>Skin.HasSetting(disableprogressbar)</selected>
+				</control>
+			</control>
+
 			<control type="grouplist" id="9005">
 				<visible>Container(9000).Hasfocus(5)</visible>
 				<width>740</width>

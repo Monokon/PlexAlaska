@@ -710,7 +710,11 @@
 		<timeperimage>20000</timeperimage>
 		<randomize>true</randomize>
 		<fadetime>400</fadetime>
-		<colordiffuse>11FFFFFF</colordiffuse>
+		<include condition="!Skin.HasSetting(increaseFanartVisibility)">home_menu3_filter0</include>
+		<include condition="Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility20)">home_menu3_filter20</include>
+		<include condition="Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility30)">home_menu3_filter30</include>
+		<include condition="Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility40)">home_menu3_filter40</include>
+		<include condition="Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility50)">home_menu3_filter50</include>
 		<aspectratio align="center" scalediffuse="true">stretch</aspectratio>		
 	</include>
 	<include name="Object_MainMenuIconF">
@@ -937,4 +941,20 @@
 		<visible>Skin.HasSetting(increaseFanartVisibility)</visible>
 	</include>
 	
+	<include name="home_menu3_filter0">
+		<colordiffuse>11FFFFFF</colordiffuse>
+	</include>
+	<include name="home_menu3_filter20">
+		<colordiffuse>32FFFFFF</colordiffuse>
+	</include>
+	<include name="home_menu3_filter30">
+		<colordiffuse>4BFFFFFF</colordiffuse>
+	</include>
+	<include name="home_menu3_filter40">
+		<colordiffuse>64FFFFFF</colordiffuse>
+	</include>
+	<include name="home_menu3_filter50">
+		<colordiffuse>7DFFFFFF</colordiffuse>
+	</include>
+
 </includes>
