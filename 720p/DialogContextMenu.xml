@@ -25,8 +25,7 @@
 			<width>1280</width>
 			<font>Font_MenuValue</font>
 			<textcolor>MenuValue</textcolor>
-			<focusedcolor>MenuValue</focusedcolor>
-			<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+			<focusedcolor>Black</focusedcolor>
 			<align>center</align>
 			<aligny>middle</aligny>
 		</control>
