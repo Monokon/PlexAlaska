@@ -187,6 +187,17 @@
 					<onclick>Skin.ToggleSetting(homequit)</onclick>
 					<selected>Skin.HasSetting(homequit)</selected>
 				</control>
+<!--				<control type="radiobutton" id="206">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>-->
+<!-- LOC -->		<!--<label>Switch to images in OSX style</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(osximages)</onclick>
+					<selected>Skin.HasSetting(osximages)</selected>
+				</control>-->
 			</control>
 			<control type="grouplist" id="9003">
 				<visible>Container(9000).Hasfocus(3)</visible>
