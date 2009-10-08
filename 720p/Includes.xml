@@ -296,7 +296,13 @@
 				</animation>
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/appstore//" >backdrops/appstore//</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/appstore//</imagepath>
+					<visible>!Skin.HasSetting(osximages)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Object_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/appstore//</imagepath>
+					<visible>Skin.HasSetting(osximages)</visible>
 				</control>				
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
@@ -315,8 +321,14 @@
 				</animation>
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/videos//">backdrops/videos//</imagepath>
-				</control>	
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/videos//</imagepath>
+					<visible>!Skin.HasSetting(osximages)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Object_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/videos//</imagepath>
+					<visible>Skin.HasSetting(osximages)</visible>
+				</control>
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
 					<include>Object_MainMenuLabel</include>
@@ -334,8 +346,14 @@
 				</animation>
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/music//">backdrops/music//</imagepath>
-				</control>	
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/music//</imagepath>
+					<visible>Skin.!HasSetting(osximages)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Object_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/music//</imagepath>
+					<visible>Skin.HasSetting(osximages)</visible>
+				</control>
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
 					<include>Object_MainMenuLabel</include>
@@ -353,8 +371,8 @@
 				</animation>
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/movies//">backdrops/movies//</imagepath>
-				</control>	
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/movies//</imagepath>
+				</control>
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
 					<include>Object_MainMenuLabel</include>
@@ -372,8 +390,8 @@
 				</animation>
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/tvshows//">backdrops/tvshows//</imagepath>
-				</control>	
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/tvshows//</imagepath>
+				</control>
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
 					<include>Object_MainMenuLabel</include>
@@ -391,8 +409,14 @@
 				</animation>
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/pictures//">backdrops/pictures//</imagepath>
-				</control>	
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/pictures//</imagepath>
+					<visible>!Skin.HasSetting(osximages)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Object_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/pictures//</imagepath>
+					<visible>Skin.HasSetting(osximages)</visible>
+				</control>
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
 					<include>Object_MainMenuLabel</include>
@@ -410,12 +434,12 @@
 				</animation>
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/weather//">backdrops/weather//</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/weather//</imagepath>
 					<visible>!Skin.HasSetting(homeweather)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/mainmenu/weather/weather.png">mainmenu/weather/$INFO[Weather.FanartCode]/</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png">mainmenu/weather/$INFO[Weather.FanartCode]/</imagepath>
 					<visible>Skin.HasSetting(homeweather)</visible>
 				</control>
 				<include>Object_MainMenuFrame</include>
@@ -435,8 +459,14 @@
 				</animation>
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/settings//">backdrops/settings//</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/settings//</imagepath>
+					<visible>!Skin.HasSetting(osximages)</visible>
 				</control>	
+				<control type="multiimage">
+					<include>Object_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/settings//</imagepath>
+					<visible>Skin.HasSetting(osximages)</visible>
+				</control>
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
 					<include>Object_MainMenuLabel</include>
@@ -454,7 +484,13 @@
 				</animation>
 				<control type="multiimage">
 					<include>Object_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png" fallback="special://skin/media/backdrops/weather//">backdrops/quit//</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/quit//</imagepath>
+					<visible>!Skin.HasSetting(osximages)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Object_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/quit//</imagepath>
+					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Object_MainMenuFrame</include>
 				<control type="label">
