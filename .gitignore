@@ -1,5 +1,6 @@
 # .gitignore for Alaska
 
+<<<<<<< HEAD
 
 
 # generated files 
@@ -13,3 +14,14 @@
 #SourceMonitor
 
 *.smp
+=======
+# generated files 
+*.bak
+*.db
+
+#SourceMonitor
+*.smp
+
+#ImageSource
+*.psd
+>>>>>>> hitcher/master

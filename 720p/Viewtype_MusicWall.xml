@@ -1,31 +1,8 @@
 <!--Alaska-->
 
 <includes>
-
-	<include name="Object_PicturePanel">
-		<control type="image">
-			<posx>1</posx>
-			<posy>1</posy>
-			<width>108</width>
-			<height>108</height>
-			<texture>pics/picturepanel.png</texture>
-		</control>
-	</include>
-	
-	<include name="Object_PictureIconVars">
-		<posx>5</posx>
-		<posy>5</posy>
-		<width>100</width>
-		<height>100</height>
-		<fadetime>200</fadetime>					
-		<texture>$INFO[ListItem.Icon]</texture>
-		<aspectratio>scale</aspectratio>	
-	</include>
-
 	<include name="Viewtype_MusicWall">
-
 <!-- Browser -->
-	
 		<control type="panel" id="50">
 			<viewtype label="Wall">icon</viewtype>
 			<posx>-30</posx>
@@ -48,6 +25,7 @@
 					<width>190</width>
 					<height>190</height>
 					<texture>wall/musicwallmatte.png</texture>
+					<colordiffuse>WallIconDiffuse</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>17</posx>
@@ -55,8 +33,8 @@
 					<width>190</width>
 					<height>190</height>
 					<fadetime>200</fadetime>
-					<texture diffuse="wall/musicwallmatte.png">$INFO[ListItem.Icon]</texture>
-					<colordiffuse>48FFFFFF</colordiffuse>
+					<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[ListItem.Icon]</texture>
+					<colordiffuse>WallIconDiffuse</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 				</control>
 				<control type="image">
@@ -65,7 +43,7 @@
 					<width>192</width>
 					<height>192</height>
 					<texture>wall/musicwallframeNF.png</texture>
-					<colordiffuse>48FFFFFF</colordiffuse>					
+					<colordiffuse>WallIconDiffuse</colordiffuse>					
 				</control>				
 			</itemlayout>
 			<focusedlayout width="223" height="223">
@@ -75,6 +53,7 @@
 					<width>190</width>
 					<height>190</height>
 					<texture>wall/musicwallmatte.png</texture>
+					<colordiffuse>WallIconDiffuse</colordiffuse>
 					<animation type="Focus" reversible="false" condition="Container(50).Row(0)">
 						<effect type="slide" start="0,0" end="0,-20" time="400" tween="back" easing="out" />						
 					</animation>
@@ -88,7 +67,7 @@
 					<width>190</width>
 					<height>190</height>
 					<fadetime>200</fadetime>
-					<texture diffuse="wall/musicwallmatte.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[ListItem.Icon]</texture>
 					<animation type="Focus" reversible="false" condition="Container(50).Row(0)">
 						<effect type="fade" start="20" end="100" time="200" />
 						<effect type="slide" start="0,0" end="0,-20" time="400" tween="back" easing="out" />						
@@ -108,7 +87,7 @@
 					<width>190</width>
 					<height>190</height>
 					<texture>wall/musicwallframeNF.png</texture>
-					<colordiffuse>48FFFFFF</colordiffuse>
+					<colordiffuse>WallIconDiffuse</colordiffuse>
 					<animation type="Focus" reversible="false" condition="Container(50).Row(0)">
 						<effect type="fade" start="100" end="0" time="200" />
 						<effect type="slide" start="0,0" end="0,-20" time="400" tween="back" easing="out" />						
@@ -148,7 +127,7 @@
 			<width>27</width>
 			<height>27</height>
 			<visible>Control.IsVisible(50)</visible>
-			<texture flipx="true">pics/picsarrow.png</texture>
+			<texture flipx="true">wall/WallArrow.png</texture>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_MusicWallFloat</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -161,7 +140,7 @@
 			<width>27</width>
 			<height>27</height>
 			<visible>Control.IsVisible(50)</visible>
-			<texture>pics/picsarrow.png</texture>
+			<texture>wall/WallArrow.png</texture>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_MusicWallFloat</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -170,9 +149,14 @@
 		
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="wall/music_wall_mask.png">filter.png</texture>
+			<texture diffuse="wall/music_wall_mask.png">backdrops/background.png</texture>
 			<visible>Control.IsVisible(50)</visible>
 			<colordiffuse>dfFFFFFF</colordiffuse>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture diffuse="wall/music_wall_mask.png">backdrops/backgroundcolordiffuse.png</texture>
+			<colordiffuse>backgroundColor</colordiffuse>
 		</control>
 		
 	</include>

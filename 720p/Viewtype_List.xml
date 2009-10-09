@@ -22,31 +22,6 @@
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByMusicInfo</include>
 			<itemlayout width="885" height="49">
-				<!--<control type="label">
-					<posx>91</posx>
-					<posy>0</posy>
-					<width>57</width>
-					<height>49</height>
-					<aligny>center</aligny>
-					<align>right</align>
-					<font>Font_ListTrackNF</font>
-					<textcolor>ListTrackNF</textcolor>
-					<selectedcolor>ListTrackNF</selectedcolor>					
-					<label>$INFO[ListItem.TrackNumber]</label>
-					<visible>Container.Content(songs)</visible>
-				</control>-->
-				<!--<control type="label">
-					<posx>111</posx>
-					<posy>3</posy>
-					<width>830</width>
-					<height>25</height>
-					<aligny>center</aligny>
-					<font>Font_ListTitleNF</font>
-					<textcolor>ListTitleNF</textcolor>
-					<selectedcolor>ListTitleNF</selectedcolor>					
-					<label>$INFO[ListItem.Title]</label>
-					<visible>Container.Content(songs)</visible>
-				</control>-->
 				<control type="label">
 					<posx>73</posx>
 					<posy>0</posy>
@@ -57,9 +32,9 @@
 					<textcolor>ListTitleNF</textcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>					
 					<label>$INFO[ListItem.Label]</label>
-					<!--<visible>IsEmpty(ListItem.Title)</visible>-->
+					<visible>IsEmpty(ListItem.Title)</visible>
 				</control>				
-				<!--<control type="label">
+				<control type="label">
 					<posx>111</posx>
 					<posy>26</posy>
 					<width>830</width>
@@ -70,7 +45,7 @@
 					<selectedcolor>ListTitleNF</selectedcolor>					
 					<label>$INFO[ListItem.Artist] - $INFO[ListItem.Album] - $INFO[ListItem.Duration]</label>
 					<visible>!IsEmpty(ListItem.Title)</visible>
-				</control>-->
+				</control>				
 			</itemlayout>
 			<focusedlayout width="828" height="103">
 				<control type="image">
@@ -96,7 +71,7 @@
 						<effect type="fade" start="0" end="100" time="200" />
 					</animation>					
 				</control>			
-				<!--<control type="label">
+				<control type="label">
 					<posx>120</posx>
 					<posy>16</posy>
 					<width>830</width>
@@ -107,7 +82,7 @@
 					<selectedcolor>ListTitleF</selectedcolor>					
 					<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title]</label>
 					<visible>!IsEmpty(ListItem.Title)</visible>
-				</control>-->
+				</control>
 				<control type="label">
 					<posx>120</posx>
 					<posy>0</posy>
@@ -118,21 +93,9 @@
 					<textcolor>ListTitleF</textcolor>
 					<selectedcolor>ListTitleF</selectedcolor>					
 					<label>$INFO[ListItem.Label]</label>
-					<visible>!IsEmpty(ListItem.Title)</visible>
-				</control>
-<!--				<control type="label">
-					<posx>120</posx>
-					<posy>0</posy>
-					<width>830</width>
-					<height>103</height>
-					<aligny>center</aligny>
-					<font>Font_ListTitleBig</font>
-					<textcolor>ListTitleF</textcolor>
-					<selectedcolor>ListTitleF</selectedcolor>
-					<label>$INFO[ListItem.Label]</label>
 					<visible>IsEmpty(ListItem.Title)</visible>
-				</control>-->
-				<!--<control type="label">
+				</control>					
+				<control type="label">
 					<posx>120</posx>
 					<posy>42</posy>
 					<width>830</width>
@@ -143,7 +106,7 @@
 					<selectedcolor>ListTitleF</selectedcolor>					
 					<label>$INFO[ListItem.Artist] - $INFO[ListItem.Album] - $INFO[ListItem.Duration]</label>
 					<visible>!IsEmpty(ListItem.Title)</visible>
-				</control>-->
+				</control>
 				<control type="image">
 					<posx>120</posx>
 					<posy>62</posy>
@@ -156,9 +119,15 @@
 
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="list/list_mask_1.png">filter.png</texture>
+			<texture diffuse="list/list_mask_1.png">backdrops/background.png</texture>
 			<visible>Control.IsVisible(53)</visible>
-		</control>	
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture diffuse="list/list_mask_1.png">backdrops/backgroundcolordiffuse.png</texture>
+			<colordiffuse>backgroundColor</colordiffuse>
+			<visible>Control.IsVisible(53)</visible>
+		</control>
 		
 	</include>
 
