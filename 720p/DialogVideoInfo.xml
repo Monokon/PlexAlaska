@@ -59,6 +59,14 @@
 				<colordiffuse>B9202020</colordiffuse>
 			</control>
 			<control type="label">
+				<posx>0</posx>
+				<posy>130</posy>
+				<width>550</width>
+				<font>Font_InfoPlot</font>
+				<textcolor>InfoDetails</textcolor>
+				<label>Director:</label>
+			</control>
+			<control type="label">
 				<posx>125</posx>
 				<posy>130</posy>
 				<width>550</width>
@@ -67,12 +75,28 @@
 				<info>ListItem.Director</info>
 			</control>
 			<control type="label">
+				<posx>0</posx>
+				<posy>154</posy>
+				<width>550</width>
+				<font>Font_InfoPlot</font>
+				<textcolor>InfoDetails</textcolor>
+				<label>Writer:</label>
+			</control>
+			<control type="label">
 				<posx>125</posx>
 				<posy>154</posy>
 				<width>550</width>
 				<font>Font_InfoDetails</font>
 				<textcolor>InfoDetails</textcolor>
 				<info>ListItem.Writer</info>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>191</posy>
+				<width>550</width>
+				<font>Font_InfoPlot</font>
+				<textcolor>InfoDetails</textcolor>
+				<label>Cast:</label>
 			</control>
 			<control type="textbox">
 				<posx>125</posx>
