@@ -46,8 +46,8 @@
 			<animation effect="fade" start="100" end="50" time="400" condition="Player.HasAudio + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility50)">Conditional</animation>
 			<visible>!Skin.HasSetting(disablenowplayingfilter)</visible>			
 		</control>-->
-	<include>Global_Filter</include>
-	<include>Global_ContextFilter</include>
+	<include condition="!Skin.HasSetting(disablenowplayingfilter)">Global_Filter</include>
+	<include condition="!Skin.HasSetting(disablenowplayingfilter)">Global_ContextFilter</include>
 
 	<control type="group">
 		<posx>0</posx>

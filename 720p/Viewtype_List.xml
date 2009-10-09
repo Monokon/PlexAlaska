@@ -32,9 +32,8 @@
 					<textcolor>ListTitleNF</textcolor>
 					<selectedcolor>ListTitleNF</selectedcolor>					
 					<label>$INFO[ListItem.Label]</label>
-					<visible>IsEmpty(ListItem.Title)</visible>
-				</control>				
-				<control type="label">
+				</control>
+				<!--<control type="label">
 					<posx>111</posx>
 					<posy>26</posy>
 					<width>830</width>
@@ -45,7 +44,7 @@
 					<selectedcolor>ListTitleNF</selectedcolor>					
 					<label>$INFO[ListItem.Artist] - $INFO[ListItem.Album] - $INFO[ListItem.Duration]</label>
 					<visible>!IsEmpty(ListItem.Title)</visible>
-				</control>				
+				</control>-->
 			</itemlayout>
 			<focusedlayout width="828" height="103">
 				<control type="image">
@@ -71,7 +70,7 @@
 						<effect type="fade" start="0" end="100" time="200" />
 					</animation>					
 				</control>			
-				<control type="label">
+				<!--<control type="label">
 					<posx>120</posx>
 					<posy>16</posy>
 					<width>830</width>
@@ -82,7 +81,7 @@
 					<selectedcolor>ListTitleF</selectedcolor>					
 					<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title]</label>
 					<visible>!IsEmpty(ListItem.Title)</visible>
-				</control>
+				</control>-->
 				<control type="label">
 					<posx>120</posx>
 					<posy>0</posy>
@@ -93,7 +92,7 @@
 					<textcolor>ListTitleF</textcolor>
 					<selectedcolor>ListTitleF</selectedcolor>					
 					<label>$INFO[ListItem.Label]</label>
-					<visible>IsEmpty(ListItem.Title)</visible>
+<!--					<visible>IsEmpty(ListItem.Title)</visible>
 				</control>					
 				<control type="label">
 					<posx>120</posx>
@@ -112,7 +111,7 @@
 					<posy>62</posy>
 					<width>121</width>
 					<height>22</height>
-					<texture>$INFO[ListItem.StarRating]</texture>
+					<texture>$INFO[ListItem.StarRating]</texture>-->
 				</control>
 			</focusedlayout>
 		</control>

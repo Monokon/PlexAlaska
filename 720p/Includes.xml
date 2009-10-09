@@ -628,8 +628,8 @@
 				</item>
 				<item id="13">
 					<description>Shutdown</description>
-					<label>31019</label>
-					<thumb>backdrops/shutdownicon.png</thumb>
+					<label>Quit Plex</label>
+					<thumb>mainmenu/quit.png</thumb>
 					<onclick>XBMC.Shutdown()</onclick>
 					<visible>Skin.HasSetting(homequit)</visible>
 				</item>
@@ -725,64 +725,55 @@
 			<item id="1">
 				<description>PROGRAMS</description>
 				<label>0</label>
-				<icon>special://skin/media/backdrops/programs.jpg</icon>
-				<thumb>$INFO[Skin.String(CustomPictures)]</thumb>
+				<thumb>backdrops/appstore/appstore-1.jpg</thumb>
 				<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/)</onclick>
 			</item>
 			<item id="2">
 				<description>Video</description>
 				<label>3</label>
-				<icon>special://skin/media/backdrops/videos.jpg</icon>
-				<thumb>$INFO[Skin.String(CustomVideos)]</thumb>
+				<thumb>backdrops/videos/video-3.jpg</thumb>
 				<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
 			</item>
 			<item id="3">
 				<description>Music</description>
 				<label>2</label>
-				<icon>special://skin/media/backdrops/music.jpg</icon>
-				<thumb>$INFO[Skin.String(CustomMusic)]</thumb>
+				<thumb>backdrops/music/music-6.jpg</thumb>
 				<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
 			</item>
 			<item id="4">
 				<description>Movies</description>
 				<label>342</label>
-				<icon>special://skin/media/backdrops/movies.jpg</icon>
-				<thumb>$INFO[Skin.String(CustomMovies)]</thumb>
+				<thumb>backdrops/movies/movies-6.jpg</thumb>
 				<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
 			</item>
 			<item id="5">
 				<description>Tv Shows</description>
 				<label>20343</label>
-				<icon>special://skin/media/backdrops/tvshows.jpg</icon>
-				<thumb>$INFO[Skin.String(CustomTV)]</thumb>
+				<thumb>backdrops/tvshows/tvshows-1.jpg</thumb>
 				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
 			</item>
 			<item id="6">
 				<description>Picture</description>
 				<label>1</label>
-				<icon>special://skin/media/backdrops/pictures.jpg</icon>
-				<thumb>$INFO[Skin.String(CustomPictures)]</thumb>
+				<thumb>backdrops/pictures/pictures-2.jpg</thumb>
 				<onclick>XBMC.ActivateWindow(MyPictures)</onclick>
 			</item>
 			<item id="7">
 				<description>Weather</description>
 				<label>8</label>
-				<icon>special://skin/media/backdrops/weather.jpg</icon>
-				<thumb>$INFO[Skin.String(CustomWeather)]</thumb>
+				<thumb>backdrops/weather/weather-1.jpg</thumb>
 				<onclick>XBMC.Activatewindow(2600)</onclick>
 			</item>
 			<item id="8">
 				<description>Settings</description>
 				<label>5</label>
-				<icon>special://skin/media/backdrops/settings.jpg</icon>
-				<thumb>$INFO[Skin.String(CustomSettings)]</thumb>
+				<thumb>backdrops/settings/settings-3.jpg</thumb>
 				<onclick>XBMC.ActivateWindow(4)</onclick>
 			</item>
 			<item id="9">
-				<description>Settings</description>
-				<label>5</label>
-				<icon>special://skin/media/backdrops/quit/quitplex.jpg</icon>
-				<thumb>$INFO[Skin.String(CustomSettings)]</thumb>
+				<description>Quit Plex</description>
+				<label>Quit Plex</label>
+				<thumb>backdrops/quit/quitplex.jpg</thumb>
 				<onclick>XBMC.Shutdown(0)</onclick>
 				<visible>Skin.HasSetting(homequit)</visible>
 			</item>
@@ -1008,7 +999,6 @@
 <!-- PlexAlaska -->
 
 	<include name="ResetFanartVisibilityButtons">
-		<onclick>Skin.Reset(increaseFanartVisibility20)</onclick>
 		<onclick>Skin.Reset(increaseFanartVisibility30)</onclick>
 		<onclick>Skin.Reset(increaseFanartVisibility40)</onclick>
 		<onclick>Skin.Reset(increaseFanartVisibility50)</onclick>
