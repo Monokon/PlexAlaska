@@ -1,6 +1,7 @@
 <!--Alaska-->
 
 <window id="2004">
+	<zorder>2</zorder>
 	<defaultcontrol>-</defaultcontrol>
 	<animation type="WindowOpen">
 		<effect type="slide" start="-200,0" end="0,0" time="600" tween="cubic" easing="out" />
@@ -17,10 +18,10 @@
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 		<control type="group">
-			<visible>[[Player.ShowInfo+Window.IsActive(2006)]|Window.IsActive(120)]|!Window.IsActive(2006)</visible>
+			<visible>[[Player.ShowInfo + Window.IsActive(2006)] | Window.IsActive(120)] | ![Window.IsActive(2006) | Window.IsActive(3)]</visible>
 			<posx>30</posx>
 			<posy>492</posy>
-			<animation effect="slide" start="0,0" end="0,30" time="200" condition="Skin.HasSetting(RSS_only_on_home)+!Window.IsActive(home)+!Window.IsVisible(2006)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,30" time="200" condition="Skin.HasSetting(RSS_only_on_home) + !Window.IsActive(home) + !Window.IsVisible(2006)">Conditional</animation>
 			<animation type="Visible">
 				<effect type="slide" start="-300,0" end="0,0" time="600" tween="cubic" easing="out" />
 				<effect type="fade" start="0" end="100" time="600" />
@@ -35,10 +36,9 @@
 				<width>168</width>
 				<height>168</height>
 				<texture>$INFO[MusicPlayer.Cover]</texture>
-				<aspectratio>scale</aspectratio>
 				<bordertexture border="8">common/thumb_border.png</bordertexture>
 				<bordersize>8</bordersize>
-				<animation type="Conditional" condition="Window.IsActive(2006)|Window.IsActive(120)">
+				<animation type="Conditional" condition="Window.IsActive(2006) | Window.IsActive(120)">
 					<effect type="zoom" center="35,180" start="100" end="155" time="400" tween="cubic" easing="out" />
 					<effect type="slide" start="0,0" end="12,5" time="400" tween="cubic" easing="out" />
 				</animation>

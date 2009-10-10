@@ -3,30 +3,44 @@
   
 <coordinates>
   <system>1</system>
-  <posx>200</posx>
-  <posy>0</posy>
+  <posx>236</posx>
+  <posy>10</posy>
 </coordinates>
   
 <controls>
-    
-  <control type="label">
-	  <include>DialogID</include>
-	  <label>VideoOSDSettings.xml</label>
-			<visible>Skin.HasSetting(debugmode)</visible>
-  </control>
+	<control type="label">
+		<include>DialogID</include>
+		<label>VideoOSDSettings.xml</label>
+		<visible>Skin.HasSetting(debugmode)</visible>
+	</control>
+  
+	<control type="image">
+			<description>Panel</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>800</width>
+			<height>544</height>
+			<texture>favorites/favorites_panel.png</texture>
+			<colordiffuse>FFFFFFFF</colordiffuse>
+		</control>
+		
+  
   
 	<control type="label" id="2">
 		<description>Settings</description>
-		<posx>10</posx>
-		<posy>40</posy>
+		<posx>750</posx>
+		<posy>435</posy>
 		<width>500</width>
-		<align>left</align>
+		<height>60</height>
+		<align>right</align>
+		<aligny>center</aligny>
+		<include>Objects_DialogLabelDark</include>
 	</control>
   
   <control type="grouplist" id="5">
     <description>Control Area</description>
-    <posx>10</posx>
-    <posy>72</posy>
+    <posx>50</posx>
+    <posy>40</posy>
     <width>500</width>
     <height>350</height>
     <itemgap>2</itemgap>
@@ -39,8 +53,10 @@
   </control>
   <control type="button" id="7">
     <description>Button</description>
-    <texturefocus border="1">ButtonFo.png</texturefocus>
-    <texturenofocus border="1">ButtonNF.png</texturenofocus>
+	<height>40</height>
+	<width>555</width>
+    <texturefocus border="1">favorites/focus_bar.png</texturefocus>
+    <texturenofocus border="1"></texturenofocus>
   </control>
   <control type="radiobutton" id="8">
     <description>Radio Button</description>
@@ -58,8 +74,7 @@
     <texturenofocus border="1">ButtonNF.png</texturenofocus>
 	</control>
   
-		<include>Object_DebugGrid</include>
-
+		<!-- <include>Object_DebugGrid</include> -->
 </controls>
 
 </window>

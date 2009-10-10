@@ -90,6 +90,39 @@
 			<effect type="fade" start="100" end="0" time="400" />
 		</animation>		
 	</include>
+	
+	<include name="Animation_SlideAcrossToRight">
+		<animation type="WindowOpen" reversible="false">
+			<effect type="slide" start="-200,0" end="0,0" time="400" tween="cubic" easing="out" />
+			<effect type="fade" start="0" end="100" time="400" />
+		</animation>
+		<animation type="WindowClose" reversible="false">
+			<effect type="slide" start="0,0" end="200,0" time="400" tween="cubic" easing="in" />
+			<effect type="fade" start="100" end="0" time="400" />
+		</animation>			
+	</include>
+	
+	<include name="Animation_SlideAcrossToLeft">
+		<animation type="WindowOpen" reversible="false">
+			<effect type="slide" start="200,0" end="0,0" time="400" tween="cubic" easing="out" />
+			<effect type="fade" start="0" end="100" time="400" />
+		</animation>
+		<animation type="WindowClose" reversible="false">
+			<effect type="slide" start="0,0" end="-200,0" time="400" tween="cubic" easing="in" />
+			<effect type="fade" start="100" end="0" time="400" />
+		</animation>			
+	</include>
+	
+	<include name="Animation_ZoomInFadeOut">
+		<animation type="WindowOpen" reversible="false">
+			<effect type="fade" start="0" end="100" time="600" delay="100" />
+			<effect type="zoom" start="50,50" end="100,100" center="auto" time="500" delay="100" tween="back" asing="out"/>
+		</animation>
+		<animation  type="WindowClose" reversible="false">
+			<effect type="fade" start="100" end="0" time="400" delay="500" />
+			<effect type="zoom" end="50,50" start="100,100" center="auto" time="500" delay="500" />
+		</animation>
+	</include>
 
 <!-- Info dialog animations -->
 

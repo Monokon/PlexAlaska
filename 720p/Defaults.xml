@@ -69,6 +69,8 @@
 		<texturefocus>ButtonFo.png</texturefocus>
 		<textureradiofocus>settings/Button_RadioF.png</textureradiofocus>
 		<textureradionofocus>settings/Button_RadioNF.png</textureradionofocus>
+		<radioheight>20</radioheight>
+		<radiowidth>20</radiowidth>
 		<textoffsetx>5</textoffsetx>
 		<pulseonselect>false</pulseonselect>
 	</default>

@@ -63,7 +63,7 @@
 				<textcolor>InfoGenre</textcolor>
 			</control>
 			<control type="label">
-				<visible>Container.Content(artists)+IsEmpty(ListItem.Property(Formed))</visible>
+				<visible>Container.Content(artists) + IsEmpty(ListItem.Property(Formed))</visible>
 				<label>[B]$LOCALIZE[21893]:[/B] $INFO[ListItem.Property(Born)]</label>
 				<posx>0</posx>
 				<posy>70</posy>
@@ -73,7 +73,7 @@
 				<textcolor>InfoGenre</textcolor>
 			</control>
 			<control type="label">
-				<visible>Container.Content(artists)+IsEmpty(ListItem.Property(Born))+!IsEmpty(ListItem.Property(Formed))</visible>
+				<visible>Container.Content(artists) + IsEmpty(ListItem.Property(Born)) + !IsEmpty(ListItem.Property(Formed))</visible>
 				<label>[B]$LOCALIZE[21894]:[/B] $INFO[ListItem.Property(Formed)]</label>
 				<posx>0</posx>
 				<posy>70</posy>

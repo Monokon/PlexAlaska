@@ -9,6 +9,8 @@
 			<label>DialogButtonMenu.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
+
+
 		<control type="grouplist" id="1">
 			<posy>240</posy>
 			<onleft>-</onleft>
@@ -42,6 +44,21 @@
 				<label>Filemanager</label>
 				<onclick>XBMC.ActivateWindow(3)</onclick>
 			</control>
+			
+			<control type="button" id="3117">
+				<description>Favorites</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>MenuValue</focusedcolor>
+				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>Favorites</label>
+				<onclick>XBMC.ActivateWindow(Favourites)</onclick>
+			</control>
+			
 			<control type="button" id="3112">
 				<description>Reboot</description>
 				<height>40</height>
@@ -93,6 +110,20 @@
 				<aligny>middle</aligny>
 				<label>$LOCALIZE[130]</label>
 				<onclick>XBMC.ActivateWindow(7)</onclick>
+			</control>
+			<control type="button" id="3116">
+				<description>Reload Skin</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>MenuValue</focusedcolor>
+				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>RELOAD SKIN</label>
+				<onclick>XBMC.ReloadSkin()</onclick>
+				<visible>Skin.HasSetting(debugmode)</visible>
 			</control>
 		</control>
 		<include>Object_DebugGrid</include>

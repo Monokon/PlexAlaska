@@ -51,20 +51,14 @@
 				<info>ListItem.Duration</info>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
-			<control type="image">
-				<posy>66</posy>
-				<width>166</width>
-				<height>38</height>
-				<texture>flags/Rating/mpaa_restricted.png</texture>
-				<colordiffuse>B9202020</colordiffuse>
-			</control>
 			<control type="label">
-				<posx>0</posx>
-				<posy>130</posy>
-				<width>550</width>
-				<font>Font_InfoPlot</font>
-				<textcolor>InfoDetails</textcolor>
-				<label>Director:</label>
+				<posx>-10</posx>
+				<posy>140</posy>
+				<width>150</width>
+				<font>Font_OSDDetail</font>
+				<align>left</align>
+				<aligny>center</aligny>
+	<!--LOC-->	<label>DIRECTED BY:</label>
 			</control>
 			<control type="label">
 				<posx>125</posx>
@@ -75,12 +69,13 @@
 				<info>ListItem.Director</info>
 			</control>
 			<control type="label">
-				<posx>0</posx>
-				<posy>154</posy>
-				<width>550</width>
-				<font>Font_InfoPlot</font>
-				<textcolor>InfoDetails</textcolor>
-				<label>Writer:</label>
+				<posx>-10</posx>
+				<posy>167</posy>
+				<width>150</width>
+				<font>Font_OSDDetail</font>
+				<align>left</align>
+				<aligny>center</aligny>
+	<!--LOC-->	<label>WRITTEN BY:</label>
 			</control>
 			<control type="label">
 				<posx>125</posx>
@@ -90,13 +85,14 @@
 				<textcolor>InfoDetails</textcolor>
 				<info>ListItem.Writer</info>
 			</control>
-			<control type="label">
-				<posx>0</posx>
-				<posy>191</posy>
-				<width>550</width>
-				<font>Font_InfoPlot</font>
-				<textcolor>InfoDetails</textcolor>
-				<label>Cast:</label>
+			 <control type="label">
+				<posx>-10</posx>
+				<posy>200</posy>
+				<width>150</width>
+				<font>Font_OSDDetail</font>
+				<align>left</align>
+				<aligny>center</aligny>
+	<!--LOC-->	<label>STARRING:</label>
 			</control>
 			<control type="textbox">
 				<posx>125</posx>

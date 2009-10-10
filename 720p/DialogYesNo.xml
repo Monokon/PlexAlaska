@@ -3,7 +3,10 @@
 <window id="100">
 <defaultcontrol always="true">10</defaultcontrol>
   
-<coordinates>
+<include>Animation_ZoomInMenu</include>
+
+  
+  <coordinates>
   <system>1</system>
   <posx>0</posx>
   <posy>0</posy>
@@ -11,8 +14,9 @@
 </coordinates>
   
 <controls>
-    
-<include>Global_BackgroundFilter</include>
+
+<include>Global_DialogFilter</include>
+
 
 		<control type="label">
 			<include>WindowID</include>

@@ -21,7 +21,7 @@
 			<include>OSD_Back</include>
 		<!--First Button Group-->
 			<control type="grouplist" id="2001">
-				<visible allowhiddenfocus="true">Controlgroup(2001).HasFocus+!Window.IsVisible(125)</visible>
+				<visible allowhiddenfocus="true">Controlgroup(2001).HasFocus + !Window.IsVisible(125)</visible>
 				<include>Animation_CommonFade</include>
 				<posx>925</posx>
 				<posy>25</posy>
@@ -85,7 +85,7 @@
 			</control>
 		<!--Second Button Group-->
 			<control type="grouplist" id="2002">
-				<visible allowhiddenfocus="true">Controlgroup(2002).HasFocus+!Window.IsVisible(125)</visible>
+				<visible allowhiddenfocus="true">Controlgroup(2002).HasFocus + !Window.IsVisible(125)</visible>
 				<include>Animation_CommonFade</include>
 				<posx>795</posx>
 				<posy>25</posy>
