@@ -1,6 +1,7 @@
 <window id="28">
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<defaultcontrol always="true">53</defaultcontrol>
 	<controls>
 		<include>Global_Background</include>
 		<control type="label">
@@ -68,10 +69,10 @@
       <texturenofocus border="1">ButtonNF.png</texturenofocus>
     </control>
 	</control>
-    
-<include>list</include>
+
     
 		<include>Object_DebugGrid</include>
+		<include>Viewtype_List</include>
 
 </controls>
 
