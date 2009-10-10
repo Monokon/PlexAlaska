@@ -349,6 +349,7 @@
 					<include>Home_MainMenuLabel</include>
 <!-- LOC -->		<label>Appstore</label>
 				</control>
+				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -374,6 +375,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>3</label>
 				</control>
+				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -399,6 +401,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>2</label>
 				</control>
+				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -418,6 +421,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>342</label>
 				</control>
+				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -437,6 +441,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>20343</label>
 				</control>
+				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -462,6 +467,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>1</label>
 				</control>
+				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -487,6 +493,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>8</label>
 				</control>
+				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -512,6 +519,7 @@
 					<include>Home_MainMenuLabel</include>
 					<label>5</label>
 				</control>
+				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -537,6 +545,7 @@
 					<include>Home_MainMenuLabel</include>
 <!-- LOC -->		<label>QUIT PLEX</label>
 				</control>
+				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 				<visible>Skin.HasSetting(homequit)</visible>
 			</control>
@@ -1052,21 +1061,20 @@
 		<include>ResetFanartVisibilityButtons</include>
 		<visible>Skin.HasSetting(increaseFanartVisibility)</visible>
 	</include>
-	
-	<include name="home_menu3_filter0">
-		<colordiffuse>11FFFFFF</colordiffuse>
+
+	<include name="Filter_MenuItem">
+		<control type="image">
+			<include>Dimensions_MenuItem</include>
+			<texture>backdrops/menuitemcolordiffuse.png</texture>
+			<colordiffuse>backgroundColor</colordiffuse>
+		</control>
 	</include>
-	<include name="home_menu3_filter20">
-		<colordiffuse>32FFFFFF</colordiffuse>
-	</include>
-	<include name="home_menu3_filter30">
-		<colordiffuse>4BFFFFFF</colordiffuse>
-	</include>
-	<include name="home_menu3_filter40">
-		<colordiffuse>64FFFFFF</colordiffuse>
-	</include>
-	<include name="home_menu3_filter50">
-		<colordiffuse>7DFFFFFF</colordiffuse>
+
+	<include name="Dimensions_MenuItem">
+		<posx>10</posx>
+		<posy>10</posy>
+		<width>349</width>
+		<height>260</height>
 	</include>
 
 </includes>
