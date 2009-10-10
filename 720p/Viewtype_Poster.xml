@@ -280,7 +280,7 @@
 				<aligny>center</aligny>
 				<font>Font_ListDetail</font>
 				<textcolor>ListTrackF</textcolor>
-				<label>Episodes: [B]$INFO[ListItem.Episode][/B]</label>
+				<label>$LOCALIZE[16101]: [B]$INFO[ListItem.Property(UnWatchedEpisodes)][/B]</label>
 				<visible>!IsEmpty(ListItem.Episode)+[Container.Content(tvshows)|Container.Content(seasons)]</visible>
 			</control>
 			<control type="label">

@@ -180,7 +180,7 @@
 						<aligny>center</aligny>
 						<font>Font_ListDetailNF</font>
 						<textcolor>ListTitleNF</textcolor>
-						<label>[B]$LOCALIZE[20360]:[/B] $INFO[ListItem.Episode]</label>
+						<label>[B]$LOCALIZE[16102]:[/B] $INFO[ListItem.Property(WatchedEpisodes)]</label>
 						<visible>!IsEmpty(ListItem.Episode)</visible>
 					</control>
 					<control type="label">
@@ -191,7 +191,7 @@
 						<aligny>center</aligny>
 						<font>Font_ListDetailNF</font>
 						<textcolor>ListTitleNF</textcolor>
-						<label>[B]UnWatched:[/B] $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+						<label>[B]$LOCALIZE[16101]:[/B] $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
 						<visible>!IsEmpty(ListItem.Episode)</visible>
 					</control>
 				</control>
