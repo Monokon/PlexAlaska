@@ -338,6 +338,7 @@
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/appstore//</imagepath>
 				</control>
+				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/appstore//</imagepath>
@@ -348,7 +349,6 @@
 					<include>Home_MainMenuLabel</include>
 <!-- LOC -->		<label>Appstore</label>
 				</control>
-				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -389,6 +389,7 @@
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/music//</imagepath>
 				</control>
+				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/music//</imagepath>
@@ -399,7 +400,6 @@
 					<include>Home_MainMenuLabel</include>
 					<label>2</label>
 				</control>
-				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -414,6 +414,7 @@
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/movies//</imagepath>
 				</control>
+				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/movies//</imagepath>
@@ -424,7 +425,6 @@
 					<include>Home_MainMenuLabel</include>
 					<label>342</label>
 				</control>
-				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -439,6 +439,7 @@
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/tvshows//</imagepath>
 				</control>
+				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/movies//</imagepath>
@@ -449,7 +450,6 @@
 					<include>Home_MainMenuLabel</include>
 					<label>20343</label>
 				</control>
-				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -464,6 +464,7 @@
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/pictures//</imagepath>
 				</control>
+				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/pictures//</imagepath>
@@ -474,7 +475,6 @@
 					<include>Home_MainMenuLabel</include>
 					<label>1</label>
 				</control>
-				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -495,6 +495,7 @@
 					<imagepath diffuse="mainmenu/homematte.png">mainmenu/weather/$INFO[Weather.FanartCode]/</imagepath>
 					<visible>Skin.HasSetting(homeweather)</visible>
 				</control>
+				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/weather//</imagepath>
@@ -505,7 +506,6 @@
 					<include>Home_MainMenuLabel</include>
 					<label>8</label>
 				</control>
-				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -520,6 +520,7 @@
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/settings//</imagepath>
 				</control>	
+				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/settings//</imagepath>
@@ -530,7 +531,6 @@
 					<include>Home_MainMenuLabel</include>
 					<label>5</label>
 				</control>
-				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 			</control>
 
@@ -545,6 +545,7 @@
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/quit//</imagepath>
 				</control>
+				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/quit//</imagepath>
@@ -555,7 +556,6 @@
 					<include>Home_MainMenuLabel</include>
 <!-- LOC -->		<label>QUIT PLEX</label>
 				</control>
-				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
 				<visible>Skin.HasSetting(homequit)</visible>
 			</control>
