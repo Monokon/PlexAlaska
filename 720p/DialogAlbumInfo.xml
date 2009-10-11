@@ -1,3 +1,5 @@
+<!--Alaska-->
+
 <window id="2001">
 	<defaultcontrol always="true">7050</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
@@ -15,8 +17,8 @@
 			<label>DialogAlbumInfo.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
-		
-	<!-- invisible button to trigger view options -->
+
+		<!-- invisible button to trigger view options -->
 		<control type="button" id="7050">
 			<texturefocus/>
 			<texturenofocus/>
@@ -26,23 +28,23 @@
 			<ondown>7001</ondown>
 			<onclick/>
 		</control>
-			<control type="image">
-				<description>Cover image</description>
-				<posx>200</posx>
-				<posy>140</posy>
-				<width>350</width>
-				<height>350</height>
-				<info>Listitem.Icon</info>
-				<aspectratio>keep</aspectratio>
-				<bordertexture border="8">common/thumb_border.png</bordertexture>
-				<bordersize>8</bordersize>
-				<include>Animation_ZoomedByMenu</include>
-			</control>
+		<control type="image">
+			<description>Cover image</description>
+			<posx>200</posx>
+			<posy>140</posy>
+			<width>350</width>
+			<height>350</height>
+			<info>Listitem.Icon</info>
+			<aspectratio>keep</aspectratio>
+			<bordertexture border="8">common/thumb_border.png</bordertexture>
+			<bordersize>8</bordersize>
+			<include>Animation_ZoomedByMenu</include>
+		</control>
 		<control type="group">
 			<posx>580</posx>
 			<posy>140</posy>
 			<include>Animation_ZoomedByMenu</include>
-		<!-- artist -->
+			<!-- artist -->
 			<control type="label">
 				<description>Title</description>
 				<visible>Container.Content(artists)</visible>
@@ -102,7 +104,7 @@
 				<font>Font_Date</font>
 				<textcolor>InfoGenre</textcolor>
 			</control>
-		<!-- album -->
+			<!-- album -->
 			<control type="label">
 				<description>Title</description>
 				<visible>Container.Content(albums)</visible>
@@ -209,7 +211,7 @@
 						<height>20</height>
 						<align>center</align>
 						<aligny>center</aligny>
-					<font>Font_ListDetail</font>
+						<font>Font_ListDetail</font>
 						<textcolor>ListTitleF</textcolor>
 						<info>ListItem.Label2</info>
 					</control>
@@ -220,14 +222,14 @@
 						<height>20</height>
 						<align>left</align>
 						<aligny>center</aligny>
-					<font>Font_ListDetail</font>
+						<font>Font_ListDetail</font>
 						<textcolor>ListTitleF</textcolor>
 						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>
 			</control>
 		</control>
-	<!-- view options -->
+		<!-- view options -->
 		<include>Global_ContextFilter</include>
 		<control type="grouplist" id="7001">
 			<width>1000</width>
@@ -260,7 +262,8 @@
 			</control>
 			<control type="button" id="10">
 				<description>Thumb</description>
-<!-- LOC -->	<label>Thumb</label>
+				<!-- LOC -->
+				<label>Thumb</label>
 				<include>WindowMenuButton</include>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(10)">
 					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
@@ -269,7 +272,8 @@
 			</control>
 			<control type="button" id="12">
 				<description>Get Fanart</description>
-<!-- LOC -->	<label>Fanart</label>
+				<!-- LOC -->
+				<label>Fanart</label>
 				<include>WindowMenuButton</include>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(12)">
 					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
@@ -288,37 +292,41 @@
 			<include>Animation_ZoomInMenu</include>
 			<orientation>horizontal</orientation>
 			<posy>307</posy>
-		<!-- Cast/Review -->
+			<!-- Cast/Review -->
 			<control type="button" id="7040">
 				<include>WindowMenuLabel</include>
-<!-- LOC -->	<label>View</label>
+				<!-- LOC -->
+				<label>View</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(5)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		<!-- refresh -->
+			<!-- refresh -->
 			<control type="button" id="7041">
 				<include>WindowMenuLabel</include>
-<!-- LOC -->	<label>Information</label>
+				<!-- LOC -->
+				<label>Information</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(6)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		<!-- Fanart -->
+			<!-- Fanart -->
 			<control type="button" id="7042">
 				<include>WindowMenuLabel</include>
-<!-- LOC -->	<label>Get</label>
+				<!-- LOC -->
+				<label>Get</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(10)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		<!-- Thumb -->
+			<!-- Thumb -->
 			<control type="button" id="7043">
 				<include>WindowMenuLabel</include>
-<!-- LOC -->	<label>Get</label>
+				<!-- LOC -->
+				<label>Get</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(12)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />

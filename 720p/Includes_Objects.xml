@@ -1,5 +1,7 @@
+<!--Alaska-->
+
 <includes>
-<!-- Keyboard -->
+	<!-- Keyboard -->
 	<include name="Objects_KeyOffVars">
 		<textcolor>77FFFFFF</textcolor>
 		<focusedcolor>77FFFFFF</focusedcolor>
@@ -118,11 +120,11 @@
 		<texturenofocus>keyboard/keyboard_spacef.png</texturenofocus>
 		<include>Objects_KeyOnVars</include>
 	</include>
-<!--Movie Info-->
+	<!--Movie Info-->
 	<include name="Objects_FSInfoCertificate">
-		<posy>66</posy>
-		<width>166</width>
-		<height>38</height>
+		<posy>56</posy>
+		<width>249</width>
+		<height>57</height>
 	</include>
 	<include name="Objects_FSInfoYear">
 		<width>109</width>
@@ -158,7 +160,7 @@
 		<font>Font_FSInfoData</font>
 		<include>Colour_OffWhite</include>
 	</include>
-<!--Dialog Labels-->
+	<!--Dialog Labels-->
 	<include name="Objects_DialogLabel">
 		<font>Font_FavoritesLabel</font>
 		<textcolor>CCababab</textcolor>
@@ -173,5 +175,5 @@
 		<font>Font_DialogSettingsLabel</font>
 		<textcolor>CC747474</textcolor>	
 	</include>
-	
+
 </includes>

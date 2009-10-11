@@ -30,7 +30,7 @@
 				<info>ListItem.Title</info>
 			</control>
 			<control type="label">
-				<posx>188</posx>
+				<posx>271</posx>
 				<posy>45</posy>
 				<width>141</width>
 				<height>76</height>
@@ -41,13 +41,13 @@
 				<info>ListItem.Year</info>
 			</control>
 			<control type="label">
-				<posx>350</posx>
+				<posx>433</posx>
 				<posy>45</posy>
 				<width>215</width>
 				<height>76</height>
 				<aligny>center</aligny>
-				<font>Font_InfoGenre</font>
-				<textcolor>InfoGenre</textcolor>
+				<font>Font_InfoYear</font>
+				<textcolor>InfoYear</textcolor>
 				<info>ListItem.Duration</info>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
@@ -59,7 +59,7 @@
 				<info>ListItem.StarRating</info>
 			</control>
 			<control type="label">
-				<posx>-10</posx>
+				<posx>0</posx>
 				<posy>140</posy>
 				<width>150</width>
 				<font>Font_OSDDetail</font>
@@ -76,7 +76,7 @@
 				<info>ListItem.Director</info>
 			</control>
 			<control type="label">
-				<posx>-10</posx>
+				<posx>0</posx>
 				<posy>167</posy>
 				<width>150</width>
 				<font>Font_OSDDetail</font>
@@ -93,7 +93,7 @@
 				<info>ListItem.Writer</info>
 			</control>
 			 <control type="label">
-				<posx>-10</posx>
+				<posx>0</posx>
 				<posy>200</posy>
 				<width>150</width>
 				<font>Font_OSDDetail</font>

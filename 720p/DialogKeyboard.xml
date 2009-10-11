@@ -1,23 +1,14 @@
+<!--Alaska-->
+
 <window id="103">
 	<defaultcontrol>305</defaultcontrol>
 	<include>Animation_ZoomOutZoomIn</include>
 	<controls>
-	
+
 		<control type="label">
 			<include>WindowID</include>
 			<label>DialogKeyboard.xml</label>
-				<visible>Skin.HasSetting(debugmode)</visible>
-		</control>
-  
-		<control type="label" id="311">
-			<description>Dialog heading</description>
-			<posx>0</posx>
-			<posy>186</posy>
-			<width>1280</width>
-			<height>22</height>
-			<font>Font_KeyboardTitle</font>
-			<align>center</align>
-			<include>dialogheadingcolor</include>
+			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 
 		<control type="group">
@@ -37,13 +28,24 @@
 
 			<control type="label" id="310">
 				<description>Edit Text</description>
-				<posx>7</posx>
+				<posx>108</posx>
 				<posy>243</posy>
-				<width>531</width>
+				<width>420</width>
 				<height>22</height>
-				<font>Font_KeyboardEdit</font>
+				<include>Objects_KeyOffVars</include>
 				<align>center</align>
 				<onup>49</onup>
+				<include>dialogheadingcolor</include>
+			</control>
+
+			<control type="label" id="311">
+				<description>Dialog heading</description>
+				<posx>21</posx>
+				<posy>243</posy>
+				<width>80</width>
+				<height>22</height>
+				<include>Objects_KeyOffVars</include>
+				<align>center</align>
 				<include>dialogheadingcolor</include>
 			</control>
 
@@ -172,7 +174,7 @@
 
 					<posy>42</posy>
 					<control type="button" id="307">
-						<description>Blank button</description>
+						<description>'IP' button</description>
 						<posx>0</posx>
 						<onleft>80</onleft>
 						<onright>81</onright>
@@ -289,7 +291,7 @@
 
 					<posy>84</posy>
 					<control type="button" id="303">
-						<description>Blank button</description>
+						<description>'Caps' button</description>
 						<posx>0</posx>
 						<onleft>304</onleft>
 						<onright>65</onright>
@@ -407,7 +409,7 @@
 
 					<posy>126</posy>
 					<control type="button" id="302">
-						<description>'IP' button</description>
+						<description>'SHIFT' button</description>
 						<posx>0</posx>
 						<onleft>8</onleft>
 						<onright>90</onright>
@@ -527,24 +529,24 @@
 					</control>
 
 					<control type="button" id="305">
-						<description>'back' button</description>
+						<description>'prev' button</description>
 						<posx>336</posx>
 						<onleft>32</onleft>
 						<onright>306</onright>
 						<onup>8</onup>
 						<ondown>55</ondown>
-						<label>Y</label>
+						<label>&lt;</label>
 						<include>Objects_DoubleKeyOffSymbol</include>
 					</control>
 
 					<control type="button" id="306">
-						<description>'forward' button</description>
+						<description>'next' button</description>
 						<posx>420</posx>
 						<onleft>305</onleft>
 						<onright>300</onright>
 						<onup>8</onup>
 						<ondown>57</ondown>
-						<label>Z</label>
+						<label>&gt;</label>
 						<include>Objects_DoubleKeyOffSymbol</include>
 					</control>
 
@@ -650,7 +652,7 @@
 					</control>
 
 					<control type="button">
-						<description>'1' button</description>
+						<description>'q' button</description>
 						<posx>84</posx>
 						<label>$INFO[Control.GetLabel(81)]</label>
 						<visible>Control.HasFocus(81)</visible>
@@ -658,7 +660,7 @@
 					</control>
 
 					<control type="button">
-						<description>'2' button</description>
+						<description>'w' button</description>
 						<posx>126</posx>
 						<label>$INFO[Control.GetLabel(87)]</label>
 						<visible>Control.HasFocus(87)</visible>
@@ -666,7 +668,7 @@
 					</control>
 
 					<control type="button">
-						<description>'3' button</description>
+						<description>'e' button</description>
 						<posx>168</posx>
 						<label>$INFO[Control.GetLabel(69)]</label>
 						<visible>Control.HasFocus(69)</visible>
@@ -674,7 +676,7 @@
 					</control>
 
 					<control type="button">
-						<description>'4' button</description>
+						<description>'r' button</description>
 						<posx>210</posx>
 						<label>$INFO[Control.GetLabel(82)]</label>
 						<visible>Control.HasFocus(82)</visible>
@@ -682,7 +684,7 @@
 					</control>
 
 					<control type="button">
-						<description>'5' button</description>
+						<description>'t' button</description>
 						<posx>252</posx>
 						<label>$INFO[Control.GetLabel(84)]</label>
 						<visible>Control.HasFocus(84)</visible>
@@ -690,7 +692,7 @@
 					</control>
 
 					<control type="button">
-						<description>'6' button</description>
+						<description>'y' button</description>
 						<posx>294</posx>
 						<label>$INFO[Control.GetLabel(89)]</label>
 						<visible>Control.HasFocus(89)</visible>
@@ -698,7 +700,7 @@
 					</control>
 
 					<control type="button">
-						<description>'7' button</description>
+						<description>'u' button</description>
 						<posx>336</posx>
 						<label>$INFO[Control.GetLabel(85)]</label>
 						<visible>Control.HasFocus(85)</visible>
@@ -706,7 +708,7 @@
 					</control>
 
 					<control type="button">
-						<description>'8' button</description>
+						<description>'i' button</description>
 						<posx>378</posx>
 						<label>$INFO[Control.GetLabel(73)]</label>
 						<visible>Control.HasFocus(73)</visible>
@@ -714,7 +716,7 @@
 					</control>
 
 					<control type="button">
-						<description>'9' button</description>
+						<description>'o' button</description>
 						<posx>420</posx>
 						<label>$INFO[Control.GetLabel(79)]</label>
 						<visible>Control.HasFocus(79)</visible>
@@ -722,7 +724,7 @@
 					</control>
 
 					<control type="button">
-						<description>'0' button</description>
+						<description>'p' button</description>
 						<posx>462</posx>
 						<label>$INFO[Control.GetLabel(80)]</label>
 						<visible>Control.HasFocus(80)</visible>
@@ -736,7 +738,7 @@
 
 					<posy>84</posy>
 					<control type="button">
-						<description>Blank button</description>
+						<description>'Caps' button</description>
 						<posx>0</posx>
 						<label>$INFO[Control.GetLabel(303)]</label>
 						<visible>Control.HasFocus(303)</visible>
@@ -744,7 +746,7 @@
 					</control>
 
 					<control type="button">
-						<description>'1' button</description>
+						<description>'a' button</description>
 						<posx>84</posx>
 						<label>$INFO[Control.GetLabel(65)]</label>
 						<visible>Control.HasFocus(65)</visible>
@@ -752,7 +754,7 @@
 					</control>
 
 					<control type="button">
-						<description>'2' button</description>
+						<description>'s' button</description>
 						<posx>126</posx>
 						<label>$INFO[Control.GetLabel(83)]</label>
 						<visible>Control.HasFocus(83)</visible>
@@ -760,7 +762,7 @@
 					</control>
 
 					<control type="button">
-						<description>'3' button</description>
+						<description>'d' button</description>
 						<posx>168</posx>
 						<label>$INFO[Control.GetLabel(68)]</label>
 						<visible>Control.HasFocus(68)</visible>
@@ -768,7 +770,7 @@
 					</control>
 
 					<control type="button">
-						<description>'4' button</description>
+						<description>'f' button</description>
 						<posx>210</posx>
 						<label>$INFO[Control.GetLabel(70)]</label>
 						<visible>Control.HasFocus(70)</visible>
@@ -776,7 +778,7 @@
 					</control>
 
 					<control type="button">
-						<description>'5' button</description>
+						<description>'g' button</description>
 						<posx>252</posx>
 						<label>$INFO[Control.GetLabel(71)]</label>
 						<visible>Control.HasFocus(71)</visible>
@@ -784,7 +786,7 @@
 					</control>
 
 					<control type="button">
-						<description>'6' button</description>
+						<description>'h' button</description>
 						<posx>294</posx>
 						<label>$INFO[Control.GetLabel(72)]</label>
 						<visible>Control.HasFocus(72)</visible>
@@ -792,7 +794,7 @@
 					</control>
 
 					<control type="button">
-						<description>'7' button</description>
+						<description>'j' button</description>
 						<posx>336</posx>
 						<label>$INFO[Control.GetLabel(74)]</label>
 						<visible>Control.HasFocus(74)</visible>
@@ -800,7 +802,7 @@
 					</control>
 
 					<control type="button">
-						<description>'8' button</description>
+						<description>'k' button</description>
 						<posx>378</posx>
 						<label>$INFO[Control.GetLabel(75)]</label>
 						<visible>Control.HasFocus(75)</visible>
@@ -808,7 +810,7 @@
 					</control>
 
 					<control type="button">
-						<description>'9' button</description>
+						<description>'l' button</description>
 						<posx>420</posx>
 						<label>$INFO[Control.GetLabel(76)]</label>
 						<visible>Control.HasFocus(76)</visible>
@@ -816,7 +818,7 @@
 					</control>
 
 					<control type="button">
-						<description>'0' button</description>
+						<description>'@' button</description>
 						<posx>462</posx>
 						<label>$INFO[Control.GetLabel(304)]</label>
 						<visible>Control.HasFocus(304)</visible>
@@ -830,7 +832,7 @@
 
 					<posy>126</posy>
 					<control type="button">
-						<description>Blank button</description>
+						<description>'Shift' button</description>
 						<posx>0</posx>
 						<label>$INFO[Control.GetLabel(302)]</label>
 						<visible>Control.HasFocus(302)</visible>
@@ -838,7 +840,7 @@
 					</control>
 
 					<control type="button">
-						<description>'1' button</description>
+						<description>'z' button</description>
 						<posx>84</posx>
 						<label>$INFO[Control.GetLabel(90)]</label>
 						<visible>Control.HasFocus(90)</visible>
@@ -846,7 +848,7 @@
 					</control>
 
 					<control type="button">
-						<description>'2' button</description>
+						<description>'x' button</description>
 						<posx>126</posx>
 						<label>$INFO[Control.GetLabel(88)]</label>
 						<visible>Control.HasFocus(88)</visible>
@@ -854,7 +856,7 @@
 					</control>
 
 					<control type="button">
-						<description>'3' button</description>
+						<description>'c' button</description>
 						<posx>168</posx>
 						<label>$INFO[Control.GetLabel(67)]</label>
 						<visible>Control.HasFocus(67)</visible>
@@ -862,7 +864,7 @@
 					</control>
 
 					<control type="button">
-						<description>'4' button</description>
+						<description>'v' button</description>
 						<posx>210</posx>
 						<label>$INFO[Control.GetLabel(86)]</label>
 						<visible>Control.HasFocus(86)</visible>
@@ -870,7 +872,7 @@
 					</control>
 
 					<control type="button">
-						<description>'5' button</description>
+						<description>'b' button</description>
 						<posx>252</posx>
 						<label>$INFO[Control.GetLabel(66)]</label>
 						<visible>Control.HasFocus(66)</visible>
@@ -878,7 +880,7 @@
 					</control>
 
 					<control type="button">
-						<description>'6' button</description>
+						<description>'n' button</description>
 						<posx>294</posx>
 						<label>$INFO[Control.GetLabel(78)]</label>
 						<visible>Control.HasFocus(78)</visible>
@@ -886,7 +888,7 @@
 					</control>
 
 					<control type="button">
-						<description>'7' button</description>
+						<description>'m' button</description>
 						<posx>336</posx>
 						<label>$INFO[Control.GetLabel(77)]</label>
 						<visible>Control.HasFocus(77)</visible>
@@ -908,7 +910,7 @@
 
 					<posy>168</posy>
 					<control type="button">
-						<description>Blank button</description>
+						<description>'Done' button</description>
 						<posx>0</posx>
 						<label>$INFO[Control.GetLabel(300)]</label>
 						<visible>Control.HasFocus(300)</visible>
@@ -916,7 +918,7 @@
 					</control>
 
 					<control type="button">
-						<description>'1' button</description>
+						<description>'Space' button</description>
 						<posx>84</posx>
 						<label>$INFO[Control.GetLabel(32)]</label>
 						<include>Objects_SpaceBarOn</include>
@@ -924,7 +926,7 @@
 					</control>
 
 					<control type="button">
-						<description>'2' button</description>
+						<description>'Prev' button</description>
 						<posx>336</posx>
 						<label>$INFO[Control.GetLabel(305)]</label>
 						<include>Objects_DoubleKeyOnSymbol</include>
@@ -932,7 +934,7 @@
 					</control>
 
 					<control type="button">
-						<description>'3' button</description>
+						<description>'Next' button</description>
 						<posx>420</posx>
 						<label>$INFO[Control.GetLabel(306)]</label>
 						<include>Objects_DoubleKeyOnSymbol</include>
