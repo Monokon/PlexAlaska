@@ -442,7 +442,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/movies//</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/tvshows//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -463,11 +463,17 @@
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/pictures//</imagepath>
+					<visible>!Skin.HasSetting(osximages)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/pictures//</imagepath>
+					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/pictures//</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/pictures/menuitem//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -853,7 +859,7 @@
 		<height>260</height>
 		<posx>10</posx>
 		<posy>10</posy>
-		<timeperimage>20000</timeperimage>
+		<timeperimage>7000</timeperimage>
 		<randomize>true</randomize>
 		<fadetime>1200</fadetime>
 		<aspectratio align="top" scalediffuse="false">scale</aspectratio>
@@ -1075,7 +1081,7 @@
 	<include name="Filter_MenuItem">
 		<control type="image">
 			<include>Dimensions_MenuItem</include>
-			<texture>backdrops/menuitemcolordiffuse2.png</texture>
+			<texture>backdrops/menuitemcolordiffuse.png</texture>
 			<colordiffuse>backgroundColor</colordiffuse>
 			<visible>Skin.HasSetting(osximages)</visible>
 		</control>
