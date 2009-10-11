@@ -30,7 +30,7 @@
 				<info>ListItem.Title</info>
 			</control>
 			<control type="label">
-				<posx>188</posx>
+				<posx>271</posx>
 				<posy>45</posy>
 				<width>141</width>
 				<height>76</height>
@@ -41,22 +41,31 @@
 				<info>ListItem.Year</info>
 			</control>
 			<control type="label">
-				<posx>350</posx>
+				<posx>433</posx>
 				<posy>45</posy>
 				<width>215</width>
 				<height>76</height>
 				<aligny>center</aligny>
-				<font>Font_InfoGenre</font>
-				<textcolor>InfoGenre</textcolor>
+				<font>Font_InfoYear</font>
+				<textcolor>InfoYear</textcolor>
 				<info>ListItem.Duration</info>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="image">
 				<posy>66</posy>
-				<width>166</width>
-				<height>38</height>
-				<texture>flags/Rating/mpaa_restricted.png</texture>
-				<colordiffuse>B9202020</colordiffuse>
+				<posx>-8</posx>
+				<width>182</width>
+				<height>33</height>
+				<info>ListItem.StarRating</info>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>140</posy>
+				<width>150</width>
+				<font>Font_OSDDetail</font>
+				<align>left</align>
+				<aligny>center</aligny>
+	<!--LOC-->	<label>DIRECTED BY:</label>
 			</control>
 			<control type="label">
 				<posx>125</posx>
@@ -67,12 +76,30 @@
 				<info>ListItem.Director</info>
 			</control>
 			<control type="label">
+				<posx>0</posx>
+				<posy>167</posy>
+				<width>150</width>
+				<font>Font_OSDDetail</font>
+				<align>left</align>
+				<aligny>center</aligny>
+	<!--LOC-->	<label>WRITTEN BY:</label>
+			</control>
+			<control type="label">
 				<posx>125</posx>
 				<posy>154</posy>
 				<width>550</width>
 				<font>Font_InfoDetails</font>
 				<textcolor>InfoDetails</textcolor>
 				<info>ListItem.Writer</info>
+			</control>
+			 <control type="label">
+				<posx>0</posx>
+				<posy>200</posy>
+				<width>150</width>
+				<font>Font_OSDDetail</font>
+				<align>left</align>
+				<aligny>center</aligny>
+	<!--LOC-->	<label>STARRING:</label>
 			</control>
 			<control type="textbox">
 				<posx>125</posx>
@@ -145,14 +172,7 @@
 			</control>
 		</control>
 	<!-- view options -->
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture>filter.png</texture>
-			<visible>ControlGroup(7001).HasFocus</visible>
-			<colordiffuse>f1FFFFFF</colordiffuse>
-			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
-		</control>
+		<include>Global_ContextFilter</include>
 		<control type="grouplist" id="7001">
 			<width>1000</width>
 			<height>40</height>

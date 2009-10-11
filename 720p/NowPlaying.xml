@@ -4,11 +4,11 @@
   <controls>
 	
 <!--artist slideshow if fanart exist in define folder--> 
-
-		<control type="image">
+	<include>Global_Background</include>
+		<!--<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>filter.png</texture>
-		</control>
+		</control>-->
 
 	<control type="multiimage">
 		  <description>artist slideshow</description>
@@ -36,7 +36,7 @@
 		<texture>osd/black_bg.png</texture>
 	</control>
 
-		<control type="image">
+		<!--<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>filter.png</texture>
 			<animation effect="fade" start="100" end="90" time="400" condition="Player.HasAudio + !Skin.HasSetting(increaseFanartVisibility)">Conditional</animation>
@@ -45,7 +45,9 @@
 			<animation effect="fade" start="100" end="60" time="400" condition="Player.HasAudio + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility40)">Conditional</animation>
 			<animation effect="fade" start="100" end="50" time="400" condition="Player.HasAudio + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility50)">Conditional</animation>
 			<visible>!Skin.HasSetting(disablenowplayingfilter)</visible>			
-		</control>
+		</control>-->
+	<include condition="!Skin.HasSetting(disablenowplayingfilter)">Global_Filter</include>
+	<include condition="!Skin.HasSetting(disablenowplayingfilter)">Global_ContextFilter</include>
 
 	<control type="group">
 		<posx>0</posx>

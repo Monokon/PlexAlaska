@@ -18,17 +18,10 @@
 				<effect type="slide" start="0,0" end="0,300" time="600" tween="cubic" easing="out" />
 				<effect type="fade" start="100" end="0" time="600" />
 			</animation>
-			<control type="image">
-				<posx>-5</posx>
-				<posy>0</posy>
-				<width>1290</width>
-				<height>165</height>
-				<texture>filter.png</texture>
-				<aspectratio aligny="bottom">scale</aspectratio>
-			</control>
+			<include>OSD_Back</include>
 		<!--First Button Group-->
 			<control type="grouplist" id="2001">
-				<visible allowhiddenfocus="true">Controlgroup(2001).HasFocus</visible>
+				<visible allowhiddenfocus="true">Controlgroup(2001).HasFocus + !Window.IsVisible(125)</visible>
 				<include>Animation_CommonFade</include>
 				<posx>925</posx>
 				<posy>25</posy>
@@ -47,6 +40,15 @@
 					<texturefocus border="1">osd/button_more_fo.png</texturefocus>
 					<texturenofocus border="1">osd/button_more_nf.png</texturenofocus>
 					<onclick>SetFocus(2002)</onclick>
+				</control>
+				<control type="button" id="7">
+					<description>DVD MENU</description>
+					<height>75</height>
+					<width>75</width>
+					<texturefocus border="1">osd/button_dvd_fo.png</texturefocus>
+					<texturenofocus border="1">osd/button_dvd_nf.png</texturenofocus>
+					<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
+					<visible>VideoPlayer.HasMenu</visible>
 				</control>
 				<control type="button" id="3">
 					<description>Rewind</description>
@@ -83,7 +85,7 @@
 			</control>
 		<!--Second Button Group-->
 			<control type="grouplist" id="2002">
-				<visible allowhiddenfocus="true">Controlgroup(2002).HasFocus</visible>
+				<visible allowhiddenfocus="true">Controlgroup(2002).HasFocus + !Window.IsVisible(125)</visible>
 				<include>Animation_CommonFade</include>
 				<posx>795</posx>
 				<posy>25</posy>
@@ -147,12 +149,13 @@
 					<description>audio Settings</description>
 					<height>75</height>
 					<width>75</width>
-					<texturefocus border="1">osd/button_settings_fo.png</texturefocus>
-					<texturenofocus border="1">osd/button_settings_nf.png</texturenofocus>
+					<texturefocus border="1">osd/button_audio_fo.png</texturefocus>
+					<texturenofocus border="1">osd/button_audio_nf.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(124)</onclick>
 				</control>
 			</control>
 			<control type="progress" id="23">
+				<visible>!Window.IsVisible(125)</visible>
 				<texturebg>osd/osd_progress_back.png</texturebg>
 				<lefttexture>osd/osd_progress_left.png</lefttexture>
 				<midtexture>osd/osd_progress_mid.png</midtexture>
@@ -164,39 +167,42 @@
 				<height>19</height>
 			</control>
 			<control type="group">
+				<visible>!Window.IsVisible(125)</visible>
 				<posx>195</posx>
-				<posy>38</posy>
+				<posy>28</posy>
 				<animation effect="slide" start="130,0" end="130,0" time="0" tween="cubic" easing="out" condition="VideoPlayer.Content(episodes)">Conditional</animation>
 				<control type="label">
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>510</width>
-					<font>Font_NowPlayingTrack</font>
-					<label>$INFO[VideoPlayer.Title]</label>
+					<height>40</height>
+					<font>Font_PosterTitle</font>
+					<label>$INFO[VideoPlayer.Title] [COLOR OSDPlayingAlbum]$INFO[VideoPlayer.Year][/COLOR]</label>
 					<textcolor>NowPlayingTrack</textcolor>
 				</control>
 				<control type="label">
 					<posx>0</posx>
-					<posy>26</posy>
+					<posy>40</posy>
 					<width>510</width>
-					<font>Font_NowPlayingArtist</font>
+					<font>Font_ListDetail</font>
 					<label>[B]$INFO[VideoPlayer.Director][/B] $INFO[VideoPlayer.Year]</label>
 					<textcolor>NowPlayingArtist</textcolor>
 					<visible>!VideoPlayer.Content(episodes)</visible>
 				</control>
 				<control type="label">
 					<posx>0</posx>
-					<posy>26</posy>
+					<posy>40</posy>
 					<width>510</width>
-					<font>Font_NowPlayingArtist</font>
-					<label>[B]$INFO[VideoPlayer.TVShowTitle][/B]</label>
-					<textcolor>NowPlayingArtist</textcolor>
+				<textcolor>OSDPlayingTrack</textcolor>
+				<font>Font_NowPlayingTrack</font>
+					<label>$INFO[VideoPlayer.TVShowTitle]</label>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
 			</control>
 		</control>
 	<!--Cover / Now Playing-->
 		<control type="group">
+			<visible>!Window.IsVisible(125)</visible>
 			<animation type="WindowOpen">
 				<effect type="slide" start="-300,0" end="0,0" time="600" tween="cubic" easing="out" />
 				<effect type="fade" start="0" end="100" time="600" />

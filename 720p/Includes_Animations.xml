@@ -2,56 +2,7 @@
 
 <includes>
 
-	<!-- HomeScreen animations -->
-
-	<include name="Animation_homescroller">
-		<animation type="Focus" reversible="false">
-			<effect type="fade" start="50" end="100" time="500" delay="0"/>
-			<effect type="zoom" start="0,0,750,150" end="100" center="auto" time="200" delay="0"/>
-		</animation>
-	</include>
-
-	<include name="Animation_homebigfont">
-		<animation type="Conditional" condition="Container(300).HasFocus(1)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
-		</animation>
-		<animation type="Conditional" condition="Container(300).HasFocus(2)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
-		</animation>
-		<animation type="Conditional" condition="Container(300).HasFocus(3)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
-		</animation>
-		<animation type="Conditional" condition="Container(300).HasFocus(4)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
-		</animation>
-		<animation type="Conditional" condition="Container(300).HasFocus(5)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
-		</animation>
-		<animation type="Conditional" condition="Container(300).HasFocus(6)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
-		</animation>
-		<animation type="Conditional" condition="Container(300).HasFocus(7)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
-		</animation>
-		<animation type="Conditional" condition="Container(300).HasFocus(8)" reversible="false">
-			<effect type="fade" start="0" end="80" time="1200" delay="0"/>
-			<effect type="zoom" start="50" end="100" center="auto" time="400" delay="0"/>
-		</animation>
-	</include>
-
-	<include name="Animation_homebackground">
-		<animation effect="fade" start="0" end="100" time="400" delay="100">Visible</animation>
-		<animation effect="fade" start="100" end="0" time="400">Hidden</animation>	
-	</include>
-
-	<!-- Common animations -->
+<!-- Common animations -->
 
 	<include name="Animation_CommonFade">
 		<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>	
@@ -73,7 +24,7 @@
 		<animation effect="fade" start="0" end="100" time="200">Visible</animation>	
 	</include>	
 
-	<!-- Window transition animations -->
+<!-- Window transition animations -->
 
 	<include name="Animation_ZoomOutZoomIn">
 		<animation type="WindowOpen">
@@ -139,8 +90,41 @@
 			<effect type="fade" start="100" end="0" time="400" />
 		</animation>		
 	</include>
+	
+	<include name="Animation_SlideAcrossToRight">
+		<animation type="WindowOpen" reversible="false">
+			<effect type="slide" start="-200,0" end="0,0" time="400" tween="cubic" easing="out" />
+			<effect type="fade" start="0" end="100" time="400" />
+		</animation>
+		<animation type="WindowClose" reversible="false">
+			<effect type="slide" start="0,0" end="200,0" time="400" tween="cubic" easing="in" />
+			<effect type="fade" start="100" end="0" time="400" />
+		</animation>			
+	</include>
+	
+	<include name="Animation_SlideAcrossToLeft">
+		<animation type="WindowOpen" reversible="false">
+			<effect type="slide" start="200,0" end="0,0" time="400" tween="cubic" easing="out" />
+			<effect type="fade" start="0" end="100" time="400" />
+		</animation>
+		<animation type="WindowClose" reversible="false">
+			<effect type="slide" start="0,0" end="-200,0" time="400" tween="cubic" easing="in" />
+			<effect type="fade" start="100" end="0" time="400" />
+		</animation>			
+	</include>
+	
+	<include name="Animation_ZoomInFadeOut">
+		<animation type="WindowOpen" reversible="false">
+			<effect type="fade" start="0" end="100" time="600" delay="100" />
+			<effect type="zoom" start="50,50" end="100,100" center="auto" time="500" delay="100" tween="back" asing="out"/>
+		</animation>
+		<animation  type="WindowClose" reversible="false">
+			<effect type="fade" start="100" end="0" time="400" delay="500" />
+			<effect type="zoom" end="50,50" start="100,100" center="auto" time="500" delay="500" />
+		</animation>
+	</include>
 
-	<!-- Info dialog animations -->
+<!-- Info dialog animations -->
 
 	<include name="Animation_HiddenByInfo">
 		<animation effect="fade" start="100" end="0" time="200" condition="Window.IsActive(2003)">Conditional</animation>	
@@ -157,7 +141,7 @@
 		<animation effect="slide" start="0,0" end="-242,0" time="400" tween="cubic" easing="inout" condition="Window.IsActive(2003)">Conditional</animation>	
 	</include>
 
-	<!-- Browser animations -->
+<!-- Browser animations -->
 
 	<include name="Animation_EpisodeFloat">
 		<animation effect="slide" end="0,10" time="200" condition="Container(51).Row(0)">Conditional</animation>
@@ -193,7 +177,7 @@
 		<animation effect="slide" end="200,0" time="300" tween="cubic" easing="inout" condition="Container(50).Column(2)">Conditional</animation>			
 		<animation effect="slide" end="400,0" time="300" tween="cubic" easing="inout" condition="Container(50).Column(1)">Conditional</animation>		
 		<animation effect="slide" end="600,0" time="300" tween="cubic" easing="inout" condition="Container(50).Column(0)">Conditional</animation>		
-	</include>	
+	</include>
 
 	<include name="Animation_ListFloat">
 		<animation effect="slide" end="0,160" time="200" condition="Container(53).Row(0)">Conditional</animation>	
@@ -218,7 +202,7 @@
 		<animation effect="slide" end="0,-600" time="200" condition="Container(53).Row(19)">Conditional</animation>			
 	</include>	
 
-	<!-- Settings animations -->
+<!-- Settings animations -->
 	<include name="Animation_Setting_Heading">
 		<animation type="WindowOpen" reversible="false" >
 			<effect type="slide" start="-300,0" end="0,0" time="400" tween="cubic" easing="out" />
@@ -246,9 +230,8 @@
 		<animation effect="slide" end="-350,0" time="300" condition="Container(300).HasFocus(5)">Conditional</animation>		
 		<animation effect="slide" end="-700,0" time="300" condition="Container(300).HasFocus(6)">Conditional</animation>			
 		<animation effect="slide" end="-1050,0" time="300" condition="Container(300).HasFocus(7)">Conditional</animation>
-		<animation effect="slide" end="-1400,0" time="300" condition="Container(300).HasFocus(8)">Conditional</animation>			
+		<animation effect="slide" end="-1400,0" time="300" condition="Container(300).HasFocus(8)">Conditional</animation>
 		<animation effect="slide" end="-1750,0" time="300" condition="Container(300).HasFocus(9)">Conditional</animation>
-
 	</include>	
 
 </includes>

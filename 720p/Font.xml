@@ -145,7 +145,7 @@
 			<name>Font_EpisodePlot</name>
 			<filename>alaska_light_nocaps.ttf</filename>
 			<size>21</size>
-			<linespacing>1</linespacing>
+			<linespacing>0.7</linespacing>
 		</font>	
 
 		<font>
@@ -292,6 +292,74 @@
 			<filename>alaska_light.ttf</filename>
 			<size>17</size>
 		</font>	
+		<font>
+			<name>Font_FileBrowserHeading</name>
+			<filename>alaska_black.ttf</filename>
+			<size>42</size>
+		</font>
+		<font>
+			<name>Font_FileBrowserHeading</name>
+			<filename>alaska_black.ttf</filename>
+			<size>42</size>
+		</font>
+
+		<font>
+			<name>Font_ListSmall</name>
+			<filename>alaska_light.ttf</filename>
+			<size>20</size>
+		</font>
+		
+		<!--#Pragma Keyboard -->
+		<font>
+			<name>Font_KeyboardKeys</name>
+			<filename>alaska_player.ttf</filename>
+			<size>19</size>
+		</font>
+		<font>
+			<name>Font_KeyboardTitle</name>
+			<filename>alaska_title.ttf</filename>
+			<size>19</size>
+		</font>
+		<font>
+			<name>Font_KeyboardShapes</name>
+			<filename>alaska_shapes.ttf</filename>
+			<size>19</size>
+		</font>
+		<font>
+			<name>Font_ListPlay</name>
+			<filename>alaska_shapes.ttf</filename>
+			<size>60</size>
+		</font>
+		<font>
+			<name>Font_KeyboardEdit</name>
+			<filename>alaska_player.ttf</filename>
+			<size>21</size>
+		</font>
+		
+		<!--#Pragma FileManager-->
+		<font>
+			<name>Font_FileManagerItemCount</name>
+			<filename>alaska_black.ttf</filename>
+			<size>20</size>
+		</font>	
+		
+		<!--#Pragma Favorites-->
+		<font>
+			<name>Font_FavoritesLabel</name>
+			<filename>alaska_black.ttf</filename>
+			<size>50</size>
+		</font>
+		<font>
+			<name>Font_FavoritesItemLabel</name>
+			<filename>alaska_black.ttf</filename>
+			<size>20</size>
+		</font>
+		<font>
+			<name>Font_FavoritesFocusedItemLabel</name>
+			<filename>alaska_black.ttf</filename>
+			<size>30</size>
+		</font>
+		
 
 	</fontset>
 </fonts>

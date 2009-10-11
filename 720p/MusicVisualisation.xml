@@ -1,3 +1,5 @@
+<!--Alaska-->
+
 <window id="2006">
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -12,13 +14,21 @@
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture>filter.png</texture>
+			<texture>backdrops/background.png</texture>
 			<colordiffuse>ccFFFFFF</colordiffuse>
 			<animation effect="fade" start="100" end="0" time="400" >WindowOpen</animation>
 			<animation effect="fade" start="0" end="100" time="200" delay="0">WindowClose</animation>
 		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture>backdrops/backgroundcolordiffuse.png</texture>
+			<colordiffuse>backgroundColor</colordiffuse>
+			<animation effect="fade" start="100" end="0" time="400" >WindowOpen</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="0">WindowClose</animation>
+		</control>
+
 		<control type="group">
-			<visible>Player.ShowInfo|Window.IsActive(120)|player.paused</visible>
+			<visible>Player.ShowInfo | Window.IsActive(120) | player.paused</visible>
 			<posx>0</posx>
 			<posy>560</posy>
 			<width>1280</width>
@@ -31,14 +41,7 @@
 				<effect type="slide" start="0,0" end="0,300" time="600" tween="cubic" easing="out" />
 				<effect type="fade" start="100" end="0" time="600" />
 			</animation>
-			<control type="image">
-				<posx>-5</posx>
-				<posy>0</posy>
-				<width>1290</width>
-				<height>165</height>
-				<texture>filter.png</texture>
-				<aspectratio aligny="bottom">scale</aspectratio>
-			</control>
+			<include>OSD_Back</include>
 			<control type="progress" id="23">
 				<texturebg>osd/osd_progress_back.png</texturebg>
 				<lefttexture>osd/osd_progress_left.png</lefttexture>
@@ -71,14 +74,14 @@
 				<texture>$INFO[MusicPlayer.Cover]</texture>
 				<bordertexture border="8">common/thumb_border.png</bordertexture>
 				<bordersize>8</bordersize>
-				<animation type="Conditional" condition="Window.IsActive(2006)|Window.IsActive(120)">
+				<animation type="Conditional" condition="Window.IsActive(2006) | Window.IsActive(120)">
 					<effect type="zoom" center="35,180" start="100" end="155" time="400" tween="cubic" easing="out" />
 					<effect type="slide" start="0,0" end="12,5" time="400" tween="cubic" easing="out" />
 				</animation>
 			</control>
 		</control>
 		<control type="group">
-			<visible>Window.IsActive(120)|Player.ShowInfo|player.paused</visible>
+			<visible>Window.IsActive(120) | Player.ShowInfo | player.paused</visible>
 			<posx>0</posx>
 			<posy>578</posy>
 			<width>1280</width>

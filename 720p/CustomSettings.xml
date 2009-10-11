@@ -4,20 +4,7 @@
 	<defaultcontrol>9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-		<include>Global_Filter</include>
-		<control type="label">
-			<include>WindowID</include>
-			<label>CustomSettings.xml</label>
-			<visible>Skin.HasSetting(debugmode)</visible>
-		</control>
-		<control type="label">
-			<include>Animation_CommonFadeNoHide</include>
-			<posx>150</posx>
-			<posy>125</posy>
-			<font>Font_SettingsHeading</font>
-			<textcolor>SettingsHeading</textcolor>
-<!-- LOC --><label>CUSTOMISE</label>
-		</control>
+		<include>Global_Background</include>
 		<control type="list" id="9000">
 			<description>List</description>
 			<posx>150</posx>
@@ -28,6 +15,7 @@
 			<onright>9010</onright>
 			<onup>9000</onup>
 			<ondown>9000</ondown>
+			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_CommonFadeNoHide</include>
 			<itemlayout height="34" width="300">
 				<control type="label">
@@ -87,6 +75,7 @@
 		<control type="group" id="9010">
 			<posy>175</posy>
 			<posx>360</posx>
+			<include>Animation_ZoomedByMenu</include>
 			<control type="grouplist" id="9001">
 				<visible>Container(9000).Hasfocus(1)</visible>
 				<width>740</width>
@@ -129,6 +118,17 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(largeRSS)</onclick>
 					<selected>Skin.HasSetting(largeRSS)</selected>
+				</control>
+				<control type="radiobutton" id="103">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+<!-- LOC -->		<label>only show RSS on home screen</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(RSS_only_on_home)</onclick>
+					<selected>Skin.HasSetting(RSS_only_on_home)</selected>
 				</control>
 			</control>
 			<control type="grouplist" id="9002">
@@ -186,6 +186,17 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(homequit)</onclick>
 					<selected>Skin.HasSetting(homequit)</selected>
+				</control>
+				<control type="radiobutton" id="206">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+<!-- LOC -->		<label>Enable OSX overlays for default home menu</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(osximages)</onclick>
+					<selected>Skin.HasSetting(osximages)</selected>
 				</control>
 			</control>
 			<control type="grouplist" id="9003">
@@ -247,23 +258,17 @@
 
 				<control type="radiobutton" id="4011">
 					<include>FanartVisibilityButtons</include>
-					<label>+ 20% visibility</label>
-					<onclick>Skin.ToggleSetting(increaseFanartVisibility20)</onclick>
-					<selected>Skin.HasSetting(increaseFanartVisibility20)</selected>
-				</control>
-				<control type="radiobutton" id="4012">
-					<include>FanartVisibilityButtons</include>
 					<label>+ 30% visibility</label>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility30)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility30)</selected>
 				</control>
-				<control type="radiobutton" id="4013">
+				<control type="radiobutton" id="4012">
 					<include>FanartVisibilityButtons</include>
 					<label>+ 40% visibility</label>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility40)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility40)</selected>
 				</control>
-				<control type="radiobutton" id="4014">
+				<control type="radiobutton" id="4013">
 					<include>FanartVisibilityButtons</include>
 					<label>+ 50% visibility</label>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility50)</onclick>
@@ -353,9 +358,16 @@
 				</control>
 			</control>
 		</control>
+		<include>Global_ContextFilter</include>
 		<include>Global_Time</include>
 		<include>Setting_Heading</include>
 		<include>Global_RSS</include>
+	<!-- debug -->
 		<include>Object_DebugGrid</include>
+		<control type="label">
+			<include>WindowID</include>
+			<label>CustomSettings.xml</label>
+			<visible>Skin.HasSetting(debugmode)</visible>
+		</control>
 	</controls>
 </window>

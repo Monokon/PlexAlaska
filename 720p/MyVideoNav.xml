@@ -4,9 +4,7 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-
 		<include>Global_Background</include>
-	
 		<control type="largeimage">
 			<include>Dimensions_Fullscreen</include>
 			<fadetime>400</fadetime>
@@ -20,7 +18,6 @@
 			<texture>$INFO[Fanart.Image]</texture>
 			<include>Animation_CommonFade</include>
 		</control>
-
 		<include>Global_Filter</include>
 		
 		<include>Object_MovieInfoLines</include>
@@ -129,7 +126,6 @@
 				</animation>				
 			</control>				
 		</control>
-		
 		<include>Global_Time</include>
 		<include>Global_Heading</include>		
 		<include>Global_RSS</include>

@@ -3,31 +3,13 @@
 <window type="buttonMenu" id="111">
 	<defaultcontrol always="true">3110</defaultcontrol>
 	<include>Animation_ZoomInMenu</include>
-
-	<coordinates>
-		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
-	</coordinates>
-
 	<controls>
-
 		<control type="label">
 			<include>WindowID</include>
 			<label>DialogButtonMenu.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 
-		<control type="image">
-			<posx>-600</posx>
-			<posy>-360</posy>
-			<width>2560</width>
-			<height>1440</height>
-			<texture>filter.png</texture>
-			<colordiffuse>ccFFFFFF</colordiffuse>
-			<animation effect="fade" start="0" end="100" time="200">Visible</animation>			
-			<animation effect="fade" start="100" end="0" time="400">Hidden</animation>				
-		</control>
 
 		<control type="grouplist" id="1">
 			<posy>240</posy>
@@ -62,6 +44,21 @@
 				<label>Filemanager</label>
 				<onclick>XBMC.ActivateWindow(3)</onclick>
 			</control>
+			
+			<control type="button" id="3117">
+				<description>Favorites</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>MenuValue</focusedcolor>
+				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>Favorites</label>
+				<onclick>XBMC.ActivateWindow(Favourites)</onclick>
+			</control>
+			
 			<control type="button" id="3112">
 				<description>Reboot</description>
 				<height>40</height>
@@ -114,10 +111,21 @@
 				<label>$LOCALIZE[130]</label>
 				<onclick>XBMC.ActivateWindow(7)</onclick>
 			</control>
+			<control type="button" id="3116">
+				<description>Reload Skin</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>MenuValue</focusedcolor>
+				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>RELOAD SKIN</label>
+				<onclick>XBMC.ReloadSkin()</onclick>
+				<visible>Skin.HasSetting(debugmode)</visible>
+			</control>
 		</control>
-
 		<include>Object_DebugGrid</include>
-
 	</controls>
-
 </window>
