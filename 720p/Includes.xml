@@ -337,7 +337,6 @@
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/appstore//</imagepath>
-					<visible>!Skin.HasSetting(osximages)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -389,7 +388,6 @@
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/music//</imagepath>
-					<visible>Skin.!HasSetting(osximages)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -416,6 +414,11 @@
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/movies//</imagepath>
 				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/movies//</imagepath>
+					<visible>Skin.HasSetting(osximages)</visible>
+				</control>
 				<include>Home_MainMenuFrame</include>
 				<control type="label">
 					<include>Home_MainMenuLabel</include>
@@ -436,6 +439,11 @@
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/tvshows//</imagepath>
 				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/movies//</imagepath>
+					<visible>Skin.HasSetting(osximages)</visible>
+				</control>
 				<include>Home_MainMenuFrame</include>
 				<control type="label">
 					<include>Home_MainMenuLabel</include>
@@ -455,7 +463,6 @@
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/pictures//</imagepath>
-					<visible>!Skin.HasSetting(osximages)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -488,6 +495,11 @@
 					<imagepath diffuse="mainmenu/homematte.png">mainmenu/weather/$INFO[Weather.FanartCode]/</imagepath>
 					<visible>Skin.HasSetting(homeweather)</visible>
 				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/weather//</imagepath>
+					<visible>Skin.HasSetting(osximages)</visible>
+				</control>
 				<include>Home_MainMenuFrame</include>
 				<control type="label">
 					<include>Home_MainMenuLabel</include>
@@ -507,7 +519,6 @@
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/settings//</imagepath>
-					<visible>!Skin.HasSetting(osximages)</visible>
 				</control>	
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -533,7 +544,6 @@
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/quit//</imagepath>
-					<visible>!Skin.HasSetting(osximages)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -1065,14 +1075,15 @@
 	<include name="Filter_MenuItem">
 		<control type="image">
 			<include>Dimensions_MenuItem</include>
-			<texture>backdrops/menuitemcolordiffuse.png</texture>
+			<texture>backdrops/menuitemcolordiffuse2.png</texture>
 			<colordiffuse>backgroundColor</colordiffuse>
+			<visible>Skin.HasSetting(osximages)</visible>
 		</control>
 	</include>
 
 	<include name="Dimensions_MenuItem">
 		<posx>10</posx>
-		<posy>10</posy>
+		<posy>5</posy>
 		<width>349</width>
 		<height>260</height>
 	</include>
