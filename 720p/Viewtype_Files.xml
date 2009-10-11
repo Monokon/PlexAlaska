@@ -111,6 +111,14 @@
 						<label>$INFO[ListItem.Genre]</label>
 						<visible>!IsEmpty(ListItem.Genre)</visible>
 					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>65</posy>
+						<width>121</width>
+						<height>22</height>
+						<texture>$INFO[ListItem.StarRating]</texture>
+						<visible>Window.IsActive(25) + ![Container.Content(seasons) | Container.Content(episodes)]</visible>
+					</control>
 					<!--<control type="textbox">
 						<posx>0</posx>
 						<posy>50</posy>
