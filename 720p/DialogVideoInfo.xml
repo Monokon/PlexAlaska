@@ -51,6 +51,13 @@
 				<info>ListItem.Duration</info>
 				<wrapmultiline>true</wrapmultiline>
 			</control>
+			<control type="image">
+				<posy>66</posy>
+				<posx>-8</posx>
+				<width>182</width>
+				<height>33</height>
+				<info>ListItem.StarRating</info>
+			</control>
 			<control type="label">
 				<posx>-10</posx>
 				<posy>140</posy>
