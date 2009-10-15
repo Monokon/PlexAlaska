@@ -176,17 +176,6 @@
 					<onclick>Skin.ToggleSetting(homeweather)</onclick>
 					<selected>Skin.HasSetting(homeweather)</selected>
 				</control>
-				<control type="radiobutton" id="205">
-					<width>740</width>
-					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Show item "Quit Plex"</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<onclick>Skin.ToggleSetting(homequit)</onclick>
-					<selected>Skin.HasSetting(homequit)</selected>
-				</control>
 				<control type="radiobutton" id="206">
 					<width>740</width>
 					<font>Font_Settings</font>
@@ -197,6 +186,61 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(osximages)</onclick>
 					<selected>Skin.HasSetting(osximages)</selected>
+				</control>
+				<control type="radiobutton" id="207">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+<!-- LOC -->		<label>Hide item "Appstore"</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noappstore)</onclick>
+					<selected>Skin.HasSetting(noappstore)</selected>
+				</control>
+				<control type="radiobutton" id="208">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+<!-- LOC -->		<label>Hide item "Videos"</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(novideos)</onclick>
+					<selected>Skin.HasSetting(novideos)</selected>
+				</control>
+				<control type="radiobutton" id="209">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+<!-- LOC -->		<label>Hide item "Pictures"</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(nopictures)</onclick>
+					<selected>Skin.HasSetting(nopictures)</selected>
+				</control>
+				<control type="radiobutton" id="210">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+<!-- LOC -->		<label>Hide item "Weather"</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noweather)</onclick>
+					<selected>Skin.HasSetting(noweather)</selected>
+				</control>
+				<control type="radiobutton" id="211">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+<!-- LOC -->		<label>Hide item "Quit Plex"</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(nohomequit)</onclick>
+					<selected>Skin.HasSetting(nohomequit)</selected>
 				</control>
 			</control>
 			<control type="grouplist" id="9003">

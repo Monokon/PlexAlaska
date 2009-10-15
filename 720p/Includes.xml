@@ -352,6 +352,7 @@
 <!-- LOC -->		<label>Appstore</label>
 				</control>
 				<include>Home_MainMenuShade</include>
+				<visible>!Skin.HasSetting(noappstore)</visible>
 			</control>
 
 			<control type="group">
@@ -378,14 +379,19 @@
 				</control>
 				<include>Filter_MenuItem</include>
 				<include>Home_MainMenuShade</include>
+				<visible>!Skin.HasSetting(novideos)</visible>
 			</control>
 
 			<control type="group">
 				<description>Music</description>
-				<posx>700</posx>
+				<include condition="Skin.HasSetting(novideos)">pos350</include>
+				<include condition="!Skin.HasSetting(novideos)">pos700</include>
 				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(3)">
+				<animation type="conditional" condition="!Container(300).HasFocus(3) + !Skin.HasSetting(novideos)">
 					<effect type="zoom" center="885,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(3) + Skin.HasSetting(novideos)">
+					<effect type="zoom" center="535,160" tween="cubic" easing="in" time="200" start="100" end="80" />
 				</animation>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -407,10 +413,14 @@
 
 			<control type="group">
 				<description>Movies</description>
-				<posx>1050</posx>
+				<include condition="Skin.HasSetting(novideos)">pos700</include>
+				<include condition="!Skin.HasSetting(novideos)">pos1050</include>
 				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(4)">
+				<animation type="conditional" condition="!Container(300).HasFocus(4) + !Skin.HasSetting(novideos)">
 					<effect type="zoom" center="1235,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(4) + Skin.HasSetting(novideos)">
+					<effect type="zoom" center="885,160" tween="cubic" easing="in" time="200" start="100" end="80" />
 				</animation>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -432,10 +442,14 @@
 
 			<control type="group">
 				<description>Tv Shows</description>
-				<posx>1400</posx>
+				<include condition="Skin.HasSetting(novideos)">pos1050</include>
+				<include condition="!Skin.HasSetting(novideos)">pos1400</include>
 				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(5)">
+				<animation type="conditional" condition="!Container(300).HasFocus(5) + !Skin.HasSetting(novideos)">
 					<effect type="zoom" center="1585,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(5) + Skin.HasSetting(novideos)">
+					<effect type="zoom" center="1235,160" tween="cubic" easing="in" time="200" start="100" end="80" />
 				</animation>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -457,10 +471,14 @@
 
 			<control type="group">
 				<description>Picture</description>
-				<posx>1750</posx>
+				<include condition="Skin.HasSetting(novideos)">pos1400</include>
+				<include condition="!Skin.HasSetting(novideos)">pos1750</include>
 				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(6)">
+				<animation type="conditional" condition="!Container(300).HasFocus(6) + !Skin.HasSetting(novideos)">
 					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(6) + Skin.HasSetting(novideos)">
+					<effect type="zoom" center="1585,160" tween="cubic" easing="in" time="200" start="100" end="80" />
 				</animation>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -484,14 +502,27 @@
 					<label>1</label>
 				</control>
 				<include>Home_MainMenuShade</include>
+				<visible>!Skin.HasSetting(nopictures)</visible>
 			</control>
 
 			<control type="group">
 				<description>Weather</description>
-				<posx>2100</posx>
+				<include condition="Skin.HasSetting(novideos) + Skin.HasSetting(nopictures)">pos1400</include>
+				<include condition="Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures)">pos1750</include>
+				<include condition="!Skin.HasSetting(novideos) + Skin.HasSetting(nopictures)">pos1750</include>
+				<include condition="!Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures)">pos2100</include>
 				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(7)">
+				<animation type="conditional" condition="!Container(300).HasFocus(7) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures)">
 					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(7) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures)">
+					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(7) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures)">
+					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(7) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures)">
+					<effect type="zoom" center="1585,160" tween="cubic" easing="in" time="200" start="100" end="80" />
 				</animation>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -515,14 +546,43 @@
 					<label>8</label>
 				</control>
 				<include>Home_MainMenuShade</include>
+				<visible>!Skin.HasSetting(noweather)</visible>
 			</control>
 
 			<control type="group">
 				<description>Settings</description>
-				<posx>2450</posx>
+				<include condition="Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos1400</include>
+				<include condition="Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2100</include>
+				<include condition="!Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2100</include>
+				<include condition="!Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos2100</include>
+				<include condition="Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos1750</include>
+				<include condition="!Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos1750</include>
+				<include condition="Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos1750</include>
+				<include condition="!Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2450</include>
 				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(8)">
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
 					<effect type="zoom" center="2635,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
+					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
+					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
+					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
+					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
+					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
+					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(8) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
+					<effect type="zoom" center="1585,160" tween="cubic" easing="in" time="200" start="100" end="80" />
 				</animation>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -544,10 +604,38 @@
 
 			<control type="group">
 				<description>Quit Plex</description>
-				<posx>2800</posx>
+				<include condition="Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos1750</include>
+				<include condition="Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2450</include>
+				<include condition="!Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2450</include>
+				<include condition="!Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos2450</include>
+				<include condition="Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2100</include>
+				<include condition="!Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos2100</include>
+				<include condition="Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos2100</include>
+				<include condition="!Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2800</include>
 				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(9)">
+				<animation type="conditional" condition="!Container(300).HasFocus(9) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
 					<effect type="zoom" center="2985,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(9) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
+					<effect type="zoom" center="2635,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(9) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
+					<effect type="zoom" center="2635,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(9) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
+					<effect type="zoom" center="2635,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(9) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
+					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(9) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
+					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(9) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
+					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
+				</animation>
+				<animation type="conditional" condition="!Container(300).HasFocus(9) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
+					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
 				</animation>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -565,7 +653,7 @@
 <!-- LOC -->		<label>QUIT PLEX</label>
 				</control>
 				<include>Home_MainMenuShade</include>
-				<visible>Skin.HasSetting(homequit)</visible>
+				<visible>!Skin.HasSetting(nohomequit)</visible>
 			</control>
 		</control>
 	</include>
@@ -622,55 +710,52 @@
 					<label>2</label>
 					<thumb>backdrops/musicicon.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
-					<visible>!Skin.HasSetting(nomusic)</visible>
 				</item>
 				<item id="2">
 <!-- LOC -->		<label>AppStore</label>
 					<thumb>backdrops/programsicon.png</thumb>
 					<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/)</onclick>
-					<visible>!Skin.HasSetting(nogames)</visible>
+					<!--<visible>!Skin.HasSetting(noappstore)</visible>-->
 				</item>
 				<item id="3">
 					<description>Picture</description>
 					<label>1</label>
 					<thumb>backdrops/picturesicon.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyPictures)</onclick>
-					<visible>!Skin.HasSetting(nopictures)</visible>
+					<!--<visible>!Skin.HasSetting(nopictures)</visible>-->
 				</item>
 				<item id="4">
 					<description>Movies</description>
 					<label>342</label>
 					<thumb>backdrops/moviesicon.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
-					<visible>!Skin.HasSetting(nomovies)</visible>
 				</item>
 				<item id="5">
 					<description>Tv Shows</description>
 					<label>20343</label>
 					<thumb>backdrops/tvshowsicon.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
-					<visible>!Skin.HasSetting(notvshows)</visible>
 				</item>
 				<item id="6">
 					<description>Video</description>
 					<label>3</label>
 					<thumb>backdrops/videosicon.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
-					<visible>!Skin.HasSetting(novideos)</visible>
+					<!--<visible>!Skin.HasSetting(novideos)</visible>-->
 				</item>
 				<item id="7">
 					<description>Weather</description>
 					<label>8</label>
-					<include>BackgroundVarsWeather</include>
+					<!--<include>BackgroundVarsWeather</include>-->
+					<thumb>backdrops/weathericon.png</thumb>
 					<onclick>xbmc.activatewindow(2600)</onclick>
-					<visible>Skin.HasSetting(weather)</visible>
+					<!--<visible>!Skin.HasSetting(noweather)</visible>-->
 				</item>
 				<item id="8">
 					<description>Settings</description>
 					<label>5</label>
 					<thumb>backdrops/settingsicon.png</thumb>
 					<onclick>XBMC.ActivateWindow(4)</onclick>
-					<visible>!Skin.HasSetting(nosettings)</visible>
 				</item>
 				<item id="9">
 					<description>Scripts</description>
@@ -696,7 +781,7 @@
 					<label>Quit Plex</label>
 					<thumb>mainmenu/quit.png</thumb>
 					<onclick>XBMC.Shutdown()</onclick>
-					<visible>Skin.HasSetting(homequit)</visible>
+					<visible>!Skin.HasSetting(nohomequit)</visible>
 				</item>
 			</content>
 		</control>
@@ -792,12 +877,14 @@
 				<label>0</label>
 				<thumb>backdrops/appstore/appstore-1.jpg</thumb>
 				<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/)</onclick>
+				<!--<visible>!Skin.HasSetting(noappstore)</visible>-->
 			</item>
 			<item id="2">
 				<description>Video</description>
 				<label>3</label>
 				<thumb>backdrops/videos/video-3.jpg</thumb>
 				<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
+				<!--<visible>!Skin.HasSetting(novideos)</visible>-->
 			</item>
 			<item id="3">
 				<description>Music</description>
@@ -822,12 +909,14 @@
 				<label>1</label>
 				<thumb>backdrops/pictures/pictures-2.jpg</thumb>
 				<onclick>XBMC.ActivateWindow(MyPictures)</onclick>
+				<!--<visible>!Skin.HasSetting(nopictures)</visible>-->
 			</item>
 			<item id="7">
 				<description>Weather</description>
 				<label>8</label>
 				<thumb>backdrops/weather/weather-1.jpg</thumb>
 				<onclick>XBMC.Activatewindow(2600)</onclick>
+				<!--<visible>!Skin.HasSetting(noweather)</visible>-->
 			</item>
 			<item id="8">
 				<description>Settings</description>
@@ -840,7 +929,7 @@
 				<label>Quit Plex</label>
 				<thumb>backdrops/quit/quitplex.jpg</thumb>
 				<onclick>XBMC.Shutdown(0)</onclick>
-				<visible>Skin.HasSetting(homequit)</visible>
+				<visible>!Skin.HasSetting(nohomequit)</visible>
 			</item>
 		</content>
 		<control type="label">
@@ -1094,6 +1183,31 @@
 		<posy>5</posy>
 		<width>349</width>
 		<height>260</height>
+	</include>
+
+	<include name="pos350">
+		<posx>350</posx>
+	</include>
+	<include name="pos700">
+		<posx>700</posx>
+	</include>
+	<include name="pos1050">
+		<posx>1050</posx>
+	</include>
+	<include name="pos1400">
+		<posx>1400</posx>
+	</include>
+	<include name="pos1750">
+		<posx>1750</posx>
+	</include>
+	<include name="pos2100">
+		<posx>2100</posx>
+	</include>
+	<include name="pos2450">
+		<posx>2450</posx>
+	</include>
+	<include name="pos2800">
+		<posx>2800</posx>
 	</include>
 
 </includes>

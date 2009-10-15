@@ -223,15 +223,45 @@
 	</include>
 
 	<include name="Animation_HomeSlide">
+		<!-- Appstore -->
 		<animation effect="slide" end="1050,0" time="300" condition="Container(300).HasFocus(1)">Conditional</animation>	
+		<!-- Videos -->
 		<animation effect="slide" end="700,0" time="300" condition="Container(300).HasFocus(2)">Conditional</animation>	
-		<animation effect="slide" end="350,0" time="300" condition="Container(300).HasFocus(3)">Conditional</animation>
-		<animation effect="slide" end="0,0" time="300" condition="Container(300).HasFocus(4)">Conditional</animation>
-		<animation effect="slide" end="-350,0" time="300" condition="Container(300).HasFocus(5)">Conditional</animation>		
-		<animation effect="slide" end="-700,0" time="300" condition="Container(300).HasFocus(6)">Conditional</animation>			
-		<animation effect="slide" end="-1050,0" time="300" condition="Container(300).HasFocus(7)">Conditional</animation>
-		<animation effect="slide" end="-1400,0" time="300" condition="Container(300).HasFocus(8)">Conditional</animation>
-		<animation effect="slide" end="-1750,0" time="300" condition="Container(300).HasFocus(9)">Conditional</animation>
+		<!-- Music -->
+		<animation effect="slide" end="350,0" time="300" condition="Container(300).HasFocus(3) + !Skin.HasSetting(novideos)">Conditional</animation>
+		<animation effect="slide" end="700,0" time="300" condition="Container(300).HasFocus(3) + Skin.HasSetting(novideos)">Conditional</animation>
+		<!-- Movies -->
+		<animation effect="slide" end="0,0" time="300" condition="Container(300).HasFocus(4) + !Skin.HasSetting(novideos)">Conditional</animation>
+		<animation effect="slide" end="350,0" time="300" condition="Container(300).HasFocus(4) + Skin.HasSetting(novideos)">Conditional</animation>
+		<!-- TV shows -->
+		<animation effect="slide" end="-350,0" time="300" condition="Container(300).HasFocus(5) + !Skin.HasSetting(novideos)">Conditional</animation>
+		<animation effect="slide" end="0,0" time="300" condition="Container(300).HasFocus(5) + Skin.HasSetting(novideos)">Conditional</animation>
+		<!-- Pictures -->
+		<animation effect="slide" end="-700,0" time="300" condition="Container(300).HasFocus(6) + !Skin.HasSetting(novideos)">Conditional</animation>
+		<animation effect="slide" end="-350,0" time="300" condition="Container(300).HasFocus(6) + Skin.HasSetting(novideos)">Conditional</animation>
+		<!-- Weather -->
+		<animation effect="slide" end="-1050,0" time="300" condition="Container(300).HasFocus(7) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures)">Conditional</animation>
+		<animation effect="slide" end="-700,0" time="300" condition="Container(300).HasFocus(7) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures)">Conditional</animation>
+		<animation effect="slide" end="-700,0" time="300" condition="Container(300).HasFocus(7) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures)">Conditional</animation>
+		<animation effect="slide" end="-350,0" time="300" condition="Container(300).HasFocus(7) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures)">Conditional</animation>
+		<!-- Settings -->
+		<animation effect="slide" end="-1400,0" time="300" condition="Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">Conditional</animation>
+		<animation effect="slide" end="-1050,0" time="300" condition="Container(300).HasFocus(8) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">Conditional</animation>
+		<animation effect="slide" end="-1050,0" time="300" condition="Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">Conditional</animation>
+		<animation effect="slide" end="-1050,0" time="300" condition="Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">Conditional</animation>
+		<animation effect="slide" end="-700,0" time="300" condition="Container(300).HasFocus(8) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">Conditional</animation>
+		<animation effect="slide" end="-700,0" time="300" condition="Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">Conditional</animation>
+		<animation effect="slide" end="-700,0" time="300" condition="Container(300).HasFocus(8) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">Conditional</animation>
+		<animation effect="slide" end="-350,0" time="300" condition="Container(300).HasFocus(8) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">Conditional</animation>
+		<!-- Settings -->
+		<animation effect="slide" end="-1750,0" time="300" condition="Container(300).HasFocus(9) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">Conditional</animation>
+		<animation effect="slide" end="-1400,0" time="300" condition="Container(300).HasFocus(9) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">Conditional</animation>
+		<animation effect="slide" end="-1400,0" time="300" condition="Container(300).HasFocus(9) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">Conditional</animation>
+		<animation effect="slide" end="-1400,0" time="300" condition="Container(300).HasFocus(9) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">Conditional</animation>
+		<animation effect="slide" end="-1050,0" time="300" condition="Container(300).HasFocus(9) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">Conditional</animation>
+		<animation effect="slide" end="-1050,0" time="300" condition="Container(300).HasFocus(9) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">Conditional</animation>
+		<animation effect="slide" end="-1050,0" time="300" condition="Container(300).HasFocus(9) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">Conditional</animation>
+		<animation effect="slide" end="-700,0" time="300" condition="Container(300).HasFocus(9) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">Conditional</animation>
 	</include>	
 
 </includes>
