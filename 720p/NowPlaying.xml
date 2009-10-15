@@ -170,6 +170,15 @@
 			<posy>-180</posy>
 			<width>270</width>
 			<height>300</height>
+			<texture>osd/cdcover_mask.png</texture>
+			<aspectratio align="bottom">keep</aspectratio>
+		</control>
+		<control type="image">
+			<description>Cover image</description>
+			<posy>-180</posy>
+			<width>270</width>
+			<height>300</height>
+			<colordiffuse>C8FFFFFF</colordiffuse>
 			<texture diffuse="osd/cdcover_mask.png">$INFO[MusicPlayer.Cover]</texture>
 			<aspectratio align="bottom">keep</aspectratio>
 		</control>
