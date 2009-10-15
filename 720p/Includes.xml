@@ -877,14 +877,14 @@
 				<label>0</label>
 				<thumb>backdrops/appstore/appstore-1.jpg</thumb>
 				<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/)</onclick>
-				<!--<visible>!Skin.HasSetting(noappstore)</visible>-->
+				<visible>!Skin.HasSetting(noappstore)</visible>
 			</item>
 			<item id="2">
 				<description>Video</description>
 				<label>3</label>
 				<thumb>backdrops/videos/video-3.jpg</thumb>
 				<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
-				<!--<visible>!Skin.HasSetting(novideos)</visible>-->
+				<visible>!Skin.HasSetting(novideos)</visible>
 			</item>
 			<item id="3">
 				<description>Music</description>
@@ -909,14 +909,14 @@
 				<label>1</label>
 				<thumb>backdrops/pictures/pictures-2.jpg</thumb>
 				<onclick>XBMC.ActivateWindow(MyPictures)</onclick>
-				<!--<visible>!Skin.HasSetting(nopictures)</visible>-->
+				<visible>!Skin.HasSetting(nopictures)</visible>
 			</item>
 			<item id="7">
 				<description>Weather</description>
 				<label>8</label>
 				<thumb>backdrops/weather/weather-1.jpg</thumb>
 				<onclick>XBMC.Activatewindow(2600)</onclick>
-				<!--<visible>!Skin.HasSetting(noweather)</visible>-->
+				<visible>!Skin.HasSetting(noweather)</visible>
 			</item>
 			<item id="8">
 				<description>Settings</description>
