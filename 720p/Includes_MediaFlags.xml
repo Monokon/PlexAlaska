@@ -32,7 +32,7 @@
 					<include>PosterMediaFlagsVars</include>
 					<texture>flags/Rating/IMDB.png</texture>
 					<!-- <visible>!Control.IsVisible(81) + !Skin.HasSetting(nodefaultflags)</visible> -->
-					<visible>true</visible>
+					<visible>!IsEmpty(ListItem.rating)</visible>
 				</control>
 				<control type="label">
 					<label>$INFO[ListItem.rating]</label>
@@ -44,17 +44,7 @@
 					<aligny>center</aligny>
 					<font>Font_PosterRating</font>
 					<colordiffuse>FlagDiffuse</colordiffuse>
-				</control>
-				<control type="label">
-					<label>?</label>
-					<posx>28</posx>
-					<posy>538</posy>
-					<width>56</width>
-					<height>45</height>
-					<aligny>center</aligny>
-					<font>Font_PosterRating</font>
-					<colordiffuse>FlagDiffuse</colordiffuse>
-					<visible>IsEmpty(ListItem.rating)</visible>
+					<visible>!IsEmpty(ListItem.rating)</visible>
 				</control>
 			</control>
 			<control type="group">

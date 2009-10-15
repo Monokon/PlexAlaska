@@ -253,7 +253,7 @@
 		<animation effect="slide" end="-700,0" time="300" condition="Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">Conditional</animation>
 		<animation effect="slide" end="-700,0" time="300" condition="Container(300).HasFocus(8) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">Conditional</animation>
 		<animation effect="slide" end="-350,0" time="300" condition="Container(300).HasFocus(8) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">Conditional</animation>
-		<!-- Settings -->
+		<!-- Quit -->
 		<animation effect="slide" end="-1750,0" time="300" condition="Container(300).HasFocus(9) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">Conditional</animation>
 		<animation effect="slide" end="-1400,0" time="300" condition="Container(300).HasFocus(9) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">Conditional</animation>
 		<animation effect="slide" end="-1400,0" time="300" condition="Container(300).HasFocus(9) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">Conditional</animation>
