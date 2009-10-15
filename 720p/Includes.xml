@@ -670,7 +670,7 @@
 			<include>Animation_ZoomOutZoomIn</include>
 			<include>Animation_ZoomedByMenu</include>
 		</control>
-		<control type="wraplist" id="300">
+		<control type="fixedlist" id="300">
 			<posx>-131</posx>
 			<posy>130</posy>
 			<height>500</height>
@@ -715,14 +715,14 @@
 <!-- LOC -->		<label>AppStore</label>
 					<thumb>backdrops/programsicon.png</thumb>
 					<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/)</onclick>
-					<!--<visible>!Skin.HasSetting(noappstore)</visible>-->
+					<visible>!Skin.HasSetting(noappstore)</visible>
 				</item>
 				<item id="3">
 					<description>Picture</description>
 					<label>1</label>
 					<thumb>backdrops/picturesicon.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyPictures)</onclick>
-					<!--<visible>!Skin.HasSetting(nopictures)</visible>-->
+					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
 				<item id="4">
 					<description>Movies</description>
@@ -741,7 +741,7 @@
 					<label>3</label>
 					<thumb>backdrops/videosicon.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
-					<!--<visible>!Skin.HasSetting(novideos)</visible>-->
+					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
 				<item id="7">
 					<description>Weather</description>
@@ -749,7 +749,7 @@
 					<!--<include>BackgroundVarsWeather</include>-->
 					<thumb>backdrops/weathericon.png</thumb>
 					<onclick>xbmc.activatewindow(2600)</onclick>
-					<!--<visible>!Skin.HasSetting(noweather)</visible>-->
+					<visible>!Skin.HasSetting(noweather)</visible>
 				</item>
 				<item id="8">
 					<description>Settings</description>
@@ -811,7 +811,7 @@
 			<include>Animation_CommonFade</include>
 			<imagepath background="true">$INFO[Container(300).ListItem.Icon]</imagepath>
 		</control>
-		<control type="wraplist" id="300">
+		<control type="fixedlist" id="300">
 			<posx>180</posx>
 			<posy>-20</posy>
 			<height>950</height>
