@@ -51,22 +51,26 @@
 					<onclick>SetFocus(9002)</onclick>
 				</item>
 				<item id="3">
-<!-- LOC -->		<description>Views</description>
+					<!-- LOC -->
+					<description>Views</description>
 					<label>Views</label>
 					<onclick>SetFocus(9003)</onclick>
 				</item>
 				<item id="4">
-<!-- LOC -->		<description>Backdrops</description>
+					<!-- LOC -->
+					<description>Backdrops</description>
 					<label>Backdrops</label>
 					<onclick>SetFocus(9004)</onclick>
 				</item>
 				<item id="6">
-<!-- LOC -->		<description>NowPlaying</description>
+					<!-- LOC -->
+					<description>NowPlaying</description>
 					<label>NowPlaying</label>
 					<onclick>SetFocus(9006)</onclick>
 				</item>
 				<item id="5">
-<!-- LOC -->		<description>Misc.</description>
+					<!-- LOC -->
+					<description>Misc.</description>
 					<label>Misc.</label>
 					<onclick>SetFocus(9005)</onclick>
 				</item>
@@ -91,7 +95,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Scroll Plot</label>
+					<!-- LOC -->
+					<label>Scroll Plot</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(autoscroll)</onclick>
@@ -102,18 +107,32 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Media Flags</label>
+					<!-- LOC -->
+					<label>Media Flags</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(mediaflagson)</onclick>
 					<selected>Skin.HasSetting(mediaflagson)</selected>
+				</control>
+				<control type="radiobutton" id="104">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+					<!-- LOC -->
+					<label>Swap IMDB for Studio Flags</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(showstudioflags)</onclick>
+					<selected>Skin.HasSetting(showstudioflags)</selected>
 				</control>
 				<control type="radiobutton" id="102">
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Larger RSS</label>
+					<!-- LOC -->
+					<label>Larger RSS</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(largeRSS)</onclick>
@@ -124,7 +143,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>only show RSS on home screen</label>
+					<!-- LOC -->
+					<label>only show RSS on home screen</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(RSS_only_on_home)</onclick>
@@ -146,7 +166,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Home 2</label>
+					<!-- LOC -->
+					<label>Home 2</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(home2)</onclick>
@@ -158,7 +179,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Home 3</label>
+					<!-- LOC -->
+					<label>Home 3</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(home3)</onclick>
@@ -170,7 +192,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Conditional Weather</label>
+					<!-- LOC -->
+					<label>Conditional Weather</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(homeweather)</onclick>
@@ -181,7 +204,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Enable OSX overlays for default home menu</label>
+					<!-- LOC -->
+					<label>Enable OSX overlays for default home menu</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(osximages)</onclick>
@@ -192,7 +216,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Hide item "Appstore"</label>
+					<!-- LOC -->
+					<label>Hide item "Appstore"</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(noappstore)</onclick>
@@ -203,7 +228,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Hide item "Videos"</label>
+					<!-- LOC -->
+					<label>Hide item "Videos"</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(novideos)</onclick>
@@ -214,7 +240,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Hide item "Pictures"</label>
+					<!-- LOC -->
+					<label>Hide item "Pictures"</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(nopictures)</onclick>
@@ -225,7 +252,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Hide item "Weather"</label>
+					<!-- LOC -->
+					<label>Hide item "Weather"</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(noweather)</onclick>
@@ -236,7 +264,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Hide item "Quit Plex"</label>
+					<!-- LOC -->
+					<label>Hide item "Quit Plex"</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(nohomequit)</onclick>
@@ -258,7 +287,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>File View Focus Line</label>
+					<!-- LOC -->
+					<label>File View Focus Line</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(File_View_Focus_Line)</onclick>
@@ -269,7 +299,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Use "fixedlist" in poster view</label>
+					<!-- LOC -->
+					<label>Use "fixedlist" in poster view</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(fixedlist)</onclick>
@@ -291,6 +322,7 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
+					<!-- LOC -->
 					<label>Increase fanart visibility</label>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -302,18 +334,21 @@
 
 				<control type="radiobutton" id="4011">
 					<include>FanartVisibilityButtons</include>
+					<!-- LOC -->
 					<label>+ 30% visibility</label>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility30)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility30)</selected>
 				</control>
 				<control type="radiobutton" id="4012">
 					<include>FanartVisibilityButtons</include>
+					<!-- LOC -->
 					<label>+ 40% visibility</label>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility40)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility40)</selected>
 				</control>
 				<control type="radiobutton" id="4013">
 					<include>FanartVisibilityButtons</include>
+					<!-- LOC -->
 					<label>+ 50% visibility</label>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility50)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility50)</selected>
@@ -338,7 +373,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Set path to artist backdrops</label>
+					<!-- LOC -->
+					<label>Set path to artist backdrops</label>
 					<label2>$INFO[Skin.String(artistbackdroppath)]</label2>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -349,7 +385,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Disable filter image in NowPlaying</label>
+					<!-- LOC -->
+					<label>Disable filter image in NowPlaying</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(disablenowplayingfilter)</onclick>
@@ -360,7 +397,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Disable progressbar</label>
+					<!-- LOC -->
+					<label>Disable progressbar</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(disableprogressbar)</onclick>
@@ -383,7 +421,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Debug mode</label>
+					<!-- LOC -->
+					<label>Debug mode</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(debugmode)</onclick>
@@ -394,7 +433,8 @@
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
-<!-- LOC -->		<label>Debug Grid</label>
+					<!-- LOC -->
+					<label>Debug Grid</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(debuggrid)</onclick>
@@ -406,7 +446,7 @@
 		<include>Global_Time</include>
 		<include>Setting_Heading</include>
 		<include>Global_RSS</include>
-	<!-- debug -->
+		<!-- debug -->
 		<include>Object_DebugGrid</include>
 		<control type="label">
 			<include>WindowID</include>

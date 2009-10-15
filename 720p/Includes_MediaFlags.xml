@@ -5,21 +5,56 @@
 		<posy>530</posy>
 		<width>89</width>
 		<height>59</height>
-		<colordiffuse>CC474747</colordiffuse>
+		<colordiffuse>FlagDiffuse</colordiffuse>
 	</include>
 	<include name="PosterMediaFlags">
 		<control type="group">
 			<include>Animation_SlideUpFadeOut</include>
 			<include>Animation_HiddenByInfo</include>
-			<posx>45</posx>
+			<posx>58</posx>
 			<animation effect="slide" start="0,0" end="-345,-400" condition="Control.IsVisible(52)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,35" condition="Control.IsVisible(55)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-340,20" condition="Control.IsVisible(56)">Conditional</animation>
 			<visible>Skin.HasSetting(mediaflagson) + [Container.Content(movies) | Container.Content(episodes)]</visible>
 			<control type="group">
 				<posx>785</posx>
 				<control type="image">
 					<include>PosterMediaFlagsVars</include>
 					<texture>$INFO[Listitem.studio,flags/studios/,.png]</texture>
+					<visible>!Control.IsVisible(81) + Skin.HasSetting(showstudioflags)</visible>
+				</control>
+			</control>
+			<control type="group">
+				<description>IMDB rating</description>
+				<posx>785</posx>
+				<visible>!Skin.HasSetting(showstudioflags)</visible>
+				<control type="image">
+					<include>PosterMediaFlagsVars</include>
+					<texture>flags/Rating/IMDB.png</texture>
+					<!-- <visible>!Control.IsVisible(81) + !Skin.HasSetting(nodefaultflags)</visible> -->
+					<visible>true</visible>
+				</control>
+				<control type="label">
+					<label>$INFO[ListItem.rating]</label>
+					<posx>28</posx>
+					<posy>538</posy>
+					<width>56</width>
+					<height>45</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_PosterRating</font>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+				</control>
+				<control type="label">
+					<label>?</label>
+					<posx>28</posx>
+					<posy>538</posy>
+					<width>56</width>
+					<height>45</height>
+					<aligny>center</aligny>
+					<font>Font_PosterRating</font>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<visible>IsEmpty(ListItem.rating)</visible>
 				</control>
 			</control>
 			<control type="group">

@@ -714,7 +714,7 @@
 				<item id="2">
 <!-- LOC -->		<label>AppStore</label>
 					<thumb>backdrops/programsicon.png</thumb>
-					<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/)</onclick>
+					<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/,return)</onclick>
 					<visible>!Skin.HasSetting(noappstore)</visible>
 				</item>
 				<item id="3">
@@ -874,9 +874,9 @@
 		<content>
 			<item id="1">
 				<description>PROGRAMS</description>
-				<label>0</label>
+				<label>AppStore</label>
 				<thumb>backdrops/appstore/appstore-1.jpg</thumb>
-				<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/)</onclick>
+				<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/,return)</onclick>
 				<visible>!Skin.HasSetting(noappstore)</visible>
 			</item>
 			<item id="2">

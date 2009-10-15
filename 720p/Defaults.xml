@@ -62,7 +62,7 @@
 		<posy>0</posy>
 		<label>-</label>
 		<font>Font_Settings</font>
-		<textcolor>ListTrackF</textcolor>
+		<textcolor>Grey</textcolor>
 		<focusedcolor>Black</focusedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<texturenofocus>-</texturenofocus>

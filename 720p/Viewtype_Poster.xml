@@ -149,6 +149,19 @@
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
+					<visible>!Container.Content(Genres)</visible>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>131</posy>
+					<width>162</width>
+					<height>241</height>
+					<texture diffuse="postermatteNF.png" fallback="moviegenres\default.jpg">moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<fadetime>200</fadetime>
+					<colordiffuse>89FFFFFF</colordiffuse>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<include>Animation_HiddenByInfo</include>
+					<visible>Container.Content(Genres)</visible>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -168,6 +181,19 @@
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
+					<visible>!Container.Content(Genres)</visible>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>373</posy>
+					<width>162</width>
+					<height>241</height>
+					<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png" fallback="moviegenres\default.jpg">moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<fadetime>200</fadetime>
+					<colordiffuse>89FFFFFF</colordiffuse>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<include>Animation_HiddenByInfo</include>
+					<visible>Container.Content(Genres)</visible>
 				</control>
 				<control type="image">
 					<posx>2</posx>
@@ -193,6 +219,21 @@
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="160,238" start="51" end="100" time="600" tween="back" easing="out" />
 					</animation>
+					<visible>!Container.Content(Genres)</visible>
+				</control>
+				<control type="image">
+					<posx>2</posx>
+					<posy>20</posy>
+					<width>320</width>
+					<height>476</height>
+					<texture background="true" diffuse="postermatte.png" fallback="moviegenres\default.jpg">moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<fadetime>200</fadetime>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<include>Animation_PosterInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="160,238" start="51" end="100" time="600" tween="back" easing="out" />
+					</animation>
+					<visible>Container.Content(Genres)</visible>
 				</control>
 				<control type="image">
 					<posx>-18</posx>
@@ -222,8 +263,7 @@
 			</focusedlayout>
 			<visible>!Skin.HasSetting(fixedlist)</visible>
 		</control>
-
-	<!-- Browser label and flags -->
+		<!-- Browser label and flags -->
 		<control type="group">
 			<visible>Control.IsVisible(50)</visible>
 			<posx>840</posx>
@@ -350,7 +390,7 @@
 				</control>
 			</focusedlayout>
 		</control>
-	<!-- label -->
+		<!-- label -->
 		<control type="group">
 			<visible>Control.IsVisible(54)</visible>
 			<posx>800</posx>
@@ -358,7 +398,7 @@
 			<include>Animation_SlideUpFadeOut</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_ZoomedByMenu</include>
-		<!-- Artist -->
+			<!-- Artist -->
 			<control type="group">
 				<visible>Container.Content(artists)</visible>
 				<control type="label">
@@ -381,7 +421,7 @@
 					<label fallback="31425">$INFO[ListItem.Property(description)]</label>
 				</control>
 			</control>
-		<!-- Album -->
+			<!-- Album -->
 			<control type="group">
 				<visible>Container.Content(albums)</visible>
 				<control type="label">
@@ -425,7 +465,7 @@
 					<visible>!IsEmpty(ListItem.Album)</visible>
 				</control>
 			</control>
-		<!-- Song -->
+			<!-- Song -->
 			<control type="group">
 				<visible>Container.Content(songs) |  Window.IsActive(500) | Window.IsActive(501) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]</visible>
 				<control type="label">

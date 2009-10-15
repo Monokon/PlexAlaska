@@ -49,7 +49,6 @@
 				<font>Font_InfoYear</font>
 				<textcolor>InfoYear</textcolor>
 				<info>ListItem.Duration</info>
-				<wrapmultiline>true</wrapmultiline>
 			</control>
 			<control type="image">
 				<posy>66</posy>

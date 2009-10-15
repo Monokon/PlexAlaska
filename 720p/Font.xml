@@ -5,6 +5,13 @@
 	<fontset id="Default" unicode="true">
 
 		<font>
+			<name>Font_PosterRating</name>
+			<filename>alaska_condblack.ttf</filename>
+			<size>24</size>
+			<linespacing>0.6</linespacing>
+		</font>
+
+		<font>
 			<name>Font_HomeSelected</name>
 			<filename>alaska_menu.ttf</filename>
 			<size>80</size>
@@ -308,7 +315,7 @@
 			<filename>alaska_light.ttf</filename>
 			<size>20</size>
 		</font>
-		
+
 		<!--#Pragma Keyboard -->
 		<font>
 			<name>Font_KeyboardKeys</name>
@@ -335,14 +342,14 @@
 			<filename>alaska_player.ttf</filename>
 			<size>21</size>
 		</font>
-		
+
 		<!--#Pragma FileManager-->
 		<font>
 			<name>Font_FileManagerItemCount</name>
 			<filename>alaska_black.ttf</filename>
 			<size>20</size>
 		</font>	
-		
+
 		<!--#Pragma Favorites-->
 		<font>
 			<name>Font_FavoritesLabel</name>
@@ -359,7 +366,7 @@
 			<filename>alaska_black.ttf</filename>
 			<size>30</size>
 		</font>
-		
+
 
 	</fontset>
 </fonts>
