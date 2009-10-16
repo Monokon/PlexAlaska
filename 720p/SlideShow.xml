@@ -5,6 +5,7 @@
 		<control type="label">
 			<include>DialogID</include>
 			<label>SlideShow.xml</label>
+			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
