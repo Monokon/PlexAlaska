@@ -69,6 +69,14 @@
 					<include>Animation_HiddenByInfo</include>
 					<visible>!IsEmpty(ListItem.Title)</visible>
 				</control>
+				<control type="image">
+					<posx>20</posx>
+					<posy>20</posy>
+					<width>20</width>
+					<height>20</height>
+					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<info>ListItem.Overlay</info>
+				</control>
 			</itemlayout>
 			<focusedlayout width="633" height="164">
 				<control type="image">
