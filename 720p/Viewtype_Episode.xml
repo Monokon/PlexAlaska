@@ -2,8 +2,8 @@
 
 <includes>
 	<include name="Viewtype_Episode">
-		<control type="list" id="51">
-			<viewtype label="List">list</viewtype>
+		<control type="fixedlist" id="51">
+			<viewtype label="list">list</viewtype>
 			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
 			<posx>267</posx>
 			<posy>110</posy>
@@ -16,6 +16,7 @@
 			<ondown>51</ondown>
 			<onleft>7000</onleft>
 			<onright>7000</onright>
+			<focusposition>2</focusposition>
 			<visible>Container.Content(episodes)</visible>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_EpisodeFloat</include>

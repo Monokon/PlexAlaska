@@ -6,14 +6,15 @@
 			<posx>490</posx>
 			<posy>90</posy>
 			<height>485</height>
-			<width>1250</width>
+			<width>730</width>
 			<onup>55</onup>
 			<ondown>55</ondown>
 			<onleft>7000</onleft>
-			<onright>7000</onright>
+			<onright>60</onright>
 			<viewtype label="Files">list</viewtype>
 			<orientation>vertical</orientation>
 			<focusposition>3</focusposition>
+			<pagecontrol>60</pagecontrol>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByInfo</include>
@@ -185,7 +186,7 @@
 					<texture>$INFO[ListItem.StarRating]</texture>
 					<visible>Window.IsActive(25) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(genres)]</visible>
 				</control>
-			<!-- Programs -->
+				<!-- Programs -->
 				<control type="group">
 					<visible>Window.IsActive(1)</visible>
 					<control type="label">
@@ -209,8 +210,8 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</control>
-		<!-- Music -->
-			<!-- Artist -->
+				<!-- Music -->
+				<!-- Artist -->
 				<control type="group">
 					<visible>Container.Content(artists)</visible>
 					<control type="label">
@@ -233,7 +234,7 @@
 						<label fallback="31425">$INFO[ListItem.Property(description)]</label>
 					</control>-->
 				</control>
-			<!-- Album -->
+				<!-- Album -->
 				<control type="group">
 					<visible>Container.Content(albums)</visible>
 					<control type="label">
@@ -277,7 +278,7 @@
 						<visible>!IsEmpty(ListItem.Album)</visible>
 					</control>
 				</control>
-			<!-- Song -->
+				<!-- Song -->
 				<control type="group">
 					<visible>Container.Content(songs) | Window.IsActive(500)</visible>
 					<control type="label">
@@ -379,7 +380,7 @@
 			<width>440</width>
 			<height>360</height>
 			<fadetime>400</fadetime>
-			<aspectratio align="left" aligny="center">keep</aspectratio>
+			<aspectratio align="right" aligny="center">keep</aspectratio>
 			<texture background="true">$INFO[Container(55).ListItem.Icon]</texture>
 			<bordertexture border="8">common/thumb_border.png</bordertexture>
 			<bordersize>8</bordersize>
@@ -394,7 +395,7 @@
 			<width>440</width>
 			<height>360</height>
 			<fadetime>400</fadetime>
-			<aspectratio align="left" aligny="center">keep</aspectratio>
+			<aspectratio align="right" aligny="center">keep</aspectratio>
 			<texture fallback="moviegenres\default.jpg">moviegenres\$INFO[ListItem.Label].jpg</texture>
 			<bordertexture border="8">common/thumb_border.png</bordertexture>
 			<bordersize>8</bordersize>
@@ -407,6 +408,20 @@
 			<visible>Control.IsVisible(55) + Window.IsActive(25)</visible>
 			<include>Animation_ZoomedByMenu</include>
 			<include>PosterMediaFlags</include>
+		</control>
+		<control type="scrollbar" id="60">
+			<posx>1280</posx>
+			<posy>100</posy>
+			<width>25</width>
+			<height>460</height>
+			<visible allowhiddenfocus="true">Control.IsVisible(55) + Control.HasFocus(60)</visible>
+			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+			<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
+			<onleft>55</onleft>
+			<showonepage>true</showonepage>
+			<orientation>vertical</orientation>
+			<include>Animation_CommonFade</include>
+			<animation effect="slide" start="0,0" end="-50,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(60)">Conditional</animation>
 		</control>
 	</include>
 </includes>
