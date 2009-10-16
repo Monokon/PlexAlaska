@@ -328,7 +328,7 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility)</onclick>
 					<include>ResetFanartVisibilityButtons</include>
-					<onclick>Skin.ToggleSetting(increaseFanartVisibility20)</onclick>
+					<onclick>Skin.ToggleSetting(increaseFanartVisibility30)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility)</selected>
 				</control>
 
