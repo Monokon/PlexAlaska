@@ -150,6 +150,19 @@
 					<onclick>Skin.ToggleSetting(RSS_only_on_home)</onclick>
 					<selected>Skin.HasSetting(RSS_only_on_home)</selected>
 				</control>
+				<control type="radiobutton" id="106">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+					<!-- LOC -->
+					<label>Change option "Quit Plex" to "Sleep"</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>!Skin.HasSetting(nohomequit)</visible>
+					<onclick>Skin.ToggleSetting(sleepsystem)</onclick>
+					<selected>Skin.HasSetting(sleepsystem)</selected>
+				</control>
 			</control>
 			<control type="grouplist" id="9002">
 				<visible>Container(9000).Hasfocus(2)</visible>
@@ -265,7 +278,7 @@
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
 					<!-- LOC -->
-					<label>Hide item "Quit Plex"</label>
+					<label>Hide item "Quit Plex / Sleep"</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(nohomequit)</onclick>

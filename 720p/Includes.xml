@@ -650,7 +650,8 @@
 				<include>Home_MainMenuFrame</include>
 				<control type="label">
 					<include>Home_MainMenuLabel</include>
-<!-- LOC -->		<label>QUIT PLEX</label>
+					<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
+					<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
 				</control>
 				<include>Home_MainMenuShade</include>
 				<visible>!Skin.HasSetting(nohomequit)</visible>
@@ -778,9 +779,9 @@
 				</item>
 				<item id="13">
 					<description>Shutdown</description>
-					<label>Quit Plex</label>
 					<thumb>mainmenu/quit.png</thumb>
-					<onclick>XBMC.Shutdown()</onclick>
+					<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
+					<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
 					<visible>!Skin.HasSetting(nohomequit)</visible>
 				</item>
 			</content>
@@ -925,10 +926,10 @@
 				<onclick>XBMC.ActivateWindow(4)</onclick>
 			</item>
 			<item id="9">
+				<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
+				<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
 				<description>Quit Plex</description>
-				<label>Quit Plex</label>
 				<thumb>backdrops/quit/quitplex.jpg</thumb>
-				<onclick>XBMC.Shutdown(0)</onclick>
 				<visible>!Skin.HasSetting(nohomequit)</visible>
 			</item>
 		</content>
@@ -1208,6 +1209,17 @@
 	</include>
 	<include name="pos2800">
 		<posx>2800</posx>
+	</include>
+
+	<include name="type_quit">
+		<!-- LOC -->
+		<label>Quit Plex</label>
+		<onclick>XBMC.Shutdown(0)</onclick>
+	</include>
+	<include name="type_sleep">
+		<!-- LOC -->
+		<label>Sleep</label>
+		<onclick>XBMC.SleepSystem()</onclick>
 	</include>
 
 </includes>
