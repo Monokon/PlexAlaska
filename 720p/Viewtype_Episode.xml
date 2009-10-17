@@ -76,7 +76,7 @@
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
 					<info>ListItem.Overlay</info>
-					<animation effect="fade" start="100" end="10" time="0" condition="!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)">Conditional</animation>
+					<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)">Conditional</animation>
 				</control>
 			</itemlayout>
 			<focusedlayout width="633" height="164">
