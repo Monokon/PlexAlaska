@@ -336,7 +336,7 @@
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
 					<!-- LOC -->
-					<label>Increase fanart visibility</label>
+					<label>Increase backdrop visibility</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility)</onclick>
@@ -365,6 +365,31 @@
 					<label>+ 50% visibility</label>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility50)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility50)</selected>
+				</control>
+
+				<control type="radiobutton" id="402">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+					<!-- LOC -->
+					<label>Disable backdrops for movies</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(nomoviebackdrops)</onclick>
+					<selected>Skin.HasSetting(nomoviebackdrops)</selected>
+				</control>
+				<control type="radiobutton" id="403">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+					<!-- LOC -->
+					<label>Disable backdrops for pictures</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(nopicturebackdrops)</onclick>
+					<selected>Skin.HasSetting(nopicturebackdrops)</selected>
 				</control>
 
 			</control>
