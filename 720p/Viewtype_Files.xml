@@ -181,7 +181,7 @@
 					<textcolor>ListTitleF</textcolor>
 					<label>$INFO[ListItem.Episode]. $INFO[ListItem.Title]</label>
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + Container.Content(episodes)</visible>
-					<animation effect="slide" start="0,40" end="0,40" time="0" condition="IsEmpty(ListItem.Plot)">Conditional</animation>
+					<animation effect="slide" start="0,46" end="0,46" time="0" condition="IsEmpty(ListItem.Plot)">Conditional</animation>
 				</control>
 				<control type="label">
 					<posx>30</posx>
@@ -195,13 +195,13 @@
 					<visible>!IsEmpty(ListItem.Genre) + Window.IsActive(25) + !Container.Content(seasons)</visible>
 				</control>
 				<!--<control type="textbox">
-					<posx>0</posx>
-					<posy>38</posy>
+					<posx>690</posx>
+					<posy>30</posy>
 					<width>700</width>
-					<height>76</height>
+					<height>84</height>
 					<font>Font_EpisodePlot</font>
 					<textcolor>EpisodePlot</textcolor>
-					<label>$INFO[ListItem.Plot]</label>
+					<info>ListItem.Plot</info>
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
 					<visible>!IsEmpty(ListItem.Plot) + Window.IsActive(25) + Container.Content(episodes)</visible>
 				</control>-->
