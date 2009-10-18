@@ -462,6 +462,7 @@
 			<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
 			<visible>!IsEmpty(Container(55).ListItem.Plot) + Window.IsActive(25) + Container(55).Content(episodes)</visible>
 			<include>Animation_CommonFade</include>
+			<include>Animation_ZoomedByMenu</include>
 		</control>
 
 	</include>
