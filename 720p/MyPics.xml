@@ -61,10 +61,12 @@
 			</control>
 			<control type="button" id="21">
 				<include>WindowMenuButton</include>
-				<include condition="![Skin.HasSetting(picturegrid4x3) | Skin.HasSetting(picturegrid7x1) | Skin.HasSetting(picturegrid7x2)]">PictureGrid2x4Button</include>
+				<include condition="![Skin.HasSetting(picturegrid4x3) | Skin.HasSetting(picturegrid7x1) | Skin.HasSetting(picturegrid7x2) | Skin.HasSetting(picturegrid7x3) | Skin.HasSetting(picturegrid7x4)]">PictureGrid2x4Button</include>
 				<include condition="Skin.HasSetting(picturegrid4x3)">PictureGrid4x3Button</include>				
 				<include condition="Skin.HasSetting(picturegrid7x1)">PictureGrid7x1Button</include>				
 				<include condition="Skin.HasSetting(picturegrid7x2)">PictureGrid7x2Button</include>				
+				<include condition="Skin.HasSetting(picturegrid7x3)">PictureGrid7x3Button</include>
+				<include condition="Skin.HasSetting(picturegrid7x4)">PictureGrid7x4Button</include>
 				<onclick>ReloadSkin()</onclick>
 				<onclick>SetFocus(50)</onclick>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(21)">
