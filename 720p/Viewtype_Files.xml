@@ -2,13 +2,13 @@
 
 <includes>
 	<include name="Viewtype_Files">
-		<control type="fixedlist" id="55">
+		<control type="fixedlist" id="50">
 			<posx>490</posx>
 			<posy>90</posy>
 			<height>485</height>
 			<width>730</width>
-			<onup>55</onup>
-			<ondown>55</ondown>
+			<onup>50</onup>
+			<ondown>50</ondown>
 			<onleft>7000</onleft>
 			<onright>60</onright>
 			<viewtype label="Files">list</viewtype>
@@ -370,7 +370,7 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<visible>Skin.HasSetting(File_View_Focus_Line) + Control.IsVisible(55)</visible>
+			<visible>Skin.HasSetting(File_View_Focus_Line) + Control.IsVisible(50)</visible>
 			<posx>-200</posx>
 			<posy>230</posy>
 			<include>Animation_ZoomInZoomOut</include>
@@ -408,13 +408,13 @@
 			<height>360</height>
 			<fadetime>400</fadetime>
 			<aspectratio align="right" aligny="center">keep</aspectratio>
-			<texture background="true">$INFO[Container(55).ListItem.Icon]</texture>
+			<texture background="true">$INFO[Container(50).ListItem.Icon]</texture>
 			<bordertexture border="8">common/thumb_border.png</bordertexture>
 			<bordersize>8</bordersize>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByMusicInfo</include>
-			<visible>Control.IsVisible(55) + !Container.Content(Genres)</visible>
+			<visible>Control.IsVisible(50) + !Container.Content(Genres)</visible>
 		</control>
 		<control type="image">
 			<posx>30</posx>
@@ -429,10 +429,10 @@
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByMusicInfo</include>
-			<visible>Control.IsVisible(55) + Container.Content(Genres)</visible>
+			<visible>Control.IsVisible(50) + Container.Content(Genres)</visible>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(55) + Window.IsActive(25)</visible>
+			<visible>Control.IsVisible(50) + Window.IsActive(25)</visible>
 			<include>Animation_ZoomedByMenu</include>
 			<include>PosterMediaFlags</include>
 		</control>
@@ -441,10 +441,10 @@
 			<posy>100</posy>
 			<width>25</width>
 			<height>460</height>
-			<visible allowhiddenfocus="true">Control.IsVisible(55) + Control.HasFocus(60)</visible>
+			<visible allowhiddenfocus="true">Control.IsVisible(50) + Control.HasFocus(60)</visible>
 			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 			<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
-			<onleft>55</onleft>
+			<onleft>50</onleft>
 			<showonepage>true</showonepage>
 			<orientation>vertical</orientation>
 			<include>Animation_CommonFade</include>
@@ -460,7 +460,7 @@
 			<textcolor>EpisodePlot</textcolor>
 			<info>ListItem.Plot</info>
 			<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
-			<visible>!IsEmpty(Container(55).ListItem.Plot) + Window.IsActive(25) + Container(55).Content(episodes)</visible>
+			<visible>!IsEmpty(Container(50).ListItem.Plot) + Window.IsActive(25) + Container(50).Content(episodes)</visible>
 			<include>Animation_CommonFade</include>
 			<include>Animation_ZoomedByMenu</include>
 		</control>

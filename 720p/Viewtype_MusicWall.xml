@@ -3,7 +3,7 @@
 <includes>
 	<include name="Viewtype_MusicWall">
 <!-- Browser -->
-		<control type="panel" id="50">
+		<control type="panel" id="55">
 			<viewtype label="Wall">icon</viewtype>
 			<posx>-30</posx>
 			<posy>195</posy>
@@ -54,10 +54,10 @@
 					<height>190</height>
 					<texture>wall/musicwallmatte.png</texture>
 					<colordiffuse>WallIconDiffuse</colordiffuse>
-					<animation type="Focus" reversible="false" condition="Container(50).Row(0)">
+					<animation type="Focus" reversible="false" condition="Container(55).Row(0)">
 						<effect type="slide" start="0,0" end="0,-20" time="400" tween="back" easing="out" />						
 					</animation>
-					<animation type="Focus" reversible="false" condition="Container(50).Row(2)">
+					<animation type="Focus" reversible="false" condition="Container(55).Row(2)">
 						<effect type="slide" start="0,0" end="0,20" time="400" tween="back" easing="out" />						
 					</animation>					
 				</control>
@@ -68,14 +68,14 @@
 					<height>190</height>
 					<fadetime>200</fadetime>
 					<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[ListItem.Icon]</texture>
-					<animation type="Focus" reversible="false" condition="Container(50).Row(0)">
+					<animation type="Focus" reversible="false" condition="Container(55).Row(0)">
 						<effect type="fade" start="20" end="100" time="200" />
 						<effect type="slide" start="0,0" end="0,-20" time="400" tween="back" easing="out" />						
 					</animation>
-					<animation type="Focus" reversible="false" condition="Container(50).Row(1)">
+					<animation type="Focus" reversible="false" condition="Container(55).Row(1)">
 						<effect type="fade" start="20" end="100" time="200" />	
 					</animation>					
-					<animation type="Focus" reversible="false" condition="Container(50).Row(2)">
+					<animation type="Focus" reversible="false" condition="Container(55).Row(2)">
 						<effect type="fade" start="20" end="100" time="200" />
 						<effect type="slide" start="0,0" end="0,20" time="400" tween="back" easing="out" />						
 					</animation>	
@@ -88,14 +88,14 @@
 					<height>190</height>
 					<texture>wall/musicwallframeNF.png</texture>
 					<colordiffuse>WallIconDiffuse</colordiffuse>
-					<animation type="Focus" reversible="false" condition="Container(50).Row(0)">
+					<animation type="Focus" reversible="false" condition="Container(55).Row(0)">
 						<effect type="fade" start="100" end="0" time="200" />
 						<effect type="slide" start="0,0" end="0,-20" time="400" tween="back" easing="out" />						
 					</animation>
-					<animation type="Focus" reversible="false" condition="Container(50).Row(1)">
+					<animation type="Focus" reversible="false" condition="Container(55).Row(1)">
 						<effect type="fade" start="100" end="0" time="200" />					
 					</animation>					
-					<animation type="Focus" reversible="false" condition="Container(50).Row(2)">
+					<animation type="Focus" reversible="false" condition="Container(55).Row(2)">
 						<effect type="fade" start="100" end="0" time="200" />
 						<effect type="slide" start="0,0" end="0,20" time="400" tween="back" easing="out" />						
 					</animation>						
@@ -106,14 +106,14 @@
 					<width>223</width>
 					<height>223</height>
 					<texture>wall/musicwallframeF.png</texture>
-					<animation type="Focus" reversible="false" condition="Container(50).Row(0)">
+					<animation type="Focus" reversible="false" condition="Container(55).Row(0)">
 						<effect type="fade" start="0" end="100" time="400" />
 						<effect type="slide" start="0,0" end="0,-20" time="400" tween="back" easing="out" />
 					</animation>
-					<animation type="Focus" reversible="false" condition="Container(50).Row(1)">
+					<animation type="Focus" reversible="false" condition="Container(55).Row(1)">
 						<effect type="fade" start="0" end="100" time="400" />
 					</animation>							
-					<animation type="Focus" reversible="false" condition="Container(50).Row(2)">
+					<animation type="Focus" reversible="false" condition="Container(55).Row(2)">
 						<effect type="fade" start="0" end="100" time="400" />
 						<effect type="slide" start="0,0" end="0,20" time="400" tween="back" easing="out" />
 					</animation>						
@@ -126,7 +126,7 @@
 			<posy>516</posy>
 			<width>27</width>
 			<height>27</height>
-			<visible>Control.IsVisible(50)</visible>
+			<visible>Control.IsVisible(55)</visible>
 			<texture flipx="true">wall/WallArrow.png</texture>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_MusicWallFloat</include>
@@ -139,7 +139,7 @@
 			<posy>516</posy>
 			<width>27</width>
 			<height>27</height>
-			<visible>Control.IsVisible(50)</visible>
+			<visible>Control.IsVisible(55)</visible>
 			<texture>wall/WallArrow.png</texture>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_MusicWallFloat</include>
@@ -150,7 +150,7 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture diffuse="wall/music_wall_mask.png">backdrops/background.png</texture>
-			<visible>Control.IsVisible(50)</visible>
+			<visible>Control.IsVisible(55)</visible>
 			<colordiffuse>dfFFFFFF</colordiffuse>
 		</control>
 		<control type="image">

@@ -78,7 +78,7 @@
 
 <!-- Browser -->
 	
-		<control type="panel" id="50">
+		<control type="panel" id="55">
 			<viewtype label="GRID">icon</viewtype>
 			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
 			<include condition="![Skin.HasSetting(picturegrid4x3) | Skin.HasSetting(picturegrid7x1) | Skin.HasSetting(picturegrid7x2)]">PictureGridVars2x4</include>
@@ -123,7 +123,7 @@
 			<animation effect="slide" start="-550,135" end="-550,135" time="0" condition="Skin.HasSetting(picturegrid7x1)">Conditional</animation>			
 			<animation effect="slide" start="-550,80" end="-550,80" time="0" condition="Skin.HasSetting(picturegrid7x2)">Conditional</animation>			
 			<animation effect="slide" start="-220,55" end="-220,55" time="0" condition="Skin.HasSetting(picturegrid4x3)">Conditional</animation>
-			<visible>Control.IsVisible(50)</visible>
+			<visible>Control.IsVisible(55)</visible>
 		</control>
 		
 		<control type="image">
@@ -139,7 +139,7 @@
 			<animation effect="slide" start="0,135" end="0,135" time="0" condition="Skin.HasSetting(picturegrid7x1)">Conditional</animation>
 			<animation effect="slide" start="0,80" end="0,80" time="0" condition="Skin.HasSetting(picturegrid7x2)">Conditional</animation>			
 			<animation effect="slide" start="0,55" end="0,55" time="0" condition="Skin.HasSetting(picturegrid4x3)">Conditional</animation>			
-			<visible>Control.IsVisible(50)</visible>
+			<visible>Control.IsVisible(55)</visible>
 		</control>		
 		
 	</include>
