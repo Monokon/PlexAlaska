@@ -340,7 +340,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/appstore//</imagepath>
+					<imagepath>backdrops/osx/appstore//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>				
 				<include>Home_MainMenuFrame</include>
@@ -366,7 +366,7 @@
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/videos//</imagepath>
+					<imagepath>backdrops/osx/videos//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -397,7 +397,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/music//</imagepath>
+					<imagepath>backdrops/osx/music//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -426,7 +426,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/movies//</imagepath>
+					<imagepath>backdrops/osx/movies//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -455,7 +455,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/tvshows//</imagepath>
+					<imagepath>backdrops/osx/tvshows//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -490,7 +490,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/pictures/menuitem//</imagepath>
+					<imagepath>backdrops/osx/pictures/menuitem//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -534,7 +534,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/weather//</imagepath>
+					<imagepath>backdrops/osx/weather//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -588,7 +588,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/settings//</imagepath>
+					<imagepath>backdrops/osx/settings//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -641,7 +641,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/quit//</imagepath>
+					<imagepath>backdrops/osx/quit//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
