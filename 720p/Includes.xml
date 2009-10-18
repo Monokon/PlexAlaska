@@ -61,7 +61,8 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>backdrops/background.png</texture>
- 			<animation effect="fade" start="100" end="80" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + !Skin.HasSetting(increaseFanartVisibility)]">Conditional</animation>
+ 			<animation effect="fade" start="100" end="90" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + !Skin.HasSetting(increaseFanartVisibility)]">Conditional</animation>
+			<animation effect="fade" start="100" end="80" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility20)]">Conditional</animation>
 			<animation effect="fade" start="100" end="70" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility30)]">Conditional</animation>
 			<animation effect="fade" start="100" end="60" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility40)]">Conditional</animation>
 			<animation effect="fade" start="100" end="50" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility50)]">Conditional</animation>
@@ -70,7 +71,8 @@
 			<include>Dimensions_Fullscreen</include>
 			<texture>backdrops/backgroundcolordiffuse.png</texture>
 			<colordiffuse>backgroundColor</colordiffuse>
-			<animation effect="fade" start="100" end="80" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + !Skin.HasSetting(increaseFanartVisibility)]">Conditional</animation>
+			<animation effect="fade" start="100" end="90" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + !Skin.HasSetting(increaseFanartVisibility)]">Conditional</animation>
+			<animation effect="fade" start="100" end="80" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility20)]">Conditional</animation>
 			<animation effect="fade" start="100" end="70" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility30)]">Conditional</animation>
 			<animation effect="fade" start="100" end="60" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility40)]">Conditional</animation>
 			<animation effect="fade" start="100" end="50" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility50)]">Conditional</animation>
@@ -650,7 +652,8 @@
 				<include>Home_MainMenuFrame</include>
 				<control type="label">
 					<include>Home_MainMenuLabel</include>
-<!-- LOC -->		<label>QUIT PLEX</label>
+					<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
+					<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
 				</control>
 				<include>Home_MainMenuShade</include>
 				<visible>!Skin.HasSetting(nohomequit)</visible>
@@ -778,9 +781,9 @@
 				</item>
 				<item id="13">
 					<description>Shutdown</description>
-					<label>Quit Plex</label>
 					<thumb>mainmenu/quit.png</thumb>
-					<onclick>XBMC.Shutdown()</onclick>
+					<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
+					<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
 					<visible>!Skin.HasSetting(nohomequit)</visible>
 				</item>
 			</content>
@@ -925,10 +928,10 @@
 				<onclick>XBMC.ActivateWindow(4)</onclick>
 			</item>
 			<item id="9">
+				<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
+				<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
 				<description>Quit Plex</description>
-				<label>Quit Plex</label>
 				<thumb>backdrops/quit/quitplex.jpg</thumb>
-				<onclick>XBMC.Shutdown(0)</onclick>
 				<visible>!Skin.HasSetting(nohomequit)</visible>
 			</item>
 		</content>
@@ -1154,6 +1157,7 @@
 <!-- PlexAlaska -->
 
 	<include name="ResetFanartVisibilityButtons">
+		<onclick>Skin.Reset(increaseFanartVisibility20)</onclick>
 		<onclick>Skin.Reset(increaseFanartVisibility30)</onclick>
 		<onclick>Skin.Reset(increaseFanartVisibility40)</onclick>
 		<onclick>Skin.Reset(increaseFanartVisibility50)</onclick>
@@ -1209,6 +1213,17 @@
 	</include>
 	<include name="pos2800">
 		<posx>2800</posx>
+	</include>
+
+	<include name="type_quit">
+		<!-- LOC -->
+		<label>Quit Plex</label>
+		<onclick>XBMC.Shutdown(0)</onclick>
+	</include>
+	<include name="type_sleep">
+		<!-- LOC -->
+		<label>Sleep</label>
+		<onclick>XBMC.SleepSystem()</onclick>
 	</include>
 
 </includes>

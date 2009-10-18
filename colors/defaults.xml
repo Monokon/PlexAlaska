@@ -8,8 +8,7 @@
 
 	<!-- Global colours -->
 
-	<color name="backgroundColor">FFefc1d4</color>
-	<!--FFEFC1D4-->
+	<color name="backgroundColor">FFefc1d4</color>	
 	<color name="Time">77686868</color>
 	<color name="Date">77686868</color>
 	<color name="RSSBody">FF686868</color>
@@ -23,6 +22,7 @@
 	<color name="FlagDiffuse">CC474747</color>
 
 	<!-- OSD -->
+	
 	<color name="OSDPlayingArtist">FF686868</color>
 	<color name="OSDPlayingTrack">FF686868</color>
 	<color name="OSDPlayingAlbum">77686868</color>
@@ -30,6 +30,7 @@
 	<color name="OSDDetails">FF686868</color>
 	<color name="OSDTime">B9202020</color>
 	<color name="OSDProgress">55686868</color>
+	
 	<!-- Window menu colours -->
 
 	<color name="MenuValue">FF5b5b5b</color>
@@ -44,16 +45,16 @@
 
 	<color name="PosterTitle">FF474747</color>
 	<color name="EpisodeLabelF">FF474747</color>	
-	<color name="EpisodePlot">FF474747</color>	
+	<color name="EpisodePlot">DD202020</color>	
 	<color name="EpisodeNumber">FF474747</color>		
 
 	<!-- Info dialog colours -->
 
 	<color name="InfoTitle">B9202020</color>
-	<color name="InfoPlot">B9202020</color>
+	<color name="InfoPlot">DD202020</color>
 	<color name="InfoYear">B9202020</color>	
-	<color name="InfoGenre">B9202020</color>		
-	<color name="InfoDetails">B9202020</color>
+	<color name="InfoGenre">DD202020</color>		
+	<color name="InfoDetails">DD202020</color>
 
 	<!-- Progress dialogs -->
 
@@ -69,9 +70,14 @@
 	<color name="ListTitleF">FF474747</color>
 	<color name="FileTitleNF">ab474747</color>	
 
-	<!-- wall colours -->
+	<!-- Wall colours -->
 
 	<color name="WallIconDiffuse">48FFFFFF</color>
+	
+	<!-- Fanart colours -->
+	
+	<color name="FanartTitle">FF474747</color>
+	<color name="FanartText">DD202020</color>
 
 	<!-- Dialogs -->
 

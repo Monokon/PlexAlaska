@@ -127,6 +127,7 @@
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
 					<info>ListItem.Overlay</info>
+					<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)">Conditional</animation>
 				</control>
 			</itemlayout>
 			<focusedlayout width="760" height="120">
@@ -180,7 +181,7 @@
 					<textcolor>ListTitleF</textcolor>
 					<label>$INFO[ListItem.Episode]. $INFO[ListItem.Title]</label>
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + Container.Content(episodes)</visible>
-					<animation effect="slide" start="0,40" end="0,40" time="0" condition="IsEmpty(ListItem.Plot)">Conditional</animation>
+					<animation effect="slide" start="0,46" end="0,46" time="0" condition="IsEmpty(ListItem.Plot)">Conditional</animation>
 				</control>
 				<control type="label">
 					<posx>30</posx>
@@ -194,13 +195,13 @@
 					<visible>!IsEmpty(ListItem.Genre) + Window.IsActive(25) + !Container.Content(seasons)</visible>
 				</control>
 				<!--<control type="textbox">
-					<posx>0</posx>
-					<posy>38</posy>
+					<posx>690</posx>
+					<posy>30</posy>
 					<width>700</width>
-					<height>76</height>
+					<height>84</height>
 					<font>Font_EpisodePlot</font>
 					<textcolor>EpisodePlot</textcolor>
-					<label>$INFO[ListItem.Plot]</label>
+					<info>ListItem.Plot</info>
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
 					<visible>!IsEmpty(ListItem.Plot) + Window.IsActive(25) + Container.Content(episodes)</visible>
 				</control>-->
@@ -450,5 +451,19 @@
 			<include>Animation_CommonFade</include>
 			<animation effect="slide" start="0,0" end="-50,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(60)">Conditional</animation>
 		</control>
+
+		<control type="textbox">
+			<posx>522</posx>
+			<posy>267</posy>
+			<width>700</width>
+			<height>80</height>
+			<font>Font_EpisodePlot</font>
+			<textcolor>EpisodePlot</textcolor>
+			<info>ListItem.Plot</info>
+			<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
+			<visible>!IsEmpty(Container(55).ListItem.Plot) + Window.IsActive(25) + Container(55).Content(episodes)</visible>
+			<include>Animation_CommonFade</include>
+		</control>
+
 	</include>
 </includes>

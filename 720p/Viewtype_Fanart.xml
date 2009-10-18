@@ -110,7 +110,7 @@
 				</control>
 			</focusedlayout>
 		</control>
-	<!-- Browser label and flags -->
+		<!-- Browser label and flags -->
 		<control type="group">
 			<posx>505</posx>
 			<posy>364</posy>
@@ -125,7 +125,7 @@
 				<height>50</height>
 				<aligny>center</aligny>
 				<font>Font_MainMenuLabel</font>
-				<textcolor>PosterTitle</textcolor>
+				<textcolor>FanartTitle</textcolor>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<visible>Container.Content(movies)</visible>
 			</control>
@@ -136,8 +136,8 @@
 				<height>50</height>
 				<aligny>center</aligny>
 				<font>Font_TVShow</font>
-				<textcolor>ListTrackF</textcolor>
-				<label>$INFO[ListItem.Genre]</label>
+				<textcolor>FanartTitle</textcolor>
+				<label>[B]$INFO[ListItem.Genre][/B]</label>
 				<visible>Container.Content(movies)</visible>
 			</control>
 			<control type="textbox">
@@ -147,9 +147,9 @@
 				<height>120</height>
 				<align>left</align>
 				<info>ListItem.Plot</info>
-				<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
+				<autoscroll time="4000" delay="6000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
 				<font>Font_TVShow</font>
-				<textcolor>ListTrackF</textcolor>
+				<textcolor>FanartText</textcolor>
 				<visible>Container.Content(movies)</visible>
 			</control>
 		</control>

@@ -150,6 +150,19 @@
 					<onclick>Skin.ToggleSetting(RSS_only_on_home)</onclick>
 					<selected>Skin.HasSetting(RSS_only_on_home)</selected>
 				</control>
+				<control type="radiobutton" id="106">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+					<!-- LOC -->
+					<label>Change option "Quit Plex" to "Sleep"</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>!Skin.HasSetting(nohomequit)</visible>
+					<onclick>Skin.ToggleSetting(sleepsystem)</onclick>
+					<selected>Skin.HasSetting(sleepsystem)</selected>
+				</control>
 			</control>
 			<control type="grouplist" id="9002">
 				<visible>Container(9000).Hasfocus(2)</visible>
@@ -265,7 +278,7 @@
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
 					<!-- LOC -->
-					<label>Hide item "Quit Plex"</label>
+					<label>Hide item "Quit Plex / Sleep"</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(nohomequit)</onclick>
@@ -323,35 +336,67 @@
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>Black</focusedcolor>
 					<!-- LOC -->
-					<label>Increase fanart visibility</label>
+					<label>Increase backdrop visibility</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility)</onclick>
 					<include>ResetFanartVisibilityButtons</include>
-					<onclick>Skin.ToggleSetting(increaseFanartVisibility30)</onclick>
+					<onclick>Skin.ToggleSetting(increaseFanartVisibility20)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility)</selected>
 				</control>
 
 				<control type="radiobutton" id="4011">
 					<include>FanartVisibilityButtons</include>
 					<!-- LOC -->
+					<label>+ 20% visibility</label>
+					<onclick>Skin.ToggleSetting(increaseFanartVisibility20)</onclick>
+					<selected>Skin.HasSetting(increaseFanartVisibility20)</selected>
+				</control>
+				<control type="radiobutton" id="4012">
+					<include>FanartVisibilityButtons</include>
+					<!-- LOC -->
 					<label>+ 30% visibility</label>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility30)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility30)</selected>
 				</control>
-				<control type="radiobutton" id="4012">
+				<control type="radiobutton" id="4013">
 					<include>FanartVisibilityButtons</include>
 					<!-- LOC -->
 					<label>+ 40% visibility</label>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility40)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility40)</selected>
 				</control>
-				<control type="radiobutton" id="4013">
+				<control type="radiobutton" id="4014">
 					<include>FanartVisibilityButtons</include>
 					<!-- LOC -->
 					<label>+ 50% visibility</label>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility50)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility50)</selected>
+				</control>
+
+				<control type="radiobutton" id="402">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+					<!-- LOC -->
+					<label>Disable backdrops for movies</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(nomoviebackdrops)</onclick>
+					<selected>Skin.HasSetting(nomoviebackdrops)</selected>
+				</control>
+				<control type="radiobutton" id="403">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+					<!-- LOC -->
+					<label>Disable backdrops for pictures</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(nopicturebackdrops)</onclick>
+					<selected>Skin.HasSetting(nopicturebackdrops)</selected>
 				</control>
 
 			</control>
