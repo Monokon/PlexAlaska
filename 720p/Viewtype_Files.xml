@@ -64,6 +64,18 @@
 					<label>$INFO[ListItem.Label]</label>
 					<visible>IsEmpty(ListItem.Title) + [Window.IsActive(25) | Window.IsActive(502)]</visible>
 				</control>
+				<!-- fix for invisible non-focused items in e.g. Hulu -->
+				<control type="label">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>720</width>
+					<height>46</height>
+					<aligny>center</aligny>
+					<font>Font_ListTitleNF</font>
+					<textcolor>FileTitleNF</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(24)</visible>
+				</control>
 				<control type="label">
 					<posx>30</posx>
 					<posy>0</posy>
