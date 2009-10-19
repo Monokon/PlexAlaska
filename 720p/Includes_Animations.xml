@@ -2,7 +2,7 @@
 
 <includes>
 
-<!-- Common animations -->
+	<!-- Common animations -->
 
 	<include name="Animation_CommonFade">
 		<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>	
@@ -24,7 +24,7 @@
 		<animation effect="fade" start="0" end="100" time="200">Visible</animation>	
 	</include>	
 
-<!-- Window transition animations -->
+	<!-- Window transition animations -->
 
 	<include name="Animation_ZoomOutZoomIn">
 		<animation type="WindowOpen">
@@ -49,9 +49,9 @@
 	</include>
 
 	<include name="Animation_ZoomedByMenu">
-		<animation type="Conditional" condition="ControlGroup(7000).HasFocus | ControlGroup(7001).HasFocus | Window.IsActive(106) | Window.IsActive(111)">
+		<animation type="Conditional" condition="ControlGroup(7000).HasFocus | ControlGroup(7001).HasFocus | Window.IsActive(100) | Window.IsActive(106) | Window.IsActive(111) | Window.IsActive(134)">
 			<effect type="zoom" time="600" center="640,360" start="100" end="50" tween="cubic" easing="inout" />
-		</animation>			
+		</animation>
 	</include>
 
 	<include name="Animation_ZoomInMenu">
@@ -78,7 +78,7 @@
 		</animation>
 		<animation type="WindowClose" reversible="false">
 			<effect type="fade" start="100" end="0" time="400" />
-		</animation>			
+		</animation>
 	</include>
 
 	<include name="Animation_SlideDownFadeOut">
@@ -88,9 +88,16 @@
 		</animation>
 		<animation type="WindowClose" reversible="false">
 			<effect type="fade" start="100" end="0" time="400" />
-		</animation>		
+		</animation>
+		<animation type="Visible" reversible="false">
+			<effect type="slide" start="0,-100" end="0,0" time="400" tween="cubic" easing="out" />
+			<effect type="fade" start="0" end="100" time="400" />
+		</animation>
+		<animation type="Hidden" reversible="false">
+			<effect type="fade" start="100" end="0" time="400" />
+		</animation>
 	</include>
-	
+
 	<include name="Animation_SlideAcrossToRight">
 		<animation type="WindowOpen" reversible="false">
 			<effect type="slide" start="-200,0" end="0,0" time="400" tween="cubic" easing="out" />
@@ -101,7 +108,7 @@
 			<effect type="fade" start="100" end="0" time="400" />
 		</animation>			
 	</include>
-	
+
 	<include name="Animation_SlideAcrossToLeft">
 		<animation type="WindowOpen" reversible="false">
 			<effect type="slide" start="200,0" end="0,0" time="400" tween="cubic" easing="out" />
@@ -112,7 +119,7 @@
 			<effect type="fade" start="100" end="0" time="400" />
 		</animation>			
 	</include>
-	
+
 	<include name="Animation_ZoomInFadeOut">
 		<animation type="WindowOpen" reversible="false">
 			<effect type="fade" start="0" end="100" time="600" delay="100" />
@@ -124,7 +131,7 @@
 		</animation>
 	</include>
 
-<!-- Info dialog animations -->
+	<!-- Info dialog animations -->
 
 	<include name="Animation_HiddenByInfo">
 		<animation effect="fade" start="100" end="0" time="200" condition="Window.IsActive(2003)">Conditional</animation>	
@@ -141,7 +148,7 @@
 		<animation effect="slide" start="0,0" end="-242,0" time="400" tween="cubic" easing="inout" condition="Window.IsActive(2003)">Conditional</animation>	
 	</include>
 
-<!-- Browser animations -->
+	<!-- Browser animations -->
 
 	<include name="Animation_EpisodeFloat">
 		<animation effect="slide" end="0,10" time="200" condition="Container(51).Row(0)">Conditional</animation>
@@ -202,7 +209,7 @@
 		<animation effect="slide" end="0,-600" time="200" condition="Container(53).Row(19)">Conditional</animation>			
 	</include>	
 
-<!-- Settings animations -->
+	<!-- Settings animations -->
 	<include name="Animation_Setting_Heading">
 		<animation type="WindowOpen" reversible="false" >
 			<effect type="slide" start="-300,0" end="0,0" time="400" tween="cubic" easing="out" />

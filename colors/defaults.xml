@@ -20,9 +20,10 @@
 	<color name="NowPlayingTrack">FF686868</color>
 	<color name="MediaMenu">77686868</color>
 	<color name="FlagDiffuse">CC474747</color>
+	<color name="FlagText">aacdcdcd</color>
 
 	<!-- OSD -->
-	
+
 	<color name="OSDPlayingArtist">FF686868</color>
 	<color name="OSDPlayingTrack">FF686868</color>
 	<color name="OSDPlayingAlbum">77686868</color>
@@ -30,7 +31,7 @@
 	<color name="OSDDetails">FF686868</color>
 	<color name="OSDTime">B9202020</color>
 	<color name="OSDProgress">55686868</color>
-	
+
 	<!-- Window menu colours -->
 
 	<color name="MenuValue">FF5b5b5b</color>
@@ -73,9 +74,9 @@
 	<!-- Wall colours -->
 
 	<color name="WallIconDiffuse">48FFFFFF</color>
-	
+
 	<!-- Fanart colours -->
-	
+
 	<color name="FanartTitle">FF474747</color>
 	<color name="FanartText">DD202020</color>
 
@@ -83,5 +84,11 @@
 
 	<color name="DialogLargeLabel">dc777777</color>
 	<color name="DialogLargeLabelAccent">dc990000</color>
+
+	<!-- filemanager -->
+	
+	<color name="FM_ListTitle">CCababab</color>
+	<color name="FM_Listfocused">ffffffff</color>
+	<color name="FM_Listunfocused">ab474747</color>
 
 </colors>

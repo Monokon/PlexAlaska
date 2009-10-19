@@ -386,6 +386,7 @@
 			<posx>-200</posx>
 			<posy>230</posy>
 			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_HiddenByMusicInfo</include>
 			<control type="image">
@@ -435,7 +436,7 @@
 			<height>360</height>
 			<fadetime>400</fadetime>
 			<aspectratio align="right" aligny="center">keep</aspectratio>
-			<texture fallback="moviegenres\default.jpg">moviegenres\$INFO[ListItem.Label].jpg</texture>
+			<texture fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
 			<bordertexture border="8">common/thumb_border.png</bordertexture>
 			<bordersize>8</bordersize>
 			<include>Animation_ZoomInZoomOut</include>
@@ -449,6 +450,8 @@
 			<include>PosterMediaFlags</include>
 		</control>
 		<control type="scrollbar" id="60">
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
 			<posx>1280</posx>
 			<posy>100</posy>
 			<width>25</width>
