@@ -422,7 +422,7 @@
 			<fadetime>400</fadetime>
 			<aspectratio align="right" aligny="center">keep</aspectratio>
 			<colordiffuse>C8FFFFFF</colordiffuse>
-			<texture background="true">$INFO[Container(55).ListItem.Icon]</texture>
+			<texture background="true">$INFO[Container(50).ListItem.Icon]</texture>
 			<bordertexture border="8">common/thumb_border.png</bordertexture>
 			<bordersize>8</bordersize>
 			<include>Animation_ZoomInZoomOut</include>
