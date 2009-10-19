@@ -23,8 +23,20 @@
 	<include name="PictureGrid7x2Button">
 		<label>7x2</label>
 		<onclick>Skin.Reset(picturegrid7x2)</onclick>
-		<onclick>Skin.SetBool(picturegrid2x4)</onclick>
+		<onclick>Skin.SetBool(picturegrid7x3)</onclick>
 	</include>		
+
+	<include name="PictureGrid7x3Button">
+		<label>7x3</label>
+		<onclick>Skin.Reset(picturegrid7x3)</onclick>
+		<onclick>Skin.SetBool(picturegrid7x4)</onclick>
+	</include>
+
+	<include name="PictureGrid7x4Button">
+		<label>7x4</label>
+		<onclick>Skin.Reset(picturegrid7x4)</onclick>
+		<onclick>Skin.SetBool(picturegrid2x4)</onclick>
+	</include>
 
 	<include name="PictureGridVars2x4">
 		<posx>893</posx>
@@ -54,6 +66,20 @@
 		<height>220</height>	
 	</include>	
 
+	<include name="PictureGridVars7x3">
+		<posx>343</posx>
+		<posy>216</posy>
+		<width>770</width>
+		<height>330</height>
+	</include>
+
+	<include name="PictureGridVars7x4">
+		<posx>343</posx>
+		<posy>106</posy>
+		<width>770</width>
+		<height>440</height>
+	</include>
+
 	<include name="Object_PicturePanel">
 		<control type="image">
 			<posx>1</posx>
@@ -78,13 +104,15 @@
 
 <!-- Browser -->
 	
-		<control type="panel" id="50">
+		<control type="panel" id="55">
 			<viewtype label="GRID">icon</viewtype>
 			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
-			<include condition="![Skin.HasSetting(picturegrid4x3) | Skin.HasSetting(picturegrid7x1) | Skin.HasSetting(picturegrid7x2)]">PictureGridVars2x4</include>
+			<include condition="![Skin.HasSetting(picturegrid4x3) | Skin.HasSetting(picturegrid7x1) | Skin.HasSetting(picturegrid7x2) | Skin.HasSetting(picturegrid7x3) | Skin.HasSetting(picturegrid7x4)]">PictureGridVars2x4</include>
 			<include condition="Skin.HasSetting(picturegrid4x3)">PictureGridVars4x3</include>
 			<include condition="Skin.HasSetting(picturegrid7x1)">PictureGridVars7x1</include>
 			<include condition="Skin.HasSetting(picturegrid7x2)">PictureGridVars7x2</include>			
+			<include condition="Skin.HasSetting(picturegrid7x3)">PictureGridVars7x3</include>
+			<include condition="Skin.HasSetting(picturegrid7x4)">PictureGridVars7x4</include>
 			<pagecontrol>61</pagecontrol>
 			<scrolltime>0</scrolltime>
 			<orientation>horizontal</orientation>
@@ -120,10 +148,12 @@
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>
 			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
-			<animation effect="slide" start="-550,135" end="-550,135" time="0" condition="Skin.HasSetting(picturegrid7x1)">Conditional</animation>			
-			<animation effect="slide" start="-550,80" end="-550,80" time="0" condition="Skin.HasSetting(picturegrid7x2)">Conditional</animation>			
+			<animation effect="slide" start="-550,135" end="-550,135" time="0" condition="Skin.HasSetting(picturegrid7x1)">Conditional</animation>
+			<animation effect="slide" start="-550,80" end="-550,80" time="0" condition="Skin.HasSetting(picturegrid7x2)">Conditional</animation>
+			<animation effect="slide" start="-550,25" end="-550,25" time="0" condition="Skin.HasSetting(picturegrid7x3)">Conditional</animation>
+			<animation effect="slide" start="-550,-30" end="-550,-30" time="0" condition="Skin.HasSetting(picturegrid7x4)">Conditional</animation>
 			<animation effect="slide" start="-220,55" end="-220,55" time="0" condition="Skin.HasSetting(picturegrid4x3)">Conditional</animation>
-			<visible>Control.IsVisible(50)</visible>
+			<visible>Control.IsVisible(55)</visible>
 		</control>
 		
 		<control type="image">
@@ -137,9 +167,11 @@
 			<include>Animation_ZoomedByMenu</include>
 			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
 			<animation effect="slide" start="0,135" end="0,135" time="0" condition="Skin.HasSetting(picturegrid7x1)">Conditional</animation>
-			<animation effect="slide" start="0,80" end="0,80" time="0" condition="Skin.HasSetting(picturegrid7x2)">Conditional</animation>			
-			<animation effect="slide" start="0,55" end="0,55" time="0" condition="Skin.HasSetting(picturegrid4x3)">Conditional</animation>			
-			<visible>Control.IsVisible(50)</visible>
+			<animation effect="slide" start="0,80" end="0,80" time="0" condition="Skin.HasSetting(picturegrid7x2)">Conditional</animation>
+			<animation effect="slide" start="0,25" end="0,25" time="0" condition="Skin.HasSetting(picturegrid7x3)">Conditional</animation>
+			<animation effect="slide" start="0,-30" end="0,-30" time="0" condition="Skin.HasSetting(picturegrid7x4)">Conditional</animation>
+			<animation effect="slide" start="0,55" end="0,55" time="0" condition="Skin.HasSetting(picturegrid4x3)">Conditional</animation>
+			<visible>Control.IsVisible(55)</visible>
 		</control>		
 		
 	</include>

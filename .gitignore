@@ -25,4 +25,10 @@
 
 #ImageSource
 *.psd
+<<<<<<< HEAD
+>>>>>>> hitcher/master
+=======
+
+#Folders
+*extras
 >>>>>>> hitcher/master

@@ -113,7 +113,7 @@
 				<info>ListItem.CastAndRole</info>
 			</control>
 			<control type="textbox">
-				<visible>!Control.IsVisible(50)</visible>
+				<visible>!Control.IsVisible(55)</visible>
 				<posy>281</posy>
 				<width>600</width>
 				<height>155</height>
@@ -170,7 +170,7 @@
 				<height>160</height>
 				<texture>$INFO[Container(50).Listitem.Icon]</texture>
 				<aspectratio>keep</aspectratio>
-				<visible>Control.IsVisible(50)</visible>
+				<visible>Control.IsVisible(55)</visible>
 			</control>
 		</control>
 	<!-- view options -->

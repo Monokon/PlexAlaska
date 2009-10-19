@@ -7,19 +7,32 @@
 		<include>Global_Background</include>
 		<control type="largeimage" id="668">
 			<include>Dimensions_Fullscreen</include>
-			<texture>$INFO[listitem.filenameandpath]</texture>
-			<fadetime>400</fadetime>
 			<aspectratio align="top">keep</aspectratio>
+			<texture>$INFO[listitem.icon]</texture>
 			<visible>!Skin.HasSetting(nopicturebackdrops)</visible>
 			<include>Animation_BackdropFade</include>
 		</control>
-		<include>Global_Filter</include>
-		
+
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture>backdrops/background.png</texture>
+ 			<animation effect="fade" start="100" end="90" time="400" condition="!Skin.HasSetting(increaseFanartVisibility)">Conditional</animation>
+			<animation effect="fade" start="100" end="80" time="400" condition="Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility20)">Conditional</animation>
+			<animation effect="fade" start="100" end="70" time="400" condition="Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility30)">Conditional</animation>
+			<animation effect="fade" start="100" end="60" time="400" condition="Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility40)">Conditional</animation>
+			<animation effect="fade" start="100" end="50" time="400" condition="Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility50)">Conditional</animation>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture>backdrops/backgroundcolordiffuse.png</texture>
+			<colordiffuse>backgroundColor</colordiffuse>
+		</control>
+
 		<include>Viewtype_PictureGrid</include>
 		<include>Viewtype_Files</include>
 
 		<include>Global_ContextFilter</include>		
-		
+
 		<control type="label">
 			<include>WindowID</include>
 			<label>MyPics.xml</label>
@@ -48,10 +61,12 @@
 			</control>
 			<control type="button" id="21">
 				<include>WindowMenuButton</include>
-				<include condition="![Skin.HasSetting(picturegrid4x3) | Skin.HasSetting(picturegrid7x1) | Skin.HasSetting(picturegrid7x2)]">PictureGrid2x4Button</include>
+				<include condition="![Skin.HasSetting(picturegrid4x3) | Skin.HasSetting(picturegrid7x1) | Skin.HasSetting(picturegrid7x2) | Skin.HasSetting(picturegrid7x3) | Skin.HasSetting(picturegrid7x4)]">PictureGrid2x4Button</include>
 				<include condition="Skin.HasSetting(picturegrid4x3)">PictureGrid4x3Button</include>				
 				<include condition="Skin.HasSetting(picturegrid7x1)">PictureGrid7x1Button</include>				
 				<include condition="Skin.HasSetting(picturegrid7x2)">PictureGrid7x2Button</include>				
+				<include condition="Skin.HasSetting(picturegrid7x3)">PictureGrid7x3Button</include>
+				<include condition="Skin.HasSetting(picturegrid7x4)">PictureGrid7x4Button</include>
 				<onclick>ReloadSkin()</onclick>
 				<onclick>SetFocus(50)</onclick>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(21)">

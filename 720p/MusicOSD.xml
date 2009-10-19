@@ -31,11 +31,11 @@
 			</animation>
 			<!--First Button Group-->
 			<control type="grouplist" id="2001">
-				<visible allowhiddenfocus="true">Controlgroup(2001).HasFocus</visible>
+				<visible allowhiddenfocus="true">Controlgroup(2001).HasFocus</visible><animation effect="slide" start="0,0" end="-110,0" time="0" condition="LastFM.RadioPlaying">Conditional</animation>
 				<include>Animation_CommonFade</include>
 				<posx>965</posx>
 				<posy>25</posy>
-				<width>400</width>
+				<width>475</width>
 				<height>100</height>
 				<itemgap>-20</itemgap>
 				<orientation>horizontal</orientation>

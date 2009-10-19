@@ -71,45 +71,23 @@
 			<include>Dimensions_Fullscreen</include>
 			<texture>backdrops/backgroundcolordiffuse.png</texture>
 			<colordiffuse>backgroundColor</colordiffuse>
-			<animation effect="fade" start="100" end="90" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + !Skin.HasSetting(increaseFanartVisibility)]">Conditional</animation>
-			<animation effect="fade" start="100" end="80" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility20)]">Conditional</animation>
-			<animation effect="fade" start="100" end="70" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility30)]">Conditional</animation>
-			<animation effect="fade" start="100" end="60" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility40)]">Conditional</animation>
-			<animation effect="fade" start="100" end="50" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility50)]">Conditional</animation>
-		</control>
-	</include>
-	<include name="Global_DialogFilter">
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture>backdrops/background.png</texture>
-			<colordiffuse>f1FFFFFF</colordiffuse>
-			<animation effect="fade" start="100" end="80" time="400" condition="[!IsEmpty(ListItem.Property(Fanart_Image)) + !Window.Next(Home)]">Conditional</animation>
-			<animation effect="fade" start="100" end="80" time="400" condition="[Window.IsActive(2) + [substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)] + !Window.Next(Home)]">Conditional</animation>
-		</control>
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture>backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
-			<animation effect="fade" start="100" end="80" time="400" condition="[!IsEmpty(ListItem.Property(Fanart_Image)) + !Window.Next(Home)]">Conditional</animation>
-			<animation effect="fade" start="100" end="80" time="400" condition="[Window.IsActive(2) + [substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)] + !Window.Next(Home)]">Conditional</animation>
 		</control>
 	</include>
 	<include name="Global_ContextFilter">
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture>backdrops/background.png</texture>
-			<visible>ControlGroup(7001).HasFocus | ControlGroup(7000).HasFocus | Window.IsActive(106) | Window.IsActive(111) | Window.IsActive(134)</visible>
-			<colordiffuse>f1FFFFFF</colordiffuse>
+		<control type="group">
+			<visible>ControlGroup(7001).HasFocus | ControlGroup(7000).HasFocus | Window.IsActive(100) | Window.IsActive(103) | Window.IsActive(106) | Window.IsActive(111) | Window.IsActive(134)</visible>
 			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
-		</control>
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture>backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
-			<visible>ControlGroup(7001).HasFocus | ControlGroup(7000).HasFocus | Window.IsActive(106) | Window.IsActive(111) | Window.IsActive(134)</visible>
-			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>backdrops/background.png</texture>
+				<colordiffuse>f1FFFFFF</colordiffuse>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>backdrops/backgroundcolordiffuse.png</texture>
+				<colordiffuse>backgroundColor</colordiffuse>
+			</control>
 		</control>
 	</include>
 
@@ -156,6 +134,7 @@
 		<font>Font_Time</font>
 		<textcolor>Time</textcolor>
 		<align>left</align>
+		<include>Animation_SlideDownFadeOut</include>
 	</include>
 	<include name="Global_HeadingDetailVars">
 		<posy>40</posy>
@@ -163,6 +142,7 @@
 		<font>Font_Date</font>
 		<textcolor>Date</textcolor>
 		<align>left</align>
+		<include>Animation_SlideDownFadeOut</include>
 	</include>
 	<include name="Global_Heading">
 		<control type="group">
@@ -173,82 +153,94 @@
 				<description>Appstore</description>
 <!-- LOC -->	<label>APPSTORE</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(1)</visible>
+				<visible>Window.IsActive(1) + !Window.IsActive(134) + IsEmpty(Container.PluginName)</visible>
 			</control>
 			<control type="label">
 				<description>Movies</description>
 				<label>342</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(25) + Container.Content(movies)</visible>
+				<visible>Window.IsActive(25) + Container.Content(movies) + !Window.IsActive(134)</visible>
+			</control>
+			<control type="label">
+				<description>Name of Plugin</description>
+				<label>$INFO[Container.PluginName]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>!IsEmpty(Container.PluginName) + !Window.IsActive(134)</visible>
+			</control>
+			<control type="label">
+				<description>Plugins</description>
+<!-- LOC -->	<label>Plugins</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>IsEmpty(Container.PluginName) + Container.Content(plugins) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<description>Pictures</description>
 				<label>1</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(2007) | [Window.IsActive(2) + ![substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)]]</visible>
+				<visible>[Window.IsActive(2007) | [Window.IsActive(2) + ![substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)]]] + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<description>Pictures</description>
 				<label>$LOCALIZE[1]: $INFO[ListItem.Label]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(2) + [substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)]</visible>
+				<visible>[Window.IsActive(2) + [substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)]] + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<description>Tv Shows</description>
 				<label>20343</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(25) + Container.Content(tvshows) | Container.Content(seasons)</visible>
+				<visible>Window.IsActive(25) + [Container.Content(tvshows) | Container.Content(seasons)] + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<description>Tv Shows</description>
 				<label>$LOCALIZE[20343]: $INFO[ListItem.TVShowTitle]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(25) + Container.Content(episodes)</visible>
+				<visible>Window.IsActive(25) + Container.Content(episodes) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<description>Music</description>
 				<label>2</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>[Window.IsActive(501) | Window.IsActive(502)] + !Container.Content(songs) + !Container.Content(albums)</visible>
+				<visible>[[Window.IsActive(501) | Window.IsActive(502)] + !Container.Content(songs) + !Container.Content(albums)] + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<description>Music</description>
 				<label>$LOCALIZE[2]: $INFO[ListItem.Artist]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>[Window.IsActive(501) | Window.IsActive(502)] + Container.Content(albums)</visible>
+				<visible>[Window.IsActive(501) | Window.IsActive(502)] + Container.Content(albums) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<description>Music</description>
 				<label>$LOCALIZE[2]: $INFO[ListItem.Album]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>[Window.IsActive(501) | Window.IsActive(502)] + Container.Content(songs)</visible>
+				<visible>[Window.IsActive(501) | Window.IsActive(502)] + Container.Content(songs) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<description>Music</description>
 				<label>$LOCALIZE[2]: Playlists</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(500)</visible>
+				<visible>Window.IsActive(500) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<description>Video</description>
 				<label>3</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(24)</visible>
+				<visible>[Window.IsActive(24)| [Window.IsActive(25) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(movies)]] + IsEmpty(Container.PluginName) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<label>$INFO[Container.NumItems] ITEMS</label>
 				<include>Global_HeadingDetailVars</include>
-				<visible>![Container.Content(episodes) | Window.IsActive(2)]</visible>
+				<visible>![Container.Content(episodes) | Window.IsActive(2)] + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<label>SEASON $INFO[ListItem.Season] - $INFO[Container.NumItems] EPISODES</label>
 				<include>Global_HeadingDetailVars</include>
-				<visible>Container.Content(episodes)</visible>
+				<visible>Container.Content(episodes) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<label>$INFO[ListItem.path][CR]$INFO[Container.NumItems] ITEMS</label>
 				<include>Global_HeadingDetailVars</include>
-				<visible>Window.IsActive(2)</visible>
+				<visible>Window.IsActive(2) + !Window.IsActive(134)</visible>
 			</control>
 		</control>
 	</include>
@@ -345,7 +337,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/appstore//</imagepath>
+					<imagepath>backdrops/osx/appstore//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>				
 				<include>Home_MainMenuFrame</include>
@@ -371,7 +363,7 @@
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/videos//</imagepath>
+					<imagepath>backdrops/osx/videos//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -402,7 +394,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/music//</imagepath>
+					<imagepath>backdrops/osx/music//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -431,7 +423,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/movies//</imagepath>
+					<imagepath>backdrops/osx/movies//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -460,7 +452,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/tvshows//</imagepath>
+					<imagepath>backdrops/osx/tvshows//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -495,7 +487,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/pictures/menuitem//</imagepath>
+					<imagepath>backdrops/osx/pictures/menuitem//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -539,7 +531,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/weather//</imagepath>
+					<imagepath>backdrops/osx/weather//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -593,7 +585,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/settings//</imagepath>
+					<imagepath>backdrops/osx/settings//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -646,7 +638,7 @@
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/quit//</imagepath>
+					<imagepath>backdrops/osx/quit//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -1124,7 +1116,7 @@
 	</include>
 	<!-- Window menus -->
 	<include name="WindowMenuVars">
-		<width>1000</width>
+		<width>1100</width>
 		<height>40</height>
 		<posx>140</posx>
 		<onup>50</onup>
@@ -1142,6 +1134,22 @@
 		<align>center</align>
 		<font>Font_MenuValue</font>
 		<textcolor>MenuValue</textcolor>
+	</include>
+	<include name="WindowMenuRadioButton">
+		<posx>0</posx>
+		<posy>30</posy>
+		<width>200</width>
+		<height>30</height>
+		<align>center</align>
+		<radioposx>45</radioposx>
+		<radioposy>30</radioposy>
+		<radioheight>7</radioheight>
+		<radiowidth>100</radiowidth>
+		<font>Font_MenuValue</font>
+		<textcolor>MenuValue</textcolor>
+		<textureradioon>common/radioUnderline.png</textureradioon>
+		<textureradiooff>-</textureradiooff>
+		<colordiffuse>FlagDiffuse</colordiffuse>
 	</include>
 	<include name="WindowMenuLabel">
 		<posx>0</posx>
