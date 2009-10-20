@@ -26,7 +26,7 @@
 				<selectedcolor>ListTitleNF</selectedcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<width>250</width>
+				<width>280</width>
 				<texturefocus border="1">ButtonFo.png</texturefocus>
 				<texturenofocus border="1">ButtonNF.png</texturenofocus>
 			</control>
@@ -38,7 +38,7 @@
 				<selectedcolor>ListTitleNF</selectedcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<width>250</width>
+				<width>280</width>
 				<texturefocus border="1">ButtonFo.png</texturefocus>
 				<texturenofocus border="1">ButtonNF.png</texturenofocus>
 			</control>
