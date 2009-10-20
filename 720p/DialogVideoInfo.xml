@@ -191,6 +191,7 @@
 				<description>Cast/Review</description>
 				<label>206</label>
 				<include>WindowMenuButton</include>
+				<onclick>SetFocus(50)</onclick>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(5)">
 					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
