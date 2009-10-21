@@ -1240,4 +1240,15 @@
 		<onclick>XBMC.SleepSystem()</onclick>
 	</include>
 
+	<include name="changethemebytime">
+		<include condition="system.time(09:00,20:00)">daytheme</include>
+		<include condition="system.time(20:00,09:00)">nighttheme</include>
+	</include>
+	<include name="daytheme">
+		<onfocus>Skin.SetString(theme,default)</onfocus>
+	</include>
+	<include name="nighttheme">
+		<onfocus>Skin.SetString(theme,dark)</onfocus>
+	</include>
+
 </includes>
