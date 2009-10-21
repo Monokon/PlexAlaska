@@ -294,7 +294,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(fanartformovies)</onclick>
-					<onclick>RunScript(GetUsername.py)</onclick>
+					<onclick>RunScript(q:/scripts/GetUsername/default.py)</onclick>
 					<onclick>Skin.Reset(fanartpath)</onclick>
 					<onclick>Skin.SetString(fanartpath,/Users/$INFO[Skin.String(osxusername)]/Library/Application Support/Plex/userdata/Thumbnails/Video/Fanart//)</onclick>
 					<selected>Skin.HasSetting(fanartformovies)</selected>
