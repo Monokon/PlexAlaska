@@ -169,7 +169,8 @@
 			</control>
 			<control type="label">
 				<description>Plugins</description>
-<!-- LOC -->	<label>Plugins</label>
+				<!-- LOC -->
+				<label>Plugins</label>
 				<include>Global_HeadingSectionVars</include>
 				<visible>IsEmpty(Container.PluginName) + Container.Content(plugins) + !Window.IsActive(134)</visible>
 			</control>
@@ -419,6 +420,12 @@
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/movies//</imagepath>
+					<visible>!Skin.HasSetting(fanartformovies)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">$INFO[Skin.String(fanartpath)]</imagepath>
+					<visible>Skin.HasSetting(fanartformovies)</visible>
 				</control>
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">

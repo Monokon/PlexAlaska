@@ -14,7 +14,7 @@
 	<color name="RSSBody">FF686868</color>
 	<color name="RSSHighlight">FF686868</color>
 	<color name="RSSHeadline">FF686868</color>
-	<color name="RSSTitle">FF686868</color>
+	<color name="RSSTitle">FF474747</color>
 	<color name="NowPlayingArtist">FF686868</color>
 	<color name="NowPlayingAlbum">cc686868</color>
 	<color name="NowPlayingTrack">FF686868</color>

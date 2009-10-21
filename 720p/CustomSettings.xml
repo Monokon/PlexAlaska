@@ -284,6 +284,21 @@
 					<onclick>Skin.ToggleSetting(nohomequit)</onclick>
 					<selected>Skin.HasSetting(nohomequit)</selected>
 				</control>
+				<control type="radiobutton" id="212">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>Black</focusedcolor>
+					<!-- LOC -->
+					<label>Use fanart for "Movies"</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(fanartformovies)</onclick>
+					<onclick>RunScript(GetUsername.py)</onclick>
+					<onclick>Skin.Reset(fanartpath)</onclick>
+					<onclick>Skin.SetString(fanartpath,/Users/$INFO[Skin.String(osxusername)]/Library/Application Support/Plex/userdata/Thumbnails/Video/Fanart//)</onclick>
+					<selected>Skin.HasSetting(fanartformovies)</selected>
+				</control>
 			</control>
 			<control type="grouplist" id="9003">
 				<visible>Container(9000).Hasfocus(3)</visible>
