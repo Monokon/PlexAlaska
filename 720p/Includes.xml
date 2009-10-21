@@ -169,7 +169,8 @@
 			</control>
 			<control type="label">
 				<description>Plugins</description>
-<!-- LOC -->	<label>Plugins</label>
+				<!-- LOC -->
+				<label>Plugins</label>
 				<include>Global_HeadingSectionVars</include>
 				<visible>IsEmpty(Container.PluginName) + Container.Content(plugins) + !Window.IsActive(134)</visible>
 			</control>
