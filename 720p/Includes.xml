@@ -1346,4 +1346,11 @@
 		<colordiffuse>30FFFFFF</colordiffuse>
 	</include>
 
+	<include name="scrollbar_default">
+		<textureslidernibfocus>default/ScrollBarV_Nib_Focus.png</textureslidernibfocus>
+	</include>
+	<include name="scrollbar_dark">
+		<textureslidernibfocus>dark/ScrollBarV_Nib_Focus.png</textureslidernibfocus>
+	</include>
+
 </includes>
