@@ -110,9 +110,8 @@
 			<width>1220</width>
 			<height>19</height>
 			<texturebg>osd/osd_progress_back.png</texturebg>
-			<lefttexture>osd/osd_progress_left.png</lefttexture>
-			<midtexture>osd/osd_progress_mid.png</midtexture>
-			<righttexture>osd/osd_progress_right.png</righttexture>
+			<include condition="!Skin.HasSetting(nighttheme)">OSD_Textures_Default</include>
+			<include condition="Skin.HasSetting(nighttheme)">OSD_Textures_Dark</include>
 			<include>Animation_CommonFade</include>
 			<info>Player.Progress</info>
 			<visible>!Skin.HasSetting(disableprogressbar)</visible>			

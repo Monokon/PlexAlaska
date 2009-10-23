@@ -127,7 +127,7 @@
 			<width>27</width>
 			<height>27</height>
 			<visible>Control.IsVisible(55)</visible>
-			<texture flipx="true">wall/WallArrow.png</texture>
+			<texture flipx="true">$INFO[Skin.String(theme),wall/,/WallArrow.png]</texture>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_MusicWallFloat</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -140,7 +140,7 @@
 			<width>27</width>
 			<height>27</height>
 			<visible>Control.IsVisible(55)</visible>
-			<texture>wall/WallArrow.png</texture>
+			<texture>$INFO[Skin.String(theme),wall/,/WallArrow.png]</texture>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_MusicWallFloat</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -149,7 +149,7 @@
 		
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="wall/music_wall_mask.png">backdrops/background.png</texture>
+			<texture diffuse="wall/music_wall_mask.png">$INFO[Skin.String(theme),,/background.png]</texture>
 			<visible>Control.IsVisible(55)</visible>
 			<colordiffuse>dfFFFFFF</colordiffuse>
 		</control>

@@ -45,7 +45,7 @@
 			<textcolor>ListTrackF</textcolor>
 			<align>left</align>
 			<textoffsetx>5</textoffsetx>
-			<focusedcolor>Black</focusedcolor>
+			<focusedcolor>settings_focused</focusedcolor>
 			<texturefocus>ButtonFo.png</texturefocus>
 		</control>
 
@@ -54,7 +54,7 @@
 			<font>Font_Settings</font>
 			<textcolor>ListTrackF</textcolor>
 			<align>left</align>
-			<focusedcolor>Black</focusedcolor>
+			<focusedcolor>settings_focused</focusedcolor>
 		</control>
 
 		<control type="spincontrolex" id="9">
@@ -62,13 +62,23 @@
 			<font>Font_Settings</font>
 			<textcolor>ListTrackF</textcolor>
 			<align>left</align>
-			<focusedcolor>Black</focusedcolor>
+			<focusedcolor>settings_focused</focusedcolor>
 			<texturefocus>ButtonFo.png</texturefocus>
-			<textureup>ArrowUpNF.png</textureup>
-			<texturedown>ArrowDownNF.png</texturedown>
-			<textureupfocus>ArrowUpFo.png</textureupfocus>
-			<texturedownfocus>ArrowDownFo.png</texturedownfocus>
+			<include condition="Skin.HasSetting(nighttheme)">arrows_dark</include>
+			<include condition="!Skin.HasSetting(nighttheme)">arrows_default</include>
 		</control>
+		<include name="arrows_default">
+			<textureup>default/ArrowUpNF.png</textureup>
+			<texturedown>default/ArrowDownNF.png</texturedown>
+			<textureupfocus>default/ArrowUpFo.png</textureupfocus>
+			<texturedownfocus>default/ArrowDownFo.png</texturedownfocus>
+		</include>
+		<include name="arrows_dark">
+			<textureup>dark/ArrowUpNF.png</textureup>
+			<texturedown>dark/ArrowDownNF.png</texturedown>
+			<textureupfocus>dark/ArrowUpFo.png</textureupfocus>
+			<texturedownfocus>dark/ArrowDownFo.png</texturedownfocus>
+		</include>
 
 		<control type="button" id="10">
 			<description>Default Category Button</description>
@@ -76,7 +86,7 @@
 			<font>Font_Settings</font>
 			<textcolor>ListTrackF</textcolor>
 			<texturefocus border="1">ButtonFo.png</texturefocus>
-			<focusedcolor>Black</focusedcolor>
+			<focusedcolor>settings_focused</focusedcolor>
 		</control>
 
 		<include>Global_ContextFilter</include>

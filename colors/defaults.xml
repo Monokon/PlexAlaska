@@ -91,4 +91,7 @@
 	<color name="FM_Listfocused">ffffffff</color>
 	<color name="FM_Listunfocused">ab474747</color>
 
+	<!-- settings -->
+	<color name="settings_focused">ff000000</color>
+
 </colors>

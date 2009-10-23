@@ -35,7 +35,7 @@
 				<posy>0</posy>
 				<width>1290</width>
 				<height>165</height>
-				<texture flipx="true">backdrops/background.png</texture>
+				<texture flipx="true">$INFO[Skin.String(theme),,/background.png]</texture>
 				<aspectratio aligny="bottom">scale</aspectratio>
 			</control>
 			<control type="image">

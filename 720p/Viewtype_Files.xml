@@ -138,7 +138,8 @@
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<info>ListItem.Overlay</info>
+					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
 					<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)">Conditional</animation>
 				</control>
 			</itemlayout>
@@ -150,7 +151,8 @@
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(episodes)</visible>
-					<info>ListItem.Overlay</info>
+					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
 				</control>
 				<!-- Watched overlay for movies/TV shows -->
 				<control type="image">
@@ -159,7 +161,8 @@
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(episodes)</visible>
-					<info>ListItem.Overlay</info>
+					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
 				</control>
 				<control type="label">
 					<posx>30</posx>
@@ -394,8 +397,8 @@
 				<posy>0</posy>
 				<width>1680</width>
 				<height>120</height>
-				<texture>common/black.png</texture>
-				<colordiffuse>11000000</colordiffuse>
+				<include condition="!Skin.HasSetting(nighttheme)">focusbackground_default</include>
+				<include condition="Skin.HasSetting(nighttheme)">focusbackground_dark</include>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -482,4 +485,12 @@
 		</control>
 
 	</include>
+
+	<include name="Overlay_Default">	
+		<texture>$INFO[ListItem.Overlay,default/,]</texture>
+	</include>
+	<include name="Overlay_Dark">	
+		<texture>$INFO[ListItem.Overlay,dark/,]</texture>
+	</include>
+
 </includes>

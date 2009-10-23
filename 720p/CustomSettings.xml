@@ -34,7 +34,7 @@
 					<posy>0</posy>
 					<width>300</width>
 					<font>Font_Settings</font>
-					<textcolor>Black</textcolor>
+					<textcolor>settings_focused</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
@@ -68,6 +68,12 @@
 					<label>NowPlaying</label>
 					<onclick>SetFocus(9006)</onclick>
 				</item>
+				<item id="7">
+					<!-- LOC -->
+					<description>Theme</description>
+					<label>Theme</label>
+					<onclick>SetFocus(9007)</onclick>
+				</item>
 				<item id="5">
 					<!-- LOC -->
 					<description>Misc.</description>
@@ -94,7 +100,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Scroll Plot</label>
 					<align>left</align>
@@ -106,7 +112,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Media Flags</label>
 					<align>left</align>
@@ -118,7 +124,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Swap IMDB for Studio Flags</label>
 					<align>left</align>
@@ -130,7 +136,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Larger RSS</label>
 					<align>left</align>
@@ -142,7 +148,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>only show RSS on home screen</label>
 					<align>left</align>
@@ -154,7 +160,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Change option "Quit Plex" to "Sleep"</label>
 					<align>left</align>
@@ -178,7 +184,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Home 2</label>
 					<align>left</align>
@@ -191,7 +197,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Home 3</label>
 					<align>left</align>
@@ -204,7 +210,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Conditional Weather</label>
 					<align>left</align>
@@ -216,7 +222,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Enable OSX overlays for default home menu</label>
 					<align>left</align>
@@ -228,7 +234,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Hide item "Appstore"</label>
 					<align>left</align>
@@ -240,7 +246,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Hide item "Videos"</label>
 					<align>left</align>
@@ -252,7 +258,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Hide item "Pictures"</label>
 					<align>left</align>
@@ -264,7 +270,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Hide item "Weather"</label>
 					<align>left</align>
@@ -276,7 +282,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Hide item "Quit Plex / Sleep"</label>
 					<align>left</align>
@@ -288,7 +294,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Use fanart for "Movies"</label>
 					<align>left</align>
@@ -314,7 +320,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>File View Focus Line</label>
 					<align>left</align>
@@ -326,7 +332,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Use "fixedlist" in poster view</label>
 					<align>left</align>
@@ -349,7 +355,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Increase backdrop visibility</label>
 					<align>left</align>
@@ -393,7 +399,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Disable backdrops for movies</label>
 					<align>left</align>
@@ -405,7 +411,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Disable backdrops for pictures</label>
 					<align>left</align>
@@ -432,7 +438,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Set path to artist backdrops</label>
 					<label2>$INFO[Skin.String(artistbackdroppath)]</label2>
@@ -444,7 +450,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Disable filter image in NowPlaying</label>
 					<align>left</align>
@@ -456,13 +462,51 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Disable progressbar</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(disableprogressbar)</onclick>
 					<selected>Skin.HasSetting(disableprogressbar)</selected>
+				</control>
+			</control>
+
+			<control type="grouplist" id="9007">
+				<visible>Container(9000).Hasfocus(7)</visible>
+				<width>740</width>
+				<height>600</height>
+				<itemgap>6</itemgap>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<onup>9002</onup>
+				<ondown>9002</ondown>
+				<include>Animation_CommonFadeNoHide</include>
+				<control type="radiobutton" id="700">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>settings_focused</focusedcolor>
+					<!-- LOC -->
+					<label>Always use bright theme</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(alwaysusebrighttheme)</onclick>
+					<onclick>Skin.Reset(alwaysusedarktheme)</onclick>
+					<selected>Skin.HasSetting(alwaysusebrighttheme)</selected>
+				</control>
+				<control type="radiobutton" id="701">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>settings_focused</focusedcolor>
+					<!-- LOC -->
+					<label>Always use dark theme</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(alwaysusedarktheme)</onclick>
+					<onclick>Skin.Reset(alwaysusebrighttheme)</onclick>
+					<selected>Skin.HasSetting(alwaysusedarktheme)</selected>
 				</control>
 			</control>
 
@@ -480,7 +524,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Debug mode</label>
 					<align>left</align>
@@ -492,7 +536,7 @@
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>Black</focusedcolor>
+					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
 					<label>Debug Grid</label>
 					<align>left</align>

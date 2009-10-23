@@ -76,7 +76,8 @@
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<info>ListItem.Overlay</info>
+					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
 					<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)">Conditional</animation>
 				</control>
 			</itemlayout>
@@ -135,7 +136,8 @@
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<info>ListItem.Overlay</info>
+					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" />
 						<effect type="fade" start="0" end="100" time="200" />
@@ -170,6 +172,13 @@
 			<include>PosterMediaFlags</include>
 		</control>
 
+	</include>
+
+	<include name="Overlay_Default">	
+		<texture>$INFO[ListItem.Overlay,default/,]</texture>
+	</include>
+	<include name="Overlay_Dark">	
+		<texture>$INFO[ListItem.Overlay,dark/,]</texture>
 	</include>
 
 </includes>

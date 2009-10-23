@@ -1,10 +1,17 @@
 <!--Alaska-->
 
 <window id="0">
-	<defaultcontrol always="true">300</defaultcontrol>
+	<defaultcontrol always="true">777</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
+
+		<!-- Dummy button to set theme time-depending -->
+		<control type="button" id="777">
+			<include>changethemebytime</include>
+			<onfocus>XBMC.SetFocus(300)</onfocus>
+		</control>
+
 		<control type="label">
 			<include>WindowID</include>
 			<label>Home.xml</label>

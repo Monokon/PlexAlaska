@@ -65,7 +65,8 @@
 					<width>25</width>
 					<height>25</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<info>ListItem.Overlay</info>
+					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
@@ -103,7 +104,8 @@
 					<width>40</width>
 					<height>40</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<info>ListItem.Overlay</info>
+					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
 					<include>Animation_PosterInfoSlide</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
@@ -202,7 +204,8 @@
 					<width>25</width>
 					<height>25</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<info>ListItem.Overlay</info>
+					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
@@ -255,7 +258,8 @@
 					<width>40</width>
 					<height>40</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<info>ListItem.Overlay</info>
+					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
 					<include>Animation_PosterInfoSlide</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
@@ -540,4 +544,12 @@
 			</control>
 		</control>
 	</include>
+
+	<include name="Overlay_Default">	
+		<texture>$INFO[ListItem.Overlay,default/,]</texture>
+	</include>
+	<include name="Overlay_Dark">	
+		<texture>$INFO[ListItem.Overlay,dark/,]</texture>
+	</include>
+
 </includes>
