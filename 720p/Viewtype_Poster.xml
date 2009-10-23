@@ -147,7 +147,8 @@
 					<posy>131</posy>
 					<width>162</width>
 					<height>241</height>
-					<texture background="true" diffuse="postermatteNF.png">$INFO[ListItem.Icon]</texture>
+					<include condition="!Skin.HasSetting(nighttheme)">posterNF_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">posterNF_Dark</include>
 					<fadetime>200</fadetime>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>

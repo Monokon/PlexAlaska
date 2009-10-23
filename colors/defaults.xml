@@ -84,6 +84,8 @@
 
 	<color name="DialogLargeLabel">dc777777</color>
 	<color name="DialogLargeLabelAccent">dc990000</color>
+	<color name="DialogLabel">FF000000</color>
+	<color name="DialogLabelNF">FF5b5b5b</color>
 
 	<!-- filemanager -->
 	
@@ -93,5 +95,15 @@
 
 	<!-- settings -->
 	<color name="settings_focused">ff000000</color>
+
+	<!-- Now Playing -->
+	<color name="NP_time_nofilter">FF949494</color>
+	<color name="NP_time_filter">FF000000</color>
+	<color name="NP_track_nofilter">FF949494</color>
+	<color name="NP_track_filter">FF000000</color>
+	<color name="NP_artist">FFFFFFFF</color>
+	<color name="NP_album_nofilter">FF949494</color>
+	<color name="NP_album_filter">FF000000</color>
+	<color name="NP_song">FFFFFFFF</color>
 
 </colors>

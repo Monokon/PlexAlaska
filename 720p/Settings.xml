@@ -122,7 +122,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Adjust how XBMC handles video content. Includes stacking options for multi-part files, library database options, and rendering and playback options</label>
+				<label>Adjust how Plex handles video content. Includes stacking options for multi-part files, library database options, and rendering and playback options</label>
 			</control>
 		</control>
 		<control type="group">
@@ -170,7 +170,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Adjust how XBMC handles audio content. Includes browsing options for file and database library modes, together with audio hardware setup</label>
+				<label>Adjust how Plex handles audio content. Includes browsing options for file and database library modes, together with audio hardware setup</label>
 			</control>
 		</control>
 		<control type="group">
@@ -186,7 +186,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Set up region information for XBMC's optional Weather displays</label>
+				<label>Set up region information for Plex' optional Weather displays</label>
 			</control>
 		</control>
 		<control type="group">
@@ -202,7 +202,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Adjust the look and feel of XBMC. Includes skin, theme, sound and font selection, RSS feed control, and localisation settings</label>
+				<label>Adjust the look and feel of Plex. Includes skin, theme, sound and font selection, RSS feed control, and localisation settings</label>
 			</control>
 		</control>
 		<control type="group">
@@ -218,7 +218,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Adjust how XBMC displays personal image collections. Includes screenshot grabbing, special effects and advanced display options</label>
+				<label>Adjust how Plex displays personal image collections. Includes screenshot grabbing, special effects and advanced display options</label>
 			</control>
 		</control>
 		<control type="group">
@@ -234,7 +234,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Set up XBMC's network interface. Controls IP assignment, WWW and FTP server settings, SMB client setup, and UPnP configuration</label>
+				<label>Set up Plex' network interface. Controls IP assignment, WWW and FTP server settings, SMB client setup, and UPnP configuration</label>
 			</control>
 		</control>
 		<control type="group">

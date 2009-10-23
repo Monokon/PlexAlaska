@@ -17,20 +17,20 @@
 	<color name="RSSTitle">FFFFFFFF</color>
 	<color name="NowPlayingArtist">FFB3B3B3</color>
 	<color name="NowPlayingAlbum">FFB3B3B3</color>
-	<color name="NowPlayingTrack">FFFFFFFF</color>
-	<color name="MediaMenu">77686868</color>
+	<color name="NowPlayingTrack">FF686868</color>
+	<color name="MediaMenu">FFFFFFFF</color>
 	<color name="FlagDiffuse">FFFFFFFF</color>
 	<color name="FlagText">FFFFFFFF</color>
 
 	<!-- OSD -->
 
-	<color name="OSDPlayingArtist">FFB3B3B3</color>
+	<color name="OSDPlayingArtist">FF575757</color>
 	<color name="OSDPlayingTrack">FFFFFFFF</color>
-	<color name="OSDPlayingAlbum">FFB3B3B3</color>
-	<color name="OSDPlayingPN">FFB3B3B3</color>
-	<color name="OSDDetails">FFB3B3B3</color>
-	<color name="OSDTime">FFB3B3B3</color>
-	<color name="OSDProgress">FFB3B3B3</color>
+	<color name="OSDPlayingAlbum">FF575757</color>
+	<color name="OSDPlayingPN">FFFFFFFF</color>
+	<color name="OSDDetails">FF575757</color>
+	<color name="OSDTime">FFFFFFFF</color>
+	<color name="OSDProgress">FFFFFFFF</color>
 
 	<!-- Window menu colours -->
 
@@ -45,14 +45,14 @@
 	<!-- Poster view colours -->
 
 	<color name="PosterTitle">FFFFFFFF</color>
-	<color name="EpisodeLabelF">FFB3B3B3</color>	
+	<color name="EpisodeLabelF">FFFFFFFF</color>	
 	<color name="EpisodePlot">FFB3B3B3</color>	
-	<color name="EpisodeNumber">FFFFFFFF</color>		
+	<color name="EpisodeNumber">FF575757</color>		
 
 	<!-- Info dialog colours -->
 
 	<color name="InfoTitle">FFFFFFFF</color>
-	<color name="InfoPlot">FFB3B3B3</color>
+	<color name="InfoPlot">FFFFFFFF</color>
 	<color name="InfoYear">FFB3B3B3</color>	
 	<color name="InfoGenre">FFB3B3B3</color>		
 	<color name="InfoDetails">FFB3B3B3</color>
@@ -65,11 +65,11 @@
 
 	<!-- List colours -->
 
-	<color name="ListTrackNF">FFFFFFFF</color>
-	<color name="ListTitleNF">FFB3B3B3</color>
-	<color name="ListTrackF">FFFFFFFF</color>
-	<color name="ListTitleF">FFB3B3B3</color>
-	<color name="FileTitleNF">FFFFFFFF</color>	
+	<color name="ListTrackNF">FF575757</color>
+	<color name="ListTitleNF">FF575757</color>
+	<color name="ListTrackF">FFB3B3B3</color>
+	<color name="ListTitleF">FFFFFFFF</color>
+	<color name="FileTitleNF">FF575757</color>	
 
 	<!-- Wall colours -->
 
@@ -77,21 +77,33 @@
 
 	<!-- Fanart colours -->
 
-	<color name="FanartTitle">FF474747</color>
-	<color name="FanartText">DD202020</color>
+	<color name="FanartTitle">FFFFFFFF</color>
+	<color name="FanartText">FFB3B3B3</color>
 
 	<!-- Dialogs -->
 
-	<color name="DialogLargeLabel">FFB3B3B3</color>
-	<color name="DialogLargeLabelAccent">FFFFFFFF</color>
+	<color name="DialogLargeLabel">FFFFFFFF</color>
+	<color name="DialogLargeLabelAccent">FFB3B3B3</color>
+	<color name="DialogLabel">FFFFFFFF</color>
+	<color name="DialogLabelNF">ab474747</color>
 
 	<!-- filemanager -->
 	
 	<color name="FM_ListTitle">FFFFFFFF</color>
 	<color name="FM_Listfocused">FFFFFFFF</color>
-	<color name="FM_Listunfocused">FFFFFFFF</color>
+	<color name="FM_Listunfocused">FF575757</color>
 
 	<!-- settings -->
-	<color name="settings_focused">ff818181</color>
+	<color name="settings_focused">ffffffff</color>
+
+	<!-- Now Playing -->
+	<color name="NP_time_nofilter">FF949494</color>
+	<color name="NP_time_filter">FF949494</color>
+	<color name="NP_track_nofilter">FF949494</color>
+	<color name="NP_track_filter">FF949494</color>
+	<color name="NP_artist">FFFFFFFF</color>
+	<color name="NP_album_nofilter">FF949494</color>
+	<color name="NP_album_filter">FF949494</color>
+	<color name="NP_song">FFFFFFFF</color>
 
 </colors>

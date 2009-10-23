@@ -462,7 +462,8 @@
 			<height>460</height>
 			<visible allowhiddenfocus="true">Control.IsVisible(50) + Control.HasFocus(60)</visible>
 			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-			<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
+			<include condition="!Skin.HasSetting(nighttheme)">scrollbar_default</include>
+			<include condition="Skin.HasSetting(nighttheme)">scrollbar_dark</include>
 			<onleft>50</onleft>
 			<showonepage>true</showonepage>
 			<orientation>vertical</orientation>
