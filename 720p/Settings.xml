@@ -186,7 +186,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Set up region information for Plex's optional Weather displays</label>
+				<label>Set up region information for Plex' optional Weather displays</label>
 			</control>
 		</control>
 		<control type="group">
@@ -234,7 +234,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Set up Plex's network interface. Controls IP assignment, WWW and FTP server settings, SMB client setup, and UPnP configuration</label>
+				<label>Set up Plex' network interface. Controls IP assignment, WWW and FTP server settings, SMB client setup, and UPnP configuration</label>
 			</control>
 		</control>
 		<control type="group">
