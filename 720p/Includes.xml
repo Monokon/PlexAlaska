@@ -1353,4 +1353,11 @@
 		<textureslidernibfocus>dark/ScrollBarV_Nib_Focus.png</textureslidernibfocus>
 	</include>
 
+	<include name="posterNF_default">
+		<texture background="true" diffuse="default/postermatteNF.png">$INFO[ListItem.Icon]</texture>
+	</include>
+	<include name="posterNF_dark">
+		<texture background="true" diffuse="dark/postermatteNF.png">$INFO[ListItem.Icon]</texture>
+	</include>
+
 </includes>
