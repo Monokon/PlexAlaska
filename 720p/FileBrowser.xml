@@ -71,7 +71,7 @@
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="list/list_mask_1.png">backdrops/background.png</texture>
+			<texture diffuse="list/list_mask_1.png">$INFO[Skin.String(theme),,/background.png]</texture>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>

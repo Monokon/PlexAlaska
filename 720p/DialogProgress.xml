@@ -1,4 +1,4 @@
-﻿<!--Alaska-->
+<!--Alaska-->
 
 <window id="101">
 	<defaultcontrol always="true">10</defaultcontrol>
@@ -28,7 +28,7 @@
 				<posy>10</posy>
 				<width>50</width>
 				<height>50</height>
-				<texture>dialogs/scanprogress_back.png</texture>
+				<texture>$INFO[Skin.String(theme),dialogs/,/scanprogress_back.png]</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="progress" id="404">
@@ -56,7 +56,7 @@
 				<posy>10</posy>
 				<width>50</width>
 				<height>50</height>
-				<texture>dialogs/scanprogress.png</texture>
+				<texture>$INFO[Skin.String(theme),dialogs/,/scanprogress.png]</texture>
 			</control>
 			<control type="label" id="1">
 				<description>Heading Label</description>

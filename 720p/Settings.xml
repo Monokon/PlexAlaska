@@ -46,54 +46,63 @@
 			<content>
 				<item id="1">
 					<label>Video</label>
-					<thumb>settings/settings_video.png</thumb>
+					<include condition="!Skin.HasSetting(nighttheme)">Settings_Video_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Settings_Video_Dark</include>
 					<onclick>XBMC.ActivateWindow(MyVideosSettings)</onclick>
 				</item>
 				<item id="2">
 					<label>Music</label>
-					<thumb>settings/settings_music.png</thumb>
+					<include condition="!Skin.HasSetting(nighttheme)">Settings_Music_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Settings_Music_Dark</include>
 					<onclick>XBMC.ActivateWindow(MyMusicSettings)</onclick>
 				</item>
 				<item id="3">
 					<label>Pictures</label>
-					<thumb>settings/settings_pictures.png</thumb>
+					<include condition="!Skin.HasSetting(nighttheme)">Settings_Pictures_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Settings_Pictures_Dark</include>
 					<onclick>XBMC.ActivateWindow(MyPicturesSettings)</onclick>
 				</item>
 				<item id="4">
 					<label>Programs</label>
-					<thumb>settings/settings_programs.png</thumb>
+					<include condition="!Skin.HasSetting(nighttheme)">Settings_Programs_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Settings_Programs_Dark</include>
 					<onclick>XBMC.ActivateWindow(MyProgramsSettings)</onclick>
 				</item>
 				<item id="5">
 					<label>Weather</label>
-					<thumb>settings/settings_weather.png</thumb>
+					<include condition="!Skin.HasSetting(nighttheme)">Settings_Weather_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Settings_Weather_Dark</include>
 					<onclick>XBMC.ActivateWindow(MyWeatherSettings)</onclick>
 				</item>
 				<item id="6">
 					<label>Network</label>
-					<thumb>settings/settings_network.png</thumb>
+					<include condition="!Skin.HasSetting(nighttheme)">Settings_Network_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Settings_Network_Dark</include>
 					<onclick>XBMC.ActivateWindow(NetworkSettings)</onclick>
 				</item>
 				<item id="7">
 					<label>System</label>
-					<thumb>settings/settings_system.png</thumb>
+					<include condition="!Skin.HasSetting(nighttheme)">Settings_System_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Settings_System_Dark</include>
 					<onclick>xbmc.activatewindow(SystemSettings)</onclick>
 				</item>
 				<item id="8">
 					<label>Appearance</label>
-					<thumb>settings/settings_appearance.png</thumb>
+					<include condition="!Skin.HasSetting(nighttheme)">Settings_Appearance_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Settings_Appearance_Dark</include>
 					<onclick>XBMC.ActivateWindow(AppearanceSettings)</onclick>
 				</item>
 				<item id="9">
 <!-- LOC -->		<label>Alaska</label>
-					<thumb>settings/settings_alaska.png</thumb>
+					<include condition="!Skin.HasSetting(nighttheme)">Settings_Alaska_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Settings_Alaska_Dark</include>
 					<onclick>XBMC.ActivateWindow(56)</onclick>
 				</item>
 			</content>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="mainmenu/home_mask.png">backdrops/background.png</texture>
+			<texture diffuse="mainmenu/home_mask.png">$INFO[Skin.String(theme),,/background.png]</texture>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>

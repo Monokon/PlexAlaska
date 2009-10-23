@@ -14,7 +14,7 @@
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture>backdrops/background.png</texture>
+			<texture>$INFO[Skin.String(theme),,/background.png]</texture>
 			<colordiffuse>ccFFFFFF</colordiffuse>
 			<animation effect="fade" start="100" end="0" time="400" >WindowOpen</animation>
 			<animation effect="fade" start="0" end="100" time="200" delay="0">WindowClose</animation>
@@ -44,9 +44,8 @@
 			<include>OSD_Back</include>
 			<control type="progress" id="23">
 				<texturebg>osd/osd_progress_back.png</texturebg>
-				<lefttexture>osd/osd_progress_left.png</lefttexture>
-				<midtexture>osd/osd_progress_mid.png</midtexture>
-				<righttexture>osd/osd_progress_right.png</righttexture>
+				<include condition="!Skin.HasSetting(nighttheme)">OSD_Textures_Default</include>
+				<include condition="Skin.HasSetting(nighttheme)">OSD_Textures_Dark</include>
 				<info>Player.Progress</info>
 				<posx>30</posx>
 				<posy>115</posy>

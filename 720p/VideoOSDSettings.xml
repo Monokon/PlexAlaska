@@ -57,7 +57,8 @@
 			<description>Button</description>
 			<height>40</height>
 			<width>555</width>
-			<texturefocus border="1">favorites/focus_bar.png</texturefocus>
+			<include condition="!Skin.HasSetting(nighttheme)">Focus_Border_Default</include>
+			<include condition="Skin.HasSetting(nighttheme)">Focus_Border_Dark</include>
 			<texturenofocus border="1"/>
 		</control>
 		<control type="radiobutton" id="8">

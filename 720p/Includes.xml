@@ -49,7 +49,7 @@
 	<include name="Global_Background">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture>backdrops/background.png</texture>
+			<texture>$INFO[Skin.String(theme),,/background.png]</texture>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
@@ -60,7 +60,7 @@
 	<include name="Global_Filter">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture>backdrops/background.png</texture>
+			<texture>$INFO[Skin.String(theme),,/background.png]</texture>
  			<animation effect="fade" start="100" end="90" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + !Skin.HasSetting(increaseFanartVisibility)]">Conditional</animation>
 			<animation effect="fade" start="100" end="80" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility20)]">Conditional</animation>
 			<animation effect="fade" start="100" end="70" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility30)]">Conditional</animation>
@@ -80,7 +80,7 @@
 			<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
-				<texture>backdrops/background.png</texture>
+				<texture>$INFO[Skin.String(theme),,/background.png]</texture>
 				<colordiffuse>f1FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
@@ -286,7 +286,7 @@
 			<posy>0</posy>
 			<width>1290</width>
 			<height>165</height>
-			<texture>backdrops/background.png</texture>
+			<texture>$INFO[Skin.String(theme),,/background.png]</texture>
 			<aspectratio aligny="bottom">scale</aspectratio>
 			<animation effect="slide" start="0,0" end="0,82" time="0" condition="Window.IsVisible(115)">Conditional</animation>
 		</control>
@@ -789,7 +789,7 @@
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="mainmenu/home_mask.png">backdrops/background.png</texture>
+			<texture diffuse="mainmenu/home_mask.png">$INFO[Skin.String(theme),,/background.png]</texture>
 			<colordiffuse>a8FFFFFF</colordiffuse>
 		</control>
 		<control type="image">
@@ -864,7 +864,7 @@
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="mainmenu/mask.png">backdrops/background.png</texture>
+			<texture diffuse="mainmenu/home_mask.png">$INFO[Skin.String(theme),,/background.png]</texture>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
@@ -1241,14 +1241,107 @@
 	</include>
 
 	<include name="changethemebytime">
-		<include condition="system.time(09:00,20:00)">daytheme</include>
-		<include condition="system.time(20:00,09:00)">nighttheme</include>
+		<include condition="system.time(09:00,20:00) + !Skin.HasSetting(alwaysusebrighttheme) + !Skin.HasSetting(alwaysusedarktheme)">daytheme</include>
+		<include condition="system.time(20:00,09:00) + !Skin.HasSetting(alwaysusebrighttheme) + !Skin.HasSetting(alwaysusedarktheme)">nighttheme</include>
+		<include condition="Skin.HasSetting(alwaysusebrighttheme)">daytheme</include>
+		<include condition="Skin.HasSetting(alwaysusedarktheme)">nighttheme</include>
 	</include>
 	<include name="daytheme">
+		<onfocus>Skin.Reset(nighttheme)</onfocus>
 		<onfocus>Skin.SetString(theme,default)</onfocus>
 	</include>
 	<include name="nighttheme">
+		<onfocus>Skin.SetBool(nighttheme)</onfocus>
 		<onfocus>Skin.SetString(theme,dark)</onfocus>
+	</include>
+
+	<include name="Focus_Default">	
+		<texture>favorites/default/focus_bar.png</texture>
+	</include>
+	<include name="Focus_Dark">	
+		<texture>favorites/dark/focus_bar.png</texture>
+	</include>
+
+	<include name="Focus_Border_Default">	
+		<texturefocus border="1">favorites/default/focus_bar.png</texturefocus>
+	</include>
+	<include name="Focus_Border_Dark">	
+		<texturefocus border="1">favorites/dark/focus_bar.png</texturefocus>
+	</include>
+
+	<include name="OSD_Textures_Default">	
+		<lefttexture>osd/default/osd_progress_left.png</lefttexture>
+		<midtexture>osd/default/osd_progress_mid.png</midtexture>
+		<righttexture>osd/default/osd_progress_right.png</righttexture>
+	</include>
+	<include name="OSD_Textures_Dark">	
+		<lefttexture>osd/dark/osd_progress_left.png</lefttexture>
+		<midtexture>osd/dark/osd_progress_mid.png</midtexture>
+		<righttexture>osd/dark/osd_progress_right.png</righttexture>
+	</include>
+	
+	<include name="Settings_Video_Default">	
+		<thumb>settings/default/settings_video.png</thumb>
+	</include>
+	<include name="Settings_Video_Dark">	
+		<thumb>settings/dark/settings_video.png</thumb>
+	</include>
+	<include name="Settings_Music_Default">	
+		<thumb>settings/default/settings_music.png</thumb>
+	</include>
+	<include name="Settings_Music_Dark">	
+		<thumb>settings/dark/settings_music.png</thumb>
+	</include>
+	<include name="Settings_Pictures_Default">	
+		<thumb>settings/default/settings_pictures.png</thumb>
+	</include>
+	<include name="Settings_Pictures_Dark">	
+		<thumb>settings/dark/settings_pictures.png</thumb>
+	</include>
+	<include name="Settings_Programs_Default">	
+		<thumb>settings/default/settings_programs.png</thumb>
+	</include>
+	<include name="Settings_Programs_Dark">	
+		<thumb>settings/dark/settings_programs.png</thumb>
+	</include>
+	<include name="Settings_Weather_Default">	
+		<thumb>settings/default/settings_weather.png</thumb>
+	</include>
+	<include name="Settings_Weather_Dark">	
+		<thumb>settings/dark/settings_weather.png</thumb>
+	</include>
+	<include name="Settings_Network_Default">	
+		<thumb>settings/default/settings_network.png</thumb>
+	</include>
+	<include name="Settings_Network_Dark">	
+		<thumb>settings/dark/settings_network.png</thumb>
+	</include>
+	<include name="Settings_System_Default">	
+		<thumb>settings/default/settings_system.png</thumb>
+	</include>
+	<include name="Settings_System_Dark">	
+		<thumb>settings/dark/settings_system.png</thumb>
+	</include>
+	<include name="Settings_Appearance_Default">	
+		<thumb>settings/default/settings_appearance.png</thumb>
+	</include>
+	<include name="Settings_Appearance_Dark">	
+		<thumb>settings/dark/settings_appearance.png</thumb>
+	</include>
+	<include name="Settings_Alaska_Default">	
+		<thumb>settings/default/settings_alaska.png</thumb>
+	</include>
+	<include name="Settings_Alaska_Dark">	
+		<thumb>settings/dark/settings_alaska.png</thumb>
+	</include>
+	
+	<include name="focusbackground_default">
+		<texture>common/black.png</texture>
+		<colordiffuse>11000000</colordiffuse>
+	</include>
+	<include name="focusbackground_dark">
+		<texture>common/white.png</texture>
+		<colordiffuse>30FFFFFF</colordiffuse>
 	</include>
 
 </includes>

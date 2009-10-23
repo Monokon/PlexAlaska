@@ -9,7 +9,7 @@
 	<controls>
 		<control type="label">
 			<include>WindowID</include>
-			<label>Favourites.xml</label>
+			<label>DialogFavourites.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 	
@@ -76,7 +76,8 @@
 					<posy>0</posy>
 					<width>740</width>
 					<height>66</height>
-					<texture>favorites/focus_bar.png</texture>
+					<include condition="!Skin.HasSetting(nighttheme)">Focus_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Focus_Dark</include>
 				</control>
 
 				<control type="label">
