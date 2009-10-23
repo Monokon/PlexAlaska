@@ -188,7 +188,8 @@
 					<width>225</width>
 					<height>25</height>
 					<font>Font_Time_nowplaying</font>
-					<label>[COLOR FF949494]$INFO[MusicPlayer.Time] / $INFO[MusicPlayer.Duration][/COLOR]</label>
+					<textcolor>NP_time_nofilter</textcolor>
+					<label>$INFO[MusicPlayer.Time] / $INFO[MusicPlayer.Duration]</label>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>Skin.HasSetting(disablenowplayingfilter)</visible>
 				</control>
@@ -199,7 +200,8 @@
 					<width>225</width>
 					<height>25</height>
 					<font>Font_Time_nowplaying</font>
-					<label>[COLOR FF000000]$INFO[MusicPlayer.Time] / $INFO[MusicPlayer.Duration][/COLOR]</label>
+					<textcolor>NP_time_filter</textcolor>
+					<label>$INFO[MusicPlayer.Time] / $INFO[MusicPlayer.Duration]</label>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(disablenowplayingfilter)</visible>
 				</control>
@@ -210,7 +212,8 @@
 					<width>125</width>
 					<height>20</height>
 					<font>Font_Track</font>
-					<label>[COLOR FF949494]Track: $INFO[MusicPlayer.TrackNumber][/COLOR]</label>
+					<textcolor>NP_track_nofilter</textcolor>
+					<label>Track: $INFO[MusicPlayer.TrackNumber]</label>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>Skin.HasSetting(disablenowplayingfilter)</visible>
 				</control>
@@ -221,7 +224,8 @@
 					<width>125</width>
 					<height>20</height>
 					<font>Font_Track</font>
-					<label>[COLOR FF000000]Track: $INFO[MusicPlayer.TrackNumber][/COLOR]</label>
+					<textcolor>NP_track_filter</textcolor>
+					<label>Track: $INFO[MusicPlayer.TrackNumber]</label>
 					<aspectratio align="right">keep</aspectratio>
 					<visible>!Skin.HasSetting(disablenowplayingfilter)</visible>
 				</control>
@@ -235,7 +239,8 @@
 			<align>left</align>
 			<aligny>-</aligny>
 			<font>Font_OSDMusicArtist</font>
-			<label>[COLOR FFFFFFFF]$INFO[MusicPlayer.Artist][/COLOR]</label>
+			<textcolor>NP_artist</textcolor>
+			<label>$INFO[MusicPlayer.Artist]</label>
 			<animation effect="slide" start="0,0" end="0,-12" time="200" condition="Control.IsVisible(212)">Conditional</animation>
 		</control>
 		<control type="label">
@@ -246,7 +251,8 @@
 			<align>left</align>
 			<aligny>-</aligny>
 			<font>Font_OSDMusicArtist</font>
-			<label>[COLOR FF949494]$INFO[MusicPlayer.Album][/COLOR]</label>
+			<textcolor>NP_album_nofilter</textcolor>
+			<label>$INFO[MusicPlayer.Album]</label>
 			<animation effect="slide" start="0,0" end="0,-12" time="200" condition="Control.IsVisible(212)">Conditional</animation>		
 			<visible>Skin.HasSetting(disablenowplayingfilter)</visible>
 		</control>
@@ -258,7 +264,8 @@
 			<align>left</align>
 			<aligny>-</aligny>
 			<font>Font_OSDMusicArtist</font>
-			<label>[COLOR FF000000]$INFO[MusicPlayer.Album][/COLOR]</label>
+			<textcolor>NP_album_filter</textcolor>
+			<label>$INFO[MusicPlayer.Album]</label>
 			<animation effect="slide" start="0,0" end="0,-12" time="200" condition="Control.IsVisible(212)">Conditional</animation>		
 			<visible>!Skin.HasSetting(disablenowplayingfilter)</visible>
 		</control>
@@ -271,7 +278,8 @@
 			<align>left</align>
 			<aligny>-</aligny>
 			<font>Font_OSDMusicTitle</font>
-			<label>[COLOR FFFFFFFF]$INFO[MusicPlayer.Title][/COLOR]</label>
+			<textcolor>NP_song</textcolor>
+			<label>$INFO[MusicPlayer.Title]</label>
 			<animation effect="slide" start="0,0" end="0,-12" time="200" condition="Control.IsVisible(212)">Conditional</animation>		
 		</control>
 	</control>	
