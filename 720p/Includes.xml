@@ -1249,10 +1249,12 @@
 	</include>
 	<include name="daytheme">
 		<onfocus>Skin.Reset(nighttheme)</onfocus>
+		<onfocus>Skin.SetString(oldtheme,$INFO[Skin.String(theme)])</onfocus>
 		<onfocus>Skin.SetString(theme,default)</onfocus>
 	</include>
 	<include name="nighttheme">
 		<onfocus>Skin.SetBool(nighttheme)</onfocus>
+		<onfocus>Skin.SetString(oldtheme,$INFO[Skin.String(theme)])</onfocus>
 		<onfocus>Skin.SetString(theme,dark)</onfocus>
 	</include>
 
