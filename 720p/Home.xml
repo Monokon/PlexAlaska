@@ -10,6 +10,7 @@
 		<control type="button" id="777">
 			<include>changethemebytime</include>
 			<onfocus>XBMC.SetFocus(300)</onfocus>
+			<onfocus>RunScript(q:/scripts/PlexAlaska_SwitchTheme/default.py)</onfocus>
 		</control>
 
 		<control type="label">
