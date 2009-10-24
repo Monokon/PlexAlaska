@@ -10,15 +10,15 @@
 			<label>MyWeather.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
-	<!-- invisible button to trigger view options -->
+		<!-- invisible button to trigger view options -->
 		<control type="button" id="50">
-			<texturefocus></texturefocus>
-			<texturenofocus></texturenofocus>
+			<texturefocus/>
+			<texturenofocus/>
 			<onleft>7000</onleft>
 			<onright>7000</onright>
 			<onup>7000</onup>
 			<ondown>7000</ondown>
-			<onclick></onclick>
+			<onclick/>
 		</control>
 		<!-- weather End -->
 		<control type="group">
@@ -26,7 +26,7 @@
 			<posx>140</posx>
 			<posy>210</posy>
 			<include>Animation_ZoomedByMenu</include>
-		<!-- today -->
+			<!-- today -->
 			<control type="group" id="1000">
 				<animation type="WindowOpen">
 					<effect type="fade" start="0" end="100" time="600" delay="100" />
@@ -40,7 +40,7 @@
 				<posy>0</posy>
 				<width>225</width>
 				<height>300</height>
-			<!-- condition icon -->
+				<!-- condition icon -->
 				<!--control type="image">
 					<info>Window.Property(Current.ConditionIcon)</info>
 					<width>128</width>
@@ -48,7 +48,7 @@
 					<posx>50</posx>
 					<posy>155</posy>
 				</control-->
-			<!-- label -->
+				<!-- label -->
 				<control type="label">
 					<label>Current</label>
 					<width>205</width>
@@ -59,7 +59,7 @@
 					<textcolor>SettingsHeading</textcolor>
 					<align>center</align>
 				</control>
-			<!-- current condition -->
+				<!-- current condition -->
 				<control type="label">
 					<info>Window.Property(Current.Condition)</info>
 					<width>205</width>
@@ -70,7 +70,7 @@
 					<align>center</align>
 					<textcolor>Date</textcolor>
 				</control>
-			<!-- current temp -->
+				<!-- current temp -->
 				<control type="label">
 					<label>Current</label>
 					<posx>5</posx>
@@ -91,7 +91,7 @@
 					<align>center</align>
 					<textcolor>SettingsDetail</textcolor>
 				</control>
-			<!-- Feels Like -->
+				<!-- Feels Like -->
 				<control type="label">
 					<label>402</label>
 					<posx>115</posx>
@@ -112,7 +112,7 @@
 					<align>center</align>
 					<textcolor>SettingsDetail</textcolor>
 				</control>
-			<!-- Uv Index -->
+				<!-- Uv Index -->
 				<control type="label">
 					<label>[COLOR Date]$LOCALIZE[403]: [/COLOR] $INFO[Window.Property(Current.UVIndex)]</label>
 					<width>205</width>
@@ -123,7 +123,7 @@
 					<align>center</align>
 					<textcolor>SettingsDetail</textcolor>
 				</control>
-			<!-- Dew Point -->
+				<!-- Dew Point -->
 				<control type="label">
 					<label>[COLOR Date]$LOCALIZE[405]: [/COLOR] $INFO[Window.Property(Current.DewPoint)]</label>
 					<width>205</width>
@@ -134,7 +134,7 @@
 					<align>center</align>
 					<textcolor>SettingsDetail</textcolor>
 				</control>
-			<!-- Humidity -->
+				<!-- Humidity -->
 				<control type="label">
 					<label>[COLOR Date]$LOCALIZE[406]: [/COLOR] $INFO[Window.Property(Current.Humidity)]</label>
 					<width>205</width>
@@ -145,7 +145,7 @@
 					<align>center</align>
 					<textcolor>SettingsDetail</textcolor>
 				</control>
-			<!-- Wind -->
+				<!-- Wind -->
 				<control type="label">
 					<label>$LOCALIZE[404]</label>
 					<width>205</width>
@@ -167,7 +167,7 @@
 					<textcolor>SettingsDetail</textcolor>
 				</control>
 			</control>
-		<!-- day 0 -->
+			<!-- day 0 -->
 			<control type="group">
 				<animation type="WindowOpen">
 					<effect type="fade" start="0" end="100" time="600" delay="300" />
@@ -181,7 +181,7 @@
 				<posy>0</posy>
 				<width>195</width>
 				<height>300</height>
-			<!-- condition icon -->
+				<!-- condition icon -->
 				<control type="image" id="35">
 					<info>Window.Property(Day0.OutlookIcon)</info>
 					<width>128</width>
@@ -189,7 +189,7 @@
 					<posx>35</posx>
 					<posy>155</posy>
 				</control>
-			<!-- day label -->
+				<!-- day label -->
 				<control type="label">
 					<info>Window.Property(Day0.Title)</info>
 					<width>175</width>
@@ -200,7 +200,7 @@
 					<textcolor>SettingsHeading</textcolor>
 					<align>center</align>
 				</control>
-			<!-- condition -->
+				<!-- condition -->
 				<control type="label" id="34">
 					<info>Window.Property(Day0.Outlook)</info>
 					<width>175</width>
@@ -211,7 +211,7 @@
 					<align>center</align>
 					<textcolor>Date</textcolor>
 				</control>
-			<!-- high temp -->
+				<!-- high temp -->
 				<control type="label">
 					<label>$LOCALIZE[393]</label>
 					<posx>5</posx>
@@ -232,7 +232,7 @@
 					<align>center</align>
 					<textcolor>SettingsDetail</textcolor>
 				</control>
-			<!-- low temp -->
+				<!-- low temp -->
 				<control type="label">
 					<label>$LOCALIZE[391]</label>
 					<posx>100</posx>
@@ -254,7 +254,7 @@
 					<textcolor>SettingsDetail</textcolor>
 				</control>
 			</control>
-		<!-- day 1 -->
+			<!-- day 1 -->
 			<control type="group">
 				<animation type="WindowOpen">
 					<effect type="fade" start="0" end="100" time="600" delay="500" />
@@ -268,7 +268,7 @@
 				<posy>0</posy>
 				<width>195</width>
 				<height>300</height>
-			<!-- condition icon -->
+				<!-- condition icon -->
 				<control type="image" id="35">
 					<info>Window.Property(Day1.OutlookIcon)</info>
 					<width>128</width>
@@ -276,7 +276,7 @@
 					<posx>35</posx>
 					<posy>155</posy>
 				</control>
-			<!-- day label -->
+				<!-- day label -->
 				<control type="label">
 					<info>Window.Property(Day1.Title)</info>
 					<width>175</width>
@@ -287,7 +287,7 @@
 					<textcolor>SettingsHeading</textcolor>
 					<align>center</align>
 				</control>
-			<!-- condition -->
+				<!-- condition -->
 				<control type="label" id="34">
 					<info>Window.Property(Day1.Outlook)</info>
 					<width>175</width>
@@ -298,7 +298,7 @@
 					<align>center</align>
 					<textcolor>Date</textcolor>
 				</control>
-			<!-- high temp -->
+				<!-- high temp -->
 				<control type="label">
 					<label>$LOCALIZE[393]</label>
 					<posx>5</posx>
@@ -319,7 +319,7 @@
 					<align>center</align>
 					<textcolor>SettingsDetail</textcolor>
 				</control>
-			<!-- low temp -->
+				<!-- low temp -->
 				<control type="label">
 					<label>$LOCALIZE[391]</label>
 					<posx>100</posx>
@@ -341,7 +341,7 @@
 					<textcolor>SettingsDetail</textcolor>
 				</control>
 			</control>
-		<!-- day 2 -->
+			<!-- day 2 -->
 			<control type="group">
 				<animation type="WindowOpen">
 					<effect type="fade" start="0" end="100" time="600" delay="200" />
@@ -355,7 +355,7 @@
 				<posy>0</posy>
 				<width>195</width>
 				<height>300</height>
-			<!-- condition icon -->
+				<!-- condition icon -->
 				<control type="image" id="35">
 					<info>Window.Property(Day2.OutlookIcon)</info>
 					<width>128</width>
@@ -363,7 +363,7 @@
 					<posx>35</posx>
 					<posy>155</posy>
 				</control>
-			<!-- day label -->
+				<!-- day label -->
 				<control type="label">
 					<info>Window.Property(Day2.Title)</info>
 					<width>175</width>
@@ -374,7 +374,7 @@
 					<textcolor>SettingsHeading</textcolor>
 					<align>center</align>
 				</control>
-			<!-- condition -->
+				<!-- condition -->
 				<control type="label" id="34">
 					<info>Window.Property(Day2.Outlook)</info>
 					<width>175</width>
@@ -385,7 +385,7 @@
 					<align>center</align>
 					<textcolor>Date</textcolor>
 				</control>
-			<!-- high temp -->
+				<!-- high temp -->
 				<control type="label">
 					<label>$LOCALIZE[393]</label>
 					<posx>5</posx>
@@ -406,7 +406,7 @@
 					<align>center</align>
 					<textcolor>SettingsDetail</textcolor>
 				</control>
-			<!-- low temp -->
+				<!-- low temp -->
 				<control type="label">
 					<label>$LOCALIZE[391]</label>
 					<posx>100</posx>
@@ -428,7 +428,7 @@
 					<textcolor>SettingsDetail</textcolor>
 				</control>
 			</control>
-		<!-- day 3 -->
+			<!-- day 3 -->
 			<control type="group">
 				<animation type="WindowOpen">
 					<effect type="fade" start="0" end="100" time="600" delay="400" />
@@ -442,7 +442,7 @@
 				<posy>0</posy>
 				<width>195</width>
 				<height>300</height>
-			<!-- condition icon -->
+				<!-- condition icon -->
 				<control type="image">
 					<info>Window.Property(Day3.OutlookIcon)</info>
 					<width>128</width>
@@ -450,7 +450,7 @@
 					<posx>35</posx>
 					<posy>155</posy>
 				</control>
-			<!-- day label -->
+				<!-- day label -->
 				<control type="label">
 					<info>Window.Property(Day3.Title)</info>
 					<width>175</width>
@@ -461,7 +461,7 @@
 					<textcolor>SettingsHeading</textcolor>
 					<align>center</align>
 				</control>
-			<!-- condition -->
+				<!-- condition -->
 				<control type="label" id="34">
 					<info>Window.Property(Day3.Outlook)</info>
 					<width>175</width>
@@ -472,7 +472,7 @@
 					<align>center</align>
 					<textcolor>Date</textcolor>
 				</control>
-			<!-- high temp -->
+				<!-- high temp -->
 				<control type="label">
 					<label>$LOCALIZE[393]</label>
 					<posx>5</posx>
@@ -493,7 +493,7 @@
 					<align>center</align>
 					<textcolor>SettingsDetail</textcolor>
 				</control>
-			<!-- low temp -->
+				<!-- low temp -->
 				<control type="label">
 					<label>$LOCALIZE[391]</label>
 					<posx>100</posx>
@@ -516,24 +516,13 @@
 				</control>
 			</control>
 		</control>
-	<!-- view options -->
+		<!-- view options -->
 		<include>Global_ContextFilter</include>
 		<control type="grouplist" id="7000">
-			<posx>360</posx>
+			<posx>260</posx>
 			<include>WindowMenuVars</include>
 			<posy>330</posy>
-		<!-- location -->
-			<control type="button" id="7001">
-				<label>$INFO[Weather.Location]</label>
-				<align>left</align>
-				<include>WindowMenuButton</include>
-				<onclick>Control.Message(3,click)</onclick>
-				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(7001)">
-					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />
-				</animation>
-			</control>
-		<!-- refresh -->
+			<!-- refresh -->
 			<control type="button" id="2">
 				<label>184</label>
 				<include>WindowMenuButton</include>
@@ -542,7 +531,7 @@
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		<!-- settings -->
+			<!-- settings -->
 			<control type="button" id="4">
 				<label>8</label>
 				<include>WindowMenuButton</include>
@@ -552,19 +541,30 @@
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		</control>
-		<control type="grouplist">
-			<posx>360</posx>
-			<include>WindowMenuVars</include>
-			<posy>307</posy>
-			<control type="button" id="7040">
-				<include>WindowMenuLabel</include>
-				<label>396</label>
+			<!-- location -->
+			<control type="spincontrol" id="3">
+				<description>hidden location control</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1</width>
+				<height>1</height>
+				<visible>false</visible>
+			</control>
+			<control type="button" id="7001">
+				<label>$INFO[Weather.Location]</label>
+				<align>left</align>
+				<include>WindowMenuButton</include>
+				<onclick>Control.Message(3,movedown)</onclick>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(7001)">
-					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
+					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
+		</control>
+		<control type="grouplist">
+			<posx>260</posx>
+			<include>WindowMenuVars</include>
+			<posy>307</posy>
 			<control type="button" id="7041">
 				<include>WindowMenuLabel</include>
 				<label>8</label>
@@ -581,8 +581,16 @@
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
+			<control type="button" id="7040">
+				<include>WindowMenuLabel</include>
+				<label>396</label>
+				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(7001)">
+					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
+					<effect type="fade" start="100" end="50" time="200" />
+				</animation>
+			</control>
 		</control>
-	<!-- Heading -->
+		<!-- Heading -->
 		<control type="group">
 			<posx>30</posx>
 			<posy>30</posy>
@@ -592,11 +600,13 @@
 				<include>Global_HeadingSectionVars</include>
 			</control>
 			<control type="label">
-<!-- LOC -->	<label>[B]Location:[/B] $INFO[Weather.Location]</label>
+				<!-- LOC -->
+				<label>[B]Location:[/B] $INFO[Weather.Location]</label>
 				<include>Global_HeadingDetailVars</include>
 			</control>
 			<control type="label">
-<!-- LOC -->	<label>[B]Last Updated:[/B] $INFO[Window.Property(Updated)]</label>
+				<!-- LOC -->
+				<label>[B]Last Updated:[/B] $INFO[Window.Property(Updated)]</label>
 				<posy>60</posy>
 				<include>Global_HeadingDetailVars</include>
 			</control>
