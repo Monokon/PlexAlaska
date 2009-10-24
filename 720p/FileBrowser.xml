@@ -81,6 +81,14 @@
 		<control type="image">
 			<posx>0</posx>
 			<posy>290</posy>
+			<width>1680</width>
+			<height>100</height>
+			<include condition="!Skin.HasSetting(nighttheme)">focusbackground_default</include>
+			<include condition="Skin.HasSetting(nighttheme)">focusbackground_dark</include>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>290</posy>
 			<width>1280</width>
 			<height>2</height>
 			<texture>common/line_1.png</texture>

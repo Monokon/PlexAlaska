@@ -8,6 +8,15 @@
 		<include>Global_Background</include>
 		<include>Global_Filter</include>
 
+		<control type="image" id="0">
+			<description>Back Panel</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>560</width>
+			<height>480</height>
+			<texture>common/white.png</texture>
+		</control>
+
 		<control type="label">
 			<include>DialogID</include>
 			<label>DialogFileStacking.xml</label>
@@ -61,7 +70,7 @@
 					<posx>30</posx>
 					<width>465</width>
 					<height>30</height>
-					<textcolor>Grey</textcolor>
+					<textcolor>Black</textcolor>
 					<info>ListItem.Label</info>
 				</control>
 			</focusedlayout>

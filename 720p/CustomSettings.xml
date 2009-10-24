@@ -120,7 +120,7 @@
 					<onclick>Skin.ToggleSetting(mediaflagson)</onclick>
 					<selected>Skin.HasSetting(mediaflagson)</selected>
 				</control>
-				<control type="radiobutton" id="104">
+				<control type="radiobutton" id="102">
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
@@ -132,7 +132,19 @@
 					<onclick>Skin.ToggleSetting(showstudioflags)</onclick>
 					<selected>Skin.HasSetting(showstudioflags)</selected>
 				</control>
-				<control type="radiobutton" id="102">
+				<control type="radiobutton" id="103">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>settings_focused</focusedcolor>
+					<!-- LOC -->
+					<label>Global Temperature</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(ShowGlobalTemp)</onclick>
+					<selected>Skin.HasSetting(ShowGlobalTemp)</selected>
+				</control>
+				<control type="radiobutton" id="104">
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
@@ -144,7 +156,7 @@
 					<onclick>Skin.ToggleSetting(largeRSS)</onclick>
 					<selected>Skin.HasSetting(largeRSS)</selected>
 				</control>
-				<control type="radiobutton" id="103">
+				<control type="radiobutton" id="105">
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>

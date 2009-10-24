@@ -31,7 +31,7 @@
     <font>Font_InfoPlot</font>
     <label>-</label>
     <textcolor>Grey</textcolor>
-    <focusedcolor>Black</focusedcolor>
+    <focusedcolor>MenuValue</focusedcolor>
     <disabledcolor>Red</disabledcolor>
     <texturefocus>ButtonFo.png</texturefocus>
     <texturenofocus>ButtonNF.png</texturenofocus>
@@ -73,7 +73,7 @@
 		<label>-</label>
 		<font>Font_Settings</font>
 		<textcolor>Grey</textcolor>
-		<focusedcolor>Black</focusedcolor>
+		<focusedcolor>MenuValue</focusedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<texturenofocus>-</texturenofocus>
 		<texturefocus>ButtonFo.png</texturefocus>
