@@ -362,7 +362,7 @@
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath>backdrops/osx/videos//</imagepath>
+					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/videos//</imagepath>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
