@@ -26,7 +26,8 @@
 					<posy>131</posy>
 					<width>162</width>
 					<height>241</height>
-					<texture>postermatteNF.png</texture>
+					<include condition="!Skin.HasSetting(nighttheme)">posterNF_default</include>
+					<include condition="Skin.HasSetting(nighttheme)">posterNF_dark</include>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
@@ -34,11 +35,24 @@
 					<posy>131</posy>
 					<width>162</width>
 					<height>241</height>
-					<texture background="true" diffuse="postermatteNF.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" diffuse="default/postermatteNF.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
+					<visible>!Container.Content(Genres)</visible>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>131</posy>
+					<width>162</width>
+					<height>241</height>
+					<texture diffuse="default/postermatteNF.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<fadetime>200</fadetime>
+					<colordiffuse>89FFFFFF</colordiffuse>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<include>Animation_HiddenByInfo</include>
+					<visible>Container.Content(Genres)</visible>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -58,6 +72,19 @@
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
+					<visible>!Container.Content(Genres)</visible>
+				</control>
+				<control type="image">
+					<posx>1</posx>
+					<posy>373</posy>
+					<width>162</width>
+					<height>241</height>
+					<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<fadetime>200</fadetime>
+					<colordiffuse>89FFFFFF</colordiffuse>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<include>Animation_HiddenByInfo</include>
+					<visible>Container.Content(Genres)</visible>
 				</control>
 				<control type="image">
 					<posx>2</posx>
@@ -85,6 +112,21 @@
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="160,238" start="51" end="100" time="600" tween="back" easing="out" />
 					</animation>
+					<visible>!Container.Content(Genres)</visible>
+				</control>
+				<control type="image">
+					<posx>2</posx>
+					<posy>20</posy>
+					<width>320</width>
+					<height>476</height>
+					<texture background="true" diffuse="postermatte.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<fadetime>200</fadetime>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<include>Animation_PosterInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="160,238" start="51" end="100" time="600" tween="back" easing="out" />
+					</animation>
+					<visible>Container.Content(Genres)</visible>
 				</control>
 				<control type="image">
 					<posx>-18</posx>
@@ -127,7 +169,7 @@
 			<ondown>7000</ondown>
 			<viewtype label="Poster">list</viewtype>
 			<orientation>horizontal</orientation>
-			<scrolltime>100</scrolltime>
+			<scrolltime>200</scrolltime>
 			<focusposition>4</focusposition>
 			<scrolltime>200</scrolltime>
 			<include>Animation_ZoomInZoomOut</include>
@@ -139,7 +181,8 @@
 					<posy>131</posy>
 					<width>162</width>
 					<height>241</height>
-					<texture>postermatteNF.png</texture>
+					<include condition="!Skin.HasSetting(nighttheme)">posterNF_default</include>
+					<include condition="Skin.HasSetting(nighttheme)">posterNF_dark</include>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
@@ -147,8 +190,7 @@
 					<posy>131</posy>
 					<width>162</width>
 					<height>241</height>
-					<include condition="!Skin.HasSetting(nighttheme)">posterNF_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">posterNF_Dark</include>
+					<texture background="true" diffuse="default/postermatteNF.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -160,7 +202,7 @@
 					<posy>131</posy>
 					<width>162</width>
 					<height>241</height>
-					<texture diffuse="postermatteNF.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<texture diffuse="default/postermatteNF.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
