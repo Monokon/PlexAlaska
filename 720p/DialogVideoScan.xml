@@ -73,7 +73,7 @@
 				<posy>10</posy>
 				<width>50</width>
 				<height>50</height>
-				<texture>$INFO[Skin.String(theme),dialogs/,/scanprogress_back.png]</texture>
+				<texture>$INFO[Skin.String(theme),dialogs/,/scanprogress.png]</texture>
 			</control>
 			<control type="label" id="401">
 				<description>Heading Label</description>
