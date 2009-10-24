@@ -137,6 +137,23 @@
 				</control>	
 			</focusedlayout>
 		</control>
+
+		<!--
+		<control type="image">
+			<posx>10</posx>
+			<posy>238</posy>
+			<width>280</width>
+			<height>229</height>
+			<fadetime>400</fadetime>
+			<aspectratio align="left" aligny="center">keep</aspectratio>
+			<texture background="true">$INFO[Container(55).ListItem.Icon]</texture>
+			<bordertexture border="8">common/thumb_border.png</bordertexture>
+			<bordersize>8</bordersize>
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByMusicInfo</include>
+		</control>
+		-->
 		
 		<control type="image">
 			<posx>856</posx>
