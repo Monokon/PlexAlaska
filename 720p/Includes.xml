@@ -1352,10 +1352,10 @@
 	</include>
 
 	<include name="posterNF_default">
-		<texture background="true" diffuse="default/postermatteNF.png">$INFO[ListItem.Icon]</texture>
+		<texture>default/postermatteNF.png</texture>
 	</include>
 	<include name="posterNF_dark">
-		<texture background="true" diffuse="dark/postermatteNF.png">$INFO[ListItem.Icon]</texture>
+		<texture>dark/postermatteNF.png</texture>
 	</include>
 
 </includes>
