@@ -26,7 +26,7 @@
 				<posx>-5</posx>
 				<posy>112</posy>
 				<width>1290</width>
-				<height>165</height>
+				<height>48</height>
 				<texture>backdrops/backgroundcolordiffuse.png</texture>
 				<colordiffuse>backgroundColor</colordiffuse>
 				<aspectratio aligny="bottom">scale</aspectratio>

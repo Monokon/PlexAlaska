@@ -346,7 +346,7 @@
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
-					<label>Use "fixedlist" in poster view</label>
+					<label>Use "fixedlist" in poster view for TV shows</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(fixedlist)</onclick>
