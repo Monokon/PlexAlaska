@@ -28,8 +28,17 @@
 				<info>Player.Progress</info>
 				<posx>30</posx>
 				<posy>115</posy>
-				<width>1220</width>
+				<width>1040</width>
 				<height>19</height>
+			</control>
+			<control type="label">
+				<posx>1096</posx>
+				<posy>114</posy>
+				<width>300</width>
+				<height>25</height>
+				<font>Font_ListDetail</font>
+				<textcolor>NowPlayingArtist</textcolor>
+				<label>$INFO[VideoPlayer.Time] / $INFO[VideoPlayer.Duration]</label>
 			</control>
 			<control type="group">
 				<posx>195</posx>
