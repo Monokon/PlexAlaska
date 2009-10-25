@@ -34,10 +34,10 @@
 			<control type="progress" id="404">
 				<description>Progressbar</description>
 				<info>System.Progressbar</info>
-				<posx>327</posx>
-				<posy>20</posy>
+				<posx>328</posx>
+				<posy>22</posy>
 				<width>38</width>
-				<height>28</height>
+				<height>27</height>
 				<texturebg>dialogs/clear.png</texturebg>
 				<lefttexture>-</lefttexture>
 				<midtexture>dialogs/grey.png</midtexture>
