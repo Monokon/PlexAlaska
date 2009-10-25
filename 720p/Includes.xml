@@ -305,6 +305,7 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>2</height>
+			<ondown>ActivateWindow(111)</ondown>
 			<width>8</width>
 			<viewtype>list</viewtype>
 			<scrolltime>0</scrolltime>
@@ -677,6 +678,7 @@
 			<width>1541</width>
 			<onleft>300</onleft>
 			<onright>300</onright>
+			<ondown>ActivateWindow(111)</ondown>
 			<viewtype>list</viewtype>
 			<orientation>horizontal</orientation>
 			<focusposition>2</focusposition>
