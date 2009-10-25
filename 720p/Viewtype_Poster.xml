@@ -154,7 +154,7 @@
 					</animation>
 				</control>
 			</focusedlayout>
-			<visible>Skin.HasSetting(fixedlist)</visible>
+			<visible>Skin.HasSetting(fixedlist) + !Container.Content(movies)</visible>
 		</control>
 
 		<control type="wraplist" id="55">
@@ -308,7 +308,7 @@
 					</animation>
 				</control>
 			</focusedlayout>
-			<visible>!Skin.HasSetting(fixedlist)</visible>
+			<visible>!Skin.HasSetting(fixedlist) | Container.Content(movies)</visible>
 		</control>
 		<!-- Browser label and flags -->
 		<control type="group">
