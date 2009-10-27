@@ -789,7 +789,7 @@
 				</item>
 				<item id="13">
 					<description>Shutdown</description>
-					<thumb>mainmenu/quit.png</thumb>
+					<thumb>backdrops/quiticon.png</thumb>
 					<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
 					<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
 					<visible>!Skin.HasSetting(nohomequit)</visible>
