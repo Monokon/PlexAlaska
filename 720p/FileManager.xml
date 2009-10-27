@@ -10,28 +10,28 @@
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_ZoomInZoomOut</include>
 			<posx>15</posx>
-			<posy>140</posy>
+			<posy>85</posy>
 			<control type="image">
 				<width>660</width>
-				<height>537</height>
+				<height>592</height>
 				<posx>-20</posx>
 				<posy>0</posy>
 				<texture border="100">filemanager/filemanager_panel.png</texture>
 			</control>
 			<control type="label" id="101">
 				<posx>590</posx>
-				<posy>470</posy>
+				<posy>525</posy>
 				<width>555</width>
 				<height>60</height>
 				<font>Font_ListTitleBigger</font>
 				<align>right</align>
 				<scroll>true</scroll>
 				<textcolor>FM_ListTitle</textcolor>
-				<shadowcolor>FM_ListTitle</shadowcolor>
+				<shadowcolor>FM_ListTitleAccent</shadowcolor>
 			</control>
 			<control type="image">
 				<posx>22</posx>
-				<posy>460</posy>
+				<posy>515</posy>
 				<width>576</width>
 				<height>2</height>
 				<texture>common/divider.png</texture>
@@ -41,20 +41,21 @@
 				<posx>14</posx>
 				<posy>30</posy>
 				<width>575</width>
-				<height>425</height>
+				<height>470</height>
 				<scrolltime>0</scrolltime>
 				<onright>21</onright>
 				<onup>20</onup>
 				<ondown>20</ondown>
-				<itemlayout height="38">
+				<itemlayout height="40">
 					<control type="label">
 						<posx>23</posx>
 						<posy>0</posy>
 						<width>480</width>
-						<height>38</height>
-						<font>Font_FavoritesItemLabel</font>
+						<height>39</height>
+						<font>Font_FavouritesItemLabel</font>
 						<aligny>center</aligny>
 						<textcolor>FM_Listunfocused</textcolor>
+						<selectedcolor>FM_ListUnfocusSelected</selectedcolor>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
@@ -62,14 +63,15 @@
 						<posy>0</posy>
 						<width>100</width>
 						<height>38</height>
-						<font>Font_FavoritesItemLabel</font>
+						<font>Font_FavouritesItemLabel</font>
 						<align>right</align>
 						<aligny>center</aligny>
 						<textcolor>FM_Listunfocused</textcolor>
+						<selectedcolor>FM_ListUnfocusSelected</selectedcolor>
 						<label>[UPPERCASE]$INFO[ListItem.label2][/UPPERCASE]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="38">
+				<focusedlayout height="40">
 					<control type="image">
 						<posx>8</posx>
 						<posy>-6</posy>
@@ -84,10 +86,11 @@
 						<posy>0</posy>
 						<width>480</width>
 						<height>38</height>
-						<font>Font_FavoritesItemLabel</font>
+						<font>Font_FavouritesItemLabel</font>
 						<aligny>center</aligny>
 						<textcolor>FM_Listfocused</textcolor>
-						<selectedcolor>FM_Listfocused</selectedcolor>
+						<shadowcolor>FM_ListFocusedAccent</shadowcolor>
+						<selectedcolor>FM_ListFocusSelected</selectedcolor>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
@@ -95,7 +98,7 @@
 						<posy>0</posy>
 						<width>100</width>
 						<height>38</height>
-						<font>Font_FavoritesItemLabel</font>
+						<font>Font_FavouritesItemLabel</font>
 						<align>right</align>
 						<aligny>center</aligny>
 						<textcolor>FM_Listfocused</textcolor>
@@ -110,51 +113,52 @@
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_ZoomInZoomOut</include>
 			<posx>650</posx>
-			<posy>140</posy>
+			<posy>85</posy>
 			<control type="image">
 				<width>660</width>
-				<height>537</height>
+				<height>592</height>
 				<posx>-20</posx>
 				<posy>0</posy>
 				<texture border="100">filemanager/filemanager_panel.png</texture>
 			</control>
 			<control type="label" id="102">
 				<posx>590</posx>
-				<posy>470</posy>
+				<posy>525</posy>
 				<width>555</width>
 				<height>60</height>
 				<font>Font_ListTitleBigger</font>
 				<align>right</align>
 				<scroll>true</scroll>
 				<textcolor>FM_ListTitle</textcolor>
-				<shadowcolor>FM_ListTitle</shadowcolor>
+				<shadowcolor>FM_ListTitleAccent</shadowcolor>
 			</control>
 			<control type="image">
 				<posx>22</posx>
-				<posy>460</posy>
+				<posy>515</posy>
 				<width>576</width>
 				<height>2</height>
 				<texture>common/divider.png</texture>
 			</control>
 			<control type="list" id="21">
 				<viewtype label="31752">list</viewtype>
-				<posx>15</posx>
+				<posx>14</posx>
 				<posy>30</posy>
 				<width>575</width>
-				<height>425</height>
+				<height>470</height>
 				<scrolltime>0</scrolltime>
 				<onleft>20</onleft>
 				<onup>21</onup>
 				<ondown>21</ondown>
-				<itemlayout height="38">
+				<itemlayout height="40">
 					<control type="label">
 						<posx>23</posx>
 						<posy>0</posy>
 						<width>480</width>
-						<height>38</height>
-						<font>Font_FavoritesItemLabel</font>
+						<height>39</height>
+						<font>Font_FavouritesItemLabel</font>
 						<aligny>center</aligny>
 						<textcolor>FM_Listunfocused</textcolor>
+						<selectedcolor>FM_ListUnfocusSelected</selectedcolor>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
@@ -162,14 +166,15 @@
 						<posy>0</posy>
 						<width>100</width>
 						<height>38</height>
-						<font>Font_FavoritesItemLabel</font>
+						<font>Font_FavouritesItemLabel</font>
 						<align>right</align>
 						<aligny>center</aligny>
 						<textcolor>FM_Listunfocused</textcolor>
+						<selectedcolor>FM_ListUnfocusSelected</selectedcolor>
 						<label>[UPPERCASE]$INFO[ListItem.label2][/UPPERCASE]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="38">
+				<focusedlayout height="40">
 					<control type="image">
 						<posx>8</posx>
 						<posy>-6</posy>
@@ -184,10 +189,11 @@
 						<posy>0</posy>
 						<width>480</width>
 						<height>38</height>
-						<font>Font_FavoritesItemLabel</font>
+						<font>Font_FavouritesItemLabel</font>
 						<aligny>center</aligny>
 						<textcolor>FM_Listfocused</textcolor>
-						<selectedcolor>Black</selectedcolor>
+						<shadowcolor>FM_ListFocusedAccent</shadowcolor>
+						<selectedcolor>FM_ListFocusSelected</selectedcolor>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
@@ -195,11 +201,11 @@
 						<posy>0</posy>
 						<width>100</width>
 						<height>38</height>
-						<font>Font_FavoritesItemLabel</font>
+						<font>Font_FavouritesItemLabel</font>
 						<align>right</align>
 						<aligny>center</aligny>
 						<textcolor>FM_Listfocused</textcolor>
-						<selectedcolor>Black</selectedcolor>
+						<selectedcolor>FM_Listfocused</selectedcolor>
 						<label>[UPPERCASE]$INFO[ListItem.label2][/UPPERCASE]</label>
 					</control>
 				</focusedlayout>

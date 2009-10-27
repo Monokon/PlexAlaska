@@ -5,6 +5,7 @@
 	<color name="Black">FF262626</color>
 	<color name="Grey">FF686868</color>
 	<color name="Red">FFFF0000</color>
+	<color name="White">FFFFFFFF</color>
 
 	<!-- Global colours -->
 
@@ -87,11 +88,21 @@
 	<color name="DialogLabel">FFFFFFFF</color>
 	<color name="DialogLabelNF">ab474747</color>
 
-	<!-- filemanager -->
-	
-	<color name="FM_ListTitle">FFFFFFFF</color>
-	<color name="FM_Listfocused">FFFFFFFF</color>
-	<color name="FM_Listunfocused">FF575757</color>
+	<!-- Favorites -->
+
+	<color name="FavListItem">FF929191</color>
+	<color name="FavListItemSelected">ffcc0000</color>
+	<color name="FavListItemFocusedSelected">CCcccccc</color>
+
+	<!-- Filemanager -->
+
+	<color name="FM_ListTitle">dc777777</color>
+	<color name="FM_ListTitleAccent">CCdadada</color>
+	<color name="FM_ListSelected">dc990000</color>
+	<color name="FM_Listfocused">ffffffff</color>
+	<color name="FM_ListFocusedAccent">00CCCCCC</color>
+	<color name="FM_Listunfocused">dc777777</color>
+	<color name="FM_ListFocusSelected">CCcccccc</color>
 
 	<!-- settings -->
 	<color name="settings_focused">ffffffff</color>

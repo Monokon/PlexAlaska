@@ -234,7 +234,7 @@
 		<control type="grouplist" id="7001">
 			<width>1000</width>
 			<height>40</height>
-			<posx>240</posx>
+			<posx>216</posx>
 			<onup>7050</onup>
 			<ondown>7050</ondown>
 			<itemgap>0</itemgap>
@@ -243,9 +243,15 @@
 			<orientation>horizontal</orientation>
 			<posy>330</posy>
 			<control type="button" id="5">
-				<description>Review/Tracks</description>=
+				<description>Review/Tracks</description>
 				<label>182</label>
-				<include>WindowMenuButton</include>
+				<posx>0</posx>
+				<posy>30</posy>
+				<width>224</width>
+				<height>30</height>
+				<align>center</align>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(5)">
 					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
@@ -284,7 +290,7 @@
 		<control type="grouplist">
 			<width>1000</width>
 			<height>40</height>
-			<posx>240</posx>
+			<posx>216</posx>
 			<onup>7050</onup>
 			<ondown>7050</ondown>
 			<itemgap>0</itemgap>
@@ -294,7 +300,14 @@
 			<posy>307</posy>
 			<!-- Cast/Review -->
 			<control type="button" id="7040">
-				<include>WindowMenuLabel</include>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>224</width>
+				<height>30</height>
+				<align>center</align>
+				<font>Font_MenuLabel</font>
+				<textcolor>MenuValue</textcolor>
+				<aligny>bottom</aligny>
 				<!-- LOC -->
 				<label>View</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(5)">

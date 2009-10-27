@@ -364,19 +364,19 @@
 			<size>20</size>
 		</font>	
 
-		<!--#Pragma Favorites-->
+		<!--#Pragma Favourites-->
 		<font>
-			<name>Font_FavoritesLabel</name>
+			<name>Font_FavouritesLabel</name>
 			<filename>alaska_black.ttf</filename>
 			<size>38</size>
 		</font>
 		<font>
-			<name>Font_FavoritesItemLabel</name>
+			<name>Font_FavouritesItemLabel</name>
 			<filename>alaska_black.ttf</filename>
 			<size>20</size>
 		</font>
 		<font>
-			<name>Font_FavoritesFocusedItemLabel</name>
+			<name>Font_FavouritesFocusedItemLabel</name>
 			<filename>alaska_black.ttf</filename>
 			<size>30</size>
 		</font>

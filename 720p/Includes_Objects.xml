@@ -162,13 +162,13 @@
 	</include>
 	<!--Dialog Labels-->
 	<include name="Objects_DialogLabel">
-		<font>Font_FavoritesLabel</font>
+		<font>Font_FavouritesLabel</font>
 		<textcolor>CCababab</textcolor>
 		<shadowcolor>CCdadada</shadowcolor>
 	</include>
 	<include name="Objects_DialogLabelDark">
 		<textcolor>CC747474</textcolor>
-		<font>Font_FavoritesLabel</font>
+		<font>Font_FavouritesLabel</font>
 		<shadowcolor>CCdadada</shadowcolor>
 	</include>
 	<include name="Objects_DialogSettingsLabel">
