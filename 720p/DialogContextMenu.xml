@@ -25,7 +25,7 @@
 			<width>1280</width>
 			<font>Font_MenuValue</font>
 			<textcolor>DialogLabelNF</textcolor>
-			<focusedcolor>DialogLabel</focusedcolor>
+			<focusedcolor>settings_focused</focusedcolor>
 			<align>center</align>
 			<aligny>middle</aligny>
 		</control>

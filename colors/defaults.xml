@@ -105,7 +105,7 @@
 	<color name="FM_ListFocusSelected">CCcccccc</color>
 
 	<!-- settings -->
-	<color name="settings_focused">ff000000</color>
+	<color name="settings_focused">ffca3e3d</color>
 
 	<!-- Now Playing -->
 	<color name="NP_time_nofilter">FF949494</color>
