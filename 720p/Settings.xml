@@ -62,11 +62,18 @@
 					<include condition="Skin.HasSetting(nighttheme)">Settings_Pictures_Dark</include>
 					<onclick>XBMC.ActivateWindow(MyPicturesSettings)</onclick>
 				</item>
-				<item id="4">
+				<!--<item id="4">
 					<label>Programs</label>
 					<include condition="!Skin.HasSetting(nighttheme)">Settings_Programs_Default</include>
 					<include condition="Skin.HasSetting(nighttheme)">Settings_Programs_Dark</include>
 					<onclick>XBMC.ActivateWindow(MyProgramsSettings)</onclick>
+				</item>-->
+				<item id="4">
+					<description>Profiles</description>
+					<label>13200</label>
+					<include condition="!Skin.HasSetting(nighttheme)">Settings_Profiles_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Settings_Profiles_Dark</include>
+					<onclick>XBMC.ActivateWindow(Profiles)</onclick>
 				</item>
 				<item id="5">
 					<label>Weather</label>
@@ -100,10 +107,12 @@
 				</item>
 			</content>
 		</control>
+
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture diffuse="mainmenu/home_mask.png">$INFO[Skin.String(theme),,/background.png]</texture>
 		</control>
+
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture diffuse="mainmenu/home_mask.png">backdrops/backgroundcolordiffuse.png</texture>
@@ -125,7 +134,7 @@
 				<label>Adjust how Plex handles video content. Includes stacking options for multi-part files, library database options, and rendering and playback options</label>
 			</control>
 		</control>
-		<control type="group">
+		<!--<control type="group">
 			<description>Programs</description>
 			<posx>130</posx>
 			<posy>180</posy>
@@ -139,6 +148,22 @@
 			<control type="label">
 				<include>SettingsDetailVars</include>
 				<label>Select browsing options for applications and games</label>
+			</control>
+		</control>-->
+		<control type="group">
+			<description>Profiles</description>
+			<posx>130</posx>
+			<posy>180</posy>
+			<visible>Container(60).HasFocus(4)</visible>
+			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_CommonFadeNoHide</include>
+			<control type="label">
+				<include>SettingsHeadingVars</include>
+				<label>13200</label>
+			</control>
+			<control type="label">
+				<include>SettingsDetailVars</include>
+				<label>Allowing individual users to save their own configurations. rss feeds, view settings and media libraries can be separately stored</label>
 			</control>
 		</control>
 		<control type="group">

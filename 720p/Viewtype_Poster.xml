@@ -4,10 +4,10 @@
 	<include name="Viewtype_Poster">
 		<!-- Browser -->
 		<control type="fixedlist" id="55">
-			<posx>-188</posx>
+			<posx>-20</posx>
 			<posy>65</posy>
 			<height>515</height>
-			<width>1656</width>
+			<width>1320</width>
 			<onleft>300</onleft>
 			<onright>300</onright>
 			<onup>7000</onup>
@@ -15,8 +15,8 @@
 			<viewtype label="Poster">list</viewtype>
 			<orientation>horizontal</orientation>
 			<scrolltime>200</scrolltime>
-			<focusposition>4</focusposition>
-			<scrolltime>200</scrolltime>
+			<focusposition>3</focusposition>
+			<preloaditems>2</preloaditems>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<visible>!Container.Content(episodes)</visible>
@@ -47,7 +47,7 @@
 					<posy>131</posy>
 					<width>162</width>
 					<height>241</height>
-					<texture diffuse="default/postermatteNF.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<texture background="true" diffuse="default/postermatteNF.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -159,19 +159,19 @@
 		</control>
 
 		<control type="wraplist" id="55">
-			<posx>-188</posx>
+			<posx>-20</posx>
 			<posy>65</posy>
 			<height>515</height>
-			<width>1656</width>
+			<width>1320</width>
 			<onleft>300</onleft>
 			<onright>300</onright>
 			<onup>7000</onup>
 			<ondown>7000</ondown>
 			<viewtype label="Poster">list</viewtype>
 			<orientation>horizontal</orientation>
+			<focusposition>3</focusposition>
 			<scrolltime>200</scrolltime>
-			<focusposition>4</focusposition>
-			<scrolltime>200</scrolltime>
+			<preloaditems>2</preloaditems>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<visible>!Container.Content(episodes)</visible>
@@ -202,7 +202,7 @@
 					<posy>131</posy>
 					<width>162</width>
 					<height>241</height>
-					<texture diffuse="default/postermatteNF.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
+					<texture background="true" diffuse="default/postermatteNF.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -395,12 +395,13 @@
 			<viewtype label="Poster">icon</viewtype>
 			<posx>-110</posx>
 			<posy>100</posy>
-			<width>1500</width>
+			<width>1400</width>
 			<height>300</height>
 			<pagecontrol>61</pagecontrol>
-			<scrolltime>100</scrolltime>
+			<scrolltime>200</scrolltime>
 			<orientation>horizontal</orientation>
 			<focusposition>3</focusposition>
+			<preloaditems>2</preloaditems>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>

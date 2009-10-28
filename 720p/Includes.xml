@@ -102,6 +102,7 @@
 				<info>System.Time</info>
 				<align>right</align>
 				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Skin.HasSetting(ShowGlobalTemp)">Conditional</animation>
+				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(133) + Window.IsVisible(112)">Conditional</animation>
 			</control>
 			<control type="label">
 				<posy>40</posy>
@@ -110,6 +111,7 @@
 				<textcolor>Date</textcolor>
 				<info>System.Date</info>
 				<align>right</align>
+				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(133) + Window.IsVisible(112)">Conditional</animation>
 			</control>
 		</control>
 		<control type="group">
@@ -124,11 +126,12 @@
 				<visible effect="fade" time="250">system.hasnetwork</visible>
 			</control>
 			<visible>Skin.HasSetting(ShowGlobalTemp)</visible>
+			<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(133) + Window.IsVisible(112)">Conditional</animation>
 		</control>
 	</include>
 
 	<include name="Global_HeadingSectionVars">
-		<width>800</width>
+		<width>960</width>
 		<font>Font_Time</font>
 		<textcolor>Time</textcolor>
 		<align>left</align>
@@ -206,7 +209,13 @@
 				<description>Music</description>
 				<label>$LOCALIZE[2]: $INFO[ListItem.Artist]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>[Window.IsActive(501) | Window.IsActive(502)] + Container.Content(albums) + !Window.IsActive(134)</visible>
+				<visible>[Window.IsActive(501) | Window.IsActive(502)] + Container.Content(albums) + !Window.IsActive(134) + !Control.IsVisible(50)</visible>
+			</control>
+			<control type="label">
+				<description>Music</description>
+				<label>$LOCALIZE[2]: $INFO[ListItem.Artist] - $INFO[ListItem.Album]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>[Window.IsActive(501) | Window.IsActive(502)] + Container.Content(albums) + !Window.IsActive(134) + Control.IsVisible(50)</visible>
 			</control>
 			<control type="label">
 				<description>Music</description>
@@ -305,6 +314,8 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<height>2</height>
+			<onup>ActivateWindow(Favourites)</onup>
+			<ondown>SetFocus(351)</ondown>
 			<width>8</width>
 			<viewtype>list</viewtype>
 			<scrolltime>0</scrolltime>
@@ -656,6 +667,10 @@
 				<visible>!Skin.HasSetting(nohomequit)</visible>
 			</control>
 		</control>
+		<include>submenu_movies</include>
+		<include>submenu_tvshows</include>
+		<include>submenu_quit</include>
+		<include>submenu_dummybuttons</include>
 	</include>
  	<include name="Home_MenuIcon">
 		<control type="label">
@@ -678,6 +693,7 @@
 			<onleft>300</onleft>
 			<onright>300</onright>
 			<viewtype>list</viewtype>
+			<onup>ActivateWindow(Favourites)</onup>
 			<orientation>horizontal</orientation>
 			<focusposition>2</focusposition>
 			<scrolltime>200</scrolltime>
@@ -778,7 +794,7 @@
 				</item>
 				<item id="13">
 					<description>Shutdown</description>
-					<thumb>mainmenu/quit.png</thumb>
+					<thumb>backdrops/quiticon.png</thumb>
 					<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
 					<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
 					<visible>!Skin.HasSetting(nohomequit)</visible>
@@ -1305,6 +1321,12 @@
 	<include name="Settings_Programs_Dark">	
 		<thumb>settings/dark/settings_programs.png</thumb>
 	</include>
+	<include name="Settings_Profiles_Default">
+		<thumb>settings/default/settings_profiles.png</thumb>
+	</include>
+	<include name="Settings_Profiles_Dark">
+		<thumb>settings/dark/settings_profiles.png</thumb>
+	</include>
 	<include name="Settings_Weather_Default">	
 		<thumb>settings/default/settings_weather.png</thumb>
 	</include>
@@ -1359,4 +1381,163 @@
 		<texture>dark/postermatteNF.png</texture>
 	</include>
 
+	<include name="submenu_dummybuttons">
+		<control type="button" id="351">
+			<onfocus>SetFocus(300)</onfocus>
+			<visible>Container(300).HasFocus(1)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(300)</onfocus>
+			<visible>Container(300).HasFocus(2)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(300)</onfocus>
+			<visible>Container(300).HasFocus(3)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(941)</onfocus>
+			<visible>Container(300).HasFocus(4)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(942)</onfocus>
+			<visible>Container(300).HasFocus(5)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(300)</onfocus>
+			<visible>Container(300).HasFocus(6)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(300)</onfocus>
+			<visible>Container(300).HasFocus(7)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(300)</onfocus>
+			<visible>Container(300).HasFocus(8)</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(940)</onfocus>
+			<visible>Container(300).HasFocus(9)</visible>
+		</control>
+	</include>
+
+	<include name="submenu_quit">
+		<control type="group">
+			<posx>485</posx>
+			<posy>490</posy>
+			<visible>ControlGroup(940).HasFocus() + Container(300).HasFocus(9)</visible>
+			<include>Animation_CommonFade</include>
+			<control type="image">
+				<width>300</width>
+				<height>60</height>
+				<texture>mainmenu/submenuback.png</texture>
+			</control>
+
+			<control type="grouplist" id="940">
+				<posx>50</posx>
+				<posy>14</posy>
+				<width>300</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<onup>300</onup>
+				<orientation>horizontal</orientation>
+				<control type="button" id="40">
+					<include>submenubutton</include>
+					<!-- LOC -->
+					<label>QUIT</label>
+					<onclick>XBMC.Shutdown(0)</onclick>
+				</control>
+
+				<control type="button" id="41">
+					<include>submenubutton</include>
+					<!-- LOC -->
+					<label>SLEEP</label>
+					<onclick>XBMC.SleepSystem()</onclick>
+				</control>
+			</control>
+		</control>
+	</include>
+
+	<include name="submenu_movies">
+		<control type="group">
+			<posx>485</posx>
+			<posy>490</posy>
+			<visible>ControlGroup(941).HasFocus() + Container(300).HasFocus(4)</visible>
+			<include>Animation_CommonFade</include>
+			<control type="image">
+				<width>300</width>
+				<height>60</height>
+				<texture>mainmenu/submenuback.png</texture>
+			</control>
+
+			<control type="grouplist" id="941">
+				<posx>50</posx>
+				<posy>14</posy>
+				<width>300</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<onup>300</onup>
+				<orientation>horizontal</orientation>
+				<control type="button" id="40">
+					<include>submenubutton</include>
+					<!-- LOC -->
+					<label>RECENT</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,recentlyaddedmovies,return)</onclick>
+				</control>
+
+				<control type="button" id="41">
+					<include>submenubutton</include>
+					<!-- LOC -->
+					<label>TITLE</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
+				</control>
+			</control>
+		</control>
+	</include>
+
+	<include name="submenu_tvshows">
+		<control type="group">
+			<posx>485</posx>
+			<posy>490</posy>
+			<visible>ControlGroup(942).HasFocus() + Container(300).HasFocus(5)</visible>
+			<include>Animation_CommonFade</include>
+			<control type="image">
+				<width>300</width>
+				<height>60</height>
+				<texture>mainmenu/submenuback.png</texture>
+			</control>
+
+			<control type="grouplist" id="942">
+				<posx>50</posx>
+				<posy>14</posy>
+				<width>300</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<onup>300</onup>
+				<orientation>horizontal</orientation>
+				<control type="button" id="40">
+					<include>submenubutton</include>
+					<!-- LOC -->
+					<label>RECENT</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,recentlyaddedepisodes,return)</onclick>
+				</control>
+
+				<control type="button" id="41">
+					<include>submenubutton</include>
+					<!-- LOC -->
+					<label>TITLE</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
+				</control>
+			</control>
+		</control>
+	</include>
+
+	<include name="submenubutton">
+		<width>100</width>
+		<height>36</height>
+		<include condition="!Skin.HasSetting(nighttheme)">Focus_Border_Default</include>
+		<include condition="Skin.HasSetting(nighttheme)">Focus_Border_Dark</include>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>Small</font>
+	</include>
 </includes>

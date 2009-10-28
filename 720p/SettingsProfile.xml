@@ -3,8 +3,24 @@
 <window id="34">
 	<defaultcontrol always="true">4</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+
+	<coordinates>
+		<system>1</system>
+		<posx>360</posx>
+		<posy>120</posy>
+	</coordinates>
+
 	<controls>
-		<include>Global_Background</include>
+
+		<control type="image" id="0">
+			<description>Back Panel</description>
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>600</width>
+			<height>480</height>
+			<texture>favorites/favorites_panel.png</texture>
+		</control>
+
 		<control type="label">
 			<include>DialogID</include>
 			<label>SettingsProfile.xml</label>

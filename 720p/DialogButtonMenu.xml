@@ -95,7 +95,7 @@
 				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>$LOCALIZE[13313] XBMC</label>
+				<label>$LOCALIZE[13313] Plex</label>
 				<onclick>xbmc.RestartApp()</onclick>
 			</control>
 			<control type="button" id="3115">

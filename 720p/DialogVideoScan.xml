@@ -18,6 +18,8 @@
 		</control>
 	
 		<control type="group">
+			<animation effect="slide" end="0,-200" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(2005) | Window.IsVisible(2006) | Window.IsVisible(2007)">Conditional</animation>
+			<animation effect="slide" end="0,-64" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(112)">Conditional</animation>
 			<posx>880</posx>
 			<posy>90</posy>
 			<width>707</width>
@@ -33,10 +35,10 @@
 			<control type="progress" id="404">
 				<description>Progressbar</description>
 				<info>System.Progressbar</info>
-				<posx>328</posx>
-				<posy>22</posy>
-				<width>38</width>
-				<height>27</height>
+				<posx>331</posx>
+				<posy>23</posy>
+				<width>32</width>
+				<height>28</height>
 				<texturebg>dialogs/clear.png</texturebg>
 				<lefttexture>-</lefttexture>
 				<midtexture>dialogs/grey.png</midtexture>

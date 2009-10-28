@@ -3,17 +3,14 @@
 <window type="dialog" id="134">
 	<defaultcontrol always="true">450</defaultcontrol>
 	<include>Animation_ZoomInZoomOut</include>
-	
-	
-	
+
 	<controls>
 		<control type="label">
 			<include>WindowID</include>
 			<label>DialogFavourites.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
-	
-		
+
 		<control type="image">
 			<description>Panel</description>
 			<posx>240</posx>
@@ -30,7 +27,7 @@
 			<height>2</height>
 			<texture>common/divider.png</texture>
 		</control>
-		
+
 		<control type="label">
 			<description>Favourites Label</description>
 			<posx>990</posx>
@@ -39,12 +36,12 @@
 			<height>60</height>
 			<align>right</align>
 			<aligny>center</aligny>
-			<textcolor>CCababab</textcolor>
+			<textcolor>DialogLargeLabel</textcolor>
+			<shadowcolor>DialogLargeLabelAccent</shadowcolor>
 			<label>$LOCALIZE[1036]</label>
-			<font>Font_FavoritesLabel</font>
-			<shadowcolor>CCdadadada</shadowcolor>
+			<font>Font_FavouritesLabel</font>
 		</control>
-		
+
 		<control type="list" id="450">
 			<posx>260</posx>
 			<posy>114</posy>
@@ -62,18 +59,17 @@
 					<posy>15</posy>
 					<width>721</width>
 					<height>30</height>
-					<textcolor>FF929191</textcolor>
-					<selectedcolor>ffcc0000</selectedcolor>
+					<textcolor>FavListItem</textcolor>
+					<selectedcolor>FavListItemSelected</selectedcolor>
 					<aligny>center</aligny>
-					<font>Font_FavoritesItemLabel</font>
+					<font>Font_FavouritesItemLabel</font>
 					<info>ListItem.Label</info>
 				</control>
-
 			</itemlayout>
 			<focusedlayout height="40">
 				<control type="image">
 					<posx>10</posx>
-					<posy>0</posy>
+					<posy>-2</posy>
 					<width>740</width>
 					<height>66</height>
 					<include condition="!Skin.HasSetting(nighttheme)">Focus_Default</include>
@@ -82,13 +78,15 @@
 
 				<control type="label">
 					<posx>30</posx>
-					<posy>18</posy>
+					<posy>16</posy>
 					<width>721</width>
 					<height>30</height>
-					<textcolor>FFFFFFFF</textcolor>
-					<selectedcolor>CCcccccc</selectedcolor>
+					<textcolor>White</textcolor>
+					<shadowcolor>FM_ListFocusedAccent</shadowcolor>
+					<selectedcolor>FavListItemFocusedSelected</selectedcolor>
+
 					<aligny>center</aligny>
-					<font>Font_FavoritesFocusedItemLabel</font>
+					<font>Font_FavouritesFocusedItemLabel</font>
 					<info>ListItem.Label</info>
 				</control>
 

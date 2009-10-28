@@ -192,9 +192,9 @@
 				<!-- day label -->
 				<control type="label">
 					<info>Window.Property(Day0.Title)</info>
-					<width>175</width>
+					<width>195</width>
 					<height>20</height>
-					<posx>10</posx>
+					<posx>0</posx>
 					<posy>10</posy>
 					<font>Font_SettingsHeading</font>
 					<textcolor>SettingsHeading</textcolor>
@@ -279,9 +279,9 @@
 				<!-- day label -->
 				<control type="label">
 					<info>Window.Property(Day1.Title)</info>
-					<width>175</width>
+					<width>195</width>
 					<height>20</height>
-					<posx>10</posx>
+					<posx>0</posx>
 					<posy>10</posy>
 					<font>Font_SettingsHeading</font>
 					<textcolor>SettingsHeading</textcolor>
@@ -366,9 +366,9 @@
 				<!-- day label -->
 				<control type="label">
 					<info>Window.Property(Day2.Title)</info>
-					<width>175</width>
+					<width>195</width>
 					<height>20</height>
-					<posx>10</posx>
+					<posx>0</posx>
 					<posy>10</posy>
 					<font>Font_SettingsHeading</font>
 					<textcolor>SettingsHeading</textcolor>
@@ -453,9 +453,9 @@
 				<!-- day label -->
 				<control type="label">
 					<info>Window.Property(Day3.Title)</info>
-					<width>175</width>
+					<width>195</width>
 					<height>20</height>
-					<posx>10</posx>
+					<posx>0</posx>
 					<posy>10</posy>
 					<font>Font_SettingsHeading</font>
 					<textcolor>SettingsHeading</textcolor>

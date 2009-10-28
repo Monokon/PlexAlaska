@@ -28,8 +28,17 @@
 				<info>Player.Progress</info>
 				<posx>30</posx>
 				<posy>115</posy>
-				<width>1220</width>
+				<width>1040</width>
 				<height>19</height>
+			</control>
+			<control type="label">
+				<posx>1096</posx>
+				<posy>114</posy>
+				<width>300</width>
+				<height>25</height>
+				<font>Font_ListDetail</font>
+				<textcolor>NowPlayingArtist</textcolor>
+				<label>$INFO[VideoPlayer.Time] / $INFO[VideoPlayer.Duration]</label>
 			</control>
 			<control type="group">
 				<posx>195</posx>
@@ -57,8 +66,8 @@
 					<posx>0</posx>
 					<posy>40</posy>
 					<width>510</width>
-				<textcolor>OSDPlayingTrack</textcolor>
-				<font>Font_NowPlayingTrack</font>
+					<textcolor>OSDPlayingTrack</textcolor>
+					<font>Font_NowPlayingTrack</font>
 					<label>$INFO[VideoPlayer.TVShowTitle]</label>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
@@ -76,7 +85,7 @@
 					<height>18</height>
 					<aligny>center</aligny>
 					<align>right</align>
-					<textcolor>ff373434</textcolor>
+					<textcolor>NowPlayingArtist</textcolor>
 					<font>Font_OSDDetail</font>
 					<label>Year: $INFO[VideoPlayer.Year]</label>
 				</control>
@@ -88,7 +97,7 @@
 					<height>18</height>
 					<aligny>center</aligny>
 					<align>right</align>
-					<textcolor>ff373434</textcolor>
+					<textcolor>NowPlayingArtist</textcolor>
 					<font>Font_OSDDetail</font>
 					<label>Director: $INFO[VideoPlayer.Director]</label>
 				</control>
@@ -100,7 +109,7 @@
 					<height>18</height>
 					<aligny>center</aligny>
 					<align>right</align>
-					<textcolor>ff373434</textcolor>
+					<textcolor>NowPlayingArtist</textcolor>
 					<font>Font_OSDDetail</font>
 					<label>Genre: $INFO[VideoPlayer.Genre]</label>
 				</control>
