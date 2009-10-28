@@ -67,7 +67,7 @@
 					<posx>5</posx>
 					<width>330</width>
 					<height>30</height>
-					<textcolor>Black</textcolor>
+					<textcolor>settings_focused</textcolor>
 					<info>ListItem.Label</info>
 				</control>
 			</focusedlayout>
@@ -82,7 +82,7 @@
 				<label>$LOCALIZE[1024]</label>
 				<font>Font_InfoPlot</font>
 				<textcolor>Grey</textcolor>
-				<focusedcolor>Black</focusedcolor>
+				<focusedcolor>settings_focused</focusedcolor>
 				<disabledcolor>Red</disabledcolor>
 				<onup>18</onup>
 				<onleft>10</onleft>
@@ -96,7 +96,7 @@
 				<label>$LOCALIZE[15019]</label>
 				<font>Font_InfoPlot</font>
 				<textcolor>Grey</textcolor>
-				<focusedcolor>Black</focusedcolor>
+				<focusedcolor>settings_focused</focusedcolor>
 				<disabledcolor>Red</disabledcolor>
 				<onup>11</onup>
 				<onleft>10</onleft>
@@ -110,7 +110,7 @@
 				<label>$LOCALIZE[1210]</label>
 				<font>Font_InfoPlot</font>
 				<textcolor>Grey</textcolor>
-				<focusedcolor>Black</focusedcolor>
+				<focusedcolor>settings_focused</focusedcolor>
 				<disabledcolor>Red</disabledcolor>
 				<onup>13</onup>
 				<onleft>10</onleft>
@@ -148,7 +148,7 @@
 			<label>$LOCALIZE[20333]</label>
 			<font>Font_InfoPlot</font>
 			<textcolor>Grey</textcolor>
-			<focusedcolor>Black</focusedcolor>
+			<focusedcolor>settings_focused</focusedcolor>
 			<disabledcolor>Red</disabledcolor>
 			<onup>12</onup>
 			<onleft>19</onleft>
@@ -162,7 +162,7 @@
 			<label>$LOCALIZE[186]</label>
 			<font>Font_InfoPlot</font>
 			<textcolor>Grey</textcolor>
-			<focusedcolor>Black</focusedcolor>
+			<focusedcolor>settings_focused</focusedcolor>
 			<disabledcolor>Red</disabledcolor>
 			<onup>12</onup>
 			<onleft>20</onleft>
@@ -176,7 +176,7 @@
 			<label>$LOCALIZE[222]</label>
 			<font>Font_InfoPlot</font>
 			<textcolor>Grey</textcolor>
-			<focusedcolor>Black</focusedcolor>
+			<focusedcolor>settings_focused</focusedcolor>
 			<disabledcolor>Red</disabledcolor>
 			<onup>12</onup>
 			<onleft>18</onleft>
