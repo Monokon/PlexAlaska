@@ -1,0 +1,124 @@
+<!--Alaska-->
+
+<window type="dialog" id="1111">
+	<defaultcontrol always="true">3110</defaultcontrol>
+
+	<include>Animation_ZoomInMenu</include>
+
+	<controls>
+		<control type="label">
+			<include>WindowID</include>
+			<label>custom1_PlexAlaska.xml</label>
+			<visible>Skin.HasSetting(debugmode)</visible>
+		</control>
+
+		<control type="grouplist" id="1">
+			<posy>240</posy>
+			<onleft>-</onleft>
+			<onright>-</onright>
+			<onup>1</onup>
+			<ondown>1</ondown>
+			<orientation>vertical</orientation>
+			<control type="button" id="3110">
+				<description>Settings</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>settings_focused</focusedcolor>
+				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>Settings</label>
+				<onclick>Dialog.Close(1111)</onclick>
+				<onclick>XBMC.ActivateWindow(settings)</onclick>
+			</control>
+			<control type="button" id="3111">
+				<description>Filemanager</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>settings_focused</focusedcolor>
+				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>Filemanager</label>
+				<onclick>Dialog.Close(1111)</onclick>
+				<onclick>XBMC.ActivateWindow(3)</onclick>
+			</control>
+			
+			<control type="button" id="3117">
+				<description>Favorites</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>settings_focused</focusedcolor>
+				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>Favorites</label>
+				<onclick>Dialog.Close(1111)</onclick>
+				<onclick>XBMC.ActivateWindow(Favourites)</onclick>
+			</control>
+
+			<control type="button" id="3118">
+				<description>Now Playing</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>settings_focused</focusedcolor>
+				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>Now Playing</label>
+				<onclick>Dialog.Close(1111)</onclick>
+				<onclick>XBMC.ActivateWindow(50)</onclick>
+			</control>
+			
+			<control type="button" id="3113">
+				<description>Quit Plex</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>settings_focused</focusedcolor>
+				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>Quit Plex</label>
+				<onclick>XBMC.ShutDown()</onclick>
+			</control>
+			<control type="button" id="3114">
+				<description>Sleep</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>settings_focused</focusedcolor>
+				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>Sleep</label>
+				<onclick>Dialog.Close(1111)</onclick>
+				<onclick>XBMC.SleepSystem()</onclick>
+			</control>
+			<control type="button" id="3116">
+				<description>Reload Skin</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>settings_focused</focusedcolor>
+				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>RELOAD SKIN</label>
+				<onclick>XBMC.ReloadSkin()</onclick>
+			</control>
+		</control>
+		<include>Object_DebugGrid</include>
+	</controls>
+</window>
