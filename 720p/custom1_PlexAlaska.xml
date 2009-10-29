@@ -58,7 +58,7 @@
 				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>Favorites</label>
+				<label>$LOCALIZE[1036]</label>
 				<onclick>Dialog.Close(1111)</onclick>
 				<onclick>XBMC.ActivateWindow(Favourites)</onclick>
 			</control>

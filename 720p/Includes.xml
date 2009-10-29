@@ -1153,6 +1153,12 @@
 		<align>center</align>
 		<font>Font_MenuValue</font>
 		<textcolor>MenuValue</textcolor>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+		<alttexturenofocus>-</alttexturenofocus>
+		<alttexturefocus>-</alttexturefocus>
+		<textureradiofocus>-</textureradiofocus>
+		<textureradionofocus>-</textureradionofocus>
 	</include>
 	<include name="WindowMenuRadioButton">
 		<posx>0</posx>

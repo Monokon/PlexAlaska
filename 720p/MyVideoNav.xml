@@ -58,9 +58,12 @@
 					<effect type="fade" start="100" end="50" time="200" />					
 				</animation>			
 			</control>
-			<control type="radiobutton" id="14">
+			<control type="togglebutton" id="14">
 				<include>WindowMenuButton</include>
-				<label>Hidden</label>				
+				<!-- LOC -->
+				<label>SHOWN</label>
+				<!-- LOC -->
+				<altlabel>HIDDEN</altlabel>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(14)">
 					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />					
@@ -89,6 +92,7 @@
 			<posy>307</posy>
 			<control type="button" id="40">
 				<include>WindowMenuLabel</include>
+				<!-- LOC -->
 				<label>VIEWTYPE</label>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(20)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
@@ -97,6 +101,7 @@
 			</control>
 			<control type="button" id="41">
 				<include>WindowMenuLabel</include>
+				<!-- LOC -->
 				<label>ORDER</label>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(3)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
@@ -105,7 +110,8 @@
 			</control>
 			<control type="button" id="42">
 				<include>WindowMenuLabel</include>
-				<label>UNWATCHED</label>
+				<!-- LOC -->
+				<label>WATCHED</label>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(14)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />					
@@ -113,6 +119,7 @@
 			</control>
 			<control type="button" id="43">
 				<include>WindowMenuLabel</include>
+				<!-- LOC -->
 				<label>TITLE</label>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(8)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
@@ -121,6 +128,7 @@
 			</control>	
 			<control type="button" id="44">
 				<include>WindowMenuLabel</include>
+				<!-- LOC -->
 				<label>TITLE</label>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(19)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
