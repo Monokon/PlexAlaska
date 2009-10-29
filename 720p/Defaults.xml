@@ -1,59 +1,62 @@
 <includes>
   
-  <default type="label">
-    <posx>0</posx>
-    <posy>0</posy>
-    <label>-</label>
-    <align>left</align>
-    <font>Font_InfoPlot</font>
-    <textcolor>Grey</textcolor>
-    <focusedcolor>Black</focusedcolor>
-    <selectedcolor>Black</selectedcolor>
-    <disabledcolor>Red</disabledcolor>
-	<scroll>false</scroll>
-  </default>
+	<default type="label">
+		<posx>0</posx>
+		<posy>0</posy>
+		<label>-</label>
+		<align>left</align>
+		<font>Font_InfoPlot</font>
+		<textcolor>Grey</textcolor>
+		<focusedcolor>Black</focusedcolor>
+		<selectedcolor>Black</selectedcolor>
+		<disabledcolor>Red</disabledcolor>
+		<scroll>false</scroll>
+	</default>
 
-  <default type="image">
-    <posx>0</posx>
-    <posy>0</posy>
-    <width>-</width>
-    <height>-</height>
-    <align>center</align>
-    <aligny>center</aligny>
-    <texture>-</texture>
-  </default>
+	<default type="image">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>-</width>
+		<height>-</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<texture>-</texture>
+	</default>
 
-  <default type="button">
-    <posx>0</posx>
-    <posy>0</posy>
-    <width>150</width>
-    <height>30</height>
-    <font>Font_InfoPlot</font>
-    <label>-</label>
-    <textcolor>Grey</textcolor>
-    <focusedcolor>MenuValue</focusedcolor>
-    <disabledcolor>Red</disabledcolor>
-    <texturefocus>ButtonFo.png</texturefocus>
-    <texturenofocus>ButtonNF.png</texturenofocus>
-    <pulseonselect>false</pulseonselect>
-  </default>
+	<default type="button">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>150</width>
+		<height>30</height>
+		<label>-</label>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>Font_Settings</font>
+		<textcolor>Grey</textcolor>
+		<focusedcolor>MenuValue</focusedcolor>
+		<selectedcolor>Black</selectedcolor>
+		<disabledcolor>Red</disabledcolor>
+		<texturefocus>ButtonFo.png</texturefocus>
+		<texturenofocus>ButtonNF.png</texturenofocus>
+		<pulseonselect>false</pulseonselect>
+	</default>
 
-  <default type="togglebutton">
-    <posx>0</posx>
-    <posy>0</posy>
-    <width>30</width>
-    <height>30</height>
-    <align>center</align>
-    <aligny>center</aligny>
-    <label>-</label>
-    <font>Font_InfoPlot</font>
-    <textcolor>Grey</textcolor>
-    <focusedcolor>Black</focusedcolor>
-    <disabledcolor>Red</disabledcolor>
-    <pulseonselect>false</pulseonselect>
-	<include condition="Skin.HasSetting(nighttheme)">arrows1_dark</include>
-	<include condition="!Skin.HasSetting(nighttheme)">arrows1_default</include>
-  </default>
+	<default type="togglebutton">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>150</width>
+		<height>30</height>
+		<align>left</align>
+		<aligny>center</aligny>
+		<label>-</label>
+		<font>Font_Settings</font>
+		<textcolor>MenuValue</textcolor>
+		<focusedcolor>MenuValue</focusedcolor>
+		<disabledcolor>Red</disabledcolor>
+		<pulseonselect>false</pulseonselect>
+		<include condition="Skin.HasSetting(nighttheme)">arrows1_dark</include>
+		<include condition="!Skin.HasSetting(nighttheme)">arrows1_default</include>
+	</default>
 	<include name="arrows1_default">
 	    <texturenofocus>default/arrowupnf.png</texturenofocus>
 		<texturefocus>default/arrowupfo.png</texturefocus>
@@ -70,7 +73,11 @@
 	<default type="radiobutton">
 		<posx>0</posx>
 		<posy>0</posy>
+		<width>150</width>
+		<height>30</height>
 		<label>-</label>
+		<align>left</align>
+		<aligny>center</aligny>
 		<font>Font_Settings</font>
 		<textcolor>Grey</textcolor>
 		<focusedcolor>MenuValue</focusedcolor>
@@ -79,39 +86,40 @@
 		<texturefocus>ButtonFo.png</texturefocus>
 		<include condition="Skin.HasSetting(nighttheme)">radio_dark</include>
 		<include condition="!Skin.HasSetting(nighttheme)">radio_default</include>
-		<textureradionofocus>settings/Button_RadioNF.png</textureradionofocus>
+		<textureradionofocus>settings/button_radioNF.png</textureradionofocus>
 		<radioheight>20</radioheight>
 		<radiowidth>20</radiowidth>
-		<textoffsetx>5</textoffsetx>
 		<pulseonselect>false</pulseonselect>
 	</default>
 	<include name="radio_default">
-		<textureradiofocus>settings/default/Button_RadioF.png</textureradiofocus>
+		<textureradiofocus>settings/default/button_radioF.png</textureradiofocus>
 	</include>
 	<include name="radio_dark">
-		<textureradiofocus>settings/dark/Button_RadioF.png</textureradiofocus>
+		<textureradiofocus>settings/dark/button_radioF.png</textureradiofocus>
 	</include>
 
-  <default type="spincontrolex">
-    <posx>0</posx>
-    <posy>0</posy>
-    <width>150</width>
-    <height>30</height>
-    <label>-</label>
-    <font>Font_InfoPlot</font>
-    <texturenofocus>ButtonNF.png</texturenofocus>
-    <texturefocus>ButtonFo.png</texturefocus>
-	<include condition="Skin.HasSetting(nighttheme)">arrows2_dark</include>
-	<include condition="!Skin.HasSetting(nighttheme)">arrows2_default</include>
-    <textcolor>Grey</textcolor>
-    <focusedcolor>Black</focusedcolor>
-    <disabledcolor>Red</disabledcolor>
-    <textoffsetx>5</textoffsetx>
-    <align>left</align>
-    <aligny>center</aligny>
-    <reverse>yes</reverse>
-    <pulseonselect>false</pulseonselect>
-  </default>
+	<default type="spincontrolex">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>150</width>
+		<height>30</height>
+		<label>-</label>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>Font_Settings</font>
+		<texturenofocus>ButtonNF.png</texturenofocus>
+		<texturefocus>ButtonFo.png</texturefocus>
+		<include condition="Skin.HasSetting(nighttheme)">arrows2_dark</include>
+		<include condition="!Skin.HasSetting(nighttheme)">arrows2_default</include>
+		<textcolor>Grey</textcolor>
+		<focusedcolor>MenuValue</focusedcolor>
+		<selectedcolor>MenuValue</selectedcolor>
+		<disabledcolor>Red</disabledcolor>
+		<align>left</align>
+		<aligny>center</aligny>
+		<reverse>yes</reverse>
+		<pulseonselect>false</pulseonselect>
+	</default>
 	<include name="arrows2_default">
 		<textureup>default/ArrowUpNF.png</textureup>
 		<texturedown>default/ArrowDownNF.png</texturedown>
@@ -125,52 +133,60 @@
 		<texturedownfocus>dark/ArrowDownFo.png</texturedownfocus>
 	</include>
 
-  <default type="spincontrol">
-    <posx>0</posx>
-    <posy>0</posy>
-    <height>15</height>
-    <width>15</width>
-	<include condition="Skin.HasSetting(nighttheme)">arrows2_dark</include>
-	<include condition="!Skin.HasSetting(nighttheme)">arrows2_default</include>
-    <font>Font_InfoPlot</font>
-    <textcolor>Grey</textcolor>
-    <focusedcolor>Black</focusedcolor>
-    <disabledcolor>Red</disabledcolor>
-    <textoffsetx>5</textoffsetx>
-    <align>left</align>
-    <aligny>center</aligny>
-    <reverse>yes</reverse>
-    <pulseonselect>false</pulseonselect>
-  </default>
+	<default type="spincontrol">
+		<posx>0</posx>
+		<posy>0</posy>
+		<height>15</height>
+		<width>15</width>
+		<include condition="Skin.HasSetting(nighttheme)">arrows2_dark</include>
+		<include condition="!Skin.HasSetting(nighttheme)">arrows2_default</include>
+		<font>Font_Settings</font>
+		<textcolor>Grey</textcolor>
+		<focusedcolor>MenuValue</focusedcolor>
+		<selectedcolor>MenuValue</selectedcolor>
+		<disabledcolor>Red</disabledcolor>
+		<align>left</align>
+		<aligny>center</aligny>
+		<reverse>yes</reverse>
+		<pulseonselect>false</pulseonselect>
+	</default>
 
-  <default type="sliderex">
-    <posx>0</posx>
-    <posy>0</posy>
-    <height>30</height>
-    <width>150</width>
-    <texturefocus>ButtonInputFo.png</texturefocus>
-    <texturenofocus>ButtonInputNF.png</texturenofocus>
-    <sliderwidth>100</sliderwidth>
-    <sliderheight>15</sliderheight>
-    <texturesliderbar>OSDSliderBack.png</texturesliderbar>
-    <textureslidernib>OSDSliderNibNF.png</textureslidernib>
-    <textureslidernibfocus>OSDSliderNibFO.png</textureslidernibfocus>
-    <font>Font_InfoPlot</font>
-    <textcolor>Grey</textcolor>
-    <focusedcolor>Black</focusedcolor>
-    <disabledcolor>Red</disabledcolor>
-    <textoffsetx>5</textoffsetx>
-    <textoffsety>0</textoffsety>
-  </default>
-  
-  <default type="slider">
-    <posx>0</posx>
-    <posy>0</posy>
-    <width>280</width>
-    <height>15</height>
-    <texturesliderbar>ProgressBack.png</texturesliderbar>
-    <textureslidernib>SeekBarSlider.png</textureslidernib>
-    <textureslidernibfocus>SeekBarSlider.png</textureslidernibfocus>
-  </default>
+	<default type="sliderex">
+		<posx>0</posx>
+		<posy>0</posy>
+		<height>30</height>
+		<width>150</width>
+		<texturefocus>ButtonInputFo.png</texturefocus>
+		<texturenofocus>ButtonInputNF.png</texturenofocus>
+		<sliderwidth>100</sliderwidth>
+		<sliderheight>15</sliderheight>
+		<texturesliderbar>OSDSliderBack.png</texturesliderbar>
+		<textureslidernib>OSDSliderNibNF.png</textureslidernib>
+		<include condition="Skin.HasSetting(nighttheme)">sliderex_dark</include>
+		<include condition="!Skin.HasSetting(nighttheme)">sliderex_default</include>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>Font_Settings</font>
+		<textcolor>Grey</textcolor>
+		<focusedcolor>MenuValue</focusedcolor>
+		<selectedcolor>MenuValue</selectedcolor>
+		<disabledcolor>Red</disabledcolor>
+	</default>
+	<include name="sliderex_default">
+		<textureslidernibfocus>default/osdslidernibfo.png</textureslidernibfocus>
+	</include>
+	<include name="sliderex_dark">
+		<textureslidernibfocus>dark/osdslidernibfo.png</textureslidernibfocus>
+	</include>
+
+	<default type="slider">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>280</width>
+		<height>15</height>
+		<texturesliderbar>ProgressBack.png</texturesliderbar>
+		<textureslidernib>SeekBarSlider.png</textureslidernib>
+		<textureslidernibfocus>SeekBarSlider.png</textureslidernibfocus>
+	</default>
 
 </includes>

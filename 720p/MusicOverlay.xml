@@ -38,6 +38,7 @@
 				<texture>$INFO[MusicPlayer.Cover]</texture>
 				<bordertexture border="8">common/thumb_border.png</bordertexture>
 				<bordersize>8</bordersize>
+				<aspectratio>scale</aspectratio>
 				<animation type="Conditional" condition="Window.IsActive(2006) | Window.IsActive(120)">
 					<effect type="zoom" center="35,180" start="100" end="155" time="400" tween="cubic" easing="out" />
 					<effect type="slide" start="0,0" end="12,5" time="400" tween="cubic" easing="out" />

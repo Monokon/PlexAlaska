@@ -8,7 +8,7 @@
 			<label>DialogVideoInfo.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
-	<!-- invisible button to trigger view options -->
+		<!-- invisible button to trigger view options -->
 		<control type="button" id="7050">
 			<texturefocus/>
 			<texturenofocus/>
@@ -23,8 +23,11 @@
 			<posy>115</posy>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_CommonFade</include>
-			<control type="label">
-				<width>550</width>
+			<control type="fadelabel">
+				<width>664</width>
+				<scrollout>false</scrollout>
+				<pauseatend>200</pauseatend>
+				<scrollspeed>20</scrollspeed>
 				<font>Font_PosterTitle</font>
 				<textcolor>InfoTitle</textcolor>
 				<info>ListItem.Title</info>
@@ -65,7 +68,8 @@
 				<textcolor>InfoDetails</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-	<!--LOC-->	<label>DIRECTED BY:</label>
+				<!--LOC-->
+				<label>DIRECTED BY:</label>
 			</control>
 			<control type="label">
 				<posx>125</posx>
@@ -83,7 +87,8 @@
 				<textcolor>InfoDetails</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-	<!--LOC-->	<label>WRITTEN BY:</label>
+				<!--LOC-->
+				<label>WRITTEN BY:</label>
 			</control>
 			<control type="label">
 				<posx>125</posx>
@@ -93,7 +98,7 @@
 				<textcolor>InfoDetails</textcolor>
 				<info>ListItem.Writer</info>
 			</control>
-			 <control type="label">
+			<control type="label">
 				<posx>0</posx>
 				<posy>200</posy>
 				<width>150</width>
@@ -101,7 +106,8 @@
 				<textcolor>InfoDetails</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-	<!--LOC-->	<label>STARRING:</label>
+				<!--LOC-->
+				<label>STARRING:</label>
 			</control>
 			<control type="textbox">
 				<posx>125</posx>
@@ -156,7 +162,7 @@
 						<height>20</height>
 						<align>left</align>
 						<aligny>center</aligny>
-					<font>Font_ListDetail</font>
+						<font>Font_ListDetail</font>
 						<textcolor>ListTitleF</textcolor>
 						<info>ListItem.Label</info>
 					</control>
@@ -173,7 +179,7 @@
 				<visible>Control.IsVisible(50)</visible>
 			</control>
 		</control>
-	<!-- view options -->
+		<!-- view options -->
 		<include>Global_ContextFilter</include>
 		<control type="grouplist" id="7001">
 			<width>1000</width>
@@ -186,7 +192,7 @@
 			<include>Animation_ZoomInMenu</include>
 			<orientation>horizontal</orientation>
 			<posy>330</posy>
-		<!-- Cast/Review -->
+			<!-- Cast/Review -->
 			<control type="button" id="5">
 				<description>Cast/Review</description>
 				<label>206</label>
@@ -197,7 +203,7 @@
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		<!-- refresh -->
+			<!-- refresh -->
 			<control type="button" id="6">
 				<description>Refresh</description>
 				<label>184</label>
@@ -207,27 +213,29 @@
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		<!-- Fanart -->
+			<!-- Fanart -->
 			<control type="button" id="12">
 				<description>Get Fanart</description>
-<!-- LOC -->	<label>Fanart</label>
+				<!-- LOC -->
+				<label>Fanart</label>
 				<include>WindowMenuButton</include>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(12)">
 					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		<!-- Thumb -->
+			<!-- Thumb -->
 			<control type="button" id="10">
 				<description>Thumb</description>
-<!-- LOC -->	<label>Thumb</label>
+				<!-- LOC -->
+				<label>Thumb</label>
 				<include>WindowMenuButton</include>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(10)">
 					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		<!-- Play Trailer -->
+			<!-- Play Trailer -->
 			<control type="button" id="11">
 				<description>Play Trailer</description>
 				<label>20410</label>
@@ -250,43 +258,47 @@
 			<include>Animation_ZoomInMenu</include>
 			<orientation>horizontal</orientation>
 			<posy>307</posy>
-		<!-- Cast/Review -->
+			<!-- Cast/Review -->
 			<control type="button" id="7040">
 				<include>WindowMenuLabel</include>
-<!-- LOC -->	<label>View</label>
+				<!-- LOC -->
+				<label>View</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(5)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		<!-- refresh -->
+			<!-- refresh -->
 			<control type="button" id="7041">
 				<include>WindowMenuLabel</include>
-<!-- LOC -->	<label>Information</label>
+				<!-- LOC -->
+				<label>Information</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(6)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		<!-- Fanart -->
+			<!-- Fanart -->
 			<control type="button" id="7042">
 				<include>WindowMenuLabel</include>
-<!-- LOC -->	<label>Get</label>
+				<!-- LOC -->
+				<label>Get</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(12)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		<!-- Thumb -->
+			<!-- Thumb -->
 			<control type="button" id="7043">
 				<include>WindowMenuLabel</include>
-<!-- LOC -->	<label>Get</label>
+				<!-- LOC -->
+				<label>Get</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(10)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
-		<!-- Play Trailer -->
+			<!-- Play Trailer -->
 			<control type="button" id="7044">
 				<include>WindowMenuLabel</include>
 				<label>208</label>

@@ -318,34 +318,42 @@
 			<include>Animation_SlideUpFadeOut</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_ZoomedByMenu</include>
-			<control type="label">
+			<control type="fadelabel">
 				<posx>5</posx>
 				<posy>0</posy>
-				<width>420</width>
+				<width>404</width>
 				<height>50</height>
 				<aligny>center</aligny>
 				<font>Font_PosterTitle</font>
 				<textcolor>PosterTitle</textcolor>
+				<scrollout>false</scrollout>
+				<pauseatend>200</pauseatend>
+				<scrollspeed>20</scrollspeed>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>!Container.Content(seasons)</visible>
 			</control>
-			<control type="label">
+			<control type="fadelabel">
 				<posx>5</posx>
 				<posy>0</posy>
-				<width>420</width>
+				<width>404</width>
+				<height>50</height>
+				<aligny>center</aligny>
 				<font>Font_PosterTitle</font>
 				<textcolor>PosterTitle</textcolor>
+				<scrollout>false</scrollout>
+				<pauseatend>200</pauseatend>
+				<scrollspeed>20</scrollspeed>
 				<label>$INFO[ListItem.TVShowTitle]</label>
 				<visible>Container.Content(seasons)</visible>
 				<animation effect="fade" start="60" end="60" time="0" condition="true">Conditional</animation>
 			</control>
 			<control type="label">
 				<posx>5</posx>
-				<posy>30</posy>
+				<posy>46</posy>
 				<width>420</width>
-				<font>Font_PosterTitle</font>
-				<textcolor>PosterTitle</textcolor>
-				<label>$INFO[ListItem.Label]</label>
+				<font>Font_ListDetail</font>
+				<textcolor>ListTrackF</textcolor>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<visible>Container.Content(seasons)</visible>
 			</control>
 			<control type="label">
