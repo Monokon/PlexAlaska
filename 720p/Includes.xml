@@ -1542,5 +1542,6 @@
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>Small</font>
+		<focusedcolor>White</focusedcolor>
 	</include>
 </includes>

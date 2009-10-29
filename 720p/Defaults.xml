@@ -7,8 +7,8 @@
 		<align>left</align>
 		<font>Font_InfoPlot</font>
 		<textcolor>Grey</textcolor>
-		<focusedcolor>Black</focusedcolor>
-		<selectedcolor>Black</selectedcolor>
+		<focusedcolor>settings_focused</focusedcolor>
+		<selectedcolor>settings_focused</selectedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<scroll>false</scroll>
 	</default>
@@ -34,7 +34,7 @@
 		<font>Font_Settings</font>
 		<textcolor>Grey</textcolor>
 		<focusedcolor>settings_focused</focusedcolor>
-		<selectedcolor>Black</selectedcolor>
+		<selectedcolor>settings_focused</selectedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<texturefocus>ButtonFo.png</texturefocus>
 		<texturenofocus>ButtonNF.png</texturenofocus>
