@@ -479,7 +479,7 @@
 			<textcolor>EpisodePlot</textcolor>
 			<info>ListItem.Plot</info>
 			<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
-			<visible>!IsEmpty(Container(50).ListItem.Plot) + Window.IsActive(25) + Container(50).Content(episodes)</visible>
+			<visible>!IsEmpty(Container(50).ListItem.Plot) + Window.IsActive(25) + Container(50).Content(episodes) + !Window.IsActive(2003)</visible>
 			<include>Animation_CommonFade</include>
 			<include>Animation_ZoomedByMenu</include>
 		</control>
