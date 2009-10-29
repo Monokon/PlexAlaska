@@ -7,8 +7,8 @@
 		<align>left</align>
 		<font>Font_InfoPlot</font>
 		<textcolor>Grey</textcolor>
-		<focusedcolor>Black</focusedcolor>
-		<selectedcolor>Black</selectedcolor>
+		<focusedcolor>settings_focused</focusedcolor>
+		<selectedcolor>settings_focused</selectedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<scroll>false</scroll>
 	</default>
@@ -33,8 +33,8 @@
 		<aligny>center</aligny>
 		<font>Font_Settings</font>
 		<textcolor>Grey</textcolor>
-		<focusedcolor>MenuValue</focusedcolor>
-		<selectedcolor>Black</selectedcolor>
+		<focusedcolor>settings_focused</focusedcolor>
+		<selectedcolor>settings_focused</selectedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<texturefocus>ButtonFo.png</texturefocus>
 		<texturenofocus>ButtonNF.png</texturenofocus>
@@ -51,7 +51,7 @@
 		<label>-</label>
 		<font>Font_Settings</font>
 		<textcolor>MenuValue</textcolor>
-		<focusedcolor>MenuValue</focusedcolor>
+		<focusedcolor>settings_focused</focusedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<pulseonselect>false</pulseonselect>
 		<include condition="Skin.HasSetting(nighttheme)">arrows1_dark</include>
@@ -80,7 +80,7 @@
 		<aligny>center</aligny>
 		<font>Font_Settings</font>
 		<textcolor>Grey</textcolor>
-		<focusedcolor>MenuValue</focusedcolor>
+		<focusedcolor>settings_focused</focusedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<texturenofocus>-</texturenofocus>
 		<texturefocus>ButtonFo.png</texturefocus>
@@ -112,8 +112,8 @@
 		<include condition="Skin.HasSetting(nighttheme)">arrows2_dark</include>
 		<include condition="!Skin.HasSetting(nighttheme)">arrows2_default</include>
 		<textcolor>Grey</textcolor>
-		<focusedcolor>MenuValue</focusedcolor>
-		<selectedcolor>MenuValue</selectedcolor>
+		<focusedcolor>settings_focused</focusedcolor>
+		<selectedcolor>settings_focused</selectedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<align>left</align>
 		<aligny>center</aligny>
@@ -142,8 +142,8 @@
 		<include condition="!Skin.HasSetting(nighttheme)">arrows2_default</include>
 		<font>Font_Settings</font>
 		<textcolor>Grey</textcolor>
-		<focusedcolor>MenuValue</focusedcolor>
-		<selectedcolor>MenuValue</selectedcolor>
+		<focusedcolor>settings_focused</focusedcolor>
+		<selectedcolor>settings_focused</selectedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<align>left</align>
 		<aligny>center</aligny>
@@ -168,8 +168,8 @@
 		<aligny>center</aligny>
 		<font>Font_Settings</font>
 		<textcolor>Grey</textcolor>
-		<focusedcolor>MenuValue</focusedcolor>
-		<selectedcolor>MenuValue</selectedcolor>
+		<focusedcolor>settings_focused</focusedcolor>
+		<selectedcolor>settings_focused</selectedcolor>
 		<disabledcolor>Red</disabledcolor>
 	</default>
 	<include name="sliderex_default">
