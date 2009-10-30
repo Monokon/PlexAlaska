@@ -71,7 +71,7 @@
 					<visible>!IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="image">
-					<posx>20</posx>
+					<posx>45</posx>
 					<posy>20</posy>
 					<width>20</width>
 					<height>20</height>
