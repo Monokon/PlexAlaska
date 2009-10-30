@@ -138,14 +138,23 @@
 				<visible>!VideoPlayer.Content(episodes)</visible>
 			</control>
 			<control type="image">
+				<posx>-20</posx>
+				<posy>-3</posy>
+				<width>327</width>
+				<height>172</height>
+				<texture>common/thumb_border.png</texture>
+				<bordersize>8</bordersize>
+				<aspectratio>scale</aspectratio>
+				<visible>VideoPlayer.Content(episodes)</visible>
+			</control>
+			<control type="image">
 				<posx>-2</posx>
 				<posy>0</posy>
 				<width>292</width>
 				<height>166</height>
 				<texture>$INFO[VideoPlayer.Cover]</texture>
-				<bordertexture border="8">common/thumb_border.png</bordertexture>
 				<bordersize>8</bordersize>
-				<aspectratio>stretch</aspectratio>
+				<aspectratio>scale</aspectratio>
 				<visible>VideoPlayer.Content(episodes)</visible>
 			</control>
 		</control> 
