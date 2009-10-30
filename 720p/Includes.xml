@@ -543,10 +543,23 @@
 					<imagepath diffuse="mainmenu/homematte.png">mainmenu/weather/$INFO[Weather.FanartCode]/</imagepath>
 					<visible>Skin.HasSetting(homeweather)</visible>
 				</control>
-				<include>Filter_MenuItem</include>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath>backdrops/osx/weather//</imagepath>
+				<control type="group">
+					<include>Filter_MenuItem</include>
+					<control type="multiimage">
+						<include>Home_MainMenuIconF</include>
+						<imagepath>backdrops/osx/weather//</imagepath>
+					</control>
+					<control type="label">
+						<posx>349</posx>
+						<posy>184</posy>
+						<angle>13</angle>
+						<width>128</width>
+						<font>Font_TemperatureOverlay</font>
+						<textcolor>White</textcolor>
+						<info>Weather.Temperature</info>
+						<align>right</align>
+						<visible effect="fade" time="250">system.hasnetwork</visible>
+					</control>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
