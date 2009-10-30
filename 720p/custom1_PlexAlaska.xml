@@ -78,19 +78,6 @@
 				<onclick>XBMC.ActivateWindow(50)</onclick>
 			</control>
 			
-			<control type="button" id="3113">
-				<description>Quit Plex</description>
-				<height>40</height>
-				<width>1280</width>
-				<font>Font_MenuValue</font>
-				<textcolor>MenuValue</textcolor>
-				<focusedcolor>settings_focused</focusedcolor>
-				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
-				<align>center</align>
-				<aligny>middle</aligny>
-				<label>Quit Plex</label>
-				<onclick>XBMC.ShutDown()</onclick>
-			</control>
 			<control type="button" id="3114">
 				<description>Sleep</description>
 				<height>40</height>
@@ -105,6 +92,19 @@
 				<onclick>Dialog.Close(1111)</onclick>
 				<onclick>XBMC.SleepSystem()</onclick>
 			</control>
+			<control type="button" id="3113">
+				<description>Quit Plex</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>settings_focused</focusedcolor>
+				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>Quit Plex</label>
+				<onclick>XBMC.ShutDown()</onclick>
+			</control>
 			<control type="button" id="3116">
 				<description>Reload Skin</description>
 				<height>40</height>
@@ -117,6 +117,7 @@
 				<aligny>middle</aligny>
 				<label>RELOAD SKIN</label>
 				<onclick>XBMC.ReloadSkin()</onclick>
+				<visible>Skin.HasSetting(debugmode)</visible>
 			</control>
 		</control>
 		<include>Object_DebugGrid</include>
