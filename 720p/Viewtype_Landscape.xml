@@ -14,11 +14,12 @@
 			<onleft>300</onleft>
 			<onright>300</onright>
 			<onup>7000</onup>
-			<ondown>7000</ondown>			
+			<ondown>64</ondown>
 			<viewtype label="Landscape">list</viewtype>
 			<orientation>horizontal</orientation>
 			<focusposition>3</focusposition>
 			<scrolltime>200</scrolltime>
+			<pagecontrol>64</pagecontrol>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
@@ -117,6 +118,24 @@
 			</focusedlayout>
 		</control>
 
+		<!--Scrollbar -->
+		<control type="scrollbar" id="64">
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
+			<posx>420</posx>
+			<posy>670</posy>
+			<width>460</width>
+			<height>32</height>
+			<visible allowhiddenfocus="true">Control.IsVisible(52) + Control.HasFocus(64)</visible>
+			<texturesliderbackground border="0,14,0,14">scrollbarh.png</texturesliderbackground>
+			<include condition="!Skin.HasSetting(nighttheme)">scrollbar_default</include>
+			<include condition="Skin.HasSetting(nighttheme)">scrollbar_dark</include>
+			<onup>52</onup>
+			<showonepage>false</showonepage>
+			<orientation>horizontal</orientation>
+			<include>Animation_CommonFade</include>
+			<animation effect="slide" start="0,100" end="0,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(64)">Conditional</animation>
+		</control>
 		<!-- Browser label and flags -->
 
 		<control type="group">

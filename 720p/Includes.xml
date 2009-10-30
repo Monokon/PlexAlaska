@@ -543,10 +543,23 @@
 					<imagepath diffuse="mainmenu/homematte.png">mainmenu/weather/$INFO[Weather.FanartCode]/</imagepath>
 					<visible>Skin.HasSetting(homeweather)</visible>
 				</control>
-				<include>Filter_MenuItem</include>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath>backdrops/osx/weather//</imagepath>
+				<control type="group">
+					<include>Filter_MenuItem</include>
+					<control type="multiimage">
+						<include>Home_MainMenuIconF</include>
+						<imagepath>backdrops/osx/weather//</imagepath>
+					</control>
+					<control type="label">
+						<posx>349</posx>
+						<posy>184</posy>
+						<angle>13</angle>
+						<width>128</width>
+						<font>Font_TemperatureOverlay</font>
+						<textcolor>White</textcolor>
+						<info>Weather.Temperature</info>
+						<align>right</align>
+						<visible effect="fade" time="250">system.hasnetwork</visible>
+					</control>
 					<visible>Skin.HasSetting(osximages)</visible>
 				</control>
 				<include>Home_MainMenuFrame</include>
@@ -1431,14 +1444,27 @@
 			<visible>ControlGroup(940).HasFocus() + Container(300).HasFocus(9)</visible>
 			<include>Animation_CommonFade</include>
 			<control type="image">
-				<width>300</width>
+				<width>20</width>
 				<height>60</height>
-				<texture>mainmenu/submenuback.png</texture>
+				<posx>0</posx>
+				<texture>mainmenu/submenu_left.png</texture>
+			</control>
+			<control type="image">
+				<width>260</width>
+				<height>60</height>
+				<posx>20</posx>
+				<texture>mainmenu/submenu_mid.png</texture>
+			</control>
+			<control type="image">
+				<width>20</width>
+				<height>60</height>
+				<posx>280</posx>
+				<texture>mainmenu/submenu_right.png</texture>
 			</control>
 
 			<control type="grouplist" id="940">
 				<posx>50</posx>
-				<posy>14</posy>
+				<posy>13</posy>
 				<width>300</width>
 				<height>33</height>
 				<itemgap>0</itemgap>
@@ -1463,36 +1489,61 @@
 
 	<include name="submenu_movies">
 		<control type="group">
-			<posx>485</posx>
+			<posx>335</posx>
 			<posy>490</posy>
 			<visible>ControlGroup(941).HasFocus() + Container(300).HasFocus(4)</visible>
 			<include>Animation_CommonFade</include>
 			<control type="image">
-				<width>300</width>
+				<width>20</width>
 				<height>60</height>
-				<texture>mainmenu/submenuback.png</texture>
+				<posx>10</posx>
+				<texture>mainmenu/submenu_left.png</texture>
+			</control>
+			<control type="image">
+				<posx>30</posx>
+				<width>540</width>
+				<height>60</height>
+				<texture>mainmenu/submenu_mid.png</texture>
+			</control>
+			<control type="image">
+				<width>20</width>
+				<height>60</height>
+				<posx>570</posx>
+				<texture>mainmenu/submenu_right.png</texture>
 			</control>
 
 			<control type="grouplist" id="941">
 				<posx>50</posx>
-				<posy>14</posy>
-				<width>300</width>
+				<posy>13</posy>
+				<width>600</width>
 				<height>33</height>
 				<itemgap>0</itemgap>
 				<onup>300</onup>
 				<orientation>horizontal</orientation>
 				<control type="button" id="40">
 					<include>submenubutton</include>
-					<!-- LOC -->
-					<label>RECENT</label>
+					<label>31920</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,recentlyaddedmovies,return)</onclick>
 				</control>
-
 				<control type="button" id="41">
 					<include>submenubutton</include>
-					<!-- LOC -->
-					<label>TITLE</label>
+					<label>31921</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
+				</control>
+				<control type="button" id="42">
+					<include>submenubutton</include>
+					<label>31922</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviegenres,return)</onclick>
+				</control>
+				<control type="button" id="43">
+					<include>submenubutton</include>
+					<label>31924</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieactors,return)</onclick>
+				</control>
+				<control type="button" id="44">
+					<include>submenubutton</include>
+					<label>31923</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieyears,return)</onclick>
 				</control>
 			</control>
 		</control>
@@ -1500,36 +1551,61 @@
 
 	<include name="submenu_tvshows">
 		<control type="group">
-			<posx>485</posx>
+			<posx>335</posx>
 			<posy>490</posy>
 			<visible>ControlGroup(942).HasFocus() + Container(300).HasFocus(5)</visible>
 			<include>Animation_CommonFade</include>
 			<control type="image">
-				<width>300</width>
+				<width>20</width>
 				<height>60</height>
-				<texture>mainmenu/submenuback.png</texture>
+				<posx>10</posx>
+				<texture>mainmenu/submenu_left.png</texture>
+			</control>
+			<control type="image">
+				<posx>30</posx>
+				<width>540</width>
+				<height>60</height>
+				<texture>mainmenu/submenu_mid.png</texture>
+			</control>
+			<control type="image">
+				<width>20</width>
+				<height>60</height>
+				<posx>570</posx>
+				<texture>mainmenu/submenu_right.png</texture>
 			</control>
 
 			<control type="grouplist" id="942">
 				<posx>50</posx>
-				<posy>14</posy>
-				<width>300</width>
+				<posy>13</posy>
+				<width>600</width>
 				<height>33</height>
 				<itemgap>0</itemgap>
 				<onup>300</onup>
 				<orientation>horizontal</orientation>
 				<control type="button" id="40">
 					<include>submenubutton</include>
-					<!-- LOC -->
-					<label>RECENT</label>
+					<label>31920</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,recentlyaddedepisodes,return)</onclick>
 				</control>
-
 				<control type="button" id="41">
 					<include>submenubutton</include>
-					<!-- LOC -->
-					<label>TITLE</label>
+					<label>31921</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
+				</control>
+				<control type="button" id="42">
+					<include>submenubutton</include>
+					<label>31922</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowgenres,return)</onclick>
+				</control>
+				<control type="button" id="43">
+					<include>submenubutton</include>
+					<label>31924</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowactors,return)</onclick>
+				</control>
+				<control type="button" id="44">
+					<include>submenubutton</include>
+					<label>31923</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowyears,return)</onclick>
 				</control>
 			</control>
 		</control>
