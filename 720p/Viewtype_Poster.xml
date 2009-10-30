@@ -11,12 +11,13 @@
 			<onleft>300</onleft>
 			<onright>300</onright>
 			<onup>7000</onup>
-			<ondown>7000</ondown>
+			<ondown>62</ondown>
 			<viewtype label="Poster">list</viewtype>
 			<orientation>horizontal</orientation>
 			<scrolltime>200</scrolltime>
 			<focusposition>3</focusposition>
 			<preloaditems>2</preloaditems>
+			<pagecontrol>62</pagecontrol>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<visible>!Container.Content(episodes)</visible>
@@ -165,12 +166,13 @@
 			<onleft>300</onleft>
 			<onright>300</onright>
 			<onup>7000</onup>
-			<ondown>7000</ondown>
+			<ondown>62</ondown>
 			<viewtype label="Poster">list</viewtype>
 			<orientation>horizontal</orientation>
 			<focusposition>3</focusposition>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
+			<pagecontrol>62</pagecontrol>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<visible>!Container.Content(episodes)</visible>
@@ -309,6 +311,24 @@
 				</control>
 			</focusedlayout>
 			<visible>!Skin.HasSetting(fixedlist) | Container.Content(movies)</visible>
+		</control>
+		<!--Scrollbar -->
+		<control type="scrollbar" id="62">
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
+			<posx>420</posx>
+			<posy>670</posy>
+			<width>460</width>
+			<height>32</height>
+			<visible allowhiddenfocus="true">Control.IsVisible(55) + Control.HasFocus(62)</visible>
+			<texturesliderbackground border="0,14,0,14">scrollbarh.png</texturesliderbackground>
+			<include condition="!Skin.HasSetting(nighttheme)">scrollbar_default</include>
+			<include condition="Skin.HasSetting(nighttheme)">scrollbar_dark</include>
+			<onup>55</onup>
+			<showonepage>false</showonepage>
+			<orientation>horizontal</orientation>
+			<include>Animation_CommonFade</include>
+			<animation effect="slide" start="0,100" end="0,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(62)">Conditional</animation>
 		</control>
 		<!-- Browser label and flags -->
 		<control type="group">
