@@ -482,6 +482,18 @@
 					<onclick>Skin.ToggleSetting(disableprogressbar)</onclick>
 					<selected>Skin.HasSetting(disableprogressbar)</selected>
 				</control>
+				<control type="radiobutton" id="603">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>settings_focused</focusedcolor>
+					<!-- LOC -->
+					<label>Use alternative NowPlaying-screen</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(alt_nowplaying)</onclick>
+					<selected>Skin.HasSetting(alt_nowplaying)</selected>
+				</control>
 			</control>
 
 			<control type="grouplist" id="9007">

@@ -16,6 +16,7 @@
 	<include file="Includes_Backgrounds.xml" />
 	<include file="Includes_Filemanager.xml" />
 	<include file="Includes_Objects.xml" />
+	<include file="PlexIncludes.xml" />
 	<!-- Debug objects -->
 	<include name="Object_DebugGrid">
 		<control type="image">
@@ -1620,4 +1621,17 @@
 		<font>Small</font>
 		<focusedcolor>White</focusedcolor>
 	</include>
+
+	<!-- progressbar nowplaying -->
+	<include name="progress_default">
+		<lefttexture>default/progress_left.png</lefttexture>
+		<midtexture>default/progress_mid.png</midtexture>
+		<righttexture>default/progress_right.png</righttexture>
+	</include>
+	<include name="progress_dark">
+		<lefttexture>dark/progress_left.png</lefttexture>
+		<midtexture>dark/progress_mid.png</midtexture>
+		<righttexture>dark/progress_right.png</righttexture>
+	</include>
+
 </includes>
