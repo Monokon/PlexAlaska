@@ -271,4 +271,16 @@
 		<animation effect="slide" end="-700,0" time="300" condition="Container(300).HasFocus(9) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">Conditional</animation>
 	</include>	
 
+
+	<!-- PlexAlaska -->
+	<!-- submenu animations -->
+	<include name="Animation_Submenu_home2">
+		<animation type="Visible">
+			<effect type="zoom" center="640,545" tween="back" easing="out" time="500" start="0" end="100" />
+		</animation>
+		<animation type="Hidden">
+			<effect type="zoom" center="640,545" tween="back" easing="in" time="500" start="100" end="0" />
+		</animation>
+	</include>
+
 </includes>
