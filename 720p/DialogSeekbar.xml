@@ -4,6 +4,7 @@
 	<defaultcontrol>901</defaultcontrol>
 	<visible>Window.IsActive(2005) + !Window.IsActive(2901) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
 	<controls>
+		<include>OSD_Time</include>
 		<control type="group">
 			<posy>560</posy>
 			<animation type="WindowOpen">

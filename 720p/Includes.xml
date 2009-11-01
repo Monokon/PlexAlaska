@@ -1639,4 +1639,46 @@
 		<righttexture>dark/progress_right.png</righttexture>
 	</include>
 
+	<!-- date/time for video OSD -->
+	<include name="OSD_Time">
+		<control type="group">
+			<animation type="WindowOpen">
+				<effect type="slide" start="0,-100" end="0,0" time="600" tween="cubic" easing="out" />
+				<effect type="fade" start="0" end="100" time="600" />
+			</animation>
+			<animation type="WindowClose">
+				<effect type="slide" start="0,0" end="0,-100" time="600" tween="cubic" easing="out" />
+				<effect type="fade" start="100" end="0" time="600" />
+			</animation>
+			<control type="image">
+				<description>Panel</description>
+				<posx>1050</posx>
+				<posy>-20</posy>
+				<width>230</width>
+				<height>105</height>
+				<colordiffuse>11FFFFFF</colordiffuse>
+				<texture background="true" diffuse="timematte.png">common/black.png</texture>
+			</control>
+			<control type="label">
+				<posx>1250</posx>
+				<posy>10</posy>
+				<width>300</width>
+				<height>50</height>
+				<font>Font_Time</font>
+				<textcolor>80ffffff</textcolor>
+				<info>System.Time</info>
+				<align>right</align>
+			</control>
+			<control type="label">
+				<posx>1250</posx>
+				<posy>50</posy>
+				<width>300</width>
+				<font>Font_Date</font>
+				<textcolor>80ffffff</textcolor>
+				<info>System.Date</info>
+				<align>right</align>
+			</control>
+		</control>
+	</include>
+
 </includes>

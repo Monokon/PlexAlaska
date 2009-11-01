@@ -3,6 +3,7 @@
 <window id="2901">
 	<defaultcontrol always="true">2001</defaultcontrol>
 	<controls>
+		<include>OSD_Time</include>
 		<control type="label">
 			<include>DialogID</include>
 			<label>VideoOSD.xml</label>
