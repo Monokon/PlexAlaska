@@ -705,6 +705,7 @@
 			<width>1541</width>
 			<onleft>300</onleft>
 			<onright>300</onright>
+			<ondown>SetFocus(351)</ondown>
 			<viewtype>list</viewtype>
 			<orientation>horizontal</orientation>
 			<focusposition>2</focusposition>
@@ -740,7 +741,8 @@
 					<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
 				</item>
 				<item id="2">
-<!-- LOC -->		<label>AppStore</label>
+					<!-- LOC -->
+					<label>AppStore</label>
 					<thumb>backdrops/programsicon.png</thumb>
 					<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/,return)</onclick>
 					<visible>!Skin.HasSetting(noappstore)</visible>
@@ -786,25 +788,6 @@
 					<onclick>XBMC.ActivateWindow(4)</onclick>
 				</item>
 				<item id="9">
-					<description>Scripts</description>
-					<label>31020</label>
-					<onclick>XBMC.ActivateWindow(20)</onclick>
-					<visible>Skin.HasSetting(scripts)</visible>
-				</item>
-				<item id="10">
-					<description>Play Disc</description>
-					<label>31018</label>
-					<thumb>backdrops/playdiscicon.png</thumb>
-					<onclick>XBMC.PlayDVD</onclick>
-					<visible>System.HasMediadvd</visible>
-				</item>
-				<item id="12">
-					<description>SignOut</description>
-					<label>31209</label>
-					<onclick>System.LogOff</onclick>
-					<visible>Skin.HasSetting(signout)</visible>
-				</item>
-				<item id="13">
 					<description>Shutdown</description>
 					<thumb>backdrops/quiticon.png</thumb>
 					<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
@@ -823,6 +806,10 @@
 			<texture diffuse="mainmenu/home_mask.png">backdrops/backgroundcolordiffuse.png</texture>
 			<colordiffuse>backgroundColor</colordiffuse>
 		</control>
+		<include>submenu_movies</include>
+		<include>submenu_tvshows</include>
+		<include>submenu_quit</include>
+		<include>submenu_dummybuttons</include>
 	</include>
 	<include name="Home_MenuList">
 		<control type="multiimage">
@@ -1438,12 +1425,21 @@
 		</control>
 	</include>
 
+	<include name="submenu_posy_default">
+		<posy>490</posy>
+	</include>
+	<include name="submenu_posy_home2">
+		<posy>520</posy>
+	</include>
+
 	<include name="submenu_quit">
 		<control type="group">
 			<posx>445</posx>
-			<posy>490</posy>
+			<include condition="!Skin.HasSetting(home2)">submenu_posy_default</include>
+			<include condition="Skin.HasSetting(home2)">submenu_posy_home2</include>
 			<visible>ControlGroup(940).HasFocus() + Container(300).HasFocus(9)</visible>
-			<include>Animation_CommonFade</include>
+			<include condition="!Skin.HasSetting(home2)">Animation_CommonFade</include>
+			<include condition="Skin.HasSetting(home2)">Animation_Submenu_home2</include>
 			<control type="image">
 				<width>20</width>
 				<height>60</height>
@@ -1464,7 +1460,7 @@
 			</control>
 
 			<control type="grouplist" id="940">
-				<posx>40</posx>
+				<posx>36</posx>
 				<posy>13</posy>
 				<width>400</width>
 				<height>33</height>
@@ -1496,9 +1492,11 @@
 	<include name="submenu_movies">
 		<control type="group">
 			<posx>335</posx>
-			<posy>490</posy>
+			<include condition="!Skin.HasSetting(home2)">submenu_posy_default</include>
+			<include condition="Skin.HasSetting(home2)">submenu_posy_home2</include>
 			<visible>ControlGroup(941).HasFocus() + Container(300).HasFocus(4)</visible>
-			<include>Animation_CommonFade</include>
+			<include condition="!Skin.HasSetting(home2)">Animation_CommonFade</include>
+			<include condition="Skin.HasSetting(home2)">Animation_Submenu_home2</include>
 			<control type="image">
 				<width>20</width>
 				<height>60</height>
@@ -1558,9 +1556,11 @@
 	<include name="submenu_tvshows">
 		<control type="group">
 			<posx>335</posx>
-			<posy>490</posy>
+			<include condition="!Skin.HasSetting(home2)">submenu_posy_default</include>
+			<include condition="Skin.HasSetting(home2)">submenu_posy_home2</include>
 			<visible>ControlGroup(942).HasFocus() + Container(300).HasFocus(5)</visible>
-			<include>Animation_CommonFade</include>
+			<include condition="!Skin.HasSetting(home2)">Animation_CommonFade</include>
+			<include condition="Skin.HasSetting(home2)">Animation_Submenu_home2</include>
 			<control type="image">
 				<width>20</width>
 				<height>60</height>
@@ -1638,6 +1638,49 @@
 		<lefttexture>dark/progress_left.png</lefttexture>
 		<midtexture>dark/progress_mid.png</midtexture>
 		<righttexture>dark/progress_right.png</righttexture>
+	</include>
+
+	<!-- date/time for video OSD -->
+	<include name="OSD_Time">
+		<control type="group">
+			<visible>Skin.HasSetting(OSD_Time)</visible>
+			<animation type="WindowOpen">
+				<effect type="slide" start="0,-100" end="0,0" time="600" tween="cubic" easing="out" />
+				<effect type="fade" start="0" end="100" time="600" />
+			</animation>
+			<animation type="WindowClose">
+				<effect type="slide" start="0,0" end="0,-100" time="600" tween="cubic" easing="out" />
+				<effect type="fade" start="100" end="0" time="600" />
+			</animation>
+			<control type="image">
+				<description>Panel</description>
+				<posx>1050</posx>
+				<posy>-20</posy>
+				<width>230</width>
+				<height>105</height>
+				<colordiffuse>11FFFFFF</colordiffuse>
+				<texture background="true" diffuse="timematte.png">common/black.png</texture>
+			</control>
+			<control type="label">
+				<posx>1250</posx>
+				<posy>10</posy>
+				<width>300</width>
+				<height>50</height>
+				<font>Font_Time</font>
+				<textcolor>80ffffff</textcolor>
+				<info>System.Time</info>
+				<align>right</align>
+			</control>
+			<control type="label">
+				<posx>1250</posx>
+				<posy>50</posy>
+				<width>300</width>
+				<font>Font_Date</font>
+				<textcolor>80ffffff</textcolor>
+				<info>System.Date</info>
+				<align>right</align>
+			</control>
+		</control>
 	</include>
 
 </includes>

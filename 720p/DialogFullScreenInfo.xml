@@ -3,6 +3,7 @@
 <window id="142">
 	<defaultcontrol>2</defaultcontrol>
 	<controls>
+		<include>OSD_Time</include>
 		<control type="group">
 			<posy>560</posy>
 			<animation type="WindowOpen">

@@ -168,6 +168,18 @@
 					<onclick>Skin.ToggleSetting(RSS_only_on_home)</onclick>
 					<selected>Skin.HasSetting(RSS_only_on_home)</selected>
 				</control>
+				<control type="radiobutton" id="106">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>settings_focused</focusedcolor>
+					<!-- LOC -->
+					<label>Show current time in video OSD</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(OSD_Time)</onclick>
+					<selected>Skin.HasSetting(OSD_Time)</selected>
+				</control>
 			</control>
 			<control type="grouplist" id="9002">
 				<visible>Container(9000).Hasfocus(2)</visible>
