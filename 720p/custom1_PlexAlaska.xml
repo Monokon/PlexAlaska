@@ -77,6 +77,20 @@
 				<onclick>Dialog.Close(1111)</onclick>
 				<onclick>XBMC.ActivateWindow(50)</onclick>
 			</control>
+
+			<control type="button" id="3119">
+				<description>Shutdown OSX</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>settings_focused</focusedcolor>
+				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>Shutdown OSX</label>
+				<onclick>Plex.ShutDownSystem</onclick>
+			</control>
 			
 			<control type="button" id="3114">
 				<description>Sleep</description>

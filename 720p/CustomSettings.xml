@@ -168,19 +168,6 @@
 					<onclick>Skin.ToggleSetting(RSS_only_on_home)</onclick>
 					<selected>Skin.HasSetting(RSS_only_on_home)</selected>
 				</control>
-				<control type="radiobutton" id="106">
-					<width>740</width>
-					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
-					<!-- LOC -->
-					<label>Change option "Quit Plex" to "Sleep"</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<visible>!Skin.HasSetting(nohomequit)</visible>
-					<onclick>Skin.ToggleSetting(sleepsystem)</onclick>
-					<selected>Skin.HasSetting(sleepsystem)</selected>
-				</control>
 			</control>
 			<control type="grouplist" id="9002">
 				<visible>Container(9000).Hasfocus(2)</visible>
@@ -316,6 +303,19 @@
 					<onclick>Skin.Reset(fanartpath)</onclick>
 					<onclick>Skin.SetString(fanartpath,/Users/$INFO[Skin.String(osxusername)]/Library/Application Support/Plex/userdata/Thumbnails/Video/Fanart//)</onclick>
 					<selected>Skin.HasSetting(fanartformovies)</selected>
+				</control>
+				<control type="radiobutton" id="213">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>settings_focused</focusedcolor>
+					<!-- LOC -->
+					<label>Change option "Quit Plex" to "Sleep"</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>!Skin.HasSetting(nohomequit)</visible>
+					<onclick>Skin.ToggleSetting(sleepsystem)</onclick>
+					<selected>Skin.HasSetting(sleepsystem)</selected>
 				</control>
 			</control>
 			<control type="grouplist" id="9003">
@@ -481,6 +481,18 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(disableprogressbar)</onclick>
 					<selected>Skin.HasSetting(disableprogressbar)</selected>
+				</control>
+				<control type="radiobutton" id="603">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>settings_focused</focusedcolor>
+					<!-- LOC -->
+					<label>Use alternative NowPlaying-screen</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(alt_nowplaying)</onclick>
+					<selected>Skin.HasSetting(alt_nowplaying)</selected>
 				</control>
 			</control>
 
