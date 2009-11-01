@@ -1463,7 +1463,7 @@
 			</control>
 
 			<control type="grouplist" id="940">
-				<posx>40</posx>
+				<posx>36</posx>
 				<posy>13</posy>
 				<width>400</width>
 				<height>33</height>
