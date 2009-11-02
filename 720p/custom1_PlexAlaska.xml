@@ -32,6 +32,7 @@
 				<label>Now Playing</label>
 				<onclick>Dialog.Close(1111)</onclick>
 				<onclick>XBMC.ActivateWindow(50)</onclick>
+				<visible>Player.HasMedia</visible>
 			</control>
 
 			<control type="button" id="3110">
