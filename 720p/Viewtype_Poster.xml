@@ -377,6 +377,7 @@
 			<include condition="!Skin.HasSetting(nighttheme)">scrollbar_default</include>
 			<include condition="Skin.HasSetting(nighttheme)">scrollbar_dark</include>
 			<onup>55</onup>
+			<ondown>62</ondown>
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
 			<include>Animation_CommonFade</include>
