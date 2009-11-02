@@ -1625,6 +1625,7 @@
 		<aligny>center</aligny>
 		<font>Small</font>
 		<focusedcolor>White</focusedcolor>
+		<onclick>SetFocus(300)</onclick>
 	</include>
 
 	<!-- progressbar nowplaying -->
