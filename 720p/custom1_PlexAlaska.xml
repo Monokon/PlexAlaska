@@ -19,6 +19,22 @@
 			<onup>1</onup>
 			<ondown>1</ondown>
 			<orientation>vertical</orientation>
+			<control type="button" id="3118">
+				<description>Now Playing</description>
+				<height>40</height>
+				<width>1280</width>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
+				<focusedcolor>settings_focused</focusedcolor>
+				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
+				<align>center</align>
+				<aligny>middle</aligny>
+				<label>Now Playing</label>
+				<onclick>Dialog.Close(1111)</onclick>
+				<onclick>XBMC.ActivateWindow(50)</onclick>
+				<visible>Player.HasMedia</visible>
+			</control>
+
 			<control type="button" id="3110">
 				<description>Settings</description>
 				<height>40</height>
@@ -63,8 +79,8 @@
 				<onclick>XBMC.ActivateWindow(Favourites)</onclick>
 			</control>
 
-			<control type="button" id="3118">
-				<description>Now Playing</description>
+			<control type="button" id="3120">
+				<description>Log out</description>
 				<height>40</height>
 				<width>1280</width>
 				<font>Font_MenuValue</font>
@@ -73,9 +89,10 @@
 				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>Now Playing</label>
+				<label>Log out</label>
 				<onclick>Dialog.Close(1111)</onclick>
-				<onclick>XBMC.ActivateWindow(50)</onclick>
+				<onclick>System.LogOff</onclick>
+				<visible>system.hasloginscreen</visible>
 			</control>
 
 			<control type="button" id="3119">
