@@ -40,7 +40,7 @@
 	<!-- Home page colours -->
 
 	<color name="MainMenuNF">FFFFFFFF</color>	
-	<color name="MainMenu">FFFFFFFF</color>
+	<color name="MainMenu">90FFFFFF</color>
 	<color name="MainMenuLabel">FF383737</color>	
 
 	<!-- Poster view colours -->

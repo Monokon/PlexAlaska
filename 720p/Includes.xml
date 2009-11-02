@@ -743,7 +743,7 @@
 				<item id="2">
 					<!-- LOC -->
 					<label>AppStore</label>
-					<thumb>backdrops/programsicon.png</thumb>
+					<thumb>backdrops/appstoreicon.png</thumb>
 					<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/,return)</onclick>
 					<visible>!Skin.HasSetting(noappstore)</visible>
 				</item>
