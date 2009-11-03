@@ -437,6 +437,18 @@
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
+					<label>Disable backdrops for TV shows</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(notvshowbackdrops)</onclick>
+					<selected>Skin.HasSetting(notvshowbackdrops)</selected>
+				</control>
+				<control type="radiobutton" id="404">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>settings_focused</focusedcolor>
+					<!-- LOC -->
 					<label>Disable backdrops for pictures</label>
 					<align>left</align>
 					<aligny>center</aligny>

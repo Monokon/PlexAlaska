@@ -110,6 +110,21 @@
 			</itemlayout>
 			<focusedlayout width="328" height="515">
 				<control type="image">
+					<posx>18</posx>
+					<posy>36</posy>
+					<width>375</width>
+					<height>548</height>
+					<include condition="!Skin.HasSetting(nighttheme)">posterNF2_default</include>
+					<include condition="Skin.HasSetting(nighttheme)">posterNF2_dark</include>
+					<fadetime>200</fadetime>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<include>Animation_PosterInfoSlide2</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="160,238" start="51" end="100" time="600" tween="back" easing="out" />
+					</animation>
+					<visible>!Container.Content(Genres)</visible>
+				</control>
+				<control type="image">
 					<posx>22</posx>
 					<posy>40</posy>
 					<width>367</width>
@@ -157,18 +172,6 @@
 					<width>407</width>
 					<height>580</height>
 					<texture>Poster.png</texture>
-					<include>Animation_PosterInfoSlide2</include>
-					<animation type="Focus" reversible="false">
-						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
-						<effect type="fade" start="0" end="100" time="600" />
-					</animation>
-				</control>
-				<control type="image">
-					<posx>2</posx>
-					<posy>580</posy>
-					<width>407</width>
-					<height>580</height>
-					<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png">Poster.png</texture>
 					<include>Animation_PosterInfoSlide2</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
@@ -317,6 +320,21 @@
 					<posy>40</posy>
 					<width>367</width>
 					<height>540</height>
+					<include condition="!Skin.HasSetting(nighttheme)">posterNF2_default</include>
+					<include condition="Skin.HasSetting(nighttheme)">posterNF2_dark</include>
+					<fadetime>200</fadetime>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<include>Animation_PosterInfoSlide2</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="160,238" start="51" end="100" time="600" tween="back" easing="out" />
+					</animation>
+					<visible>!Container.Content(Genres)</visible>
+				</control>
+				<control type="image">
+					<posx>22</posx>
+					<posy>40</posy>
+					<width>367</width>
+					<height>540</height>
 					<texture background="true" diffuse="postermatte2.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -360,18 +378,6 @@
 					<width>407</width>
 					<height>580</height>
 					<texture>Poster.png</texture>
-					<include>Animation_PosterInfoSlide2</include>
-					<animation type="Focus" reversible="false">
-						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
-						<effect type="fade" start="0" end="100" time="600" />
-					</animation>
-				</control>
-				<control type="image">
-					<posx>2</posx>
-					<posy>580</posy>
-					<width>407</width>
-					<height>580</height>
-					<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png">Poster.png</texture>
 					<include>Animation_PosterInfoSlide2</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
@@ -452,7 +458,7 @@
 			</control>
 			<control type="fadelabel">
 				<posx>5</posx>
-				<posy>0</posy>
+				<posy>-5</posy>
 				<width>420</width>
 				<height>50</height>
 				<aligny>center</aligny>
@@ -470,10 +476,10 @@
 				<posx>5</posx>
 				<posy>30</posy>
 				<width>420</width>
-				<font>Font_ListDetail</font>
+				<font>Font_PosterTitle</font>
 				<shadowcolor>ff000000</shadowcolor>
-				<textcolor>ListTrackF</textcolor>
-				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<textcolor>PosterTitle</textcolor>
+				<label>$INFO[ListItem.Label]</label>
 				<visible>Container.Content(seasons)</visible>
 			</control>
 			<control type="label">
@@ -483,7 +489,7 @@
 				<height>50</height>
 				<aligny>center</aligny>
 				<font>Font_ListDetail</font>
-				<textcolor>ListTrackF</textcolor>
+				<textcolor>RSSBody</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
 				<label>[B]$INFO[ListItem.Genre][/B]</label>
 				<visible>Container.Content(tvshows) | Container.Content(movies)</visible>
@@ -495,7 +501,7 @@
 				<height>50</height>
 				<aligny>center</aligny>
 				<font>Font_ListDetail</font>
-				<textcolor>ListTrackF</textcolor>
+				<textcolor>PosterTitle</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
 				<label>$LOCALIZE[16101]: [B]$INFO[ListItem.Property(UnWatchedEpisodes)][/B]</label>
 				<visible>!IsEmpty(ListItem.Episode) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
@@ -507,7 +513,7 @@
 				<height>50</height>
 				<aligny>center</aligny>
 				<font>Font_ListDetail</font>
-				<textcolor>ListTrackF</textcolor>
+				<textcolor>RSSBody</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
 				<label>Premiered: [B]$INFO[ListItem.Premiered][/B]</label>
 				<visible>Container.Content(tvshows)</visible>

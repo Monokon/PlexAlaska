@@ -1394,6 +1394,13 @@
 		<texture>dark/postermatteNF2.png</texture>
 	</include>
 
+	<include name="fanartNF_default">
+		<texture>default/IconmatteNF.png</texture>
+	</include>
+	<include name="fanartNF_dark">
+		<texture>dark/IconmatteNF.png</texture>
+	</include>
+
 	<include name="submenu_dummybuttons">
 		<control type="button" id="351">
 			<onfocus>SetFocus(300)</onfocus>
