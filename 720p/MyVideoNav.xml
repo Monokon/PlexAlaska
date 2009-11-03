@@ -25,7 +25,9 @@
 		<include>Object_MovieInfoLines</include>
 		
 		<include>Viewtype_Poster</include>
+		<include>Viewtype_Poster2</include>
 		<include>Viewtype_Fanart</include>
+		<include>Viewtype_Fanart2</include>
 		<include>Viewtype_Landscape</include>
 		<include>Viewtype_Episode</include>
 		<include>Viewtype_Files</include>

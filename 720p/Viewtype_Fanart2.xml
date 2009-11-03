@@ -1,0 +1,255 @@
+<!--Alaska-->
+
+<includes>
+	<include name="Viewtype_Fanart2">
+		<control type="wraplist" id="57">
+			<posx>-188</posx>
+			<posy>65</posy>
+			<height>600</height>
+			<width>1656</width>
+			<onleft>300</onleft>
+			<onright>300</onright>
+			<onup>7000</onup>
+			<ondown>66</ondown>
+			<viewtype label="Fanart2">list</viewtype>
+			<orientation>horizontal</orientation>
+			<focusposition>2</focusposition>
+			<scrolltime>200</scrolltime>
+			<preloaditems>4</preloaditems>
+			<pagecontrol>66</pagecontrol>
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
+			<visible>Container.Content(movies)</visible>
+			<itemlayout width="500" height="750">
+				<control type="image">
+					<posx>-422</posx>
+					<posy>60</posy>
+					<width>700</width>
+					<height>406</height>
+					<texture>IconmatteNF.png</texture>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>-422</posx>
+					<posy>60</posy>
+					<width>700</width>
+					<height>406</height>
+					<texture background="true" fallback="special:\\skin\media\backdrops\movies.jpg" diffuse="IconmatteNF.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<fadetime>200</fadetime>
+					<colordiffuse>ffffffff</colordiffuse>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>-422</posx>
+					<posy>60</posy>
+					<width>700</width>
+					<height>406</height>
+					<texture>IconNF.png</texture>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>-422</posx>
+					<posy>60</posy>
+					<width>700</width>
+					<height>406</height>
+					<texture>IconglowNF.png</texture>
+					<colordiffuse>backgroundColor</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>-422</posx>
+					<posy>440</posy>
+					<width>700</width>
+					<height>406</height>
+					<texture background="true" flipy="true" diffuse="IconmattereflectNF.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<fadetime>200</fadetime>
+					<colordiffuse>89FFFFFF</colordiffuse>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+			</itemlayout>
+			<focusedlayout width="300" height="184">
+				<control type="image">
+					<posx>-668</posx>
+					<posy>15</posy>
+					<width>1000</width>
+					<height>580</height>
+					<texture>IconmatteNF.png</texture>
+					<include>Animation_FanartInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="145,202" start="51" end="100" time="600" tween="back" easing="out" />
+					</animation>
+				</control>
+				<control type="image">
+					<posx>-668</posx>
+					<posy>15</posy>
+					<width>1000</width>
+					<height>580</height>
+					<texture background="true" fallback="special://skin/media/backdrops/movies.jpg" diffuse="Iconmatte.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
+					<fadetime>200</fadetime>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<include>Animation_FanartInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="145,202" start="51" end="100" time="600" tween="back" easing="out" />
+					</animation>
+				</control>
+				<control type="image">
+					<posx>-668</posx>
+					<posy>15</posy>
+					<width>1000</width>
+					<height>580</height>
+					<texture>Icon.png</texture>
+					<include>Animation_FanartInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="157,192" start="51" end="100" time="600" tween="back" easing="out" />
+						<effect type="fade" start="0" end="100" time="600" />
+					</animation>
+				</control>
+					<control type="image">
+					<posx>-668</posx>
+					<posy>15</posy>
+					<width>1000</width>
+					<height>580</height>
+					<texture>Iconglow.png</texture>
+					<colordiffuse>backgroundColor</colordiffuse>
+					<include>Animation_FanartInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="157,192" start="51" end="100" time="600" tween="back" easing="out" />
+						<effect type="fade" start="0" end="100" time="600" />
+					</animation>
+				</control>
+				<control type="image">
+					<posx>-635</posx>
+					<posy>45</posy>
+					<width>65</width>
+					<height>65</height>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
+					<include>Animation_FanartInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="157,192" start="51" end="100" time="600" tween="back" easing="out" />
+						<effect type="fade" start="0" end="100" time="600" />
+					</animation>
+				</control>
+			</focusedlayout>
+		</control>
+		<!--Scrollbar -->
+		<control type="scrollbar" id="66">
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
+			<posx>420</posx>
+			<posy>670</posy>
+			<width>460</width>
+			<height>32</height>
+			<visible allowhiddenfocus="true">Control.IsVisible(57) + Control.HasFocus(66)</visible>
+			<texturesliderbackground border="0,14,0,14">scrollbarh.png</texturesliderbackground>
+			<include condition="!Skin.HasSetting(nighttheme)">scrollbar_default</include>
+			<include condition="Skin.HasSetting(nighttheme)">scrollbar_dark</include>
+			<onup>57</onup>
+			<ondown>66</ondown>
+			<showonepage>false</showonepage>
+			<orientation>horizontal</orientation>
+			<include>Animation_CommonFade</include>
+			<animation effect="slide" start="0,100" end="0,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(66)">Conditional</animation>
+		</control>
+		<!-- Browser label and flags -->
+		<control type="group">
+			<posx>505</posx>
+			<posy>364</posy>
+			<visible>Control.IsVisible(57)</visible>
+			<include>Animation_SlideUpFadeOut</include>
+			<include>Animation_HiddenByInfo</include>
+			<include>Animation_ZoomedByMenu</include>
+			<control type="label">
+				<posx>600</posx>
+				<posy>220</posy>
+				<width>925</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<align>right</align>
+				<scroll>true</scroll>
+				<font>Font_Movietitle_Big</font>
+				<textcolor>ffdadada</textcolor>
+				<shadowcolor>ff000000</shadowcolor>
+				<label>[B]$INFO[ListItem.Label][/B]</label>
+				<visible>Container.Content(movies)</visible>
+			</control>
+			<control type="label">
+				<posx>600</posx>
+				<posy>180</posy>
+				<width>80</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<align>right</align>
+				<font>Font_MainMenuLabel</font>
+				<textcolor>ffdadada</textcolor>
+				<shadowcolor>ff000000</shadowcolor>
+				<label>[B]$INFO[ListItem.Year][/B]</label>
+				<visible>Container.Content(movies) + !Control.HasFocus(66)</visible>
+			</control>
+			<control type="label">
+				<posx>520</posx>
+				<posy>180</posy>
+				<width>640</width>
+				<height>50</height>
+				<size>100</size>
+				<aligny>center</aligny>
+				<align>right</align>
+				<font>Font_TVShow</font>
+				<textcolor>ffdadada</textcolor>
+				<shadowcolor>ff000000</shadowcolor>
+				<label>[B]$INFO[ListItem.Genre][/B]</label>
+				<visible>Container.Content(movies) + !Control.HasFocus(66)</visible>
+			</control>
+			<control type="label">
+				<label>imdb: [B]$INFO[ListItem.rating][/B]</label>
+				<posx>600</posx>
+				<posy>150</posy>
+				<width>180</width>
+				<height>45</height>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>Font_MainMenuLabel</font>
+				<textcolor>ffdadada</textcolor>
+				<shadowcolor>ff000000</shadowcolor>
+				<visible>!Control.HasFocus(66)</visible>
+			</control>
+			<control type="image">
+				<posx>501</posx>
+				<posy>96</posy>
+				<width>107</width>
+				<height>73</height>
+				<texture>$INFO[ListItem.Path,,source.png]</texture>
+				<colordiffuse>ff000000</colordiffuse>
+				<include>Animation_HiddenByInfo</include>
+				<visible>!Control.HasFocus(66)</visible>
+			</control>
+			<control type="image">
+				<posx>500</posx>
+				<posy>95</posy>
+				<width>107</width>
+				<height>73</height>
+				<texture>$INFO[ListItem.Path,,source.png]</texture>
+				<colordiffuse>ffdadada</colordiffuse>
+				<include>Animation_HiddenByInfo</include>
+				<visible>!Control.HasFocus(66)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(57)</visible>
+			<include>Animation_ZoomedByMenu</include>
+			<include>PosterMediaFlags_dis</include>
+		</control>
+	</include>
+
+	<include name="Overlay_Default">	
+		<texture>$INFO[ListItem.Overlay,default/,]</texture>
+	</include>
+	<include name="Overlay_Dark">	
+		<texture>$INFO[ListItem.Overlay,dark/,]</texture>
+	</include>
+
+</includes>

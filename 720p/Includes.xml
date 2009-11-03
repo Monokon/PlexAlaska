@@ -5,11 +5,13 @@
 	<include file="Defaults.xml" />
 	<include file="Viewtype_Episode.xml" />
 	<include file="Viewtype_Poster.xml" />
+	<include file="Viewtype_Poster2.xml" />
 	<include file="Viewtype_PictureGrid.xml" />
 	<include file="Viewtype_MusicWall.xml" />
 	<include file="Viewtype_List.xml" />
 	<include file="Viewtype_Landscape.xml" />
 	<include file="Viewtype_Fanart.xml" />
+	<include file="Viewtype_Fanart2.xml" />
 	<include file="Viewtype_Files.xml" />
 	<include file="Includes_MediaFlags.xml" />
 	<include file="Includes_Animations.xml" />
@@ -1383,6 +1385,13 @@
 	</include>
 	<include name="posterNF_dark">
 		<texture>dark/postermatteNF.png</texture>
+	</include>
+
+	<include name="posterNF2_default">
+		<texture>default/postermatteNF2.png</texture>
+	</include>
+	<include name="posterNF2_dark">
+		<texture>dark/postermatteNF2.png</texture>
 	</include>
 
 	<include name="submenu_dummybuttons">
