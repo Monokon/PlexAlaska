@@ -10,7 +10,7 @@
 			<fadetime>400</fadetime>
 			<texture>$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<include>Animation_CommonFade</include>
-			<visible>!Skin.HasSetting(nomoviebackdrops) | !Container.Content(movies)</visible>
+			<visible>[!Skin.HasSetting(nomoviebackdrops) + Container.Content(movies)] | [!Skin.HasSetting(notvshowbackdrops) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]</visible>
 		</control>
 		<!-- Workaround for missing fanart when episodes displayed -->
 		<control type="largeimage">
@@ -18,14 +18,16 @@
 			<fadetime>400</fadetime>
 			<texture>$INFO[Fanart.Image]</texture>
 			<include>Animation_CommonFade</include>
-			<visible>!Skin.HasSetting(nomoviebackdrops) | !Container.Content(movies)</visible>
+			<visible>[!Skin.HasSetting(nomoviebackdrops) + Container.Content(movies)] | [!Skin.HasSetting(notvshowbackdrops) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]</visible>
 		</control>
 		<include>Global_Filter</include>
 		
 		<include>Object_MovieInfoLines</include>
 		
 		<include>Viewtype_Poster</include>
+		<include>Viewtype_Poster2</include>
 		<include>Viewtype_Fanart</include>
+		<include>Viewtype_Fanart2</include>
 		<include>Viewtype_Landscape</include>
 		<include>Viewtype_Episode</include>
 		<include>Viewtype_Files</include>

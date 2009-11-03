@@ -148,6 +148,15 @@
 		<animation effect="slide" start="0,0" end="-242,0" time="400" tween="cubic" easing="inout" condition="Window.IsActive(2003)">Conditional</animation>	
 	</include>
 
+	<include name="Animation_FanartInfoSlide">
+		<animation effect="slide" start="0,0" end="-140,0" time="400" tween="cubic" easing="inout" condition="Window.IsActive(2003)">Conditional</animation>
+		<animation effect="zoom"  time="400" center="-668,70" start="100" end="55" tween="cubic" easing="in" condition="Window.IsActive(2003)">Conditional</animation>
+	</include>
+
+	<include name="Animation_PosterInfoSlide2">
+		<animation effect="slide" start="0,0" end="-280,0" time="400" tween="cubic" easing="inout" condition="Window.IsActive(2003)">Conditional</animation>
+	</include>
+
 	<!-- Browser animations -->
 
 	<include name="Animation_EpisodeFloat">
