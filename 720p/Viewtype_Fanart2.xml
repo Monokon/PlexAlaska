@@ -266,7 +266,7 @@
 				<font>Font_MainMenuLabel</font>
 				<textcolor>ffdadada</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
-				<visible>Container.Content(tvshows)</visible>
+				<visible>Container.Content(tvshows) + !Control.HasFocus(66)</visible>
 				</control>
 			<control type="label">
 				<posx>600</posx>
@@ -280,7 +280,7 @@
 				<shadowcolor>ff000000</shadowcolor>
 				<textcolor>ListTrackF</textcolor>
 				<label>[B]$INFO[ListItem.Genre][/B]</label>
-				<visible>Container.Content(tvshows)</visible>
+				<visible>Container.Content(tvshows) + !Control.HasFocus(66)</visible>
 			</control>
 			<control type="label">
 				<posx>600</posx>
@@ -293,7 +293,7 @@
 				<textcolor>ffdadada</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
 				<label>Unwatched: [B]$INFO[ListItem.Property(UnWatchedEpisodes)][/B]/[B]$INFO[ListItem.Episode][/B]</label>
-				<visible>Container.Content(tvshows)</visible>
+				<visible>Container.Content(tvshows) + !Control.HasFocus(66)</visible>
 			</control>
 		</control>
 		<control type="group">
