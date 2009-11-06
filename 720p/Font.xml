@@ -325,6 +325,12 @@
 			<size>17</size>
 		</font>	
 		<font>
+			<name>Font_OSDBig</name>
+			<filename>alaska_menu.ttf</filename>
+			<size>160</size>
+		</font>
+
+		<font>
 			<name>Font_FileBrowserHeading</name>
 			<filename>alaska_black.ttf</filename>
 			<size>42</size>

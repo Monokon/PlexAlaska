@@ -253,126 +253,143 @@
 				<visible>VideoPlayer.Content(episodes)</visible>
 			</control>
 		</control>
-		<control type="label" id="0">
-			<posx>-320</posx>
-			<posy>280</posy>
-			<width>1920</width>
-			<align>center</align>
-			<aligny>top</aligny>
-			<label>$LOCALIZE[112]</label>
-			<font>Font_MainMenu</font>
-			<textcolor>22ffffff</textcolor>
-			<visible>player.paused</visible>
-		</control>
-		<control type="label" id="0">
-			<posx>-320</posx>
-			<posy>280</posy>
-			<width>1920</width>
-			<align>center</align>
-			<aligny>top</aligny>
-			<label>ffx2</label>
-			<font>Font_MainMenu</font>
-			<textcolor>33ffffff</textcolor>
-			<visible>player.forwarding2x</visible>
-		</control>
-		<control type="label" id="0">
-			<posx>-320</posx>
-			<posy>280</posy>
-			<width>1920</width>
-			<align>center</align>
-			<aligny>top</aligny>
-			<label>ffx4</label>
-			<font>Font_MainMenu</font>
-			<textcolor>33ffffff</textcolor>
-			<visible>player.forwarding4x</visible>
-		</control>
-		<control type="label" id="0">
-			<posx>-320</posx>
-			<posy>280</posy>
-			<width>1920</width>
-			<align>center</align>
-			<aligny>top</aligny>
-			<label>ffx8</label>
-			<font>Font_MainMenu</font>
-			<textcolor>33ffffff</textcolor>
-			<visible>player.forwarding8x</visible>
-		</control>
-		<control type="label" id="0">
-			<posx>-320</posx>
-			<posy>280</posy>
-			<width>1920</width>
-			<align>center</align>
-			<aligny>top</aligny>
-			<label>ffx16</label>
-			<font>Font_MainMenu</font>
-			<textcolor>33ffffff</textcolor>
-			<visible>player.forwarding16x</visible>
-		</control>
-		<control type="label" id="0">
-			<posx>-320</posx>
-			<posy>280</posy>
-			<width>1920</width>
-			<align>center</align>
-			<aligny>top</aligny>
-			<label>ffx32</label>
-			<font>Font_MainMenu</font>
-			<textcolor>33ffffff</textcolor>
-			<visible>player.forwarding32x</visible>
-		</control>
-		<control type="label" id="0">
-			<posx>-320</posx>
-			<posy>280</posy>
-			<width>1920</width>
-			<align>center</align>
-			<aligny>top</aligny>
-			<label>rwx2</label>
-			<font>Font_MainMenu</font>
-			<textcolor>33ffffff</textcolor>
-			<visible>player.rewinding2x</visible>
-		</control>
-		<control type="label" id="0">
-			<posx>-320</posx>
-			<posy>280</posy>
-			<width>1920</width>
-			<align>center</align>
-			<aligny>top</aligny>
-			<label>rwx4</label>
-			<font>Font_MainMenu</font>
-			<textcolor>33ffffff</textcolor>
-			<visible>player.rewinding4x</visible>
-		</control>
-		<control type="label" id="0">
-			<posx>-320</posx>
-			<posy>280</posy>
-			<width>1920</width>
-			<align>center</align>
-			<aligny>top</aligny>
-			<label>rwx8</label>
-			<font>Font_MainMenu</font>
-			<textcolor>33ffffff</textcolor>
-			<visible>player.rewinding8x</visible>
-		</control>
-		<control type="label" id="0">
-			<posx>-320</posx>
-			<posy>280</posy>
-			<width>1920</width>
-			<align>center</align>
-			<aligny>top</aligny>
-			<label>rwx16</label>
-			<font>Font_MainMenu</font>
-			<textcolor>33ffffff</textcolor>
-			<visible>player.rewinding16x</visible>
-		</control>
-		<control type="label" id="0">
-			<posx>-320</posx>
-			<posy>280</posy>
-			<width>1920</width>
-			<align>center</align>
-			<aligny>top</aligny>
-			<label>rwx32</label>
-			<font>Font_MainMenu</font>
-			<textcolor>33ffffff</textcolor>
-			<visible>player.rewinding32x</visible>
+		<control type="group">
+			<animation type="WindowOpen">
+				<effect type="fade" start="0" end="100" time="300" />
+			</animation>
+			<animation type="WindowClose">
+				<effect type="fade" start="100" end="0" time="300" />
+			</animation>
+			<control type="image">
+				<posx>0</posx>
+				<posy>290</posy>
+				<width>1280</width>
+				<height>190</height>
+				<texture>common/black.png</texture>
+				<colordiffuse>11FFFFFF</colordiffuse>
+				<visible>Player.Paused | Player.Forwarding | Player.Rewinding</visible>
+			</control>
+			<control type="label" id="0">
+				<posx>-320</posx>
+				<posy>280</posy>
+				<width>1920</width>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>$LOCALIZE[112]</label>
+				<font>Font_OSDBig</font>
+				<textcolor>33ffffff</textcolor>
+				<visible>player.paused</visible>
+			</control>
+			<control type="label" id="0">
+				<posx>-320</posx>
+				<posy>280</posy>
+				<width>1920</width>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>ffx2</label>
+				<font>Font_OSDBig</font>
+				<textcolor>33ffffff</textcolor>
+				<visible>player.forwarding2x</visible>
+			</control>
+			<control type="label" id="0">
+				<posx>-320</posx>
+				<posy>280</posy>
+				<width>1920</width>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>ffx4</label>
+				<font>Font_OSDBig</font>
+				<textcolor>33ffffff</textcolor>
+				<visible>player.forwarding4x</visible>
+			</control>
+			<control type="label" id="0">
+				<posx>-320</posx>
+				<posy>280</posy>
+				<width>1920</width>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>ffx8</label>
+				<font>Font_OSDBig</font>
+				<textcolor>33ffffff</textcolor>
+				<visible>player.forwarding8x</visible>
+			</control>
+			<control type="label" id="0">
+				<posx>-320</posx>
+				<posy>280</posy>
+				<width>1920</width>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>ffx16</label>
+				<font>Font_OSDBig</font>
+				<textcolor>33ffffff</textcolor>
+				<visible>player.forwarding16x</visible>
+			</control>
+			<control type="label" id="0">
+				<posx>-320</posx>
+				<posy>280</posy>
+				<width>1920</width>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>ffx32</label>
+				<font>Font_OSDBig</font>
+				<textcolor>33ffffff</textcolor>
+				<visible>player.forwarding32x</visible>
+			</control>
+			<control type="label" id="0">
+				<posx>-320</posx>
+				<posy>280</posy>
+				<width>1920</width>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>rwx2</label>
+				<font>Font_OSDBig</font>
+				<textcolor>33ffffff</textcolor>
+				<visible>player.rewinding2x</visible>
+			</control>
+			<control type="label" id="0">
+				<posx>-320</posx>
+				<posy>280</posy>
+				<width>1920</width>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>rwx4</label>
+				<font>Font_OSDBig</font>
+				<textcolor>33ffffff</textcolor>
+				<visible>player.rewinding4x</visible>
+			</control>
+			<control type="label" id="0">
+				<posx>-320</posx>
+				<posy>280</posy>
+				<width>1920</width>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>rwx8</label>
+				<font>Font_OSDBig</font>
+				<textcolor>33ffffff</textcolor>
+				<visible>player.rewinding8x</visible>
+			</control>
+			<control type="label" id="0">
+				<posx>-320</posx>
+				<posy>280</posy>
+				<width>1920</width>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>rwx16</label>
+				<font>Font_OSDBig</font>
+				<textcolor>33ffffff</textcolor>
+				<visible>player.rewinding16x</visible>
+			</control>
+			<control type="label" id="0">
+				<posx>-320</posx>
+				<posy>280</posy>
+				<width>1920</width>
+				<align>center</align>
+				<aligny>top</aligny>
+				<label>rwx32</label>
+				<font>Font_OSDBig</font>
+				<textcolor>33ffffff</textcolor>
+				<visible>player.rewinding32x</visible>
+			</control>
 		</control>
 		<include>Object_DebugGrid</include>
 	</controls>
