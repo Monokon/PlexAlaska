@@ -24,9 +24,6 @@
 				<height>40</height>
 				<width>1280</width>
 				<font>Font_MenuValue</font>
-				<textcolor>MenuValue</textcolor>
-				<focusedcolor>settings_focused</focusedcolor>
-				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>Now Playing</label>
@@ -40,9 +37,6 @@
 				<height>40</height>
 				<width>1280</width>
 				<font>Font_MenuValue</font>
-				<textcolor>MenuValue</textcolor>
-				<focusedcolor>settings_focused</focusedcolor>
-				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>Settings</label>
@@ -54,9 +48,6 @@
 				<height>40</height>
 				<width>1280</width>
 				<font>Font_MenuValue</font>
-				<textcolor>MenuValue</textcolor>
-				<focusedcolor>settings_focused</focusedcolor>
-				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>Filemanager</label>
@@ -69,9 +60,6 @@
 				<height>40</height>
 				<width>1280</width>
 				<font>Font_MenuValue</font>
-				<textcolor>MenuValue</textcolor>
-				<focusedcolor>settings_focused</focusedcolor>
-				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>$LOCALIZE[1036]</label>
@@ -84,9 +72,6 @@
 				<height>40</height>
 				<width>1280</width>
 				<font>Font_MenuValue</font>
-				<textcolor>MenuValue</textcolor>
-				<focusedcolor>settings_focused</focusedcolor>
-				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>Log out</label>
@@ -100,9 +85,6 @@
 				<height>40</height>
 				<width>1280</width>
 				<font>Font_MenuValue</font>
-				<textcolor>MenuValue</textcolor>
-				<focusedcolor>settings_focused</focusedcolor>
-				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>Shutdown OSX</label>
@@ -114,9 +96,6 @@
 				<height>40</height>
 				<width>1280</width>
 				<font>Font_MenuValue</font>
-				<textcolor>MenuValue</textcolor>
-				<focusedcolor>settings_focused</focusedcolor>
-				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>Sleep</label>
@@ -128,9 +107,6 @@
 				<height>40</height>
 				<width>1280</width>
 				<font>Font_MenuValue</font>
-				<textcolor>MenuValue</textcolor>
-				<focusedcolor>settings_focused</focusedcolor>
-				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>Quit Plex</label>
@@ -141,9 +117,6 @@
 				<height>40</height>
 				<width>1280</width>
 				<font>Font_MenuValue</font>
-				<textcolor>MenuValue</textcolor>
-				<focusedcolor>settings_focused</focusedcolor>
-				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
 				<label>RELOAD SKIN</label>
