@@ -267,8 +267,8 @@
 					<animation effect="fade" start="0" end="100" time="1000">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
 					<control type="group">
-						<posx>813</posx>
-						<posy>244</posy>
+						<posx>713</posx>
+						<posy>194</posy>
 						<visible>MusicPlayer.HasNewCoverNext</visible>
 						<animation effect="slide" start="-80,0" time="1000" tween="cubic" easing="inout">Visible</animation>
 						<animation effect="slide" end="-80,0" time="1000" tween="cubic" easing="inout">Hidden</animation>
@@ -284,7 +284,7 @@
 					<control type="group">
 						<description>Album covers</description>
 						<posx>587</posx>
-						<posy>204</posy>
+						<posy>154</posy>
 						<include>NowPlayingCurrentCover</include>
 					</control>
 
@@ -336,7 +336,7 @@
 					<control type="group">
 						<description>Album covers</description>
 						<posx>587</posx>
-						<posy>204</posy>
+						<posy>154</posy>
 						<include>NowPlayingCurrentCover</include>
 					</control>
 	        
@@ -391,8 +391,8 @@
 					<animation effect="fade" start="0" end="100" time="1000">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="1000">Hidden</animation>
 					<control type="group">
-						<posx>429</posx>
-						<posy>244</posy>
+						<posx>329</posx>
+						<posy>194</posy>
 						<visible>MusicPlayer.HasNewCoverNext</visible>
 						<animation effect="slide" start="-80,0" time="1000" tween="cubic" easing="inout">Visible</animation>
 						<animation effect="slide" end="-80,0" time="1000" tween="cubic" easing="inout">Hidden</animation>
@@ -408,7 +408,7 @@
 						<animation effect="fade" start="0" end="100" delay="1000" time="0">Visible</animation>
 						<description>Album covers</description>
 						<posx>203</posx>
-						<posy>204</posy>
+						<posy>154</posy>
 						<include>NowPlayingCurrentCover</include>
 					</control>
 
@@ -463,8 +463,8 @@
 						<animation effect="slide" end="-80,0" time="1000" tween="cubic" easing="inout">Hidden</animation>
 						<animation effect="fade" start="0" end="100" delay="1000" time="0">Visible</animation>
 						<description>Album covers</description>
-						<posx>203</posx>
-						<posy>204</posy>
+						<posx>103</posx>
+						<posy>154</posy>
 						<include>NowPlayingCurrentCover</include>
 					</control>
 

@@ -329,6 +329,21 @@
 			<filename>alaska_menu.ttf</filename>
 			<size>160</size>
 		</font>
+		<font>
+			<name>Font_NPalt_title</name>
+			<filename>alaska_nocaps.ttf</filename>
+			<size>42</size>
+		</font>
+		<font>
+			<name>Font_NPalt_artist</name>
+			<filename>alaska_light_nocaps.ttf</filename>
+			<size>33</size>
+		</font>
+		<font>
+			<name>Font_NPalt_next</name>
+			<filename>alaska_light_nocaps.ttf</filename>
+			<size>25</size>
+		</font>
 
 		<font>
 			<name>Font_FileBrowserHeading</name>
