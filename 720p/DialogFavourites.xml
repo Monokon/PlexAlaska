@@ -57,7 +57,7 @@
 				<control type="label">
 					<posx>30</posx>
 					<posy>15</posy>
-					<width>721</width>
+					<width>700</width>
 					<height>30</height>
 					<textcolor>FavListItem</textcolor>
 					<selectedcolor>FavListItemSelected</selectedcolor>
@@ -79,7 +79,7 @@
 				<control type="label">
 					<posx>30</posx>
 					<posy>16</posy>
-					<width>721</width>
+					<width>700</width>
 					<height>30</height>
 					<textcolor>White</textcolor>
 					<shadowcolor>FM_ListFocusedAccent</shadowcolor>
