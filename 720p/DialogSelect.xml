@@ -1,13 +1,7 @@
-<!--Empty-->
+<!--Alaska-->
 
 <window id="2000">
 	<defaultcontrol always="true">3</defaultcontrol>
-
-	<coordinates>
-		<system>1</system>
-		<posx>0</posx>
-		<posy>0</posy>
-	</coordinates>
 
 	<controls>
 
@@ -17,52 +11,84 @@
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 
-		<control type="list" id="3">
-			<posx>10</posx>
-			<posy>40</posy>
-			<width>340</width>
-			<height>382</height>
-			<onleft>5</onleft>
-			<onright>5</onright>
-			<onup>3</onup>
-			<ondown>3</ondown>
-			<itemlayout height="32">
-				<control type="image">
-					<width>340</width>
-					<height>30</height>
-					<texture>ButtonNF.png</texture>
-				</control>
-				<control type="label">
-					<posx>5</posx>
-					<width>330</width>
-					<height>30</height>
-					<info>ListItem.Label</info>
-					<scroll>false</scroll>
-				</control>
-			</itemlayout>
-			<focusedlayout height="32">
-				<control type="image">
-					<width>340</width>
-					<height>30</height>
-					<texture>ButtonFo.png</texture>
-				</control>
-				<control type="label">
-					<posx>5</posx>
-					<width>330</width>
-					<height>30</height>
-					<textcolor>Grey</textcolor>
-					<info>ListItem.Label</info>
-				</control>
-			</focusedlayout>
+		<control type="image">
+			<description>Panel</description>
+			<posx>240</posx>
+			<posy>72</posy>
+			<width>800</width>
+			<height>544</height>
+			<texture>favorites/favorites_panel.png</texture>
+		</control>
+
+		<control type="image">
+			<posx>270</posx>
+			<posy>514</posy>
+			<width>740</width>
+			<height>2</height>
+			<texture>common/divider.png</texture>
 		</control>
 
 		<control type="label" id="2">
 			<description>Number Of Files</description>
-			<posx>480</posx>
-			<posy>10</posy>
-			<width>100</width>
-			<label>-</label>
+			<posx>990</posx>
+			<posy>516</posy>
+			<width>500</width>
+			<height>60</height>
 			<align>right</align>
+			<aligny>center</aligny>
+			<textcolor>DialogLargeLabel</textcolor>
+			<shadowcolor>DialogLargeLabelAccent</shadowcolor>
+			<label>$LOCALIZE[1036]</label>
+			<font>Font_FavouritesLabel</font>
+		</control>
+
+		<control type="list" id="3">
+			<posx>260</posx>
+			<posy>114</posy>
+			<width>781</width>
+			<height>375</height>
+			<onleft>-</onleft>
+			<onright>-</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+			<pagecontrol>-</pagecontrol>
+			<scrolltime>0</scrolltime>
+			<itemlayout height="40">
+				<control type="label">
+					<posx>30</posx>
+					<posy>15</posy>
+					<width>700</width>
+					<height>30</height>
+					<textcolor>FavListItem</textcolor>
+					<selectedcolor>FavListItemSelected</selectedcolor>
+					<aligny>center</aligny>
+					<font>Font_FavouritesItemLabel</font>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="40">
+				<control type="image">
+					<posx>10</posx>
+					<posy>-2</posy>
+					<width>740</width>
+					<height>66</height>
+					<include condition="!Skin.HasSetting(nighttheme)">Focus_Default</include>
+					<include condition="Skin.HasSetting(nighttheme)">Focus_Dark</include>
+				</control>
+
+				<control type="label">
+					<posx>30</posx>
+					<posy>16</posy>
+					<width>700</width>
+					<height>30</height>
+					<textcolor>White</textcolor>
+					<shadowcolor>FM_ListFocusedAccent</shadowcolor>
+					<selectedcolor>FavListItemFocusedSelected</selectedcolor>
+					<aligny>center</aligny>
+					<font>Font_FavouritesFocusedItemLabel</font>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
 		</control>
 
 		<control type="button" id="5">
@@ -70,8 +96,6 @@
 			<posx>360</posx>
 			<posy>40</posy>
 			<label>$LOCALIZE[368]</label>
-			<texturefocus border="1">ButtonFo.png</texturefocus>
-			<texturenofocus border="1">ButtonNF.png</texturenofocus>
 			<onleft>3</onleft>
 			<onright>3</onright>
 			<onup>3</onup>
