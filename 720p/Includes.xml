@@ -901,7 +901,7 @@
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="mainmenu/home_mask.png">$INFO[Skin.String(theme),,/background.png]</texture>
+			<texture diffuse="mainmenu/mask.png">$INFO[Skin.String(theme),,/background.png]</texture>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
