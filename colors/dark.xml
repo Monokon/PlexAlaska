@@ -83,8 +83,8 @@
 
 	<!-- Dialogs -->
 
-	<color name="DialogLargeLabel">FFFFFFFF</color>
-	<color name="DialogLargeLabelAccent">FFB3B3B3</color>
+	<color name="DialogLargeLabel">CC747474</color>
+	<color name="DialogLargeLabelAccent">CCdadada</color>
 	<color name="DialogLabel">FFFFFFFF</color>
 	<color name="DialogLabelNF">ab474747</color>
 
