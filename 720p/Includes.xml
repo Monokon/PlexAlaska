@@ -512,12 +512,12 @@
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/pictures//</imagepath>
-					<visible>!Skin.HasSetting(osximages) + !Skin.String(CustomTVShowsFolder)</visible>
+					<visible>!Skin.HasSetting(osximages) + !Skin.String(CustomPicturesFolder)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">$INFO[Skin.String(CustomTVShowsFolder)]</imagepath>
-					<visible>!Skin.HasSetting(osximages) + Skin.String(CustomTVShowsFolder)</visible>
+					<imagepath diffuse="mainmenu/homematte.png">$INFO[Skin.String(CustomPicturesFolder)]</imagepath>
+					<visible>!Skin.HasSetting(osximages) + Skin.String(CustomPicturesFolder)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
