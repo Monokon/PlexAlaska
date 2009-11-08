@@ -704,6 +704,15 @@
 				<visible>!Skin.HasSetting(nohomequit)</visible>
 			</control>
 		</control>
+		<control type="image">
+			<include>Animation_CommonFade</include>
+			<width>30</width>
+			<height>15</height>
+			<posx>625</posx>
+			<posy>483</posy>
+			<texture>submenu_arrow.png</texture>
+			<visible>Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(9)</visible>
+		</control>
 		<include>submenu_movies</include>
 		<include>submenu_tvshows</include>
 		<include>submenu_quit</include>
