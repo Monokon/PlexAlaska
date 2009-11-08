@@ -184,7 +184,7 @@
 			<control type="grouplist" id="9002">
 				<visible>Container(9000).Hasfocus(2)</visible>
 				<width>740</width>
-				<height>600</height>
+				<height>400</height>
 				<itemgap>6</itemgap>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
@@ -235,7 +235,7 @@
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
-					<label>Enable OSX overlays for default home menu</label>
+					<label>OSX overlays for default home menu</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(osximages)</onclick>
@@ -307,6 +307,19 @@
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
+					<label>Change option "Quit Plex" to "Sleep"</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<visible>!Skin.HasSetting(nohomequit)</visible>
+					<onclick>Skin.ToggleSetting(sleepsystem)</onclick>
+					<selected>Skin.HasSetting(sleepsystem)</selected>
+				</control>
+				<control type="radiobutton" id="213">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>settings_focused</focusedcolor>
+					<!-- LOC -->
 					<label>Use fanart for "Movies"</label>
 					<align>left</align>
 					<aligny>center</aligny>
@@ -316,18 +329,77 @@
 					<onclick>Skin.SetString(fanartpath,/Users/$INFO[Skin.String(osxusername)]/Library/Application Support/Plex/userdata/Thumbnails/Video/Fanart//)</onclick>
 					<selected>Skin.HasSetting(fanartformovies)</selected>
 				</control>
-				<control type="radiobutton" id="213">
+				<control type="togglebutton" id="214">
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
-					<label>Change option "Quit Plex" to "Sleep"</label>
+					<label>Set Home Music Artwork Folder</label>
+					<altlabel>Reset Home Music Artwork Folder</altlabel>
 					<align>left</align>
 					<aligny>center</aligny>
-					<visible>!Skin.HasSetting(nohomequit)</visible>
-					<onclick>Skin.ToggleSetting(sleepsystem)</onclick>
-					<selected>Skin.HasSetting(sleepsystem)</selected>
+					<onclick>Skin.SetPath(CustomMusicFolder)</onclick>
+					<altclick>Skin.Reset(CustomMusicFolder)</altclick>
+					<usealttexture>Skin.String(CustomMusicFolder)</usealttexture>
+					<texturenofocus>-</texturenofocus>
+					<texturefocus>-</texturefocus>
+					<alttexturenofocus>-</alttexturenofocus>
+					<alttexturefocus>-</alttexturefocus>
+				</control>
+				<control type="togglebutton" id="215">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>settings_focused</focusedcolor>
+					<!-- LOC -->
+					<label>Set Home Movie Artwork Folder</label>
+					<altlabel>Reset Home Movie Artwork Folder</altlabel>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.SetPath(CustomMovieFolder)</onclick>
+					<altclick>Skin.Reset(CustomMovieFolder)</altclick>
+					<usealttexture>Skin.String(CustomMovieFolder)</usealttexture>
+					<texturenofocus>-</texturenofocus>
+					<texturefocus>-</texturefocus>
+					<alttexturenofocus>-</alttexturenofocus>
+					<alttexturefocus>-</alttexturefocus>
+				</control>
+				<control type="togglebutton" id="216">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>settings_focused</focusedcolor>
+					<!-- LOC -->
+					<label>Set Home TV Artwork Folder</label>
+					<altlabel>Reset Home TV Artwork Folder</altlabel>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.SetPath(CustomTVShowsFolder)</onclick>
+					<altclick>Skin.Reset(CustomTVShowsFolder)</altclick>
+					<usealttexture>Skin.String(CustomTVShowsFolder)</usealttexture>
+					<texturenofocus>-</texturenofocus>
+					<texturefocus>-</texturefocus>
+					<alttexturenofocus>-</alttexturenofocus>
+					<alttexturefocus>-</alttexturefocus>
+				</control>
+				<control type="togglebutton" id="217">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>settings_focused</focusedcolor>
+					<!-- LOC -->
+					<label>Set Home Pictures Artwork Folder</label>
+					<altlabel>Reset Home Pictures Artwork Folder</altlabel>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.SetPath(CustomPicturesFolder)</onclick>
+					<altclick>Skin.Reset(CustomPicturesFolder)</altclick>
+					<usealttexture>Skin.String(CustomPicturesFolder)</usealttexture>
+					<texturenofocus>-</texturenofocus>
+					<texturefocus>-</texturefocus>
+					<alttexturenofocus>-</alttexturenofocus>
+					<alttexturefocus>-</alttexturefocus>
 				</control>
 			</control>
 			<control type="grouplist" id="9003">
@@ -594,6 +666,61 @@
 				</control>
 			</control>
 		</control>
+
+		<!-- arrows for long lists -->
+		<control type="group">
+			<include>Animation_CommonFade</include>
+			<control type="image">
+				<width>30</width>
+				<height>15</height>
+				<posx>680</posx>
+				<posy>150</posy>
+				<texture flipy="true">submenu_arrow.png</texture>
+			</control>
+			<control type="image">
+				<width>30</width>
+				<height>15</height>
+				<posx>680</posx>
+				<posy>580</posy>
+				<texture>submenu_arrow.png</texture>
+			</control>
+			<visible>Container(9000).HasFocus(2)</visible>
+		</control>
+
+		<!-- help -->
+		<control type="group">
+			<posy>625</posy>
+			<include>Animation_CommonFade</include>
+			<include>settings_helpbackground</include>
+			<control type="fadelabel">
+				<width>690</width>
+				<posx>380</posx>
+				<posy>17</posy>
+				<font>Font_RSS_Big</font>
+				<textcolor>Black</textcolor>
+				<scroll>true</scroll>
+				<scrollspeed>40</scrollspeed>
+				<label>Only used if option "Fanart for Movies" is disabled</label>
+			</control>
+			<visible>Control.HasFocus(215)</visible>
+		</control>
+		<control type="group">
+			<posy>625</posy>
+			<include>Animation_CommonFade</include>
+			<include>settings_helpbackground</include>
+			<control type="fadelabel">
+				<width>690</width>
+				<posx>380</posx>
+				<posy>17</posy>
+				<font>Font_RSS_Big</font>
+				<textcolor>Black</textcolor>
+				<scroll>true</scroll>
+				<scrollspeed>40</scrollspeed>
+				<label>Only used if option "OSX overlays" is disabled</label>
+			</control>
+			<visible>Control.HasFocus(217)</visible>
+		</control>
+
 		<include>Global_ContextFilter</include>
 		<include>Global_Time</include>
 		<include>Setting_Heading</include>

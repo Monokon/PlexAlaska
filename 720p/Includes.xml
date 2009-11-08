@@ -402,6 +402,12 @@
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/music//</imagepath>
+					<visible>!Skin.String(CustomMusicFolder)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">$INFO[Skin.String(CustomMusicFolder)]</imagepath>
+					<visible>Skin.String(CustomMusicFolder)</visible>
 				</control>
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
@@ -431,7 +437,12 @@
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/movies//</imagepath>
-					<visible>!Skin.HasSetting(fanartformovies)</visible>
+					<visible>!Skin.HasSetting(fanartformovies) + !Skin.String(CustomMovieFolder)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">$INFO[Skin.String(CustomMovieFolder)]</imagepath>
+					<visible>Skin.String(CustomMovieFolder) + !Skin.HasSetting(fanartformovies)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -466,6 +477,12 @@
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/tvshows//</imagepath>
+					<visible>!Skin.String(CustomTVShowsFolder)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">$INFO[Skin.String(CustomTVShowsFolder)]</imagepath>
+					<visible>Skin.String(CustomTVShowsFolder)</visible>
 				</control>
 				<include>Filter_MenuItem</include>
 				<control type="multiimage">
@@ -495,7 +512,12 @@
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
 					<imagepath diffuse="mainmenu/homematte.png">backdrops/pictures//</imagepath>
-					<visible>!Skin.HasSetting(osximages)</visible>
+					<visible>!Skin.HasSetting(osximages) + !Skin.String(CustomTVShowsFolder)</visible>
+				</control>
+				<control type="multiimage">
+					<include>Home_MainMenuIconF</include>
+					<imagepath diffuse="mainmenu/homematte.png">$INFO[Skin.String(CustomTVShowsFolder)]</imagepath>
+					<visible>!Skin.HasSetting(osximages) + Skin.String(CustomTVShowsFolder)</visible>
 				</control>
 				<control type="multiimage">
 					<include>Home_MainMenuIconF</include>
@@ -1696,6 +1718,27 @@
 				<info>System.Date</info>
 				<align>right</align>
 			</control>
+		</control>
+	</include>
+
+	<include name="settings_helpbackground">
+		<control type="image">
+			<width>20</width>
+			<height>60</height>
+			<posx>360</posx>
+			<texture>mainmenu/submenu_left.png</texture>
+		</control>
+		<control type="image">
+			<posx>380</posx>
+			<width>690</width>
+			<height>60</height>
+			<texture>mainmenu/submenu_mid.png</texture>
+		</control>
+		<control type="image">
+			<width>20</width>
+			<height>60</height>
+			<posx>1070</posx>
+			<texture>mainmenu/submenu_right.png</texture>
 		</control>
 	</include>
 
