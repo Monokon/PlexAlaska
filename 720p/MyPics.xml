@@ -28,8 +28,8 @@
 			<colordiffuse>backgroundColor</colordiffuse>
 		</control>
 
-		<include>Viewtype_PictureGrid</include>
 		<include>Viewtype_Files</include>
+		<include>Viewtype_PictureGrid</include>
 
 		<include>Global_ContextFilter</include>		
 
