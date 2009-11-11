@@ -181,7 +181,7 @@
 					</animation>
 				</control>
 			</focusedlayout>
-			<visible>Skin.HasSetting(fixedlist) + !Container.Content(movies)</visible>
+			<visible>Skin.HasSetting(fixedlist) + !Container.Content(movies) + !Container.Content(files)</visible>
 		</control>
 
 		<control type="wraplist" id="55">
@@ -362,7 +362,7 @@
 					</animation>
 				</control>
 			</focusedlayout>
-			<visible>!Skin.HasSetting(fixedlist) | Container.Content(movies)</visible>
+			<visible>!Skin.HasSetting(fixedlist) | Container.Content(movies) | Container.Content(files)</visible>
 		</control>
 		<!--Scrollbar -->
 		<control type="scrollbar" id="62">
