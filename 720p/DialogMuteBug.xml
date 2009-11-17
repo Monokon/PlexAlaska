@@ -23,6 +23,14 @@
 			<width>707</width>
 			<height>183</height>
 			<control type="image">
+				<posx>150</posx>
+				<posy>-2</posy>
+				<width>292</width>
+				<height>74</height>
+				<texture border="37,0,0,0">dialogs/back.png</texture>
+				<visible>Window.IsActive(2005) | Window.IsActive(2006)</visible>
+			</control>
+			<control type="image">
 				<posx>322</posx>
 				<posy>10</posy>
 				<width>50</width>
