@@ -69,12 +69,12 @@
 					<label>NowPlaying</label>
 					<onclick>SetFocus(9006)</onclick>
 				</item>
-				<!--<item id="7">-->
+				<item id="7">
 					<!-- LOC -->
-					<!--<description>Theme</description>
+					<description>Theme</description>
 					<label>Theme</label>
 					<onclick>SetFocus(9007)</onclick>
-				</item>-->
+				</item>
 				<item id="5">
 					<!-- LOC -->
 					<description>Misc.</description>

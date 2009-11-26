@@ -819,20 +819,13 @@
 		<include condition="system.time(20:00,09:00) + Skin.HasSetting(autom_themechange)">nighttheme</include>
 	</include>
 	<include name="daytheme">
-		<onfocus>Skin.Reset(nighttheme)</onfocus>
-		<onfocus>Skin.SetString(oldtheme,$INFO[Skin.String(theme)])</onfocus>
 		<onfocus>Skin.SetString(theme,default)</onfocus>
 	</include>
 	<include name="nighttheme">
-		<onfocus>Skin.SetBool(nighttheme)</onfocus>
-		<onfocus>Skin.SetString(oldtheme,$INFO[Skin.String(theme)])</onfocus>
 		<onfocus>Skin.SetString(theme,dark)</onfocus>
 	</include>
-	<include name="noAutoThemeChange">
-		<onfocus>XBMC.SetFocus(300)</onfocus>
-	</include>
-	<include name="autoThemeChange">
-		<onfocus>XBMC.SetFocus(778)</onfocus>
+	<include name="runThemeScript">
+		<onfocus>RunScript(q:/scripts/PlexAlaska_SwitchTheme/default.py)</onfocus>
 	</include>
 
 	<include name="submenu_dummybuttons">

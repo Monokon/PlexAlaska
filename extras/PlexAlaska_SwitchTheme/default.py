@@ -1,13 +1,14 @@
 import xbmc
 
-oldtheme = xbmc.getInfoLabel("Skin.String(oldtheme)")
+oldtheme = xbmc.executehttpapi("getguisetting(3;lookandfeel.skincolors)") 
 currenttheme = xbmc.getInfoLabel("Skin.String(theme)")
 
 if (currenttheme == "default"):
-	xbmc.executehttpapi("setguisetting(3;lookandfeel.skincolors;SKINDEFAULT)") 
-	if (oldtheme != currenttheme):
+	if (oldtheme != "<li>SKINDEFAULT"):
+		xbmc.executehttpapi("setguisetting(3;lookandfeel.skincolors;SKINDEFAULT)") 
 		xbmc.executebuiltin("xbmc.ReloadSkin()")
-else:
-	xbmc.executehttpapi("setguisetting(3;lookandfeel.skincolors;dark.xml)") 
-	if (oldtheme != currenttheme):
+
+if (currenttheme == "dark"):
+	if (oldtheme != "<li>dark.xml"):
+		xbmc.executehttpapi("setguisetting(3;lookandfeel.skincolors;dark.xml)") 
 		xbmc.executebuiltin("xbmc.ReloadSkin()")
