@@ -30,6 +30,7 @@
 					<width>270</width>
 					<height>152</height>
 					<texture>episodematteNF.png</texture>
+					<colordiffuse>backgroundColor</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>			
 				<control type="image">
@@ -63,14 +64,13 @@
 					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
-					<posx>4</posx>
-					<posy>134</posy>
+					<posx>7</posx>
+					<posy>137</posy>
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>				
 			</itemlayout>
@@ -101,13 +101,13 @@
 					</animation>
 				</control>
 				<control type="image">
-					<posx>8</posx>
-					<posy>130</posy>
+					<posx>11</posx>
+					<posy>133</posy>
 					<width>25</width>
 					<height>25</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 					<include>Animation_PosterInfoSlide</include>					
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="157,192" start="51" end="100" time="600" tween="back" easing="out" />
@@ -118,6 +118,16 @@
 		</control>
 
 		<!--Scrollbar -->
+		<control type="image">
+			<posx>420</posx>
+			<posy>670</posy>
+			<width>460</width>
+			<height>32</height>
+			<visible>Control.IsVisible(52) + Control.HasFocus(64)</visible>
+			<texture border="0,14,0,14">scrollbarh.png</texture>
+			<include>Animation_CommonFade</include>
+			<animation effect="slide" start="0,100" end="0,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(64)">Conditional</animation>
+		</control>		
 		<control type="scrollbar" id="64">
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -126,9 +136,8 @@
 			<width>460</width>
 			<height>32</height>
 			<visible allowhiddenfocus="true">Control.IsVisible(52) + Control.HasFocus(64)</visible>
-			<texturesliderbackground border="0,14,0,14">scrollbarh.png</texturesliderbackground>
-			<include condition="!Skin.HasSetting(nighttheme)">scrollbar_default</include>
-			<include condition="Skin.HasSetting(nighttheme)">scrollbar_dark</include>
+			<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
+			<colordiffuse>ButtonFilterColor</colordiffuse>
 			<onup>52</onup>
 			<ondown>64</ondown>
 			<showonepage>false</showonepage>
@@ -142,7 +151,7 @@
 			<posx>500</posx>
 			<posy>58</posy>
 			<visible>Control.IsVisible(52)</visible>
-			<include>Animation_SlideUpFadeOut</include>
+			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_ZoomedByMenu</include>			
 			<control type="label">
@@ -233,14 +242,12 @@
 				<visible>Container.Content(episodes)</visible>
 			</control>			
 		</control>
+		<control type="group">
+			<visible>Control.IsVisible(52)</visible>
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
+			<include>PosterMediaFlags</include>
+		</control>
 
 	</include>
-
-	<include name="Overlay_Default">	
-		<texture>$INFO[ListItem.Overlay,default/,]</texture>
-	</include>
-	<include name="Overlay_Dark">	
-		<texture>$INFO[ListItem.Overlay,dark/,]</texture>
-	</include>
-
 </includes>

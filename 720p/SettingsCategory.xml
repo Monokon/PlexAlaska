@@ -5,6 +5,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
+		<include>Global_Filter</include>
 
 		<control type="grouplist" id="3">
 			<description>Button Area</description>
@@ -64,21 +65,7 @@
 			<align>left</align>
 			<focusedcolor>settings_focused</focusedcolor>
 			<texturefocus>ButtonFo.png</texturefocus>
-			<include condition="Skin.HasSetting(nighttheme)">arrows_dark</include>
-			<include condition="!Skin.HasSetting(nighttheme)">arrows_default</include>
 		</control>
-		<include name="arrows_default">
-			<textureup>default/ArrowUpNF.png</textureup>
-			<texturedown>default/ArrowDownNF.png</texturedown>
-			<textureupfocus>default/ArrowUpFo.png</textureupfocus>
-			<texturedownfocus>default/ArrowDownFo.png</texturedownfocus>
-		</include>
-		<include name="arrows_dark">
-			<textureup>dark/ArrowUpNF.png</textureup>
-			<texturedown>dark/ArrowDownNF.png</texturedown>
-			<textureupfocus>dark/ArrowUpFo.png</textureupfocus>
-			<texturedownfocus>dark/ArrowDownFo.png</texturedownfocus>
-		</include>
 
 		<control type="button" id="10">
 			<description>Default Category Button</description>

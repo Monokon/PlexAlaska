@@ -72,8 +72,8 @@
 					<posy>-2</posy>
 					<width>740</width>
 					<height>66</height>
-					<include condition="!Skin.HasSetting(nighttheme)">Focus_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Focus_Dark</include>
+					<texture>favorites/focus_bar.png</texture>
+					<colordiffuse>BackgroundFilterColor</colordiffuse>
 				</control>
 
 				<control type="label">

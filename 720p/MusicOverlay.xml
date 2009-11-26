@@ -18,10 +18,10 @@
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 		<control type="group">
-			<visible>[[Player.ShowInfo + Window.IsActive(2006)] | Window.IsActive(120)] | ![Window.IsActive(2006) | Window.IsActive(3)]</visible>
+			<visible>[[[Player.ShowInfo | Player.Paused] + Window.IsActive(2006)] | Window.IsActive(120)] | ![Window.IsActive(2006) | Window.IsActive(3)]</visible>
 			<posx>30</posx>
 			<posy>492</posy>
-			<animation effect="slide" start="0,0" end="0,30" time="200" condition="!system.getbool(lookandfeel.enablerssfeeds) | Skin.HasSetting(RSS_only_on_home) + !Window.IsActive(home) + !Window.IsVisible(2006)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,30" time="600" condition="[!system.getbool(lookandfeel.enablerssfeeds) | Skin.HasSetting(RSS_only_on_home) + !Window.IsActive(home)] + !Window.IsVisible(2006)">Conditional</animation>
 			<animation type="Visible">
 				<effect type="slide" start="-300,0" end="0,0" time="600" tween="cubic" easing="out" />
 				<effect type="fade" start="0" end="100" time="600" />
@@ -31,12 +31,24 @@
 				<effect type="fade" start="100" end="0" time="600" />
 			</animation>
 			<control type="image">
+				<posx>-3</posx>
+				<posy>-3</posy>
+				<width>174</width>
+				<height>174</height>
+				<texture>osd/cdcover_mask.png</texture>
+				<bordersize>8</bordersize>
+				<aspectratio>scale</aspectratio>
+				<animation type="Conditional" condition="Window.IsActive(2006) | Window.IsActive(120)">
+					<effect type="zoom" center="35,180" start="100" end="155" time="400" tween="cubic" easing="out" />
+					<effect type="slide" start="0,0" end="12,5" time="400" tween="cubic" easing="out" />
+				</animation>
+			</control>
+			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>168</width>
 				<height>168</height>
-				<texture>$INFO[MusicPlayer.Cover]</texture>
-				<bordertexture border="8">common/thumb_border.png</bordertexture>
+				<texture diffuse="osd/cdcover_mask.png">$INFO[MusicPlayer.Cover]</texture>
 				<bordersize>8</bordersize>
 				<aspectratio>scale</aspectratio>
 				<animation type="Conditional" condition="Window.IsActive(2006) | Window.IsActive(120)">
@@ -54,6 +66,7 @@
 				<textcolor>NowPlayingArtist</textcolor>
 				<animation effect="fade" start="0" end="100" time="400" delay="400">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<animation effect="slide" start="0,0" end="0,-40" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 			</control>
 			<control type="label">
 				<visible>!Window.IsActive(2006)</visible>
@@ -65,6 +78,7 @@
 				<textcolor>NowPlayingArtist</textcolor>
 				<animation effect="fade" start="0" end="100" time="400" delay="400">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<animation effect="slide" start="0,0" end="0,-40" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 			</control>
 			<control type="label">
 				<visible>!Window.IsActive(2006)</visible>
@@ -76,6 +90,7 @@
 				<textcolor>NowPlayingTrack</textcolor>
 				<animation effect="fade" start="0" end="100" time="400" delay="400">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<animation effect="slide" start="0,0" end="0,-40" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 			</control>
 		</control>
 		<include>Object_DebugGrid</include>

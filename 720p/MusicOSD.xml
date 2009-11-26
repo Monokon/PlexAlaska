@@ -31,7 +31,8 @@
 			</animation>
 			<!--First Button Group-->
 			<control type="grouplist" id="2001">
-				<visible allowhiddenfocus="true">Controlgroup(2001).HasFocus</visible><animation effect="slide" start="0,0" end="-110,0" time="0" condition="LastFM.RadioPlaying">Conditional</animation>
+				<visible allowhiddenfocus="true">Controlgroup(2001).HasFocus</visible>
+				<animation effect="slide" start="0,0" end="-110,0" time="0" condition="LastFM.RadioPlaying">Conditional</animation>
 				<include>Animation_CommonFade</include>
 				<posx>965</posx>
 				<posy>25</posy>
@@ -76,13 +77,18 @@
 					<texturenofocus border="1">osd/button_rew_nf.png</texturenofocus>
 					<onclick>xbmc.playercontrol(rewind)</onclick>
 				</control>
-				<control type="button" id="4">
+				<control type="togglebutton" id="4">
 					<description>Play</description>
 					<height>75</height>
 					<width>75</width>
-					<texturefocus border="1">osd/button_play_fo.png</texturefocus>
-					<texturenofocus border="1">osd/button_play_nf.png</texturenofocus>
-					<onclick>xbmc.playercontrol(play)</onclick>
+					<texturefocus border="1">osd/button_pause_fo.png</texturefocus>
+					<texturenofocus border="1">osd/button_pause_nf.png</texturenofocus>
+					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+					<alttexturefocus border="1">osd/button_play_fo.png</alttexturefocus>
+					<alttexturenofocus border="1">osd/button_play_nf.png</alttexturenofocus>
+					<disabledcolor>-</disabledcolor>
+					<colordiffuse>-</colordiffuse>
+					<onclick>PlayerControl(play)</onclick>
 				</control>
 				<control type="button" id="5">
 					<description>Stop</description>

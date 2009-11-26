@@ -32,7 +32,7 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>Font_Settings</font>
-		<textcolor>Grey</textcolor>
+		<textcolor>buttonNF</textcolor>
 		<focusedcolor>settings_focused</focusedcolor>
 		<selectedcolor>settings_focused</selectedcolor>
 		<disabledcolor>Red</disabledcolor>
@@ -54,21 +54,12 @@
 		<focusedcolor>settings_focused</focusedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<pulseonselect>false</pulseonselect>
-		<include condition="Skin.HasSetting(nighttheme)">arrows1_dark</include>
-		<include condition="!Skin.HasSetting(nighttheme)">arrows1_default</include>
+	    <texturenofocus>arrowupnf.png</texturenofocus>
+		<texturefocus>arrowupfo.png</texturefocus>
+		<alttexturenofocus>arrowdownnf.png</alttexturenofocus>
+		<alttexturefocus>arrowdownfo.png</alttexturefocus>
+		<colordiffuse>ButtonFilterColor</colordiffuse>
 	</default>
-	<include name="arrows1_default">
-	    <texturenofocus>default/arrowupnf.png</texturenofocus>
-		<texturefocus>default/arrowupfo.png</texturefocus>
-		<alttexturenofocus>default/arrowdownnf.png</alttexturenofocus>
-		<alttexturefocus>default/arrowdownfo.png</alttexturefocus>
-	</include>
-	<include name="arrows1_dark">
-	    <texturenofocus>dark/arrowupnf.png</texturenofocus>
-		<texturefocus>dark/arrowupfo.png</texturefocus>
-		<alttexturenofocus>dark/arrowdownnf.png</alttexturenofocus>
-		<alttexturefocus>dark/arrowdownfo.png</alttexturefocus>
-	</include>
 
 	<default type="radiobutton">
 		<posx>0</posx>
@@ -84,19 +75,13 @@
 		<disabledcolor>Red</disabledcolor>
 		<texturenofocus>-</texturenofocus>
 		<texturefocus>ButtonFo.png</texturefocus>
-		<include condition="Skin.HasSetting(nighttheme)">radio_dark</include>
-		<include condition="!Skin.HasSetting(nighttheme)">radio_default</include>
+		<textureradiofocus>settings/button_radioF.png</textureradiofocus>
 		<textureradionofocus>settings/button_radioNF.png</textureradionofocus>
+		<colordiffuse>ButtonFilterColor</colordiffuse>
 		<radioheight>20</radioheight>
 		<radiowidth>20</radiowidth>
 		<pulseonselect>false</pulseonselect>
 	</default>
-	<include name="radio_default">
-		<textureradiofocus>settings/default/button_radioF.png</textureradiofocus>
-	</include>
-	<include name="radio_dark">
-		<textureradiofocus>settings/dark/button_radioF.png</textureradiofocus>
-	</include>
 
 	<default type="spincontrolex">
 		<posx>0</posx>
@@ -109,8 +94,11 @@
 		<font>Font_Settings</font>
 		<texturenofocus>ButtonNF.png</texturenofocus>
 		<texturefocus>ButtonFo.png</texturefocus>
-		<include condition="Skin.HasSetting(nighttheme)">arrows2_dark</include>
-		<include condition="!Skin.HasSetting(nighttheme)">arrows2_default</include>
+		<textureup>ArrowUpNF.png</textureup>
+		<texturedown>ArrowDownNF.png</texturedown>
+		<textureupfocus>ArrowUpFo.png</textureupfocus>
+		<texturedownfocus>ArrowDownFo.png</texturedownfocus>
+		<colordiffuse>ButtonFilterColor</colordiffuse>
 		<textcolor>Grey</textcolor>
 		<focusedcolor>settings_focused</focusedcolor>
 		<selectedcolor>settings_focused</selectedcolor>
@@ -120,26 +108,12 @@
 		<reverse>yes</reverse>
 		<pulseonselect>false</pulseonselect>
 	</default>
-	<include name="arrows2_default">
-		<textureup>default/ArrowUpNF.png</textureup>
-		<texturedown>default/ArrowDownNF.png</texturedown>
-		<textureupfocus>default/ArrowUpFo.png</textureupfocus>
-		<texturedownfocus>default/ArrowDownFo.png</texturedownfocus>
-	</include>
-	<include name="arrows2_dark">
-		<textureup>dark/ArrowUpNF.png</textureup>
-		<texturedown>dark/ArrowDownNF.png</texturedown>
-		<textureupfocus>dark/ArrowUpFo.png</textureupfocus>
-		<texturedownfocus>dark/ArrowDownFo.png</texturedownfocus>
-	</include>
 
 	<default type="spincontrol">
 		<posx>0</posx>
 		<posy>0</posy>
 		<height>15</height>
 		<width>15</width>
-		<include condition="Skin.HasSetting(nighttheme)">arrows2_dark</include>
-		<include condition="!Skin.HasSetting(nighttheme)">arrows2_default</include>
 		<font>Font_Settings</font>
 		<textcolor>Grey</textcolor>
 		<focusedcolor>settings_focused</focusedcolor>
@@ -162,8 +136,8 @@
 		<sliderheight>15</sliderheight>
 		<texturesliderbar>OSDSliderBack.png</texturesliderbar>
 		<textureslidernib>OSDSliderNibNF.png</textureslidernib>
-		<include condition="Skin.HasSetting(nighttheme)">sliderex_dark</include>
-		<include condition="!Skin.HasSetting(nighttheme)">sliderex_default</include>
+		<textureslidernibfocus>osd/osdslidernibfo.png</textureslidernibfocus>
+		<colordiffuse>ButtonFilterColor</colordiffuse>
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>Font_Settings</font>
@@ -172,12 +146,6 @@
 		<selectedcolor>settings_focused</selectedcolor>
 		<disabledcolor>Red</disabledcolor>
 	</default>
-	<include name="sliderex_default">
-		<textureslidernibfocus>default/osdslidernibfo.png</textureslidernibfocus>
-	</include>
-	<include name="sliderex_dark">
-		<textureslidernibfocus>dark/osdslidernibfo.png</textureslidernibfocus>
-	</include>
 
 	<default type="slider">
 		<posx>0</posx>

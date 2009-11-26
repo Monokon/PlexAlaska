@@ -5,6 +5,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
+		<include>Global_Filter</include>
 		<control type="label">
 			<include>WindowID</include>
 			<label>MyWeather.xml</label>

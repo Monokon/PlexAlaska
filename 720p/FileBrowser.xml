@@ -71,20 +71,21 @@
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="list/list_mask_1.png">$INFO[Skin.String(theme),,/background.png]</texture>
+			<texture diffuse="list/list_mask_1.png">common/white.png</texture>
+			<colordiffuse>backgroundColor</colordiffuse>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture diffuse="list/list_mask_1.png">backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
+			<colordiffuse>BackgroundFilterColor</colordiffuse>
 		</control>
 		<control type="image">
 			<posx>0</posx>
 			<posy>290</posy>
 			<width>1680</width>
 			<height>100</height>
-			<include condition="!Skin.HasSetting(nighttheme)">focusbackground_default</include>
-			<include condition="Skin.HasSetting(nighttheme)">focusbackground_dark</include>
+			<texture>common/white.png</texture>
+			<colordiffuse>FocusLinesBackground</colordiffuse>
 		</control>
 		<control type="image">
 			<posx>0</posx>

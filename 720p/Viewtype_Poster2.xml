@@ -27,8 +27,8 @@
 					<posy>110</posy>
 					<width>236</width>
 					<height>345</height>
-					<include condition="!Skin.HasSetting(nighttheme)">posterNF2_default</include>
-					<include condition="Skin.HasSetting(nighttheme)">posterNF2_dark</include>
+					<texture>postermatteNF2.png</texture>
+					<colordiffuse>backgroundColor</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
@@ -36,7 +36,7 @@
 					<posy>110</posy>
 					<width>236</width>
 					<height>345</height>
-					<texture background="true" diffuse="default/postermatteNF2.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" diffuse="postermatteNF2.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
 					<colordiffuse>50FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -69,7 +69,7 @@
 					<width>256</width>
 					<height>365</height>
 					<texture>PosterglowNF.png</texture>
-					<colordiffuse>backgroundColor</colordiffuse>
+					<colordiffuse>BackgroundFilterColor</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
@@ -102,9 +102,8 @@
 					<width>25</width>
 					<height>25</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
-					<colordiffuse>FFFFFFFF</colordiffuse>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 			</itemlayout>
@@ -114,8 +113,8 @@
 					<posy>36</posy>
 					<width>375</width>
 					<height>548</height>
-					<include condition="!Skin.HasSetting(nighttheme)">posterNF2_default</include>
-					<include condition="Skin.HasSetting(nighttheme)">posterNF2_dark</include>
+					<texture>postermatteNF2.png</texture>
+					<colordiffuse>backgroundColor</colordiffuse>
 					<fadetime>200</fadetime>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_PosterInfoSlide2</include>
@@ -184,7 +183,7 @@
 					<width>407</width>
 					<height>580</height>
 					<texture>Posterglow.png</texture>
-					<colordiffuse>backgroundColor</colordiffuse>
+					<colordiffuse>BackgroundFilterColor</colordiffuse>
 					<include>Animation_PosterInfoSlide2</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
@@ -193,12 +192,12 @@
 				</control>
 				<control type="image">
 					<posx>32</posx>
-					<posy>50</posy>
-					<width>50</width>
+					<posy>40</posy>
+					<width>40</width>
 					<height>50</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 					<include>Animation_PosterInfoSlide2</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
@@ -233,8 +232,8 @@
 					<posy>110</posy>
 					<width>236</width>
 					<height>345</height>
-					<include condition="!Skin.HasSetting(nighttheme)">posterNF2_default</include>
-					<include condition="Skin.HasSetting(nighttheme)">posterNF2_dark</include>
+					<texture>postermatteNF2.png</texture>
+					<colordiffuse>backgroundColor</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
@@ -242,7 +241,7 @@
 					<posy>110</posy>
 					<width>236</width>
 					<height>345</height>
-					<texture background="true" diffuse="default/postermatteNF2.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" diffuse="postermatteNF2.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
 					<colordiffuse>50FFFFFF</colordiffuse>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -275,7 +274,7 @@
 					<width>256</width>
 					<height>365</height>
 					<texture>PosterglowNF.png</texture>
-					<colordiffuse>backgroundColor</colordiffuse>
+					<colordiffuse>BackgroundFilterColor</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 				<control type="image">
@@ -308,9 +307,8 @@
 					<width>25</width>
 					<height>25</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
-					<colordiffuse>FFFFFFFF</colordiffuse>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>
 			</itemlayout>
@@ -320,8 +318,8 @@
 					<posy>40</posy>
 					<width>367</width>
 					<height>540</height>
-					<include condition="!Skin.HasSetting(nighttheme)">posterNF2_default</include>
-					<include condition="Skin.HasSetting(nighttheme)">posterNF2_dark</include>
+					<texture>postermatteNF2.png</texture>
+					<colordiffuse>backgroundColor</colordiffuse>
 					<fadetime>200</fadetime>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_PosterInfoSlide2</include>
@@ -390,7 +388,7 @@
 					<width>407</width>
 					<height>580</height>
 					<texture>Posterglow.png</texture>
-					<colordiffuse>backgroundColor</colordiffuse>
+					<colordiffuse>BackgroundFilterColor</colordiffuse>
 					<include>Animation_PosterInfoSlide2</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
@@ -400,11 +398,11 @@
 				<control type="image">
 					<posx>32</posx>
 					<posy>50</posy>
-					<width>50</width>
-					<height>50</height>
+					<width>40</width>
+					<height>40</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 					<include>Animation_PosterInfoSlide2</include>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
@@ -415,6 +413,16 @@
 			<visible>!Skin.HasSetting(fixedlist) | Container.Content(movies)</visible>
 		</control>
 		<!--Scrollbar -->
+		<control type="image">
+			<posx>420</posx>
+			<posy>670</posy>
+			<width>460</width>
+			<height>32</height>
+			<visible>Control.IsVisible(58) + Control.HasFocus(67)</visible>
+			<texture border="0,14,0,14">scrollbarh.png</texture>
+			<include>Animation_CommonFade</include>
+			<animation effect="slide" start="0,100" end="0,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(67)">Conditional</animation>
+		</control>		
 		<control type="scrollbar" id="67">
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -423,9 +431,8 @@
 			<width>460</width>
 			<height>32</height>
 			<visible allowhiddenfocus="true">Control.IsVisible(58) + Control.HasFocus(67)</visible>
-			<texturesliderbackground border="0,14,0,14">scrollbarh.png</texturesliderbackground>
-			<include condition="!Skin.HasSetting(nighttheme)">scrollbar_default</include>
-			<include condition="Skin.HasSetting(nighttheme)">scrollbar_dark</include>
+			<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
+			<colordiffuse>ButtonFilterColor</colordiffuse>
 			<onup>58</onup>
 			<ondown>67</ondown>
 			<showonepage>false</showonepage>
@@ -438,7 +445,7 @@
 			<visible>Control.IsVisible(58)</visible>
 			<posx>840</posx>
 			<posy>525</posy>
-			<include>Animation_SlideUpFadeOut</include>
+			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_ZoomedByMenu</include>
 			<control type="fadelabel">
@@ -591,7 +598,7 @@
 			<visible>Control.IsVisible(54)</visible>
 			<posx>800</posx>
 			<posy>360</posy>
-			<include>Animation_SlideUpFadeOut</include>
+			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_ZoomedByMenu</include>
 			<!-- Artist -->
@@ -725,12 +732,4 @@
 			</control>
 		</control>
 	</include>
-
-	<include name="Overlay_Default">	
-		<texture>$INFO[ListItem.Overlay,default/,]</texture>
-	</include>
-	<include name="Overlay_Dark">	
-		<texture>$INFO[ListItem.Overlay,dark/,]</texture>
-	</include>
-
 </includes>

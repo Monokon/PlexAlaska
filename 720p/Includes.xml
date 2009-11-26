@@ -18,7 +18,9 @@
 	<include file="Includes_Backgrounds.xml" />
 	<include file="Includes_Filemanager.xml" />
 	<include file="Includes_Objects.xml" />
+	<include file="Includes_Home_1.xml" />
 	<include file="PlexIncludes.xml" />
+	<include file="Appstore_Submenus.xml" />
 	<!-- Debug objects -->
 	<include name="Object_DebugGrid">
 		<control type="image">
@@ -51,19 +53,16 @@
 	<!-- Global objects -->
 	<include name="Global_Background">
 		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture>$INFO[Skin.String(theme),,/background.png]</texture>
-		</control>
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture>backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
+		<include>Dimensions_Fullscreen</include>
+		<texture>common/white.png</texture>
+		<colordiffuse>backgroundColor</colordiffuse>
 		</control>
 	</include>
 	<include name="Global_Filter">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture>$INFO[Skin.String(theme),,/background.png]</texture>
+			<texture>common/white.png</texture>
+			<colordiffuse>backgroundColor</colordiffuse>
  			<animation effect="fade" start="100" end="90" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + !Skin.HasSetting(increaseFanartVisibility)]">Conditional</animation>
 			<animation effect="fade" start="100" end="80" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility20)]">Conditional</animation>
 			<animation effect="fade" start="100" end="70" time="400" condition="[[!IsEmpty(ListItem.Property(Fanart_Image)) | !IsEmpty(Fanart.Image) | Window.IsVisible(50)] + !Window.Next(Home) + Skin.HasSetting(increaseFanartVisibility) + Skin.HasSetting(increaseFanartVisibility30)]">Conditional</animation>
@@ -73,7 +72,7 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
+			<colordiffuse>BackgroundFilterColor</colordiffuse>
 		</control>
 	</include>
 	<include name="Global_ContextFilter">
@@ -83,13 +82,13 @@
 			<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
-				<texture>$INFO[Skin.String(theme),,/background.png]</texture>
-				<colordiffuse>f1FFFFFF</colordiffuse>
+				<texture>common/white.png</texture>
+				<colordiffuse>backgroundColor</colordiffuse>
 			</control>
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
 				<texture>backdrops/backgroundcolordiffuse.png</texture>
-				<colordiffuse>backgroundColor</colordiffuse>
+				<colordiffuse>BackgroundFilterColor</colordiffuse>
 			</control>
 		</control>
 	</include>
@@ -105,7 +104,7 @@
 				<info>System.Time</info>
 				<align>right</align>
 				<animation effect="slide" start="0,0" end="-100,0" time="0" condition="Skin.HasSetting(ShowGlobalTemp)">Conditional</animation>
-				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(133) + Window.IsVisible(112)">Conditional</animation>
+				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="[Window.IsVisible(104) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(113) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(112) + [Window.IsVisible(101) | Window.IsVisible(133)]] | [[Window.IsVisible(101) + Window.IsVisible(133)]]">Conditional</animation>
 			</control>
 			<control type="label">
 				<posy>40</posy>
@@ -114,7 +113,7 @@
 				<textcolor>Date</textcolor>
 				<info>System.Date</info>
 				<align>right</align>
-				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(133) + Window.IsVisible(112)">Conditional</animation>
+				<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="[Window.IsVisible(104) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(113) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(112) + [Window.IsVisible(101) | Window.IsVisible(133)]] | [[Window.IsVisible(101) + Window.IsVisible(133)]]">Conditional</animation>
 			</control>
 		</control>
 		<control type="group">
@@ -129,7 +128,7 @@
 				<visible effect="fade" time="250">system.hasnetwork</visible>
 			</control>
 			<visible>Skin.HasSetting(ShowGlobalTemp)</visible>
-			<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(133) + Window.IsVisible(112)">Conditional</animation>
+			<animation effect="slide" end="400,0" time="400" easing="inout" tween="cubic" condition="[Window.IsVisible(104) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(113) + [Window.IsVisible(101) | Window.IsVisible(112) | Window.IsVisible(133)]] | [Window.IsVisible(112) + [Window.IsVisible(101) | Window.IsVisible(133)]] | [[Window.IsVisible(101) + Window.IsVisible(133)]]">Conditional</animation>
 		</control>
 	</include>
 
@@ -206,7 +205,13 @@
 				<description>Music</description>
 				<label>2</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>[[Window.IsActive(501) | Window.IsActive(502)] + !Container.Content(songs) + !Container.Content(albums)] + !Window.IsActive(134)</visible>
+				<visible>[[Window.IsActive(501) | Window.IsActive(502)] + !Container.Content(songs) + !Container.Content(albums)] + !Window.IsActive(134) + !Control.IsVisible(50)</visible>
+			</control>
+			<control type="label">
+				<description>Music</description>
+				<label>$LOCALIZE[2]: $INFO[ListItem.Label]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>[[Window.IsActive(501) | Window.IsActive(502)] + !Container.Content(songs) + !Container.Content(albums)] + !Window.IsActive(134) + Control.IsVisible(50)</visible>
 			</control>
 			<control type="label">
 				<description>Music</description>
@@ -296,7 +301,8 @@
 			<posy>0</posy>
 			<width>1290</width>
 			<height>165</height>
-			<texture>$INFO[Skin.String(theme),,/background.png]</texture>
+			<texture>common/white.png</texture>
+			<colordiffuse>backgroundColor</colordiffuse>
 			<aspectratio aligny="bottom">scale</aspectratio>
 			<animation effect="slide" start="0,0" end="0,82" time="0" condition="Window.IsVisible(115)">Conditional</animation>
 		</control>
@@ -306,418 +312,12 @@
 			<width>1290</width>
 			<height>165</height>
 			<texture>backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
+			<colordiffuse>BackgroundFilterColor</colordiffuse>
 			<aspectratio aligny="bottom">scale</aspectratio>
 			<animation effect="slide" start="0,0" end="0,82" time="0" condition="Window.IsVisible(115)">Conditional</animation>
 		</control>
 	</include>
 	<!-- Home -->
-	<include name="Home_MenuImage">
-		<control type="wraplist" id="300">
-			<posx>0</posx>
-			<posy>0</posy>
-			<height>2</height>
-			<ondown>SetFocus(351)</ondown>
-			<width>8</width>
-			<viewtype>list</viewtype>
-			<scrolltime>0</scrolltime>
-			<orientation>horizontal</orientation>
-			<focusposition>3</focusposition>
-			<itemlayout width="2" height="2">
-			</itemlayout>
-			<focusedlayout width="2" height="2">
-			</focusedlayout>
-			<include>Home_MenuContent</include>
-		</control>
-		<control type="group">
-			<posx>-600</posx>
-			<posy>170</posy>
-			<include>Animation_HomeSlide</include>
-			<include>Animation_ZoomOutZoomIn</include>
-			<include>Animation_ZoomedByMenu</include>
-			<control type="group">
-				<description>PROGRAMS</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(1)">
-					<effect type="zoom" center="185,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/appstore//</imagepath>
-				</control>
-				<include>Filter_MenuItem</include>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath>backdrops/osx/appstore//</imagepath>
-					<visible>Skin.HasSetting(osximages)</visible>
-				</control>				
-				<include>Home_MainMenuFrame</include>
-				<control type="label">
-					<include>Home_MainMenuLabel</include>
-<!-- LOC -->		<label>Appstore</label>
-				</control>
-				<include>Home_MainMenuShade</include>
-				<visible>!Skin.HasSetting(noappstore)</visible>
-			</control>
-
-			<control type="group">
-				<description>Video</description>
-				<posx>350</posx>
-				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(2)">
-					<effect type="zoom" center="535,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/videos//</imagepath>
-					<visible>!Skin.HasSetting(osximages)</visible>
-				</control>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/videos//</imagepath>
-					<visible>Skin.HasSetting(osximages)</visible>
-				</control>
-				<include>Home_MainMenuFrame</include>
-				<control type="label">
-					<include>Home_MainMenuLabel</include>
-					<label>3</label>
-				</control>
-				<include>Filter_MenuItem</include>
-				<include>Home_MainMenuShade</include>
-				<visible>!Skin.HasSetting(novideos)</visible>
-			</control>
-
-			<control type="group">
-				<description>Music</description>
-				<include condition="Skin.HasSetting(novideos)">pos350</include>
-				<include condition="!Skin.HasSetting(novideos)">pos700</include>
-				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(3) + !Skin.HasSetting(novideos)">
-					<effect type="zoom" center="885,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(3) + Skin.HasSetting(novideos)">
-					<effect type="zoom" center="535,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/music//</imagepath>
-					<visible>!Skin.String(CustomMusicFolder)</visible>
-				</control>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">$INFO[Skin.String(CustomMusicFolder)]</imagepath>
-					<visible>Skin.String(CustomMusicFolder)</visible>
-				</control>
-				<include>Filter_MenuItem</include>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath>backdrops/osx/music//</imagepath>
-					<visible>Skin.HasSetting(osximages)</visible>
-				</control>
-				<include>Home_MainMenuFrame</include>
-				<control type="label">
-					<include>Home_MainMenuLabel</include>
-					<label>2</label>
-				</control>
-				<include>Home_MainMenuShade</include>
-			</control>
-
-			<control type="group">
-				<description>Movies</description>
-				<include condition="Skin.HasSetting(novideos)">pos700</include>
-				<include condition="!Skin.HasSetting(novideos)">pos1050</include>
-				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(4) + !Skin.HasSetting(novideos)">
-					<effect type="zoom" center="1235,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(4) + Skin.HasSetting(novideos)">
-					<effect type="zoom" center="885,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/movies//</imagepath>
-					<visible>!Skin.HasSetting(fanartformovies) + !Skin.String(CustomMovieFolder)</visible>
-				</control>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">$INFO[Skin.String(CustomMovieFolder)]</imagepath>
-					<visible>Skin.String(CustomMovieFolder) + !Skin.HasSetting(fanartformovies)</visible>
-				</control>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">$INFO[Skin.String(fanartpath)]</imagepath>
-					<visible>Skin.HasSetting(fanartformovies)</visible>
-				</control>
-				<include>Filter_MenuItem</include>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath>backdrops/osx/movies//</imagepath>
-					<visible>Skin.HasSetting(osximages)</visible>
-				</control>
-				<include>Home_MainMenuFrame</include>
-				<control type="label">
-					<include>Home_MainMenuLabel</include>
-					<label>342</label>
-				</control>
-				<include>Home_MainMenuShade</include>
-			</control>
-
-			<control type="group">
-				<description>Tv Shows</description>
-				<include condition="Skin.HasSetting(novideos)">pos1050</include>
-				<include condition="!Skin.HasSetting(novideos)">pos1400</include>
-				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(5) + !Skin.HasSetting(novideos)">
-					<effect type="zoom" center="1585,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(5) + Skin.HasSetting(novideos)">
-					<effect type="zoom" center="1235,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/tvshows//</imagepath>
-					<visible>!Skin.String(CustomTVShowsFolder)</visible>
-				</control>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">$INFO[Skin.String(CustomTVShowsFolder)]</imagepath>
-					<visible>Skin.String(CustomTVShowsFolder)</visible>
-				</control>
-				<include>Filter_MenuItem</include>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath>backdrops/osx/tvshows//</imagepath>
-					<visible>Skin.HasSetting(osximages)</visible>
-				</control>
-				<include>Home_MainMenuFrame</include>
-				<control type="label">
-					<include>Home_MainMenuLabel</include>
-					<label>20343</label>
-				</control>
-				<include>Home_MainMenuShade</include>
-			</control>
-
-			<control type="group">
-				<description>Picture</description>
-				<include condition="Skin.HasSetting(novideos)">pos1400</include>
-				<include condition="!Skin.HasSetting(novideos)">pos1750</include>
-				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(6) + !Skin.HasSetting(novideos)">
-					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(6) + Skin.HasSetting(novideos)">
-					<effect type="zoom" center="1585,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/pictures//</imagepath>
-					<visible>!Skin.HasSetting(osximages) + !Skin.String(CustomPicturesFolder)</visible>
-				</control>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">$INFO[Skin.String(CustomPicturesFolder)]</imagepath>
-					<visible>!Skin.HasSetting(osximages) + Skin.String(CustomPicturesFolder)</visible>
-				</control>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/osx/pictures//</imagepath>
-					<visible>Skin.HasSetting(osximages)</visible>
-				</control>
-				<include>Filter_MenuItem</include>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath>backdrops/osx/pictures/menuitem//</imagepath>
-					<visible>Skin.HasSetting(osximages)</visible>
-				</control>
-				<include>Home_MainMenuFrame</include>
-				<control type="label">
-					<include>Home_MainMenuLabel</include>
-					<label>1</label>
-				</control>
-				<include>Home_MainMenuShade</include>
-				<visible>!Skin.HasSetting(nopictures)</visible>
-			</control>
-
-			<control type="group">
-				<description>Weather</description>
-				<include condition="Skin.HasSetting(novideos) + Skin.HasSetting(nopictures)">pos1400</include>
-				<include condition="Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures)">pos1750</include>
-				<include condition="!Skin.HasSetting(novideos) + Skin.HasSetting(nopictures)">pos1750</include>
-				<include condition="!Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures)">pos2100</include>
-				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(7) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures)">
-					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(7) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures)">
-					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(7) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures)">
-					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(7) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures)">
-					<effect type="zoom" center="1585,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/weather//</imagepath>
-					<visible>!Skin.HasSetting(homeweather)</visible>
-				</control>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">mainmenu/weather/$INFO[Weather.FanartCode]/</imagepath>
-					<visible>Skin.HasSetting(homeweather)</visible>
-				</control>
-				<control type="group">
-					<include>Filter_MenuItem</include>
-					<control type="multiimage">
-						<include>Home_MainMenuIconF</include>
-						<imagepath>backdrops/osx/weather//</imagepath>
-					</control>
-					<control type="label">
-						<posx>349</posx>
-						<posy>184</posy>
-						<angle>13</angle>
-						<width>128</width>
-						<font>Font_TemperatureOverlay</font>
-						<textcolor>White</textcolor>
-						<info>Weather.Temperature</info>
-						<align>right</align>
-						<visible effect="fade" time="250">system.hasnetwork</visible>
-					</control>
-					<visible>Skin.HasSetting(osximages)</visible>
-				</control>
-				<include>Home_MainMenuFrame</include>
-				<control type="label">
-					<include>Home_MainMenuLabel</include>
-					<label>8</label>
-				</control>
-				<include>Home_MainMenuShade</include>
-				<visible>!Skin.HasSetting(noweather)</visible>
-			</control>
-
-			<control type="group">
-				<description>Settings</description>
-				<include condition="Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos1400</include>
-				<include condition="Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2100</include>
-				<include condition="!Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2100</include>
-				<include condition="!Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos2100</include>
-				<include condition="Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos1750</include>
-				<include condition="!Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos1750</include>
-				<include condition="Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos1750</include>
-				<include condition="!Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2450</include>
-				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
-					<effect type="zoom" center="2635,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(8) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
-					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
-					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
-					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(8) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
-					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(8) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
-					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(8) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
-					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(8) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
-					<effect type="zoom" center="1585,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/settings//</imagepath>
-				</control>	
-				<include>Filter_MenuItem</include>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath>backdrops/osx/settings//</imagepath>
-					<visible>Skin.HasSetting(osximages)</visible>
-				</control>
-				<include>Home_MainMenuFrame</include>
-				<control type="label">
-					<include>Home_MainMenuLabel</include>
-					<label>5</label>
-				</control>
-				<include>Home_MainMenuShade</include>
-			</control>
-
-			<control type="group">
-				<description>Quit Plex</description>
-				<include condition="Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos1750</include>
-				<include condition="Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2450</include>
-				<include condition="!Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2450</include>
-				<include condition="!Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos2450</include>
-				<include condition="Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2100</include>
-				<include condition="!Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos2100</include>
-				<include condition="Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">pos2100</include>
-				<include condition="!Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">pos2800</include>
-				<posy>0</posy>
-				<animation type="conditional" condition="!Container(300).HasFocus(9) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
-					<effect type="zoom" center="2985,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(9) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
-					<effect type="zoom" center="2635,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(9) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
-					<effect type="zoom" center="2635,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(9) + !Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
-					<effect type="zoom" center="2635,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(9) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + !Skin.HasSetting(noweather)">
-					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(9) + !Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
-					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(9) + Skin.HasSetting(novideos) + !Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
-					<effect type="zoom" center="2285,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<animation type="conditional" condition="!Container(300).HasFocus(9) + Skin.HasSetting(novideos) + Skin.HasSetting(nopictures) + Skin.HasSetting(noweather)">
-					<effect type="zoom" center="1935,160" tween="cubic" easing="in" time="200" start="100" end="80" />
-				</animation>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath diffuse="mainmenu/homematte.png">backdrops/quit//</imagepath>
-				</control>
-				<include>Filter_MenuItem</include>
-				<control type="multiimage">
-					<include>Home_MainMenuIconF</include>
-					<imagepath>backdrops/osx/quit//</imagepath>
-					<visible>Skin.HasSetting(osximages)</visible>
-				</control>
-				<include>Home_MainMenuFrame</include>
-				<control type="label">
-					<include>Home_MainMenuLabel</include>
-					<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
-					<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
-				</control>
-				<include>Home_MainMenuShade</include>
-				<visible>!Skin.HasSetting(nohomequit)</visible>
-			</control>
-		</control>
-		<control type="image">
-			<include>Animation_CommonFade</include>
-			<width>30</width>
-			<height>15</height>
-			<posx>625</posx>
-			<posy>483</posy>
-			<texture>submenu_arrow.png</texture>
-			<visible>Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(9)</visible>
-		</control>
-		<include>submenu_movies</include>
-		<include>submenu_tvshows</include>
-		<include>submenu_quit</include>
-		<include>submenu_dummybuttons</include>
-	</include>
  	<include name="Home_MenuIcon">
 		<control type="label">
 			<posx>-320</posx>
@@ -823,21 +423,11 @@
 				<item id="9">
 					<description>Shutdown</description>
 					<thumb>backdrops/quiticon.png</thumb>
-					<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
-					<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
+					<label>Quit Plex</label>
+					<onclick>XBMC.Shutdown(0)</onclick>
 					<visible>!Skin.HasSetting(nohomequit)</visible>
 				</item>
 			</content>
-		</control>
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="mainmenu/home_mask.png">$INFO[Skin.String(theme),,/background.png]</texture>
-			<colordiffuse>a8FFFFFF</colordiffuse>
-		</control>
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="mainmenu/home_mask.png">backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
 		</control>
 		<include>submenu_movies</include>
 		<include>submenu_tvshows</include>
@@ -892,7 +482,7 @@
 				<control type="label">
 					<posx>450</posx>
 					<posy>0</posy>
-					<width>750</width>
+					<width>950</width>
 					<height>100</height>
 					<aligny>center</aligny>
 					<align>center</align>
@@ -910,12 +500,13 @@
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="mainmenu/mask.png">$INFO[Skin.String(theme),,/background.png]</texture>
+			<texture diffuse="mainmenu/mask.png">common/white.png</texture>
+			<colordiffuse>backgroundColor</colordiffuse>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture diffuse="mainmenu/mask.png">backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
+			<colordiffuse>BackgroundFilterColor</colordiffuse>
 		</control>
 	</include>
 	<include name="Home_MenuContent">
@@ -973,8 +564,8 @@
 				<onclick>XBMC.ActivateWindow(4)</onclick>
 			</item>
 			<item id="9">
-				<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
-				<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
+				<label>Quit Plex</label>
+				<onclick>XBMC.Shutdown(0)</onclick>
 				<description>Quit Plex</description>
 				<thumb>backdrops/quit/quitplex.jpg</thumb>
 				<visible>!Skin.HasSetting(nohomequit)</visible>
@@ -993,36 +584,6 @@
 			<include>Animation_ZoomedByMenu</include>
 		</control>
 	</include>
-	<include name="Home_MainMenuIconF">
-		<width>349</width>
-		<height>260</height>
-		<posx>10</posx>
-		<posy>10</posy>
-		<timeperimage>7000</timeperimage>
-		<randomize>true</randomize>
-		<fadetime>1200</fadetime>
-		<aspectratio align="top" scalediffuse="false">scale</aspectratio>
-		<animation effect="fade" start="0" end="100" time="400" delay="10000">Visible</animation>
-		<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
-	</include>
-	<include name="Home_MainMenuShade">
-		<control type="image">
-			<posx>10</posx>
-			<posy>264</posy>
-			<width>351</width>
-			<height>47</height>
-			<texture>mainmenu/homeshade.png</texture>
-		</control>
-	</include>
-	<include name="Home_MainMenuFrame">
-		<control type="image">
-			<width>370</width>
-			<height>320</height>
-			<posx>0</posx>
-			<posy>0</posy>
-			<texture>mainmenu/frame.png</texture>
-		</control>
-	</include>
 	<include name="Home_MainMenuBacking">
 		<control type="image">
 			<width>10</width>
@@ -1031,15 +592,6 @@
 			<posy>47</posy>
 			<texture>mainmenu/homebacking.png</texture>
 		</control>
-	</include>
-	<include name="Home_MainMenuLabel">
-		<posx>345</posx>
-		<posy>286</posy>
-		<width>280</width>
-		<align>right</align>
-		<aligny>center</aligny>
-		<font>Font_MainMenuLabel</font>
-		<textcolor>MainMenuLabel</textcolor>
 	</include>
 	<include name="Home_MainMenuLabelBig">
 		<posx>-610</posx>
@@ -1168,9 +720,9 @@
 	</include>
 	<!-- Window menus -->
 	<include name="WindowMenuVars">
-		<width>1100</width>
+		<width>1250</width>
 		<height>40</height>
-		<posx>140</posx>
+		<posx>40</posx>
 		<onup>50</onup>
 		<ondown>50</ondown>
 		<itemgap>0</itemgap>
@@ -1229,11 +781,17 @@
 		<onclick>Skin.Reset(increaseFanartVisibility50)</onclick>
 	</include>
 
+	<include name="ResetHomeButtons">
+		<onclick>Skin.Reset(home1)</onclick>
+		<onclick>Skin.Reset(home2)</onclick>
+		<onclick>Skin.Reset(home3)</onclick>
+	</include>
+
 	<include name="FanartVisibilityButtons">
 		<width>740</width>
 		<font>Font_Settings</font>
 		<textcolor>ListTrackF</textcolor>
-		<focusedcolor>Black</focusedcolor>
+		<focusedcolor>settings_focused</focusedcolor>
 		<align>left</align>
 		<aligny>center</aligny>
 		<include>ResetFanartVisibilityButtons</include>
@@ -1244,7 +802,7 @@
 		<control type="image">
 			<include>Dimensions_MenuItem</include>
 			<texture>backdrops/menuitemcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
+			<colordiffuse>BackgroundFilterColor</colordiffuse>
 			<visible>Skin.HasSetting(osximages)</visible>
 		</control>
 	</include>
@@ -1256,47 +814,9 @@
 		<height>260</height>
 	</include>
 
-	<include name="pos350">
-		<posx>350</posx>
-	</include>
-	<include name="pos700">
-		<posx>700</posx>
-	</include>
-	<include name="pos1050">
-		<posx>1050</posx>
-	</include>
-	<include name="pos1400">
-		<posx>1400</posx>
-	</include>
-	<include name="pos1750">
-		<posx>1750</posx>
-	</include>
-	<include name="pos2100">
-		<posx>2100</posx>
-	</include>
-	<include name="pos2450">
-		<posx>2450</posx>
-	</include>
-	<include name="pos2800">
-		<posx>2800</posx>
-	</include>
-
-	<include name="type_quit">
-		<!-- LOC -->
-		<label>Quit Plex</label>
-		<onclick>XBMC.Shutdown(0)</onclick>
-	</include>
-	<include name="type_sleep">
-		<!-- LOC -->
-		<label>Sleep</label>
-		<onclick>XBMC.SleepSystem()</onclick>
-	</include>
-
 	<include name="changethemebytime">
-		<include condition="system.time(09:00,20:00) + !Skin.HasSetting(alwaysusebrighttheme) + !Skin.HasSetting(alwaysusedarktheme)">daytheme</include>
-		<include condition="system.time(20:00,09:00) + !Skin.HasSetting(alwaysusebrighttheme) + !Skin.HasSetting(alwaysusedarktheme)">nighttheme</include>
-		<include condition="Skin.HasSetting(alwaysusebrighttheme)">daytheme</include>
-		<include condition="Skin.HasSetting(alwaysusedarktheme)">nighttheme</include>
+		<include condition="system.time(09:00,20:00) + Skin.HasSetting(autom_themechange)">daytheme</include>
+		<include condition="system.time(20:00,09:00) + Skin.HasSetting(autom_themechange)">nighttheme</include>
 	</include>
 	<include name="daytheme">
 		<onfocus>Skin.Reset(nighttheme)</onfocus>
@@ -1308,128 +828,11 @@
 		<onfocus>Skin.SetString(oldtheme,$INFO[Skin.String(theme)])</onfocus>
 		<onfocus>Skin.SetString(theme,dark)</onfocus>
 	</include>
-
-	<include name="Focus_Default">	
-		<texture>favorites/default/focus_bar.png</texture>
+	<include name="noAutoThemeChange">
+		<onfocus>XBMC.SetFocus(300)</onfocus>
 	</include>
-	<include name="Focus_Dark">	
-		<texture>favorites/dark/focus_bar.png</texture>
-	</include>
-
-	<include name="Focus_Border_Default">	
-		<texturefocus border="1">favorites/default/focus_bar.png</texturefocus>
-	</include>
-	<include name="Focus_Border_Dark">	
-		<texturefocus border="1">favorites/dark/focus_bar.png</texturefocus>
-	</include>
-
-	<include name="OSD_Textures_Default">	
-		<lefttexture>osd/default/osd_progress_left.png</lefttexture>
-		<midtexture>osd/default/osd_progress_mid.png</midtexture>
-		<righttexture>osd/default/osd_progress_right.png</righttexture>
-	</include>
-	<include name="OSD_Textures_Dark">	
-		<lefttexture>osd/dark/osd_progress_left.png</lefttexture>
-		<midtexture>osd/dark/osd_progress_mid.png</midtexture>
-		<righttexture>osd/dark/osd_progress_right.png</righttexture>
-	</include>
-	
-	<include name="Settings_Video_Default">	
-		<thumb>settings/default/settings_video.png</thumb>
-	</include>
-	<include name="Settings_Video_Dark">	
-		<thumb>settings/dark/settings_video.png</thumb>
-	</include>
-	<include name="Settings_Music_Default">	
-		<thumb>settings/default/settings_music.png</thumb>
-	</include>
-	<include name="Settings_Music_Dark">	
-		<thumb>settings/dark/settings_music.png</thumb>
-	</include>
-	<include name="Settings_Pictures_Default">	
-		<thumb>settings/default/settings_pictures.png</thumb>
-	</include>
-	<include name="Settings_Pictures_Dark">	
-		<thumb>settings/dark/settings_pictures.png</thumb>
-	</include>
-	<include name="Settings_Programs_Default">	
-		<thumb>settings/default/settings_programs.png</thumb>
-	</include>
-	<include name="Settings_Programs_Dark">	
-		<thumb>settings/dark/settings_programs.png</thumb>
-	</include>
-	<include name="Settings_Profiles_Default">
-		<thumb>settings/default/settings_profiles.png</thumb>
-	</include>
-	<include name="Settings_Profiles_Dark">
-		<thumb>settings/dark/settings_profiles.png</thumb>
-	</include>
-	<include name="Settings_Weather_Default">	
-		<thumb>settings/default/settings_weather.png</thumb>
-	</include>
-	<include name="Settings_Weather_Dark">	
-		<thumb>settings/dark/settings_weather.png</thumb>
-	</include>
-	<include name="Settings_Network_Default">	
-		<thumb>settings/default/settings_network.png</thumb>
-	</include>
-	<include name="Settings_Network_Dark">	
-		<thumb>settings/dark/settings_network.png</thumb>
-	</include>
-	<include name="Settings_System_Default">	
-		<thumb>settings/default/settings_system.png</thumb>
-	</include>
-	<include name="Settings_System_Dark">	
-		<thumb>settings/dark/settings_system.png</thumb>
-	</include>
-	<include name="Settings_Appearance_Default">	
-		<thumb>settings/default/settings_appearance.png</thumb>
-	</include>
-	<include name="Settings_Appearance_Dark">	
-		<thumb>settings/dark/settings_appearance.png</thumb>
-	</include>
-	<include name="Settings_Alaska_Default">	
-		<thumb>settings/default/settings_alaska.png</thumb>
-	</include>
-	<include name="Settings_Alaska_Dark">	
-		<thumb>settings/dark/settings_alaska.png</thumb>
-	</include>
-	
-	<include name="focusbackground_default">
-		<texture>common/black.png</texture>
-		<colordiffuse>11000000</colordiffuse>
-	</include>
-	<include name="focusbackground_dark">
-		<texture>common/white.png</texture>
-		<colordiffuse>30FFFFFF</colordiffuse>
-	</include>
-
-	<include name="scrollbar_default">
-		<textureslidernibfocus>default/ScrollBarV_Nib_Focus.png</textureslidernibfocus>
-	</include>
-	<include name="scrollbar_dark">
-		<textureslidernibfocus>dark/ScrollBarV_Nib_Focus.png</textureslidernibfocus>
-	</include>
-
-	<include name="posterNF_default">
-		<texture>default/postermatteNF.png</texture>
-	</include>
-	<include name="posterNF_dark">
-		<texture>dark/postermatteNF.png</texture>
-	</include>
-
-	<include name="posterNF2_default">
-		<texture>default/postermatteNF2.png</texture>
-	</include>
-	<include name="posterNF2_dark">
-		<texture>dark/postermatteNF2.png</texture>
-	</include>
-
-	<include name="fanartNF_default">
-		<texture>default/IconmatteNF.png</texture>
-	</include>
-	<include name="fanartNF_dark">
-		<texture>dark/IconmatteNF.png</texture>
+	<include name="autoThemeChange">
+		<onfocus>XBMC.SetFocus(778)</onfocus>
 	</include>
 
 	<include name="submenu_dummybuttons">
@@ -1666,25 +1069,13 @@
 	<include name="submenubutton">
 		<width>100</width>
 		<height>36</height>
-		<include condition="!Skin.HasSetting(nighttheme)">Focus_Border_Default</include>
-		<include condition="Skin.HasSetting(nighttheme)">Focus_Border_Dark</include>
+		<texturefocus border="1">favorites/focus_bar.png</texturefocus>
+		<colordiffuse>BackgroundFilterColor</colordiffuse>
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>Small</font>
 		<focusedcolor>White</focusedcolor>
 		<onclick>SetFocus(300)</onclick>
-	</include>
-
-	<!-- progressbar nowplaying -->
-	<include name="progress_default">
-		<lefttexture>default/progress_left.png</lefttexture>
-		<midtexture>default/progress_mid.png</midtexture>
-		<righttexture>default/progress_right.png</righttexture>
-	</include>
-	<include name="progress_dark">
-		<lefttexture>dark/progress_left.png</lefttexture>
-		<midtexture>dark/progress_mid.png</midtexture>
-		<righttexture>dark/progress_right.png</righttexture>
 	</include>
 
 	<!-- date/time for video OSD -->
@@ -1714,7 +1105,7 @@
 				<width>300</width>
 				<height>50</height>
 				<font>Font_Time</font>
-				<textcolor>80ffffff</textcolor>
+				<textcolor>FFFFFFFF</textcolor>
 				<info>System.Time</info>
 				<align>right</align>
 			</control>

@@ -24,7 +24,6 @@
 			<height>39</height>
 			<width>1280</width>
 			<font>Font_MenuValue</font>
-			<textcolor>DialogLabelNF</textcolor>
 			<focusedcolor>settings_focused</focusedcolor>
 			<align>center</align>
 			<aligny>middle</aligny>

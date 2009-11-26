@@ -5,6 +5,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Background</include>
+		<include>Global_Filter</include>
 		<control type="list" id="9000">
 			<description>List</description>
 			<posx>150</posx>
@@ -68,12 +69,12 @@
 					<label>NowPlaying</label>
 					<onclick>SetFocus(9006)</onclick>
 				</item>
-				<item id="7">
+				<!--<item id="7">-->
 					<!-- LOC -->
-					<description>Theme</description>
+					<!--<description>Theme</description>
 					<label>Theme</label>
 					<onclick>SetFocus(9007)</onclick>
-				</item>
+				</item>-->
 				<item id="5">
 					<!-- LOC -->
 					<description>Misc.</description>
@@ -191,6 +192,19 @@
 				<onup>9002</onup>
 				<ondown>9002</ondown>
 				<include>Animation_CommonFadeNoHide</include>
+				<control type="radiobutton" id="203">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>settings_focused</focusedcolor>
+					<!-- LOC -->
+					<label>Home 1</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<include>ResetHomeButtons</include>
+					<onclick>Skin.ToggleSetting(home1)</onclick>
+					<selected>Skin.HasSetting(home1) | [!Skin.HasSetting(home1) + !Skin.HasSetting(home2) + !Skin.HasSetting(home3)]</selected>
+				</control>
 				<control type="radiobutton" id="200">
 					<width>740</width>
 					<font>Font_Settings</font>
@@ -200,8 +214,8 @@
 					<label>Home 2</label>
 					<align>left</align>
 					<aligny>center</aligny>
+					<include>ResetHomeButtons</include>
 					<onclick>Skin.ToggleSetting(home2)</onclick>
-					<onclick>Skin.Reset(home3)</onclick>
 					<selected>Skin.HasSetting(home2)</selected>
 				</control>
 				<control type="radiobutton" id="201">
@@ -213,33 +227,17 @@
 					<label>Home 3</label>
 					<align>left</align>
 					<aligny>center</aligny>
+					<include>ResetHomeButtons</include>
 					<onclick>Skin.ToggleSetting(home3)</onclick>
-					<onclick>Skin.Reset(home2)</onclick>
+					<ondown>SetFocus(207)</ondown>
 					<selected>Skin.HasSetting(home3)</selected>
 				</control>
-				<control type="radiobutton" id="202">
-					<width>740</width>
-					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
-					<!-- LOC -->
-					<label>Conditional Weather</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<onclick>Skin.ToggleSetting(homeweather)</onclick>
-					<selected>Skin.HasSetting(homeweather)</selected>
-				</control>
-				<control type="radiobutton" id="206">
-					<width>740</width>
-					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
-					<!-- LOC -->
-					<label>OSX overlays for default home menu</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<onclick>Skin.ToggleSetting(osximages)</onclick>
-					<selected>Skin.HasSetting(osximages)</selected>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>730</width>
+					<height>2</height>
+					<texture>common/divider.png</texture>
 				</control>
 				<control type="radiobutton" id="207">
 					<width>740</width>
@@ -251,6 +249,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(noappstore)</onclick>
+					<onup>SetFocus(201)</onup>
 					<selected>Skin.HasSetting(noappstore)</selected>
 				</control>
 				<control type="radiobutton" id="208">
@@ -295,24 +294,37 @@
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
-					<label>Hide item "Quit Plex / Sleep"</label>
+					<label>Hide item "Quit Plex"</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(nohomequit)</onclick>
 					<selected>Skin.HasSetting(nohomequit)</selected>
 				</control>
-				<control type="radiobutton" id="212">
+				<control type="radiobutton" id="202">
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
-					<label>Change option "Quit Plex" to "Sleep"</label>
+					<label>Conditional Weather</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<visible>!Skin.HasSetting(nohomequit)</visible>
-					<onclick>Skin.ToggleSetting(sleepsystem)</onclick>
-					<selected>Skin.HasSetting(sleepsystem)</selected>
+					<onclick>Skin.ToggleSetting(homeweather)</onclick>
+					<selected>Skin.HasSetting(homeweather)</selected>
+					<visible>Skin.HasSetting(home1)</visible>
+				</control>
+				<control type="radiobutton" id="206">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>ListTrackF</textcolor>
+					<focusedcolor>settings_focused</focusedcolor>
+					<!-- LOC -->
+					<label>Display OSX overlays</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(osximages)</onclick>
+					<selected>Skin.HasSetting(osximages)</selected>
+					<visible>Skin.HasSetting(home1)</visible>
 				</control>
 				<control type="radiobutton" id="213">
 					<width>740</width>
@@ -324,10 +336,11 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(fanartformovies)</onclick>
-					<onclick>RunScript(q:/scripts/GetUsername/default.py)</onclick>
+					<onclick>RunScript(q:/scripts/username.py)</onclick>
 					<onclick>Skin.Reset(fanartpath)</onclick>
 					<onclick>Skin.SetString(fanartpath,/Users/$INFO[Skin.String(osxusername)]/Library/Application Support/Plex/userdata/Thumbnails/Video/Fanart//)</onclick>
 					<selected>Skin.HasSetting(fanartformovies)</selected>
+					<visible>Skin.HasSetting(home1)</visible>
 				</control>
 				<control type="togglebutton" id="214">
 					<width>740</width>
@@ -346,6 +359,7 @@
 					<texturefocus>-</texturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 					<alttexturefocus>-</alttexturefocus>
+					<visible>Skin.HasSetting(home1)</visible>
 				</control>
 				<control type="togglebutton" id="215">
 					<width>740</width>
@@ -364,6 +378,7 @@
 					<texturefocus>-</texturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 					<alttexturefocus>-</alttexturefocus>
+					<visible>Skin.HasSetting(home1)</visible>
 				</control>
 				<control type="togglebutton" id="216">
 					<width>740</width>
@@ -382,6 +397,7 @@
 					<texturefocus>-</texturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 					<alttexturefocus>-</alttexturefocus>
+					<visible>Skin.HasSetting(home1)</visible>
 				</control>
 				<control type="togglebutton" id="217">
 					<width>740</width>
@@ -400,6 +416,7 @@
 					<texturefocus>-</texturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
 					<alttexturefocus>-</alttexturefocus>
+					<visible>Skin.HasSetting(home1)</visible>
 				</control>
 			</control>
 			<control type="grouplist" id="9003">
@@ -418,11 +435,11 @@
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
-					<label>File View Focus Line</label>
+					<label>Disable lines to highlight focused item</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<onclick>Skin.ToggleSetting(File_View_Focus_Line)</onclick>
-					<selected>Skin.HasSetting(File_View_Focus_Line)</selected>
+					<onclick>Skin.ToggleSetting(No_File_View_Focus_Line)</onclick>
+					<selected>Skin.HasSetting(No_File_View_Focus_Line)</selected>
 				</control>
 				<control type="radiobutton" id="304">
 					<width>740</width>
@@ -620,25 +637,11 @@
 					<textcolor>ListTrackF</textcolor>
 					<focusedcolor>settings_focused</focusedcolor>
 					<!-- LOC -->
-					<label>Always use bright theme</label>
+					<label>Enable autom. theme change</label>
 					<align>left</align>
 					<aligny>center</aligny>
-					<onclick>Skin.ToggleSetting(alwaysusebrighttheme)</onclick>
-					<onclick>Skin.Reset(alwaysusedarktheme)</onclick>
-					<selected>Skin.HasSetting(alwaysusebrighttheme)</selected>
-				</control>
-				<control type="radiobutton" id="701">
-					<width>740</width>
-					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
-					<!-- LOC -->
-					<label>Always use dark theme</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<onclick>Skin.ToggleSetting(alwaysusedarktheme)</onclick>
-					<onclick>Skin.Reset(alwaysusebrighttheme)</onclick>
-					<selected>Skin.HasSetting(alwaysusedarktheme)</selected>
+					<onclick>Skin.ToggleSetting(autom_themechange)</onclick>
+					<selected>Skin.HasSetting(autom_themechange)</selected>
 				</control>
 			</control>
 
@@ -688,6 +691,7 @@
 				<posx>680</posx>
 				<posy>150</posy>
 				<texture flipy="true">submenu_arrow.png</texture>
+			<colordiffuse>ButtonFilterColor</colordiffuse>
 			</control>
 			<control type="image">
 				<width>30</width>
@@ -695,8 +699,9 @@
 				<posx>680</posx>
 				<posy>580</posy>
 				<texture>submenu_arrow.png</texture>
+			<colordiffuse>ButtonFilterColor</colordiffuse>
 			</control>
-			<visible>Container(9000).HasFocus(2)</visible>
+			<visible>Container(9000).HasFocus(2) + Skin.HasSetting(home1)</visible>
 		</control>
 
 		<!-- help -->
@@ -731,6 +736,22 @@
 				<label>Only used if option "OSX overlays" is disabled</label>
 			</control>
 			<visible>Control.HasFocus(217)</visible>
+		</control>
+		<control type="group">
+			<posy>625</posy>
+			<include>Animation_CommonFade</include>
+			<include>settings_helpbackground</include>
+			<control type="fadelabel">
+				<width>690</width>
+				<posx>380</posx>
+				<posy>17</posy>
+				<font>Font_RSS_Big</font>
+				<textcolor>Black</textcolor>
+				<scroll>true</scroll>
+				<scrollspeed>40</scrollspeed>
+				<label>Switches theme colors automatically. From 9am to 8pm "default.xml" is used, from 8pm to 9am "dark.xml"</label>
+			</control>
+			<visible>Control.HasFocus(700)</visible>
 		</control>
 
 		<include>Global_ContextFilter</include>

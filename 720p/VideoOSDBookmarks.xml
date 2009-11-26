@@ -124,14 +124,30 @@
 			<posy>590</posy>
 			<width>27</width>
 			<height>27</height>
-			<texture>$INFO[Skin.String(theme),wall/,/WallArrow.png]</texture>
+			<texture>wall/WallArrow_back.png</texture>
+		</control>
+		<control type="image">
+			<posx>1155</posx>
+			<posy>590</posy>
+			<width>27</width>
+			<height>27</height>
+			<texture>wall/WallArrow.png</texture>
+			<colordiffuse>ButtonFilterColor</colordiffuse>
 		</control>
 		<control type="image">
 			<posx>95</posx>
 			<posy>590</posy>
 			<width>27</width>
 			<height>27</height>
-			<texture flipx="true">$INFO[Skin.String(theme),wall/,/WallArrow.png]</texture>
+			<texture>wall/WallArrow_back.png</texture>
+		</control>
+		<control type="image">
+			<posx>95</posx>
+			<posy>590</posy>
+			<width>27</width>
+			<height>27</height>
+			<texture flipx="true">wall/WallArrow.png</texture>
+			<colordiffuse>ButtonFilterColor</colordiffuse>
 		</control>
 		<include>Object_DebugGrid</include>
 	</controls>

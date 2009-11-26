@@ -24,8 +24,10 @@
 			</control>
 			<control type="progress" id="23">
 				<texturebg>osd/osd_progress_back.png</texturebg>
-				<include condition="!Skin.HasSetting(nighttheme)">OSD_Textures_Default</include>
-				<include condition="Skin.HasSetting(nighttheme)">OSD_Textures_Dark</include>
+				<lefttexture>osd/osd_progress_left.png</lefttexture>
+				<midtexture>osd/osd_progress_mid.png</midtexture>
+				<righttexture>osd/osd_progress_right.png</righttexture>
+				<colordiffuse>OSDProgress</colordiffuse>
 				<info>Player.Progress</info>
 				<posx>30</posx>
 				<posy>115</posy>

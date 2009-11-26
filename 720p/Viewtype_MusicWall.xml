@@ -127,7 +127,20 @@
 			<width>27</width>
 			<height>27</height>
 			<visible>Control.IsVisible(55)</visible>
-			<texture flipx="true">$INFO[Skin.String(theme),wall/,/WallArrow.png]</texture>
+			<texture>wall/WallArrow_back.png</texture>
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_MusicWallFloat</include>
+			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByMusicInfo</include>
+		</control>
+		<control type="image">
+			<posx>-67</posx>
+			<posy>516</posy>
+			<width>27</width>
+			<height>27</height>
+			<visible>Control.IsVisible(55)</visible>
+			<texture flipx="true">wall/WallArrow.png</texture>
+			<colordiffuse>ButtonFilterColor</colordiffuse>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_MusicWallFloat</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -140,7 +153,20 @@
 			<width>27</width>
 			<height>27</height>
 			<visible>Control.IsVisible(55)</visible>
-			<texture>$INFO[Skin.String(theme),wall/,/WallArrow.png]</texture>
+			<texture>wall/WallArrow_back.png</texture>
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_MusicWallFloat</include>
+			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByMusicInfo</include>
+		</control>		
+		<control type="image">
+			<posx>1318</posx>
+			<posy>516</posy>
+			<width>27</width>
+			<height>27</height>
+			<visible>Control.IsVisible(55)</visible>
+			<texture>wall/WallArrow.png</texture>
+			<colordiffuse>ButtonFilterColor</colordiffuse>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_MusicWallFloat</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -149,14 +175,14 @@
 		
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="wall/music_wall_mask.png">$INFO[Skin.String(theme),,/background.png]</texture>
+			<texture diffuse="wall/music_wall_mask.png">common/white.png</texture>
 			<visible>Control.IsVisible(55)</visible>
-			<colordiffuse>dfFFFFFF</colordiffuse>
+			<colordiffuse>backgroundColor</colordiffuse>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture diffuse="wall/music_wall_mask.png">backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
+			<colordiffuse>BackgroundFilterColor</colordiffuse>
 		</control>
 		
 	</include>

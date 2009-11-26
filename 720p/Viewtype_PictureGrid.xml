@@ -160,7 +160,25 @@
 			<posy>344</posy>
 			<width>27</width>
 			<height>27</height>
-			<texture flipx="true">$INFO[Skin.String(theme),wall/,/WallArrow.png]</texture>
+			<texture>wall/WallArrow_back.png</texture>
+			<include>Animation_ZoomInZoomOut</include>			
+			<include>Animation_PictureGridFloat</include>
+			<include>Animation_ZoomedByMenu</include>
+			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
+			<animation effect="slide" start="-550,135" end="-550,135" time="0" condition="Skin.HasSetting(picturegrid7x1)">Conditional</animation>
+			<animation effect="slide" start="-550,80" end="-550,80" time="0" condition="Skin.HasSetting(picturegrid7x2)">Conditional</animation>
+			<animation effect="slide" start="-550,25" end="-550,25" time="0" condition="Skin.HasSetting(picturegrid7x3)">Conditional</animation>
+			<animation effect="slide" start="-550,-30" end="-550,-30" time="0" condition="Skin.HasSetting(picturegrid7x4)">Conditional</animation>
+			<animation effect="slide" start="-220,55" end="-220,55" time="0" condition="Skin.HasSetting(picturegrid4x3)">Conditional</animation>
+			<visible>Control.IsVisible(55)</visible>
+		</control>
+		<control type="image">
+			<posx>856</posx>
+			<posy>344</posy>
+			<width>27</width>
+			<height>27</height>
+			<texture flipx="true">wall/WallArrow.png</texture>
+			<colordiffuse>ButtonFilterColor</colordiffuse>
 			<include>Animation_ZoomInZoomOut</include>			
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -178,7 +196,25 @@
 			<posy>344</posy>
 			<width>27</width>
 			<height>27</height>
-			<texture>$INFO[Skin.String(theme),wall/,/WallArrow.png]</texture>
+			<texture>wall/WallArrow_back.png</texture>
+			<include>Animation_ZoomInZoomOut</include>			
+			<include>Animation_PictureGridFloat</include>
+			<include>Animation_ZoomedByMenu</include>
+			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
+			<animation effect="slide" start="0,135" end="0,135" time="0" condition="Skin.HasSetting(picturegrid7x1)">Conditional</animation>
+			<animation effect="slide" start="0,80" end="0,80" time="0" condition="Skin.HasSetting(picturegrid7x2)">Conditional</animation>
+			<animation effect="slide" start="0,25" end="0,25" time="0" condition="Skin.HasSetting(picturegrid7x3)">Conditional</animation>
+			<animation effect="slide" start="0,-30" end="0,-30" time="0" condition="Skin.HasSetting(picturegrid7x4)">Conditional</animation>
+			<animation effect="slide" start="0,55" end="0,55" time="0" condition="Skin.HasSetting(picturegrid4x3)">Conditional</animation>
+			<visible>Control.IsVisible(55)</visible>
+		</control>		
+		<control type="image">
+			<posx>1123</posx>
+			<posy>344</posy>
+			<width>27</width>
+			<height>27</height>
+			<texture>wall/WallArrow.png</texture>
+			<colordiffuse>ButtonFilterColor</colordiffuse>
 			<include>Animation_ZoomInZoomOut</include>			
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>

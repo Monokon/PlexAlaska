@@ -28,7 +28,7 @@
 				<posy>10</posy>
 				<width>50</width>
 				<height>50</height>
-				<texture>$INFO[Skin.String(theme),dialogs/,/scanprogress_back.png]</texture>
+				<texture>dialogs/scanprogress_back.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="progress" id="404">
@@ -56,7 +56,8 @@
 				<posy>10</posy>
 				<width>50</width>
 				<height>50</height>
-				<texture>$INFO[Skin.String(theme),dialogs/,/scanprogress.png]</texture>
+				<texture>dialogs/scanprogress.png</texture>
+				<colordiffuse>ButtonFilterColor</colordiffuse>
 			</control>
 			<control type="label" id="1">
 				<description>Heading Label</description>

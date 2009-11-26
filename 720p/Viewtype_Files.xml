@@ -138,9 +138,8 @@
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
-					<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)">Conditional</animation>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 				</control>
 			</itemlayout>
 			<focusedlayout width="760" height="120">
@@ -151,8 +150,8 @@
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(episodes)</visible>
-					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 				</control>
 				<!-- Watched overlay for movies/TV shows -->
 				<control type="image">
@@ -161,8 +160,8 @@
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(episodes)</visible>
-					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 				</control>
 				<control type="label">
 					<posx>30</posx>
@@ -385,7 +384,7 @@
 			</focusedlayout>
 		</control>
 		<control type="group">
-			<visible>Skin.HasSetting(File_View_Focus_Line) + Control.IsVisible(50)</visible>
+			<visible>!Skin.HasSetting(No_File_View_Focus_Line) + Control.IsVisible(50)</visible>
 			<posx>-200</posx>
 			<posy>230</posy>
 			<include>Animation_ZoomInZoomOut</include>
@@ -397,8 +396,8 @@
 				<posy>0</posy>
 				<width>1680</width>
 				<height>120</height>
-				<include condition="!Skin.HasSetting(nighttheme)">focusbackground_default</include>
-				<include condition="Skin.HasSetting(nighttheme)">focusbackground_dark</include>
+				<texture>common/white.png</texture>
+				<colordiffuse>FocusLinesBackground</colordiffuse>
 			</control>
 			<control type="image">
 				<posx>0</posx>
@@ -449,9 +448,20 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(50) + Window.IsActive(25)</visible>
+			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>PosterMediaFlags</include>
 		</control>
+		<control type="image">
+			<posx>1280</posx>
+			<posy>100</posy>
+			<width>25</width>
+			<height>460</height>
+			<visible>Control.IsVisible(50) + Control.HasFocus(60)</visible>
+			<texture border="0,14,0,14">ScrollBarV.png</texture>
+			<include>Animation_CommonFade</include>
+			<animation effect="slide" start="0,0" end="-50,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(60)">Conditional</animation>
+		</control>		
 		<control type="scrollbar" id="60">
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -460,9 +470,8 @@
 			<width>25</width>
 			<height>460</height>
 			<visible allowhiddenfocus="true">Control.IsVisible(50) + Control.HasFocus(60)</visible>
-			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-			<include condition="!Skin.HasSetting(nighttheme)">scrollbar_default</include>
-			<include condition="Skin.HasSetting(nighttheme)">scrollbar_dark</include>
+			<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
+			<colordiffuse>ButtonFilterColor</colordiffuse>
 			<onleft>50</onleft>
 			<showonepage>true</showonepage>
 			<orientation>vertical</orientation>
@@ -485,12 +494,4 @@
 		</control>
 
 	</include>
-
-	<include name="Overlay_Default">	
-		<texture>$INFO[ListItem.Overlay,default/,]</texture>
-	</include>
-	<include name="Overlay_Dark">	
-		<texture>$INFO[ListItem.Overlay,dark/,]</texture>
-	</include>
-
 </includes>

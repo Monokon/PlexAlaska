@@ -76,9 +76,8 @@
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + !Window.IsActive(2003)</visible>
-					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
-					<animation effect="fade" start="100" end="20" time="0" condition="!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)">Conditional</animation>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 				</control>
 			</itemlayout>
 			<focusedlayout width="633" height="164">
@@ -130,13 +129,13 @@
 					<visible>!IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="image">
-					<posx>14</posx>
-					<posy>14</posy>
+					<posx>19</posx>
+					<posy>19</posy>
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<include condition="!Skin.HasSetting(nighttheme)">Overlay_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Overlay_Dark</include>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" />
 						<effect type="fade" start="0" end="100" time="200" />
@@ -146,6 +145,16 @@
 		</control>
 
 		<!--Scrollbar -->
+		<control type="image">
+			<posx>1230</posx>
+			<posy>100</posy>
+			<width>25</width>
+			<height>460</height>
+			<visible>Control.IsVisible(51) + Control.HasFocus(65)</visible>
+			<texture border="0,14,0,14">ScrollBarV.png</texture>
+			<include>Animation_CommonFade</include>
+			<animation effect="slide" start="0,0" end="-50,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(60)">Conditional</animation>
+		</control>		
 		<control type="scrollbar" id="65">
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -154,9 +163,8 @@
 			<width>25</width>
 			<height>460</height>
 			<visible allowhiddenfocus="true">Control.IsVisible(51) + Control.HasFocus(65)</visible>
-			<texturesliderbackground border="0,14,0,14">scrollbarv.png</texturesliderbackground>
-			<include condition="!Skin.HasSetting(nighttheme)">scrollbar_default</include>
-			<include condition="Skin.HasSetting(nighttheme)">scrollbar_dark</include>
+			<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
+			<colordiffuse>ButtonFilterColor</colordiffuse>
 			<onleft>51</onleft>
 			<showonepage>false</showonepage>
 			<orientation>vertical</orientation>
@@ -186,17 +194,10 @@
 		
 		<control type="group">
 			<visible>Control.IsVisible(51) + Window.IsActive(25)</visible>
+			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>PosterMediaFlags</include>
 		</control>
 
 	</include>
-
-	<include name="Overlay_Default">	
-		<texture>$INFO[ListItem.Overlay,default/,]</texture>
-	</include>
-	<include name="Overlay_Dark">	
-		<texture>$INFO[ListItem.Overlay,dark/,]</texture>
-	</include>
-
 </includes>

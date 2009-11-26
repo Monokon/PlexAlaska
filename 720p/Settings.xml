@@ -25,8 +25,16 @@
 					<posy>0</posy>
 					<width>200</width>
 					<height>200</height>
-					<info>ListItem.Thumb</info>
-					<colordiffuse>5EFFFFFF</colordiffuse>
+					<texture>settings/button.png</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
+					<animation effect="zoom" start="80" end="80" center="100,100" time="0" condition="true">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>200</height>
+					<texture>$INFO[ListItem.Icon]</texture>
 					<animation effect="zoom" start="80" end="80" center="100,100" time="0" condition="true">Conditional</animation>
 				</control>
 			</itemlayout>
@@ -36,73 +44,73 @@
 					<posy>0</posy>
 					<width>200</width>
 					<height>200</height>
-					<info>ListItem.Thumb</info>
+					<texture>settings/button.png</texture>
+					<colordiffuse>ButtonFilterColor</colordiffuse>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" start="80" end="100" center="100,100" time="300" tween="cubic" easing="in" />
-						<effect type="fade" start="40" end="100" time="300" />
+					</animation>
+				</control>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>200</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" start="80" end="100" center="100,100" time="300" tween="cubic" easing="in" />
 					</animation>
 				</control>
 			</focusedlayout>
 			<content>
 				<item id="1">
 					<label>Video</label>
-					<include condition="!Skin.HasSetting(nighttheme)">Settings_Video_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Settings_Video_Dark</include>
+					<thumb>settings/settings_video.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyVideosSettings)</onclick>
 				</item>
 				<item id="2">
 					<label>Music</label>
-					<include condition="!Skin.HasSetting(nighttheme)">Settings_Music_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Settings_Music_Dark</include>
+					<thumb>settings/settings_music.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyMusicSettings)</onclick>
 				</item>
 				<item id="3">
 					<label>Pictures</label>
-					<include condition="!Skin.HasSetting(nighttheme)">Settings_Pictures_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Settings_Pictures_Dark</include>
+					<thumb>settings/settings_pictures.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyPicturesSettings)</onclick>
 				</item>
 				<!--<item id="4">
 					<label>Programs</label>
-					<include condition="!Skin.HasSetting(nighttheme)">Settings_Programs_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Settings_Programs_Dark</include>
+					<thumb>settings/settings_programs.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyProgramsSettings)</onclick>
 				</item>-->
 				<item id="4">
 					<description>Profiles</description>
 					<label>13200</label>
-					<include condition="!Skin.HasSetting(nighttheme)">Settings_Profiles_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Settings_Profiles_Dark</include>
+					<thumb>settings/settings_profiles.png</thumb>
 					<onclick>XBMC.ActivateWindow(Profiles)</onclick>
 				</item>
 				<item id="5">
 					<label>Weather</label>
-					<include condition="!Skin.HasSetting(nighttheme)">Settings_Weather_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Settings_Weather_Dark</include>
+					<thumb>settings/settings_weather.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyWeatherSettings)</onclick>
 				</item>
 				<item id="6">
 					<label>Network</label>
-					<include condition="!Skin.HasSetting(nighttheme)">Settings_Network_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Settings_Network_Dark</include>
+					<thumb>settings/settings_network.png</thumb>
 					<onclick>XBMC.ActivateWindow(NetworkSettings)</onclick>
 				</item>
 				<item id="7">
 					<label>System</label>
-					<include condition="!Skin.HasSetting(nighttheme)">Settings_System_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Settings_System_Dark</include>
+					<thumb>settings/settings_system.png</thumb>
 					<onclick>xbmc.activatewindow(SystemSettings)</onclick>
 				</item>
 				<item id="8">
 					<label>Appearance</label>
-					<include condition="!Skin.HasSetting(nighttheme)">Settings_Appearance_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Settings_Appearance_Dark</include>
+					<thumb>settings/settings_appearance.png</thumb>
 					<onclick>XBMC.ActivateWindow(AppearanceSettings)</onclick>
 				</item>
 				<item id="9">
 <!-- LOC -->		<label>Alaska</label>
-					<include condition="!Skin.HasSetting(nighttheme)">Settings_Alaska_Default</include>
-					<include condition="Skin.HasSetting(nighttheme)">Settings_Alaska_Dark</include>
+					<thumb>settings/settings_alaska.png</thumb>
 					<onclick>XBMC.ActivateWindow(56)</onclick>
 				</item>
 			</content>
@@ -110,13 +118,14 @@
 
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="mainmenu/home_mask.png">$INFO[Skin.String(theme),,/background.png]</texture>
+			<texture diffuse="mainmenu/home_mask.png">common/white.png</texture>
+			<colordiffuse>backgroundColor</colordiffuse>
 		</control>
 
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture diffuse="mainmenu/home_mask.png">backdrops/backgroundcolordiffuse.png</texture>
-			<colordiffuse>backgroundColor</colordiffuse>
+			<colordiffuse>BackgroundFilterColor</colordiffuse>
 		</control>
 		<control type="group">
 			<description>Video</description>

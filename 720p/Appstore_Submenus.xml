@@ -1,0 +1,19 @@
+<includes>
+
+	<include name="Appstore_DummyButtons">
+		<!-- Appstore -->
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3101)</onfocus>
+			<visible>Container(300).HasFocus(1)</visible>
+		</control>
+	</include>
+	
+	<include name="Appstore_SubmenuItems">
+		<control type="button" id="3101">
+			<label>$LOCALIZE[1036]</label>
+			<onclick>XBMC.ActivateWindow(Favourites)</onclick>
+			<include>Home_MainMenuLabel</include>
+		</control>
+	</include>
+
+</includes>

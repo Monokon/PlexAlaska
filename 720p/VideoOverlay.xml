@@ -37,17 +37,16 @@
 				<width>276</width>
 				<height>150</height>
 			</control>
-			<!--control type="label">
-				<visible>!Window.IsActive(2006)</visible>
+			<control type="label">
 				<posx>300</posx>
-				<posy>10</posy>
+				<posy>120</posy>
 				<width>1034</width>
 				<font>Font_ListDetail</font>
 				<label>[B]Now Playing[/B]</label>
 				<textcolor>NowPlayingArtist</textcolor>
-				<animation effect="fade" start="0" end="100" time="400" delay="400">Visible</animation>
-				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-			</control-->
+				<animation effect="slide" end="0,-20" condition="VideoPlayer.Content(episodes)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,-40" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>
+			</control>
 			<control type="label">
 				<posx>300</posx>
 				<posy>140</posy>
@@ -55,6 +54,7 @@
 				<font>Font_ListDetail</font>
 				<label>[B]$INFO[VideoPlayer.Title][/B]</label>
 				<textcolor>NowPlayingTrack</textcolor>
+				<animation effect="slide" start="0,0" end="0,-40" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 			</control> 
 			<control type="label">
 				<posx>300</posx>
@@ -64,15 +64,7 @@
 				<label>$INFO[VideoPlayer.TVShowTitle]</label>
 				<textcolor>NowPlayingTrack</textcolor>
 				<visible>VideoPlayer.Content(episodes)</visible>
-			</control>
-			<control type="label">
-				<posx>300</posx>
-				<posy>120</posy>
-				<width>1034</width>
-				<font>Font_ListDetail</font>
-				<label>$INFO[VideoPlayer.Genre]</label>
-				<textcolor>NowPlayingTrack</textcolor>
-				<visible>!VideoPlayer.Content(episodes)</visible>
+				<animation effect="slide" start="0,0" end="0,-40" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>
 			</control>
 		</control>
 
