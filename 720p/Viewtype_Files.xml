@@ -138,20 +138,37 @@
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<texture>$INFO[ListItem.Overlay]</texture>
+					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>21</posy>
+					<width>12</width>
+					<height>12</height>
+					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>89FFFFFF</colordiffuse>
 				</control>
 			</itemlayout>
 			<focusedlayout width="760" height="120">
 				<!-- Watched overlay for episodes -->
 				<control type="image">
 					<posx>0</posx>
-					<posy>17</posy>
+					<posy>15</posy>
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(episodes)</visible>
-					<texture>$INFO[ListItem.Overlay]</texture>
+					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>19</posy>
+					<width>12</width>
+					<height>12</height>
+					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + Container.Content(episodes)</visible>
+					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 				<!-- Watched overlay for movies/TV shows -->
 				<control type="image">
@@ -160,8 +177,16 @@
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(episodes)</visible>
-					<texture>$INFO[ListItem.Overlay]</texture>
+					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>4</posx>
+					<posy>57</posy>
+					<width>12</width>
+					<height>12</height>
+					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + !Container.Content(episodes)</visible>
+					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 				<control type="label">
 					<posx>30</posx>

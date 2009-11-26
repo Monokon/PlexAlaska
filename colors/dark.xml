@@ -5,7 +5,7 @@
 	<color name="backgroundColor">ff000000</color>	
 	<color name="BackgroundFilterColor">ff009ACD</color>
 	<color name="ButtonFilterColor">ff009ACD</color>
-	<color name="WatchedOverlayFocusedColor">ff009ACD</color>
+	<color name="WatchedOverlayFocusedColor">FF009ACD</color>
 	<color name="WatchedOverlayUnfocusedColor">40009ACD</color>
 	<color name="FocusLinesBackground">30ffffff</color>
 

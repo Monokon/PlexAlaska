@@ -76,8 +76,17 @@
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + !Window.IsActive(2003)</visible>
-					<texture>$INFO[ListItem.Overlay]</texture>
+					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>124</posx>
+					<posy>24</posy>
+					<width>12</width>
+					<height>12</height>
+					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay) + !Window.IsActive(2003)</visible>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>89FFFFFF</colordiffuse>
 				</control>
 			</itemlayout>
 			<focusedlayout width="633" height="164">
@@ -134,8 +143,20 @@
 					<width>20</width>
 					<height>20</height>
 					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
-					<texture>$INFO[ListItem.Overlay]</texture>
+					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" />
+						<effect type="fade" start="0" end="100" time="200" />
+					</animation>
+				</control>
+				<control type="image">
+					<posx>23</posx>
+					<posy>23</posy>
+					<width>12</width>
+					<height>12</height>
+					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<texture>$INFO[ListItem.Overlay]</texture>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" />
 						<effect type="fade" start="0" end="100" time="200" />
