@@ -53,8 +53,8 @@
 
 	<!-- Window menu colours -->
 
-	<color name="MenuValue">FFc7c7c7</color>
-	<color name="buttonNF">FF907070</color>
+	<color name="MenuValue">FF907070</color>
+	<color name="MenuValueFO">FFc89008</color>
 
 	<!-- Poster view colours -->
 
@@ -114,9 +114,6 @@
 	<color name="FM_ListFocusedAccent">00CCCCCC</color>
 	<color name="FM_ListUnfocused">DD202020</color>
 	<color name="FM_ListFocusSelected">CCcccccc</color>
-
-	<!-- settings -->
-	<color name="settings_focused">FFc89008</color>
 
 	<!-- Now Playing -->
 	<color name="NP_time_nofilter">FF907070</color>

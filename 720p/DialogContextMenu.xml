@@ -24,7 +24,7 @@
 			<height>39</height>
 			<width>1280</width>
 			<font>Font_MenuValue</font>
-			<focusedcolor>settings_focused</focusedcolor>
+			<focusedcolor>MenuValueFO</focusedcolor>
 			<align>center</align>
 			<aligny>middle</aligny>
 		</control>

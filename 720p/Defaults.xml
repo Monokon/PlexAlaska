@@ -7,8 +7,8 @@
 		<align>left</align>
 		<font>Font_InfoPlot</font>
 		<textcolor>Grey</textcolor>
-		<focusedcolor>settings_focused</focusedcolor>
-		<selectedcolor>settings_focused</selectedcolor>
+		<focusedcolor>MenuValueFO</focusedcolor>
+		<selectedcolor>MenuValueFO</selectedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<scroll>false</scroll>
 	</default>
@@ -32,9 +32,9 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>Font_Settings</font>
-		<textcolor>buttonNF</textcolor>
-		<focusedcolor>settings_focused</focusedcolor>
-		<selectedcolor>settings_focused</selectedcolor>
+		<textcolor>MenuValue</textcolor>
+		<focusedcolor>MenuValueFO</focusedcolor>
+		<selectedcolor>MenuValueFO</selectedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<texturefocus>ButtonFo.png</texturefocus>
 		<texturenofocus>ButtonNF.png</texturenofocus>
@@ -51,7 +51,7 @@
 		<label>-</label>
 		<font>Font_Settings</font>
 		<textcolor>MenuValue</textcolor>
-		<focusedcolor>settings_focused</focusedcolor>
+		<focusedcolor>MenuValueFO</focusedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<pulseonselect>false</pulseonselect>
 	    <texturenofocus>arrowupnf.png</texturenofocus>
@@ -71,7 +71,7 @@
 		<aligny>center</aligny>
 		<font>Font_Settings</font>
 		<textcolor>Grey</textcolor>
-		<focusedcolor>settings_focused</focusedcolor>
+		<focusedcolor>MenuValueFO</focusedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<texturenofocus>-</texturenofocus>
 		<texturefocus>ButtonFo.png</texturefocus>
@@ -100,8 +100,8 @@
 		<texturedownfocus>ArrowDownFo.png</texturedownfocus>
 		<colordiffuse>ButtonFilterColor</colordiffuse>
 		<textcolor>Grey</textcolor>
-		<focusedcolor>settings_focused</focusedcolor>
-		<selectedcolor>settings_focused</selectedcolor>
+		<focusedcolor>MenuValueFO</focusedcolor>
+		<selectedcolor>MenuValueFO</selectedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<align>left</align>
 		<aligny>center</aligny>
@@ -116,8 +116,8 @@
 		<width>15</width>
 		<font>Font_Settings</font>
 		<textcolor>Grey</textcolor>
-		<focusedcolor>settings_focused</focusedcolor>
-		<selectedcolor>settings_focused</selectedcolor>
+		<focusedcolor>MenuValueFO</focusedcolor>
+		<selectedcolor>MenuValueFO</selectedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<align>left</align>
 		<aligny>center</aligny>
@@ -142,8 +142,8 @@
 		<aligny>center</aligny>
 		<font>Font_Settings</font>
 		<textcolor>Grey</textcolor>
-		<focusedcolor>settings_focused</focusedcolor>
-		<selectedcolor>settings_focused</selectedcolor>
+		<focusedcolor>MenuValueFO</focusedcolor>
+		<selectedcolor>MenuValueFO</selectedcolor>
 		<disabledcolor>Red</disabledcolor>
 	</default>
 

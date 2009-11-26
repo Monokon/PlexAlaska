@@ -43,27 +43,27 @@
 		<control type="button" id="7">
 			<description>Default Button</description>
 			<font>Font_Settings</font>
-			<textcolor>ListTrackF</textcolor>
+			<textcolor>MenuValue</textcolor>
 			<align>left</align>
 			<textoffsetx>5</textoffsetx>
-			<focusedcolor>settings_focused</focusedcolor>
+			<focusedcolor>MenuValueFO</focusedcolor>
 			<texturefocus>ButtonFo.png</texturefocus>
 		</control>
 
 		<control type="radiobutton" id="8">
 			<description>Default Radio Button</description>
 			<font>Font_Settings</font>
-			<textcolor>ListTrackF</textcolor>
+			<textcolor>MenuValue</textcolor>
 			<align>left</align>
-			<focusedcolor>settings_focused</focusedcolor>
+			<focusedcolor>MenuValueFO</focusedcolor>
 		</control>
 
 		<control type="spincontrolex" id="9">
 			<description>Default Spin Control</description>
 			<font>Font_Settings</font>
-			<textcolor>ListTrackF</textcolor>
+			<textcolor>MenuValue</textcolor>
 			<align>left</align>
-			<focusedcolor>settings_focused</focusedcolor>
+			<focusedcolor>MenuValueFO</focusedcolor>
 			<texturefocus>ButtonFo.png</texturefocus>
 		</control>
 
@@ -71,9 +71,9 @@
 			<description>Default Category Button</description>
 			<width>150</width>
 			<font>Font_Settings</font>
-			<textcolor>ListTrackF</textcolor>
+			<textcolor>MenuValue</textcolor>
 			<texturefocus border="1">ButtonFo.png</texturefocus>
-			<focusedcolor>settings_focused</focusedcolor>
+			<focusedcolor>MenuValueFO</focusedcolor>
 		</control>
 
 		<include>Global_ContextFilter</include>

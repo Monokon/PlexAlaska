@@ -24,7 +24,7 @@
 					<posy>0</posy>
 					<width>300</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
+					<textcolor>MenuValue</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
@@ -35,7 +35,7 @@
 					<posy>0</posy>
 					<width>300</width>
 					<font>Font_Settings</font>
-					<textcolor>settings_focused</textcolor>
+					<textcolor>MenuValueFO</textcolor>
 					<align>left</align>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
@@ -100,8 +100,8 @@
 				<control type="radiobutton" id="100">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Scroll Plot</label>
 					<align>left</align>
@@ -112,8 +112,8 @@
 				<control type="radiobutton" id="101">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Media Flags</label>
 					<align>left</align>
@@ -124,8 +124,8 @@
 				<control type="radiobutton" id="102">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Swap IMDB for Studio Flags</label>
 					<align>left</align>
@@ -136,8 +136,8 @@
 				<control type="radiobutton" id="103">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Global Temperature</label>
 					<align>left</align>
@@ -148,8 +148,8 @@
 				<control type="radiobutton" id="104">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Larger RSS</label>
 					<align>left</align>
@@ -160,8 +160,8 @@
 				<control type="radiobutton" id="105">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Only show RSS on home screen</label>
 					<align>left</align>
@@ -172,8 +172,8 @@
 				<control type="radiobutton" id="106">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Show current time in video OSD</label>
 					<align>left</align>
@@ -195,8 +195,8 @@
 				<control type="radiobutton" id="203">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Home 1</label>
 					<align>left</align>
@@ -208,8 +208,8 @@
 				<control type="radiobutton" id="200">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Home 2</label>
 					<align>left</align>
@@ -221,8 +221,8 @@
 				<control type="radiobutton" id="201">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Home 3</label>
 					<align>left</align>
@@ -242,8 +242,8 @@
 				<control type="radiobutton" id="207">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Hide item "Appstore"</label>
 					<align>left</align>
@@ -255,8 +255,8 @@
 				<control type="radiobutton" id="208">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Hide item "Videos"</label>
 					<align>left</align>
@@ -267,8 +267,8 @@
 				<control type="radiobutton" id="209">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Hide item "Pictures"</label>
 					<align>left</align>
@@ -279,8 +279,8 @@
 				<control type="radiobutton" id="210">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Hide item "Weather"</label>
 					<align>left</align>
@@ -291,8 +291,8 @@
 				<control type="radiobutton" id="211">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Hide item "Quit Plex"</label>
 					<align>left</align>
@@ -303,8 +303,8 @@
 				<control type="radiobutton" id="202">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Conditional Weather</label>
 					<align>left</align>
@@ -316,8 +316,8 @@
 				<control type="radiobutton" id="206">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Display OSX overlays</label>
 					<align>left</align>
@@ -329,8 +329,8 @@
 				<control type="radiobutton" id="213">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Use fanart for "Movies"</label>
 					<align>left</align>
@@ -345,8 +345,8 @@
 				<control type="togglebutton" id="214">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Set Home Music Artwork Folder</label>
 					<altlabel>Reset Home Music Artwork Folder</altlabel>
@@ -364,8 +364,8 @@
 				<control type="togglebutton" id="215">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Set Home Movie Artwork Folder</label>
 					<altlabel>Reset Home Movie Artwork Folder</altlabel>
@@ -383,8 +383,8 @@
 				<control type="togglebutton" id="216">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Set Home TV Artwork Folder</label>
 					<altlabel>Reset Home TV Artwork Folder</altlabel>
@@ -402,8 +402,8 @@
 				<control type="togglebutton" id="217">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Set Home Pictures Artwork Folder</label>
 					<altlabel>Reset Home Pictures Artwork Folder</altlabel>
@@ -432,8 +432,8 @@
 				<control type="radiobutton" id="300">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Disable lines to highlight focused item</label>
 					<align>left</align>
@@ -444,8 +444,8 @@
 				<control type="radiobutton" id="304">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Use "fixedlist" in poster view for TV shows</label>
 					<align>left</align>
@@ -456,8 +456,8 @@
 				<control type="radiobutton" id="305">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Hide label of current picture/path in "Pictures"</label>
 					<align>left</align>
@@ -479,8 +479,8 @@
 				<control type="radiobutton" id="401">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Increase backdrop visibility</label>
 					<align>left</align>
@@ -523,8 +523,8 @@
 				<control type="radiobutton" id="402">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Disable backdrops for movies</label>
 					<align>left</align>
@@ -535,8 +535,8 @@
 				<control type="radiobutton" id="403">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Disable backdrops for TV shows</label>
 					<align>left</align>
@@ -547,8 +547,8 @@
 				<control type="radiobutton" id="404">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Disable backdrops for pictures</label>
 					<align>left</align>
@@ -574,8 +574,8 @@
 					<posx>100</posx>
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Set path to artist backdrops</label>
 					<label2>$INFO[Skin.String(artistbackdroppath)]</label2>
@@ -586,8 +586,8 @@
 				<control type="radiobutton" id="601">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Disable filter image in NowPlaying</label>
 					<align>left</align>
@@ -598,8 +598,8 @@
 				<control type="radiobutton" id="602">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Disable progressbar</label>
 					<align>left</align>
@@ -610,8 +610,8 @@
 				<control type="radiobutton" id="603">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Use alternative NowPlaying-screen</label>
 					<align>left</align>
@@ -634,8 +634,8 @@
 				<control type="radiobutton" id="700">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Enable autom. theme change</label>
 					<align>left</align>
@@ -658,8 +658,8 @@
 				<control type="radiobutton" id="500">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Debug mode</label>
 					<align>left</align>
@@ -670,8 +670,8 @@
 				<control type="radiobutton" id="501">
 					<width>740</width>
 					<font>Font_Settings</font>
-					<textcolor>ListTrackF</textcolor>
-					<focusedcolor>settings_focused</focusedcolor>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
 					<!-- LOC -->
 					<label>Debug Grid</label>
 					<align>left</align>

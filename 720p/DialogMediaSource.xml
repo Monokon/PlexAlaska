@@ -67,7 +67,7 @@
 					<posx>5</posx>
 					<width>330</width>
 					<height>30</height>
-					<textcolor>settings_focused</textcolor>
+					<textcolor>MenuValueFO</textcolor>
 					<info>ListItem.Label</info>
 				</control>
 			</focusedlayout>

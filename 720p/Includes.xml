@@ -790,8 +790,8 @@
 	<include name="FanartVisibilityButtons">
 		<width>740</width>
 		<font>Font_Settings</font>
-		<textcolor>ListTrackF</textcolor>
-		<focusedcolor>settings_focused</focusedcolor>
+		<textcolor>MenuValue</textcolor>
+		<focusedcolor>MenuValueFO</focusedcolor>
 		<align>left</align>
 		<aligny>center</aligny>
 		<include>ResetFanartVisibilityButtons</include>
