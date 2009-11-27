@@ -36,7 +36,7 @@
 	<color name="RSSTitle">FFFFFFFF</color>
 	<color name="NowPlayingArtist">FFB3B3B3</color>
 	<color name="NowPlayingAlbum">FFB3B3B3</color>
-	<color name="NowPlayingTrack">FF686868</color>
+	<color name="NowPlayingTrack">ff009ACD</color>
 	<color name="MediaMenu">FFFFFFFF</color>
 	<color name="FlagDiffuse">FFFFFFFF</color>
 	<color name="FlagText">FFFFFFFF</color>
