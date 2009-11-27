@@ -26,7 +26,7 @@
 				<font>Font_MenuValue</font>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>Now Playing</label>
+				<label>$LOCALIZE[31004]</label>
 				<onclick>Dialog.Close(1111)</onclick>
 				<onclick>XBMC.ActivateWindow(50)</onclick>
 				<visible>Player.HasMedia</visible>
@@ -50,7 +50,7 @@
 				<font>Font_MenuValue</font>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>Filemanager</label>
+				<label>$LOCALIZE[31500]</label>
 				<onclick>Dialog.Close(1111)</onclick>
 				<onclick>XBMC.ActivateWindow(3)</onclick>
 			</control>
@@ -74,7 +74,7 @@
 				<font>Font_MenuValue</font>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>Log out</label>
+				<label>$LOCALIZE[31022]</label>
 				<onclick>Dialog.Close(1111)</onclick>
 				<onclick>System.LogOff</onclick>
 				<visible>system.hasloginscreen</visible>
@@ -87,7 +87,7 @@
 				<font>Font_MenuValue</font>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>Shutdown OSX</label>
+				<label>$LOCALIZE[31019]</label>
 				<onclick>Plex.ShutDownSystem</onclick>
 			</control>
 			
@@ -98,7 +98,7 @@
 				<font>Font_MenuValue</font>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>Sleep</label>
+				<label>$LOCALIZE[31035]</label>
 				<onclick>Dialog.Close(1111)</onclick>
 				<onclick>XBMC.SleepSystem()</onclick>
 			</control>
@@ -109,7 +109,7 @@
 				<font>Font_MenuValue</font>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>Quit Plex</label>
+				<label>$LOCALIZE[31036]</label>
 				<onclick>XBMC.ShutDown()</onclick>
 			</control>
 			<control type="button" id="3116">

@@ -751,7 +751,7 @@
 				<include>Home_MainMenuShade</include>
 				<control type="label">
 					<include>Home_MainMenuLabel</include>
-					<label>Quit Plex</label>
+					<label>$LOCALIZE[31036]</label>
 					<visible>!ControlGroup(3900).HasFocus()</visible>
 					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(9) | ![Control.IsVisible(398) | Control.IsVisible(399)]">Conditional</animation>
 				</control>
@@ -1122,7 +1122,7 @@
 			<onright>999</onright>
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3302">
-				<label>Most played</label>
+				<label>$LOCALIZE[31025]</label>
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<onclick>ActivateWindow(10501,plex://localhost/music/iTunes/Most Played/)</onclick>
@@ -1130,31 +1130,31 @@
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3303">
-				<label>Artists</label>
+				<label>$LOCALIZE[31026]</label>
 				<onclick>ActivateWindow(10501,plex://localhost/music/iTunes/Artists/)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3304">
-				<label>Albums</label>
+				<label>$LOCALIZE[31027]</label>
 				<onclick>ActivateWindow(10501,plex://localhost/music/iTunes/Albums/)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3305">
-				<label>Genre</label>
+				<label>$LOCALIZE[31000]</label>
 				<onclick>ActivateWindow(10501,plex://localhost/music/iTunes/Genre/)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3306">
-				<label>Playlists</label>
+				<label>$LOCALIZE[31028]</label>
 				<onclick>ActivateWindow(10501,plex://localhost/music/iTunes/PlayLists/)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3307">
-				<label>Music Settings</label>
+				<label>$LOCALIZE[31029]</label>
 				<onclick>ActivateWindow(MusicSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemusicsettings)</visible>
@@ -1228,13 +1228,13 @@
 			<onright>999</onright>
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3401">
-				<label>New Movies</label>
+				<label>$LOCALIZE[31030]</label>
 				<onclick>ActivateWindow(VideoLibrary,recentlyaddedmovies,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemovienew)</visible>
 			</control>
 			<control type="button" id="3402">
-				<label>Studios</label>
+				<label>$LOCALIZE[31031]</label>
 				<onclick>ActivateWindow(VideoLibrary,moviestudios,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemoviestudios)</visible>
@@ -1331,7 +1331,7 @@
 			<onright>999</onright>
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3501">
-				<label>New Episodes</label>
+				<label>$LOCALIZE[31032]</label>
 				<onclick>ActivateWindow(VideoLibrary,recentlyaddedepisodes,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidetvnew)</visible>
@@ -1439,7 +1439,7 @@
 			<onright>999</onright>
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3601">
-				<label>Picture Settings</label>
+				<label>$LOCALIZE[31033]</label>
 				<onclick>ActivateWindow(PicturesSettings)</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidepicturesettings)</visible>
@@ -1484,7 +1484,7 @@
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hideday3)</visible>
 			</control>-->
 			<control type="button" id="3701">
-				<label>Weather Settings</label>
+				<label>$LOCALIZE[31034]</label>
 				<onclick>ActivateWindow(WeatherSettings)</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hideweathersettings)</visible>
@@ -1574,13 +1574,13 @@
 			<onright>999</onright>
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3901">
-				<label>Sleep</label>
+				<label>$LOCALIZE[31035]</label>
 				<onclick>XBMC.SleepSystem()</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidesleep)</visible>
 			</control>
 			<control type="button" id="3902">
-				<label>Shutdown</label>
+				<label>$LOCALIZE[31019]</label>
 				<onclick>Plex.ShutDownSystem()</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hideshutdown)</visible>

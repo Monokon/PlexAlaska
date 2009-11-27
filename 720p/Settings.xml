@@ -140,7 +140,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Adjust how Plex handles video content. Includes stacking options for multi-part files, library database options, and rendering and playback options</label>
+				<label>$LOCALIZE[31900]</label>
 			</control>
 		</control>
 		<!--<control type="group">
@@ -172,7 +172,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Allowing individual users to save their own configurations. rss feeds, view settings and media libraries can be separately stored</label>
+				<label>$LOCALIZE[31901]</label>
 			</control>
 		</control>
 		<control type="group">
@@ -188,7 +188,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Control core hardware and software functions. Includes autorun options, audio and video hardware setup, and parental master lock functions</label>
+				<label>$LOCALIZE[31902]</label>
 			</control>
 		</control>
 		<control type="group">
@@ -204,7 +204,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Adjust how Plex handles audio content. Includes browsing options for file and database library modes, together with audio hardware setup</label>
+				<label>$LOCALIZE[31903]</label>
 			</control>
 		</control>
 		<control type="group">
@@ -220,7 +220,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Set up region information for Plex' optional Weather displays</label>
+				<label>$LOCALIZE[31904]</label>
 			</control>
 		</control>
 		<control type="group">
@@ -236,7 +236,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Adjust the look and feel of Plex. Includes skin, theme, sound and font selection, RSS feed control, and localisation settings</label>
+				<label>$LOCALIZE[31905]</label>
 			</control>
 		</control>
 		<control type="group">
@@ -252,7 +252,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Adjust how Plex displays personal image collections. Includes screenshot grabbing, special effects and advanced display options</label>
+				<label>$LOCALIZE[31906]</label>
 			</control>
 		</control>
 		<control type="group">
@@ -268,7 +268,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Set up Plex' network interface. Controls IP assignment, WWW and FTP server settings, SMB client setup, and UPnP configuration</label>
+				<label>$LOCALIZE[31907]</label>
 			</control>
 		</control>
 		<control type="group">
@@ -284,7 +284,7 @@
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
-				<label>Choose from a variety of advanced settings and customisation options to make the Alaska UI your own</label>
+				<label>$LOCALIZE[31908]</label>
 			</control>
 		</control>
 		<include>Global_ContextFilter</include>

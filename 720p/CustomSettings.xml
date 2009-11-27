@@ -43,42 +43,37 @@
 			<content>
 				<item id="1">
 					<description>General</description>
-					<label>128</label>
+					<label>$LOCALIZE[31910]</label>
 					<onclick>SetFocus(9001)</onclick>
 				</item>
 				<item id="2">
 					<description>Home</description>
-					<label>10000</label>
+					<label>$LOCALIZE[31911]</label>
 					<onclick>SetFocus(9002)</onclick>
 				</item>
 				<item id="3">
-					<!-- LOC -->
 					<description>Views</description>
-					<label>Views</label>
+					<label>$LOCALIZE[31912]</label>
 					<onclick>SetFocus(9003)</onclick>
 				</item>
 				<item id="4">
-					<!-- LOC -->
 					<description>Backdrops</description>
-					<label>Backdrops</label>
+					<label>$LOCALIZE[31913]</label>
 					<onclick>SetFocus(9004)</onclick>
 				</item>
 				<item id="6">
-					<!-- LOC -->
 					<description>NowPlaying</description>
-					<label>NowPlaying</label>
+					<label>$LOCALIZE[31914]</label>
 					<onclick>SetFocus(9006)</onclick>
 				</item>
 				<item id="7">
-					<!-- LOC -->
 					<description>Theme</description>
-					<label>Theme</label>
+					<label>$LOCALIZE[31915]</label>
 					<onclick>SetFocus(9007)</onclick>
 				</item>
 				<item id="5">
-					<!-- LOC -->
 					<description>Misc.</description>
-					<label>Misc.</label>
+					<label>$LOCALIZE[31916]</label>
 					<onclick>SetFocus(9005)</onclick>
 				</item>
 			</content>
@@ -102,8 +97,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Scroll Plot</label>
+					<label>$LOCALIZE[31920]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(autoscroll)</onclick>
@@ -114,8 +108,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Media Flags</label>
+					<label>$LOCALIZE[31921]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(mediaflagson)</onclick>
@@ -126,8 +119,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Swap IMDB for Studio Flags</label>
+					<label>$LOCALIZE[31922]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(showstudioflags)</onclick>
@@ -138,8 +130,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Global Temperature</label>
+					<label>$LOCALIZE[31923]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(ShowGlobalTemp)</onclick>
@@ -150,8 +141,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Larger RSS</label>
+					<label>$LOCALIZE[31924]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(largeRSS)</onclick>
@@ -162,8 +152,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Only show RSS on home screen</label>
+					<label>$LOCALIZE[31925]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(RSS_only_on_home)</onclick>
@@ -174,8 +163,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Show current time in video OSD</label>
+					<label>$LOCALIZE[31926]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(OSD_Time)</onclick>
@@ -197,8 +185,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Home 1</label>
+					<label>$LOCALIZE[31930]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<include>ResetHomeButtons</include>
@@ -210,8 +197,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Home 2</label>
+					<label>$LOCALIZE[31931]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<include>ResetHomeButtons</include>
@@ -223,8 +209,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Home 3</label>
+					<label>$LOCALIZE[31932]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<include>ResetHomeButtons</include>
@@ -244,8 +229,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Hide item "Appstore"</label>
+					<label>$LOCALIZE[31933]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(noappstore)</onclick>
@@ -257,8 +241,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Hide item "Videos"</label>
+					<label>$LOCALIZE[31934]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(novideos)</onclick>
@@ -269,8 +252,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Hide item "Pictures"</label>
+					<label>$LOCALIZE[31935]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(nopictures)</onclick>
@@ -281,8 +263,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Hide item "Weather"</label>
+					<label>$LOCALIZE[31936]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(noweather)</onclick>
@@ -293,8 +274,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Hide item "Quit Plex"</label>
+					<label>$LOCALIZE[31937]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(nohomequit)</onclick>
@@ -305,8 +285,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Conditional Weather</label>
+					<label>$LOCALIZE[31938]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(homeweather)</onclick>
@@ -318,8 +297,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Display OSX overlays</label>
+					<label>$LOCALIZE[31939]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(osximages)</onclick>
@@ -331,8 +309,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Use fanart for "Movies"</label>
+					<label>$LOCALIZE[31940]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(fanartformovies)</onclick>
@@ -347,9 +324,8 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Set Home Music Artwork Folder</label>
-					<altlabel>Reset Home Music Artwork Folder</altlabel>
+					<label>$LOCALIZE[31941]</label>
+					<altlabel>$LOCALIZE[31942]</altlabel>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.SetPath(CustomMusicFolder)</onclick>
@@ -366,9 +342,8 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Set Home Movie Artwork Folder</label>
-					<altlabel>Reset Home Movie Artwork Folder</altlabel>
+					<label>$LOCALIZE[31943]</label>
+					<altlabel>$LOCALIZE[31944]</altlabel>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.SetPath(CustomMovieFolder)</onclick>
@@ -385,9 +360,8 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Set Home TV Artwork Folder</label>
-					<altlabel>Reset Home TV Artwork Folder</altlabel>
+					<label>$LOCALIZE[31945]</label>
+					<altlabel>$LOCALIZE[31946]</altlabel>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.SetPath(CustomTVShowsFolder)</onclick>
@@ -404,9 +378,8 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Set Home Pictures Artwork Folder</label>
-					<altlabel>Reset Home Pictures Artwork Folder</altlabel>
+					<label>$LOCALIZE[31947]</label>
+					<altlabel>$LOCALIZE[31948]</altlabel>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.SetPath(CustomPicturesFolder)</onclick>
@@ -434,8 +407,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Disable lines to highlight focused item</label>
+					<label>$LOCALIZE[31955]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(No_File_View_Focus_Line)</onclick>
@@ -446,8 +418,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Use "fixedlist" in poster view for TV shows</label>
+					<label>$LOCALIZE[31956]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(fixedlist)</onclick>
@@ -458,8 +429,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Hide label of current picture/path in "Pictures"</label>
+					<label>$LOCALIZE[31957]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(nopicturepath)</onclick>
@@ -481,8 +451,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Increase backdrop visibility</label>
+					<label>$LOCALIZE[31960]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility)</onclick>
@@ -493,29 +462,25 @@
 
 				<control type="radiobutton" id="4011">
 					<include>FanartVisibilityButtons</include>
-					<!-- LOC -->
-					<label>+ 20% visibility</label>
+					<label>+ $LOCALIZE[31961]</label>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility20)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility20)</selected>
 				</control>
 				<control type="radiobutton" id="4012">
 					<include>FanartVisibilityButtons</include>
-					<!-- LOC -->
-					<label>+ 30% visibility</label>
+					<label>+ $LOCALIZE[31962]</label>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility30)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility30)</selected>
 				</control>
 				<control type="radiobutton" id="4013">
 					<include>FanartVisibilityButtons</include>
-					<!-- LOC -->
-					<label>+ 40% visibility</label>
+					<label>+ $LOCALIZE[31963]</label>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility40)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility40)</selected>
 				</control>
 				<control type="radiobutton" id="4014">
 					<include>FanartVisibilityButtons</include>
-					<!-- LOC -->
-					<label>+ 50% visibility</label>
+					<label>+ $LOCALIZE[31964]</label>
 					<onclick>Skin.ToggleSetting(increaseFanartVisibility50)</onclick>
 					<selected>Skin.HasSetting(increaseFanartVisibility50)</selected>
 				</control>
@@ -525,8 +490,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Disable backdrops for movies</label>
+					<label>$LOCALIZE[31965]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(nomoviebackdrops)</onclick>
@@ -537,8 +501,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Disable backdrops for TV shows</label>
+					<label>$LOCALIZE[31966]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(notvshowbackdrops)</onclick>
@@ -549,8 +512,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Disable backdrops for pictures</label>
+					<label>$LOCALIZE[31967]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(nopicturebackdrops)</onclick>
@@ -570,26 +532,30 @@
 				<onup>9006</onup>
 				<ondown>9006</ondown>
 				<include>Animation_CommonFadeNoHide</include>
-				<control type="button" id="600">
+				<control type="togglebutton" id="600">
 					<posx>100</posx>
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Set path to artist backdrops</label>
-					<label2>$INFO[Skin.String(artistbackdroppath)]</label2>
+					<label>$LOCALIZE[31970]</label>
+					<altlabel>$LOCALIZE[31971]</altlabel>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.SetPath(artistbackdroppath)</onclick>
+					<altclick>Skin.Reset(artistbackdroppath)</altclick>
+					<usealttexture>Skin.String(artistbackdroppath)</usealttexture>
+					<texturenofocus>-</texturenofocus>
+					<texturefocus>-</texturefocus>
+					<alttexturenofocus>-</alttexturenofocus>
+					<alttexturefocus>-</alttexturefocus>
 				</control>
 				<control type="radiobutton" id="601">
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Disable filter image in NowPlaying</label>
+					<label>$LOCALIZE[31972]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(disablenowplayingfilter)</onclick>
@@ -600,8 +566,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Disable progressbar</label>
+					<label>$LOCALIZE[31973]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(disableprogressbar)</onclick>
@@ -612,8 +577,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Use alternative NowPlaying-screen</label>
+					<label>$LOCALIZE[31974]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(alt_nowplaying)</onclick>
@@ -636,8 +600,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Enable autom. theme change</label>
+					<label>$LOCALIZE[31980]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(autom_themechange)</onclick>
@@ -660,8 +623,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Debug mode</label>
+					<label>$LOCALIZE[31985]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(debugmode)</onclick>
@@ -672,8 +634,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<!-- LOC -->
-					<label>Debug Grid</label>
+					<label>$LOCALIZE[31986]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(debuggrid)</onclick>
@@ -717,7 +678,7 @@
 				<textcolor>Black</textcolor>
 				<scroll>true</scroll>
 				<scrollspeed>40</scrollspeed>
-				<label>Only used if option "Fanart for Movies" is disabled</label>
+				<label>$LOCALIZE[31990]</label>
 			</control>
 			<visible>Control.HasFocus(215)</visible>
 		</control>
@@ -733,7 +694,7 @@
 				<textcolor>Black</textcolor>
 				<scroll>true</scroll>
 				<scrollspeed>40</scrollspeed>
-				<label>Only used if option "OSX overlays" is disabled</label>
+				<label>$LOCALIZE[31991]</label>
 			</control>
 			<visible>Control.HasFocus(217)</visible>
 		</control>
@@ -749,7 +710,7 @@
 				<textcolor>Black</textcolor>
 				<scroll>true</scroll>
 				<scrollspeed>40</scrollspeed>
-				<label>Switches theme colors automatically. From 9am to 8pm "default.xml" is used, from 8pm to 9am "dark.xml"</label>
+				<label>$LOCALIZE[31992]</label>
 			</control>
 			<visible>Control.HasFocus(700)</visible>
 		</control>

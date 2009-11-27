@@ -41,7 +41,7 @@
 				<animation effect="fade" start="100" end="50" time="200">Focus</animation>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>Filemanager</label>
+				<label>$LOCALIZE[31500]</label>
 				<onclick>XBMC.ActivateWindow(3)</onclick>
 			</control>
 			
