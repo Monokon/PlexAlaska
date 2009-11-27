@@ -144,7 +144,7 @@
 						<textcolor>NP_time_nofilter</textcolor>
 						<label>$INFO[MusicPlayer.Time] / $INFO[MusicPlayer.Duration]</label>
 						<aspectratio align="right">keep</aspectratio>
-						<visible>Skin.HasSetting(disablenowplayingfilter)</visible>
+						<visible>Skin.HasSetting(disablenowplayingfilter) + Player.HasMedia</visible>
 					</control>
 					<control type="label">
 						<description>Remaining time</description>
@@ -156,7 +156,7 @@
 						<textcolor>NP_time_filter</textcolor>
 						<label>$INFO[MusicPlayer.Time] / $INFO[MusicPlayer.Duration]</label>
 						<aspectratio align="right">keep</aspectratio>
-						<visible>!Skin.HasSetting(disablenowplayingfilter)</visible>
+						<visible>!Skin.HasSetting(disablenowplayingfilter) + Player.HasMedia</visible>
 					</control>
 					<control type="label">
 						<description>Track Number</description>
@@ -168,7 +168,7 @@
 						<textcolor>NP_track_nofilter</textcolor>
 						<label>Track: $INFO[MusicPlayer.TrackNumber]</label>
 						<aspectratio align="right">keep</aspectratio>
-						<visible>Skin.HasSetting(disablenowplayingfilter)</visible>
+						<visible>Skin.HasSetting(disablenowplayingfilter) + Player.HasMedia</visible>
 					</control>
 					<control type="label">
 						<description>Track Number</description>
@@ -180,7 +180,7 @@
 						<textcolor>NP_track_filter</textcolor>
 						<label>Track: $INFO[MusicPlayer.TrackNumber]</label>
 						<aspectratio align="right">keep</aspectratio>
-						<visible>!Skin.HasSetting(disablenowplayingfilter)</visible>
+						<visible>!Skin.HasSetting(disablenowplayingfilter) + Player.HasMedia</visible>
 					</control>
 					<control type="label">
 						<posx>350</posx>
@@ -223,7 +223,7 @@
 					<control type="label">
 						<posx>350</posx>
 						<posy>20</posy>
-						<width>550</width>
+						<width>590</width>
 						<height>30</height>
 						<align>left</align>
 						<aligny>-</aligny>
