@@ -59,6 +59,7 @@
 				<width>182</width>
 				<height>33</height>
 				<info>ListItem.StarRating</info>
+				<colordiffuse>StarRatingDiffuse</colordiffuse>
 			</control>
 			<control type="label">
 				<posx>0</posx>

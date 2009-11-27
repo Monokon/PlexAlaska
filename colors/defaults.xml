@@ -40,6 +40,7 @@
 	<color name="MediaMenu">77686868</color>
 	<color name="FlagDiffuse">CC474747</color>
 	<color name="FlagText">aacdcdcd</color>
+	<color name="StarRatingDiffuse">FF686868</color>
 
 	<!-- OSD -->
 

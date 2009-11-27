@@ -250,6 +250,7 @@
 					<width>121</width>
 					<height>25</height>
 					<texture>$INFO[ListItem.StarRating]</texture>
+					<colordiffuse>StarRatingDiffuse</colordiffuse>
 					<visible>Window.IsActive(25) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(genres)]</visible>
 				</control>
 				<!-- Programs -->

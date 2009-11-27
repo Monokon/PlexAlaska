@@ -40,7 +40,8 @@
 					<posy>26</posy>
 					<width>100</width>
 					<height>18</height>
-					<texture>$INFO[ListItem.StarRating]</texture>
+					<texture flipx="true">$INFO[ListItem.StarRating]</texture>
+					<colordiffuse>StarRatingDiffuse</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
 				</control>			
 			</itemlayout>

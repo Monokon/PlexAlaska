@@ -40,6 +40,7 @@
 	<color name="MediaMenu">FFFFFFFF</color>
 	<color name="FlagDiffuse">FFFFFFFF</color>
 	<color name="FlagText">FFFFFFFF</color>
+	<color name="StarRatingDiffuse">FFFFFFFF</color>
 
 	<!-- OSD -->
 
