@@ -3,7 +3,7 @@
 <includes>
 	<include name="Viewtype_Episode">
 		<control type="fixedlist" id="51">
-			<viewtype label="list">list</viewtype>
+			<viewtype label="Episodes">list</viewtype>
 			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
 			<posx>267</posx>
 			<posy>110</posy>

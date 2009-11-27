@@ -157,6 +157,10 @@
 		<animation effect="slide" start="0,0" end="-280,0" time="400" tween="cubic" easing="inout" condition="Window.IsActive(2003)">Conditional</animation>
 	</include>
 
+	<include name="Animation_BannerInfoSlide">
+		<animation effect="slide" start="0,0" end="-350,0" time="400" tween="cubic" easing="inout" condition="Window.IsActive(2003)">Conditional</animation>
+	</include>
+
 	<!-- Browser animations -->
 
 	<include name="Animation_EpisodeFloat">

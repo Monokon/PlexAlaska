@@ -39,7 +39,7 @@
 				<font>Font_MenuValue</font>
 				<align>center</align>
 				<aligny>middle</aligny>
-				<label>Settings</label>
+				<label>5</label>
 				<onclick>Dialog.Close(1111)</onclick>
 				<onclick>XBMC.ActivateWindow(settings)</onclick>
 			</control>

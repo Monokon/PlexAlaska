@@ -31,6 +31,7 @@
 		<include>Viewtype_Landscape</include>
 		<include>Viewtype_Episode</include>
 		<include>Viewtype_Files</include>
+		<include>Viewtype_Banner</include>
 
 		<include>Global_ContextFilter</include>
 

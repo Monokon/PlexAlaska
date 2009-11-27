@@ -42,7 +42,7 @@
 				<posy>120</posy>
 				<width>1034</width>
 				<font>Font_ListDetail</font>
-				<label>[B]Now Playing[/B]</label>
+				<label>[B]$LOCALIZE[31004][/B]</label>
 				<textcolor>NowPlayingArtist</textcolor>
 				<animation effect="slide" end="0,-20" condition="VideoPlayer.Content(episodes)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,-40" time="200" condition="Window.IsActive(PlayerControls)">Conditional</animation>

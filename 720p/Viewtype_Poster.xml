@@ -539,6 +539,7 @@
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByInfo</include>
+			<include>Animation_HiddenByMusicInfo</include>
 			<onup>7000</onup>
 			<ondown>7000</ondown>
 			<itemlayout width="200" height="200">
@@ -590,6 +591,7 @@
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByMusicInfo</include>
 			<!-- Artist -->
 			<control type="group">
 				<visible>Container.Content(artists)</visible>

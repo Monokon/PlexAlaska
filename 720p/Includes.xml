@@ -13,6 +13,7 @@
 	<include file="Viewtype_Fanart.xml" />
 	<include file="Viewtype_Fanart2.xml" />
 	<include file="Viewtype_Files.xml" />
+	<include file="Viewtype_Banner.xml" />
 	<include file="Includes_MediaFlags.xml" />
 	<include file="Includes_Animations.xml" />
 	<include file="Includes_Backgrounds.xml" />
