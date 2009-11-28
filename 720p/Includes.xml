@@ -432,6 +432,7 @@
 		<include>submenu_movies</include>
 		<include>submenu_tvshows</include>
 		<include>submenu_quit</include>
+		<include>submenu_appstore</include>
 		<include>submenu_dummybuttons</include>
 	</include>
 	<include name="Home_MenuList">
@@ -834,7 +835,7 @@
 			<visible>Container(300).HasFocus(1)</visible>
 		</control>
 		<control type="button" id="351">
-			<onfocus>SetFocus(300)</onfocus>
+			<onfocus>SetFocus(943)</onfocus>
 			<visible>Container(300).HasFocus(2)</visible>
 		</control>
 		<control type="button" id="351">
@@ -864,6 +865,48 @@
 		<control type="button" id="351">
 			<onfocus>SetFocus(940)</onfocus>
 			<visible>Container(300).HasFocus(9)</visible>
+		</control>
+	</include>
+
+	<include name="submenu_appstore">
+		<control type="group">
+			<posx>510</posx>
+			<posy>520</posy>
+			<visible>ControlGroup(943).HasFocus() + Container(300).HasFocus(2)</visible>
+			<include condition="Skin.HasSetting(home2)">Animation_Submenu_home2</include>
+			<control type="image">
+				<width>20</width>
+				<height>60</height>
+				<posx>0</posx>
+				<texture>mainmenu/submenu_left.png</texture>
+			</control>
+			<control type="image">
+				<width>220</width>
+				<height>60</height>
+				<posx>20</posx>
+				<texture>mainmenu/submenu_mid.png</texture>
+			</control>
+			<control type="image">
+				<width>20</width>
+				<height>60</height>
+				<posx>240</posx>
+				<texture>mainmenu/submenu_right.png</texture>
+			</control>
+
+			<control type="grouplist" id="943">
+				<posx>62</posx>
+				<posy>13</posy>
+				<width>400</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<onup>300</onup>
+				<orientation>horizontal</orientation>
+				<control type="button" id="40">
+					<include>submenubutton</include>
+					<label>$LOCALIZE[1036]</label>
+					<onclick>XBMC.ActivateWindow(Favourites)</onclick>
+				</control>
+			</control>
 		</control>
 	</include>
 
