@@ -1036,13 +1036,14 @@
 	<include name="submenubutton">
 		<width>130</width>
 		<height>36</height>
-		<texturefocus border="1">favorites/focus_bar.png</texturefocus>
-		<colordiffuse>BackgroundFilterColor</colordiffuse>
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>Small</font>
-		<focusedcolor>White</focusedcolor>
+		<focusedcolor>Black</focusedcolor>
 		<onclick>SetFocus(300)</onclick>
+		<animation type="Focus">
+			<effect delay="0" type="zoom" time="300" center="65,18" start="100" end="130" tween="back" easing="out" />
+		</animation>
 	</include>
 
 	<!-- date/time for video OSD -->
