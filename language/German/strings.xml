@@ -53,7 +53,7 @@
 	<string id="31902">Legen Sie Hard- und Softwarefunktionen fest. Inklusive Autostart-Optionen, Einstellungen der Audio- und Video-Hardware sowie Jugendschutzfunktionen</string>
 	<string id="31903">Passen Sie an, wie Plex mit Musikinhalten umgeht. Inklusive Browsing-Optionen für Datei- und Datenbankmodus</string>
 	<string id="31904">Legen Sie die Orte für Plex' Wetter-Anzeige fest</string>
-	<string id="31905">Passen Sie das Aussehen von Plex an. Inklusive Skin-, Theme-, Sound- und Schriftauswahl, RSS-Feed-Steuerung und Lokalisierungseinstellungen</string>
+	<string id="31905">Passen Sie das Aussehen von Plex an. Inklusive Skin-, Themen-, Sound- und Schriftauswahl, RSS-Feed-Steuerung und Lokalisierungseinstellungen</string>
 	<string id="31906">Passen Sie die Darstellung Ihrer Bildersammlung an. Inklusive Screenshot-Erstellung, Spezialeffekten und erweiterten Darstellungsoptionen</string>
 	<string id="31907">Legen Sie Plex' Netzwerkeinstellungen fest. IP-Zuweisung, WWW- und FTP-Server-Einstellungen, SMB Client Setup, und UPnP Konfiguration</string>
 	<string id="31908">Wählen Sie aus einer Vielzahl von Möglichkeiten aus, um die Benutzeroberfleche von PlexAlaska nach Ihren Vorstellungen zu gestalten</string>
@@ -62,7 +62,7 @@
 	<string id="31912">Ansichten</string>
 	<string id="31913">Hintergründe</string>
 	<string id="31914">Now Playing</string>
-	<string id="31915">Theme</string>
+	<string id="31915">Themen</string>
 	<string id="31916">Sonstiges</string>
 	<string id="31920">Scrollfunktion für Handlung aktivieren</string>
 	<string id="31921">Mediaflags aktivieren</string>
