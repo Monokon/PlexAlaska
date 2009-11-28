@@ -826,7 +826,7 @@
 		<onfocus>Skin.SetString(theme,dark)</onfocus>
 	</include>
 	<include name="runThemeScript">
-		<onfocus>RunScript(q:/scripts/PlexAlaska_SwitchTheme/default.py)</onfocus>
+		<onfocus>RunScript(u:/skin/PlexAlaska/extras/PlexAlaska_SwitchTheme/default.py)</onfocus>
 	</include>
 
 	<include name="submenu_dummybuttons">
