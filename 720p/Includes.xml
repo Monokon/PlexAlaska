@@ -423,8 +423,8 @@
 				<item id="9">
 					<description>Shutdown</description>
 					<thumb>backdrops/quiticon.png</thumb>
-					<label>$LOCALIZE[31036]</label>
-					<onclick>XBMC.Shutdown(0)</onclick>
+					<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
+					<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
 					<visible>!Skin.HasSetting(nohomequit)</visible>
 				</item>
 			</content>
@@ -565,8 +565,8 @@
 				<onclick>XBMC.ActivateWindow(4)</onclick>
 			</item>
 			<item id="9">
-				<label>$LOCALIZE[31036]</label>
-				<onclick>XBMC.Shutdown(0)</onclick>
+				<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
+				<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
 				<description>Quit Plex</description>
 				<thumb>backdrops/quit/quitplex.jpg</thumb>
 				<visible>!Skin.HasSetting(nohomequit)</visible>
@@ -813,6 +813,15 @@
 		<posy>5</posy>
 		<width>349</width>
 		<height>260</height>
+	</include>
+
+	<include name="type_quit">
+		<label>$LOCALIZE[31036]</label>
+		<onclick>XBMC.Shutdown(0)</onclick>
+	</include>
+	<include name="type_sleep">
+		<label>$LOCALIZE[31035]</label>
+		<onclick>XBMC.SleepSystem()</onclick>
 	</include>
 
 	<include name="changethemebytime">

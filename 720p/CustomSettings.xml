@@ -280,6 +280,17 @@
 					<onclick>Skin.ToggleSetting(nohomequit)</onclick>
 					<selected>Skin.HasSetting(nohomequit)</selected>
 				</control>
+				<control type="radiobutton" id="212">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31949]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(sleepsystem)</onclick>
+					<selected>Skin.HasSetting(sleepsystem)</selected>
+				</control>
 				<control type="radiobutton" id="202">
 					<width>740</width>
 					<font>Font_Settings</font>

@@ -60,7 +60,8 @@
 				</item>
 				<item id="9">
 					<description>Quit</description>
-					<onclick>XBMC.Shutdown(0)</onclick>
+					<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
+					<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
 					<visible>!Skin.HasSetting(nohomequit)</visible>
 				</item>
 			</content>
@@ -751,7 +752,8 @@
 				<include>Home_MainMenuShade</include>
 				<control type="label">
 					<include>Home_MainMenuLabel</include>
-					<label>$LOCALIZE[31036]</label>
+					<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
+					<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
 					<visible>!ControlGroup(3900).HasFocus()</visible>
 					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(9) | ![Control.IsVisible(398) | Control.IsVisible(399)]">Conditional</animation>
 				</control>
@@ -1574,8 +1576,8 @@
 			<onright>999</onright>
 			<scrolltime>0</scrolltime>
 			<control type="button" id="3901">
-				<label>$LOCALIZE[31035]</label>
-				<onclick>XBMC.SleepSystem()</onclick>
+				<include condition="Skin.HasSetting(sleepsystem)">type_quit</include>
+				<include condition="!Skin.HasSetting(sleepsystem)">type_sleep</include>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidesleep)</visible>
 			</control>
