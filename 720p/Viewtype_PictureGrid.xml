@@ -161,6 +161,7 @@
 			<width>27</width>
 			<height>27</height>
 			<texture>wall/WallArrow_back.png</texture>
+			<colordiffuse>ButtonIconColor</colordiffuse>
 			<include>Animation_ZoomInZoomOut</include>			
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -197,6 +198,7 @@
 			<width>27</width>
 			<height>27</height>
 			<texture>wall/WallArrow_back.png</texture>
+			<colordiffuse>ButtonIconColor</colordiffuse>
 			<include>Animation_ZoomInZoomOut</include>			
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>

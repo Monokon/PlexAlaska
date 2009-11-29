@@ -652,7 +652,7 @@
 				<posx>680</posx>
 				<posy>150</posy>
 				<texture flipy="true">submenu_arrow.png</texture>
-			<colordiffuse>ButtonFilterColor</colordiffuse>
+				<colordiffuse>ButtonFilterColor</colordiffuse>
 			</control>
 			<control type="image">
 				<width>30</width>
@@ -660,7 +660,7 @@
 				<posx>680</posx>
 				<posy>580</posy>
 				<texture>submenu_arrow.png</texture>
-			<colordiffuse>ButtonFilterColor</colordiffuse>
+				<colordiffuse>ButtonFilterColor</colordiffuse>
 			</control>
 			<visible>Container(9000).HasFocus(2) + Skin.HasSetting(home1)</visible>
 		</control>

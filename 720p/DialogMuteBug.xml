@@ -38,6 +38,7 @@
 				<width>50</width>
 				<height>50</height>
 				<texture>dialogs/mute_back.png</texture>
+				<colordiffuse>ButtonIconColor</colordiffuse>
 			</control>
 			<control type="image">
 				<posx>322</posx>

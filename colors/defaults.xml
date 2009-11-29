@@ -5,6 +5,7 @@
 	<color name="backgroundColor">FFf2f2f4</color>	
 	<color name="BackgroundFilterColor">FFefc1d4</color>
 	<color name="ButtonFilterColor">FFc30000</color>
+	<color name="ButtonIconColor">FFFFFFFF</color>
 	<color name="WatchedOverlayFocusedColor">FFc30000</color>
 	<color name="WatchedOverlayUnfocusedColor">40c30000</color>
 	<color name="FocusLinesBackground">11000000</color>

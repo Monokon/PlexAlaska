@@ -125,6 +125,7 @@
 			<width>27</width>
 			<height>27</height>
 			<texture>wall/WallArrow_back.png</texture>
+			<colordiffuse>ButtonIconColor</colordiffuse>
 		</control>
 		<control type="image">
 			<posx>1155</posx>
@@ -140,6 +141,7 @@
 			<width>27</width>
 			<height>27</height>
 			<texture>wall/WallArrow_back.png</texture>
+			<colordiffuse>ButtonIconColor</colordiffuse>
 		</control>
 		<control type="image">
 			<posx>95</posx>
