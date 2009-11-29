@@ -51,7 +51,7 @@
 				</control-->
 				<!-- label -->
 				<control type="label">
-					<label>Current</label>
+					<label>$LOCALIZE[31509]</label>
 					<width>205</width>
 					<height>20</height>
 					<posx>5</posx>
@@ -73,7 +73,7 @@
 				</control>
 				<!-- current temp -->
 				<control type="label">
-					<label>Current</label>
+					<label>$LOCALIZE[31509]</label>
 					<posx>5</posx>
 					<posy>100</posy>
 					<width>95</width>
@@ -601,15 +601,27 @@
 				<include>Global_HeadingSectionVars</include>
 			</control>
 			<control type="label">
-				<!-- LOC -->
-				<label>[B]Location:[/B] $INFO[Weather.Location]</label>
+				<label>[B]$LOCALIZE[31510]:[/B]</label>
 				<include>Global_HeadingDetailVars</include>
 			</control>
 			<control type="label">
-				<!-- LOC -->
-				<label>[B]Last Updated:[/B] $INFO[Window.Property(Updated)]</label>
 				<posy>60</posy>
+				<label>$INFO[Weather.Location]</label>
 				<include>Global_HeadingDetailVars</include>
+			</control>
+			<control type="group">
+            	<description>Last Refreshed</description>
+				<control type="label">
+					<label>[B]$LOCALIZE[31511]:[/B]</label>
+					<posy>100</posy>
+					<include>Global_HeadingDetailVars</include>
+				</control>
+				<control type="label" id="11">
+					<description>Value</description>
+					<posx>0</posx>
+					<posy>120</posy>
+					<include>Global_HeadingDetailVars</include>
+				</control>
 			</control>
 		</control>
 		<include>Global_Time</include>

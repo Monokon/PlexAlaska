@@ -52,6 +52,10 @@
 	<string id="31506">SHOWN</string>
 	<string id="31507">HIDDEN</string>
 	<string id="31508">TITLE</string>
+	<!-- weather -->
+	<string id="31509">Current</string>
+	<string id="31510">Location</string>
+	<string id="31511">Last Updated</string>
 
 
 	<!-- Settings -->
