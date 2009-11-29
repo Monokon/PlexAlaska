@@ -43,8 +43,16 @@
 		</control>	
 
 		<control type="grouplist" id="7000">
-			<include>WindowMenuVars</include>
+			<width>1250</width>
+			<height>40</height>
+			<posx>350</posx>
 			<posy>330</posy>			
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<itemgap>0</itemgap>
+			<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
+			<include>Animation_ZoomInMenu</include>
+			<orientation>horizontal</orientation>
 			<control type="button" id="20">
 				<include>WindowMenuButton</include>
 				<label>$INFO[Container.ViewMode]</label>
@@ -77,30 +85,22 @@
 					<effect type="fade" start="100" end="50" time="200" />					
 				</animation>			
 			</control>
-			<control type="button" id="7">
-				<include>WindowMenuButton</include>
-				<label>361</label>
-				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(7)">
-					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />					
-				</animation>			
-			</control>	
-			<control type="button" id="9">
-				<include>WindowMenuButton</include>
-				<label>RANDOM</label>
-				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(9)">
-					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />					
-				</animation>				
-			</control>
 		</control>
 
 		<control type="grouplist">
-			<include>WindowMenuVars</include>
+			<width>1250</width>
+			<height>40</height>
+			<posx>350</posx>
 			<posy>307</posy>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<itemgap>0</itemgap>
+			<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
+			<include>Animation_ZoomInMenu</include>
+			<orientation>horizontal</orientation>
 			<control type="button" id="40">
 				<include>WindowMenuLabel</include>
-				<label>VIEWTYPE</label>
+				<label>$LOCALIZE[31501]</label>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(20)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />					
@@ -108,7 +108,7 @@
 			</control>
 			<control type="button" id="41">
 				<include>WindowMenuLabel</include>
-				<label>ORDER</label>
+				<label>$LOCALIZE[31502]</label>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(3)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />					
@@ -116,28 +116,12 @@
 			</control>
 			<control type="button" id="42">
 				<include>WindowMenuLabel</include>
-				<label>LAYOUT</label>
+				<label>$LOCALIZE[31503]</label>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(21)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />					
 				</animation>			
 			</control>
-			<control type="button" id="43">
-				<include>WindowMenuLabel</include>
-				<label>WATCH</label>
-				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(7)">
-					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />					
-				</animation>			
-			</control>	
-			<control type="button" id="44">
-				<include>WindowMenuLabel</include>
-				<label>SEQUENCE</label>
-				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(9)">
-					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />					
-				</animation>				
-			</control>				
 		</control>
 		
 		<include>Global_Time</include>

@@ -30,8 +30,16 @@
 		</control>
 
 		<control type="grouplist" id="7000">
-			<include>WindowMenuVars</include>
-			<posy>330</posy>			
+			<width>1250</width>
+			<height>40</height>
+			<posx>420</posx>
+			<posy>330</posy>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<itemgap>0</itemgap>
+			<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
+			<include>Animation_ZoomInMenu</include>
+			<orientation>horizontal</orientation>
 			<control type="button" id="20">
 				<include>WindowMenuButton</include>
 				<label>$INFO[Container.ViewMode]</label>
@@ -49,38 +57,22 @@
 					<effect type="fade" start="100" end="50" time="200" />					
 				</animation>			
 			</control>
-			<control type="button" id="21">
-				<include>WindowMenuButton</include>
-				<label>Visible</label>
-				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(21)">
-					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />					
-				</animation>			
-			</control>
-			<control type="button" id="8">
-				<include>WindowMenuButton</include>
-				<label>137</label>
-				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(8)">
-					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />					
-				</animation>			
-			</control>	
-			<control type="button" id="19">
-				<include>WindowMenuButton</include>
-				<label>587</label>
-				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(19)">
-					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />					
-				</animation>				
-			</control>
 		</control>
 
 		<control type="grouplist">
-			<include>WindowMenuVars</include>
+			<width>1250</width>
+			<height>40</height>
+			<posx>420</posx>
 			<posy>307</posy>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<itemgap>0</itemgap>
+			<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
+			<include>Animation_ZoomInMenu</include>
+			<orientation>horizontal</orientation>
 			<control type="button" id="40">
 				<include>WindowMenuLabel</include>
-				<label>VIEWTYPE</label>
+				<label>$LOCALIZE[31501]</label>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(20)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />					
@@ -88,36 +80,12 @@
 			</control>
 			<control type="button" id="41">
 				<include>WindowMenuLabel</include>
-				<label>ORDER</label>
+				<label>$LOCALIZE[31502]</label>
 				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(3)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />					
 				</animation>			
 			</control>
-			<control type="button" id="42">
-				<include>WindowMenuLabel</include>
-				<label>UNWATCHED</label>
-				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(21)">
-					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />					
-				</animation>			
-			</control>
-			<control type="button" id="43">
-				<include>WindowMenuLabel</include>
-				<label>TITLE</label>
-				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(8)">
-					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />					
-				</animation>			
-			</control>	
-			<control type="button" id="44">
-				<include>WindowMenuLabel</include>
-				<label>TITLE</label>
-				<animation type="conditional" condition="!ControlGroup(7000).HasFocus(19)">
-					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />					
-				</animation>				
-			</control>				
 		</control>
 		
 		<include>Global_Time</include>

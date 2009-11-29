@@ -44,6 +44,14 @@
 
 	<!-- other strings -->
 	<string id="31500">FILEMANAGER</string>
+	<string id="31501">VIEWTYPE</string>
+	<string id="31502">ORDER</string>
+	<string id="31503">LAYOUT</string>
+	<string id="31504">SORT ORDER</string>
+	<string id="31505">WATCHED</string>
+	<string id="31506">SHOWN</string>
+	<string id="31507">HIDDEN</string>
+	<string id="31508">TITLE</string>
 
 
 	<!-- Settings -->

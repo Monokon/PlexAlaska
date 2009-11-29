@@ -44,6 +44,14 @@
 
 	<!-- other strings -->
 	<string id="31500">DATEIMANAGER</string>
+	<string id="31501">ANSICHT</string>
+	<string id="31502">SORTIEREN</string>
+	<string id="31503">LAYOUT</string>
+	<string id="31504">REIHENFOLGE</string>
+	<string id="31505">GESEHENE</string>
+	<string id="31506">ANZEIGEN</string>
+	<string id="31507">VERSTECKEN</string>
+	<string id="31508">TITEL</string>
 
 
 	<!-- Settings -->
