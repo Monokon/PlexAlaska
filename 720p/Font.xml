@@ -471,7 +471,7 @@
 		<font>
 			<name>Font_MainMenu</name>
 			<filename>alaska_menu_cy.ttf</filename>
-			<size>190</size>
+			<size>160</size>
 		</font>
 		<font>
 			<name>Font_Date</name>

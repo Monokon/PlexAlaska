@@ -26,8 +26,8 @@
 	<string id="31019">ВЫКЛЮЧЕНИЕ MAC</string>
 	<string id="31020">СКРИПТЫ</string>
 	<string id="31021">ПЕРЕЗАГРУЗКА</string>
-	<string id="31022">ВЫХОД ИХ PLEX</string>
-	<string id="31023">ПРИЛОЖЕНИЯ</string>
+	<string id="31022">ВЫХОД</string>
+	<string id="31023">ПРОГРАММЫ</string>
 	<string id="31025">ЧАСТО ИГРАЕМЫЕ</string>
 	<string id="31026">ИСПОЛНИТЕЛИ</string>
 	<string id="31027">АЛЬБОМЫ</string>
@@ -39,7 +39,7 @@
 	<string id="31033">НАСТРОЙКИ ФОТО</string>
 	<string id="31034">НАСТРОЙКИ ПОГОДЫ</string>
 	<string id="31035">УСЫПИТЬ MAC</string>
-	<string id="31036">ВЫХОД ИЗ  PLEX</string>
+	<string id="31036">ВЫХОД</string>
 
 
 	<!-- other strings -->
@@ -52,22 +52,26 @@
 	<string id="31506">ПОКАЗЫВАТЬ</string>
 	<string id="31507">НЕ ПОКАЗЫВАТЬ</string>
 	<string id="31508">ВКЛЮЧИТЬ</string>
+	
 	<!-- weather -->
-	<string id="31509">Current</string>
-	<string id="31510">Location</string>
-	<string id="31511">Last Updated</string>
+	<string id="31509">Сейчас</string>
+	<string id="31510">Регион</string>
+	<string id="31511">Обновлено</string>
+	
 	<!-- settings -->
-	<string id="31512">Menu</string>
-	<string id="31513">Customise</string>
+	<string id="31512">МЕНЮ НАСТРОЕК</string>
+	<string id="31513">НАСТРОЙКИ СКИНА</string>
+
 	<!-- video info -->
-	<string id="31514">DIRECTED BY</string>
-	<string id="31515">WRITTEN BY</string>
-	<string id="31516">STARRING</string>
-	<string id="31517">VIEW</string>
-	<string id="31518">INFORMATION</string>
-	<string id="31519">GET</string>
-	<string id="31520">THUMB</string>
-	<string id="31521">FANART</string>
+	<string id="31514">РЕЖИССЕР</string>
+	<string id="31515">СЦЕНАРИЙ</string>
+	<string id="31516">В РОЛЯХ</string>
+	<string id="31517">Показывать</string>
+	<string id="31518">Инфо</string>
+	<string id="31519">Получить</string>
+	<string id="31520">ОБЛОЖКУ</string>
+	<string id="31521">ФАНАРТ</string>
+
 	<!-- header -->
 	<string id="31522">ITEMS</string>
 
@@ -100,7 +104,7 @@
 	<string id="31930">Главное меню 1</string>
 	<string id="31931">Главное меню 2</string>
 	<string id="31932">Главное меню 3</string>
-	<string id="31933">Скрыть пункт ПРИЛОЖЕНИЯ</string>
+	<string id="31933">Скрыть пункт ПРОГРАММЫ</string>
 	<string id="31934">Скрыть пункт ВИДЕО</string>
 	<string id="31935">Скрыть пункт ФОТО</string>
 	<string id="31936">Скрыть пункт ПОГОДА</string>
@@ -116,9 +120,9 @@
 	<string id="31946">Сбросить настройки папки иллюстраций телешоу</string>
 	<string id="31947">Задать папку с иллюстрациями фото в главном меню</string>
 	<string id="31948">Сбросить настройки папки иллюстраций фото</string>
-	<string id="31949">Change default from "Quit" to "Sleep"</string>
+	<string id="31949">Усыпить MAC вместо выхода из Plex</string>
 	<string id="31955">Убрать линии с выделенной строки (диалог выбора)</string>
-	<string id="31956">Использовать "fixedlist" в просмотре постеров телешоу</string>
+	<string id="31956">Использовать фиксированный список в просмотре постеров телешоу</string>
 	<string id="31957">Скрывать название текущей картинки/папки в меню ФОТО</string>
 	<string id="31960">Прозрачность фона</string>
 	<string id="31961">20%</string>
