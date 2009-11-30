@@ -69,8 +69,7 @@
 				<textcolor>InfoDetails</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<!--LOC-->
-				<label>DIRECTED BY:</label>
+				<label>$LOCALIZE[31514]:</label>
 			</control>
 			<control type="label">
 				<posx>125</posx>
@@ -88,8 +87,7 @@
 				<textcolor>InfoDetails</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<!--LOC-->
-				<label>WRITTEN BY:</label>
+				<label>$LOCALIZE[31515]:</label>
 			</control>
 			<control type="label">
 				<posx>125</posx>
@@ -107,8 +105,7 @@
 				<textcolor>InfoDetails</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<!--LOC-->
-				<label>STARRING:</label>
+				<label>$LOCALIZE[31516]:</label>
 			</control>
 			<control type="textbox">
 				<posx>125</posx>
@@ -217,8 +214,7 @@
 			<!-- Fanart -->
 			<control type="button" id="12">
 				<description>Get Fanart</description>
-				<!-- LOC -->
-				<label>Fanart</label>
+				<label>$LOCALIZE[31521]</label>
 				<include>WindowMenuButton</include>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(12)">
 					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
@@ -228,8 +224,7 @@
 			<!-- Thumb -->
 			<control type="button" id="10">
 				<description>Thumb</description>
-				<!-- LOC -->
-				<label>Thumb</label>
+				<label>$LOCALIZE[31520]</label>
 				<include>WindowMenuButton</include>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(10)">
 					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
@@ -262,8 +257,7 @@
 			<!-- Cast/Review -->
 			<control type="button" id="7040">
 				<include>WindowMenuLabel</include>
-				<!-- LOC -->
-				<label>View</label>
+				<label>$LOCALIZE[31517]</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(5)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
@@ -272,8 +266,7 @@
 			<!-- refresh -->
 			<control type="button" id="7041">
 				<include>WindowMenuLabel</include>
-				<!-- LOC -->
-				<label>Information</label>
+				<label>$LOCALIZE[31518]</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(6)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
@@ -282,8 +275,7 @@
 			<!-- Fanart -->
 			<control type="button" id="7042">
 				<include>WindowMenuLabel</include>
-				<!-- LOC -->
-				<label>Get</label>
+				<label>$LOCALIZE[31519]</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(12)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
@@ -292,8 +284,7 @@
 			<!-- Thumb -->
 			<control type="button" id="7043">
 				<include>WindowMenuLabel</include>
-				<!-- LOC -->
-				<label>Get</label>
+				<label>$LOCALIZE[31519]</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(10)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />

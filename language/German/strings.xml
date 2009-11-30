@@ -56,6 +56,20 @@
 	<string id="31509">Aktuell</string>
 	<string id="31510">Ort</string>
 	<string id="31511">Letzte Aktualisierung</string>
+	<!-- settings -->
+	<string id="31512">Menü</string>
+	<string id="31513">Individualisieren</string>
+	<!-- video info -->
+	<string id="31514">REGIE</string>
+	<string id="31515">AUTOR</string>
+	<string id="31516">DARSTELLER</string>
+	<string id="31517">ZEIGE</string>
+	<string id="31518">INFORMATIONEN</string>
+	<string id="31519">WÄHLE</string>
+	<string id="31520">COVER</string>
+	<string id="31521">FANART</string>
+	<!-- header -->
+	<string id="31522">TITEL</string>
 
 
 	<!-- Settings -->

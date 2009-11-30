@@ -50,7 +50,7 @@
 					<aligny>center</aligny>
 					<font>Font_ListTitleNF</font>
 					<textcolor>FileTitleNF</textcolor>
-					<label>Unknown Album</label>
+					<label>$LOCALIZE[13205]</label>
 					<visible>Container.Content(albums) + IsEmpty(ListItem.Album)</visible>
 				</control>
 				<control type="label">
@@ -312,7 +312,7 @@
 						<aligny>center</aligny>
 						<font>Font_ListTitleBigger</font>
 						<textcolor>ListTitleF</textcolor>
-						<label>Unknown Album</label>
+						<label>$LOCALIZE[13205]</label>
 						<visible>IsEmpty(ListItem.Album)</visible>
 					</control>
 					<control type="label">
@@ -379,7 +379,7 @@
 						<aligny>center</aligny>
 						<font>Font_ListDetail</font>
 						<textcolor>ListTitleF</textcolor>
-						<label>[B]Album:[/B] $INFO[ListItem.Album]</label>
+						<label>[B]$LOCALIZE[558]:[/B] $INFO[ListItem.Album]</label>
 						<visible>[Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]] + !IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="label">
@@ -390,7 +390,7 @@
 						<aligny>center</aligny>
 						<font>Font_ListDetail</font>
 						<textcolor>ListTitleF</textcolor>
-						<label>[B]Artist:[/B] $INFO[ListItem.Artist]</label>
+						<label>[B]$LOCALIZE[557]:[/B] $INFO[ListItem.Artist]</label>
 						<visible>!IsEmpty(ListItem.Title)</visible>
 						<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
 					</control>
@@ -402,7 +402,7 @@
 						<aligny>center</aligny>
 						<font>Font_ListDetail</font>
 						<textcolor>ListTitleF</textcolor>
-						<label>[B]Duration:[/B] $INFO[ListItem.Duration]</label>
+						<label>[B]$LOCALIZE[180]:[/B] $INFO[ListItem.Duration]</label>
 						<visible>!IsEmpty(ListItem.Title)</visible>
 						<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
 					</control>

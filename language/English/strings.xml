@@ -56,6 +56,20 @@
 	<string id="31509">Current</string>
 	<string id="31510">Location</string>
 	<string id="31511">Last Updated</string>
+	<!-- settings -->
+	<string id="31512">Menu</string>
+	<string id="31513">Customise</string>
+	<!-- video info -->
+	<string id="31514">DIRECTED BY</string>
+	<string id="31515">WRITTEN BY</string>
+	<string id="31516">STARRING</string>
+	<string id="31517">VIEW</string>
+	<string id="31518">INFORMATION</string>
+	<string id="31519">GET</string>
+	<string id="31520">THUMB</string>
+	<string id="31521">FANART</string>
+	<!-- header -->
+	<string id="31522">ITEMS</string>
 
 	<!-- Settings -->
 	

@@ -1,32 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 
 <strings>
 
 	<!-- Main Labels -->
 	
-	<string id="31000">GENRE</string>
-	<string id="31001">JAAR</string>
-	<string id="31002">ACTEURS</string>
-	<string id="31003">BESTANDEN</string>
-	<string id="31005">VIDEO INSTELLINGEN</string>
-	<string id="31004">JE LUISTERT NAAR:</string>
-	<string id="31006">MUZIEK VIDEOS</string>
-	<string id="31007">PLUGINS</string>
-	<string id="31008">FAVORIETEN</string>
-	<string id="31009">PROGRAMMAS</string>
-	<string id="31010">MUZIEK</string>
-	<string id="31011">GAMES</string>
-	<string id="31012">AFBEELDINGEN</string>
-	<string id="31013">FILM</string>
-	<string id="31014">TV SERIE</string>
-	<string id="31015">VIDEO</string>
-	<string id="31016">INSTELLINGEN</string>
-	<string id="31017">HET WEER</string>
-	<string id="31018">DISC AFSPELEN</string>
-	<string id="31019">UITSCHAKELEN</string>
-	<string id="31020">SCRIPTS</string>
-	<string id="31021">OPNIEUW STARTEN</string>
-	<string id="31022">UITLOGGEN</string>
+	<string id="31000">GATUNKI</string>
+	<string id="31001">LATA</string>
+	<string id="31002">AKTORZY</string>
+	<string id="31003">PLIKI</string>
+	<string id="31005">USTAWIENIA WIDEO</string>
+	<string id="31004">ODTWARZANE TERAZ</string>
+	<string id="31006">TELEDYSKI</string>
+	<string id="31007">WTYCZKI</string>
+	<string id="31008">ULUBIONE</string>
+	<string id="31009">PROGRAMY</string>
+	<string id="31010">MUZYKA</string>
+	<string id="31011">GRY</string>
+	<string id="31012">OBRAZY</string>
+	<string id="31013">FILMY</string>
+	<string id="31014">SERIALE</string>
+	<string id="31015">WIDEO</string>
+	<string id="31016">USTAWIENIA</string>
+	<string id="31017">POGODA</string>
+	<string id="31018">ODTWARZAJ PLYTĘ</string>
+	<string id="31019">WYŁĄCZ</string>
+	<string id="31020">SKRYPTY</string>
+	<string id="31021">RESTART</string>
+	<string id="31022">WYLOGUJ</string>
 	<string id="31023">APPSTORE</string>
 	<string id="31025">MOST PLAYED</string>
 	<string id="31026">ARTISTS</string>
@@ -70,7 +70,6 @@
 	<string id="31521">FANART</string>
 	<!-- header -->
 	<string id="31522">ITEMS</string>
-
 
 	<!-- Settings -->
 	

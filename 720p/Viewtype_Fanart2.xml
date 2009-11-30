@@ -301,7 +301,7 @@
 				<font>Font_TVShow</font>
 				<textcolor>ffdadada</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
-				<label>Unwatched: [B]$INFO[ListItem.Property(UnWatchedEpisodes)][/B]/[B]$INFO[ListItem.Episode][/B]</label>
+				<label>$LOCALIZE[16101]: [B]$INFO[ListItem.Property(UnWatchedEpisodes)][/B]/[B]$INFO[ListItem.Episode][/B]</label>
 				<visible>Container.Content(tvshows) + !Control.HasFocus(66)</visible>
 			</control>
 		</control>
