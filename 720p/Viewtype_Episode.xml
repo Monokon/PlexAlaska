@@ -19,6 +19,7 @@
 			<movement>2</movement>
 			<pagecontrol>65</pagecontrol>
 			<visible>Container.Content(episodes)</visible>
+			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_EpisodeFloat</include>
 			<itemlayout width="633" height="60">
@@ -208,6 +209,7 @@
 			<font>Font_EpisodePlot</font>
 			<textcolor>EpisodePlot</textcolor>
 			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_EpisodePlot</include>
 			<include>Animation_EpisodeFloat</include>
 			<include>Animation_HiddenByInfo</include>
