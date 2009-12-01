@@ -26,6 +26,14 @@
 				</control>
 			</control>
 			<control type="group">
+				<posx>785</posx>
+				<control type="image">
+					<include>PosterMediaFlagsVars</include>
+					<texture>$INFO[ListItem.Path,,studio.png]</texture>
+					<visible>!Control.IsVisible(81) + Skin.HasSetting(showstudioflags)</visible>
+				</control>
+			</control>
+			<control type="group">
 				<description>IMDB rating</description>
 				<posx>785</posx>
 				<visible>!Skin.HasSetting(showstudioflags)</visible>
