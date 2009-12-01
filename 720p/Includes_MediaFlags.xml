@@ -82,7 +82,7 @@
 				<control type="image">
 					<include>PosterMediaFlagsVars</include>
 					<texture>$INFO[ListItem.Path,,audiochannels.png]</texture>
-				</control>-->
+				</control>
 			</control>
 
 
