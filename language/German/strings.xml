@@ -136,7 +136,7 @@
 	<string id="31980">Automatischen Themen-Wechsel aktivieren</string>
 	<string id="31985">Debug-Modus</string>
 	<string id="31986">Debug-Gitter</string>
-	<string id="31990">Wird nur verwendet, wenn die Option "Fanart für Filme-Menü" deaktiv is</string>
+	<string id="31990">Wird nur verwendet, wenn die Option "Fanart für Filme-Menü" deaktiv ist</string>
 	<string id="31991">Wird nur verwendet, wenn die "OSX overlays" deaktiv sind</string>
 	<string id="31992">Wechselt automatisch zwischen Tag- und Nachtansicht. Von 09:00 bis 20:00 Uhr wird "default.xml" verwendet, von 20:00 bis 09:00 Uhr "dark.xml"</string>
 

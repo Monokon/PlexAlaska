@@ -689,6 +689,8 @@
 				<textcolor>Black</textcolor>
 				<scroll>true</scroll>
 				<scrollspeed>40</scrollspeed>
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
 				<label>$LOCALIZE[31990]</label>
 			</control>
 			<visible>Control.HasFocus(215)</visible>
@@ -705,6 +707,8 @@
 				<textcolor>Black</textcolor>
 				<scroll>true</scroll>
 				<scrollspeed>40</scrollspeed>
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
 				<label>$LOCALIZE[31991]</label>
 			</control>
 			<visible>Control.HasFocus(217)</visible>
@@ -721,6 +725,8 @@
 				<textcolor>Black</textcolor>
 				<scroll>true</scroll>
 				<scrollspeed>40</scrollspeed>
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
 				<label>$LOCALIZE[31992]</label>
 			</control>
 			<visible>Control.HasFocus(700)</visible>
