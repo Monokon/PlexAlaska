@@ -76,7 +76,7 @@
 			<height>39</height>
 			<width>200</width>
 			<font>Font_MenuValue</font>
-			<textcolor>buttonNF</textcolor>
+			<textcolor>MenuValue</textcolor>
 			<focusedcolor>MenuValueFO</focusedcolor>
 			<animation effect="zoom" start="100" end="120" tween="back" time="400" center="auto" reversible="false">Focus</animation>
 			<label>$LOCALIZE[106]</label>
@@ -96,7 +96,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>Font_MenuValue</font>
-			<textcolor>buttonNF</textcolor>
+			<textcolor>MenuValue</textcolor>
 			<focusedcolor>MenuValueFO</focusedcolor>
 			<animation effect="zoom" start="100" end="120" tween="back" time="400" center="auto" reversible="false">Focus</animation>
 			<label>$LOCALIZE[107]</label>
