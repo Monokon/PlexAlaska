@@ -120,7 +120,7 @@
 				<visible>!Control.IsVisible(50)</visible>
 				<posy>281</posy>
 				<width>600</width>
-				<height>240</height>
+				<height>212</height>
 				<font>Font_InfoPlot</font>
 				<textcolor>InfoPlot</textcolor>
 				<info>ListItem.Plot</info>
