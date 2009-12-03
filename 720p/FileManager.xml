@@ -56,7 +56,7 @@
 						<font>Font_FavouritesItemLabel</font>
 						<aligny>center</aligny>
 						<textcolor>FM_Listunfocused</textcolor>
-						<selectedcolor>FM_ListUnfocusSelected</selectedcolor>
+						<selectedcolor>FM_ListSelected</selectedcolor>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
@@ -68,7 +68,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<textcolor>FM_Listunfocused</textcolor>
-						<selectedcolor>FM_ListUnfocusSelected</selectedcolor>
+						<selectedcolor>FM_ListSelected</selectedcolor>
 						<label>[UPPERCASE]$INFO[ListItem.label2][/UPPERCASE]</label>
 					</control>
 				</itemlayout>
@@ -159,7 +159,7 @@
 						<font>Font_FavouritesItemLabel</font>
 						<aligny>center</aligny>
 						<textcolor>FM_Listunfocused</textcolor>
-						<selectedcolor>FM_ListUnfocusSelected</selectedcolor>
+						<selectedcolor>FM_ListSelected</selectedcolor>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
@@ -171,7 +171,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<textcolor>FM_Listunfocused</textcolor>
-						<selectedcolor>FM_ListUnfocusSelected</selectedcolor>
+						<selectedcolor>FM_ListSelected</selectedcolor>
 						<label>[UPPERCASE]$INFO[ListItem.label2][/UPPERCASE]</label>
 					</control>
 				</itemlayout>

@@ -112,9 +112,9 @@
 	<color name="FM_ListTitle">CCababab</color>
 	<color name="FM_ListTitleAccent">CCdadada</color>
 	<color name="FM_ListSelected">dc990000</color>
-	<color name="FM_ListFocused">ffffffff</color>
+	<color name="FM_Listfocused">ffffffff</color>
 	<color name="FM_ListFocusedAccent">00CCCCCC</color>
-	<color name="FM_ListUnfocused">DD202020</color>
+	<color name="FM_Listunfocused">FFFFFFFF</color>
 	<color name="FM_ListFocusSelected">CCcccccc</color>
 
 	<!-- Now Playing -->

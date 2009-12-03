@@ -114,7 +114,7 @@
 	<color name="FM_ListSelected">dc990000</color>
 	<color name="FM_Listfocused">ffffffff</color>
 	<color name="FM_ListFocusedAccent">00CCCCCC</color>
-	<color name="FM_Listunfocused">dc777777</color>
+	<color name="FM_Listunfocused">ffffffff</color>
 	<color name="FM_ListFocusSelected">CCcccccc</color>
 
 	<!-- Now Playing -->
