@@ -877,7 +877,7 @@
 
 	<include name="submenu_appstore">
 		<control type="group">
-			<posx>510</posx>
+			<posx>445</posx>
 			<posy>520</posy>
 			<visible>ControlGroup(943).HasFocus() + Container(300).HasFocus(2)</visible>
 			<include condition="Skin.HasSetting(home2)">Animation_Submenu_home2</include>
@@ -888,7 +888,7 @@
 				<texture>mainmenu/submenu_left.png</texture>
 			</control>
 			<control type="image">
-				<width>220</width>
+				<width>350</width>
 				<height>60</height>
 				<posx>20</posx>
 				<texture>mainmenu/submenu_mid.png</texture>
@@ -896,7 +896,7 @@
 			<control type="image">
 				<width>20</width>
 				<height>60</height>
-				<posx>240</posx>
+				<posx>370</posx>
 				<texture>mainmenu/submenu_right.png</texture>
 			</control>
 
@@ -910,8 +910,13 @@
 				<orientation>horizontal</orientation>
 				<control type="button" id="40">
 					<include>submenubutton</include>
-					<label>$LOCALIZE[1036]</label>
+					<label>$LOCALIZE[31008]</label>
 					<onclick>XBMC.ActivateWindow(Favourites)</onclick>
+				</control>
+				<control type="button" id="41">
+					<include>submenubutton</include>
+					<label>$LOCALIZE[31500]</label>
+					<onclick>XBMC.ActivateWindow(3)</onclick>
 				</control>
 			</control>
 		</control>
@@ -919,7 +924,7 @@
 
 	<include name="submenu_quit">
 		<control type="group">
-			<posx>415</posx>
+			<posx>350</posx>
 			<posy>520</posy>
 			<visible>ControlGroup(940).HasFocus() + Container(300).HasFocus(9)</visible>
 			<include condition="Skin.HasSetting(home2)">Animation_Submenu_home2</include>
@@ -930,7 +935,7 @@
 				<texture>mainmenu/submenu_left.png</texture>
 			</control>
 			<control type="image">
-				<width>420</width>
+				<width>550</width>
 				<height>60</height>
 				<posx>20</posx>
 				<texture>mainmenu/submenu_mid.png</texture>
@@ -938,14 +943,14 @@
 			<control type="image">
 				<width>20</width>
 				<height>60</height>
-				<posx>440</posx>
+				<posx>570</posx>
 				<texture>mainmenu/submenu_right.png</texture>
 			</control>
 
 			<control type="grouplist" id="940">
 				<posx>36</posx>
 				<posy>13</posy>
-				<width>400</width>
+				<width>530</width>
 				<height>33</height>
 				<itemgap>0</itemgap>
 				<onup>300</onup>
@@ -961,6 +966,11 @@
 					<onclick>XBMC.SleepSystem()</onclick>
 				</control>
 				<control type="button" id="42">
+					<include>submenubutton</include>
+					<label>$LOCALIZE[31022]</label>
+					<onclick>System.LogOff</onclick>
+				</control>
+				<control type="button" id="43">
 					<include>submenubutton</include>
 					<label>$LOCALIZE[31019]</label>
 					<onclick>Plex.ShutDownSystem()</onclick>

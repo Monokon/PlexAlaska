@@ -1582,6 +1582,12 @@
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidesleep)</visible>
 			</control>
 			<control type="button" id="3902">
+				<label>$LOCALIZE[31022]</label>
+				<onclick>System.LogOff</onclick>
+				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">system.hasloginscreen</visible>
+			</control>
+			<control type="button" id="3903">
 				<label>$LOCALIZE[31019]</label>
 				<onclick>Plex.ShutDownSystem()</onclick>
 				<include>Home_MainMenuLabel</include> 
