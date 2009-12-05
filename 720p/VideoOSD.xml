@@ -93,9 +93,9 @@
 			<control type="grouplist" id="2002">
 				<visible allowhiddenfocus="true">Controlgroup(2002).HasFocus + !Window.IsVisible(125)</visible>
 				<include>Animation_CommonFade</include>
-				<posx>795</posx>
+				<posx>730</posx>
 				<posy>25</posy>
-				<width>475</width>
+				<width>550</width>
 				<height>100</height>
 				<itemgap>-10</itemgap>
 				<orientation>horizontal</orientation>
@@ -110,6 +110,24 @@
 					<texturefocus border="1">osd/button_more_fo.png</texturefocus>
 					<texturenofocus border="1">osd/button_more_nf.png</texturenofocus>
 					<onclick>SetFocus(2001)</onclick>
+				</control>
+				<control type="button" id="14">
+					<description>Open Subtitle</description>
+					<height>75</height>
+					<width>75</width>
+					<texturefocus border="1">osd/button_sub_fo.png</texturefocus>
+					<texturenofocus border="1">osd/button_sub_nf.png</texturenofocus>
+					<onclick>RunScript(U:/skin/PlexAlaska/extras/OpenSubtitles_OSD/default.py, [TV]$INFO[VideoPlayer.Season] $INFO[VideoPlayer.Episode] $INFO[VideoPlayer.TVshowtitle][/TV])</onclick>
+					<visible>![Player.Forwarding | Player.Rewinding] + !IsEmpty(VideoPlayer.TVshowtitle)</visible>
+				</control>
+				<control type="button" id="15">
+					<description>Open Subtitle</description>
+					<height>75</height>
+					<width>75</width>
+					<texturefocus border="1">osd/button_sub_fo.png</texturefocus>
+					<texturenofocus border="1">osd/button_sub_nf.png</texturenofocus>
+					<onclick>RunScript(U:/skin/PlexAlaska/extras/OpenSubtitles_OSD/default.py, [MOVIE]$INFO[VideoPlayer.Title][/MOVIE])</onclick>
+					<visible>![Player.Forwarding | Player.Rewinding] + !IsEmpty(VideoPlayer.Title) + IsEmpty(VideoPlayer.TVShowTitle)</visible>
 				</control>
 				<control type="button" id="9">
 					<description>Previous</description>
@@ -190,11 +208,22 @@
 				<control type="label">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>510</width>
+					<width>530</width>
 					<height>40</height>
 					<font>Font_PosterTitle</font>
 					<label>$INFO[VideoPlayer.Title] [COLOR OSDPlayingAlbum]$INFO[VideoPlayer.Year][/COLOR]</label>
 					<textcolor>NowPlayingTrack</textcolor>
+					<visible>!VideoPlayer.Content(episodes)</visible>
+				</control>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>410</width>
+					<height>40</height>
+					<font>Font_PosterTitle</font>
+					<label>$INFO[VideoPlayer.Title] [COLOR OSDPlayingAlbum]$INFO[VideoPlayer.Year][/COLOR]</label>
+					<textcolor>NowPlayingTrack</textcolor>
+					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
 				<control type="label">
 					<posx>0</posx>
