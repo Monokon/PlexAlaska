@@ -1124,7 +1124,7 @@
 				<posy>-20</posy>
 				<width>230</width>
 				<height>105</height>
-				<colordiffuse>11FFFFFF</colordiffuse>
+				<colordiffuse>50000000</colordiffuse>
 				<texture background="true" diffuse="timematte.png">common/black.png</texture>
 			</control>
 			<control type="label">

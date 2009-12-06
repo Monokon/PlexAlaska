@@ -23,6 +23,7 @@
 		<!--First Button Group-->
 			<control type="grouplist" id="2001">
 				<visible allowhiddenfocus="true">Controlgroup(2001).HasFocus + !Window.IsVisible(125)</visible>
+				<animation effect="slide" end="-75,0" time="0" condition="VideoPlayer.HasMenu">Conditional</animation>
 				<include>Animation_CommonFade</include>
 				<posx>925</posx>
 				<posy>25</posy>
@@ -178,6 +179,15 @@
 					<onclick>XBMC.ActivateWindow(124)</onclick>
 				</control>
 			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>114</posy>
+				<width>150</width>
+				<height>25</height>
+				<font>Font_ListDetail</font>
+				<textcolor>NowPlayingArtist</textcolor>
+				<label>$INFO[VideoPlayer.Time]</label>
+			</control>
 			<control type="progress" id="23">
 				<visible>!Window.IsVisible(125)</visible>
 				<texturebg>osd/osd_progress_back.png</texturebg>
@@ -186,19 +196,19 @@
 				<righttexture>osd/osd_progress_right.png</righttexture>
 				<colordiffuse>OSDProgress</colordiffuse>
 				<info>Player.Progress</info>
-				<posx>30</posx>
-				<posy>115</posy>
-				<width>1040</width>
+				<posx>120</posx>
+				<posy>116</posy>
+				<width>965</width>
 				<height>19</height>
 			</control>
 			<control type="label">
-				<posx>1096</posx>
+				<posx>1106</posx>
 				<posy>114</posy>
 				<width>300</width>
 				<height>25</height>
 				<font>Font_ListDetail</font>
 				<textcolor>NowPlayingArtist</textcolor>
-				<label>$INFO[VideoPlayer.Time] / $INFO[VideoPlayer.Duration]</label>
+				<label>$INFO[VideoPlayer.Duration] ($INFO[Player.FinishTime])</label>
 			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(125)</visible>
@@ -213,6 +223,7 @@
 					<font>Font_PosterTitle</font>
 					<label>$INFO[VideoPlayer.Title] [COLOR OSDPlayingAlbum]$INFO[VideoPlayer.Year][/COLOR]</label>
 					<textcolor>NowPlayingTrack</textcolor>
+					<scroll>true</scroll>
 					<visible>!VideoPlayer.Content(episodes)</visible>
 				</control>
 				<control type="label">
@@ -223,6 +234,7 @@
 					<font>Font_PosterTitle</font>
 					<label>$INFO[VideoPlayer.Title] [COLOR OSDPlayingAlbum]$INFO[VideoPlayer.Year][/COLOR]</label>
 					<textcolor>NowPlayingTrack</textcolor>
+					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
 				<control type="label">
@@ -230,17 +242,19 @@
 					<posy>40</posy>
 					<width>510</width>
 					<font>Font_ListDetail</font>
-					<label>[B]$INFO[VideoPlayer.Director][/B] $INFO[VideoPlayer.Year]</label>
+					<label>[B]$INFO[VideoPlayer.Director][/B]</label>
 					<textcolor>NowPlayingArtist</textcolor>
+					<scroll>true</scroll>
 					<visible>!VideoPlayer.Content(episodes)</visible>
 				</control>
 				<control type="label">
 					<posx>0</posx>
 					<posy>40</posy>
-					<width>510</width>
-				<textcolor>OSDPlayingTrack</textcolor>
-				<font>Font_NowPlayingTrack</font>
+					<width>410</width>
+					<textcolor>OSDPlayingTrack</textcolor>
+					<font>Font_NowPlayingTrack</font>
 					<label>$INFO[VideoPlayer.TVShowTitle]</label>
+					<scroll>true</scroll>
 					<visible>VideoPlayer.Content(episodes)</visible>
 				</control>
 			</control>

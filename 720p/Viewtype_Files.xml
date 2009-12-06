@@ -3,10 +3,10 @@
 <includes>
 	<include name="Viewtype_Files">
 		<control type="fixedlist" id="50">
-			<posx>490</posx>
+			<posx>460</posx>
 			<posy>90</posy>
 			<height>485</height>
-			<width>730</width>
+			<width>780</width>
 			<onup>50</onup>
 			<ondown>50</ondown>
 			<onleft>7000</onleft>
@@ -19,9 +19,9 @@
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_HiddenByMusicInfo</include>
-			<itemlayout width="1210" height="46">
+			<itemlayout width="1240" height="46">
 				<control type="label">
-					<posx>30</posx>
+					<posx>60</posx>
 					<posy>0</posy>
 					<width>740</width>
 					<height>46</height>
@@ -32,7 +32,7 @@
 					<visible>!IsEmpty(ListItem.Duration) + !IsEmpty(ListItem.TrackNumber) + [Container.Content(songs) | Window.IsActive(500) | [!Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]]</visible>
 				</control>
 				<control type="label">
-					<posx>30</posx>
+					<posx>60</posx>
 					<posy>0</posy>
 					<width>700</width>
 					<height>46</height>
@@ -43,7 +43,7 @@
 					<visible>![Window.IsActive(25) | Window.IsActive(502) | Window.IsActive(500)] + IsEmpty(ListItem.Duration)</visible>
 				</control>
 				<control type="label">
-					<posx>30</posx>
+					<posx>60</posx>
 					<posy>0</posy>
 					<width>700</width>
 					<height>46</height>
@@ -54,7 +54,7 @@
 					<visible>Container.Content(albums) + IsEmpty(ListItem.Album) + IsEmpty(ListItem.Label)</visible>
 				</control>
 				<control type="label">
-					<posx>30</posx>
+					<posx>60</posx>
 					<posy>0</posy>
 					<width>720</width>
 					<height>46</height>
@@ -66,7 +66,7 @@
 				</control>
 				<!-- fix for invisible non-focused items in e.g. Hulu -->
 				<control type="label">
-					<posx>30</posx>
+					<posx>60</posx>
 					<posy>0</posy>
 					<width>720</width>
 					<height>46</height>
@@ -77,7 +77,7 @@
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(24)</visible>
 				</control>
 				<control type="label">
-					<posx>30</posx>
+					<posx>60</posx>
 					<posy>0</posy>
 					<width>740</width>
 					<height>46</height>
@@ -89,7 +89,7 @@
 					<animation effect="slide" start="0,-6" end="0,-6" time="0" condition="!Container.Content(seasons)">Conditional</animation>
 				</control>
 				<control type="label">
-					<posx>30</posx>
+					<posx>60</posx>
 					<posy>5</posy>
 					<width>740</width>
 					<height>25</height>
@@ -100,7 +100,7 @@
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + Container.Content(episodes)</visible>
 				</control>
 				<control type="label">
-					<posx>30</posx>
+					<posx>60</posx>
 					<posy>27</posy>
 					<width>740</width>
 					<height>17</height>
@@ -111,7 +111,7 @@
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25)</visible>
 				</control>
 				<control type="label">
-					<posx>30</posx>
+					<posx>60</posx>
 					<posy>27</posy>
 					<width>740</width>
 					<height>17</height>
@@ -122,7 +122,7 @@
 					<visible>!IsEmpty(ListItem.Date) + Window.IsActive(25) + Container.Content(episodes)</visible>
 				</control>
 				<control type="label">
-					<posx>30</posx>
+					<posx>60</posx>
 					<posy>27</posy>
 					<width>740</width>
 					<height>17</height>
@@ -133,7 +133,7 @@
 					<visible>!IsEmpty(ListItem.Episode) + Window.IsActive(25) + Container.Content(tvshows)</visible>
 				</control>
 				<control type="image">
-					<posx>0</posx>
+					<posx>30</posx>
 					<posy>17</posy>
 					<width>20</width>
 					<height>20</height>
@@ -142,7 +142,7 @@
 					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>4</posx>
+					<posx>34</posx>
 					<posy>21</posy>
 					<width>12</width>
 					<height>12</height>
@@ -151,7 +151,7 @@
 					<colordiffuse>89FFFFFF</colordiffuse>
 				</control>
 			</itemlayout>
-			<focusedlayout width="760" height="120">
+			<focusedlayout width="800" height="120">
 				<!-- Watched overlay for episodes -->
 				<control type="image">
 					<posx>0</posx>
@@ -191,7 +191,7 @@
 				<control type="label">
 					<posx>30</posx>
 					<posy>0</posy>
-					<width>700</width>
+					<width>760</width>
 					<height>120</height>
 					<aligny>center</aligny>
 					<font>Font_ListTitleBigger</font>
@@ -445,7 +445,7 @@
 		<control type="image">
 			<posx>30</posx>
 			<posy>110</posy>
-			<width>440</width>
+			<width>410</width>
 			<height>360</height>
 			<fadetime>400</fadetime>
 			<aspectratio align="right" aligny="center">keep</aspectratio>
@@ -458,7 +458,7 @@
 			<visible>Control.IsVisible(50) + !Container.Content(Genres)</visible>
 		</control>
 		<control type="image">
-			<posx>30</posx>
+			<posx>0</posx>
 			<posy>110</posy>
 			<width>440</width>
 			<height>360</height>
@@ -506,7 +506,7 @@
 		</control>
 
 		<control type="textbox">
-			<posx>522</posx>
+			<posx>492</posx>
 			<posy>267</posy>
 			<width>700</width>
 			<height>80</height>
