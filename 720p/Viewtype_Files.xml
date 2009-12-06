@@ -51,7 +51,7 @@
 					<font>Font_ListTitleNF</font>
 					<textcolor>FileTitleNF</textcolor>
 					<label>$LOCALIZE[13205]</label>
-					<visible>Container.Content(albums) + IsEmpty(ListItem.Album)</visible>
+					<visible>Container.Content(albums) + IsEmpty(ListItem.Album) + IsEmpty(ListItem.Label)</visible>
 				</control>
 				<control type="label">
 					<posx>30</posx>
@@ -208,7 +208,7 @@
 					<font>Font_ListTitleBigger</font>
 					<textcolor>ListTitleF</textcolor>
 					<label>$INFO[ListItem.Title]</label>
-					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + !Container.Content(episodes)</visible>
+					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25) + !Container.Content(episodes) + IsEmpty(ListItem.Label)</visible>
 				</control>
 				<control type="label">
 					<posx>30</posx>
