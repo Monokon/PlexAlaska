@@ -342,7 +342,7 @@
 						<aligny>center</aligny>
 						<font>Font_ListDetail</font>
 						<textcolor>ListTitleF</textcolor>
-						<label>[B]$LOCALIZE[515]:[/B] $INFO[ListItem.Genre]</label>
+						<label>[B]$LOCALIZE[557]:[/B] $INFO[ListItem.Artist]</label>
 						<visible>!IsEmpty(ListItem.Album)</visible>
 						<scroll>true</scroll>
 					</control>
