@@ -69,7 +69,7 @@
 	<string id="31520">THUMB</string>
 	<string id="31521">FANART</string>
 	<!-- header -->
-	<string id="31522">ITEMS</string>
+	<string id="31522">ONDERDELEN</string>
 
 
 	<!-- Settings -->
@@ -86,7 +86,7 @@
 	<string id="31911">Home</string>
 	<string id="31912">Weergave</string>
 	<string id="31913">Achtergrond</string>
-	<string id="31914">Speelt nu:</string>
+	<string id="31914">Speelt nu</string>
 	<string id="31915">Thema</string>
 	<string id="31916">Diversen</string>
 	<string id="31920">Scroll Plot</string>
@@ -115,7 +115,7 @@
 	<string id="31946">Reset Home TV Artwork map</string>
 	<string id="31947">Stel Home Afbeeldingen Artwork map in</string>
 	<string id="31948">Reset Home Afbeeldingen Artwork map</string>
-	<string id="31949">Verander default "AFSLUITEN" naar "Sluimer"</string>
+	<string id="31949">Verander standaard "AFSLUITEN" naar "SLUIMER"</string>
 	<string id="31955">Schakel lijnen uit om geselecteerd item te highlighten</string>
 	<string id="31956">Gebruik "fixedlist" in posterweergave voor TV series</string>
 	<string id="31957">Verberg label van huidige afbeelding/pad in "Afbeeldingen"</string>
@@ -129,12 +129,12 @@
 	<string id="31967">Schakel achtergrond for afbeeldingen uit</string>
 	<string id="31970">Stel pad naar artiestenachtergrond in</string>
 	<string id="31971">Reset pad naar artiestenachtergrond</string>
-	<string id="31972">Schakel filterafbeelding in "Now Playing" uit</string>
+	<string id="31972">Schakel filterafbeelding in "Speelt nu" uit</string>
 	<string id="31973">Schakel voortgangsbalk uit</string>
-	<string id="31974">Gebruik alternatief "Now Playing"-scherm</string>
+	<string id="31974">Gebruik alternatief "Speelt nu"-scherm</string>
 	<string id="31980">Schakel automatische thema-verandering in</string>
 	<string id="31985">Debug modus</string>
-	<string id="31986">Debug grid</string>
+	<string id="31986">Debug raster</string>
 	<string id="31990">Gebruik alleen indien de optie "Fanart voor Films" is uitgeschakeld</string>
 	<string id="31991">Gebruik alleen indien de optie "OSX overlays" is uitgeschakeld</string>
 	<string id="31992">Past automatisch themakleuren aan de tijd van de dag aan. Van 9 uur 's ochtends tot 8 uur 's avonds wordt "default.xml" gebruikt en van 8 uur 's avonds tot 9 uur 's ochtends "dark.xml"</string>
