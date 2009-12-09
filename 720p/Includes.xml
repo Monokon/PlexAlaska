@@ -58,6 +58,11 @@
 		<texture>common/white.png</texture>
 		<colordiffuse>backgroundColor</colordiffuse>
 		</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>background.jpg</texture>
+				<colordiffuse>BackgroundFilterColor</colordiffuse>
+			</control>
 	</include>
 	<include name="Global_Filter">
 		<control type="image">
@@ -73,6 +78,11 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>backdrops/backgroundcolordiffuse.png</texture>
+			<colordiffuse>BackgroundFilterColor</colordiffuse>
+		</control>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture>background.jpg</texture>
 			<colordiffuse>BackgroundFilterColor</colordiffuse>
 		</control>
 	</include>
