@@ -1,4 +1,4 @@
-﻿<!--Empty-->
+<!--Empty-->
 
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
@@ -6,6 +6,7 @@
 	<controls>
 		<control type="button" id="10">
 			<description>Trigger</description>
+			<onfocus>RunScript(U:/skin/PlexAlaska/extras/CopyScripts.py)</onfocus>
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>

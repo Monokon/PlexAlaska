@@ -10,6 +10,10 @@
 			<onfocus>SetFocus(3102)</onfocus>
 			<visible>Container(300).HasFocus(1)</visible>
 		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3103)</onfocus>
+			<visible>Container(300).HasFocus(1)</visible>
+		</control>
 	</include>
 	
 	<include name="Appstore_SubmenuItems">
@@ -21,6 +25,11 @@
 		<control type="button" id="3102">
 			<label>$LOCALIZE[31500]</label>
 			<onclick>XBMC.ActivateWindow(3)</onclick>
+			<include>Home_MainMenuLabel</include>
+		</control>
+		<control type="button" id="3103">
+			<label>$LOCALIZE[31020]</label>
+			<onclick>ActivateWindow(Scripts)</onclick>
 			<include>Home_MainMenuLabel</include>
 		</control>
 	</include>

@@ -877,33 +877,33 @@
 
 	<include name="submenu_appstore">
 		<control type="group">
-			<posx>445</posx>
+			<posx>380</posx>
 			<posy>520</posy>
 			<visible>ControlGroup(943).HasFocus() + Container(300).HasFocus(2)</visible>
 			<include condition="Skin.HasSetting(home2)">Animation_Submenu_home2</include>
 			<control type="image">
 				<width>20</width>
 				<height>60</height>
-				<posx>0</posx>
+				<posx>40</posx>
 				<texture>mainmenu/submenu_left.png</texture>
 			</control>
 			<control type="image">
-				<width>350</width>
+				<width>390</width>
 				<height>60</height>
-				<posx>20</posx>
+				<posx>60</posx>
 				<texture>mainmenu/submenu_mid.png</texture>
 			</control>
 			<control type="image">
 				<width>20</width>
 				<height>60</height>
-				<posx>370</posx>
+				<posx>450</posx>
 				<texture>mainmenu/submenu_right.png</texture>
 			</control>
 
 			<control type="grouplist" id="943">
 				<posx>62</posx>
 				<posy>13</posy>
-				<width>400</width>
+				<width>530</width>
 				<height>33</height>
 				<itemgap>0</itemgap>
 				<onup>300</onup>
@@ -917,6 +917,11 @@
 					<include>submenubutton</include>
 					<label>$LOCALIZE[31500]</label>
 					<onclick>XBMC.ActivateWindow(3)</onclick>
+				</control>
+				<control type="button" id="42">
+					<include>submenubutton</include>
+					<label>$LOCALIZE[31020]</label>
+					<onclick>ActivateWindow(Scripts)</onclick>
 				</control>
 			</control>
 		</control>
