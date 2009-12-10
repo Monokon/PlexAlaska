@@ -6,10 +6,7 @@
 	<controls>
 		<include>Global_Background</include>
 		<include>Global_Filter</include>
-		<include>Viewtype_List</include>
-		<control type="fixedlist" id="50">
-			<visible>false</visible>
-		</control>
+		<include>Viewtype_Files</include>
 
 		<!-- view options -->
 		<include>Global_ContextFilter</include>

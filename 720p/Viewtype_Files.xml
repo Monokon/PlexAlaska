@@ -343,7 +343,7 @@
 						<font>Font_ListDetail</font>
 						<textcolor>ListTitleF</textcolor>
 						<label>[B]$LOCALIZE[557]:[/B] $INFO[ListItem.Artist]</label>
-						<visible>!IsEmpty(ListItem.Album)</visible>
+						<visible>!IsEmpty(ListItem.Album) + !Window.IsActive(500)</visible>
 						<scroll>true</scroll>
 					</control>
 					<control type="image">
@@ -379,7 +379,7 @@
 						<font>Font_ListTitleBigger</font>
 						<textcolor>ListTitleF</textcolor>
 						<label>$INFO[ListItem.TrackNumber]. $INFO[ListItem.Title]</label>
-						<visible>!IsEmpty(ListItem.Title)</visible>
+						<visible>!IsEmpty(ListItem.Title) + !Window.IsActive(500)</visible>
 						<scroll>true</scroll>
 						<animation effect="slide" start="0,-10" end="0,-10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
 					</control>
@@ -404,7 +404,7 @@
 						<font>Font_ListDetail</font>
 						<textcolor>ListTitleF</textcolor>
 						<label>[B]$LOCALIZE[557]:[/B] $INFO[ListItem.Artist]</label>
-						<visible>!IsEmpty(ListItem.Title)</visible>
+						<visible>!IsEmpty(ListItem.Title) + !Window.IsActive(500)</visible>
 						<scroll>true</scroll>
 						<animation effect="slide" start="0,10" end="0,10" time="0" condition="Window.IsActive(500) | [ Window.IsActive(502) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs)]">Conditional</animation>
 					</control>
