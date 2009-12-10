@@ -30,7 +30,7 @@
 	<!-- Global colours -->
 
 	<color name="Time">FFFFFFFF</color>
-	<color name="Date">FFB3B3B3</color>
+	<color name="Date">FF009ACD</color>
 	<color name="RSSBody">FFFFFFFF</color>
 	<color name="RSSHighlight">FFFFFFFF</color>
 	<color name="RSSHeadline">FFFFFFFF</color>
