@@ -20,6 +20,7 @@
 			<pagecontrol>62</pagecontrol>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByDialog</include>
 			<visible>!Container.Content(episodes)</visible>
 			<itemlayout width="168" height="245">
 				<control type="image">
@@ -223,6 +224,7 @@
 			<pagecontrol>62</pagecontrol>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByDialog</include>
 			<visible>!Container.Content(episodes)</visible>
 			<itemlayout width="168" height="245">
 				<control type="image">
@@ -444,6 +446,7 @@
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByDialog</include>
 			<control type="fadelabel">
 				<posx>5</posx>
 				<posy>0</posy>

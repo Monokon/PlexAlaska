@@ -1,7 +1,8 @@
 <!--Empty-->
 
-<window id="132">
+<window type="dialog" id="132">
 	<defaultcontrol always="true">3</defaultcontrol>
+	<include>Animation_ZoomInMenu</include>
 
 	<coordinates>
 		<system>1</system>

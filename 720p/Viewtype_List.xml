@@ -21,6 +21,7 @@
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByMusicInfo</include>
+			<include>Animation_HiddenByDialog</include>
 			<itemlayout width="885" height="49">
 				<control type="label">
 					<posx>73</posx>

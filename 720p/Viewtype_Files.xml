@@ -19,6 +19,7 @@
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_HiddenByMusicInfo</include>
+			<include>Animation_HiddenByDialog</include>
 			<itemlayout width="1240" height="46">
 				<control type="label">
 					<posx>60</posx>
@@ -432,6 +433,7 @@
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_HiddenByMusicInfo</include>
+			<include>Animation_HiddenByDialog</include>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -470,6 +472,7 @@
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByMusicInfo</include>
+			<include>Animation_HiddenByDialog</include>
 			<visible>Control.IsVisible(50) + !Container.Content(Genres)</visible>
 		</control>
 		<control type="image">
@@ -485,6 +488,7 @@
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByMusicInfo</include>
+			<include>Animation_HiddenByDialog</include>
 			<visible>Control.IsVisible(50) + Container.Content(Genres)</visible>
 		</control>
 		<control type="group">

@@ -11,6 +11,7 @@
 			<texture>$INFO[listitem.icon]</texture>
 			<visible>!Skin.HasSetting(nopicturebackdrops)</visible>
 			<include>Animation_BackdropFade</include>
+			<include>Animation_HiddenByDialog</include>
 		</control>
 
 		<control type="image">

@@ -119,6 +119,7 @@
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>				
+			<include>Animation_HiddenByDialog</include>
 			<onup>7000</onup>
 			<ondown>7000</ondown>			
 			<itemlayout width="110" height="110">
@@ -126,7 +127,7 @@
 				<control type="image">
 					<include>Object_PictureIconVars</include>
 					<animation effect="fade" start="30" end="30" time="0" condition="true">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="200">UnFocus</animation>					
+					<animation effect="fade" start="100" end="30" time="200">UnFocus</animation>
 				</control>				
 			</itemlayout>
 			<focusedlayout width="110" height="110">
@@ -165,6 +166,7 @@
 			<include>Animation_ZoomInZoomOut</include>			
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByDialog</include>
 			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
 			<animation effect="slide" start="-550,135" end="-550,135" time="0" condition="Skin.HasSetting(picturegrid7x1)">Conditional</animation>
 			<animation effect="slide" start="-550,80" end="-550,80" time="0" condition="Skin.HasSetting(picturegrid7x2)">Conditional</animation>
@@ -183,6 +185,7 @@
 			<include>Animation_ZoomInZoomOut</include>			
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByDialog</include>
 			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
 			<animation effect="slide" start="-550,135" end="-550,135" time="0" condition="Skin.HasSetting(picturegrid7x1)">Conditional</animation>
 			<animation effect="slide" start="-550,80" end="-550,80" time="0" condition="Skin.HasSetting(picturegrid7x2)">Conditional</animation>
@@ -202,6 +205,7 @@
 			<include>Animation_ZoomInZoomOut</include>			
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByDialog</include>
 			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
 			<animation effect="slide" start="0,135" end="0,135" time="0" condition="Skin.HasSetting(picturegrid7x1)">Conditional</animation>
 			<animation effect="slide" start="0,80" end="0,80" time="0" condition="Skin.HasSetting(picturegrid7x2)">Conditional</animation>
@@ -220,6 +224,7 @@
 			<include>Animation_ZoomInZoomOut</include>			
 			<include>Animation_PictureGridFloat</include>
 			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByDialog</include>
 			<animation effect="slide" start="55,0" end="55,0" time="0" condition="Player.HasVideo">Conditional</animation>
 			<animation effect="slide" start="0,135" end="0,135" time="0" condition="Skin.HasSetting(picturegrid7x1)">Conditional</animation>
 			<animation effect="slide" start="0,80" end="0,80" time="0" condition="Skin.HasSetting(picturegrid7x2)">Conditional</animation>
