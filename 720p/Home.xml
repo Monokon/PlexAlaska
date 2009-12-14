@@ -1,7 +1,7 @@
 <!--Alaska-->
 
 <window id="0">
-	<defaultcontrol always="true">777</defaultcontrol>
+	<defaultcontrol always="true">300</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Filter</include>
@@ -16,13 +16,6 @@
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
 
-		<!-- Dummy button to set theme time-depending -->
-		<control type="button" id="777">
-			<include condition="Skin.HasSetting(autom_themechange)">changethemebytime</include>
-			<include condition="Skin.HasSetting(autom_themechange)">runThemeScript</include>
-			<onfocus>SetFocus(300)</onfocus>
-		</control>
-		
 		<include>Global_ContextFilter</include>
 		<include>Global_Time</include>
 		<include>Global_RSS</include>

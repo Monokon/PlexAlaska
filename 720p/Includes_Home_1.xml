@@ -24,38 +24,54 @@
 				<item id="1">
 					<description>Programs</description>
 					<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/,return)</onclick>
+					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
+					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<visible>!Skin.HasSetting(noappstore)</visible>
 				</item>
 				<item id="2">
 					<description>Videos</description>
 					<onclick>ActivateWindow(VideoFiles)</onclick>
+					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
+					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
 				<item id="3">
 					<description>Music</description>
 					<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
+					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
+					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 				</item>
 				<item id="4">
 					<description>Movies</description>
+					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
+					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<onclick>ActivateWindow(VideoLibrary,movietitles,return)</onclick>
 				</item>
 				<item id="5">
 					<description>Tv Shows</description>
 					<onclick>ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
+					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
+					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 				</item>
 				<item id="6">
 					<description>Pictures</description>
 					<onclick>ActivateWindow(Pictures)</onclick>
+					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
+					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
 				<item id="7">
 					<description>Weather</description>
 					<onclick>ActivateWindow(2600)</onclick>
+					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
+					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<visible>!Skin.HasSetting(noweather)</visible>
 				</item>		
 				<item id="8">
 					<description>Settings</description>
 					<onclick>ActivateWindow(4)</onclick>
+					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
+					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<visible>!Skin.HasSetting(nosettings)</visible>
 				</item>
 				<item id="9">
