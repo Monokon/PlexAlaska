@@ -3,7 +3,7 @@
 <window id="101">
 	<defaultcontrol always="true">10</defaultcontrol>
 
-	<include condition="!Window.IsVisible(1)">animation_appstore_fix</include>
+	<include condition="!Window.IsVisible(1) + !Window.IsVisible(24)">animation_appstore_fix</include>
 
 	<controls>
 
