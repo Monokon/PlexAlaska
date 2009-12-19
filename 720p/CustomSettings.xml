@@ -446,6 +446,28 @@
 					<onclick>Skin.ToggleSetting(nopicturepath)</onclick>
 					<selected>Skin.HasSetting(nopicturepath)</selected>
 				</control>
+				<control type="radiobutton" id="306">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31958]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(nomovieoverlay)</onclick>
+					<selected>Skin.HasSetting(nomovieoverlay)</selected>
+				</control>
+				<control type="radiobutton" id="307">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31959]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(notvshowoverlay)</onclick>
+					<selected>Skin.HasSetting(notvshowoverlay)</selected>
+				</control>
 			</control>
 			<control type="grouplist" id="9004">
 				<visible>Container(9000).Hasfocus(4)</visible>

@@ -120,6 +120,8 @@
 	<string id="31955">Linien zur Hervorhebung des gewählten Eintrags deaktivieren</string>
 	<string id="31956">Benutze "fixedlist" in der Posteransicht für Serien</string>
 	<string id="31957">Anzeige des aktuellen Bildes/Pfades in "Bilder" deaktivieren</string>
+	<string id="31958">"Gesehen"-Overlay für Filme deaktivieren</string>
+	<string id="31959">"Gesehen"-Overlay für Serien deaktivieren</string>
 	<string id="31960">Sichtbarkeit der Hintergrundbilder erhöhen</string>
 	<string id="31961">20% Sichtbarkeit</string>
 	<string id="31962">30% Sichtbarkeit</string>

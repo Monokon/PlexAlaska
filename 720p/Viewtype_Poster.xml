@@ -93,7 +93,7 @@
 					<posy>137</posy>
 					<width>25</width>
 					<height>25</height>
-					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)</visible>
 					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
@@ -103,7 +103,27 @@
 					<posy>142</posy>
 					<width>15</width>
 					<height>15</height>
-					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)</visible>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>89FFFFFF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>7</posx>
+					<posy>137</posy>
+					<width>25</width>
+					<height>25</height>
+					<visible>!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)</visible>
+					<texture>BG$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>12</posx>
+					<posy>142</posy>
+					<width>15</width>
+					<height>15</height>
+					<visible>!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)</visible>
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
@@ -181,7 +201,7 @@
 					<posy>30</posy>
 					<width>40</width>
 					<height>40</height>
-					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)</visible>
 					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 					<include>Animation_PosterInfoSlide</include>
@@ -195,7 +215,34 @@
 					<posy>37</posy>
 					<width>26</width>
 					<height>26</height>
-					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)</visible>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<include>Animation_PosterInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
+						<effect type="fade" start="0" end="100" time="600" />
+					</animation>
+				</control>
+				<control type="image">
+					<posx>12</posx>
+					<posy>30</posy>
+					<width>40</width>
+					<height>40</height>
+					<visible>!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)</visible>
+					<texture>BG$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
+					<include>Animation_PosterInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
+						<effect type="fade" start="0" end="100" time="600" />
+					</animation>
+				</control>
+				<control type="image">
+					<posx>19</posx>
+					<posy>37</posy>
+					<width>26</width>
+					<height>26</height>
+					<visible>!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)</visible>
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<include>Animation_PosterInfoSlide</include>
 					<animation type="Focus" reversible="false">
@@ -297,7 +344,7 @@
 					<posy>137</posy>
 					<width>25</width>
 					<height>25</height>
-					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)</visible>
 					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
@@ -307,7 +354,27 @@
 					<posy>142</posy>
 					<width>15</width>
 					<height>15</height>
-					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)</visible>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>89FFFFFF</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>7</posx>
+					<posy>137</posy>
+					<width>25</width>
+					<height>25</height>
+					<visible>!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)</visible>
+					<texture>BG$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
+					<include>Animation_HiddenByInfo</include>
+				</control>
+				<control type="image">
+					<posx>12</posx>
+					<posy>142</posy>
+					<width>15</width>
+					<height>15</height>
+					<visible>!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)</visible>
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>89FFFFFF</colordiffuse>
 					<include>Animation_HiddenByInfo</include>
@@ -385,7 +452,7 @@
 					<posy>30</posy>
 					<width>40</width>
 					<height>40</height>
-					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)</visible>
 					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 					<include>Animation_PosterInfoSlide</include>
@@ -399,7 +466,34 @@
 					<posy>37</posy>
 					<width>26</width>
 					<height>26</height>
-					<visible>!Skin.HasSetting(nomovieoverlays) + !IsEmpty(ListItem.Overlay)</visible>
+					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)</visible>
+					<texture>$INFO[ListItem.Overlay]</texture>
+					<include>Animation_PosterInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
+						<effect type="fade" start="0" end="100" time="600" />
+					</animation>
+				</control>
+				<control type="image">
+					<posx>12</posx>
+					<posy>30</posy>
+					<width>40</width>
+					<height>40</height>
+					<visible>!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)</visible>
+					<texture>BG$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
+					<include>Animation_PosterInfoSlide</include>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="180,258" start="51" end="100" time="600" tween="back" easing="out" />
+						<effect type="fade" start="0" end="100" time="600" />
+					</animation>
+				</control>
+				<control type="image">
+					<posx>19</posx>
+					<posy>37</posy>
+					<width>26</width>
+					<height>26</height>
+					<visible>!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)</visible>
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<include>Animation_PosterInfoSlide</include>
 					<animation type="Focus" reversible="false">
