@@ -76,7 +76,7 @@
 				<posy>130</posy>
 				<width>550</width>
 				<font>Font_InfoDetails</font>
-				<textcolor>InfoDetails</textcolor>
+				<textcolor>InfoPlot</textcolor>
 				<info>ListItem.Director</info>
 			</control>
 			<control type="label">
@@ -94,7 +94,7 @@
 				<posy>154</posy>
 				<width>550</width>
 				<font>Font_InfoDetails</font>
-				<textcolor>InfoDetails</textcolor>
+				<textcolor>InfoPlot</textcolor>
 				<info>ListItem.Writer</info>
 			</control>
 			<control type="label">
