@@ -199,13 +199,13 @@
 			<posx>559</posx>
 			<posy>157</posy>
 			<width>633</width>
-			<height>100</height>
+			<height>102</height>
 			<align>left</align>
 			<info>Container(51).ListItem.Plot</info>
 					<animation type="Focus" reversible="false">
 						<effect type="fade" start="0" end="100" time="200" />
 					</animation>
-			<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
+			<autoscroll time="3200" delay="6000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
 			<font>Font_EpisodePlot</font>
 			<textcolor>EpisodePlot</textcolor>
 			<include>Animation_ZoomInZoomOut</include>

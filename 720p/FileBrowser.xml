@@ -171,7 +171,7 @@
 			<visible allowhiddenfocus="true">ControlGroup(7001).HasFocus</visible>
 			<include>Animation_ZoomInMenu</include>
 			<orientation>horizontal</orientation>
-			<posy>307</posy>
+			<posy>300</posy>
 		<!-- ok -->
 			<control type="button" id="7040">
 				<include>WindowMenuLabel</include>

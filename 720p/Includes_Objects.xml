@@ -7,7 +7,7 @@
 		<focusedcolor>77FFFFFF</focusedcolor>
 		<selectedcolor>77FFFFFF</selectedcolor>
 		<align>center</align>
-		<aligny>top</aligny>
+		<aligny>center</aligny>
 		<textoffsety>21</textoffsety>
 		<font>Font_KeyboardKeys</font>
 	</include>
@@ -16,7 +16,7 @@
 		<focusedcolor>FFFFFFFF</focusedcolor>
 		<selectedcolor>FFFFFFFF</selectedcolor>
 		<align>center</align>
-		<aligny>top</aligny>
+		<aligny>center</aligny>
 		<textoffsety>21</textoffsety>
 		<include>Animation_KeyboardFade</include>
 		<font>Font_KeyboardKeys</font>

@@ -537,6 +537,7 @@
 			<visible>Control.IsVisible(55)</visible>
 			<posx>840</posx>
 			<posy>460</posy>
+			<animation effect="slide" end="-20,-36" condition="Control.IsVisible(54)">Conditional</animation>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_HiddenByInfo</include>
 			<include>Animation_ZoomedByMenu</include>
@@ -572,8 +573,10 @@
 			</control>
 			<control type="label">
 				<posx>5</posx>
-				<posy>46</posy>
+				<posy>42</posy>
 				<width>420</width>
+				<height>50</height>
+				<aligny>center</aligny>
 				<font>Font_ListDetail</font>
 				<textcolor>ListTrackF</textcolor>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
@@ -592,7 +595,7 @@
 			</control>
 			<control type="label">
 				<posx>5</posx>
-				<posy>50</posy>
+				<posy>62</posy>
 				<width>420</width>
 				<height>50</height>
 				<aligny>center</aligny>
@@ -603,7 +606,7 @@
 			</control>
 			<control type="label">
 				<posx>5</posx>
-				<posy>70</posy>
+				<posy>82</posy>
 				<width>420</width>
 				<height>50</height>
 				<aligny>center</aligny>

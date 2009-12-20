@@ -62,7 +62,7 @@
 					<width>510</width>
 					<height>40</height>
 					<font>Font_PosterTitle</font>
-					<label>$INFO[VideoPlayer.Title] [COLOR OSDPlayingAlbum]$INFO[VideoPlayer.Year][/COLOR]</label>
+					<label>$INFO[VideoPlayer.Title]</label>
 					<textcolor>NowPlayingTrack</textcolor>
 				</control>
 				<control type="label">
@@ -70,7 +70,7 @@
 					<posy>40</posy>
 					<width>510</width>
 					<font>Font_ListDetail</font>
-					<label>[B]$INFO[VideoPlayer.Director][/B] $INFO[VideoPlayer.Year]</label>
+					<label>[B]$INFO[VideoPlayer.Director]</label>
 					<textcolor>NowPlayingArtist</textcolor>
 					<visible>!VideoPlayer.Content(episodes)</visible>
 				</control>

@@ -159,11 +159,11 @@
 				<visible>!Control.IsVisible(55)</visible>
 				<posy>165</posy>
 				<width>550</width>
-				<height>180</height>
+				<height>168</height>
 				<font>Font_InfoPlot</font>
 				<textcolor>InfoPlot</textcolor>
 				<info>ListItem.Plot</info>
-				<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
+				<autoscroll time="4000" delay="12000" repeat="8000">Skin.HasSetting(autoscroll)</autoscroll>
 			</control>
 			<control type="panel" id="50">
 				<description>Tracks</description>
@@ -297,7 +297,7 @@
 			<visible allowhiddenfocus="true">ControlGroup(7001).HasFocus</visible>
 			<include>Animation_ZoomInMenu</include>
 			<orientation>horizontal</orientation>
-			<posy>307</posy>
+			<posy>300</posy>
 			<!-- Cast/Review -->
 			<control type="button" id="7040">
 				<posx>0</posx>

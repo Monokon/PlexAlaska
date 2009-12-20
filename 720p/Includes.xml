@@ -1166,6 +1166,7 @@
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>Small</font>
+		<textcolor>Black</textcolor>
 		<focusedcolor>Black</focusedcolor>
 		<onclick>SetFocus(300)</onclick>
 		<animation type="Focus">

@@ -21,16 +21,16 @@
 				<description>Panel</description>
 				<texture>keyboard/keyboard_back.png</texture>
 				<posx>0</posx>
-				<posy>0</posy>
+				<posy>-50</posy>
 				<width>545</width>
-				<height>289</height>
+				<height>339</height>
 			</control>
 
 			<control type="label" id="310">
 				<description>Edit Text</description>
-				<posx>108</posx>
+				<posx>20</posx>
 				<posy>243</posy>
-				<width>420</width>
+				<width>500</width>
 				<height>22</height>
 				<include>Objects_KeyOffVars</include>
 				<align>center</align>
@@ -41,11 +41,12 @@
 			<control type="label" id="311">
 				<description>Dialog heading</description>
 				<posx>21</posx>
-				<posy>243</posy>
-				<width>80</width>
+				<posy>-20</posy>
+				<width>500</width>
 				<height>22</height>
 				<include>Objects_KeyOffVars</include>
 				<align>center</align>
+				<scroll>true</scroll>
 				<include>dialogheadingcolor</include>
 			</control>
 

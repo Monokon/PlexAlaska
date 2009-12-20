@@ -94,7 +94,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<label>$LOCALIZE[112]</label>
-				<font>Font_OSDBig</font>
+				<font>Font_MainMenu</font>
 				<textcolor>33ffffff</textcolor>
 				<visible>player.paused</visible>
 			</control>
@@ -105,7 +105,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<label>ffx2</label>
-				<font>Font_OSDBig</font>
+				<font>Font_MainMenu</font>
 				<textcolor>33ffffff</textcolor>
 				<visible>player.forwarding2x</visible>
 			</control>
@@ -116,7 +116,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<label>ffx4</label>
-				<font>Font_OSDBig</font>
+				<font>Font_MainMenu</font>
 				<textcolor>33ffffff</textcolor>
 				<visible>player.forwarding4x</visible>
 			</control>
@@ -127,7 +127,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<label>ffx8</label>
-				<font>Font_OSDBig</font>
+				<font>Font_MainMenu</font>
 				<textcolor>33ffffff</textcolor>
 				<visible>player.forwarding8x</visible>
 			</control>
@@ -138,7 +138,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<label>ffx16</label>
-				<font>Font_OSDBig</font>
+				<font>Font_MainMenu</font>
 				<textcolor>33ffffff</textcolor>
 				<visible>player.forwarding16x</visible>
 			</control>
@@ -149,7 +149,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<label>ffx32</label>
-				<font>Font_OSDBig</font>
+				<font>Font_MainMenu</font>
 				<textcolor>33ffffff</textcolor>
 				<visible>player.forwarding32x</visible>
 			</control>
@@ -160,7 +160,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<label>rwx2</label>
-				<font>Font_OSDBig</font>
+				<font>Font_MainMenu</font>
 				<textcolor>33ffffff</textcolor>
 				<visible>player.rewinding2x</visible>
 			</control>
@@ -171,7 +171,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<label>rwx4</label>
-				<font>Font_OSDBig</font>
+				<font>Font_MainMenu</font>
 				<textcolor>33ffffff</textcolor>
 				<visible>player.rewinding4x</visible>
 			</control>
@@ -182,7 +182,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<label>rwx8</label>
-				<font>Font_OSDBig</font>
+				<font>Font_MainMenu</font>
 				<textcolor>33ffffff</textcolor>
 				<visible>player.rewinding8x</visible>
 			</control>
@@ -193,7 +193,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<label>rwx16</label>
-				<font>Font_OSDBig</font>
+				<font>Font_MainMenu</font>
 				<textcolor>33ffffff</textcolor>
 				<visible>player.rewinding16x</visible>
 			</control>
@@ -204,7 +204,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<label>rwx32</label>
-				<font>Font_OSDBig</font>
+				<font>Font_MainMenu</font>
 				<textcolor>33ffffff</textcolor>
 				<visible>player.rewinding32x</visible>
 			</control>

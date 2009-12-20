@@ -256,11 +256,11 @@
 				<posx>5</posx>
 				<posy>390</posy>
 				<width>633</width>
-				<height>200</height>
+				<height>190</height>
 				<align>left</align>
 				<info>ListItem.Plot</info>
 				<autoscroll time="3200" delay="6000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
-				<font>Font_TVShow</font>
+				<font>Font_InfoPlot</font>
 				<textcolor>FanartText</textcolor>
 				<visible>Container.Content(episodes)</visible>
 			</control>			

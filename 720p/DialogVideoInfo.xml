@@ -65,54 +65,59 @@
 				<posx>0</posx>
 				<posy>140</posy>
 				<width>150</width>
-				<font>Font_OSDDetail</font>
+				<font>Font_InfoDetails</font>
 				<textcolor>InfoDetails</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[31514]:</label>
 			</control>
 			<control type="label">
-				<posx>125</posx>
-				<posy>130</posy>
+				<posx>155</posx>
+				<posy>140</posy>
 				<width>550</width>
+				<align>left</align>
+				<aligny>center</aligny>
 				<font>Font_InfoDetails</font>
 				<textcolor>InfoPlot</textcolor>
 				<info>ListItem.Director</info>
 			</control>
 			<control type="label">
 				<posx>0</posx>
-				<posy>167</posy>
+				<posy>164</posy>
 				<width>150</width>
-				<font>Font_OSDDetail</font>
+				<font>Font_InfoDetails</font>
 				<textcolor>InfoDetails</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[31515]:</label>
 			</control>
 			<control type="label">
-				<posx>125</posx>
-				<posy>154</posy>
+				<posx>155</posx>
+				<posy>164</posy>
 				<width>550</width>
+				<align>left</align>
+				<aligny>center</aligny>
 				<font>Font_InfoDetails</font>
 				<textcolor>InfoPlot</textcolor>
 				<info>ListItem.Writer</info>
 			</control>
 			<control type="label">
 				<posx>0</posx>
-				<posy>200</posy>
+				<posy>204</posy>
 				<width>150</width>
-				<font>Font_OSDDetail</font>
+				<font>Font_InfoDetails</font>
 				<textcolor>InfoDetails</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[31516]:</label>
 			</control>
 			<control type="textbox">
-				<posx>125</posx>
+				<posx>155</posx>
 				<posy>191</posy>
 				<width>550</width>
 				<height>68</height>
-				<font>Font_InfoCast</font>
+				<align>left</align>
+				<font>Font_InfoDetails</font>
 				<textcolor>InfoPlot</textcolor>
 				<info>ListItem.CastAndRole</info>
 			</control>
@@ -120,7 +125,7 @@
 				<visible>!Control.IsVisible(50)</visible>
 				<posy>281</posy>
 				<width>600</width>
-				<height>212</height>
+				<height>218</height>
 				<font>Font_InfoPlot</font>
 				<textcolor>InfoPlot</textcolor>
 				<info>ListItem.Plot</info>
@@ -253,7 +258,7 @@
 			<visible allowhiddenfocus="true">ControlGroup(7001).HasFocus</visible>
 			<include>Animation_ZoomInMenu</include>
 			<orientation>horizontal</orientation>
-			<posy>307</posy>
+			<posy>300</posy>
 			<!-- Cast/Review -->
 			<control type="button" id="7040">
 				<include>WindowMenuLabel</include>

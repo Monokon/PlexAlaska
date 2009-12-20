@@ -4,51 +4,59 @@
 
 	<fontset id="Default" unicode="true">
 
+		<!-- Default XBMC font --> 
+	 	<font>
+			<name>font13</name>
+			<filename>Arial.ttf</filename>
+			<size>20</size>
+		</font>
+
 		<font>
-			<name>Font_Studio</name>
-			<filename>alaska_condblack.ttf</filename>
-			<size>14</size>
-			<linespacing>0.6</linespacing>
+			<name>Font_Channels</name>
+			<filename>alaska_black.ttf</filename>
+			<aspect>0.7</aspect>
+			<size>24</size>
 		</font>
 
 		<font>
 			<name>Font_Res</name>
-			<filename>alaska_condblack.ttf</filename>
+			<filename>alaska_black.ttf</filename>
+			<aspect>0.7</aspect>
 			<size>26</size>
-			<linespacing>0.6</linespacing>
 		</font>
 
 		<font>
 			<name>Font_Aspect</name>
-			<filename>alaska_condblack.ttf</filename>
-			<size>20</size>
-			<linespacing>0.6</linespacing>
+			<filename>alaska_black.ttf</filename>
+			<aspect>0.7</aspect>
+			<size>22</size>
 		</font>
 
 		<font>
 			<name>Font_PosterRating</name>
-			<filename>alaska_condblack.ttf</filename>
-			<size>24</size>
-			<linespacing>0.6</linespacing>
+			<filename>alaska_black.ttf</filename>
+			<aspect>0.7</aspect>
+			<size>26</size>
 		</font>
 
 		<font>
 			<name>Font_HomeSelected</name>
-			<filename>alaska_menu.ttf</filename>
+			<filename>alaska_black.ttf</filename>
 			<size>80</size>
 		</font>
 
 		<font>
 			<name>Font_HomeNotSelected</name>
 			<filename>alaska_black.ttf</filename>
-			<size>40</size>
+			<aspect>0.9</aspect>
+			<size>38</size>
 		</font>	
 
 		<font>
 			<name>Font_Settings</name>
 			<filename>alaska_nocaps.ttf</filename>
-			<size>28</size>
-			<linespacing>1</linespacing>
+			<aspect>0.9</aspect>
+			<size>26</size>
 		</font>
 
 		<font>
@@ -64,359 +72,256 @@
 		</font>
 
 		<font>
-			<name>font13</name>
-			<filename>Arial.ttf</filename>
-			<size>14</size>
-		</font>
-
-		<font>
 			<name>Font_Time</name>
 			<filename>alaska_black.ttf</filename>
-			<size>42</size>
+			<aspect>0.9</aspect>
+			<size>38</size>
 		</font>
 
 		<font>
 			<name>Font_MainMenu</name>
-			<filename>alaska_menu.ttf</filename>
-			<size>190</size>
+			<filename>alaska_black.ttf</filename>
+			<size>177</size>
 		</font>
 
 		<font>
 			<name>Font_Date</name>
-			<filename>alaska_light.ttf</filename>
-			<size>21</size>
+			<filename>alaska_regular.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>18</size>
 		</font>	
 
 		<font>
 			<name>Font_RSS</name>
-			<filename>alaska_thin.ttf</filename>
-			<size>21</size>
+			<filename>alaska_nocaps.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>19</size>
 		</font>
 
 		<font>
 			<name>Font_RSS_Big</name>
-			<filename>alaska_light_nocaps.ttf</filename>
-			<size>27</size>
-		</font>
-
-		<font>
-			<name>Font_NowPlayingArtist</name>
 			<filename>alaska_nocaps.ttf</filename>
-			<size>27</size>
+			<aspect>0.9</aspect>
+			<size>25</size>
 		</font>
 
 		<font>
 			<name>Font_NowPlayingTrack</name>
-			<filename>alaska_light.ttf</filename>
-			<size>27</size>
+			<filename>alaska_regular.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>24</size>
 		</font>
 
 		<font>
 			<name>Font_PosterTitle</name>
-			<filename>alaska_condblack.ttf</filename>
-			<size>43</size>
-			<linespacing>0.6</linespacing>
+			<filename>alaska_black.ttf</filename>
+			<aspect>0.7</aspect>
+			<size>38</size>
+			<linespacing>0.9</linespacing>
 		</font>
 
 		<font>
 			<name>Font_InfoPlot</name>
 			<filename>alaska_nocaps.ttf</filename>
-			<size>21</size>
-			<linespacing>1</linespacing>
+			<size>20</size>
 		</font>
 
 		<font>
 			<name>Font_InfoYear</name>
 			<filename>alaska_regular.ttf</filename>
-			<size>46</size>
+			<aspect>0.95</aspect>
+			<size>41</size>
+		</font>	
+
+		<font>
+			<name>Font_InfoYear2</name>
+			<filename>alaska_regular.ttf</filename>
+			<aspect>0.95</aspect>
+			<size>32</size>
 		</font>
 
 		<font>
 			<name>Font_InfoDetails</name>
 			<filename>alaska_regular.ttf</filename>
-			<size>22</size>
-		</font>
-
-		<font>
-			<name>Font_InfoCast</name>
-			<filename>alaska_regular.ttf</filename>
-			<size>22</size>
-			<linespacing>0.87</linespacing>	  
-		</font>	
-
-		<font>
-			<name>Font_InfoGenre</name>
-			<filename>alaska_regular.ttf</filename>
-			<size>20</size>
-			<linespacing>0.8</linespacing>
+			<aspect>0.95</aspect>
+			<size>17</size>
 		</font>
 
 		<font>
 			<name>Font_EpisodeTitleNF</name>
 			<filename>alaska_black.ttf</filename>
-			<size>25</size>
+			<aspect>0.9</aspect>
+			<size>22</size>
 		</font>
 
 		<font>
 			<name>Font_EpisodeLabelF</name>
 			<filename>alaska_black.ttf</filename>
-			<size>35</size>
+			<aspect>0.9</aspect>
+			<size>32</size>
 		</font>
 
 		<font>
 			<name>Font_EpisodeDetailNF</name>
-			<filename>alaska_light.ttf</filename>
-			<size>20</size>
+			<filename>alaska_regular.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>17</size>
 		</font>	
 
 		<font>
 			<name>Font_EpisodePlot</name>
-			<filename>alaska_light_nocaps.ttf</filename>
-			<size>21</size>
-			<linespacing>0.8</linespacing>
+			<filename>alaska_nocaps.ttf</filename>
+			<size>19</size>
 		</font>	
 
 		<font>
 			<name>Font_EpisodePlot2</name>
-			<filename>alaska_light_nocaps.ttf</filename>
-			<size>18</size>
+			<filename>alaska_nocaps.ttf</filename>
+			<size>16</size>
 		</font>	
 
 		<font>
-			<name>Font_Movietitle_Big</name>
-			<filename>alaska_regular.ttf</filename>
-			<size>40</size>
-		</font>
-
-		<font>
 			<name>Font_TVShow</name>
-			<filename>alaska_light_nocaps.ttf</filename>
-			<size>25</size>
+			<filename>alaska_nocaps.ttf</filename>
+			<size>22</size>
 			<linespacing>1</linespacing>
 		</font>
 
 		<font>
 			<name>Font_EpisodeNumber</name>
 			<filename>alaska_black.ttf</filename>
-			<size>45</size>
+			<aspect>0.9</aspect>
+			<size>42</size>
 		</font>
 
 		<font>
 			<name>Font_ProgressDialog</name>
 			<filename>alaska_black.ttf</filename>
-			<size>20</size>
+			<aspect>0.9</aspect>
+			<size>18</size>
 		</font>
 
 		<font>
 			<name>Font_SettingsHeading</name>
 			<filename>alaska_black.ttf</filename>
-			<size>35</size>
+			<aspect>0.9</aspect>
+			<size>30</size>
 		</font>
 
 		<font>
 			<name>Font_SettingsDetail</name>
-			<filename>alaska_light_nocaps.ttf</filename>
-			<size>20</size>
+			<filename>alaska_nocaps.ttf</filename>
+			<size>19</size>
 		</font>
 
 		<font>
 			<name>Font_ListTitleBig</name>
 			<filename>alaska_black.ttf</filename>
-			<size>28</size>
+			<aspect>0.9</aspect>
+			<size>26</size>
 		</font>
 
 		<font>
 			<name>Font_ListTitleBigger</name>
 			<filename>alaska_black.ttf</filename>
-			<size>36</size>
+			<aspect>0.9</aspect>
+			<size>33</size>
 		</font>
 
 		<font>
 			<name>Font_ListTitle</name>
 			<filename>alaska_black.ttf</filename>
-			<size>23</size>
+			<aspect>0.9</aspect>
+			<size>21</size>
 		</font>
 
 		<font>
 			<name>Font_ListTitleNF</name>
 			<filename>alaska_black.ttf</filename>
-			<size>23</size>
+			<aspect>0.9</aspect>
+			<size>21</size>
 		</font>
 
 		<font>
 			<name>Font_ListTrackNF</name>
 			<filename>alaska_black.ttf</filename>
-			<size>30</size>
-		</font>
-
-		<font>
-			<name>Font_OSDDetail</name>
-			<filename>alaska_regular.ttf</filename>
-			<size>17</size>
-			<linespacing>0.82</linespacing>
+			<aspect>0.9</aspect>
+			<size>28</size>
 		</font>
 
 		<font>
 			<name>Font_ListDetailNF</name>
-			<filename>alaska_light.ttf</filename>
-			<size>17</size>
-			<linespacing>0.82</linespacing>
+			<filename>alaska_regular.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>15</size>
 		</font>
 
 		<font>
 			<name>Font_ListTrack</name>
 			<filename>alaska_black.ttf</filename>
-			<size>38</size>
+			<aspect>0.9</aspect>
+			<size>35</size>
 		</font>
 
 		<font>
 			<name>Font_ListDetail</name>
-			<filename>alaska_light.ttf</filename>
-			<size>20</size>
-			<linespacing>0.82</linespacing>
-		</font>
-
-		<font>
-			<name>Font_MediaMenu</name>
-			<filename>alaska_black.ttf</filename>
-			<size>25</size>
+			<filename>alaska_regular.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>17</size>
 		</font>
 
 		<font>
 			<name>Font_MenuValue</name>
 			<filename>alaska_black.ttf</filename>
-			<size>36</size>
+			<aspect>0.9</aspect>
+			<size>33</size>
 		</font>
 
 		<font>
 			<name>Font_MenuLabel</name>
-			<filename>alaska_light.ttf</filename>
-			<size>27</size>
+			<filename>alaska_regular.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>24</size>
 		</font>	
 
 		<font>
 			<name>Font_MainMenuLabel</name>
 			<filename>alaska_regular.ttf</filename>
-			<size>31</size>
+			<aspect>0.95</aspect>
+			<size>27</size>
 		</font>
 
-		<font>
-			<name>Font_TemperatureOverlay</name>
-			<filename>alaska_regular.ttf</filename>
-			<size>18</size>
-		</font>
-		<font>
-			<name>Font_bigtime</name>
-      		<filename>alaska_nowplaying.ttf</filename>
-      		<size>85</size>
-  		</font>
-		<font>
-			<name>Font_OSDMusicArtist</name>
-			<filename>alaska_light.ttf</filename>
-			<size>24</size>
-		</font>
-		<font>
-			<name>Font_OSDMusicTitle</name>
-			<filename>alaska_light.ttf</filename>
-			<size>38</size>
-		</font>
-		<font>
-			<name>Font_Track</name>
-			<filename>alaska_light.ttf</filename>
-			<size>20</size>
-		</font>
-		<font>
-			<name>Font_Time_nowplaying</name>
-			<filename>alaska_light.ttf</filename>
-			<size>17</size>
-		</font>	
-		<font>
-			<name>Font_OSDBig</name>
-			<filename>alaska_menu.ttf</filename>
-			<size>160</size>
-		</font>
-		<font>
-			<name>Font_NPalt_title</name>
-			<filename>alaska_nocaps.ttf</filename>
-			<size>42</size>
-		</font>
-		<font>
-			<name>Font_NPalt_artist</name>
-			<filename>alaska_light_nocaps.ttf</filename>
-			<size>33</size>
-		</font>
-		<font>
-			<name>Font_NPalt_next</name>
-			<filename>alaska_light_nocaps.ttf</filename>
-			<size>25</size>
-		</font>
-
-		<font>
-			<name>Font_FileBrowserHeading</name>
-			<filename>alaska_black.ttf</filename>
-			<size>42</size>
-		</font>
-		<font>
-			<name>Font_FileBrowserHeading</name>
-			<filename>alaska_black.ttf</filename>
-			<size>42</size>
-		</font>
-
-		<font>
-			<name>Font_ListSmall</name>
-			<filename>alaska_light.ttf</filename>
-			<size>20</size>
-		</font>
-
-		<!--#Pragma Keyboard -->
 		<font>
 			<name>Font_KeyboardKeys</name>
 			<filename>alaska_nocaps.ttf</filename>
-			<size>30</size>
+			<size>28</size>
 		</font>
-		<font>
-			<name>Font_KeyboardTitle</name>
-			<filename>alaska_nocaps.ttf</filename>
-			<size>19</size>
-		</font>
+
 		<font>
 			<name>Font_KeyboardShapes</name>
 			<filename>alaska_nocaps.ttf</filename>
-			<size>19</size>
-		</font>
-		<font>
-			<name>Font_ListPlay</name>
-			<filename>alaska_nocaps.ttf</filename>
-			<size>60</size>
-		</font>
-		<font>
-			<name>Font_KeyboardEdit</name>
-			<filename>alaska_nocaps.ttf</filename>
-			<size>21</size>
+			<size>17</size>
 		</font>
 
-		<!--#Pragma FileManager-->
-		<font>
-			<name>Font_FileManagerItemCount</name>
-			<filename>alaska_black.ttf</filename>
-			<size>20</size>
-		</font>	
-
-		<!--#Pragma Favourites-->
 		<font>
 			<name>Font_FavouritesLabel</name>
 			<filename>alaska_black.ttf</filename>
-			<size>38</size>
+			<aspect>0.9</aspect>
+			<size>46</size>
 		</font>
+
 		<font>
 			<name>Font_FavouritesItemLabel</name>
 			<filename>alaska_black.ttf</filename>
-			<size>20</size>
+			<aspect>0.9</aspect>
+			<size>18</size>
 		</font>
+
 		<font>
 			<name>Font_FavouritesFocusedItemLabel</name>
 			<filename>alaska_black.ttf</filename>
-			<size>30</size>
+			<aspect>0.9</aspect>
+			<size>28</size>
 		</font>
 	</fontset>
 

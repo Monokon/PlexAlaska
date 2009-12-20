@@ -46,7 +46,7 @@
 				<control type="label">
 					<label>$INFO[ListItem.rating]</label>
 					<posx>28</posx>
-					<posy>538</posy>
+					<posy>537</posy>
 					<width>56</width>
 					<height>45</height>
 					<align>center</align>
