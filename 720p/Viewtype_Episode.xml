@@ -199,7 +199,7 @@
 			<posx>559</posx>
 			<posy>157</posy>
 			<width>633</width>
-			<height>103</height>
+			<height>100</height>
 			<align>left</align>
 			<info>Container(51).ListItem.Plot</info>
 					<animation type="Focus" reversible="false">

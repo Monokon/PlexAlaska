@@ -5,6 +5,13 @@
 	<fontset id="Default" unicode="true">
 
 		<font>
+			<name>Font_Studio</name>
+			<filename>alaska_condblack.ttf</filename>
+			<size>14</size>
+			<linespacing>0.6</linespacing>
+		</font>
+
+		<font>
 			<name>Font_Res</name>
 			<filename>alaska_condblack.ttf</filename>
 			<size>26</size>

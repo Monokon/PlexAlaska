@@ -201,7 +201,7 @@
 				<height>120</height>
 				<align>left</align>
 				<info>ListItem.Plot</info>
-				<autoscroll time="4000" delay="6000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
+				<autoscroll time="3200" delay="6000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
 				<font>Font_TVShow</font>
 				<textcolor>FanartText</textcolor>
 				<visible>Container.Content(movies)</visible>

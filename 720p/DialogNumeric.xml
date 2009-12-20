@@ -3,22 +3,23 @@
 <window id="109">
 	<defaultcontrol always="true">14</defaultcontrol>
 
+	<coordinates>
+		<system>1</system>
+		<posx>360</posx>
+		<posy>120</posy>
+	</coordinates>
+
 	<controls>
 
 		<control type="group">
-			<posx>100</posx>
-			<posy>80</posy>
-
-			<include>Global_Background</include>
-			<include>Global_Filter</include>
-
 			<control type="image" id="0">
 				<description>Back Panel</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>560</width>
-				<height>480</height>
-				<texture>common/white.png</texture>
+				<posx>-30</posx>
+				<posy>-30</posy>
+				<width>620</width>
+				<height>500</height>
+				<texture>favorites/favorites_panel.png</texture>
+				<!--<colordiffuse>FavListPanel</colordiffuse>-->
 			</control>
 
 			<control type="label">
@@ -51,10 +52,6 @@
 					<posy>240</posy>
 					<width>120</width>
 					<label>20177</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>57</onleft>
 					<onright>48</onright>
 					<onup>307</onup>
@@ -66,10 +63,6 @@
 					<posy>240</posy>
 					<width>30</width>
 					<label>12310</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>300</onleft>
 					<onright>49</onright>
 					<onup>32</onup>
@@ -81,10 +74,6 @@
 					<posy>240</posy>
 					<width>30</width>
 					<label>12311</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>48</onleft>
 					<onright>50</onright>
 					<onup>32</onup>
@@ -96,10 +85,6 @@
 					<posy>240</posy>
 					<width>30</width>
 					<label>12312</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>49</onleft>
 					<onright>51</onright>
 					<onup>32</onup>
@@ -111,10 +96,6 @@
 					<posy>240</posy>
 					<width>30</width>
 					<label>12313</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>50</onleft>
 					<onright>52</onright>
 					<onup>32</onup>
@@ -126,10 +107,6 @@
 					<posy>240</posy>
 					<width>30</width>
 					<label>12314</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>51</onleft>
 					<onright>53</onright>
 					<onup>32</onup>
@@ -141,10 +118,6 @@
 					<posy>240</posy>
 					<width>30</width>
 					<label>12315</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>52</onleft>
 					<onright>54</onright>
 					<onup>32</onup>
@@ -156,10 +129,6 @@
 					<posy>240</posy>
 					<width>30</width>
 					<label>12316</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>53</onleft>
 					<onright>55</onright>
 					<onup>305</onup>
@@ -171,10 +140,6 @@
 					<posy>240</posy>
 					<width>30</width>
 					<label>12317</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>54</onleft>
 					<onright>56</onright>
 					<onup>305</onup>
@@ -186,10 +151,6 @@
 					<posy>240</posy>
 					<width>30</width>
 					<label>12318</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>55</onleft>
 					<onright>57</onright>
 					<onup>306</onup>
@@ -201,10 +162,6 @@
 					<posy>240</posy>
 					<width>30</width>
 					<label>12319</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>56</onleft>
 					<onright>300</onright>
 					<onup>306</onup>
@@ -216,10 +173,6 @@
 					<posx>150</posx>
 					<posy>270</posy>
 					<width>120</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<label>-</label>
 					<onleft>74</onleft>
 					<onright>65</onright>
@@ -231,10 +184,6 @@
 					<posx>270</posx>
 					<posy>270</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>302</onleft>
 					<onright>66</onright>
 					<onup>48</onup>
@@ -245,10 +194,6 @@
 					<posx>300</posx>
 					<posy>270</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>65</onleft>
 					<onright>67</onright>
 					<onup>49</onup>
@@ -259,10 +204,6 @@
 					<posx>330</posx>
 					<posy>270</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>66</onleft>
 					<onright>68</onright>
 					<onup>50</onup>
@@ -273,10 +214,6 @@
 					<posx>360</posx>
 					<posy>270</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>67</onleft>
 					<onright>69</onright>
 					<onup>51</onup>
@@ -287,10 +224,6 @@
 					<posx>390</posx>
 					<posy>270</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>68</onleft>
 					<onright>70</onright>
 					<onup>52</onup>
@@ -301,10 +234,6 @@
 					<posx>420</posx>
 					<posy>270</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>69</onleft>
 					<onright>71</onright>
 					<onup>53</onup>
@@ -315,10 +244,6 @@
 					<posx>450</posx>
 					<posy>270</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>70</onleft>
 					<onright>72</onright>
 					<onup>54</onup>
@@ -329,10 +254,6 @@
 					<posx>480</posx>
 					<posy>270</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>71</onleft>
 					<onright>73</onright>
 					<onup>55</onup>
@@ -343,10 +264,6 @@
 					<posx>510</posx>
 					<posy>270</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>72</onleft>
 					<onright>74</onright>
 					<onup>56</onup>
@@ -357,10 +274,6 @@
 					<posx>540</posx>
 					<posy>270</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>73</onleft>
 					<onright>302</onright>
 					<onup>57</onup>
@@ -371,10 +284,6 @@
 					<posx>150</posx>
 					<posy>300</posy>
 					<width>120</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<label>-</label>
 					<onleft>84</onleft>
 					<onright>75</onright>
@@ -386,10 +295,6 @@
 					<posx>270</posx>
 					<posy>300</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>303</onleft>
 					<onright>76</onright>
 					<onup>65</onup>
@@ -400,10 +305,6 @@
 					<posx>300</posx>
 					<posy>300</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>75</onleft>
 					<onright>77</onright>
 					<onup>66</onup>
@@ -414,10 +315,6 @@
 					<posx>330</posx>
 					<posy>300</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>76</onleft>
 					<onright>78</onright>
 					<onup>67</onup>
@@ -428,10 +325,6 @@
 					<posx>360</posx>
 					<posy>300</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>77</onleft>
 					<onright>79</onright>
 					<onup>68</onup>
@@ -442,10 +335,6 @@
 					<posx>390</posx>
 					<posy>300</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>78</onleft>
 					<onright>80</onright>
 					<onup>69</onup>
@@ -456,10 +345,6 @@
 					<posx>420</posx>
 					<posy>300</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>79</onleft>
 					<onright>81</onright>
 					<onup>70</onup>
@@ -470,10 +355,6 @@
 					<posx>450</posx>
 					<posy>300</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>80</onleft>
 					<onright>82</onright>
 					<onup>71</onup>
@@ -484,10 +365,6 @@
 					<posx>480</posx>
 					<posy>300</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>81</onleft>
 					<onright>83</onright>
 					<onup>72</onup>
@@ -498,10 +375,6 @@
 					<posx>510</posx>
 					<posy>300</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>82</onleft>
 					<onright>84</onright>
 					<onup>73</onup>
@@ -512,10 +385,6 @@
 					<posx>540</posx>
 					<posy>300</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>83</onleft>
 					<onright>303</onright>
 					<onup>74</onup>
@@ -526,10 +395,6 @@
 					<posx>150</posx>
 					<posy>330</posy>
 					<width>120</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<label>-</label>
 					<onleft>8</onleft>
 					<onright>85</onright>
@@ -541,10 +406,6 @@
 					<posx>270</posx>
 					<posy>330</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>304</onleft>
 					<onright>86</onright>
 					<onup>75</onup>
@@ -556,10 +417,6 @@
 					<posx>300</posx>
 					<posy>330</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>85</onleft>
 					<onright>87</onright>
 					<onup>76</onup>
@@ -570,10 +427,6 @@
 					<posx>330</posx>
 					<posy>330</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>86</onleft>
 					<onright>88</onright>
 					<onup>77</onup>
@@ -584,10 +437,6 @@
 					<posx>360</posx>
 					<posy>330</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>87</onleft>
 					<onright>89</onright>
 					<onup>78</onup>
@@ -598,10 +447,6 @@
 					<posx>390</posx>
 					<posy>330</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>88</onleft>
 					<onright>90</onright>
 					<onup>79</onup>
@@ -612,10 +457,6 @@
 					<posx>420</posx>
 					<posy>330</posy>
 					<width>30</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>89</onleft>
 					<onright>8</onright>
 					<onup>80</onup>
@@ -626,10 +467,6 @@
 					<posx>450</posx>
 					<posy>330</posy>
 					<width>120</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<label>-</label>
 					<onleft>90</onleft>
 					<onright>304</onright>
@@ -641,10 +478,6 @@
 					<posx>150</posx>
 					<posy>360</posy>
 					<width>120</width>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<label>-</label>
 					<onleft>306</onleft>
 					<onright>32</onright>
@@ -657,10 +490,6 @@
 					<posy>360</posy>
 					<width>180</width>
 					<label>-</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>307</onleft>
 					<onright>305</onright>
 					<onup>85</onup>
@@ -672,10 +501,6 @@
 					<posy>360</posy>
 					<width>60</width>
 					<label>&lt;</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>32</onleft>
 					<onright>306</onright>
 					<onup>8</onup>
@@ -687,10 +512,6 @@
 					<posy>360</posy>
 					<width>60</width>
 					<label>&gt;</label>
-					<font>Font_InfoPlot</font>
-					<textcolor>Grey</textcolor>
-					<focusedcolor>Black</focusedcolor>
-					<disabledcolor>Red</disabledcolor>
 					<onleft>305</onleft>
 					<onright>307</onright>
 					<onup>8</onup>
