@@ -117,7 +117,7 @@
 				<include>SubMenu_Appstore</include>
 				<control type="image" id="398">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
@@ -127,7 +127,7 @@
 				</control>
 				<control type="image" id="399">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
@@ -166,7 +166,7 @@
 				<include>SubMenu_Videos</include>
 				<control type="image" id="398">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
@@ -176,7 +176,7 @@
 				</control>
 				<control type="image" id="399">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
@@ -226,7 +226,7 @@
 				<include>SubMenu_Music</include>
 				<control type="image" id="398">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
@@ -236,7 +236,7 @@
 				</control>
 				<control type="image" id="399">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
@@ -324,7 +324,7 @@
 				<include>SubMenu_Movies</include>
 				<control type="image" id="398">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
@@ -335,7 +335,7 @@
 				</control>
 				<control type="image" id="399">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
@@ -418,7 +418,7 @@
 				<include>SubMenu_TVShows</include>
 				<control type="image" id="398">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
@@ -429,7 +429,7 @@
 				</control>
 				<control type="image" id="399">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
@@ -492,7 +492,7 @@
 				<include>SubMenu_Pictures</include>
 				<control type="image" id="398">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
@@ -502,7 +502,7 @@
 				</control>
 				<control type="image" id="399">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
@@ -611,7 +611,7 @@
 				<include>SubMenu_Weather</include>
 				<control type="image" id="398">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
@@ -621,7 +621,7 @@
 				</control>
 				<control type="image" id="399">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
@@ -698,7 +698,7 @@
 				<include>SubMenu_Settings</include>
 				<control type="image" id="398">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
@@ -708,7 +708,7 @@
 				</control>
 				<control type="image" id="399">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
@@ -776,7 +776,7 @@
 				<include>SubMenu_Quit</include>
 				<control type="image" id="398">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomeup.png</texture>
@@ -786,7 +786,7 @@
 				</control>
 				<control type="image" id="399">
 					<posx>338</posx>
-					<posy>274</posy>
+					<posy>277</posy>
 					<width>12</width>
 					<height>24</height>
 					<texture>arrowhomedown.png</texture>
@@ -839,7 +839,7 @@
 	</include>
 	<include name="Home_MainMenuLabel">
 		<posx>330</posx>
-		<posy>284</posy>
+		<posy>286</posy>
 		<width>305</width>
 		<align>right</align>
 		<aligny>center</aligny>
@@ -1075,7 +1075,7 @@
 	<include name="SubMenu_Appstore">
 		<control type="grouplist" id="3100">
 			<posx>25</posx>
-			<posy>269</posy>
+			<posy>271</posy>
 			<visible>ControlGroup(3100).HasFocus() + Container(300).HasFocus(1)</visible>
 			<width>320</width>
 			<height>30</height>
@@ -1091,7 +1091,7 @@
 	<include name="SubMenu_Videos">
 		<control type="grouplist" id="3200">
 			<posx>25</posx>
-			<posy>269</posy>
+			<posy>271</posy>
 			<visible>ControlGroup(3200).HasFocus() + Container(300).HasFocus(2)</visible>
 			<width>320</width>
 			<height>30</height>
@@ -1130,7 +1130,7 @@
 	<include name="SubMenu_Music">
 		<control type="grouplist" id="3300">
 			<posx>25</posx>
-			<posy>269</posy>
+			<posy>271</posy>
 			<visible>ControlGroup(3300).HasFocus() + Container(300).HasFocus(3)</visible>
 			<width>315</width>
 			<height>30</height>
@@ -1180,7 +1180,7 @@
 		</control>
 		<!--<control type="grouplist" id="3310">
 			<posx>0</posx>
-			<posy>269</posy>
+			<posy>271</posy>
 			<visible>ControlGroup(3310).HasFocus() + Container(300).HasFocus(3)</visible>
 			<width>315</width>
 			<height>30</height>
@@ -1236,7 +1236,7 @@
 	<include name="SubMenu_Movies">
 		<control type="grouplist" id="3400">
 			<posx>25</posx>
-			<posy>269</posy>
+			<posy>271</posy>
 			<visible>ControlGroup(3400).HasFocus() + Container(300).HasFocus(4)</visible>
 			<width>320</width>
 			<height>30</height>
@@ -1284,7 +1284,7 @@
 		</control>
 		<control type="grouplist" id="3410">
 			<posx>0</posx>
-			<posy>269</posy>
+			<posy>271</posy>
 			<visible>ControlGroup(3410).HasFocus() + Container(300).HasFocus(4)</visible>
 			<width>320</width>
 			<height>30</height>
@@ -1339,7 +1339,7 @@
 	<include name="SubMenu_TVShows">
 		<control type="grouplist" id="3500">
 			<posx>25</posx>
-			<posy>269</posy>
+			<posy>271</posy>
 			<visible>ControlGroup(3500).HasFocus() + Container(300).HasFocus(5)</visible>
 			<width>320</width>
 			<height>30</height>
@@ -1392,7 +1392,7 @@
 		</control>
 		<control type="grouplist" id="3510">
 			<posx>0</posx>
-			<posy>269</posy>
+			<posy>271</posy>
 			<visible>ControlGroup(3510).HasFocus() + Container(300).HasFocus(5)</visible>
 			<width>320</width>
 			<height>30</height>
@@ -1447,7 +1447,7 @@
 	<include name="SubMenu_Pictures">
 		<control type="grouplist" id="3600">
 			<posx>25</posx>
-			<posy>269</posy>
+			<posy>271</posy>
 			<visible>ControlGroup(3600).HasFocus() + Container(300).HasFocus(6)</visible>
 			<width>320</width>
 			<height>30</height>
@@ -1468,7 +1468,7 @@
 	<include name="SubMenu_Weather">
 		<control type="grouplist" id="3700">
 			<posx>25</posx>
-			<posy>269</posy>
+			<posy>271</posy>
 			<visible>ControlGroup(3700).HasFocus() + Container(300).HasFocus(7)</visible>
 			<width>320</width>
 			<height>30</height>
@@ -1513,7 +1513,7 @@
 	<include name="SubMenu_Settings">
 		<control type="grouplist" id="3800">
 			<posx>25</posx>
-			<posy>269</posy>
+			<posy>271</posy>
 			<visible>ControlGroup(3800).HasFocus() + Container(300).HasFocus(8)</visible>
 			<width>320</width>
 			<height>30</height>
@@ -1582,7 +1582,7 @@
 	<include name="SubMenu_Quit">
 		<control type="grouplist" id="3900">
 			<posx>25</posx>
-			<posy>269</posy>
+			<posy>271</posy>
 			<visible>ControlGroup(3900).HasFocus() + Container(300).HasFocus(9)</visible>
 			<width>320</width>
 			<height>30</height>

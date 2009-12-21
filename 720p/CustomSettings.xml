@@ -706,7 +706,7 @@
 			<control type="fadelabel">
 				<width>690</width>
 				<posx>380</posx>
-				<posy>17</posy>
+				<posy>10</posy>
 				<font>Font_RSS_Big</font>
 				<textcolor>Black</textcolor>
 				<scroll>true</scroll>
@@ -724,7 +724,7 @@
 			<control type="fadelabel">
 				<width>690</width>
 				<posx>380</posx>
-				<posy>17</posy>
+				<posy>10</posy>
 				<font>Font_RSS_Big</font>
 				<textcolor>Black</textcolor>
 				<scroll>true</scroll>
@@ -742,7 +742,7 @@
 			<control type="fadelabel">
 				<width>690</width>
 				<posx>380</posx>
-				<posy>17</posy>
+				<posy>10</posy>
 				<font>Font_RSS_Big</font>
 				<textcolor>Black</textcolor>
 				<scroll>true</scroll>
