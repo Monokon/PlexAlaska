@@ -323,6 +323,13 @@
 			<aspect>0.9</aspect>
 			<size>28</size>
 		</font>
+
+		<font>
+			<name>Font_bigtime</name>
+			<filename>alaska_nowplaying.ttf</filename>
+			<size>85</size>
+		</font>
+
 	</fontset>
 
 	<fontset id="Cyrillic" unicode="true">
