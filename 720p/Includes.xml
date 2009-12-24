@@ -261,9 +261,15 @@
 				<visible>Window.IsActive(28) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
+				<description>Login</description>
+				<label>$LOCALIZE[31523]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(29) + !Window.IsActive(134)</visible>
+			</control>
+			<control type="label">
 				<label>$INFO[Container.NumItems] $LOCALIZE[31522]</label>
 				<include>Global_HeadingDetailVars</include>
-				<visible>![Container.Content(episodes) | Window.IsActive(2)] + !Window.IsActive(134)</visible>
+				<visible>![Container.Content(episodes) | Window.IsActive(2)] + !Window.IsActive(134) + !Window.IsActive(29)</visible>
 			</control>
 			<control type="label">
 				<label>$LOCALIZE[20373] $INFO[ListItem.Season] - $INFO[Container.NumItems] $LOCALIZE[20360]</label>
