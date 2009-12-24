@@ -12,6 +12,15 @@
 			<visible>!Skin.HasSetting(nopicturebackdrops)</visible>
 			<include>Animation_BackdropFade</include>
 			<include>Animation_HiddenByDialog</include>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(50).OnNext | Container(50).OnPrevious]">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(59).OnNext | Container(59).OnPrevious]">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(51).OnNext | Container(51).OnPrevious]">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(56).OnNext | Container(56).OnPrevious]">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(57).OnNext | Container(57).OnPrevious]">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(52).OnNext | Container(52).OnPrevious]">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(53).OnNext | Container(53).OnPrevious]">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(55).OnNext | Container(55).OnPrevious]">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(58).OnNext | Container(58).OnPrevious]">Conditional</animation>
 		</control>
 
 		<control type="image">
