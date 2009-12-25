@@ -135,7 +135,7 @@
 		</control>
 		
 		<include>Global_Time</include>
-		<include condition="!Skin.HasSetting(nopicturepath)">Global_Heading</include>
+		<include>Global_Heading</include>
 		<include>Global_RSS</include>
 		
 		<include>Object_DebugGrid</include>
