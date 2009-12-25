@@ -110,7 +110,7 @@
 				<include>Home_MainMenuShade</include>
 				<control type="label">
 					<include>Home_MainMenuLabel</include>
-					<label>Appstore</label>
+					<label>$LOCALIZE[31023]</label>
 					<visible>!ControlGroup(3100).HasFocus()</visible>
 					<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(1) | ![Control.IsVisible(398) | Control.IsVisible(399)]">Conditional</animation>
 				</control>
