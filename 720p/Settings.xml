@@ -4,7 +4,11 @@
 	<defaultcontrol always="true">60</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-		<include>Global_Background</include>
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture>common/white.png</texture>
+			<colordiffuse>backgroundColor</colordiffuse>
+		</control>
 		<control type="panel" id="60">
 			<posx>200</posx>
 			<posy>200</posy>
@@ -289,7 +293,6 @@
 				<label>$LOCALIZE[31908]</label>
 			</control>
 		</control>
-		<include>Global_ContextFilter</include>
 		<include>Global_Time</include>
 		<include>Setting_Heading</include>
 		<include>Global_RSS</include>
