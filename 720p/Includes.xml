@@ -192,7 +192,7 @@
 				<description>Pictures</description>
 				<label>1</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>[Window.IsActive(2007) | [Window.IsActive(2) + ![substring(listitem.filenameandpath,jpg) | substring(listitem.filenameandpath,bmp) | substring(listitem.filenameandpath,png) | substring(listitem.filenameandpath,tif) | substring(listitem.filenameandpath,ico) | substring(listitem.filenameandpath,pcx) | substring(listitem.filenameandpath,tga)]]] + !Window.IsActive(134)</visible>
+				<visible>Window.IsActive(2) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<description>Pictures</description>
