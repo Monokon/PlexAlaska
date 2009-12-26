@@ -106,6 +106,9 @@
 	<string id="31935">Hide item "Pictures"</string>
 	<string id="31936">Hide item "Weather"</string>
 	<string id="31937">Hide item "Quit Plex"</string>
+	<string id="31950">Hide item "Music"</string>
+	<string id="31951">Hide item "Movies"</string>
+	<string id="31952">Hide item "TV shows"</string>
 	<string id="31938">Conditional Weather</string>
 	<string id="31939">Display OSX overlays</string>
 	<string id="31940">Use fanart for "Movies"</string>

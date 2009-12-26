@@ -397,6 +397,7 @@
 					<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
+					<visible>!Skin.HasSetting(nomusic)</visible>
 				</item>
 				<item id="2">
 					<label>$LOCALIZE[31023]</label>
@@ -422,6 +423,7 @@
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
+					<visible>!Skin.HasSetting(nomovies)</visible>
 				</item>
 				<item id="5">
 					<description>Tv Shows</description>
@@ -430,6 +432,7 @@
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
+					<visible>!Skin.HasSetting(notvshows)</visible>
 				</item>
 				<item id="6">
 					<description>Video</description>
@@ -575,6 +578,7 @@
 				<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
 				<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 				<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
+				<visible>!Skin.HasSetting(nomusic)</visible>
 			</item>
 			<item id="4">
 				<description>Movies</description>
@@ -583,6 +587,7 @@
 				<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick>
 				<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 				<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
+				<visible>!Skin.HasSetting(nomovies)</visible>
 			</item>
 			<item id="5">
 				<description>Tv Shows</description>
@@ -591,6 +596,7 @@
 				<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
 				<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 				<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
+				<visible>!Skin.HasSetting(notvshows)</visible>
 			</item>
 			<item id="6">
 				<description>Picture</description>
