@@ -344,7 +344,7 @@
  	<include name="Home_MenuIcon">
 		<control type="label">
 			<posx>-320</posx>
-			<posy>330</posy>
+			<posy>370</posy>
 			<width>1920</width>
 			<align>center</align>
 			<aligny>top</aligny>
