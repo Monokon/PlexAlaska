@@ -130,7 +130,7 @@
 
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture diffuse="mainmenu/home_mask.png">backdrops/backgroundcolordiffuse.png</texture>
+			<texture>backdrops/backgroundcolordiffuse.png</texture>
 			<colordiffuse>BackgroundFilterColor</colordiffuse>
 		</control>
 		<control type="group">
