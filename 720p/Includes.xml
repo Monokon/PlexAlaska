@@ -470,6 +470,7 @@
 				</item>
 			</content>
 		</control>
+		<include condition="Player.HasMedia">submenu_music</include>
 		<include>submenu_movies</include>
 		<include>submenu_tvshows</include>
 		<include>submenu_quit</include>
@@ -912,8 +913,12 @@
 
 	<include name="submenu_dummybuttons">
 		<control type="button" id="351">
+			<onfocus>SetFocus(944)</onfocus>
+			<visible>Container(300).HasFocus(1) + Player.HasMedia</visible>
+		</control>
+		<control type="button" id="351">
 			<onfocus>SetFocus(300)</onfocus>
-			<visible>Container(300).HasFocus(1)</visible>
+			<visible>Container(300).HasFocus(1) + !Player.HasMedia</visible>
 		</control>
 		<control type="button" id="351">
 			<onfocus>SetFocus(943)</onfocus>
@@ -1167,6 +1172,48 @@
 					<include>submenubutton</include>
 					<label>$LOCALIZE[31001]</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowyears,return)</onclick>
+				</control>
+			</control>
+		</control>
+	</include>
+
+	<include name="submenu_music">
+		<control type="group">
+			<posx>490</posx>
+			<posy>520</posy>
+			<visible>ControlGroup(944).HasFocus() + Container(300).HasFocus(1)</visible>
+			<include condition="Skin.HasSetting(home2)">Animation_Submenu_home2</include>
+			<control type="image">
+				<width>20</width>
+				<height>60</height>
+				<posx>0</posx>
+				<texture>mainmenu/submenu_left.png</texture>
+			</control>
+			<control type="image">
+				<posx>20</posx>
+				<width>240</width>
+				<height>60</height>
+				<texture>mainmenu/submenu_mid.png</texture>
+			</control>
+			<control type="image">
+				<width>20</width>
+				<height>60</height>
+				<posx>260</posx>
+				<texture>mainmenu/submenu_right.png</texture>
+			</control>
+
+			<control type="grouplist" id="944">
+				<posx>70</posx>
+				<posy>13</posy>
+				<width>600</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<onup>300</onup>
+				<orientation>horizontal</orientation>
+				<control type="button" id="40">
+					<include>submenubutton</include>
+					<label>$LOCALIZE[31004]</label>
+					<onclick>XBMC.ActivateWindow(50)</onclick>
 				</control>
 			</control>
 		</control>

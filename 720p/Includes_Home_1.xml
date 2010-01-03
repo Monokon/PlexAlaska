@@ -913,6 +913,10 @@
 		</control>
 		<!-- Music -->
 		<control type="button" id="3999">
+			<onfocus>SetFocus(3301)</onfocus>
+			<visible>Container(300).HasFocus(3) + Player.HasMedia</visible>
+		</control>
+		<control type="button" id="3999">
 			<onfocus>SetFocus(3302)</onfocus>
 			<visible>Container(300).HasFocus(3) + !Skin.HasSetting(hidepartymode)</visible>
 		</control>
@@ -1139,6 +1143,14 @@
 			<onleft>998</onleft>
 			<onright>999</onright>
 			<scrolltime>0</scrolltime>
+			<control type="button" id="3301">
+				<label>$LOCALIZE[31004]</label>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onclick>XBMC.ActivateWindow(50)</onclick>
+				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">Player.HasMedia</visible>
+			</control>
 			<control type="button" id="3302">
 				<label>$LOCALIZE[31025]</label>
 				<texturefocus>-</texturefocus>
