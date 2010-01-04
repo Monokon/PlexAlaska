@@ -47,8 +47,8 @@
 			<posy>114</posy>
 			<width>781</width>
 			<height>375</height>
-			<onleft>-</onleft>
-			<onright>-</onright>
+			<onleft>5</onleft>
+			<onright>5</onright>
 			<onup>3</onup>
 			<ondown>3</ondown>
 			<pagecontrol>-</pagecontrol>
@@ -93,13 +93,16 @@
 
 		<control type="button" id="5">
 			<description>Manual</description>
-			<posx>360</posx>
-			<posy>40</posy>
+			<posx>290</posx>
+			<posy>531</posy>
 			<label>$LOCALIZE[368]</label>
 			<onleft>3</onleft>
 			<onright>3</onright>
 			<onup>3</onup>
 			<ondown>3</ondown>
+			<font>Font_FavouritesLabel</font>
+			<textcolor>DialogLargeLabel</textcolor>
+			<shadowcolor>DialogLargeLabelAccent</shadowcolor>
 		</control>
 
 		<include>Object_DebugGrid</include>
