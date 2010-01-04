@@ -1022,6 +1022,10 @@
 		</control>
 		<!-- Settings -->
 		<control type="button" id="3999">
+			<onfocus>SetFocus(3810)</onfocus>
+			<visible>Container(300).HasFocus(8) + Skin.HasSetting(debugmode)</visible>
+		</control>
+		<control type="button" id="3999">
 			<onfocus>SetFocus(3801)</onfocus>
 			<visible>Container(300).HasFocus(8)</visible>
 		</control>
@@ -1534,6 +1538,12 @@
 			<onleft>998</onleft>
 			<onright>999</onright>
 			<scrolltime>0</scrolltime>
+			<control type="button" id="3810">
+				<label>RELOAD SKIN</label>
+				<onclick>XBMC.ReloadSkin()</onclick>
+				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">Skin.HasSetting(debugmode)</visible>
+			</control>
 			<control type="button" id="3801">
 				<label>3</label>
 				<onclick>XBMC.ActivateWindow(MyVideosSettings)</onclick>
