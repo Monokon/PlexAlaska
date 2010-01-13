@@ -330,6 +330,12 @@
 			<size>85</size>
 		</font>
 
+		<font>
+			<name>Font_TemperatureOverlay</name>
+			<filename>alaska_regular.ttf</filename>
+			<size>13</size>
+		</font>
+
 	</fontset>
 
 	<fontset id="Cyrillic" unicode="true">
@@ -660,6 +666,12 @@
 			<size>85</size>
 		</font>
 
+		<font>
+			<name>Font_TemperatureOverlay</name>
+			<filename>alaska_regular_cy.ttf</filename>
+			<size>13</size>
+		</font>
+
 	</fontset>
 
 	<fontset id="Hebrew" unicode="true">
@@ -988,6 +1000,12 @@
 			<name>Font_bigtime</name>
 			<filename>alaska_nowplaying.ttf</filename>
 			<size>85</size>
+		</font>
+
+		<font>
+			<name>Font_TemperatureOverlay</name>
+			<filename>Arial.ttf</filename>
+			<size>13</size>
 		</font>
 
 	</fontset>
