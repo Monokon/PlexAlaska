@@ -166,7 +166,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>Font_ListDetail</font>
-						<textcolor>ListTitleF</textcolor>
+						<textcolor>MenuValueFO</textcolor>
 						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>
