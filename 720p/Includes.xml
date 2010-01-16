@@ -956,7 +956,7 @@
 
 	<include name="submenu_appstore">
 		<control type="group">
-			<posx>380</posx>
+			<posx>320</posx>
 			<posy>520</posy>
 			<visible>ControlGroup(943).HasFocus() + Container(300).HasFocus(2)</visible>
 			<include condition="Skin.HasSetting(home2)">Animation_Submenu_home2</include>
@@ -967,7 +967,7 @@
 				<texture>mainmenu/submenu_left.png</texture>
 			</control>
 			<control type="image">
-				<width>390</width>
+				<width>520</width>
 				<height>60</height>
 				<posx>60</posx>
 				<texture>mainmenu/submenu_mid.png</texture>
@@ -975,29 +975,34 @@
 			<control type="image">
 				<width>20</width>
 				<height>60</height>
-				<posx>450</posx>
+				<posx>580</posx>
 				<texture>mainmenu/submenu_right.png</texture>
 			</control>
 
 			<control type="grouplist" id="943">
 				<posx>62</posx>
 				<posy>13</posy>
-				<width>530</width>
+				<width>660</width>
 				<height>33</height>
 				<itemgap>0</itemgap>
 				<onup>300</onup>
 				<orientation>horizontal</orientation>
 				<control type="button" id="40">
 					<include>submenubutton</include>
+					<label>$LOCALIZE[31009]</label>
+					<onclick>ActivateWindow(Programs)</onclick>
+				</control>
+				<control type="button" id="41">
+					<include>submenubutton</include>
 					<label>$LOCALIZE[31008]</label>
 					<onclick>XBMC.ActivateWindow(Favourites)</onclick>
 				</control>
-				<control type="button" id="41">
+				<control type="button" id="42">
 					<include>submenubutton</include>
 					<label>$LOCALIZE[31500]</label>
 					<onclick>XBMC.ActivateWindow(3)</onclick>
 				</control>
-				<control type="button" id="42">
+				<control type="button" id="43">
 					<include>submenubutton</include>
 					<label>$LOCALIZE[31020]</label>
 					<onclick>ActivateWindow(Scripts)</onclick>
