@@ -587,6 +587,17 @@
 					<onclick>Skin.ToggleSetting(nopicturebackdrops)</onclick>
 					<selected>Skin.HasSetting(nopicturebackdrops)</selected>
 				</control>
+				<control type="radiobutton" id="405">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31968]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(nomusicbackdrops)</onclick>
+					<selected>Skin.HasSetting(nomusicbackdrops)</selected>
+				</control>
 
 			</control>
 
