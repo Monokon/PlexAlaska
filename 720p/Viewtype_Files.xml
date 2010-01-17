@@ -509,7 +509,21 @@
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByMusicInfo</include>
 			<include>Animation_HiddenByDialog</include>
-			<visible>Control.IsVisible(50) + !Container.Content(Genres)</visible>
+			<visible>Control.IsVisible(50) + [Container.Content(Movies) | Container.Content(actors) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Container.Content(Genres)</visible>
+		</control>
+		<control type="image">
+			<posx>30</posx>
+			<posy>110</posy>
+			<width>410</width>
+			<height>360</height>
+			<fadetime>400</fadetime>
+			<aspectratio align="right" aligny="center">keep</aspectratio>
+			<texture background="true" diffuse="NowPlayingCoverDiffuse.png">$INFO[Container(50).ListItem.Icon]</texture>
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByMusicInfo</include>
+			<include>Animation_HiddenByDialog</include>
+			<visible>Control.IsVisible(50) + !Container.Content(Genres) + !Container.Content(Movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(actors)</visible>
 		</control>
 		<control type="image">
 			<posx>0</posx>
