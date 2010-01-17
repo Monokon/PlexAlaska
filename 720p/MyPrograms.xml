@@ -9,6 +9,7 @@
                         <include>Dimensions_Fullscreen</include>
                         <fadetime>400</fadetime>
                         <texture>$INFO[ListItem.Property(Fanart_Image)]</texture>
+ 						<visible>!Skin.HasSetting(noprogrambackdrops)</visible>
                         <include>Animation_CommonFade</include>
                 </control>
 

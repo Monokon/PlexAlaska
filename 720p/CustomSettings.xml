@@ -598,6 +598,28 @@
 					<onclick>Skin.ToggleSetting(nomusicbackdrops)</onclick>
 					<selected>Skin.HasSetting(nomusicbackdrops)</selected>
 				</control>
+				<control type="radiobutton" id="406">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31969]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(novideobackdrops)</onclick>
+					<selected>Skin.HasSetting(novideobackdrops)</selected>
+				</control>
+				<control type="radiobutton" id="407">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31970]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noprogrambackdrops)</onclick>
+					<selected>Skin.HasSetting(noprogrambackdrops)</selected>
+				</control>
 
 			</control>
 
@@ -618,8 +640,8 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<label>$LOCALIZE[31970]</label>
-					<altlabel>$LOCALIZE[31971]</altlabel>
+					<label>$LOCALIZE[31973]</label>
+					<altlabel>$LOCALIZE[31974]</altlabel>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.SetPath(artistbackdroppath)</onclick>
@@ -635,7 +657,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<label>$LOCALIZE[31972]</label>
+					<label>$LOCALIZE[31975]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(disablenowplayingfilter)</onclick>
@@ -646,7 +668,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<label>$LOCALIZE[31973]</label>
+					<label>$LOCALIZE[31976]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(disableprogressbar)</onclick>
@@ -657,7 +679,7 @@
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
 					<focusedcolor>MenuValueFO</focusedcolor>
-					<label>$LOCALIZE[31974]</label>
+					<label>$LOCALIZE[31977]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(alt_nowplaying)</onclick>

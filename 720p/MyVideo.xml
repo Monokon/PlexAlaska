@@ -10,7 +10,7 @@
 			<fadetime>400</fadetime>
 			<texture>$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<include>Animation_CommonFade</include>
-			<visible>!Skin.HasSetting(nomoviebackdrops) | !Container.Content(movies)</visible>
+			<visible>!Skin.HasSetting(novideobackdrops)</visible>
 		</control>
 		<include>Global_Filter</include>
 		
