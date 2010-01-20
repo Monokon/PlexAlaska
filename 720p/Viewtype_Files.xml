@@ -541,6 +541,21 @@
 			<include>Animation_HiddenByDialog</include>
 			<visible>Control.IsVisible(50) + Container.Content(Genres)</visible>
 		</control>
+		<!-- music genre images -->
+		<control type="image">
+			<posx>30</posx>
+			<posy>110</posy>
+			<width>410</width>
+			<height>360</height>
+			<fadetime>400</fadetime>
+			<aspectratio align="right" aligny="center">keep</aspectratio>
+			<texture background="true" diffuse="NowPlayingCoverDiffuse.png">extras/musicgenres/$INFO[Container(50).ListItem.Title].jpg</texture>
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByMusicInfo</include>
+			<include>Animation_HiddenByDialog</include>
+			<visible>Control.IsVisible(50)</visible>
+		</control>
 		<control type="group">
 			<visible>Control.IsVisible(50) + Window.IsActive(25)</visible>
 			<include>Animation_ZoomInZoomOut</include>
