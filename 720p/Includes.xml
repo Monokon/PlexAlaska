@@ -14,6 +14,7 @@
 	<include file="Viewtype_Fanart2.xml" />
 	<include file="Viewtype_Files.xml" />
 	<include file="Viewtype_Banner.xml" />
+	<include file="Viewtype_Panel.xml" />
 	<include file="Includes_MediaFlags.xml" />
 	<include file="Includes_Animations.xml" />
 	<include file="Includes_Backgrounds.xml" />
@@ -781,7 +782,7 @@
 	<!-- Window menus -->
 	<include name="WindowMenuVars">
 		<width>1250</width>
-		<height>40</height>
+		<height>80</height>
 		<posx>40</posx>
 		<onup>50</onup>
 		<ondown>50</ondown>
@@ -794,8 +795,9 @@
 		<posx>0</posx>
 		<posy>30</posy>
 		<width>200</width>
-		<height>30</height>
+		<height>80</height>
 		<align>center</align>
+		<aligny>top</aligny>
 		<font>Font_MenuValue</font>
 		<textcolor>MenuValue</textcolor>
 		<texturenofocus>-</texturenofocus>
@@ -830,6 +832,78 @@
 		<font>Font_MenuLabel</font>
 		<textcolor>MenuValue</textcolor>
 		<aligny>bottom</aligny>
+	</include>
+	<!--Keyboard Buttons Caps-->
+	<include name="KeyboardButtonsCaps">
+		<font>Font_Keyboard_Caps</font>
+		<textcolor>PanelListItem</textcolor>
+		<selectedcolor>PanelListItemSelected</selectedcolor>
+		<focusedcolor>PanelListItemFocused</focusedcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+	</include>
+	<!--Keyboard Buttons No Caps-->
+	<include name="KeyboardButtonsNoCaps">
+		<font>Font_Keyboard_NoCaps</font>
+		<textcolor>PanelListItem</textcolor>
+		<selectedcolor>PanelListItemSelected</selectedcolor>
+		<focusedcolor>PanelListItemFocused</focusedcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+	</include>
+	<!--Dialog Header-->
+	<include name="DialogHeader">
+		<aligny>center</aligny>
+		<textcolor>PanelListLabel</textcolor>
+		<font>Font_PanelFocusedItemLabel</font>
+	</include>
+	<!--Dialog Label Large-->
+	<include name="DialogLabelLarge">
+		<aligny>center</aligny>
+		<textcolor>PanelListTitle</textcolor>
+		<font>Font_PanelFocusedItemLabel</font>
+	</include>
+	<!--Dialog Label-->
+	<include name="DialogLabel">
+		<aligny>center</aligny>
+		<textcolor>PanelListTitle</textcolor>
+		<font>Font_PanelItemTitle</font>
+	</include>
+	<!--Dialog Label Heading-->
+	<include name="DialogLabelHeading">
+		<aligny>center</aligny>
+		<textcolor>PanelListTitle</textcolor>
+		<font>Font_PanelItemLabel</font>
+	</include>
+	<!--Dialog Label Focused-->
+	<include name="DialogLabelFO">
+		<aligny>center</aligny>
+		<textcolor>PanelListItemFocused</textcolor>
+		<font>Font_PanelItemLabel</font>
+	</include>
+	<!--Dialog Label Selected-->
+	<include name="DialogLabelNF">
+		<aligny>center</aligny>
+		<textcolor>PanelListItem</textcolor>
+		<selectedcolor>PanelListItemSelected</selectedcolor>
+		<disabledcolor>PanelListItemDisabled</disabledcolor>
+		<focusedcolor>PanelListItemFocused</focusedcolor>
+		<font>Font_PanelItemLabel</font>
+	</include>
+	<!--Dialog Label Focused Large-->
+	<include name="DialogLabelLargeFO">
+		<aligny>center</aligny>
+		<textcolor>PanelListItemFocused</textcolor>
+		<font>Font_PanelItemTitle</font>
+	</include>
+	<!--Dialog Label Selected Large-->
+	<include name="DialogLabelLargeNF">
+		<aligny>center</aligny>
+		<textcolor>PanelListItem</textcolor>
+		<selectedcolor>PanelListItemSelected</selectedcolor>
+		<disabledcolor>PanelListItemDisabled</disabledcolor>
+		<focusedcolor>PanelListItemFocused</focusedcolor>
+		<font>Font_PanelItemTitle</font>
 	</include>
 
 <!-- PlexAlaska -->

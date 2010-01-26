@@ -12,7 +12,7 @@
 			<onright>300</onright>
 			<onup>7000</onup>
 			<ondown>62</ondown>
-			<viewtype label="Poster">list</viewtype>
+			<viewtype label="Poster[CR]FIXED">list</viewtype>
 			<orientation>horizontal</orientation>
 			<scrolltime>200</scrolltime>
 			<focusposition>3</focusposition>
@@ -251,10 +251,9 @@
 					</animation>
 				</control>
 			</focusedlayout>
-			<visible>Skin.HasSetting(fixedlist) + !Container.Content(movies) + !Container.Content(files)</visible>
 		</control>
 
-		<control type="wraplist" id="55">
+		<control type="wraplist" id="555">
 			<posx>-20</posx>
 			<posy>65</posy>
 			<height>615</height>
@@ -262,13 +261,13 @@
 			<onleft>300</onleft>
 			<onright>300</onright>
 			<onup>7000</onup>
-			<ondown>62</ondown>
-			<viewtype label="Poster">list</viewtype>
+			<ondown>622</ondown>
+			<viewtype label="Poster[CR]WRAP">list</viewtype>
 			<orientation>horizontal</orientation>
 			<focusposition>3</focusposition>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
-			<pagecontrol>62</pagecontrol>
+			<pagecontrol>622</pagecontrol>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByDialog</include>
@@ -502,7 +501,6 @@
 					</animation>
 				</control>
 			</focusedlayout>
-			<visible>!Skin.HasSetting(fixedlist) | Container.Content(movies) | Container.Content(files)</visible>
 		</control>
 		<!--Scrollbar -->
 		<control type="image">
@@ -514,6 +512,16 @@
 			<texture border="0,14,0,14">scrollbarh.png</texture>
 			<include>Animation_CommonFade</include>
 			<animation effect="slide" start="0,100" end="0,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(62)">Conditional</animation>
+		</control>		
+		<control type="image">
+			<posx>420</posx>
+			<posy>670</posy>
+			<width>460</width>
+			<height>32</height>
+			<visible>Control.IsVisible(555) + Control.HasFocus(622)</visible>
+			<texture border="0,14,0,14">scrollbarh.png</texture>
+			<include>Animation_CommonFade</include>
+			<animation effect="slide" start="0,100" end="0,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(622)">Conditional</animation>
 		</control>		
 		<control type="scrollbar" id="62">
 			<include>Animation_ZoomInZoomOut</include>
@@ -532,9 +540,26 @@
 			<include>Animation_CommonFade</include>
 			<animation effect="slide" start="0,100" end="0,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(62)">Conditional</animation>
 		</control>
+		<control type="scrollbar" id="622">
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
+			<posx>420</posx>
+			<posy>670</posy>
+			<width>460</width>
+			<height>32</height>
+			<visible allowhiddenfocus="true">Control.IsVisible(555) + Control.HasFocus(622)</visible>
+			<textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
+			<colordiffuse>ButtonFilterColor</colordiffuse>
+			<onup>555</onup>
+			<ondown>622</ondown>
+			<showonepage>false</showonepage>
+			<orientation>horizontal</orientation>
+			<include>Animation_CommonFade</include>
+			<animation effect="slide" start="0,100" end="0,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(622)">Conditional</animation>
+		</control>
 		<!-- Browser label and flags -->
 		<control type="group">
-			<visible>Control.IsVisible(55)</visible>
+			<visible>[Control.IsVisible(55) | Control.IsVisible(555)]</visible>
 			<posx>840</posx>
 			<posy>460</posy>
 			<animation effect="slide" end="-20,-36" condition="Control.IsVisible(54)">Conditional</animation>
@@ -617,7 +642,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(55)</visible>
+			<visible>[Control.IsVisible(55) | Control.IsVisible(555)]</visible>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>PosterMediaFlags</include>

@@ -101,6 +101,17 @@
 	<color name="DialogLargeLabel">dc777777</color>
 	<color name="DialogLargeLabelAccent">dc990000</color>
 
+	<!-- Panels -->
+
+	<color name="PanelDiffuse">FFbfbfbf</color>
+	<color name="PanelDiffuseDivider">FFFFFFFF</color>
+	<color name="PanelListTitle">FF4f4f4f</color>
+	<color name="PanelListLabel">FFFFFFFF</color>
+	<color name="PanelListItem">FFFFFFFF</color>
+	<color name="PanelListItemSelected">FFc34040</color>
+	<color name="PanelListItemDisabled">FF727272</color>
+	<color name="PanelListItemFocused">FFc30000</color>
+
 	<!-- Favorites -->
 
 	<color name="FavListItem">FF929191</color>

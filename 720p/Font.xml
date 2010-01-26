@@ -292,18 +292,6 @@
 		</font>
 
 		<font>
-			<name>Font_KeyboardKeys</name>
-			<filename>alaska_nocaps.ttf</filename>
-			<size>28</size>
-		</font>
-
-		<font>
-			<name>Font_KeyboardShapes</name>
-			<filename>alaska_nocaps.ttf</filename>
-			<size>17</size>
-		</font>
-
-		<font>
 			<name>Font_FavouritesLabel</name>
 			<filename>alaska_black.ttf</filename>
 			<aspect>0.9</aspect>
@@ -334,6 +322,56 @@
 			<name>Font_TemperatureOverlay</name>
 			<filename>alaska_regular.ttf</filename>
 			<size>13</size>
+		</font>
+
+		<font>
+			<name>Font_Panel</name>
+			<filename>alaska_regular.ttf</filename>
+			<aspect>0.90</aspect>
+			<size>32</size>
+			<linespacing>0.7</linespacing>
+		</font>
+		<font>
+			<name>Font_PanelLabel</name>
+			<filename>alaska_black.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>46</size>
+		</font>
+		<font>
+			<name>Font_PanelItemTitle</name>
+			<filename>alaska_black.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>22</size>
+		</font>
+		<font>
+			<name>Font_PanelItemLabel</name>
+			<filename>alaska_black.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>18</size>
+		</font>
+		<font>
+			<name>Font_PanelFocusedItemLabel</name>
+			<filename>alaska_black.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>28</size>
+		</font>
+		<font>
+			<name>Font_Keyboard_Caps</name>
+			<filename>alaska_black.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>20</size>
+		</font>
+		<font>
+			<name>Font_Keyboard_NoCaps</name>
+			<filename>alaska_black_nocaps.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>32</size>
+		</font>
+		<font>
+			<name>Font_Keyboard_NoCaps_Large</name>
+			<filename>alaska_black_nocaps.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>28</size>
 		</font>
 
 	</fontset>
@@ -628,18 +666,6 @@
 		</font>
 
 		<font>
-			<name>Font_KeyboardKeys</name>
-			<filename>alaska_nocaps_cy.ttf</filename>
-			<size>28</size>
-		</font>
-
-		<font>
-			<name>Font_KeyboardShapes</name>
-			<filename>alaska_nocaps_cy.ttf</filename>
-			<size>17</size>
-		</font>
-
-		<font>
 			<name>Font_FavouritesLabel</name>
 			<filename>alaska_black_cy.ttf</filename>
 			<aspect>0.9</aspect>
@@ -670,6 +696,56 @@
 			<name>Font_TemperatureOverlay</name>
 			<filename>alaska_regular_cy.ttf</filename>
 			<size>13</size>
+		</font>
+
+		<font>
+			<name>Font_Panel</name>
+			<filename>alaska_regular_cy.ttf</filename>
+			<aspect>0.90</aspect>
+			<size>32</size>
+			<linespacing>0.7</linespacing>
+		</font>
+		<font>
+			<name>Font_PanelLabel</name>
+			<filename>alaska_black_cy.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>46</size>
+		</font>
+		<font>
+			<name>Font_PanelItemTitle</name>
+			<filename>alaska_black_cy.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>22</size>
+		</font>
+		<font>
+			<name>Font_PanelItemLabel</name>
+			<filename>alaska_black_cy.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>18</size>
+		</font>
+		<font>
+			<name>Font_PanelFocusedItemLabel</name>
+			<filename>alaska_black_cy.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>28</size>
+		</font>
+		<font>
+			<name>Font_Keyboard_Caps</name>
+			<filename>alaska_black_cy.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>22</size>
+		</font>
+		<font>
+			<name>Font_Keyboard_NoCaps</name>
+			<filename>alaska_black_nocaps_cy.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>22</size>
+		</font>
+		<font>
+			<name>Font_Keyboard_NoCaps_Large</name>
+			<filename>alaska_black_nocaps_cy.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>28</size>
 		</font>
 
 	</fontset>
@@ -964,18 +1040,6 @@
 		</font>
 
 		<font>
-			<name>Font_KeyboardKeys</name>
-			<filename>Arial.ttf</filename>
-			<size>28</size>
-		</font>
-
-		<font>
-			<name>Font_KeyboardShapes</name>
-			<filename>Arial.ttf</filename>
-			<size>17</size>
-		</font>
-
-		<font>
 			<name>Font_FavouritesLabel</name>
 			<filename>Arial.ttf</filename>
 			<aspect>0.9</aspect>
@@ -1006,6 +1070,56 @@
 			<name>Font_TemperatureOverlay</name>
 			<filename>Arial.ttf</filename>
 			<size>13</size>
+		</font>
+
+		<font>
+			<name>Font_Panel</name>
+			<filename>Arial.ttf</filename>
+			<aspect>0.90</aspect>
+			<size>32</size>
+			<linespacing>0.7</linespacing>
+		</font>
+		<font>
+			<name>Font_PanelLabel</name>
+			<filename>Arial.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>46</size>
+		</font>
+		<font>
+			<name>Font_PanelItemTitle</name>
+			<filename>Arial.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>22</size>
+		</font>
+		<font>
+			<name>Font_PanelItemLabel</name>
+			<filename>Arial.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>18</size>
+		</font>
+		<font>
+			<name>Font_PanelFocusedItemLabel</name>
+			<filename>Arial.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>28</size>
+		</font>
+		<font>
+			<name>Font_Keyboard_Caps</name>
+			<filename>Arial.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>22</size>
+		</font>
+		<font>
+			<name>Font_Keyboard_NoCaps</name>
+			<filename>Arial.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>22</size>
+		</font>
+		<font>
+			<name>Font_Keyboard_NoCaps_Large</name>
+			<filename>Arial.ttf</filename>
+			<aspect>0.9</aspect>
+			<size>28</size>
 		</font>
 
 	</fontset>

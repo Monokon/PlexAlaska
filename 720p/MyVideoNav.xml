@@ -3,6 +3,7 @@
 <window id="25">
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<views>50,55,555,58,558,49,51,52,53,54,56,57,59,556,559</views>
 	<controls>
 		<include>Global_Background</include>
 		<control type="largeimage">
@@ -11,6 +12,7 @@
 			<texture>$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<include>Animation_CommonFade</include>
 			<visible>[!Skin.HasSetting(nomoviebackdrops) + Container.Content(movies)] | [!Skin.HasSetting(notvshowbackdrops) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]</visible>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(49).OnNext | Container(49).OnPrevious]">Conditional</animation>
 			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(50).OnNext | Container(50).OnPrevious] | Window.IsActive(2003)">Conditional</animation>
 			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(59).OnNext | Container(59).OnPrevious]">Conditional</animation>
 			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(51).OnNext | Container(51).OnPrevious]">Conditional</animation>
@@ -20,6 +22,10 @@
 			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(53).OnNext | Container(53).OnPrevious]">Conditional</animation>
 			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(55).OnNext | Container(55).OnPrevious]">Conditional</animation>
 			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(58).OnNext | Container(58).OnPrevious]">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(556).OnNext | Container(556).OnPrevious]">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(559).OnNext | Container(559).OnPrevious]">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(555).OnNext | Container(555).OnPrevious]">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(558).OnNext | Container(558).OnPrevious]">Conditional</animation>
 		</control>
 		<!-- Workaround for missing fanart when episodes displayed -->
 		<control type="largeimage">
@@ -40,6 +46,7 @@
 		<include>Viewtype_Landscape</include>
 		<include>Viewtype_Episode</include>
 		<include>Viewtype_Files</include>
+		<include>Viewtype_Panel</include>
 		<include>Viewtype_Banner</include>
 
 		<include>Global_ContextFilter</include>

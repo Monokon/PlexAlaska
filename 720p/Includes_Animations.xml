@@ -197,6 +197,27 @@
 		<animation effect="slide" end="0,-360" time="300" tween="cubic" easing="inout" condition="Container(55).Row(2)">Conditional</animation>
 	</include>
 
+	<include name="Animation_PanelFloat">
+		<animation effect="slide" end="0,8" time="0" tween="cubic" easing="inout" condition="Container(56).Row(0)">Conditional</animation>
+		<animation effect="slide" end="0,-8" time="0" tween="cubic" easing="inout" condition="Container(56).Row(3)">Conditional</animation>
+		<animation effect="slide" end="8,0" time="0" tween="cubic" easing="inout" condition="Container(56).Column(0)">Conditional</animation>
+		<animation effect="slide" end="-8,0" time="0" tween="cubic" easing="inout" condition="Container(56).Column(5)">Conditional</animation>
+	</include>
+
+	<include name="Animation_WidePanelFloat">
+		<animation effect="slide" end="0,8" time="0" tween="cubic" easing="inout" condition="Container(59).Row(0)">Conditional</animation>
+		<animation effect="slide" end="0,-8" time="0" tween="cubic" easing="inout" condition="Container(59).Row(3)">Conditional</animation>
+		<animation effect="slide" end="14,0" time="0" tween="cubic" easing="inout" condition="Container(59).Column(0)">Conditional</animation>
+		<animation effect="slide" end="-14,0" time="0" tween="cubic" easing="inout" condition="Container(59).Column(3)">Conditional</animation>
+	</include>
+
+	<include name="Animation_TallPanelFloat">
+		<animation effect="slide" end="0,10" time="0" tween="cubic" easing="inout" condition="Container(56).Row(0)">Conditional</animation>
+		<animation effect="slide" end="0,-10" time="0" tween="cubic" easing="inout" condition="Container(56).Row(2)">Conditional</animation>
+		<animation effect="slide" end="8,0" time="0" tween="cubic" easing="inout" condition="Container(56).Column(0)">Conditional</animation>
+		<animation effect="slide" end="-8,0" time="0" tween="cubic" easing="inout" condition="Container(56).Column(5)">Conditional</animation>
+	</include>
+
 	<include name="Animation_ListFloat">
 		<animation effect="slide" end="0,160" time="200" condition="Container(53).Row(0)">Conditional</animation>	
 		<animation effect="slide" end="0,120" time="200" condition="Container(53).Row(1)">Conditional</animation>

@@ -59,6 +59,7 @@
 		<alttexturenofocus>arrowdownnf.png</alttexturenofocus>
 		<alttexturefocus>arrowdownfo.png</alttexturefocus>
 		<colordiffuse>ButtonFilterColor</colordiffuse>
+		<textoffsetx>5</textoffsetx>
 	</default>
 
 	<default type="radiobutton">
@@ -81,6 +82,7 @@
 		<radioheight>20</radioheight>
 		<radiowidth>20</radiowidth>
 		<pulseonselect>false</pulseonselect>
+		<textoffsetx>5</textoffsetx>
 	</default>
 
 	<default type="spincontrolex">
@@ -107,6 +109,7 @@
 		<aligny>center</aligny>
 		<reverse>yes</reverse>
 		<pulseonselect>false</pulseonselect>
+		<textoffsetx>5</textoffsetx>
 	</default>
 
 	<default type="spincontrol">
@@ -123,6 +126,7 @@
 		<aligny>center</aligny>
 		<reverse>yes</reverse>
 		<pulseonselect>false</pulseonselect>
+		<textoffsetx>5</textoffsetx>
 	</default>
 
 	<default type="sliderex">
