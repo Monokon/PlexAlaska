@@ -103,20 +103,14 @@
 
 	<!-- Panels -->
 
-	<color name="PanelDiffuse">FFbfbfbf</color>
+	<color name="PanelDiffuse">FFE0E0E0</color>
 	<color name="PanelDiffuseDivider">FFFFFFFF</color>
 	<color name="PanelListTitle">FF4f4f4f</color>
-	<color name="PanelListLabel">FFFFFFFF</color>
-	<color name="PanelListItem">FFFFFFFF</color>
-	<color name="PanelListItemSelected">FFc34040</color>
+	<color name="PanelListLabel">FFc89008</color>
+	<color name="PanelListItem">FF907070</color>
+	<color name="PanelListItemSelected">FFc89008</color>
 	<color name="PanelListItemDisabled">FF727272</color>
-	<color name="PanelListItemFocused">FFc30000</color>
-
-	<!-- Favorites -->
-
-	<color name="FavListItem">FF929191</color>
-	<color name="FavListItemSelected">ffcc0000</color>
-	<color name="FavListItemFocusedSelected">CCcccccc</color>
+	<color name="PanelListItemFocused">FFc89008</color>
 
 	<!-- Filemanager -->
 

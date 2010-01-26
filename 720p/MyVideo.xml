@@ -3,7 +3,7 @@
 <window id="24">
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<views>50,55,555,58,558,49,51,52,53,54,56,57,59,556,559</views>
+	<views>50,55,555,58,558,49,51,52,53,54,56,57,59</views>
 	<controls>
 		<include>Global_Background</include>
 		<control type="largeimage">
@@ -32,7 +32,7 @@
 
 		<control type="grouplist" id="7000">
 			<width>1250</width>
-			<height>40</height>
+			<height>80</height>
 			<posx>420</posx>
 			<posy>330</posy>
 			<onup>50</onup>

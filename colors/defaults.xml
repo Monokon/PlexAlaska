@@ -103,7 +103,7 @@
 
 	<!-- Panels -->
 
-	<color name="PanelDiffuse">FFbfbfbf</color>
+	<color name="PanelDiffuse">FFE0E0E0</color>
 	<color name="PanelDiffuseDivider">FFFFFFFF</color>
 	<color name="PanelListTitle">FF4f4f4f</color>
 	<color name="PanelListLabel">FFFFFFFF</color>
