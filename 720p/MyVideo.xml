@@ -3,7 +3,7 @@
 <window id="24">
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<views>50,55,555,58,558,49,51,52,53,54,56,57,59</views>
+	<views>50,55,555,58,558,49,51,52,552,53,54,56,57,59</views>
 	<controls>
 		<include>Global_Background</include>
 		<control type="largeimage">
