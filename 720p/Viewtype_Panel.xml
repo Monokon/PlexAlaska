@@ -67,7 +67,7 @@
 				<aspectratio scalediffuse="false">scale</aspectratio>
 				<visible>Window.IsActive(2)</visible>
 			</control>
-			<control type="label">
+			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>-12</posy>
 				<width>410</width>
@@ -76,10 +76,12 @@
 				<font>Font_Panel</font>
 				<textcolor>PosterTitle</textcolor>
 				<label>[B]$INFO[ListItem.Label][/B]</label>
-				<wrapmultiline>true</wrapmultiline>
+				<scroll>true</scroll>
+				<scrollout>false</scrollout>
+				<pauseatend>1500</pauseatend>
 				<visible>!Window.IsActive(2) + !Container.Content(episodes)</visible>
 			</control>
-			<control type="label">
+			<control type="fadelabel">
 				<posx>10</posx>
 				<posy>-12</posy>
 				<width>410</width>
@@ -88,7 +90,9 @@
 				<font>Font_Panel</font>
 				<textcolor>PosterTitle</textcolor>
 				<label>[B]$INFO[ListItem.Episode]. $INFO[ListItem.Title][/B]</label>
-				<wrapmultiline>true</wrapmultiline>
+				<scroll>true</scroll>
+				<scrollout>false</scrollout>
+				<pauseatend>1500</pauseatend>
 				<visible>!Window.IsActive(2) + Container.Content(episodes)</visible>
 			</control>
 			<control type="textbox">
@@ -111,14 +115,14 @@
 				<font>Font_EpisodePlot</font>
 				<textcolor>EpisodePlot</textcolor>
 			</control>
-			<!--<control type="image">
+			<control type="image">
 				<posx>8</posx>
 				<posy>40</posy>
 				<width>121</width>
 				<height>25</height>
 				<texture>$INFO[ListItem.StarRating]</texture>
 				<colordiffuse>StarRatingDiffuse</colordiffuse>
-			</control>-->
+			</control>
 			<include>PosterMediaFlags</include>
 		</control>
 		<!-- Arrows -->
