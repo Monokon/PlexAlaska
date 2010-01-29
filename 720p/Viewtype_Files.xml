@@ -124,7 +124,7 @@
 				</control>
 				<control type="label">
 					<posx>60</posx>
-					<posy>27</posy>
+					<posy>32</posy>
 					<width>740</width>
 					<height>17</height>
 					<aligny>center</aligny>
