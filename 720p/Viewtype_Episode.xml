@@ -18,7 +18,7 @@
 			<focusposition>2</focusposition>
 			<movement>2</movement>
 			<pagecontrol>65</pagecontrol>
-			<visible>Container.Content(episodes)</visible>
+			<visible>Container.Content(episodes) + !Skin.HasSetting(noviewepisodes)</visible>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_EpisodeFloat</include>

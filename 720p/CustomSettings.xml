@@ -443,7 +443,7 @@
 			<control type="grouplist" id="9003">
 				<visible>Container(9000).Hasfocus(3)</visible>
 				<width>740</width>
-				<height>600</height>
+				<height>400</height>
 				<itemgap>6</itemgap>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
@@ -493,6 +493,149 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(notvshowoverlay)</onclick>
 					<selected>Skin.HasSetting(notvshowoverlay)</selected>
+				</control>
+				<control type="radiobutton" id="308">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31801]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noviewposterfixed)</onclick>
+					<selected>Skin.HasSetting(noviewposterfixed)</selected>
+				</control>
+				<control type="radiobutton" id="309">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31802]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noviewposterwrap)</onclick>
+					<selected>Skin.HasSetting(noviewposterwrap)</selected>
+				</control>
+				<control type="radiobutton" id="310">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31803]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noviewposter2fixed)</onclick>
+					<selected>Skin.HasSetting(noviewposter2fixed)</selected>
+				</control>
+				<control type="radiobutton" id="311">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31804]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noviewposter2wrap)</onclick>
+					<selected>Skin.HasSetting(noviewposter2wrap)</selected>
+				</control>
+				<control type="radiobutton" id="312">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31805]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noviewfanart)</onclick>
+					<selected>Skin.HasSetting(noviewfanart)</selected>
+				</control>
+				<control type="radiobutton" id="313">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31806]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noviewfanart2)</onclick>
+					<selected>Skin.HasSetting(noviewfanart2)</selected>
+				</control>
+				<control type="radiobutton" id="314">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31807]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noviewpanel)</onclick>
+					<selected>Skin.HasSetting(noviewpanel)</selected>
+				</control>
+				<control type="radiobutton" id="315">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31808]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noviewpanelwide)</onclick>
+					<selected>Skin.HasSetting(noviewpanelwide)</selected>
+				</control>
+				<control type="radiobutton" id="316">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31809]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noviewlandscapefixed)</onclick>
+					<selected>Skin.HasSetting(noviewlandscapefixed)</selected>
+				</control>
+				<control type="radiobutton" id="317">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31810]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noviewlandscapewrap)</onclick>
+					<selected>Skin.HasSetting(noviewlandscapewrap)</selected>
+				</control>
+				<control type="radiobutton" id="318">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31811]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noviewbanner)</onclick>
+					<selected>Skin.HasSetting(noviewbanner)</selected>
+				</control>
+				<control type="radiobutton" id="319">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31812]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noviewepisodes)</onclick>
+					<selected>Skin.HasSetting(noviewepisodes)</selected>
+				</control>
+				<control type="radiobutton" id="320">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31813]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noviewwall)</onclick>
+					<selected>Skin.HasSetting(noviewwall)</selected>
 				</control>
 			</control>
 			<control type="grouplist" id="9004">
@@ -745,7 +888,7 @@
 				<posy>150</posy>
 				<texture flipy="true">submenu_arrow.png</texture>
 				<colordiffuse>ButtonFilterColor</colordiffuse>
-				<visible>Container(9002).HasPrevious</visible>
+				<visible>[Container(9000).HasFocus(2) + Container(9002).HasPrevious] | [Container(9000).HasFocus(3) + Container(9003).HasPrevious]</visible>
 				<include>Animation_CommonFade</include>
 			</control>
 			<control type="image">
@@ -755,10 +898,10 @@
 				<posy>580</posy>
 				<texture>submenu_arrow.png</texture>
 				<colordiffuse>ButtonFilterColor</colordiffuse>
-				<visible>Container(9002).HasNext</visible>
+				<visible>[Container(9000).HasFocus(2) + Container(9002).HasNext] | [Container(9000).HasFocus(3) + Container(9003).HasNext]</visible>
 				<include>Animation_CommonFade</include>
 			</control>
-			<visible>Container(9000).HasFocus(2)</visible>
+			<visible>Container(9000).HasFocus(2) | Container(9000).HasFocus(3)</visible>
 		</control>
 
 		<!-- help -->

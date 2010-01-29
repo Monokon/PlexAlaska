@@ -21,7 +21,7 @@
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByDialog</include>
-			<visible>!Container.Content(episodes)</visible>
+			<visible>!Container.Content(episodes) + !Skin.HasSetting(noviewposterfixed)</visible>
 			<itemlayout width="168" height="245">
 				<control type="image">
 					<posx>1</posx>
@@ -271,7 +271,7 @@
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByDialog</include>
-			<visible>!Container.Content(episodes)</visible>
+			<visible>!Container.Content(episodes) + !Skin.HasSetting(noviewposterwrap)</visible>
 			<itemlayout width="168" height="245">
 				<control type="image">
 					<posx>1</posx>

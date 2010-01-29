@@ -22,7 +22,7 @@
 			<pagecontrol>64</pagecontrol>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
-			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+			<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(noviewlandscapefixed)</visible>
 			<itemlayout width="278" height="194">
 				<control type="image">
 					<posx>1</posx>
@@ -156,7 +156,7 @@
 			<pagecontrol>644</pagecontrol>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
-			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+			<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(noviewlandscapewrap)</visible>
 			<itemlayout width="278" height="194">
 				<control type="image">
 					<posx>1</posx>

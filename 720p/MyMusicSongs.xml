@@ -15,7 +15,7 @@
 		<include>Global_Filter</include>
 
 		<include>Viewtype_Files</include>
-		<include>Viewtype_MusicWall</include>
+		<include condition="!Skin.HasSetting(noviewwall)">Viewtype_MusicWall</include>
 
 		<include>Global_ContextFilter</include>
 		

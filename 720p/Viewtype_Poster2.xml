@@ -20,7 +20,7 @@
 			<pagecontrol>67</pagecontrol>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
-			<visible>!Container.Content(episodes)</visible>
+			<visible>!Container.Content(episodes) + !Skin.HasSetting(noviewposter2fixed)</visible>
 			<itemlayout width="245" height="245">
 				<control type="image">
 					<posx>46</posx>
@@ -294,7 +294,7 @@
 			<pagecontrol>677</pagecontrol>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
-			<visible>!Container.Content(episodes)</visible>
+			<visible>!Container.Content(episodes) + !Skin.HasSetting(noviewposter2wrap)</visible>
 			<itemlayout width="245" height="245">
 				<control type="image">
 					<posx>46</posx>

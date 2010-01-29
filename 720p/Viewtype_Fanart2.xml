@@ -19,7 +19,7 @@
 			<pagecontrol>66</pagecontrol>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
-			<visible>Container.Content(movies) | Container.Content(tvshows)</visible>
+			<visible>[Container.Content(movies) | Container.Content(tvshows)] + !Skin.HasSetting(noviewfanart2)</visible>
 			<itemlayout width="500" height="750">
 				<control type="image">
 					<posx>-422</posx>

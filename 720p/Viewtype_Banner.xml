@@ -21,7 +21,7 @@
 			<movement>4</movement>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_ZoomedByMenu</include>
-			<visible>Container.Content(tvshows)</visible>
+			<visible>Container.Content(tvshows) + !Skin.HasSetting(noviewbanner)</visible>
 			<itemlayout width="885" height="49">	
 				<control type="label">
 					<posx>273</posx>
