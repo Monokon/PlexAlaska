@@ -177,7 +177,7 @@
 					<posy>15</posy>
 					<width>20</width>
 					<height>20</height>
-					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(episodes)</visible>
+					<visible>!Skin.HasSetting(notvshowoverlay) + Container.Content(episodes)</visible>
 					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 				</control>
@@ -186,7 +186,7 @@
 					<posy>19</posy>
 					<width>12</width>
 					<height>12</height>
-					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(episodes)</visible>
+					<visible>!Skin.HasSetting(notvshowoverlay) + Container.Content(episodes)</visible>
 					<texture>$INFO[ListItem.Overlay]</texture>
 				</control>
 				<!-- Watched overlay for movies -->
