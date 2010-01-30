@@ -655,7 +655,7 @@
 				<texture>$INFO[ListItem.Overlay]</texture>
 				<animation type="Focus" reversible="false">
 					<effect type="zoom" center="20,20" start="80" end="120" time="400" tween="back" easing="out" />
-					<effect type="fade" start="08" end="100" time="400" />
+					<effect type="fade" start="80" end="100" time="400" />
 				</animation>
 			</control>
 		</focusedlayout>
@@ -796,7 +796,7 @@
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="auto" start="80" end="120" time="400" tween="back" easing="out" />
-						<effect type="fade" start="08" end="100" time="400" />
+						<effect type="fade" start="80" end="100" time="400" />
 					</animation>
 				</control>
 			</control>
