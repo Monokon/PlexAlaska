@@ -417,7 +417,7 @@
 				<posx>5</posx>
 				<posy>390</posy>
 				<width>633</width>
-				<height>190</height>
+				<height>160</height>
 				<align>left</align>
 				<info>ListItem.Plot</info>
 				<autoscroll time="3200" delay="6000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
