@@ -1374,6 +1374,7 @@
 			<posx>1070</posx>
 			<texture>mainmenu/submenu_right.png</texture>
 		</control>
+		<animation effect="slide" start="0,0" end="60,-37" time="600" condition="Player.HasMedia">Conditional</animation>
 	</include>
 
 </includes>
