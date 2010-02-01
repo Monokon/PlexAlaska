@@ -374,6 +374,21 @@
 			<size>28</size>
 		</font>
 
+		<font>
+			<name>Font_NPalt_title</name>
+			<filename>alaska_nocaps.ttf</filename>
+			<size>42</size>
+		</font>
+		<font>
+			<name>Font_NPalt_artist</name>
+			<filename>alaska_nocaps.ttf</filename>
+			<size>33</size>
+		</font>
+		<font>
+			<name>Font_NPalt_next</name>
+			<filename>alaska_nocaps.ttf</filename>
+			<size>25</size>
+		</font>
 	</fontset>
 
 	<fontset id="Cyrillic" unicode="true">
@@ -748,6 +763,22 @@
 			<size>28</size>
 		</font>
 
+		<font>
+			<name>Font_NPalt_title</name>
+			<filename>alaska_nocaps_cy.ttf</filename>
+			<size>42</size>
+		</font>
+		<font>
+			<name>Font_NPalt_artist</name>
+			<filename>alaska_nocaps_cy.ttf</filename>
+			<size>33</size>
+		</font>
+		<font>
+			<name>Font_NPalt_next</name>
+			<filename>alaska_nocaps_cy.ttf</filename>
+			<size>25</size>
+		</font>
+
 	</fontset>
 
 	<fontset id="Hebrew" unicode="true">
@@ -1120,6 +1151,22 @@
 			<filename>Arial.ttf</filename>
 			<aspect>0.9</aspect>
 			<size>28</size>
+		</font>
+
+		<font>
+			<name>Font_NPalt_title</name>
+			<filename>Arial.ttf</filename>
+			<size>42</size>
+		</font>
+		<font>
+			<name>Font_NPalt_artist</name>
+			<filename>Arial.ttf</filename>
+			<size>33</size>
+		</font>
+		<font>
+			<name>Font_NPalt_next</name>
+			<filename>Arial.ttf</filename>
+			<size>25</size>
 		</font>
 
 	</fontset>
