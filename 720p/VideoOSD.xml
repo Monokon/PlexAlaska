@@ -180,11 +180,13 @@
 				</control>
 			</control>
 			<control type="label">
-				<posx>30</posx>
-				<posy>114</posy>
+				<posx>110</posx>
+				<posy>97</posy>
 				<width>150</width>
-				<height>25</height>
-				<font>Font_ListDetail</font>
+				<height>50</height>
+				<font>Font_OSDTime</font>
+				<align>right</align>
+				<aligny>center</aligny>
 				<textcolor>NowPlayingArtist</textcolor>
 				<label>$INFO[VideoPlayer.Time]</label>
 			</control>
@@ -202,11 +204,12 @@
 				<height>19</height>
 			</control>
 			<control type="label">
-				<posx>1106</posx>
-				<posy>114</posy>
+				<posx>1096</posx>
+				<posy>97</posy>
 				<width>300</width>
-				<height>25</height>
-				<font>Font_ListDetail</font>
+				<height>50</height>
+				<font>Font_OSDTime</font>
+				<aligny>center</aligny>
 				<textcolor>NowPlayingArtist</textcolor>
 				<label>$INFO[VideoPlayer.Duration] ($INFO[Player.FinishTime])</label>
 			</control>

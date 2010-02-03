@@ -389,6 +389,14 @@
 			<filename>alaska_nocaps.ttf</filename>
 			<size>25</size>
 		</font>
+
+		<font>
+		        <name>Font_OSDTime</name>
+		        <filename>alaska_regular.ttf</filename>
+		        <aspect>0.9</aspect>
+		        <size>17</size>
+		</font>
+
 	</fontset>
 
 	<fontset id="Cyrillic" unicode="true">
@@ -779,6 +787,13 @@
 			<size>25</size>
 		</font>
 
+		<font>
+		        <name>Font_OSDTime</name>
+		        <filename>alaska_regular_cy.ttf</filename>
+		        <aspect>0.9</aspect>
+		        <size>17</size>
+		</font>
+
 	</fontset>
 
 	<fontset id="Hebrew" unicode="true">
@@ -1167,6 +1182,13 @@
 			<name>Font_NPalt_next</name>
 			<filename>Arial.ttf</filename>
 			<size>25</size>
+		</font>
+
+		<font>
+		        <name>Font_OSDTime</name>
+		        <filename>Arial.ttf</filename>
+		        <aspect>0.9</aspect>
+		        <size>17</size>
 		</font>
 
 	</fontset>
