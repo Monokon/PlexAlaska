@@ -204,14 +204,14 @@
 			<include>Animation_HiddenByMusicInfo</include>
 			<include>Animation_HiddenByDialog</include>
 			<itemlayout width="180" height="180">
-				<control type="image">
+				<!--<control type="image">
 					<posx>7</posx>
 					<posy>7</posy>
 					<width>160</width>
 					<height>160</height>
 					<texture>wall/musicwallmatte.png</texture>
 					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
-				</control>
+				</control>-->
 				<control type="image">
 					<posx>6</posx>
 					<posy>6</posy>
