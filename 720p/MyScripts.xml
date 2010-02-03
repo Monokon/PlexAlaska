@@ -2,6 +2,7 @@
 
 <window id="20">
 	<defaultcontrol always="yes">50</defaultcontrol>
+ 	<views>50,55,555,58,558,49,51,52,53,54,56,57,59,556,559</views>
 	<controls>
 		<include>Global_Background</include>
 		<include>Global_Filter</include>
@@ -10,26 +11,9 @@
 		<include>Viewtype_List</include>
 		<include>Global_ContextFilter</include>
 
-		<!--control type="grouplist" id="7000">
-			<include>WindowMenuVars</include>
-			<posy>330</posy>
-			<control type="button" id="2">
-				<description>View</description>
-				<include>WindowMenuButton</include>
-			</control>
-			<control type="button" id="3">
-				<description>Sort</description>
-				<include>WindowMenuButton</include>
-			</control>
-			<control type="togglebutton" id="4">
-				<description>Ascending</description>
-				<include>WindowMenuButton</include>
-				<label>$LOCALIZE[584]</label>
-				<altlabel>$LOCALIZE[585]</altlabel>
-			</control-->
 		<control type="grouplist" id="7000">
 			<width>400</width>
-			<height>40</height>
+			<height>80</height>
 			<onup>50</onup>
 			<ondown>50</ondown>
 			<itemgap>0</itemgap>
@@ -51,7 +35,7 @@
 
 		<control type="grouplist">
 			<width>400</width>
-			<height>40</height>
+			<height>80</height>
 			<onup>50</onup>
 			<ondown>50</ondown>
 			<itemgap>0</itemgap>

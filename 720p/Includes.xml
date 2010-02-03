@@ -282,6 +282,12 @@
 				<include>Global_HeadingDetailVars</include>
 				<visible>Window.IsActive(2) + !Window.IsActive(134) + !Skin.HasSetting(nopicturepath)</visible>
 			</control>
+			<control type="label">
+				<description>Scripts</description>
+				<label>$LOCALIZE[31020]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(20) + !Window.IsActive(134)</visible>
+			</control>
 		</control>
 	</include>
 	<include name="Global_RSS">
