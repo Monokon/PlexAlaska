@@ -115,7 +115,7 @@
 					<onclick>XBMC.ActivateWindow(AppearanceSettings)</onclick>
 				</item>
 				<item id="9">
-<!-- LOC -->		<label>Alaska</label>
+					<label>PlexAlaska</label>
 					<thumb>settings/settings_alaska.png</thumb>
 					<onclick>XBMC.ActivateWindow(56)</onclick>
 				</item>
@@ -278,7 +278,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<description>Alaska</description>
+			<description>PlexAlaska</description>
 			<posx>880</posx>
 			<posy>350</posy>
 			<visible>Container(60).HasFocus(9)</visible>
@@ -286,7 +286,7 @@
 			<include>Animation_CommonFadeNoHide</include>
 			<control type="label">
 				<include>SettingsHeadingVars</include>
-				<label>Alaska</label>
+				<label>PlexAlaska</label>
 			</control>
 			<control type="label">
 				<include>SettingsDetailVars</include>
