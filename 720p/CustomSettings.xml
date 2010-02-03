@@ -494,6 +494,17 @@
 					<onclick>Skin.ToggleSetting(notvshowoverlay)</onclick>
 					<selected>Skin.HasSetting(notvshowoverlay)</selected>
 				</control>
+				<control type="radiobutton" id="301">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31820]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noitemfading)</onclick>
+					<selected>Skin.HasSetting(noitemfading)</selected>
+				</control>
 				<control type="radiobutton" id="308">
 					<width>740</width>
 					<font>Font_Settings</font>

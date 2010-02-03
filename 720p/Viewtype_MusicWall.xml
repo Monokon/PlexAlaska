@@ -39,7 +39,7 @@
 				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-6).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -50,7 +50,7 @@
 				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-5).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -61,7 +61,7 @@
 				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-4).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -72,7 +72,7 @@
 				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-3).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -83,7 +83,7 @@
 				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-2).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -94,7 +94,7 @@
 				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(-1).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -105,7 +105,7 @@
 				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(9).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -116,7 +116,7 @@
 				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(10).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -127,7 +127,7 @@
 				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(11).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -138,7 +138,7 @@
 				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(12).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -149,7 +149,7 @@
 				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(13).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -160,7 +160,7 @@
 				<texture diffuse="wall/musicwallmatte.png">$INFO[Container.ListItemPosition(14).Icon]</texture>
 				<bordertexture border="1">wall/musicwallframeNF.png</bordertexture>
 				<bordersize>1</bordersize>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -210,7 +210,7 @@
 					<width>160</width>
 					<height>160</height>
 					<texture>wall/musicwallmatte.png</texture>
-					<colordiffuse>WallIconDiffuse</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				</control>
 				<control type="image">
 					<posx>6</posx>
@@ -221,7 +221,7 @@
 					<texture background="true" diffuse="wall/musicwallmatte.png">$INFO[ListItem.Icon]</texture>
 					<bordertexture border="2">wall/musicwallframeNF.png</bordertexture>
 					<bordersize>1</bordersize>
-					<colordiffuse>WallIconDiffuse</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 				</control>
 			</itemlayout>
@@ -274,7 +274,7 @@
 					<width>160</width>
 					<height>160</height>
 					<texture>wall/musicwallframeNF.png</texture>
-					<colordiffuse>WallIconDiffuse</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 					<animation type="Focus" reversible="false" condition="Container(55).Row(0)">
 						<effect type="fade" start="100" end="0" time="200" />
 						<effect type="slide" start="0,0" end="0,-14" time="400" tween="back" easing="out" />

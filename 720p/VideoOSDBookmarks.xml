@@ -68,7 +68,7 @@
 					<bordersize>8</bordersize>
 					<texture>$INFO[ListItem.Thumb]</texture>
 					<aspectratio scalediffuse="false" aligny="center">scale</aspectratio>
-					<colordiffuse>WallIconDiffuse</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				</control>
 				<control type="label">
 					<posx>125</posx>
@@ -93,7 +93,7 @@
 					<texture>$INFO[ListItem.Thumb]</texture>
 					<aspectratio scalediffuse="false" aligny="center">scale</aspectratio>
 					<visible>!control.HasFocus(11)</visible>
-					<colordiffuse>WallIconDiffuse</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				</control>
 				<control type="image">
 					<posx>0</posx>

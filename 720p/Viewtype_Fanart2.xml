@@ -37,7 +37,7 @@
 					<height>406</height>
 					<texture background="true" fallback="special:\\skin\media\backdrops\movies.jpg" diffuse="IconmatteNF.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>50FFFFFF</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 				</control>
@@ -65,7 +65,7 @@
 					<height>406</height>
 					<texture background="true" flipy="true" diffuse="IconmattereflectNF.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>50FFFFFF</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 				</control>

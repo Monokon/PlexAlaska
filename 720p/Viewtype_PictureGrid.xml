@@ -82,11 +82,15 @@
 
 	<include name="Object_PicturePanel">
 		<control type="image">
-			<posx>1</posx>
-			<posy>1</posy>
-			<width>108</width>
-			<height>108</height>
+			<posx>-2</posx>
+			<posy>-2</posy>
+			<width>114</width>
+			<height>114</height>
 			<texture>common/thumb_border.png</texture>
+			<animation type="Focus" reversible="false">
+				<effect type="zoom" center="auto" start="80" end="120" time="400" tween="back" easing="out" />
+				<effect type="fade" start="80" end="100" time="400" />
+			</animation>
 		</control>
 	</include>
 	
@@ -126,36 +130,21 @@
 				<include>Object_PicturePanel</include>
 				<control type="image">
 					<include>Object_PictureIconVars</include>
-					<animation effect="fade" start="30" end="30" time="0" condition="true">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="200">UnFocus</animation>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				</control>				
 			</itemlayout>
 			<focusedlayout width="110" height="110">
 				<include>Object_PicturePanel</include>
 				<control type="image">
 					<include>Object_PictureIconVars</include>
-					<animation effect="fade" start="30" end="100" time="400">Focus</animation>					
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="auto" start="80" end="120" time="400" tween="back" easing="out" />
+						<effect type="fade" start="80" end="100" time="400" />
+					</animation>
 				</control>	
 			</focusedlayout>
 		</control>
 
-		<!--
-		<control type="image">
-			<posx>10</posx>
-			<posy>238</posy>
-			<width>280</width>
-			<height>229</height>
-			<fadetime>400</fadetime>
-			<aspectratio align="left" aligny="center">keep</aspectratio>
-			<texture background="true">$INFO[Container(55).ListItem.Icon]</texture>
-			<bordertexture border="8">common/thumb_border.png</bordertexture>
-			<bordersize>8</bordersize>
-			<include>Animation_ZoomInZoomOut</include>
-			<include>Animation_ZoomedByMenu</include>
-			<include>Animation_HiddenByMusicInfo</include>
-		</control>
-		-->
-		
 		<control type="image">
 			<posx>856</posx>
 			<posy>344</posy>

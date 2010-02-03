@@ -87,9 +87,9 @@
 	<color name="ListTitleF">FFc7c7c7</color>
 	<color name="FileTitleNF">FF907070</color>
 
-	<!-- Wall colours -->
+	<!-- Colour unfocused item-->
 
-	<color name="WallIconDiffuse">ccb10000</color>
+	<color name="UnfocusedItemDiffuse">ccb10000</color>
 
 	<!-- Fanart colours -->
 

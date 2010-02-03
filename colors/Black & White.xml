@@ -89,15 +89,9 @@
 	<color name="ListTitleF">FFFFFFFF</color>
 	<color name="FileTitleNF">FF575757</color>	
 
-	<!-- Poster colours -->
+	<!-- Colour unfocused item-->
 
-	<color name="WallIconDiffuse">FF4c4c4c</color>
-	<color name="WallArrowDiffuse">FFD3D3D3</color>
-	<color name="IconDiffuse">FF262626</color>
-	<color name="WatchedIconBackFO">FFD3D3D3</color>
-	<color name="WatchedIconBackNF">22D3D3D3</color>
-	<color name="WatchedIconDiffuseFO">FFFFFFFF</color>
-	<color name="WatchedIconDiffuseNF">22FFFFFF</color>
+	<color name="UnfocusedItemDiffuse">FF4c4c4c</color>
 
 	<!-- Fanart colours -->
 

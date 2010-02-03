@@ -449,7 +449,7 @@
 				<width>110</width>
 				<height>110</height>
 				<texture background="true" diffuse="square/squarematteNF.png">$INFO[ListItem.Icon]</texture>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -458,7 +458,7 @@
 				<width>114</width>
 				<height>114</height>
 				<texture>square/squareframeNF.png</texture>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 			</control>
 		</itemlayout>
 		<focusedlayout width="120" height="120">
@@ -545,7 +545,7 @@
 					<width>106</width>
 					<height>150</height>
 					<texture background="true" diffuse="postermatteNF.png">$INFO[ListItem.Icon]</texture>
-					<colordiffuse>WallIconDiffuse</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 				</control>
 				<control type="image">
@@ -554,7 +554,7 @@
 					<width>110</width>
 					<height>154</height>
 					<texture>poster/posterframeNF.png</texture>
-					<colordiffuse>WallIconDiffuse</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				</control>
 				<control type="image">
 					<posx>12</posx>
@@ -685,7 +685,7 @@
 				<width>170</width>
 				<height>110</height>
 				<texture background="true" diffuse="landscape/landscapematteNF.png">$INFO[ListItem.Icon]</texture>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">scale</aspectratio>
 			</control>
 			<control type="image">
@@ -694,7 +694,7 @@
 				<width>174</width>
 				<height>114</height>
 				<texture>landscape/landscapeframeNF.png</texture>
-				<colordiffuse>WallIconDiffuse</colordiffuse>
+				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 			</control>
 			<control type="image">
 				<posx>12</posx>

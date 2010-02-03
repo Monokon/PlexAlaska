@@ -990,6 +990,10 @@
 	<include name="runThemeScript2">
 		<onclick>RunScript(u:/skin/PlexAlaska/extras/PlexAlaska_SwitchTheme/default.py)</onclick>
 	</include>
+	
+	<include name="diffuseForUnfocusedItem">
+		<colordiffuse>UnfocusedItemDiffuse</colordiffuse>
+	</include>
 
 	<include name="submenu_dummybuttons">
 		<control type="button" id="351">

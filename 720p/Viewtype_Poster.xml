@@ -39,7 +39,7 @@
 					<height>241</height>
 					<texture background="true" diffuse="postermatteNF.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>!Container.Content(Genres)</visible>
@@ -51,7 +51,7 @@
 					<height>241</height>
 					<texture background="true" diffuse="postermatteNF.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>Container.Content(Genres)</visible>
@@ -71,7 +71,7 @@
 					<height>241</height>
 					<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>!Container.Content(Genres)</visible>
@@ -83,7 +83,7 @@
 					<height>241</height>
 					<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>Container.Content(Genres)</visible>
@@ -289,7 +289,7 @@
 					<height>241</height>
 					<texture background="true" diffuse="postermatteNF.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>!Container.Content(Genres)</visible>
@@ -301,7 +301,7 @@
 					<height>241</height>
 					<texture background="true" diffuse="postermatteNF.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>Container.Content(Genres)</visible>
@@ -321,7 +321,7 @@
 					<height>241</height>
 					<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>!Container.Content(Genres)</visible>
@@ -333,7 +333,7 @@
 					<height>241</height>
 					<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png" fallback="defaultmoviegenre.jpg">extras\moviegenres\$INFO[ListItem.Label].jpg</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 					<include>Animation_HiddenByInfo</include>
 					<visible>Container.Content(Genres)</visible>
@@ -687,7 +687,7 @@
 					<height>184</height>
 					<texture background="true" flipy="true" diffuse="postermatteNF_reflect.png">$INFO[ListItem.Icon]</texture>
 					<fadetime>200</fadetime>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 				</control>
 			</itemlayout>
