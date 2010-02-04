@@ -10,8 +10,9 @@
 		</control>
 
 		<control type="group">
+			<animation effect="slide" start="0,0" end="200,0" time="600" condition="Player.HasMedia">Conditional</animation>
 			<posx>450</posx>
-			<posy>580</posy>
+			<posy>600</posy>
 				<include>Animation_CommonFade</include>
 			<control type="image">
 				<width>20</width>
@@ -52,7 +53,6 @@
 					<onup>50</onup>
 					<ondown>7001</ondown>
 					<onclick>SetFocus(50)</onclick>
-					<!--<onclick>SetFocus(5)</onclick>-->
 				</control>
 			</control>
 		</control>
@@ -160,9 +160,33 @@
 				<textcolor>InfoPlot</textcolor>
 				<info>ListItem.CastAndRole</info>
 			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>284</posy>
+				<width>150</width>
+				<font>Font_InfoDetails</font>
+				<textcolor>InfoDetails</textcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>$LOCALIZE[21801]:</label>
+			</control>
+			<control type="fadelabel">
+				<posx>155</posx>
+				<posy>284</posy>
+				<width>480</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font_InfoDetails</font>
+				<textcolor>InfoPlot</textcolor>
+				<info>ListItem.FilenameAndPath</info>
+				<scroll>true</scroll>
+				<scrollspeed>40</scrollspeed>
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
+			</control>
 			<control type="textbox">
 				<visible>!Control.IsVisible(50)</visible>
-				<posy>281</posy>
+				<posy>311</posy>
 				<width>600</width>
 				<height>160</height>
 				<font>Font_InfoPlot</font>
@@ -172,10 +196,11 @@
 			</control>
 			<control type="panel" id="50">
 				<posx>170</posx>
-				<posy>281</posy>
+				<posy>311</posy>
 				<width>580</width>
 				<height>160</height>
 				<onleft>943</onleft>
+				<onright>943</onright>
 				<onup>50</onup>
 				<ondown>50</ondown>
 				<viewtype label="">list</viewtype>
@@ -213,7 +238,7 @@
 			<control type="image">
 				<description>Actor image</description>
 				<posx>0</posx>
-				<posy>281</posy>
+				<posy>311</posy>
 				<width>160</width>
 				<height>160</height>
 				<texture>$INFO[Container(50).Listitem.Icon]</texture>
