@@ -156,6 +156,7 @@
 	<string id="31976">Disable progressbar</string>
 	<string id="31977">Use alternative "Now Playing"-screen</string>
 	<string id="31980">Enable automatic theme change</string>
+	<string id="31984">Enable kiosk mode</string>
 	<string id="31985">Debug mode</string>
 	<string id="31986">Debug grid</string>
 	<string id="31990">Only used if option "Fanart for Movies" is disabled</string>

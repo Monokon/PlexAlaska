@@ -31,9 +31,9 @@
 					<onup>50</onup>
 					<ondown>50</ondown>
 					<itemgap>0</itemgap>
-					<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
+					<include condition="!Skin.HasSetting(LockViews)">allowmenu</include>
+					<include condition="Skin.HasSetting(LockViews)">nomenu</include>  
 					<include>Animation_ZoomInMenu</include>
-		
 					<posx>540</posx>
 					<posy>330</posy>
 					<control type="button" id="20">
@@ -53,9 +53,9 @@
 					<onup>50</onup>
 					<ondown>50</ondown>
 					<itemgap>0</itemgap>
-					<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
+					<include condition="!Skin.HasSetting(LockViews)">allowmenu</include>
+					<include condition="Skin.HasSetting(LockViews)">nomenu</include>  
 					<include>Animation_ZoomInMenu</include>
-		
 					<posx>540</posx>
 					<posy>300</posy>
 					<control type="button" id="40">

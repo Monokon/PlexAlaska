@@ -864,6 +864,17 @@
 				<onup>9005</onup>
 				<ondown>9005</ondown>
 				<include>Animation_CommonFadeNoHide</include>
+				<control type="radiobutton" id="502">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31984]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(LockViews)</onclick>
+					<selected>Skin.HasSetting(LockViews)</selected>
+				</control>
 				<control type="radiobutton" id="500">
 					<width>740</width>
 					<font>Font_Settings</font>

@@ -793,7 +793,7 @@
 		<onup>50</onup>
 		<ondown>50</ondown>
 		<itemgap>0</itemgap>
-		<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
+		<!--<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>-->
 		<include>Animation_ZoomInMenu</include>
 		<orientation>horizontal</orientation>
 	</include>
@@ -995,6 +995,16 @@
 		<colordiffuse>UnfocusedItemDiffuse</colordiffuse>
 	</include>
 
+	<include name="nomenu">
+		<visible>!Skin.HasSetting(LockViews)</visible>
+	</include>
+	<include name="allowmenu">
+		<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
+	</include>  
+	<include name="allowmenu2">
+		<visible allowhiddenfocus="true">ControlGroup(7001).HasFocus</visible>
+	</include>  
+    
 	<include name="submenu_dummybuttons">
 		<control type="button" id="351">
 			<onfocus>SetFocus(944)</onfocus>

@@ -51,7 +51,8 @@
 					<label>206</label>
 					<onup>50</onup>
 					<ondown>7001</ondown>
-					<onclick>SetFocus(5)</onclick>
+					<onclick>SetFocus(50)</onclick>
+					<!--<onclick>SetFocus(5)</onclick>-->
 				</control>
 			</control>
 		</control>
@@ -198,7 +199,7 @@
 					<control type="label">
 						<posx>0</posx>
 						<posy>3</posy>
-						<width>580</width>
+						<width>480</width>
 						<height>20</height>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -231,7 +232,8 @@
 			<onleft>7001</onleft>
 			<onright>7001</onright>
 			<itemgap>0</itemgap>
-			<visible allowhiddenfocus="true">ControlGroup(7001).HasFocus</visible>
+			<include condition="!Skin.HasSetting(LockViews)">allowmenu2</include>
+			<include condition="Skin.HasSetting(LockViews)">nomenu</include>  
 			<include>Animation_ZoomInMenu</include>
 			<orientation>horizontal</orientation>
 			<posy>330</posy>
@@ -294,7 +296,8 @@
 			<onup>943</onup>
 			<ondown>943</ondown>
 			<itemgap>0</itemgap>
-			<visible allowhiddenfocus="true">ControlGroup(7001).HasFocus</visible>
+			<include condition="!Skin.HasSetting(LockViews)">allowmenu2</include>
+			<include condition="Skin.HasSetting(LockViews)">nomenu</include>  
 			<include>Animation_ZoomInMenu</include>
 			<orientation>horizontal</orientation>
 			<posy>300</posy>

@@ -459,6 +459,7 @@
 		<control type="grouplist" id="7000">
 			<posx>200</posx>
 			<include>WindowMenuVars</include>
+			<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
 			<posy>330</posy>
 			<!-- refresh -->
 			<control type="button" id="2">
@@ -506,6 +507,7 @@
 		<control type="grouplist">
 			<posx>200</posx>
 			<include>WindowMenuVars</include>
+			<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
 			<posy>300</posy>
 			<control type="button" id="7041">
 				<posx>0</posx>

@@ -58,6 +58,8 @@
 		</control>
 
 		<control type="grouplist" id="7000">
+			<include condition="!Skin.HasSetting(LockViews)">allowmenu</include>
+			<include condition="Skin.HasSetting(LockViews)">nomenu</include>  
 			<include>WindowMenuVars</include>
 			<posy>330</posy>			
 			<control type="button" id="20">
@@ -116,6 +118,8 @@
 		</control>
 
 		<control type="grouplist">
+			<include condition="!Skin.HasSetting(LockViews)">allowmenu</include>
+			<include condition="Skin.HasSetting(LockViews)">nomenu</include>  
 			<include>WindowMenuVars</include>
 			<posy>300</posy>
 			<control type="button" id="40">
