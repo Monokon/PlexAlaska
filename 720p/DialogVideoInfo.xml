@@ -1,23 +1,61 @@
 <!--Alaska-->
 
 <window type="dialog" id="2003">
-	<defaultcontrol>7050</defaultcontrol>
+	<defaultcontrol>943</defaultcontrol>
 	<controls>
 		<control type="label">
 			<include>WindowID</include>
 			<label>DialogVideoInfo.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
-		<!-- invisible button to trigger view options -->
-		<control type="button" id="7050">
-			<texturefocus/>
-			<texturenofocus/>
-			<onleft>50</onleft>
-			<onright>50</onright>
-			<onup>7001</onup>
-			<ondown>7001</ondown>
-			<onclick/>
+
+		<control type="group">
+			<posx>450</posx>
+			<posy>580</posy>
+				<include>Animation_CommonFade</include>
+			<control type="image">
+				<width>20</width>
+				<height>60</height>
+				<posx>40</posx>
+				<texture>mainmenu/submenu_left.png</texture>
+			</control>
+			<control type="image">
+				<width>260</width>
+				<height>60</height>
+				<posx>60</posx>
+				<texture>mainmenu/submenu_mid.png</texture>
+			</control>
+			<control type="image">
+				<width>20</width>
+				<height>60</height>
+				<posx>320</posx>
+				<texture>mainmenu/submenu_right.png</texture>
+			</control>
+
+			<control type="grouplist" id="943">
+				<posx>62</posx>
+				<posy>13</posy>
+				<width>660</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<onup>50</onup>
+				<ondown>7001</ondown>
+				<orientation>horizontal</orientation>
+				<control type="button" id="11">
+					<include>submenubutton</include>
+					<label>20410</label>
+					<enable>!IsEmpty(ListItem.Trailer)</enable>
+				</control>
+				<control type="button" id="5">
+					<include>submenubutton</include>
+					<label>206</label>
+					<onup>50</onup>
+					<ondown>7001</ondown>
+					<onclick>SetFocus(5)</onclick>
+				</control>
+			</control>
 		</control>
+
 		<control type="group">
 			<posx>583</posx>
 			<posy>115</posy>
@@ -125,7 +163,7 @@
 				<visible>!Control.IsVisible(50)</visible>
 				<posy>281</posy>
 				<width>600</width>
-				<height>218</height>
+				<height>160</height>
 				<font>Font_InfoPlot</font>
 				<textcolor>InfoPlot</textcolor>
 				<info>ListItem.Plot</info>
@@ -136,8 +174,7 @@
 				<posy>281</posy>
 				<width>580</width>
 				<height>160</height>
-				<onleft>7001</onleft>
-				<onright>7001</onright>
+				<onleft>943</onleft>
 				<onup>50</onup>
 				<ondown>50</ondown>
 				<viewtype label="">list</viewtype>
@@ -168,6 +205,7 @@
 						<font>Font_ListDetail</font>
 						<textcolor>MenuValueFO</textcolor>
 						<info>ListItem.Label</info>
+						<scroll>true</scroll>
 					</control>
 				</focusedlayout>
 			</control>
@@ -185,32 +223,30 @@
 		<!-- view options -->
 		<include>Global_ContextFilter</include>
 		<control type="grouplist" id="7001">
-			<width>1000</width>
+			<width>1200</width>
 			<height>40</height>
 			<posx>140</posx>
-			<onup>7050</onup>
-			<ondown>7050</ondown>
+			<onup>943</onup>
+			<ondown>943</ondown>
+			<onleft>7001</onleft>
+			<onright>7001</onright>
 			<itemgap>0</itemgap>
 			<visible allowhiddenfocus="true">ControlGroup(7001).HasFocus</visible>
 			<include>Animation_ZoomInMenu</include>
 			<orientation>horizontal</orientation>
 			<posy>330</posy>
-			<!-- Cast/Review -->
-			<control type="button" id="5">
-				<description>Cast/Review</description>
-				<label>206</label>
-				<include>WindowMenuButton</include>
-				<onclick>SetFocus(50)</onclick>
-				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(5)">
-					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />
-				</animation>
-			</control>
 			<!-- refresh -->
 			<control type="button" id="6">
 				<description>Refresh</description>
 				<label>184</label>
-				<include>WindowMenuButton</include>
+				<posx>0</posx>
+				<posy>30</posy>
+				<width>350</width>
+				<height>80</height>
+				<align>center</align>
+				<aligny>top</aligny>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(6)">
 					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
@@ -220,7 +256,14 @@
 			<control type="button" id="12">
 				<description>Get Fanart</description>
 				<label>$LOCALIZE[31521]</label>
-				<include>WindowMenuButton</include>
+				<posx>0</posx>
+				<posy>30</posy>
+				<width>350</width>
+				<height>80</height>
+				<align>center</align>
+				<aligny>top</aligny>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(12)">
 					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
@@ -230,47 +273,41 @@
 			<control type="button" id="10">
 				<description>Thumb</description>
 				<label>$LOCALIZE[31520]</label>
-				<include>WindowMenuButton</include>
+				<posx>0</posx>
+				<posy>30</posy>
+				<width>350</width>
+				<height>80</height>
+				<align>center</align>
+				<aligny>top</aligny>
+				<font>Font_MenuValue</font>
+				<textcolor>MenuValue</textcolor>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(10)">
-					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />
-				</animation>
-			</control>
-			<!-- Play Trailer -->
-			<control type="button" id="11">
-				<description>Play Trailer</description>
-				<label>20410</label>
-				<include>WindowMenuButton</include>
-				<enable>!IsEmpty(ListItem.Trailer)</enable>
-				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(11)">
 					<effect type="zoom" center="100,0" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
 			</control>
 		</control>
 		<control type="grouplist">
-			<width>1000</width>
+			<width>1200</width>
 			<height>40</height>
 			<posx>140</posx>
-			<onup>7050</onup>
-			<ondown>7050</ondown>
+			<onup>943</onup>
+			<ondown>943</ondown>
 			<itemgap>0</itemgap>
 			<visible allowhiddenfocus="true">ControlGroup(7001).HasFocus</visible>
 			<include>Animation_ZoomInMenu</include>
 			<orientation>horizontal</orientation>
 			<posy>300</posy>
-			<!-- Cast/Review -->
-			<control type="button" id="7040">
-				<include>WindowMenuLabel</include>
-				<label>$LOCALIZE[31517]</label>
-				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(5)">
-					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />
-				</animation>
-			</control>
 			<!-- refresh -->
 			<control type="button" id="7041">
-				<include>WindowMenuLabel</include>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>350</width>
+				<height>30</height>
+				<align>center</align>
+				<font>Font_MenuLabel</font>
+				<textcolor>MenuValue</textcolor>
+				<aligny>bottom</aligny>
 				<label>$LOCALIZE[31518]</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(6)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
@@ -279,7 +316,14 @@
 			</control>
 			<!-- Fanart -->
 			<control type="button" id="7042">
-				<include>WindowMenuLabel</include>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>350</width>
+				<height>30</height>
+				<align>center</align>
+				<font>Font_MenuLabel</font>
+				<textcolor>MenuValue</textcolor>
+				<aligny>bottom</aligny>
 				<label>$LOCALIZE[31519]</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(12)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
@@ -288,18 +332,16 @@
 			</control>
 			<!-- Thumb -->
 			<control type="button" id="7043">
-				<include>WindowMenuLabel</include>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>350</width>
+				<height>30</height>
+				<align>center</align>
+				<font>Font_MenuLabel</font>
+				<textcolor>MenuValue</textcolor>
+				<aligny>bottom</aligny>
 				<label>$LOCALIZE[31519]</label>
 				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(10)">
-					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
-					<effect type="fade" start="100" end="50" time="200" />
-				</animation>
-			</control>
-			<!-- Play Trailer -->
-			<control type="button" id="7044">
-				<include>WindowMenuLabel</include>
-				<label>208</label>
-				<animation type="conditional" condition="!ControlGroup(7001).HasFocus(11)">
 					<effect type="zoom" center="100,30" start="100" end="70" time="200" tween="cubic" easing="in" />
 					<effect type="fade" start="100" end="50" time="200" />
 				</animation>
