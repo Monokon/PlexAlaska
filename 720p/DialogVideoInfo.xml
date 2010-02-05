@@ -10,8 +10,7 @@
 		</control>
 
 		<control type="group">
-			<animation effect="slide" start="0,0" end="200,0" time="600" condition="Player.HasMedia">Conditional</animation>
-			<posx>450</posx>
+			<posx>700</posx>
 			<posy>600</posy>
 				<include>Animation_CommonFade</include>
 			<control type="image">
