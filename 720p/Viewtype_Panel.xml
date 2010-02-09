@@ -47,6 +47,36 @@
 			<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Window.IsActive(2) | Window.IsActive(24)] + !Skin.HasSetting(noviewpanelwide)</visible>
 			<include>WidePanel</include>
 		</control>
+
+		<!-- WATCHED/UNWATCHED INFO -->
+		<control type="group">
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
+			<include>Animation_HiddenByMusicInfo</include>
+			<include>Animation_HiddenByInfo</include>
+			<control type="label">
+				<posx>452</posx>
+				<posy>145</posy>
+				<width>410</width>
+				<align>right</align>
+				<font>Font_MenuLabel</font>
+				<textcolor>PosterTitle</textcolor>
+				<label>[B]$INFO[ListItem.Property(WatchedEpisodes)] $LOCALIZE[20163] $INFO[ListItem.Episode] $LOCALIZE[16102][/B]</label>
+				<visible>Container.Content(tvshows)</visible>
+			</control>
+			<control type="label">
+				<posx>40</posx>
+				<posy>145</posy>
+				<width>410</width>
+				<align>left</align>
+				<font>Font_MenuLabel</font>
+				<textcolor>PosterTitle</textcolor>
+				<label>[B]$INFO[ListItem.Property(WatchedEpisodes)] $LOCALIZE[20163] $INFO[ListItem.Episode] $LOCALIZE[16102][/B]</label>
+				<visible>Container.Content(seasons)</visible>
+			</control>
+			<visible>Control.IsVisible(556) | Control.IsVisible(559)</visible>
+		</control>
+		
 		<!-- Info Panel -->
 		<control type="group">
 			<animation effect="slide" start="0,0" end="0,5" time="200" condition="!system.getbool(lookandfeel.enablerssfeeds) | Skin.HasSetting(RSS_only_on_home) + !Window.IsActive(home) + !Window.IsVisible(2006)">Conditional</animation>
