@@ -1164,7 +1164,7 @@
 
 	<include name="submenu_movies">
 		<control type="group">
-			<posx>335</posx>
+			<posx>270</posx>
 			<posy>520</posy>
 			<visible>ControlGroup(941).HasFocus() + Container(300).HasFocus(4)</visible>
 			<include condition="Skin.HasSetting(home2)">Animation_Submenu_home2</include>
@@ -1176,21 +1176,21 @@
 			</control>
 			<control type="image">
 				<posx>40</posx>
-				<width>540</width>
+				<width>670</width>
 				<height>60</height>
 				<texture>mainmenu/submenu_mid.png</texture>
 			</control>
 			<control type="image">
 				<width>20</width>
 				<height>60</height>
-				<posx>580</posx>
+				<posx>710</posx>
 				<texture>mainmenu/submenu_right.png</texture>
 			</control>
 
 			<control type="grouplist" id="941">
 				<posx>50</posx>
 				<posy>13</posy>
-				<width>600</width>
+				<width>730</width>
 				<height>33</height>
 				<itemgap>0</itemgap>
 				<onup>300</onup>
@@ -1211,6 +1211,11 @@
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieactors,return)</onclick>
 				</control>
 				<control type="button" id="44">
+					<include>submenubutton</include>
+					<label>$LOCALIZE[20339]</label>
+					<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviedirectors,return)</onclick>
+				</control>
+				<control type="button" id="45">
 					<include>submenubutton</include>
 					<label>$LOCALIZE[31001]</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieyears,return)</onclick>
@@ -1325,7 +1330,7 @@
 		<aligny>center</aligny>
 		<font>Small</font>
 		<textcolor>Black</textcolor>
-		<focusedcolor>Black</focusedcolor>
+		<focusedcolor>MenuValueFO</focusedcolor>
 		<onclick>SetFocus(300)</onclick>
 		<animation type="Focus">
 			<effect delay="0" type="zoom" time="300" center="65,18" start="100" end="130" tween="back" easing="out" />

@@ -958,15 +958,15 @@
 			<visible>Container(300).HasFocus(4) + !Skin.HasSetting(hidemovieactors)</visible>
 		</control>
 		<control type="button" id="3999">
+			<onfocus>SetFocus(3407)</onfocus>
+			<visible>Container(300).HasFocus(4) + !Skin.HasSetting(hidemoviedirectors)</visible>
+		</control>
+		<control type="button" id="3999">
 			<onfocus>SetFocus(3405)</onfocus>
 			<visible>Container(300).HasFocus(4) + !Skin.HasSetting(hidemovieyears)</visible>
 		</control>
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3406)</onfocus>
-			<visible>Container(300).HasFocus(4) + !Skin.HasSetting(hidemoviefiles)</visible>
-		</control>
-		<control type="button" id="3999">
-			<onfocus>SetFocus(3407)</onfocus>
 			<visible>Container(300).HasFocus(4) + !Skin.HasSetting(hidemoviesettings)</visible>
 		</control>
 		<!-- TV Shows -->
@@ -1284,6 +1284,12 @@
 				<onclick>ActivateWindow(VideoLibrary,movieactors,return)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemovieactors)</visible>
+			</control>
+			<control type="button" id="3407">
+				<label>$LOCALIZE[20339]</label>
+				<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviedirectors,return)</onclick>
+				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">!Skin.HasSetting(hidemoviedirectors)</visible>
 			</control>
 			<control type="button" id="3405">
 				<label>$LOCALIZE[31001]</label>
