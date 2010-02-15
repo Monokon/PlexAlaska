@@ -21,9 +21,9 @@
 
 		<control type="group" id="401">
 			<posx>200</posx>
-			<posy>616</posy>
+			<posy>637</posy>
 			<animation effect="slide" end="126,0" condition="Player.HasVideo">Conditional</animation>
-			<animation effect="slide" start="0,0" end="0,30" time="600" condition="[!system.getbool(lookandfeel.enablerssfeeds) | Skin.HasSetting(RSS_only_on_home) + !Window.IsActive(home)] + !Window.IsVisible(2006)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,20" time="600" condition="[!system.getbool(lookandfeel.enablerssfeeds) | Skin.HasSetting(RSS_only_on_home) + !Window.IsActive(home)] + !Window.IsVisible(2006)">Conditional</animation>
 			<visible allowhiddenfocus="true">Controlgroup(401).HasFocus + !Window.IsVisible(125)</visible>
 			<include>Animation_CommonFade</include>
 			<control type="button" id="402">
