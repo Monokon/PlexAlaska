@@ -1352,11 +1352,11 @@
 			<control type="image">
 				<description>Panel</description>
 				<posx>1050</posx>
-				<posy>-220</posy>
-				<width>240</width>
-				<height>385</height>
+				<posy>-20</posy>
+				<width>230</width>
+				<height>105</height>
 				<colordiffuse>50000000</colordiffuse>
-				<texture border="0,0,0,80">timematte.png</texture>
+				<texture background="true" diffuse="timematte.png">common/black.png</texture>
 			</control>
 			<control type="label">
 				<posx>1250</posx>
@@ -1377,24 +1377,45 @@
 				<info>System.Date</info>
 				<align>right</align>
 			</control>
-			<control type="label">
-				<posx>1250</posx>
-				<posy>90</posy>
-				<width>300</width>
-				<font>Font_Date</font>
-				<textcolor>80ffffff</textcolor>
-				<label>$LOCALIZE[31524]:</label>
-				<align>right</align>
+		</control>
+		
+		<control type="group">
+			<visible>Skin.HasSetting(OSD_Time)</visible>
+			<animation type="WindowOpen">
+				<effect type="slide" start="0,-100" end="0,0" time="600" tween="cubic" easing="out" />
+				<effect type="fade" start="0" end="100" time="600" />
+			</animation>
+			<animation type="WindowClose">
+				<effect type="slide" start="0,0" end="0,-100" time="600" tween="cubic" easing="out" />
+				<effect type="fade" start="100" end="0" time="600" />
+			</animation>
+			<control type="image">
+				<description>Panel</description>
+				<posx>0</posx>
+				<posy>-20</posy>
+				<width>230</width>
+				<height>105</height>
+				<colordiffuse>50000000</colordiffuse>
+				<texture background="true" flipx="true" diffuse="timematte.png">common/black.png</texture>
 			</control>
 			<control type="label">
-				<posx>1250</posx>
-				<posy>115</posy>
+				<posx>30</posx>
+				<posy>10</posy>
 				<width>300</width>
 				<height>50</height>
 				<font>Font_Time</font>
 				<textcolor>FFFFFFFF</textcolor>
 				<info>Player.FinishTime</info>
-				<align>right</align>
+				<align>left</align>
+			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>50</posy>
+				<width>300</width>
+				<font>Font_Date</font>
+				<textcolor>80ffffff</textcolor>
+				<label>$LOCALIZE[31524]</label>
+				<align>left</align>
 			</control>
 		</control>
 	</include>

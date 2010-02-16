@@ -200,18 +200,18 @@
 				<info>Player.Progress</info>
 				<posx>120</posx>
 				<posy>116</posy>
-				<width>1035</width>
+				<width>945</width>
 				<height>19</height>
 			</control>
 			<control type="label">
-				<posx>1166</posx>
+				<posx>1076</posx>
 				<posy>97</posy>
 				<width>300</width>
 				<height>50</height>
 				<font>Font_OSDTime</font>
 				<aligny>center</aligny>
 				<textcolor>NowPlayingArtist</textcolor>
-				<label>$INFO[VideoPlayer.Duration]</label>
+				<label>$INFO[VideoPlayer.Duration] ($INFO[VideoPlayer.TimeRemaining])</label>
 			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(125)</visible>
