@@ -120,7 +120,7 @@
 					<aligny>center</aligny>
 					<font>Font_ListDetailNF</font>
 					<textcolor>FileTitleNF</textcolor>
-					<label>$INFO[ListItem.Duration]aaa</label>
+					<label>$INFO[ListItem.Duration]</label>
 					<visible>!IsEmpty(ListItem.Title) + Window.IsActive(25)</visible>
 				</control>
 				<control type="label">
