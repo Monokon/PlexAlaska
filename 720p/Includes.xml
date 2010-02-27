@@ -1416,6 +1416,17 @@
 				<textcolor>80ffffff</textcolor>
 				<label>$LOCALIZE[31524]</label>
 				<align>left</align>
+				<visible>!VideoPlayer.Content(episodes)</visible>
+			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>50</posy>
+				<width>300</width>
+				<font>Font_Date</font>
+				<textcolor>80ffffff</textcolor>
+				<label>$LOCALIZE[31525]</label>
+				<align>left</align>
+				<visible>VideoPlayer.Content(episodes)</visible>
 			</control>
 		</control>
 	</include>
