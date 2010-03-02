@@ -170,6 +170,19 @@
 					<onclick>Skin.ToggleSetting(OSD_Time)</onclick>
 					<selected>Skin.HasSetting(OSD_Time)</selected>
 				</control>
+				<control type="radiobutton" id="107">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31927]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textoffsetx>25</textoffsetx>
+					<onclick>Skin.ToggleSetting(OSD_Time_switch_position)</onclick>
+					<selected>Skin.HasSetting(OSD_Time_switch_position)</selected>
+					<visible>Skin.HasSetting(OSD_Time)</visible>
+				</control>
 			</control>
 			<control type="grouplist" id="9002">
 				<visible>Container(9000).Hasfocus(2)</visible>

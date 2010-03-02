@@ -101,7 +101,8 @@
 	<string id="31923">Globale temperatuur</string>
 	<string id="31924">Grotere RSS</string>
 	<string id="31925">Geef alleen RSS op het home screen weer</string>
-	<string id="31926">Geef huidige tijd weer in video OSD</string>
+	<string id="31926">Display more detailed time information in video OSD</string>
+	<string id="31927">Switch positions of current time and end time</string>
 	<string id="31930">Home 1</string>
 	<string id="31931">Home 2</string>
 	<string id="31932">Home 3</string>

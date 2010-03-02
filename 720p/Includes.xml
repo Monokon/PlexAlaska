@@ -1342,11 +1342,11 @@
 		<control type="group">
 			<visible>Skin.HasSetting(OSD_Time)</visible>
 			<animation type="WindowOpen">
-				<effect type="slide" start="0,-200" end="0,0" time="600" tween="cubic" easing="out" />
+				<effect type="slide" start="0,-100" end="0,0" time="600" tween="cubic" easing="out" />
 				<effect type="fade" start="0" end="100" time="600" />
 			</animation>
 			<animation type="WindowClose">
-				<effect type="slide" start="0,0" end="0,-200" time="600" tween="cubic" easing="out" />
+				<effect type="slide" start="0,0" end="0,-100" time="600" tween="cubic" easing="out" />
 				<effect type="fade" start="100" end="0" time="600" />
 			</animation>
 			<control type="image">
@@ -1366,6 +1366,18 @@
 				<font>Font_Time</font>
 				<textcolor>FFFFFFFF</textcolor>
 				<info>System.Time</info>
+				<visible>!Skin.HasSetting(OSD_Time_switch_position)</visible>
+				<align>left</align>
+			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>10</posy>
+				<width>300</width>
+				<height>50</height>
+				<font>Font_Time</font>
+				<textcolor>FFFFFFFF</textcolor>
+				<info>Player.FinishTime</info>
+				<visible>Skin.HasSetting(OSD_Time_switch_position)</visible>
 				<align>left</align>
 			</control>
 			<control type="label">
@@ -1375,6 +1387,27 @@
 				<font>Font_Date</font>
 				<textcolor>80ffffff</textcolor>
 				<info>System.Date</info>
+				<visible>!Skin.HasSetting(OSD_Time_switch_position)</visible>
+				<align>left</align>
+			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>50</posy>
+				<width>300</width>
+				<font>Font_Date</font>
+				<textcolor>80ffffff</textcolor>
+				<label>$LOCALIZE[31524]</label>
+				<visible>Skin.HasSetting(OSD_Time_switch_position) + !VideoPlayer.Content(episodes)</visible>
+				<align>left</align>
+			</control>
+			<control type="label">
+				<posx>30</posx>
+				<posy>50</posy>
+				<width>300</width>
+				<font>Font_Date</font>
+				<textcolor>80ffffff</textcolor>
+				<label>$LOCALIZE[31525]</label>
+				<visible>Skin.HasSetting(OSD_Time_switch_position) + VideoPlayer.Content(episodes)</visible>
 				<align>left</align>
 			</control>
 		</control>
@@ -1405,7 +1438,29 @@
 				<height>50</height>
 				<font>Font_Time</font>
 				<textcolor>FFFFFFFF</textcolor>
-				<info>Player.FinishTime</info>
+				<info>System.Time</info>
+				<visible>Skin.HasSetting(OSD_Time_switch_position)</visible>
+				<align>right</align>
+			</control>
+			<control type="label">
+				<posx>1250</posx>
+				<posy>10</posy>
+				<width>300</width>
+				<height>50</height>
+				<font>Font_Time</font>
+				<textcolor>FFFFFFFF</textcolor>
+				<info>System.Time</info>
+				<visible>!Skin.HasSetting(OSD_Time_switch_position)</visible>
+				<align>right</align>
+			</control>
+			<control type="label">
+				<posx>1250</posx>
+				<posy>50</posy>
+				<width>300</width>
+				<font>Font_Date</font>
+				<textcolor>80ffffff</textcolor>
+				<info>System.Date</info>
+				<visible>Skin.HasSetting(OSD_Time_switch_position)</visible>
 				<align>right</align>
 			</control>
 			<control type="label">
@@ -1415,8 +1470,8 @@
 				<font>Font_Date</font>
 				<textcolor>80ffffff</textcolor>
 				<label>$LOCALIZE[31524]</label>
+				<visible>!Skin.HasSetting(OSD_Time_switch_position) + !VideoPlayer.Content(episodes)</visible>
 				<align>right</align>
-				<visible>!VideoPlayer.Content(episodes)</visible>
 			</control>
 			<control type="label">
 				<posx>1250</posx>
@@ -1425,8 +1480,8 @@
 				<font>Font_Date</font>
 				<textcolor>80ffffff</textcolor>
 				<label>$LOCALIZE[31525]</label>
+				<visible>!Skin.HasSetting(OSD_Time_switch_position) + VideoPlayer.Content(episodes)</visible>
 				<align>right</align>
-				<visible>VideoPlayer.Content(episodes)</visible>
 			</control>
 		</control>
 
@@ -1469,7 +1524,23 @@
 				<align>center</align>
 			</control>
 		</control>
+	</include>
 
+	<include name="OSD_current_time1">
+		<info>System.Time</info>
+	</include>
+	<include name="OSD_current_time2">
+		<info>System.Date</info>
+	</include>
+
+	<include name="OSD_end_time1">
+		<info>Player.FinishTime</info>
+	</include>
+	<include name="OSD_end_time2">
+		<label>$LOCALIZE[31524]</label>
+	</include>
+	<include name="OSD_end_time3">
+		<label>$LOCALIZE[31525]</label>
 	</include>
 
 	<include name="settings_helpbackground">

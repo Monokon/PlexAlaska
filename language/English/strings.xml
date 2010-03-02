@@ -101,7 +101,8 @@
 	<string id="31923">Global Temperature</string>
 	<string id="31924">Larger RSS</string>
 	<string id="31925">Only show RSS on home screen</string>
-	<string id="31926">Show current time in video OSD</string>
+	<string id="31926">Display more detailed time information in video OSD</string>
+	<string id="31927">Switch positions of current time and end time</string>
 	<string id="31930">Home 1</string>
 	<string id="31931">Home 2</string>
 	<string id="31932">Home 3</string>

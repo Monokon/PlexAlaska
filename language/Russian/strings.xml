@@ -106,7 +106,8 @@
 	<string id="31923">Отображать температуру рядом с часами</string>
 	<string id="31924">Большой шрифт RSS</string>
 	<string id="31925">Показывать RSS только в главном меню</string>
-	<string id="31926">Отображать текущее время на экране OSD</string>
+	<string id="31926">Display more detailed time information in video OSD</string>
+	<string id="31927">Switch positions of current time and end time</string>
 	<string id="31930">Главное меню 1</string>
 	<string id="31931">Главное меню 2</string>
 	<string id="31932">Главное меню 3</string>
