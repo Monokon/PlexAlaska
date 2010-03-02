@@ -79,6 +79,7 @@
 	<!-- video OSD -->
 	<string id="31524">END TIME</string> <!-- movies -->
 	<string id="31525">END TIME</string> <!-- TV shows -->
+	<string id="31526">TIME REMAINING</string>
 
 
 	<!-- Settings -->
