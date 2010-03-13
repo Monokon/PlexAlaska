@@ -259,7 +259,7 @@
 					<textcolor>ListTitleF</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 					<scroll>true</scroll>
-					<visible>[!Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(episodes) + !Container.Content(files) + !Window.IsActive(1)] + !IsEmpty(ListItem.Plot)</visible>
+					<visible>Window.IsActive(25) + !Container.Content(episodes) + !IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<control type="label">
 					<posx>30</posx>
