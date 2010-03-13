@@ -949,7 +949,7 @@
 				<posx>380</posx>
 				<posy>10</posy>
 				<font>Font_RSS_Big</font>
-				<textcolor>Black</textcolor>
+				<textcolor>MainMenuLabel</textcolor>
 				<scroll>true</scroll>
 				<scrollspeed>40</scrollspeed>
 				<scrollout>false</scrollout>
@@ -967,7 +967,7 @@
 				<posx>380</posx>
 				<posy>10</posy>
 				<font>Font_RSS_Big</font>
-				<textcolor>Black</textcolor>
+				<textcolor>MainMenuLabel</textcolor>
 				<scroll>true</scroll>
 				<scrollspeed>40</scrollspeed>
 				<scrollout>false</scrollout>
@@ -985,7 +985,7 @@
 				<posx>380</posx>
 				<posy>10</posy>
 				<font>Font_RSS_Big</font>
-				<textcolor>Black</textcolor>
+				<textcolor>MainMenuLabel</textcolor>
 				<scroll>true</scroll>
 				<scrollspeed>40</scrollspeed>
 				<scrollout>false</scrollout>

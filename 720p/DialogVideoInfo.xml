@@ -18,18 +18,21 @@
 				<height>60</height>
 				<posx>40</posx>
 				<texture>mainmenu/submenu_left.png</texture>
+				<colordiffuse>HomeFrameColor</colordiffuse>
 			</control>
 			<control type="image">
 				<width>260</width>
 				<height>60</height>
 				<posx>60</posx>
 				<texture>mainmenu/submenu_mid.png</texture>
+				<colordiffuse>HomeFrameColor</colordiffuse>
 			</control>
 			<control type="image">
 				<width>20</width>
 				<height>60</height>
 				<posx>320</posx>
 				<texture>mainmenu/submenu_right.png</texture>
+				<colordiffuse>HomeFrameColor</colordiffuse>
 			</control>
 
 			<control type="grouplist" id="943">
