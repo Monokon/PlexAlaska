@@ -21,8 +21,8 @@
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByMusicInfo</include>
 			<include>Animation_HiddenByInfo</include>
-			<visible>[Container.Content(albums) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Window.IsActive(1)] + !Skin.HasSetting(noviewpanel)</visible>
-			<include condition="Window.IsActive(502) | Window.IsActive(1)">SquarePanel</include>
+			<visible>[Container.Content(albums) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Window.IsActive(1) | Window.IsActive(501) | Window.IsActive(502)] + !Skin.HasSetting(noviewpanel)</visible>
+			<include condition="Window.IsActive(501) | Window.IsActive(502) | Window.IsActive(1)">SquarePanel</include>
 			<include condition="Window.IsActive(25)">TallPanel</include>
 		</control>
 		<control type="panel" id="559">

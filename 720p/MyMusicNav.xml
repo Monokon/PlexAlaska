@@ -3,6 +3,7 @@
 <window id="502">
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+ 	<views>556,559,50,55,555,58,558,49,51,52,53,54,56,57,59</views>
 	<controls>
 		<include>Global_Background</include>
 
@@ -17,9 +18,8 @@
 		<include>Global_Filter</include>
 
 		<include>Viewtype_MusicWall</include>
-		<include>Viewtype_List</include>
 		<include>Viewtype_Files</include>
-		<include>Viewtype_MusicPoster</include>
+		<include>Viewtype_Panel</include>
 		<!--54-->
 
 		<include>Global_ContextFilter</include>
