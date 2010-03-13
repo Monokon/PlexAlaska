@@ -1357,6 +1357,7 @@
 				<height>105</height>
 				<colordiffuse>50000000</colordiffuse>
 				<texture background="true" flipx="true" diffuse="timematte.png">common/black.png</texture>
+				<visible>!Skin.HasSetting(OSD_Time_switch_position) | !IsEmpty(VideoPlayer.TimeRemaining)</visible>
 			</control>
 			<control type="label">
 				<posx>30</posx>
@@ -1377,7 +1378,7 @@
 				<font>Font_Time</font>
 				<textcolor>FFFFFFFF</textcolor>
 				<info>VideoPlayer.TimeRemaining</info>
-				<visible>Skin.HasSetting(OSD_Time_switch_position)</visible>
+				<visible>Skin.HasSetting(OSD_Time_switch_position) + !IsEmpty(VideoPlayer.TimeRemaining)</visible>
 				<align>left</align>
 			</control>
 			<control type="label">
@@ -1397,7 +1398,7 @@
 				<font>Font_Date</font>
 				<textcolor>80ffffff</textcolor>
 				<label>$LOCALIZE[31526]</label>
-				<visible>Skin.HasSetting(OSD_Time_switch_position)</visible>
+				<visible>Skin.HasSetting(OSD_Time_switch_position) + !IsEmpty(VideoPlayer.TimeRemaining)</visible>
 				<align>left</align>
 			</control>
 		</control>
@@ -1492,6 +1493,7 @@
 				<width>270</width>
 				<height>105</height>
 				<colordiffuse>50000000</colordiffuse>
+				<visible>Skin.HasSetting(OSD_Time_switch_position) | !IsEmpty(VideoPlayer.TimeRemaining)</visible>
 				<texture diffuse="timematte2.png">common/black.png</texture>
 			</control>
 			<control type="label">
@@ -1514,7 +1516,7 @@
 				<textcolor>FFFFFFFF</textcolor>
 				<info>VideoPlayer.TimeRemaining</info>
 				<align>center</align>
-				<visible>!Skin.HasSetting(OSD_Time_switch_position)</visible>
+				<visible>!Skin.HasSetting(OSD_Time_switch_position) + !IsEmpty(VideoPlayer.TimeRemaining)</visible>
 			</control>
 			<control type="label">
 				<posx>515</posx>
@@ -1543,7 +1545,7 @@
 				<font>Font_Date</font>
 				<textcolor>80ffffff</textcolor>
 				<label>$LOCALIZE[31526]</label>
-				<visible>!Skin.HasSetting(OSD_Time_switch_position)</visible>
+				<visible>!Skin.HasSetting(OSD_Time_switch_position) + !IsEmpty(VideoPlayer.TimeRemaining)</visible>
 				<align>center</align>
 			</control>
 		</control>
