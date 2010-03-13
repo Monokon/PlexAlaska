@@ -247,7 +247,31 @@
 					<textcolor>ListTitleF</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 					<scroll>true</scroll>
-					<visible>Container.Content(files) | [!Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(episodes)]</visible>
+					<visible>[!Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(episodes)] + IsEmpty(ListItem.Plot)</visible>
+				</control>
+				<control type="label">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>760</width>
+					<height>120</height>
+					<aligny>center</aligny>
+					<font>Font_ListTitleBigger</font>
+					<textcolor>ListTitleF</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+					<scroll>true</scroll>
+					<visible>[!Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(episodes) + !Container.Content(files) + !Window.IsActive(1)] + !IsEmpty(ListItem.Plot)</visible>
+				</control>
+				<control type="label">
+					<posx>30</posx>
+					<posy>12</posy>
+					<width>760</width>
+					<height>25</height>
+					<aligny>center</aligny>
+					<font>Font_ListTitleBig</font>
+					<textcolor>ListTitleF</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+					<scroll>true</scroll>
+					<visible>[!Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(episodes)] + !IsEmpty(ListItem.Plot)</visible>
 				</control>
 				<control type="label">
 					<posx>30</posx>
@@ -307,7 +331,7 @@
 					<visible>Window.IsActive(25) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(genres)]</visible>
 				</control>
 				<!-- Programs -->
-				<control type="group">
+				<!--<control type="group">
 					<visible>Window.IsActive(1)</visible>
 					<control type="label">
 						<posx>30</posx>
@@ -331,7 +355,7 @@
 						<label>$INFO[ListItem.Label2]</label>
 						<scroll>true</scroll>
 					</control>
-				</control>
+				</control>-->
 				<!-- Music -->
 				<!-- Artist -->
 				<control type="group">
@@ -610,7 +634,7 @@
 			<textcolor>EpisodePlot</textcolor>
 			<info>ListItem.Plot</info>
 			<autoscroll time="3200" delay="6000" repeat="6000">Skin.HasSetting(autoscroll)</autoscroll>
-			<visible>!IsEmpty(Container(50).ListItem.Plot) + Window.IsActive(25) + Container(50).Content(episodes) + !Window.IsActive(2003)</visible>
+			<visible>!IsEmpty(Container(50).ListItem.Plot) + [[Window.IsActive(25) + Container(50).Content(episodes)] | Window.IsActive(24) | Window.IsActive(1)] + !Window.IsActive(2003)</visible>
 			<include>Animation_CommonFade</include>
 			<include>Animation_ZoomedByMenu</include>
 		</control>
