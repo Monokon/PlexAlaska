@@ -22,8 +22,8 @@
 			<animation effect="slide" end="0,-76" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(104) | Window.IsVisible(113)">Conditional</animation>
 			<animation effect="slide" end="0,-76" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(112)">Conditional</animation>
 			<animation effect="slide" end="0,-76" time="400" easing="inout" tween="cubic" condition="Window.IsVisible(101)">Conditional</animation>
-			<posx>880</posx>
-			<posy>90</posy>
+			<posx>-290</posx>
+			<posy>35</posy>
 			<width>707</width>
 			<height>183</height>
 			<control type="image">
@@ -84,20 +84,20 @@
 			</control>
 			<control type="label" id="401">
 				<description>Heading Label</description>
-				<posx>310</posx>
+				<posx>390</posx>
 				<posy>15</posy>
 				<width>627</width>
 				<height>51</height>
 				<textcolor>Time</textcolor>
-				<align>right</align>
+				<align>left</align>
 				<font>Font_ProgressDialog</font>
 			</control>
 			<control type="label" id="405">
-				<posx>310</posx>
+				<posx>390</posx>
 				<posy>35</posy>
 				<width>627</width>
 				<height>51</height>
-				<align>right</align>
+				<align>left</align>
 				<font>Font_Date</font>
 				<textcolor>Date</textcolor>
 				<label>-</label>
