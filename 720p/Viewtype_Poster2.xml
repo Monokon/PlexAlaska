@@ -607,7 +607,7 @@
 		</control>
 		<!-- Browser label and flags -->
 		<control type="group">
-			<visible>Control.IsVisible(58)</visible>
+			<visible>Control.IsVisible(58) | Control.IsVisible(558)</visible>
 			<posx>840</posx>
 			<posy>525</posy>
 			<include>Animation_ZoomInZoomOut</include>
@@ -692,7 +692,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(58)</visible>
+			<visible>Control.IsVisible(58) | Control.IsVisible(558)</visible>
 			<include>Animation_ZoomedByMenu</include>
 			<include>PosterMediaFlags</include>
 			<posy>50</posy>
