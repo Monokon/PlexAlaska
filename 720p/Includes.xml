@@ -676,6 +676,7 @@
 	<!-- Settings -->
 	<include name="Setting_Heading">
 		<control type="group">
+			<visible>!Window.IsActive(101) + !Window.IsActive(133)</visible>
 			<posx>30</posx>
 			<posy>30</posy>
 			<animation type="WindowOpen" reversible="false" condition="Window.Previous(Home)">
