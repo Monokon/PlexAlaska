@@ -397,6 +397,12 @@
 		        <size>17</size>
 		</font>
 
+		<font>
+			<name>Font_Movietitle_Big</name>
+			<filename>alaska_regular.ttf</filename>
+			<size>40</size>
+		</font>
+ 
 	</fontset>
 
 	<fontset id="Cyrillic" unicode="true">
@@ -794,6 +800,12 @@
 		        <size>17</size>
 		</font>
 
+		<font>
+			<name>Font_Movietitle_Big</name>
+			<filename>alaska_regular_cy.ttf</filename>
+			<size>40</size>
+		</font>
+
 	</fontset>
 
 	<fontset id="Hebrew" unicode="true">
@@ -1189,6 +1201,12 @@
 		        <filename>Arial.ttf</filename>
 		        <aspect>0.9</aspect>
 		        <size>17</size>
+		</font>
+
+		<font>
+			<name>Font_Movietitle_Big</name>
+			<filename>Arial.ttf</filename>
+			<size>40</size>
 		</font>
 
 	</fontset>
