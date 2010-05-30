@@ -173,15 +173,15 @@
 			</control>
 			<control type="label">
 				<description>Movies</description>
-				<label>342</label>
+				<label>$INFO[Container.FirstTitle]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(25) + Container.Content(movies) + !Window.IsActive(134)</visible>
+				<visible>Window.IsActive(24) + Container.Content(movies) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<description>Name of Plugin</description>
-				<label>$INFO[Container.PluginName]</label>
+				<label>$INFO[Container.FirstTitle]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>!IsEmpty(Container.PluginName) + !Window.IsActive(134)</visible>
+				<visible>Window.IsVisible(24) + !Window.IsActive(134) + !Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)</visible>
 			</control>
 			<control type="label">
 				<description>Plugins</description>
@@ -204,15 +204,15 @@
 			</control>
 			<control type="label">
 				<description>Tv Shows</description>
-				<label>20343</label>
+				<label>$INFO[Container.FirstTitle]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(25) + [Container.Content(tvshows) | Container.Content(seasons)] + !Window.IsActive(134)</visible>
+				<visible>Window.IsActive(24) + [Container.Content(tvshows) | Container.Content(episodes)] + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
-				<description>Tv Shows</description>
-				<label>$LOCALIZE[20343]: $INFO[ListItem.TVShowTitle]</label>
+				<description>Tv Shows / seasons / episodes</description>
+				<label>$INFO[Container.FirstTitle]: $INFO[Container.SecondTitle]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(25) + Container.Content(episodes) + !Window.IsActive(134)</visible>
+				<visible>Window.IsActive(24) + Container.Content(seasons) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<description>Music</description>
@@ -254,7 +254,7 @@
 				<description>Video</description>
 				<label>3</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>[Window.IsActive(24)| [Window.IsActive(25) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(movies)]] + IsEmpty(Container.PluginName) + !Window.IsActive(134)</visible>
+				<visible>Container.Content(files) + Window.IsActive(24) + !Window.IsActive(134) + IsEmpty(Container.FirstTitle)</visible>
 			</control>
 			<control type="label">
 				<description>Video</description>
@@ -382,7 +382,16 @@
 					<height>171</height>
 					<posx>50</posx>
 					<posy>91</posy>
-					<info>ListItem.Thumb</info>
+					<info>ListItem.thumb</info>
+					<visible>!IsEmpty(ListItem.thumb)</visible>
+				</control>
+				<control type="image">
+					<width>171</width>
+					<height>171</height>
+					<posx>50</posx>
+					<posy>91</posy>
+					<texture>backdrops/moviedefault.png</texture>
+					<visible>IsEmpty(ListItem.thumb)</visible>
 				</control>			
 			</itemlayout>
 			<focusedlayout width="341" height="341">
@@ -394,7 +403,19 @@
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="171,171" tween="back" easing="out" time="500" start="50" end="100" />
 					</animation>
-					<info>ListItem.Thumb</info>
+					<info>ListItem.thumb</info>
+					<visible>!IsEmpty(ListItem.thumb)</visible>
+				</control>
+				<control type="image">
+					<width>341</width>
+					<height>341</height>
+					<posx>0</posx>
+					<posy>0</posy>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="171,171" tween="back" easing="out" time="500" start="50" end="100" />
+					</animation>
+					<texture>backdrops/moviedefault.png</texture>
+					<visible>IsEmpty(ListItem.thumb)</visible>
 				</control>
 			</focusedlayout>
 			<content>
@@ -410,7 +431,7 @@
 				<item id="2">
 					<label>$LOCALIZE[31023]</label>
 					<thumb>backdrops/appstoreicon.png</thumb>
-					<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/,return)</onclick>
+					<onclick>Plex.ActivateWindow(1,plex://localhost/system/appstore,return)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<visible>!Skin.HasSetting(noappstore)</visible>
@@ -424,7 +445,7 @@
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
-				<item id="4">
+				<!--<item id="4">
 					<description>Movies</description>
 					<label>342</label>
 					<thumb>backdrops/moviesicon.png</thumb>
@@ -441,7 +462,7 @@
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<visible>!Skin.HasSetting(notvshows)</visible>
-				</item>
+				</item>-->
 				<item id="6">
 					<description>Video</description>
 					<label>3</label>
@@ -566,7 +587,7 @@
 				<description>PROGRAMS</description>
 				<label>$LOCALIZE[31023]</label>
 				<thumb>backdrops/appstore/appstore-1.jpg</thumb>
-				<onclick>ActivateWindow(10001,plex://localhost/applications/appstore/,return)</onclick>
+				<onclick>Plex.ActivateWindow(1,plex://localhost/system/appstore,return)</onclick>
 				<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 				<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 				<visible>!Skin.HasSetting(noappstore)</visible>
@@ -760,6 +781,13 @@
 				<include>Animation_Setting_Heading</include>
 				<include>Global_HeadingDetailVars</include>
 				<visible>Window.IsActive(56)</visible>
+			</control>
+			<control type="label">
+				<description>Profiles</description>
+				<label>$LOCALIZE[13200]</label>
+				<include>Animation_Setting_Heading</include>
+				<include>Global_HeadingDetailVars</include>
+				<visible>Window.IsActive(34)</visible>
 			</control>
 		</control>
 	</include>
@@ -1008,6 +1036,10 @@
 	</include>  
     
 	<include name="submenu_dummybuttons">
+		<control type="button" id="351">
+			<onfocus>SetFocus(300)</onfocus>
+			<visible>!Container(300).HasFocus(1) + !Container(300).HasFocus(2) + !Container(300).HasFocus(3) + !Container(300).HasFocus(6) + !Container(300).HasFocus(7) + !Container(300).HasFocus(8) + !Container(300).HasFocus(9)</visible>
+		</control>
 		<control type="button" id="351">
 			<onfocus>SetFocus(944)</onfocus>
 			<visible>Container(300).HasFocus(1) + Player.HasMedia</visible>

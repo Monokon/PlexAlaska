@@ -3,7 +3,7 @@
 <window id="24">
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
- 	<views>50,55,555,58,558,49,51,52,53,54,56,57,59,556,559</views>
+ 	<views>50,55,555,58,558,49,51,52,552,53,54,56,57,59,556,559</views>
 	<controls>
 		<include>Global_Background</include>
 		<control type="largeimage">
@@ -11,17 +11,34 @@
 			<fadetime>400</fadetime>
 			<texture>$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<include>Animation_CommonFade</include>
-			<visible>!Skin.HasSetting(novideobackdrops)</visible>
+			<visible>[!Skin.HasSetting(nomoviebackdrops) + Container.Content(movies)] | [!Skin.HasSetting(notvshowbackdrops) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]</visible>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(49).OnNext | Container(49).OnPrevious] | Container.Content(seasons) | Container.Content(episodes)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="[![Container(50).OnNext | Container(50).OnPrevious] | Window.IsActive(2003)] | Container.Content(seasons) | Container.Content(episodes)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(59).OnNext | Container(59).OnPrevious] | Container.Content(seasons) | Container.Content(episodes)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(51).OnNext | Container(51).OnPrevious] | Container.Content(seasons) | Container.Content(episodes)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(56).OnNext | Container(56).OnPrevious] | Container.Content(seasons) | Container.Content(episodes)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(57).OnNext | Container(57).OnPrevious] | Container.Content(seasons) | Container.Content(episodes)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(53).OnNext | Container(53).OnPrevious] | Container.Content(seasons) | Container.Content(episodes)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(55).OnNext | Container(55).OnPrevious] | Container.Content(seasons) | Container.Content(episodes)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(58).OnNext | Container(58).OnPrevious] | Container.Content(seasons) | Container.Content(episodes)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(556).OnNext | Container(556).OnPrevious] | Container.Content(seasons) | Container.Content(episodes)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(559).OnNext | Container(559).OnPrevious] | Container.Content(seasons) | Container.Content(episodes)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(555).OnNext | Container(555).OnPrevious] | Container.Content(seasons) | Container.Content(episodes)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="200" delay="400" condition="![Container(558).OnNext | Container(558).OnPrevious] | Container.Content(seasons) | Container.Content(episodes)">Conditional</animation>
 		</control>
 		<include>Global_Filter</include>
 		
 		<include>Object_MovieInfoLines</include>
 		
-		<include>Viewtype_Files</include>
-		<include>Viewtype_List</include>
 		<include>Viewtype_Poster</include>
+		<include>Viewtype_Poster2</include>
+		<include>Viewtype_Fanart</include>
+		<include>Viewtype_Fanart2</include>
+		<include>Viewtype_Landscape</include>
 		<include>Viewtype_Episode</include>
+		<include>Viewtype_Files</include>
 		<include>Viewtype_Panel</include>
+		<include>Viewtype_Banner</include>
 
 		<include>Global_ContextFilter</include>
 

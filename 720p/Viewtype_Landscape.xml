@@ -334,6 +334,7 @@
 		<control type="group">
 			<posx>500</posx>
 			<posy>58</posy>
+			<!--<visible>Control.IsVisible(52) | Control.IsVisible(552)</visible>-->
 			<visible>Control.IsVisible(52) | Control.IsVisible(552)</visible>
 			<include>Animation_ZoomInZoomOut</include>
 			<include>Animation_HiddenByInfo</include>
@@ -377,7 +378,7 @@
 				<aligny>center</aligny>
 				<font>Font_TVShow</font>
 				<textcolor>FanartTitle</textcolor>
-				<label>$LOCALIZE[20416]: [B]$INFO[ListItem.Date][/B]</label>
+				<label>$LOCALIZE[20416]: [B]$INFO[ListItem.Property(originallyAvailableAt)][/B]</label>
 				<visible>Container.Content(episodes)</visible>
 			</control>			
 			<control type="label">

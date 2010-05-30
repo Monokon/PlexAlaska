@@ -40,6 +40,7 @@
 	<color name="NowPlayingTrack">ff009ACD</color>
 	<color name="MediaMenu">FFFFFFFF</color>
 	<color name="FlagDiffuse">FFFFFFFF</color>
+	<color name="FlagDiffuseAudiochannels">70009ACD</color>
 	<color name="FlagText">FFFFFFFF</color>
 	<color name="StarRatingDiffuse">FFFFFFFF</color>
 

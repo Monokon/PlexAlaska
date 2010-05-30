@@ -65,7 +65,7 @@
 					<width>633</width>
 					<height>60</height>
 					<align>left</align>
-					<label>$LOCALIZE[20416]: $INFO[ListItem.Date]</label>
+					<label>$LOCALIZE[20416]: $INFO[ListItem.Property(originallyAvailableAt)]</label>
 					<font>Font_EpisodeDetailNF</font>
 					<textcolor>EpisodeNumber</textcolor>
 					<include>Animation_HiddenByInfo</include>

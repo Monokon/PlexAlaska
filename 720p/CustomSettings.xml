@@ -306,30 +306,6 @@
 					<selected>Skin.HasSetting(nomusic)</selected>
 					<visible>!Skin.HasSetting(home1)</visible>
 				</control>
-				<control type="radiobutton" id="219">
-					<width>740</width>
-					<font>Font_Settings</font>
-					<textcolor>MenuValue</textcolor>
-					<focusedcolor>MenuValueFO</focusedcolor>
-					<label>$LOCALIZE[31951]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<onclick>Skin.ToggleSetting(nomovies)</onclick>
-					<selected>Skin.HasSetting(nomovies)</selected>
-					<visible>!Skin.HasSetting(home1)</visible>
-				</control>
-				<control type="radiobutton" id="220">
-					<width>740</width>
-					<font>Font_Settings</font>
-					<textcolor>MenuValue</textcolor>
-					<focusedcolor>MenuValueFO</focusedcolor>
-					<label>$LOCALIZE[31952]</label>
-					<align>left</align>
-					<aligny>center</aligny>
-					<onclick>Skin.ToggleSetting(notvshows)</onclick>
-					<selected>Skin.HasSetting(notvshows)</selected>
-					<visible>!Skin.HasSetting(home1)</visible>
-				</control>
 				<control type="radiobutton" id="212">
 					<width>740</width>
 					<font>Font_Settings</font>

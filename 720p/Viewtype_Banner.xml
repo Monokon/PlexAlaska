@@ -89,7 +89,7 @@
 					<posy>10</posy>
 					<width>542</width>
 					<height>100</height>
-					<texture diffuse="list/listbannermatte.png">$INFO[ListItem.Icon]</texture>
+					<texture diffuse="list/listbannermatte.png">$INFO[ListItem.Banner]</texture>
 					<aspectratio scalediffuse="true">keep</aspectratio>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="auto" start="50" end="100" time="200" tween="cubic" easing="out" />

@@ -230,17 +230,14 @@
 				<label>[B]$INFO[ListItem.Genre][/B]</label>
 				<visible>Container.Content(movies) + !Control.HasFocus(66)</visible>
 			</control>
-			<control type="label">
-				<label>imdb: [B]$INFO[ListItem.rating][/B]</label>
-				<posx>600</posx>
+			<control type="image">
+				<posx>480</posx>
 				<posy>150</posy>
-				<width>180</width>
-				<height>45</height>
-				<align>right</align>
-				<aligny>center</aligny>
-				<font>Font_MainMenuLabel</font>
-				<textcolor>ffdadada</textcolor>
-				<shadowcolor>ff000000</shadowcolor>
+				<width>121</width>
+				<height>25</height>
+				<aspectratio>keep</aspectratio>
+				<texture flipx="true">$INFO[ListItem.StarRating]</texture>
+				<colordiffuse>ffdadada</colordiffuse>
 				<visible>Container.Content(movies) + !Control.HasFocus(66)</visible>
 			</control>
 			<control type="image">
@@ -279,7 +276,17 @@
 				<label>[B]$INFO[ListItem.Label][/B]</label>
 				<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
 			</control>
-			<control type="label">
+			<control type="image">
+				<posx>480</posx>
+				<posy>138</posy>
+				<width>121</width>
+				<height>25</height>
+				<aspectratio>keep</aspectratio>
+				<texture flipx="true">$INFO[ListItem.StarRating]</texture>
+				<colordiffuse>ffdadada</colordiffuse>
+				<visible>Container.Content(tvshows) + !Control.HasFocus(66)</visible>
+			</control>
+			<!--<control type="label">
 				<label>imdb: [B]$INFO[ListItem.rating][/B]</label>
 				<posx>600</posx>
 				<posy>128</posy>
@@ -291,7 +298,7 @@
 				<textcolor>ffdadada</textcolor>
 				<shadowcolor>ff000000</shadowcolor>
 				<visible>Container.Content(tvshows) + !Control.HasFocus(66)</visible>
-				</control>
+				</control>-->
 			<control type="label">
 				<posx>600</posx>
 				<posy>180</posy>

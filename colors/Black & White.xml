@@ -41,6 +41,7 @@
 	<!-- Flags -->
 
 	<color name="FlagDiffuse">FFFFFFFF</color>
+	<color name="FlagDiffuseAudiochannels">70686868</color>
 	<color name="FlagText">FF000000</color>
 	<color name="FlagText2">FFFFFFFF</color>
 	<color name="StarDiffuse">FFD3D3D3</color>
