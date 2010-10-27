@@ -20,7 +20,7 @@
 			<include>Animation_ZoomedByMenu</include>
 			<itemlayout width="370" height="320">
 				<control type="group" id="777">
-					<description>Appstore</description>
+					<description>Plex online</description>
 					<posx>-185</posx>
 					<posy>0</posy>
 					<!--<animation effect="zoom" time="0" center="0,160" start="100" end="80" tween="cubic" easing="in" condition="Window.IsVisible(0)">Conditional</animation>
@@ -35,11 +35,6 @@
 						<texture>$INFO[ListItem.Property(Fanart_Image)]</texture>
 					</control>
 					<include>Filter_MenuItem</include>
-					<!--<control type="multiimage">
-						<include>Home_MainMenuIconF</include>
-						<imagepath>backdrops/osx/appstore//</imagepath>
-						<visible>Skin.HasSetting(osximages)</visible>
-					</control>-->	
 					<include condition="Skin.HasSetting(osximages)">OSXoverlays</include>
 					<include>Home_MainMenuFrame</include>
 					<include>Home_MainMenuShade</include>
@@ -90,11 +85,7 @@
 						<texture>$INFO[ListItem.Property(Fanart_Image)]</texture>
 					</control>
 					<include>Filter_MenuItem</include>
-					<!--<control type="multiimage">
-						<include>Home_MainMenuIconF</include>
-						<imagepath>backdrops/osx/appstore//</imagepath>
-						<visible>Skin.HasSetting(osximages)</visible>
-					</control>-->		
+					<include condition="Skin.HasSetting(osximages)">OSXoverlays</include>
 					<include>Home_MainMenuFrame</include>
 					<include>Home_MainMenuShade</include>
 					<control type="label">
@@ -131,11 +122,9 @@
 					<description>Quit</description>
 					<include condition="!Skin.HasSetting(sleepsystem)">type_quit</include>
 					<include condition="Skin.HasSetting(sleepsystem)">type_sleep</include>
+					<label2>_1</label2>
 					<thumb>backdrops/quit/quitplex.jpg</thumb>
 					<visible>!Skin.HasSetting(nohomequit)</visible>
-					<animation type="Conditional" condition="Control.HasFocus(1)" reversible="false">
-						<effect type="zoom" reversible="true" center="0,160" start="80" end="100" time="200" tween="cubic" easing="in" />
-					</animation>
 				</item>
 				<item id="2">
 					<description>Settings</description>
@@ -143,6 +132,7 @@
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<label>$LOCALIZE[31016]</label>
+					<label2>_2</label2>
 					<thumb>backdrops/settings/settings-5.jpg</thumb>
 					<visible>!Skin.HasSetting(nosettings)</visible>
 				</item>
@@ -152,6 +142,7 @@
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<label>$LOCALIZE[31023]</label>
+					<label2>_3</label2>
 					<thumb>backdrops/appstore/appstore-1.jpg</thumb>
 					<visible>!Skin.HasSetting(noappstore)</visible>
 				</item>
@@ -161,6 +152,7 @@
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<label>$LOCALIZE[31017]</label>
+					<label2>_4</label2>
 					<thumb>backdrops/weather/weather-6.jpg</thumb>
 					<visible>!Skin.HasSetting(noweather)</visible>
 				</item>		
@@ -170,6 +162,7 @@
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<label>$LOCALIZE[31012]</label>
+					<label2>_5</label2>
 					<thumb>backdrops/pictures/pictures-2.jpg</thumb>
 					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
@@ -180,6 +173,7 @@
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<thumb>backdrops/music/music-2.jpg</thumb>
 					<label>$LOCALIZE[31010]</label>
+					<label2>_6</label2>
 				</item>
 				<item id="7">
 					<description>Videos</description>
@@ -187,6 +181,7 @@
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<label>$LOCALIZE[31015]</label>
+					<label2>_7</label2>
 					<thumb>backdrops/videos/video-3.jpg</thumb>
 					<visible>!Skin.HasSetting(novideos)</visible>
 				</item>
@@ -786,8 +781,8 @@
 	<include name="OSXoverlays">
 		<control type="image">
 			<include>Home_MainMenuIconF</include>
-			<texture>backdrops/osx/appstore/app1.png</texture>
-			<visible>Container(300).Position(3)</visible>
+			<texture>backdrops/osx/item$INFO[Listitem.Label2].png</texture>
+			<visible>Skin.HasSetting(osximages)</visible>
 		</control>
 	</include>
 
