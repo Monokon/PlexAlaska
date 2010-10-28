@@ -127,6 +127,13 @@
 			</focusedlayout>
 		</control>
 
+		<control type="group">
+			<visible>Control.IsVisible(59)</visible>
+			<include>Animation_ZoomInZoomOut</include>
+			<include>Animation_ZoomedByMenu</include>
+			<include>PosterMediaFlags</include>
+		</control>
+
 	</include>
 
 </includes>

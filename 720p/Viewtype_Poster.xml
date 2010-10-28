@@ -629,7 +629,7 @@
 				<label>$LOCALIZE[16101]: [B]$INFO[ListItem.Property(UnWatchedEpisodes)][/B]</label>
 				<visible>!IsEmpty(ListItem.Episode) + [Container.Content(tvshows) | Container.Content(seasons)]</visible>
 			</control>
-			<control type="label">
+			<!--<control type="label">
 				<posx>5</posx>
 				<posy>82</posy>
 				<width>420</width>
@@ -639,7 +639,7 @@
 				<textcolor>ListTrackF</textcolor>
 				<label>$LOCALIZE[20416]: [B]$INFO[ListItem.Premiered][/B]</label>
 				<visible>Container.Content(tvshows)</visible>
-			</control>
+			</control>-->
 		</control>
 		<control type="group">
 			<visible>[Control.IsVisible(55) | Control.IsVisible(555)]</visible>
