@@ -150,57 +150,43 @@
 				<textcolor>InfoDetails</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[31516]:</label>
+				<label>$LOCALIZE[515]:</label>
 			</control>
-			<control type="textbox">
+			<control type="label">
 				<posx>155</posx>
 				<posy>191</posy>
 				<width>550</width>
-				<height>68</height>
 				<align>left</align>
 				<font>Font_InfoDetails</font>
 				<textcolor>InfoPlot</textcolor>
-				<info>ListItem.CastAndRole</info>
+				<info>ListItem.Genre</info>
 			</control>
 			<control type="label">
+				<visible>Control.IsVisible(50)</visible>
 				<posx>0</posx>
-				<posy>284</posy>
+				<posy>243</posy>
 				<width>150</width>
 				<font>Font_InfoDetails</font>
 				<textcolor>InfoDetails</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
-				<label>$LOCALIZE[21801]:</label>
-			</control>
-			<control type="fadelabel">
-				<posx>155</posx>
-				<posy>284</posy>
-				<width>480</width>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>Font_InfoDetails</font>
-				<textcolor>InfoPlot</textcolor>
-				<info>ListItem.FilenameAndPath</info>
-				<scroll>true</scroll>
-				<scrollspeed>40</scrollspeed>
-				<scrollout>false</scrollout>
-				<pauseatend>3000</pauseatend>
+				<label>$LOCALIZE[206]:</label>
 			</control>
 			<control type="textbox">
 				<visible>!Control.IsVisible(50)</visible>
-				<posy>311</posy>
+				<posy>231</posy>
 				<width>600</width>
-				<height>160</height>
+				<height>240</height>
 				<font>Font_InfoPlot</font>
 				<textcolor>InfoPlot</textcolor>
 				<info>ListItem.Plot</info>
-				<autoscroll time="2000" delay="6000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
+				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
 			</control>
 			<control type="panel" id="50">
 				<posx>170</posx>
-				<posy>311</posy>
+				<posy>231</posy>
 				<width>580</width>
-				<height>160</height>
+				<height>240</height>
 				<onleft>943</onleft>
 				<onright>943</onright>
 				<onup>50</onup>

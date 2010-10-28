@@ -88,12 +88,12 @@
 					<thumb>settings/settings_programs.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyProgramsSettings)</onclick>
 				</item>-->
-				<item id="4">
+				<!--<item id="4">
 					<description>Profiles</description>
 					<label>13200</label>
 					<thumb>settings/settings_profiles.png</thumb>
 					<onclick>XBMC.ActivateWindow(Profiles)</onclick>
-				</item>
+				</item>-->
 				<item id="5">
 					<label>Weather</label>
 					<thumb>settings/settings_weather.png</thumb>

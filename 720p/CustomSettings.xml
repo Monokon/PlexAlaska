@@ -115,7 +115,7 @@
 					<onclick>Skin.ToggleSetting(mediaflagson)</onclick>
 					<selected>Skin.HasSetting(mediaflagson)</selected>
 				</control>
-				<control type="radiobutton" id="102">
+				<!--<control type="radiobutton" id="102">
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
@@ -125,7 +125,7 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(showstudioflags)</onclick>
 					<selected>Skin.HasSetting(showstudioflags)</selected>
-				</control>
+				</control>-->
 				<control type="radiobutton" id="103">
 					<width>740</width>
 					<font>Font_Settings</font>
@@ -304,7 +304,6 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(nomusic)</onclick>
 					<selected>Skin.HasSetting(nomusic)</selected>
-					<visible>!Skin.HasSetting(home1)</visible>
 				</control>
 				<control type="radiobutton" id="212">
 					<width>740</width>
@@ -317,7 +316,7 @@
 					<onclick>Skin.ToggleSetting(sleepsystem)</onclick>
 					<selected>Skin.HasSetting(sleepsystem)</selected>
 				</control>
-				<control type="radiobutton" id="202">
+				<!--<control type="radiobutton" id="202">
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
@@ -328,7 +327,7 @@
 					<onclick>Skin.ToggleSetting(homeweather)</onclick>
 					<selected>Skin.HasSetting(homeweather)</selected>
 					<visible>Skin.HasSetting(home1)</visible>
-				</control>
+				</control>-->
 				<control type="radiobutton" id="206">
 					<width>740</width>
 					<font>Font_Settings</font>
@@ -341,7 +340,7 @@
 					<selected>Skin.HasSetting(osximages)</selected>
 					<visible>Skin.HasSetting(home1)</visible>
 				</control>
-				<control type="radiobutton" id="213">
+				<!--<control type="radiobutton" id="213">
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
@@ -355,7 +354,7 @@
 					<onclick>Skin.SetString(fanartpath,/Users/$INFO[Skin.String(osxusername)]/Library/Application Support/Plex/userdata/Thumbnails/Video/Fanart//)</onclick>
 					<selected>Skin.HasSetting(fanartformovies)</selected>
 					<visible>Skin.HasSetting(home1)</visible>
-				</control>
+				</control>-->
 				<control type="togglebutton" id="214">
 					<width>740</width>
 					<font>Font_Settings</font>
@@ -365,9 +364,9 @@
 					<altlabel>$LOCALIZE[31942]</altlabel>
 					<align>left</align>
 					<aligny>center</aligny>
-					<onclick>Skin.SetPath(CustomMusicFolder)</onclick>
-					<altclick>Skin.Reset(CustomMusicFolder)</altclick>
-					<usealttexture>Skin.String(CustomMusicFolder)</usealttexture>
+					<onclick>Skin.SetImage(CustomMusicImage)</onclick>
+					<altclick>Skin.Reset(CustomMusicImage)</altclick>
+					<usealttexture>Skin.String(CustomMusicImage)</usealttexture>
 					<texturenofocus>-</texturenofocus>
 					<texturefocus>-</texturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
@@ -383,9 +382,9 @@
 					<altlabel>$LOCALIZE[31944]</altlabel>
 					<align>left</align>
 					<aligny>center</aligny>
-					<onclick>Skin.SetPath(CustomMovieFolder)</onclick>
-					<altclick>Skin.Reset(CustomMovieFolder)</altclick>
-					<usealttexture>Skin.String(CustomMovieFolder)</usealttexture>
+					<onclick>Skin.SetPath(CustomQuitImage)</onclick>
+					<altclick>Skin.Reset(CustomQuitImage)</altclick>
+					<usealttexture>Skin.String(CustomQuitImage)</usealttexture>
 					<texturenofocus>-</texturenofocus>
 					<texturefocus>-</texturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
@@ -401,9 +400,9 @@
 					<altlabel>$LOCALIZE[31946]</altlabel>
 					<align>left</align>
 					<aligny>center</aligny>
-					<onclick>Skin.SetPath(CustomTVShowsFolder)</onclick>
-					<altclick>Skin.Reset(CustomTVShowsFolder)</altclick>
-					<usealttexture>Skin.String(CustomTVShowsFolder)</usealttexture>
+					<onclick>Skin.SetPath(CustomSettingsImage)</onclick>
+					<altclick>Skin.Reset(CustomSettingsImage)</altclick>
+					<usealttexture>Skin.String(CustomSettingsImage)</usealttexture>
 					<texturenofocus>-</texturenofocus>
 					<texturefocus>-</texturefocus>
 					<alttexturenofocus>-</alttexturenofocus>
@@ -419,9 +418,9 @@
 					<altlabel>$LOCALIZE[31948]</altlabel>
 					<align>left</align>
 					<aligny>center</aligny>
-					<onclick>Skin.SetPath(CustomPicturesFolder)</onclick>
-					<altclick>Skin.Reset(CustomPicturesFolder)</altclick>
-					<usealttexture>Skin.String(CustomPicturesFolder)</usealttexture>
+					<onclick>Skin.SetPath(CustomPicturesImage)</onclick>
+					<altclick>Skin.Reset(CustomPicturesImage)</altclick>
+					<usealttexture>Skin.String(CustomPicturesImage)</usealttexture>
 					<texturenofocus>-</texturenofocus>
 					<texturefocus>-</texturefocus>
 					<alttexturenofocus>-</alttexturenofocus>

@@ -28,7 +28,7 @@
 			<animation effect="slide" start="0,0" end="-340,20" condition="Control.IsVisible(56)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-340,30" condition="Control.IsVisible(49)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-837,-190" condition="Control.IsVisible(556) | Control.IsVisible(559)">Conditional</animation>
-			<!--<visible>Skin.HasSetting(mediaflagson) + [Container.Content(movies) | Container.Content(episodes)]</visible>-->
+			<visible>Skin.HasSetting(mediaflagson)</visible>
 			<!-- Year Panel -->
 			<control type="group">
 				<animation effect="slide" start="0,0" end="105,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels)) + !IsEmpty(Listitem.Property(mediaTag::videoResolution)) + !IsEmpty(Listitem.Property(mediaTag::videoCodec))">Conditional</animation>
