@@ -37,7 +37,8 @@
 				<animation effect="slide" start="0,0" end="210,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels)) + IsEmpty(Listitem.Property(mediaTag::videoResolution)) + !IsEmpty(Listitem.Property(mediaTag::videoCodec))">Conditional</animation>
 				<animation effect="slide" start="0,0" end="210,0" condition="!IsEmpty(Listitem.Property(mediaTag::audioChannels)) + IsEmpty(Listitem.Property(mediaTag::videoResolution)) + IsEmpty(Listitem.Property(mediaTag::videoCodec))">Conditional</animation>
 				<animation effect="slide" start="0,0" end="210,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels)) + !IsEmpty(Listitem.Property(mediaTag::videoResolution)) + IsEmpty(Listitem.Property(mediaTag::videoCodec))">Conditional</animation>
-				<animation effect="slide" start="0,0" end="315,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels)) + IsEmpty(Listitem.Property(mediaTag::videoResolution)) + IsEmpty(Listitem.Property(mediaTag::videoCodec))">Conditional</animation>
+				<animation effect="slide" start="0,0" end="210,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels)) + IsEmpty(Listitem.Property(mediaTag::videoResolution)) + IsEmpty(Listitem.Property(mediaTag::videoCodec)) + !IsEmpty(Listitem.Property(mediaTag::studio))">Conditional</animation>
+				<animation effect="slide" start="0,0" end="315,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels)) + IsEmpty(Listitem.Property(mediaTag::videoResolution)) + IsEmpty(Listitem.Property(mediaTag::videoCodec)) + IsEmpty(Listitem.Property(mediaTag::studio))">Conditional</animation>
 				<posx>785</posx>
 				<control type="image">
 					<posx>4</posx>
@@ -61,13 +62,18 @@
 				</control>
 			</control>
 
-<!--			<control type="group">
-				<posx>785</posx>
+			<control type="group">
+				<posx>1100</posx>
 				<control type="image">
-					<include>PosterMediaFlagsVars</include>
-					<info>Listitem.Property(mediaTag::movieStudio)</info>
+					<posy>545</posy>
+					<width>80</width>
+					<height>50</height>
+					<colordiffuse>FlagDiffuse</colordiffuse>
+					<aspectratio>keep</aspectratio>
+					<info>Listitem.Property(mediaTag::studio)</info>
+					<visible>!IsEmpty(ListItem.Property(mediaTag::studio))</visible>
 				</control>
-			</control>-->
+			</control>
 			<control type="group">
 				<animation effect="slide" start="0,0" end="105,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels)) + !IsEmpty(Listitem.Property(mediaTag::videoResolution))">Conditional</animation>
 				<animation effect="slide" start="0,0" end="105,0" condition="!IsEmpty(Listitem.Property(mediaTag::audioChannels)) + IsEmpty(Listitem.Property(mediaTag::videoResolution))">Conditional</animation>
@@ -88,6 +94,7 @@
 				</control>
 			</control>
 			<control type="group">
+				<animation effect="slide" start="0,0" end="-105,0" condition="!IsEmpty(Listitem.Property(mediaTag::studio))">Conditional</animation>
 				<posx>1100</posx>
 				<control type="image">
 					<include>PosterMediaFlagsVars</include>
@@ -95,6 +102,7 @@
 				</control>
 			</control>
 			<control type="group">
+				<animation effect="slide" start="0,0" end="-105,0" condition="!IsEmpty(Listitem.Property(mediaTag::studio))">Conditional</animation>
 				<posx>1100</posx>
 				<control type="image">
 					<include>PosterMediaFlagsAudiochannelsVars</include>
@@ -102,111 +110,6 @@
 				</control>
 			</control>
 
-
-			<!--<control type="group">
-				<posx>995</posx>
-				<control type="image">
-					<include>PosterMediaFlagsVars</include>
-					<texture>flags/AspectRatio/frame.png</texture>
-				</control>
-				<control type="label">
-					<label>$INFO[ListItem.VideoResolution]</label>
-					<posx>7</posx>
-					<posy>538</posy>
-					<width>42</width>
-					<height>45</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>Font_Res</font>
-					<textcolor>FlagText</textcolor>
-					<visible>!IsEmpty(ListItem.VideoResolution)</visible>
-				</control>
-				<control type="label">
-					<label>?</label>
-					<posx>8</posx>
-					<posy>538</posy>
-					<width>42</width>
-					<height>45</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>Font_Res</font>
-					<textcolor>FlagText</textcolor>
-					<visible>IsEmpty(ListItem.VideoResolution)</visible>
-				</control>
-				<control type="label">
-					<label>$INFO[ListItem.VideoAspect]</label>
-					<posx>55</posx>
-					<posy>538</posy>
-					<width>28</width>
-					<height>45</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>Font_Aspect</font>
-					<colordiffuse>FlagDiffuse</colordiffuse>
-					<visible>!IsEmpty(ListItem.VideoAspect)</visible>
-				</control>
-				<control type="label">
-					<label>?</label>
-					<posx>55</posx>
-					<posy>538</posy>
-					<width>28</width>
-					<height>45</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>Font_Aspect</font>
-					<colordiffuse>FlagDiffuse</colordiffuse>
-					<visible>IsEmpty(ListItem.VideoAspect)</visible>
-				</control>
-			</control>
-			<control type="group">
-				<posx>1100</posx>
-				<control type="image">
-					<include>PosterMediaFlagsVars</include>
-					<texture>flags/defaultsound.png</texture>
-					<visible>!Control.IsVisible(84) + !Skin.HasSetting(nodefaultflags)</visible>
-				</control>
-				<control type="image" id="84">
-					<include>PosterMediaFlagsVars</include>
-					<texture fallback="flags/defaultsound.png">$INFO[Listitem.AudioCodec,flags/AudioCodec/,.png]</texture>
-				</control>
-				<control type="image" id="84">
-					<include>PosterMediaFlagsVars</include>
-					<texture>$INFO[Listitem.AudioChannels,flags/AudioChannels/,ch.png]</texture>
-				</control>
-			</control>
-			<control type="group">
-				<posx>890</posx>
-				<control type="image">
-					<include>PosterMediaFlagsVars</include>
-					<texture>flags/defaultsource.png</texture>
-					<visible>!Control.IsVisible(82) + !Skin.HasSetting(nodefaultflags)</visible>
-				</control>
-				<control type="image" id="82">
-					<include>PosterMediaFlagsVars</include>
-					<texture>$INFO[ListItem.VideoCodec,flags/VideoCodec/,.png]</texture>
-					<visible>!substring(listitem.filename,hdtv) + !substring(listitem.filename,dvd) + !substring(listitem.filename,bluray) + !substring(listitem.filename,blu-ray) + !substring(listitem.filename,bdrip) + !substring(listitem.filename,.iso,Right) + !substring(listitem.filename,.ifo,Right)</visible>
-				</control>
-				<control type="image" id="82">
-					<include>PosterMediaFlagsVars</include>
-					<texture>flags/Source/hdtv.png</texture>
-					<visible>substring(listitem.filename,hdtv)</visible>
-				</control>
-				<control type="image" id="82">
-					<include>PosterMediaFlagsVars</include>
-					<texture>flags/Source/hddvd.png</texture>
-					<visible>substring(listitem.filename,hddvd) | substring(listitem.filename,hd-dvd)</visible>
-				</control>
-				<control type="image" id="82">
-					<include>PosterMediaFlagsVars</include>
-					<texture>flags/Source/bluray.png</texture>
-					<visible>substring(listitem.filename,bluray) | substring(listitem.filename,blu-ray) | substring(listitem.filename,bdrip)</visible>
-				</control>
-				<control type="image" id="82">
-					<include>PosterMediaFlagsVars</include>
-					<texture>flags/Source/dvd.png</texture>
-					<visible>[substring(listitem.filename,dvd) + !substring(listitem.filename,hddvd) + !substring(listitem.filename,hd-dvd) + !substring(listitem.filename,bluray)] | [substring(listitem.filename,.iso,Right) + !substring(listitem.filename,bluray)] | substring(listitem.filename,.ifo,Right)</visible>
-				</control>				
-			</control>-->
 		</control>
 	</include>
 </includes>
