@@ -40,7 +40,7 @@
 					<control type="label">
 						<include>Home_MainMenuLabel</include>
 						<label>$INFO[Listitem.Label]</label>
-						<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(1) | !Container(300).HasFocus(2)">Conditional</animation>
+						<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(1) | !Container(300).HasFocus(2)| !Container(300).HasFocus(6)">Conditional</animation>
 					</control>
 				</control>
 			</itemlayout>
@@ -66,8 +66,8 @@
 					<control type="label">
 						<include>Home_MainMenuLabel</include>
 						<label>$INFO[Listitem.Label]</label>
-						<visible>[!ControlGroup(3800).HasFocus() + !ControlGroup(3900).HasFocus()]</visible>
-						<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(1) + !Container(300).HasFocus(2)">Conditional</animation>
+						<visible>[!ControlGroup(3800).HasFocus() + !ControlGroup(3900).HasFocus() + !ControlGroup(3300).HasFocus()]</visible>
+						<animation effect="slide" end="16,0" condition="[!Container(300).HasFocus(1) + !Container(300).HasFocus(2)] + !Container(300).HasFocus(6) + Player.HasMedia] | [!Container(300).HasFocus(1) + !Container(300).HasFocus(2)] + !Player.HasMedia]">Conditional</animation>
 					</control>
 					<control type="image" id="398">
 						<posx>338</posx>
@@ -76,8 +76,8 @@
 						<height>24</height>
 						<texture>arrowhomeup.png</texture>
 						<colordiffuse>MainMenuLabel</colordiffuse>
-						<visible>[Container(3900).HasNext + ControlGroup(3900).HasFocus()] | [!Container(3900).HasNext + ControlGroup(3900).HasFocus()] | [Container(3800).HasNext + ControlGroup(3800).HasFocus()] | [!Container(3800).HasNext + ControlGroup(3800).HasFocus()]</visible>
-						<animation effect="slide" end="0,6" condition="[Container(300).HasFocus(1) + !Container(3900).HasNext] | [Container(300).HasFocus(2) + !Container(3800).HasNext]">Conditional</animation>
+						<visible>[Container(3900).HasNext + ControlGroup(3900).HasFocus()] | [!Container(3900).HasNext + ControlGroup(3900).HasFocus()] | [Container(3800).HasNext + ControlGroup(3800).HasFocus()] | [!Container(3800).HasNext + ControlGroup(3800).HasFocus()] | [Container(3300).HasNext + ControlGroup(3300).HasFocus()] | [!Container(3300).HasNext + ControlGroup(3300).HasFocus()]</visible>
+						<animation effect="slide" end="0,6" condition="[Container(300).HasFocus(1) + !Container(3900).HasNext] | [Container(300).HasFocus(2) + !Container(3800).HasNext] | [Container(300).HasFocus(6) + !Container(3300).HasNext]">Conditional</animation>
 					</control>
 					<control type="image" id="399">
 						<posx>338</posx>
@@ -86,8 +86,8 @@
 						<height>24</height>
 						<texture>arrowhomedown.png</texture>
 						<colordiffuse>MainMenuLabel</colordiffuse>
-						<visible>[[Container(300).HasFocus(1) + !ControlGroup(3900).HasFocus()]] | [Container(3900).HasNext + ControlGroup(3900).HasFocus()] | [[Container(300).HasFocus(2) + !ControlGroup(3800).HasFocus()]] | [Container(3800).HasNext + ControlGroup(3800).HasFocus()]</visible>
-						<animation effect="slide" end="0,-6" condition="!ControlGroup(3900).HasFocus() + !ControlGroup(3800).HasFocus()">Conditional</animation>
+						<visible>[[Container(300).HasFocus(1) + !ControlGroup(3900).HasFocus()]] | [Container(3900).HasNext + ControlGroup(3900).HasFocus()] | [[Container(300).HasFocus(2) + !ControlGroup(3800).HasFocus()]] | [Container(3800).HasNext + ControlGroup(3800).HasFocus()] | [[Container(300).HasFocus(6) + !ControlGroup(3300).HasFocus() + Player.HasMedia]] | [Container(3300).HasNext + ControlGroup(3300).HasFocus()]</visible>
+						<animation effect="slide" end="0,-6" condition="!ControlGroup(3900).HasFocus() + !ControlGroup(3800).HasFocus() + !ControlGroup(3300).HasFocus()">Conditional</animation>
 					</control>
 				</control>
 			</focusedlayout>
@@ -174,6 +174,7 @@
 		</control>
 		<include>SubMenu_Quit</include>
 		<include>SubMenu_Settings</include>
+		<include condition="Player.HasMedia">SubMenu_Music</include>
 		<include>DummyButtons</include>
 	</include>
 
@@ -248,6 +249,15 @@
 			<onfocus>SetFocus(300)</onfocus>
 		</control>
 		<!-- OnDown Controls -->
+		<!-- Music -->
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3301)</onfocus>
+			<visible>Container(300).HasFocus(6) + Player.HasMedia</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(300)</onfocus>
+			<visible>Container(300).HasFocus(6) + !Player.HasMedia</visible>
+		</control>
 		<!-- Settings -->
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3810)</onfocus>
@@ -311,9 +321,34 @@
 
 	<!-- Sub Menus -->
 
+	<include name="SubMenu_Music">
+		<control type="grouplist" id="3300">
+			<posx>480</posx>
+			<posy>471</posy>
+			<visible>ControlGroup(3300).HasFocus() + Container(300).HasFocus(6)</visible>
+			<width>315</width>
+			<height>30</height>
+			<onup>300</onup>
+			<ondown>-</ondown>
+			<onleft>998</onleft>
+			<onright>999</onright>
+			<scrolltime>0</scrolltime>
+			<include>Animation_ZoomOutZoomIn</include>
+			<include>Animation_ZoomedByMenu</include>
+			<control type="button" id="3301">
+				<label>$LOCALIZE[31004]</label>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onclick>XBMC.ActivateWindow(50)</onclick>
+				<include>Home_MainMenuLabel</include> 
+				<visible allowhiddenfocus="false">Player.HasMedia</visible>
+			</control>
+		</control>
+	</include>
+
 	<include name="SubMenu_Settings">
 		<control type="grouplist" id="3800">
-			<posx>475</posx>
+			<posx>480</posx>
 			<posy>471</posy>
 			<visible>ControlGroup(3800).HasFocus() + Container(300).HasFocus(2)</visible>
 			<width>320</width>
@@ -384,7 +419,7 @@
 
 	<include name="SubMenu_Quit">
 		<control type="grouplist" id="3900">
-			<posx>475</posx>
+			<posx>480</posx>
 			<posy>471</posy>
 			<visible>ControlGroup(3900).HasFocus() + Container(300).HasFocus(1)</visible>
 			<width>320</width>

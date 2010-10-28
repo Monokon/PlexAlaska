@@ -43,18 +43,6 @@
 				<onclick>Dialog.Close(1111)</onclick>
 				<onclick>XBMC.ActivateWindow(settings)</onclick>
 			</control>
-			<control type="button" id="3111">
-				<description>Filemanager</description>
-				<height>40</height>
-				<width>1280</width>
-				<font>Font_MenuValue</font>
-				<align>center</align>
-				<aligny>middle</aligny>
-				<label>$LOCALIZE[31500]</label>
-				<onclick>Dialog.Close(1111)</onclick>
-				<onclick>XBMC.ActivateWindow(3)</onclick>
-			</control>
-			
 			<control type="button" id="3117">
 				<description>Favorites</description>
 				<height>40</height>
@@ -65,19 +53,6 @@
 				<label>$LOCALIZE[1036]</label>
 				<onclick>Dialog.Close(1111)</onclick>
 				<onclick>XBMC.ActivateWindow(Favourites)</onclick>
-			</control>
-
-			<control type="button" id="3120">
-				<description>Log out</description>
-				<height>40</height>
-				<width>1280</width>
-				<font>Font_MenuValue</font>
-				<align>center</align>
-				<aligny>middle</aligny>
-				<label>$LOCALIZE[31022]</label>
-				<onclick>Dialog.Close(1111)</onclick>
-				<onclick>System.LogOff</onclick>
-				<visible>system.hasloginscreen</visible>
 			</control>
 
 			<control type="button" id="3119">

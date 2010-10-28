@@ -500,10 +500,10 @@
 			</content>
 		</control>
 		<include condition="Player.HasMedia">submenu_music</include>
-		<include>submenu_movies</include>
-		<include>submenu_tvshows</include>
+		<!--<include>submenu_movies</include>
+		<include>submenu_tvshows</include>-->
 		<include>submenu_quit</include>
-		<include>submenu_appstore</include>
+		<!--<include>submenu_appstore</include>-->
 		<include>submenu_dummybuttons</include>
 	</include>
 	<include name="Home_MenuList">
@@ -1038,7 +1038,7 @@
 	<include name="submenu_dummybuttons">
 		<control type="button" id="351">
 			<onfocus>SetFocus(300)</onfocus>
-			<visible>!Container(300).HasFocus(1) + !Container(300).HasFocus(2) + !Container(300).HasFocus(3) + !Container(300).HasFocus(6) + !Container(300).HasFocus(7) + !Container(300).HasFocus(8) + !Container(300).HasFocus(9)</visible>
+			<visible>!Container(300).HasFocus(1) + !Container(300).HasFocus(9)</visible>
 		</control>
 		<control type="button" id="351">
 			<onfocus>SetFocus(944)</onfocus>
@@ -1047,34 +1047,6 @@
 		<control type="button" id="351">
 			<onfocus>SetFocus(300)</onfocus>
 			<visible>Container(300).HasFocus(1) + !Player.HasMedia</visible>
-		</control>
-		<control type="button" id="351">
-			<onfocus>SetFocus(943)</onfocus>
-			<visible>Container(300).HasFocus(2)</visible>
-		</control>
-		<control type="button" id="351">
-			<onfocus>SetFocus(300)</onfocus>
-			<visible>Container(300).HasFocus(3)</visible>
-		</control>
-		<control type="button" id="351">
-			<onfocus>SetFocus(941)</onfocus>
-			<visible>Container(300).HasFocus(4)</visible>
-		</control>
-		<control type="button" id="351">
-			<onfocus>SetFocus(942)</onfocus>
-			<visible>Container(300).HasFocus(5)</visible>
-		</control>
-		<control type="button" id="351">
-			<onfocus>SetFocus(300)</onfocus>
-			<visible>Container(300).HasFocus(6)</visible>
-		</control>
-		<control type="button" id="351">
-			<onfocus>SetFocus(300)</onfocus>
-			<visible>Container(300).HasFocus(7)</visible>
-		</control>
-		<control type="button" id="351">
-			<onfocus>SetFocus(300)</onfocus>
-			<visible>Container(300).HasFocus(8)</visible>
 		</control>
 		<control type="button" id="351">
 			<onfocus>SetFocus(940)</onfocus>
@@ -1144,7 +1116,7 @@
 
 	<include name="submenu_quit">
 		<control type="group">
-			<posx>350</posx>
+			<posx>415</posx>
 			<posy>520</posy>
 			<visible>ControlGroup(940).HasFocus() + Container(300).HasFocus(9)</visible>
 			<include condition="Skin.HasSetting(home2)">Animation_Submenu_home2</include>
@@ -1156,7 +1128,7 @@
 				<colordiffuse>HomeFrameColor</colordiffuse>
 			</control>
 			<control type="image">
-				<width>550</width>
+				<width>420</width>
 				<height>60</height>
 				<posx>20</posx>
 				<texture>mainmenu/submenu_mid.png</texture>
@@ -1165,7 +1137,7 @@
 			<control type="image">
 				<width>20</width>
 				<height>60</height>
-				<posx>570</posx>
+				<posx>440</posx>
 				<texture>mainmenu/submenu_right.png</texture>
 				<colordiffuse>HomeFrameColor</colordiffuse>
 			</control>
@@ -1187,11 +1159,6 @@
 					<include>submenubutton</include>
 					<label>$LOCALIZE[31035]</label>
 					<onclick>XBMC.SleepSystem()</onclick>
-				</control>
-				<control type="button" id="42">
-					<include>submenubutton</include>
-					<label>$LOCALIZE[31022]</label>
-					<onclick>System.LogOff</onclick>
 				</control>
 				<control type="button" id="43">
 					<include>submenubutton</include>
