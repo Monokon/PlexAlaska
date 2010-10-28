@@ -184,13 +184,6 @@
 				<visible>Window.IsVisible(24) + !Window.IsActive(134) + !Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)</visible>
 			</control>
 			<control type="label">
-				<description>Plugins</description>
-				<!-- LOC -->
-				<label>Plugins</label>
-				<include>Global_HeadingSectionVars</include>
-				<visible>IsEmpty(Container.PluginName) + Container.Content(plugins) + !Window.IsActive(134)</visible>
-			</control>
-			<control type="label">
 				<description>Pictures</description>
 				<label>1</label>
 				<include>Global_HeadingSectionVars</include>
@@ -254,7 +247,7 @@
 				<description>Video</description>
 				<label>3</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Container.Content(files) + Window.IsActive(24) + !Window.IsActive(134) + IsEmpty(Container.FirstTitle)</visible>
+				<visible>Container.Content(plugins) + Window.IsActive(24) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
 				<description>Video</description>
