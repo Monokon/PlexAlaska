@@ -355,7 +355,7 @@
 					<selected>Skin.HasSetting(fanartformovies)</selected>
 					<visible>Skin.HasSetting(home1)</visible>
 				</control>-->
-				<control type="togglebutton" id="214">
+				<!--<control type="togglebutton" id="214">
 					<width>740</width>
 					<font>Font_Settings</font>
 					<textcolor>MenuValue</textcolor>
@@ -426,7 +426,7 @@
 					<alttexturenofocus>-</alttexturenofocus>
 					<alttexturefocus>-</alttexturefocus>
 					<visible>Skin.HasSetting(home1)</visible>
-				</control>
+				</control>-->
 			</control>
 			<control type="grouplist" id="9003">
 				<visible>Container(9000).Hasfocus(3)</visible>
