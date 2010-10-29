@@ -12,6 +12,17 @@
 		</font>
 
 		<font>
+			<name>Home4MenuItem</name>
+			<filename>GraublauWebBold.ttf</filename>
+			<size>42</size>
+		</font>
+		<font>
+			<name>Home4MenuItemNoFocus</name>
+			<filename>GraublauWebBold.ttf</filename>
+			<size>36</size>
+		</font>
+
+		<font>
 			<name>Font_Channels</name>
 			<filename>alaska_black.ttf</filename>
 			<aspect>0.7</aspect>
@@ -415,6 +426,17 @@
 		</font>
 
 		<font>
+			<name>Home4MenuItem</name>
+			<filename>alaska_black_cy.ttf</filename>
+			<size>42</size>
+		</font>
+		<font>
+			<name>Home4MenuItemNoFocus</name>
+			<filename>alaska_black_cy.ttf</filename>
+			<size>36</size>
+		</font>
+
+		<font>
 			<name>Font_Channels</name>
 			<filename>alaska_black_cy.ttf</filename>
 			<aspect>0.7</aspect>
@@ -815,6 +837,17 @@
 			<name>font13</name>
 			<filename>Arial.ttf</filename>
 			<size>20</size>
+		</font>
+
+		<font>
+			<name>Home4MenuItem</name>
+			<filename>Arial.ttf</filename>
+			<size>42</size>
+		</font>
+		<font>
+			<name>Home4MenuItemNoFocus</name>
+			<filename>Arial.ttf</filename>
+			<size>36</size>
 		</font>
 
 		<font>

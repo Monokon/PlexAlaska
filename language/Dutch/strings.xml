@@ -14,20 +14,20 @@
 	<string id="31007">PLUGINS</string>
 	<string id="31008">FAVORIETEN</string>
 	<string id="31009">PROGRAMMA'S</string>
-	<string id="31010">MUZIEK</string>
+	<string id="31010">Muziek</string>
 	<string id="31011">GAMES</string>
-	<string id="31012">AFBEELDINGEN</string>
+	<string id="31012">Afbeeldingen</string>
 	<string id="31013">FILM</string>
 	<string id="31014">TV SERIE</string>
-	<string id="31015">VIDEO</string>
+	<string id="31015">Video</string>
 	<string id="31016">INSTELLINGEN</string>
 	<string id="31017">HET WEER</string>
 	<string id="31018">DISC AFSPELEN</string>
-	<string id="31019">UITSCHAKELEN</string>
+	<string id="31019">Uitschakelen</string>
 	<string id="31020">SCRIPTS</string>
 	<string id="31021">OPNIEUW STARTEN</string>
 	<string id="31022">UITLOGGEN</string>
-	<string id="31023">APPSTORE</string>
+	<string id="31023">Plex online</string>
 	<string id="31025">MEEST AFGESPEELD</string>
 	<string id="31026">ARTIESTEN</string>
 	<string id="31027">ALBUMS</string>
@@ -38,8 +38,9 @@
 	<string id="31032">NIEUWE AFLEVERINGEN</string>
 	<string id="31033">AFB. INSTELLINGEN</string>
 	<string id="31034">WEERINSTELLINGEN</string>
-	<string id="31035">SLUIMER</string>
-	<string id="31036">PLEX AFSLUITEN</string>
+	<string id="31035">Sluimer</string>
+	<string id="31036">Plex afsluiten</string>
+	<string id="31037">MY MEDIA</string>
 
 
 	<!-- other strings -->
@@ -106,6 +107,7 @@
 	<string id="31930">Home 1</string>
 	<string id="31931">Home 2</string>
 	<string id="31932">Home 3</string>
+	<string id="31951">Home 4 (Blur style)</string>
 	<string id="31933">Verberg item "PLEX ONLINE"</string>
 	<string id="31934">Verberg item "VIDEO"</string>
 	<string id="31935">Verberg item "AFBEELDINGEN"</string>

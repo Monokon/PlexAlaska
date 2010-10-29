@@ -21,6 +21,7 @@
 	<include file="Includes_Filemanager.xml" />
 	<include file="Includes_Objects.xml" />
 	<include file="Includes_Home_1.xml" />
+	<include file="Includes_Home_2.xml" />
 	<include file="PlexIncludes.xml" />
 	<include file="Appstore_Submenus.xml" />
 	<!-- Debug objects -->
@@ -939,6 +940,7 @@
 		<onclick>Skin.Reset(home1)</onclick>
 		<onclick>Skin.Reset(home2)</onclick>
 		<onclick>Skin.Reset(home3)</onclick>
+		<onclick>Skin.Reset(home4)</onclick>
 	</include>
 
 	<include name="FanartVisibilityButtons">
@@ -1576,4 +1578,10 @@
 		<animation effect="slide" start="0,0" end="60,-37" time="600" condition="Player.HasMedia">Conditional</animation>
 	</include>
 
+	<include name="home4defaultcontrol">
+		<defaultcontrol always="true">200</defaultcontrol>
+	</include>
+	<include name="homedefaultcontrol">
+		<defaultcontrol always="true">300</defaultcontrol>
+	</include>
 </includes>

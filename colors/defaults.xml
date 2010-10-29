@@ -20,6 +20,11 @@
 
 	<color name="MainMenu">193c3c3c</color>
 
+	<!-- Home 4 Colours -->
+	 
+	<color name="Home4Full">FF686868</color>
+	<color name="Home4Light">97686868</color>
+
 	<!-- Base colours -->
 
 	<color name="Black">FF262626</color>

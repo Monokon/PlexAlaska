@@ -14,20 +14,20 @@
 	<string id="31007">PLUGINS</string>
 	<string id="31008">FAVOURITES</string>
 	<string id="31009">PROGRAMS</string>
-	<string id="31010">MUSIC</string>
+	<string id="31010">Music</string>
 	<string id="31011">GAMES</string>
-	<string id="31012">PICTURES</string>
+	<string id="31012">Pictures</string>
 	<string id="31013">MOVIES</string>
 	<string id="31014">TV SHOWS</string>
-	<string id="31015">VIDEOS</string>
+	<string id="31015">Videos</string>
 	<string id="31016">SETTINGS</string>
 	<string id="31017">WEATHER</string>
 	<string id="31018">PLAY DISC</string>
-	<string id="31019">SHUTDOWN</string>
+	<string id="31019">Shutdown</string>
 	<string id="31020">SCRIPTS</string>
 	<string id="31021">RESTART</string>
 	<string id="31022">SIGN OUT</string>
-	<string id="31023">PLEX ONLINE</string>
+	<string id="31023">Plex online</string>
 	<string id="31025">MOST PLAYED</string>
 	<string id="31026">ARTISTS</string>
 	<string id="31027">ALBUMS</string>
@@ -38,8 +38,9 @@
 	<string id="31032">NEW EPISODES</string>
 	<string id="31033">PICTURE SETTINGS</string>
 	<string id="31034">WEATHER SETTINGS</string>
-	<string id="31035">SLEEP</string>
-	<string id="31036">QUIT PLEX</string>
+	<string id="31035">Sleep</string>
+	<string id="31036">Quit Plex</string>
+	<string id="31037">MY MEDIA</string>
 
 
 	<!-- other strings -->
@@ -106,6 +107,7 @@
 	<string id="31930">Home 1</string>
 	<string id="31931">Home 2</string>
 	<string id="31932">Home 3</string>
+	<string id="31951">Home 4 (Blur style)</string>
 	<string id="31933">Hide item "Plex online"</string>
 	<string id="31934">Hide item "Videos"</string>
 	<string id="31935">Hide item "Pictures"</string>

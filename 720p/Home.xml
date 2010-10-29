@@ -1,14 +1,16 @@
 <!--Alaska-->
 
 <window id="0">
-	<defaultcontrol always="true">300</defaultcontrol>
+	<include condition="Skin.HasSetting(home4)">home4defaultcontrol</include>
+	<include condition="!Skin.HasSetting(home4)">homedefaultcontrol</include>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Filter</include>
 
-		<include condition="Skin.HasSetting(home1) | [!Skin.HasSetting(home1) + !Skin.HasSetting(home2) + !Skin.HasSetting(home3)]">Home_MenuImage</include>
+		<include condition="Skin.HasSetting(home1) | [!Skin.HasSetting(home1) + !Skin.HasSetting(home2) + !Skin.HasSetting(home3) + !Skin.HasSetting(home4)]">Home_MenuImage</include>
 		<include condition="Skin.HasSetting(home2)">Home_MenuIcon</include>
 		<include condition="Skin.HasSetting(home3)">Home_MenuList</include>
+		<include condition="Skin.HasSetting(home4)">Home_MenuBlur</include>
 
 		<control type="label">
 			<include>WindowID</include>

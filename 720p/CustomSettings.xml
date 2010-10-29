@@ -204,7 +204,7 @@
 					<aligny>center</aligny>
 					<include>ResetHomeButtons</include>
 					<onclick>Skin.ToggleSetting(home1)</onclick>
-					<selected>Skin.HasSetting(home1) | [!Skin.HasSetting(home1) + !Skin.HasSetting(home2) + !Skin.HasSetting(home3)]</selected>
+					<selected>Skin.HasSetting(home1) | [!Skin.HasSetting(home1) + !Skin.HasSetting(home2) + !Skin.HasSetting(home3) + !Skin.HasSetting(home4)]</selected>
 				</control>
 				<control type="radiobutton" id="200">
 					<width>740</width>
@@ -228,8 +228,20 @@
 					<aligny>center</aligny>
 					<include>ResetHomeButtons</include>
 					<onclick>Skin.ToggleSetting(home3)</onclick>
-					<ondown>SetFocus(207)</ondown>
 					<selected>Skin.HasSetting(home3)</selected>
+				</control>
+				<control type="radiobutton" id="204">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31951]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<include>ResetHomeButtons</include>
+					<onclick>Skin.ToggleSetting(home4)</onclick>
+					<ondown>SetFocus(207)</ondown>
+					<selected>Skin.HasSetting(home4)</selected>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -237,6 +249,7 @@
 					<width>730</width>
 					<height>2</height>
 					<texture>common/divider.png</texture>
+					<visible>!Skin.HasSetting(home4)</visible>
 				</control>
 				<control type="radiobutton" id="207">
 					<width>740</width>
@@ -247,8 +260,9 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(noappstore)</onclick>
-					<onup>SetFocus(201)</onup>
+					<onup>SetFocus(204)</onup>
 					<selected>Skin.HasSetting(noappstore)</selected>
+					<visible allowhiddenfocus="false">!Skin.HasSetting(home4)</visible>
 				</control>
 				<control type="radiobutton" id="208">
 					<width>740</width>
@@ -260,6 +274,7 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(novideos)</onclick>
 					<selected>Skin.HasSetting(novideos)</selected>
+					<visible>!Skin.HasSetting(home4)</visible>
 				</control>
 				<control type="radiobutton" id="209">
 					<width>740</width>
@@ -271,6 +286,7 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(nopictures)</onclick>
 					<selected>Skin.HasSetting(nopictures)</selected>
+					<visible>!Skin.HasSetting(home4)</visible>
 				</control>
 				<control type="radiobutton" id="210">
 					<width>740</width>
@@ -282,6 +298,7 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(noweather)</onclick>
 					<selected>Skin.HasSetting(noweather)</selected>
+					<visible>!Skin.HasSetting(home4)</visible>
 				</control>
 				<control type="radiobutton" id="211">
 					<width>740</width>
@@ -293,6 +310,7 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(nohomequit)</onclick>
 					<selected>Skin.HasSetting(nohomequit)</selected>
+					<visible>!Skin.HasSetting(home4)</visible>
 				</control>
 				<control type="radiobutton" id="218">
 					<width>740</width>
@@ -304,6 +322,7 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(nomusic)</onclick>
 					<selected>Skin.HasSetting(nomusic)</selected>
+					<visible>!Skin.HasSetting(home4)</visible>
 				</control>
 				<control type="radiobutton" id="212">
 					<width>740</width>
@@ -315,6 +334,7 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(sleepsystem)</onclick>
 					<selected>Skin.HasSetting(sleepsystem)</selected>
+					<visible>!Skin.HasSetting(home4)</visible>
 				</control>
 				<!--<control type="radiobutton" id="202">
 					<width>740</width>
@@ -981,5 +1001,6 @@
 			<label>CustomSettings.xml</label>
 			<visible>Skin.HasSetting(debugmode)</visible>
 		</control>
+
 	</controls>
 </window>

@@ -14,20 +14,20 @@
 	<string id="31007">PLUGINS</string>
 	<string id="31008">FAVORITEN</string>
 	<string id="31009">PROGRAMME</string>
-	<string id="31010">MUSIK</string>
+	<string id="31010">Musik</string>
 	<string id="31011">SPIELE</string>
-	<string id="31012">BILDER</string>
+	<string id="31012">Bilder</string>
 	<string id="31013">FILME</string>
 	<string id="31014">SERIEN</string>
-	<string id="31015">VIDEOS</string>
+	<string id="31015">Videos</string>
 	<string id="31016">EINSTELLUNGEN</string>
 	<string id="31017">WETTER</string>
 	<string id="31018">SPIELE DISK</string>
-	<string id="31019">AUSSCHALTEN</string>
+	<string id="31019">Ausschalten</string>
 	<string id="31020">SKRIPTE</string>
 	<string id="31021">NEUSTART</string>
 	<string id="31022">AUSLOGGEN</string>
-	<string id="31023">PLEX ONLINE</string>
+	<string id="31023">Plex online</string>
 	<string id="31025">MEISTGESPIELT</string>
 	<string id="31026">INTERPRETEN</string>
 	<string id="31027">ALBEN</string>
@@ -38,8 +38,9 @@
 	<string id="31032">NEUE EPISODEN</string>
 	<string id="31033">BILDER-EINSTELL.</string>
 	<string id="31034">WETTER-EINSTELL.</string>
-	<string id="31035">SLEEP</string>
-	<string id="31036">PLEX BEENDEN</string>
+	<string id="31035">Sleep</string>
+	<string id="31036">Plex beenden</string>
+	<string id="31037">MEINE MEDIEN</string>
 
 
 	<!-- other strings -->
@@ -107,6 +108,7 @@
 	<string id="31930">Hauptmenü 1</string>
 	<string id="31931">Hauptmenü 2</string>
 	<string id="31932">Hauptmenü 3</string>
+	<string id="31951">Hauptmenü 4 (Blur-Stil)</string>
 	<string id="31933">"Plex Online" ausblenden</string>
 	<string id="31934">"Videos" ausblenden</string>
 	<string id="31935">"Bilder" ausblenden</string>

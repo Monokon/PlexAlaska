@@ -20,6 +20,11 @@
 	
 	<color name="MainMenu">FF333333</color>
 
+	<!-- Home 4 Colours -->
+	 
+	<color name="Home4Full">FFFFFFFF</color>
+	<color name="Home4Light">97FFFFFF</color>
+
 	<!-- Global Colours -->
 
 	<color name="Time">FFFFFFFF</color>
