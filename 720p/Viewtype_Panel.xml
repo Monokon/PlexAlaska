@@ -714,7 +714,7 @@
 				<posy>6</posy>
 				<width>170</width>
 				<height>110</height>
-				<texture background="true" diffuse="landscape/landscapematteNF.png">$INFO[ListItem.Icon]</texture>
+				<texture background="true" diffuse="landscape/landscapematteNF.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 				<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
 				<aspectratio scalediffuse="false">scale</aspectratio>
 			</control>
@@ -782,7 +782,7 @@
 					<posy>6</posy>
 					<width>170</width>
 					<height>110</height>
-					<texture background="true" diffuse="landscape/landscapematteFO.png">$INFO[ListItem.Icon]</texture>
+					<texture background="true" diffuse="landscape/landscapematteFO.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="auto" start="80" end="120" time="400" tween="back" easing="out" />
 						<effect type="fade" start="80" end="100" time="400" />
