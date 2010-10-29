@@ -32,15 +32,7 @@
 			<visible>Skin.HasSetting(mediaflagson)</visible>
 			<!-- Year Panel -->
 			<control type="group">
-				<animation effect="slide" start="0,0" end="105,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels)) + !IsEmpty(Listitem.Property(mediaTag::videoResolution)) + !IsEmpty(Listitem.Property(mediaTag::videoCodec))">Conditional</animation>
-				<animation effect="slide" start="0,0" end="105,0" condition="!IsEmpty(Listitem.Property(mediaTag::audioChannels)) + IsEmpty(Listitem.Property(mediaTag::videoResolution)) + !IsEmpty(Listitem.Property(mediaTag::videoCodec))">Conditional</animation>
-				<animation effect="slide" start="0,0" end="105,0" condition="!IsEmpty(Listitem.Property(mediaTag::audioChannels)) + !IsEmpty(Listitem.Property(mediaTag::videoResolution)) + IsEmpty(Listitem.Property(mediaTag::videoCodec))">Conditional</animation>
-				<animation effect="slide" start="0,0" end="210,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels)) + IsEmpty(Listitem.Property(mediaTag::videoResolution)) + !IsEmpty(Listitem.Property(mediaTag::videoCodec))">Conditional</animation>
-				<animation effect="slide" start="0,0" end="210,0" condition="!IsEmpty(Listitem.Property(mediaTag::audioChannels)) + IsEmpty(Listitem.Property(mediaTag::videoResolution)) + IsEmpty(Listitem.Property(mediaTag::videoCodec))">Conditional</animation>
-				<animation effect="slide" start="0,0" end="210,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels)) + !IsEmpty(Listitem.Property(mediaTag::videoResolution)) + IsEmpty(Listitem.Property(mediaTag::videoCodec))">Conditional</animation>
-				<animation effect="slide" start="0,0" end="210,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels)) + IsEmpty(Listitem.Property(mediaTag::videoResolution)) + IsEmpty(Listitem.Property(mediaTag::videoCodec)) + !IsEmpty(Listitem.Property(mediaTag::studio))">Conditional</animation>
-				<animation effect="slide" start="0,0" end="315,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels)) + IsEmpty(Listitem.Property(mediaTag::videoResolution)) + IsEmpty(Listitem.Property(mediaTag::videoCodec)) + IsEmpty(Listitem.Property(mediaTag::studio))">Conditional</animation>
-				<posx>785</posx>
+				<posx>1100</posx>
 				<control type="image">
 					<posx>4</posx>
 					<posy>554</posy>
@@ -64,7 +56,33 @@
 			</control>
 
 			<control type="group">
-				<posx>1100</posx>
+				<animation effect="slide" start="0,0" end="105,0" condition="IsEmpty(ListItem.Year)">Conditional</animation>
+				<posx>995</posx>
+				<control type="image">
+					<include>PosterMediaFlagsVars</include>
+					<info>Listitem.Property(mediaTag::audioCodec)</info>
+				</control>
+				<control type="image">
+					<include>PosterMediaFlagsAudiochannelsVars</include>
+					<info>Listitem.Property(mediaTag::audioChannels)</info>
+				</control>
+			</control>
+
+			<control type="group">
+				<animation effect="slide" start="0,0" end="105,0" condition="IsEmpty(ListItem.Year)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="105,0" condition="IsEmpty(Listitem.Property(mediaTag::audioCodec)) + IsEmpty(Listitem.Property(mediaTag::audioChannels))">Conditional</animation>
+				<posx>890</posx>
+				<control type="image">
+					<include>PosterMediaFlagsVars</include>
+					<info>Listitem.Property(mediaTag::videoResolution)</info>
+				</control>
+			</control>
+
+			<control type="group">
+				<posx>785</posx>
+				<animation effect="slide" start="0,0" end="105,0" condition="IsEmpty(ListItem.Year)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="105,0" condition="IsEmpty(Listitem.Property(mediaTag::audioCodec)) + IsEmpty(Listitem.Property(mediaTag::audioChannels))">Conditional</animation>
+				<animation effect="slide" start="0,0" end="105,0" condition="IsEmpty(Listitem.Property(mediaTag::videoResolution))">Conditional</animation>
 				<control type="image">
 					<posy>545</posy>
 					<width>80</width>
@@ -73,41 +91,6 @@
 					<aspectratio>keep</aspectratio>
 					<info>Listitem.Property(mediaTag::studio)</info>
 					<visible>!IsEmpty(ListItem.Property(mediaTag::studio))</visible>
-				</control>
-			</control>
-			<control type="group">
-				<animation effect="slide" start="0,0" end="105,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels)) + !IsEmpty(Listitem.Property(mediaTag::videoResolution))">Conditional</animation>
-				<animation effect="slide" start="0,0" end="105,0" condition="!IsEmpty(Listitem.Property(mediaTag::audioChannels)) + IsEmpty(Listitem.Property(mediaTag::videoResolution))">Conditional</animation>
-				<animation effect="slide" start="0,0" end="210,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels)) + IsEmpty(Listitem.Property(mediaTag::videoResolution))">Conditional</animation>
-				<posx>890</posx>
-				<control type="image">
-					<include>PosterMediaFlagsVars</include>
-					<info>Listitem.Property(mediaTag::videoCodec)</info>
-				</control>
-			</control>
-			<control type="group">
-				<animation effect="slide" start="0,0" end="105,0" condition="IsEmpty(Listitem.Property(mediaTag::audioChannels))">Conditional</animation>
-				<posx>995</posx>
-				<control type="image">
-					<include>PosterMediaFlagsVars</include>
-					<visible>!IsEmpty(ListItem.Property(mediaType::movie))</visible>
-					<info>Listitem.Property(mediaTag::videoResolution)</info>
-				</control>
-			</control>
-			<control type="group">
-				<animation effect="slide" start="0,0" end="-105,0" condition="!IsEmpty(Listitem.Property(mediaTag::studio))">Conditional</animation>
-				<posx>1100</posx>
-				<control type="image">
-					<include>PosterMediaFlagsVars</include>
-					<info>Listitem.Property(mediaTag::audioCodec)</info>
-				</control>
-			</control>
-			<control type="group">
-				<animation effect="slide" start="0,0" end="-105,0" condition="!IsEmpty(Listitem.Property(mediaTag::studio))">Conditional</animation>
-				<posx>1100</posx>
-				<control type="image">
-					<include>PosterMediaFlagsAudiochannelsVars</include>
-					<info>Listitem.Property(mediaTag::audioChannels)</info>
 				</control>
 			</control>
 
