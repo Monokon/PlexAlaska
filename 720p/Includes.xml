@@ -23,7 +23,6 @@
 	<include file="Includes_Home_1.xml" />
 	<include file="Includes_Home_2.xml" />
 	<include file="PlexIncludes.xml" />
-	<include file="Appstore_Submenus.xml" />
 	<!-- Debug objects -->
 	<include name="Object_DebugGrid">
 		<control type="image">

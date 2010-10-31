@@ -40,7 +40,7 @@
 	<string id="31034">WEATHER SETTINGS</string>
 	<string id="31035">Sleep</string>
 	<string id="31036">Quit Plex</string>
-	<string id="31037">MY MEDIA</string>
+	<string id="31037">My media</string>
 
 
 	<!-- other strings -->
@@ -108,6 +108,7 @@
 	<string id="31931">Home 2</string>
 	<string id="31932">Home 3</string>
 	<string id="31951">Home 4 (Blur style)</string>
+	<string id="31952">Stack my media</string>
 	<string id="31933">Hide item "Plex online"</string>
 	<string id="31934">Hide item "Videos"</string>
 	<string id="31935">Hide item "Pictures"</string>

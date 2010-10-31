@@ -40,7 +40,7 @@
 	<string id="31034">WEERINSTELLINGEN</string>
 	<string id="31035">Sluimer</string>
 	<string id="31036">Plex afsluiten</string>
-	<string id="31037">MY MEDIA</string>
+	<string id="31037">My media</string>
 
 
 	<!-- other strings -->
@@ -108,6 +108,7 @@
 	<string id="31931">Home 2</string>
 	<string id="31932">Home 3</string>
 	<string id="31951">Home 4 (Blur style)</string>
+	<string id="31952">Stack my media</string>
 	<string id="31933">Verberg item "PLEX ONLINE"</string>
 	<string id="31934">Verberg item "VIDEO"</string>
 	<string id="31935">Verberg item "AFBEELDINGEN"</string>

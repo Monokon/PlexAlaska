@@ -240,7 +240,7 @@
 					<aligny>center</aligny>
 					<include>ResetHomeButtons</include>
 					<onclick>Skin.ToggleSetting(home4)</onclick>
-					<ondown>SetFocus(207)</ondown>
+					<ondown>SetFocus(219)</ondown>
 					<selected>Skin.HasSetting(home4)</selected>
 				</control>
 				<control type="image">
@@ -251,6 +251,19 @@
 					<texture>common/divider.png</texture>
 					<visible>!Skin.HasSetting(home4)</visible>
 				</control>
+				<control type="radiobutton" id="219">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31952]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(stackmedia)</onclick>
+					<onup>SetFocus(204)</onup>
+					<selected>Skin.HasSetting(stackmedia)</selected>
+					<visible>Skin.HasSetting(home1)</visible>
+				</control>
 				<control type="radiobutton" id="207">
 					<width>740</width>
 					<font>Font_Settings</font>
@@ -260,7 +273,6 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(noappstore)</onclick>
-					<onup>SetFocus(204)</onup>
 					<selected>Skin.HasSetting(noappstore)</selected>
 					<visible allowhiddenfocus="false">!Skin.HasSetting(home4)</visible>
 				</control>

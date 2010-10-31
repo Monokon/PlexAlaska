@@ -40,7 +40,7 @@
 	<string id="31034">WETTER-EINSTELL.</string>
 	<string id="31035">Sleep</string>
 	<string id="31036">Plex beenden</string>
-	<string id="31037">MEINE MEDIEN</string>
+	<string id="31037">Meine Medien</string>
 
 
 	<!-- other strings -->
@@ -109,6 +109,7 @@
 	<string id="31931">Hauptmenü 2</string>
 	<string id="31932">Hauptmenü 3</string>
 	<string id="31951">Hauptmenü 4 (Blur-Stil)</string>
+	<string id="31952">Meine Medien stapeln</string>
 	<string id="31933">"Plex Online" ausblenden</string>
 	<string id="31934">"Videos" ausblenden</string>
 	<string id="31935">"Bilder" ausblenden</string>
