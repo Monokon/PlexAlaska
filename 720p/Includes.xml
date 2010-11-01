@@ -199,10 +199,16 @@
 				<description>Tv Shows</description>
 				<label>$INFO[Container.FirstTitle]</label>
 				<include>Global_HeadingSectionVars</include>
-				<visible>Window.IsActive(24) + [Container.Content(tvshows) | Container.Content(episodes)] + !Window.IsActive(134)</visible>
+				<visible>Window.IsActive(24) + Container.Content(tvshows) + !Window.IsActive(134)</visible>
 			</control>
 			<control type="label">
-				<description>Tv Shows / seasons / episodes</description>
+				<description>Episodes</description>
+				<label>$INFO[Container.ListItem.TVShowTitle]: $LOCALIZE[20373] $INFO[Container.ListItem.Season]</label>
+				<include>Global_HeadingSectionVars</include>
+				<visible>Window.IsActive(24) + Container.Content(episodes) + !Window.IsActive(134)</visible>
+			</control>
+			<control type="label">
+				<description>Seasons</description>
 				<label>$INFO[Container.FirstTitle]: $INFO[Container.SecondTitle]</label>
 				<include>Global_HeadingSectionVars</include>
 				<visible>Window.IsActive(24) + Container.Content(seasons) + !Window.IsActive(134)</visible>
