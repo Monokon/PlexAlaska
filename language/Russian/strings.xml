@@ -134,8 +134,9 @@
 	<string id="31949">Усыпить MAC вместо выхода из PLEX</string>
 	<string id="31955">Скрыть строку выделения выбранного объекта в списках</string>
 	<string id="31957">Скрывать название текущей картинки/папки в меню ИЗОБРАЖЕНИЯ</string>
-	<string id="31958">Не отмечать просмотренные фильмы</string>
-	<string id="31959">Не отмечать просмотренные телешоу</string>
+	<string id="31958">Enable "watched"-overlay</string>
+	<string id="31959">Enable "unwatched"-overlay</string>
+	<string id="31956">Enable "partly watched"-overlay</string>
 	<string id="31820">Отключить затемнение неактивных объектов</string>
 	<string id="31801">Отключить вид POSTER FIXED</string>
 	<string id="31802">Отключить вид POSTER WRAP</string>

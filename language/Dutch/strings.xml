@@ -129,8 +129,9 @@
 	<string id="31949">Verander standaard "AFSLUITEN" naar "SLUIMER"</string>
 	<string id="31955">Schakel lijnen uit om geselecteerd item te highlighten</string>
 	<string id="31957">Verberg label van huidige afbeelding/pad in "Afbeeldingen"</string>
-	<string id="31958">Disable "watched"-overlay for movies</string>
-	<string id="31959">Disable "watched"-overlay for TV shows</string>
+	<string id="31958">Enable "watched"-overlay</string>
+	<string id="31959">Enable "unwatched"-overlay</string>
+	<string id="31956">Enable "partly watched"-overlay</string>
 	<string id="31820">Disable fading of unfocused items</string>
 	<string id="31801">Disable viewtype "POSTER FIXED"</string>
 	<string id="31802">Disable viewtype "POSTER WRAP"</string>

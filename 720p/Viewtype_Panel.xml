@@ -591,7 +591,7 @@
 					<posy>10</posy>
 					<width>20</width>
 					<height>20</height>
-					<visible>[!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)] | [!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)]</visible>
+					<visible>Skin.HasSetting(overlaywatched) + !IsEmpty(ListItem.Overlay)</visible>
 					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 				</control>
@@ -600,9 +600,27 @@
 					<posy>14</posy>
 					<width>12</width>
 					<height>12</height>
-					<visible>[!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)] | [!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)]</visible>
-					<texture>$INFO[ListItem.Overlay]</texture>
+					<visible>Skin.HasSetting(overlaywatched) + !IsEmpty(ListItem.Overlay)</visible>
+					<texture>Icon$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>89FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>12</posx>
+					<posy>10</posy>
+					<width>20</width>
+					<height>20</height>
+					<visible>Skin.HasSetting(overlayunwatched) + !IsEmpty(ListItem.Overlay)</visible>
+					<texture>BG_$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>12</posx>
+					<posy>10</posy>
+					<width>20</width>
+					<height>20</height>
+					<visible>Skin.HasSetting(overlaypartlywatched) + !IsEmpty(ListItem.Overlay)</visible>
+					<texture>BG__$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 				</control>
 			</control>
 		</itemlayout>
@@ -667,7 +685,7 @@
 				<posy>0</posy>
 				<width>20</width>
 				<height>20</height>
-				<visible>[!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)] | [!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)]</visible>
+				<visible>Skin.HasSetting(overlaywatched) + !IsEmpty(ListItem.Overlay)</visible>
 				<texture>BG$INFO[ListItem.Overlay]</texture>
 				<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 				<animation type="Focus" reversible="false">
@@ -681,10 +699,38 @@
 				<posy>5</posy>
 				<width>10</width>
 				<height>10</height>
-				<visible>[!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)] | [!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)]</visible>
-				<texture>$INFO[ListItem.Overlay]</texture>
+				<visible>Skin.HasSetting(overlaywatched) + !IsEmpty(ListItem.Overlay)</visible>
+				<texture>Icon$INFO[ListItem.Overlay]</texture>
 				<animation type="Focus" reversible="false">
 					<effect type="zoom" center="20,20" start="80" end="120" time="400" tween="back" easing="out" />
+					<effect type="fade" start="80" end="100" time="400" />
+				</animation>
+			</control>
+			<control type="image">
+				<include>Animation_TallPanelFloat</include>
+				<posx>6</posx>
+				<posy>0</posy>
+				<width>20</width>
+				<height>20</height>
+				<visible>Skin.HasSetting(overlayunwatched) + !IsEmpty(ListItem.Overlay)</visible>
+				<texture>BG_$INFO[ListItem.Overlay]</texture>
+				<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
+				<animation type="Focus" reversible="false">
+					<effect type="zoom" center="20,20" start="0" end="120" time="400" tween="back" easing="out" />
+					<effect type="fade" start="80" end="100" time="400" />
+				</animation>
+			</control>
+			<control type="image">
+				<include>Animation_TallPanelFloat</include>
+				<posx>6</posx>
+				<posy>0</posy>
+				<width>20</width>
+				<height>20</height>
+				<visible>Skin.HasSetting(overlaypartlywatched) + !IsEmpty(ListItem.Overlay)</visible>
+				<texture>BG__$INFO[ListItem.Overlay]</texture>
+				<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
+				<animation type="Focus" reversible="false">
+					<effect type="zoom" center="20,20" start="0" end="120" time="400" tween="back" easing="out" />
 					<effect type="fade" start="80" end="100" time="400" />
 				</animation>
 			</control>
@@ -731,7 +777,7 @@
 				<posy>10</posy>
 				<width>20</width>
 				<height>20</height>
-				<visible>[!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)] | [!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)]</visible>
+				<visible>Skin.HasSetting(overlaywatched) + !IsEmpty(ListItem.Overlay)</visible>
 				<texture>BG$INFO[ListItem.Overlay]</texture>
 				<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 			</control>
@@ -740,9 +786,27 @@
 				<posy>14</posy>
 				<width>12</width>
 				<height>12</height>
-				<visible>[!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)] | [!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)]</visible>
-				<texture>$INFO[ListItem.Overlay]</texture>
+				<visible>Skin.HasSetting(overlaywatched) + !IsEmpty(ListItem.Overlay)</visible>
+				<texture>Icon$INFO[ListItem.Overlay]</texture>
 				<colordiffuse>89FFFFFF</colordiffuse>
+			</control>
+			<control type="image">
+				<posx>12</posx>
+				<posy>10</posy>
+				<width>20</width>
+				<height>20</height>
+				<visible>Skin.HasSetting(overlayunwatched) + !IsEmpty(ListItem.Overlay)</visible>
+				<texture>BG_$INFO[ListItem.Overlay]</texture>
+				<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
+			</control>
+			<control type="image">
+				<posx>12</posx>
+				<posy>10</posy>
+				<width>20</width>
+				<height>20</height>
+				<visible>Skin.HasSetting(overlaypartlywatched) + !IsEmpty(ListItem.Overlay)</visible>
+				<texture>BG__$INFO[ListItem.Overlay]</texture>
+				<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 			</control>
 		</itemlayout>
 		<focusedlayout width="180" height="120">
@@ -808,7 +872,7 @@
 					<posy>3</posy>
 					<width>20</width>
 					<height>20</height>
-					<visible>[!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)] | [!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)]</visible>
+					<visible>Skin.HasSetting(overlaywatched) + !IsEmpty(ListItem.Overlay)</visible>
 					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 					<animation type="Focus" reversible="false">
@@ -822,10 +886,38 @@
 					<posy>8</posy>
 					<width>10</width>
 					<height>10</height>
-					<visible>[!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)] | [!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)]</visible>
-					<texture>$INFO[ListItem.Overlay]</texture>
+					<visible>Skin.HasSetting(overlaywatched) + !IsEmpty(ListItem.Overlay)</visible>
+					<texture>Icon$INFO[ListItem.Overlay]</texture>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="auto" start="80" end="120" time="400" tween="back" easing="out" />
+						<effect type="fade" start="80" end="100" time="400" />
+					</animation>
+				</control>
+				<control type="image">
+					<include>Animation_WidePanelFloat</include>
+					<posx>-1</posx>
+					<posy>3</posy>
+					<width>20</width>
+					<height>20</height>
+					<visible>Skin.HasSetting(overlayunwatched) + !IsEmpty(ListItem.Overlay)</visible>
+					<texture>BG_$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="auto" start="0" end="120" time="400" tween="back" easing="out" />
+						<effect type="fade" start="80" end="100" time="400" />
+					</animation>
+				</control>
+				<control type="image">
+					<include>Animation_WidePanelFloat</include>
+					<posx>-1</posx>
+					<posy>3</posy>
+					<width>20</width>
+					<height>20</height>
+					<visible>Skin.HasSetting(overlaypartlywatched) + !IsEmpty(ListItem.Overlay)</visible>
+					<texture>BG__$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="auto" start="0" end="120" time="400" tween="back" easing="out" />
 						<effect type="fade" start="80" end="100" time="400" />
 					</animation>
 				</control>

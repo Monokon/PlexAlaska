@@ -149,7 +149,7 @@
 					<posy>17</posy>
 					<width>20</width>
 					<height>20</height>
-					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)</visible>
+					<visible>Skin.HasSetting(overlaywatched)</visible>
 					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 				</control>
@@ -158,8 +158,8 @@
 					<posy>21</posy>
 					<width>12</width>
 					<height>12</height>
-					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)</visible>
-					<texture>$INFO[ListItem.Overlay]</texture>
+					<visible>Skin.HasSetting(overlaywatched)</visible>
+					<texture>Icon$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>89FFFFFF</colordiffuse>
 				</control>
 				<control type="image">
@@ -167,18 +167,18 @@
 					<posy>17</posy>
 					<width>20</width>
 					<height>20</height>
-					<visible>!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)</visible>
-					<texture>BG$INFO[ListItem.Overlay]</texture>
+					<visible>Skin.HasSetting(overlayunwatched)</visible>
+					<texture>BG_$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 				</control>
 				<control type="image">
-					<posx>34</posx>
-					<posy>21</posy>
-					<width>12</width>
-					<height>12</height>
-					<visible>!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)</visible>
-					<texture>$INFO[ListItem.Overlay]</texture>
-					<colordiffuse>89FFFFFF</colordiffuse>
+					<posx>30</posx>
+					<posy>17</posy>
+					<width>20</width>
+					<height>20</height>
+					<visible>Skin.HasSetting(overlaypartlywatched)</visible>
+					<texture>BG__$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayUnfocusedColor</colordiffuse>
 				</control>
 			</itemlayout>
 			<focusedlayout width="800" height="120">
@@ -188,7 +188,7 @@
 					<posy>15</posy>
 					<width>20</width>
 					<height>20</height>
-					<visible>!Skin.HasSetting(notvshowoverlay) + Container.Content(episodes)</visible>
+					<visible>Skin.HasSetting(overlaywatched) + Container.Content(episodes)</visible>
 					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 				</control>
@@ -197,16 +197,36 @@
 					<posy>19</posy>
 					<width>12</width>
 					<height>12</height>
-					<visible>!Skin.HasSetting(notvshowoverlay) + Container.Content(episodes)</visible>
-					<texture>$INFO[ListItem.Overlay]</texture>
+					<visible>Skin.HasSetting(overlaywatched) + Container.Content(episodes)</visible>
+					<texture>Icon$INFO[ListItem.Overlay]</texture>
 				</control>
-				<!-- Watched overlay for movies -->
+				<!-- Unwatched overlay for episodes -->
+				<control type="image">
+					<posx>0</posx>
+					<posy>15</posy>
+					<width>20</width>
+					<height>20</height>
+					<visible>Skin.HasSetting(overlayunwatched) + Container.Content(episodes)</visible>
+					<texture>BG_$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
+				</control>
+				<!-- Partly watched overlay for episodes -->
+				<control type="image">
+					<posx>0</posx>
+					<posy>15</posy>
+					<width>20</width>
+					<height>20</height>
+					<visible>Skin.HasSetting(overlaypartlywatched) + Container.Content(episodes)</visible>
+					<texture>BG__$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
+				</control>
+				<!-- Watched overlay for rest -->
 				<control type="image">
 					<posx>0</posx>
 					<posy>53</posy>
 					<width>20</width>
 					<height>20</height>
-					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)</visible>
+					<visible>Skin.HasSetting(overlaywatched) + !Container.Content(episodes)</visible>
 					<texture>BG$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 				</control>
@@ -215,26 +235,28 @@
 					<posy>57</posy>
 					<width>12</width>
 					<height>12</height>
-					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)</visible>
-					<texture>$INFO[ListItem.Overlay]</texture>
+					<visible>Skin.HasSetting(overlaywatched) + !Container.Content(episodes)</visible>
+					<texture>Icon$INFO[ListItem.Overlay]</texture>
 				</control>
-				<!-- Watched overlay for TV shows -->
+				<!-- Unwatched overlay for rest -->
 				<control type="image">
 					<posx>0</posx>
 					<posy>53</posy>
 					<width>20</width>
 					<height>20</height>
-					<visible>!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies) + !Container.Content(episodes)</visible>
-					<texture>BG$INFO[ListItem.Overlay]</texture>
+					<visible>Skin.HasSetting(overlayunwatched) + !Container.Content(episodes)</visible>
+					<texture>BG_$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 				</control>
+				<!-- Partly watched overlay for rest -->
 				<control type="image">
-					<posx>4</posx>
-					<posy>57</posy>
-					<width>12</width>
-					<height>12</height>
-					<visible>!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies) + !Container.Content(episodes)</visible>
-					<texture>$INFO[ListItem.Overlay]</texture>
+					<posx>0</posx>
+					<posy>53</posy>
+					<width>20</width>
+					<height>20</height>
+					<visible>Skin.HasSetting(overlaypartlywatched) + !Container.Content(episodes)</visible>
+					<texture>BG__$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 				</control>
 				<control type="label">
 					<posx>30</posx>

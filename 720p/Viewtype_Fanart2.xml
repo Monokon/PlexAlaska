@@ -127,23 +127,8 @@
 					<width>55</width>
 					<height>55</height>
 					<aspectratio scalediffuse="false">stretch</aspectratio>
-					<visible>!Skin.HasSetting(notvshowoverlay) + !Container.Content(movies)</visible>
-					<texture>$INFO[ListItem.Overlay]</texture>
-					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
-					<include>Animation_FanartInfoSlide</include>
-					<animation type="Focus" reversible="false">
-						<effect type="zoom" center="157,192" start="51" end="100" time="600" tween="back" easing="out" />
-						<effect type="fade" start="0" end="100" time="600" />
-					</animation>
-				</control>
-				<control type="image">
-					<posx>-635</posx>
-					<posy>45</posy>
-					<width>55</width>
-					<height>55</height>
-					<aspectratio scalediffuse="false">stretch</aspectratio>
-					<visible>!Skin.HasSetting(nomovieoverlay) + Container.Content(movies)</visible>
-					<texture>$INFO[ListItem.Overlay]</texture>
+					<visible>Skin.HasSetting(overlaywatched)</visible>
+					<texture>Icon$INFO[ListItem.Overlay]</texture>
 					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
 					<include>Animation_FanartInfoSlide</include>
 					<animation type="Focus" reversible="false">
