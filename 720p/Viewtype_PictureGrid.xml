@@ -87,6 +87,7 @@
 			<width>114</width>
 			<height>114</height>
 			<texture>common/thumb_border.png</texture>
+			<colordiffuse>backgroundColor</colordiffuse>
 			<animation type="Focus" reversible="false">
 				<effect type="zoom" center="auto" start="80" end="120" time="400" tween="back" easing="out" />
 				<effect type="fade" start="80" end="100" time="400" />
@@ -131,7 +132,7 @@
 				<control type="image">
 					<include>Object_PictureIconVars</include>
 					<include condition="!Skin.HasSetting(noitemfading)">diffuseForUnfocusedItem</include>
-				</control>				
+				</control>
 			</itemlayout>
 			<focusedlayout width="110" height="110">
 				<include>Object_PicturePanel</include>
