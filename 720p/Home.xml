@@ -2,7 +2,7 @@
 
 <window id="0">
 	<include condition="[Skin.HasSetting(home1) + Skin.HasSetting(stackmedia)] | Skin.HasSetting(home4) | [!Skin.HasSetting(home1) + !Skin.HasSetting(home2) + !Skin.HasSetting(home3) + !Skin.HasSetting(home4) + Skin.HasSetting(stackmedia)]">home4defaultcontrol</include>
-	<include condition="Skin.HasSetting(home2) | Skin.HasSetting(home3)">homedefaultcontrol</include>
+	<include condition="Skin.HasSetting(home2) | Skin.HasSetting(home3) | [Skin.HasSetting(home1) + !Skin.HasSetting(stackmedia)] | [!Skin.HasSetting(home1) + !Skin.HasSetting(home2) + !Skin.HasSetting(home3) + !Skin.HasSetting(home4) + !Skin.HasSetting(stackmedia)]">homedefaultcontrol</include>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 		<include>Global_Filter</include>
