@@ -262,7 +262,7 @@
 					<onclick>Skin.ToggleSetting(stackmedia)</onclick>
 					<onup>SetFocus(204)</onup>
 					<selected>Skin.HasSetting(stackmedia)</selected>
-					<visible>Skin.HasSetting(home1)</visible>
+					<visible>Skin.HasSetting(home1) | [!Skin.HasSetting(home1) + !Skin.HasSetting(home2) + !Skin.HasSetting(home3) + !Skin.HasSetting(home4)]</visible>
 				</control>
 				<control type="radiobutton" id="207">
 					<width>740</width>
@@ -370,7 +370,7 @@
 					<aligny>center</aligny>
 					<onclick>Skin.ToggleSetting(osximages)</onclick>
 					<selected>Skin.HasSetting(osximages)</selected>
-					<visible>Skin.HasSetting(home1)</visible>
+					<visible>Skin.HasSetting(home1) | [!Skin.HasSetting(home1) + !Skin.HasSetting(home2) + !Skin.HasSetting(home3) + !Skin.HasSetting(home4)]</visible>
 				</control>
 				<!--<control type="radiobutton" id="213">
 					<width>740</width>
