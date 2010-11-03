@@ -109,7 +109,7 @@
 						<info>ListItem.Label</info>
 						<textcolor>Home4Light</textcolor>
 						<scroll>false</scroll>
-						<font>list1</font>
+						<font>Home4RightMenu</font>
 					</control>
 				</itemlayout>
 				<focusedlayout height="50">
@@ -131,7 +131,7 @@
 						<aligny>center</aligny>
 						<textcolor>Home4Full</textcolor>
 						<info>ListItem.Label</info>
-						<font>list1</font>
+						<font>Home4RightMenu</font>
 					</control>
 				</focusedlayout>
 				<content>
@@ -163,7 +163,7 @@
 						<info>ListItem.Label</info>
 						<textcolor>Home4Light</textcolor>
 						<scroll>false</scroll>
-						<font>list1</font>
+						<font>Home4RightMenu</font>
 					</control>
 				</itemlayout>
 				<focusedlayout height="50">
@@ -184,7 +184,7 @@
 						<aligny>center</aligny>
 						<textcolor>Home4Full</textcolor>
 						<info>ListItem.Label</info>
-						<font>list1</font>
+						<font>Home4RightMenu</font>
 					</control>
 				</focusedlayout>
 				<content>
@@ -236,7 +236,7 @@
 						<info>ListItem.Label</info>
 						<textcolor>Home4Light</textcolor>
 						<scroll>false</scroll>
-						<font>list1</font>
+						<font>Home4RightMenu</font>
 					</control>
 				</itemlayout>
 				<focusedlayout height="50">
@@ -257,7 +257,7 @@
 						<aligny>center</aligny>
 						<textcolor>Home4Full</textcolor>
 						<info>ListItem.Label</info>
-						<font>list1</font>
+						<font>Home4RightMenu</font>
 					</control>
 				</focusedlayout>
 				<content>
@@ -329,7 +329,7 @@
 						<info>ListItem.Label</info>
 						<textcolor>Home4Light</textcolor>
 						<scroll>false</scroll>
-						<font>list1</font>
+						<font>Home4RightMenu</font>
 					</control>
 				</itemlayout>
 				<focusedlayout height="50">
@@ -350,7 +350,7 @@
 						<aligny>center</aligny>
 						<textcolor>Home4Full</textcolor>
 						<info>ListItem.Label</info>
-						<font>list1</font>
+						<font>Home4RightMenu</font>
 					</control>
 				</focusedlayout>
 				<content>

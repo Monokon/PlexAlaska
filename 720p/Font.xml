@@ -21,6 +21,11 @@
 			<filename>GraublauWebBold.ttf</filename>
 			<size>36</size>
 		</font>
+		<font>
+			<name>Home4RightMenu</name>
+			<filename>Arial.ttf</filename>
+			<size>19</size>
+		</font>
 
 		<font>
 			<name>Font_Channels</name>
@@ -435,6 +440,11 @@
 			<filename>alaska_black_cy.ttf</filename>
 			<size>36</size>
 		</font>
+		<font>
+			<name>Home4RightMenu</name>
+			<filename>Arial.ttf</filename>
+			<size>19</size>
+		</font>
 
 		<font>
 			<name>Font_Channels</name>
@@ -848,6 +858,11 @@
 			<name>Home4MenuItemNoFocus</name>
 			<filename>Arial.ttf</filename>
 			<size>36</size>
+		</font>
+		<font>
+			<name>Home4RightMenu</name>
+			<filename>Arial.ttf</filename>
+			<size>19</size>
 		</font>
 
 		<font>
