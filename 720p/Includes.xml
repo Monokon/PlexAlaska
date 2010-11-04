@@ -1107,7 +1107,7 @@
 
 	<include name="submenu_quit">
 		<control type="group">
-			<posx>415</posx>
+			<posx>395</posx>
 			<posy>520</posy>
 			<visible>ControlGroup(940).HasFocus() + Container(300).HasFocus(9)</visible>
 			<include condition="Skin.HasSetting(home2)">Animation_Submenu_home2</include>
@@ -1119,7 +1119,7 @@
 				<colordiffuse>HomeFrameColor</colordiffuse>
 			</control>
 			<control type="image">
-				<width>420</width>
+				<width>480</width>
 				<height>60</height>
 				<posx>20</posx>
 				<texture>mainmenu/submenu_mid.png</texture>
@@ -1128,7 +1128,7 @@
 			<control type="image">
 				<width>20</width>
 				<height>60</height>
-				<posx>440</posx>
+				<posx>500</posx>
 				<texture>mainmenu/submenu_right.png</texture>
 				<colordiffuse>HomeFrameColor</colordiffuse>
 			</control>
@@ -1300,7 +1300,7 @@
 			</control>
 			<control type="image">
 				<posx>20</posx>
-				<width>240</width>
+				<width>260</width>
 				<height>60</height>
 				<texture>mainmenu/submenu_mid.png</texture>
 				<colordiffuse>HomeFrameColor</colordiffuse>
@@ -1308,7 +1308,7 @@
 			<control type="image">
 				<width>20</width>
 				<height>60</height>
-				<posx>260</posx>
+				<posx>280</posx>
 				<texture>mainmenu/submenu_right.png</texture>
 				<colordiffuse>HomeFrameColor</colordiffuse>
 			</control>
@@ -1331,7 +1331,7 @@
 	</include>
 
 	<include name="submenubutton">
-		<width>130</width>
+		<width>150</width>
 		<height>36</height>
 		<align>center</align>
 		<aligny>center</aligny>

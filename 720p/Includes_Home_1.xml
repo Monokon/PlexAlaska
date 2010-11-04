@@ -620,7 +620,7 @@
 			<scrolltime>0</scrolltime>
 			<include>Animation_ZoomOutZoomIn</include>
 			<include>Animation_ZoomedByMenu</include>
-			<control type="button" id="3301">
+			<control type="button" id="3501">
 				<label>$LOCALIZE[31004]</label>
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>

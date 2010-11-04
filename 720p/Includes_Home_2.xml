@@ -203,6 +203,12 @@
 						<label>$LOCALIZE[31010]</label>
 						<onclick>xbmc.activatewindow(5)</onclick>
 					</item>
+					<item id="5">
+						<description>Now playing</description>
+						<label>$LOCALIZE[31004]</label>
+						<onclick>xbmc.activatewindow(50)</onclick>
+						<visible allowhiddenfocus="false">Player.HasMedia</visible>
+					</item>
 					<item id="4">
 						<description>Photo Apps</description>
 						<label>$LOCALIZE[31012]</label>
