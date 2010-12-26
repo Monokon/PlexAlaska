@@ -77,11 +77,11 @@
 					<label>$LOCALIZE[31914]</label>
 					<onclick>SetFocus(9006)</onclick>
 				</item>
-				<item id="7">
+				<!--<item id="7">
 					<description>Theme</description>
 					<label>$LOCALIZE[31915]</label>
 					<onclick>SetFocus(9007)</onclick>
-				</item>
+				</item>-->
 				<item id="5">
 					<description>Misc.</description>
 					<label>$LOCALIZE[31916]</label>
