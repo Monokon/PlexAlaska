@@ -39,7 +39,7 @@
 					<include>Home_MainMenuShade</include>
 					<control type="label">
 						<include>Home_MainMenuLabel</include>
-						<label>$INFO[Listitem.Label]</label>
+						<label>[UPPERCASE]$INFO[Listitem.Label][/UPPERCASE]</label>
 						<animation effect="slide" end="16,0" condition="!Container(300).HasFocus(1) | !Container(300).HasFocus(2) | !Container(300).HasFocus(6)">Conditional</animation>
 					</control>
 				</control>
@@ -65,7 +65,7 @@
 					<include>Home_MainMenuShade</include>
 					<control type="label">
 						<include>Home_MainMenuLabel</include>
-						<label>$INFO[Listitem.Label]</label>
+						<label>[UPPERCASE]$INFO[Listitem.Label][/UPPERCASE]</label>
 						<visible>[!ControlGroup(3800).HasFocus() + !ControlGroup(3900).HasFocus() + !ControlGroup(3300).HasFocus()]</visible>
 						<animation effect="slide" end="16,0" condition="[[!Container(300).HasFocus(1) + !Container(300).HasFocus(2) + [!Container(300).HasFocus(6) + Player.HasMedia]] | [!Container(300).HasFocus(1) + !Container(300).HasFocus(2)] + !Player.HasMedia]">Conditional</animation>
 					</control>
@@ -105,7 +105,7 @@
 					<onclick>ActivateWindow(4)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
-					<label>$LOCALIZE[31016]</label>
+					<label>[UPPERCASE]$LOCALIZE[31016][/UPPERCASE]</label>
 					<label2>_2</label2>
 					<thumb>backdrops/settings/settings-5.jpg</thumb>
 					<visible>!Skin.HasSetting(nosettings)</visible>
@@ -115,7 +115,7 @@
 					<onclick>Plex.ActivateWindow(1,plex://localhost/system/appstore,return)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
-					<label>$LOCALIZE[31023]</label>
+					<label>[UPPERCASE]$LOCALIZE[31023][/UPPERCASE]</label>
 					<label2>_3</label2>
 					<thumb>backdrops/appstore/appstore-1.jpg</thumb>
 					<visible>!Skin.HasSetting(noappstore)</visible>
@@ -125,7 +125,7 @@
 					<onclick>ActivateWindow(2600)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
-					<label>$LOCALIZE[31017]</label>
+					<label>[UPPERCASE]$LOCALIZE[31017][/UPPERCASE]</label>
 					<label2>_4</label2>
 					<thumb>backdrops/weather/weather-6.jpg</thumb>
 					<visible>!Skin.HasSetting(noweather)</visible>
@@ -135,7 +135,7 @@
 					<onclick>ActivateWindow(Pictures)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
-					<label>$LOCALIZE[31012]</label>
+					<label>[UPPERCASE]$LOCALIZE[31012][/UPPERCASE]</label>
 					<label2>_5</label2>
 					<thumb>backdrops/pictures/pictures-2.jpg</thumb>
 					<visible>!Skin.HasSetting(nopictures)</visible>
@@ -146,7 +146,7 @@
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<thumb>backdrops/music/music-2.jpg</thumb>
-					<label>$LOCALIZE[31010]</label>
+					<label>[UPPERCASE]$LOCALIZE[31010][/UPPERCASE]</label>
 					<label2>_6</label2>
 					<visible>!Skin.HasSetting(nomusic)</visible>
 				</item>
@@ -155,7 +155,7 @@
 					<onclick>ActivateWindow(VideoFiles)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
-					<label>$LOCALIZE[31015]</label>
+					<label>[UPPERCASE]$LOCALIZE[31015][/UPPERCASE]</label>
 					<label2>_7</label2>
 					<thumb>backdrops/videos/video-3.jpg</thumb>
 					<visible>!Skin.HasSetting(novideos)</visible>
@@ -272,7 +272,7 @@
 					<onclick>ActivateWindow(4)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
-					<label>$LOCALIZE[31016]</label>
+					<label>[UPPERCASE]$LOCALIZE[31016][/UPPERCASE]</label>
 					<label2>_2</label2>
 					<thumb>backdrops/settings/settings-5.jpg</thumb>
 					<visible>!Skin.HasSetting(nosettings)</visible>
@@ -282,7 +282,7 @@
 					<onclick>Plex.ActivateWindow(1,plex://localhost/system/appstore,return)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
-					<label>$LOCALIZE[31023]</label>
+					<label>[UPPERCASE]$LOCALIZE[31023][/UPPERCASE]</label>
 					<label2>_3</label2>
 					<thumb>backdrops/appstore/appstore-1.jpg</thumb>
 					<visible>!Skin.HasSetting(noappstore)</visible>
@@ -292,7 +292,7 @@
 					<onclick>ActivateWindow(2600)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
-					<label>$LOCALIZE[31017]</label>
+					<label>[UPPERCASE]$LOCALIZE[31017][/UPPERCASE]</label>
 					<label2>_4</label2>
 					<thumb>backdrops/weather/weather-6.jpg</thumb>
 					<visible>!Skin.HasSetting(noweather)</visible>
@@ -302,7 +302,7 @@
 					<onclick>ActivateWindow(Pictures)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
-					<label>$LOCALIZE[31012]</label>
+					<label>[UPPERCASE]$LOCALIZE[31012][/UPPERCASE]</label>
 					<label2>_5</label2>
 					<thumb>backdrops/pictures/pictures-2.jpg</thumb>
 					<visible>!Skin.HasSetting(nopictures)</visible>
@@ -313,7 +313,7 @@
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 					<thumb>backdrops/music/music-2.jpg</thumb>
-					<label>$LOCALIZE[31010]</label>
+					<label>[UPPERCASE]$LOCALIZE[31010][/UPPERCASE]</label>
 					<label2>_6</label2>
 					<visible>!Skin.HasSetting(nomusic)</visible>
 				</item>
@@ -322,7 +322,7 @@
 					<onclick>ActivateWindow(VideoFiles)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
-					<label>$LOCALIZE[31015]</label>
+					<label>[UPPERCASE]$LOCALIZE[31015][/UPPERCASE]</label>
 					<label2>_7</label2>
 					<thumb>backdrops/videos/video-3.jpg</thumb>
 					<visible>!Skin.HasSetting(novideos)</visible>
@@ -332,7 +332,7 @@
 					<onclick>SetFocus(300)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
 					<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
-					<label>$LOCALIZE[31037]</label>
+					<label>[UPPERCASE]$LOCALIZE[31037][/UPPERCASE]</label>
 					<label2>_8</label2>
 					<thumb>backdrops/pms.png</thumb>
 				</item>
@@ -596,7 +596,7 @@
 			<include>Animation_ZoomOutZoomIn</include>
 			<include>Animation_ZoomedByMenu</include>
 			<control type="button" id="3301">
-				<label>$LOCALIZE[31004]</label>
+				<label>[UPPERCASE]$LOCALIZE[31004][/UPPERCASE]</label>
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<onclick>XBMC.ActivateWindow(50)</onclick>
@@ -621,7 +621,7 @@
 			<include>Animation_ZoomOutZoomIn</include>
 			<include>Animation_ZoomedByMenu</include>
 			<control type="button" id="3501">
-				<label>$LOCALIZE[31004]</label>
+				<label>[UPPERCASE]$LOCALIZE[31004][/UPPERCASE]</label>
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<onclick>XBMC.ActivateWindow(50)</onclick>
@@ -652,49 +652,49 @@
 				<visible allowhiddenfocus="false">Skin.HasSetting(debugmode)</visible>
 			</control>
 			<control type="button" id="3801">
-				<label>3</label>
+				<label>[UPPERCASE]$LOCALIZE[3][/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(MyVideosSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3802">
-				<label>2</label>
+				<label>[UPPERCASE]$LOCALIZE[2][/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(MyMusicSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3803">
-				<label>1</label>
+				<label>[UPPERCASE]$LOCALIZE[1][/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(MyPicturesSettings)</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3805">
-				<label>8</label>
+				<label>[UPPERCASE]$LOCALIZE[8][/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(MyWeatherSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3806">
-				<label>705</label>
+				<label>[UPPERCASE]$LOCALIZE[705][/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(NetworkSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3807">
-				<label>13000</label>
+				<label>[UPPERCASE]$LOCALIZE[13000][/UPPERCASE]</label>
 				<onclick>xbmc.activatewindow(SystemSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3808">
-				<label>480</label>
+				<label>[UPPERCASE]$LOCALIZE[480][/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(AppearanceSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3809">
-				<label>PlexAlaska</label>
+				<label>[UPPERCASE]PlexAlaska[/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(56)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">true</visible>
@@ -723,49 +723,49 @@
 				<visible allowhiddenfocus="false">Skin.HasSetting(debugmode)</visible>
 			</control>
 			<control type="button" id="3201">
-				<label>3</label>
+				<label>[UPPERCASE]$LOCALIZE[3][/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(MyVideosSettings)</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3202">
-				<label>2</label>
+				<label>[UPPERCASE]$LOCALIZE[2][/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(MyMusicSettings)</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3203">
-				<label>1</label>
+				<label>[UPPERCASE]$LOCALIZE[1][/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(MyPicturesSettings)</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3205">
-				<label>8</label>
+				<label>[UPPERCASE]$LOCALIZE[8][/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(MyWeatherSettings)</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3206">
-				<label>705</label>
+				<label>[UPPERCASE]$LOCALIZE[705][/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(NetworkSettings)</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3207">
-				<label>13000</label>
+				<label>[UPPERCASE]$LOCALIZE[13000][/UPPERCASE]</label>
 				<onclick>xbmc.activatewindow(SystemSettings)</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3208">
-				<label>480</label>
+				<label>[UPPERCASE]$LOCALIZE[480][/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(AppearanceSettings)</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
 			<control type="button" id="3209">
-				<label>PlexAlaska</label>
+				<label>[UPPERCASE]PlexAlaska[/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(56)</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">true</visible>
@@ -794,7 +794,7 @@
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidesleep)</visible>
 			</control>
 			<control type="button" id="3903">
-				<label>$LOCALIZE[31019]</label>
+				<label>[UPPERCASE]$LOCALIZE[31019][/UPPERCASE]</label>
 				<onclick>Plex.ShutDownSystem()</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hideshutdown)</visible>
@@ -823,7 +823,7 @@
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hidesleep)</visible>
 			</control>
 			<control type="button" id="3403">
-				<label>$LOCALIZE[31019]</label>
+				<label>[UPPERCASE]$LOCALIZE[31019][/UPPERCASE]</label>
 				<onclick>Plex.ShutDownSystem()</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">!Skin.HasSetting(hideshutdown)</visible>
@@ -897,7 +897,7 @@
 					<control type="label">
 						<posx>335</posx>
 						<include>Home_MainMenuLabel</include>
-						<info>Listitem.Label</info>
+						<label>[UPPERCASE]$INFO[Listitem.Label][/UPPERCASE]</label>
 						<visible>IsEmpty(ListItem.Label2)</visible>
 					</control>
 				</control>

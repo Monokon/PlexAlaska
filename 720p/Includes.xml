@@ -976,11 +976,11 @@
 	</include>
 
 	<include name="type_quit">
-		<label>$LOCALIZE[31036]</label>
+		<label>[UPPERCASE]$LOCALIZE[31036][/UPPERCASE]</label>
 		<onclick>XBMC.Shutdown(0)</onclick>
 	</include>
 	<include name="type_sleep">
-		<label>$LOCALIZE[31035]</label>
+		<label>[UPPERCASE]$LOCALIZE[31035][/UPPERCASE]</label>
 		<onclick>XBMC.SleepSystem()</onclick>
 	</include>
 
