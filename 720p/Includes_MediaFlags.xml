@@ -40,7 +40,7 @@
 					<height>32</height>
 					<colordiffuse>FlagDiffuse</colordiffuse>
 					<texture>flags/frame_year.png</texture>
-					<visible>!IsEmpty(ListItem.Year)</visible>
+					<visible>!IsEmpty(ListItem.Year) + Window.IsVisible(24) + !Window.IsActive(134) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				</control>
 				<control type="label">
 					<label>$INFO[ListItem.Year]</label>
@@ -51,7 +51,7 @@
 					<aligny>center</aligny>
 					<font>Font_PosterRating</font>
 					<textcolor>FlagDiffuse</textcolor>
-					<visible>!IsEmpty(ListItem.Year)</visible>
+					<visible>!IsEmpty(ListItem.Year) + Window.IsVisible(24) + !Window.IsActive(134) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 				</control>
 			</control>
 
