@@ -350,7 +350,7 @@
 					<texture>$INFO[ListItem.StarRating]</texture>
 					<!--<colordiffuse>$INFO[ListItem.StarDiffuse]</colordiffuse>-->
 					<colordiffuse>StarRatingDiffuse</colordiffuse>
-					<visible>Window.IsActive(24) + ![Container.Content(seasons) | Container.Content(episodes) | Container.Content(genres)]</visible>
+					<visible>Window.IsActive(24) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 				</control>
 				<!-- Programs -->
 				<!--<control type="group">
