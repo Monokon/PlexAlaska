@@ -99,11 +99,11 @@
 					<thumb>settings/settings_weather.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyWeatherSettings)</onclick>
 				</item>
-				<item id="6">
+				<!--<item id="6">
 					<label>Network</label>
 					<thumb>settings/settings_network.png</thumb>
 					<onclick>XBMC.ActivateWindow(NetworkSettings)</onclick>
-				</item>
+				</item>-->
 				<item id="7">
 					<label>System</label>
 					<thumb>settings/settings_system.png</thumb>
