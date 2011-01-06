@@ -597,7 +597,7 @@
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByMusicInfo</include>
 			<include>Animation_HiddenByDialog</include>
-			<visible>Control.IsVisible(50) + Container.Content(Genres)</visible>
+			<!--<visible>Control.IsVisible(50) + Container.Content(Movies)</visible>-->
 		</control>
 		<!-- music genre images -->
 		<control type="image">
