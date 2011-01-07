@@ -583,7 +583,7 @@
 			<include>Animation_HiddenByDialog</include>
 			<visible>Control.IsVisible(50) + !Container.Content(Genres) + !Container.Content(Movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !Container.Content(actors)</visible>
 		</control>
-		<control type="image">
+		<!--<control type="image">
 			<posx>0</posx>
 			<posy>110</posy>
 			<width>440</width>
@@ -597,8 +597,8 @@
 			<include>Animation_ZoomedByMenu</include>
 			<include>Animation_HiddenByMusicInfo</include>
 			<include>Animation_HiddenByDialog</include>
-			<!--<visible>Control.IsVisible(50) + Container.Content(Movies)</visible>-->
-		</control>
+			<visible>Control.IsVisible(50) + Container.Content(Movies)</visible>
+		</control>-->
 		<!-- music genre images -->
 		<control type="image">
 			<posx>30</posx>
