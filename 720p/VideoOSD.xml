@@ -94,7 +94,7 @@
 			<control type="grouplist" id="2002">
 				<visible allowhiddenfocus="true">Controlgroup(2002).HasFocus + !Window.IsVisible(125)</visible>
 				<include>Animation_CommonFade</include>
-				<posx>730</posx>
+				<posx>795</posx>
 				<posy>25</posy>
 				<width>550</width>
 				<height>100</height>
@@ -112,7 +112,7 @@
 					<texturenofocus border="1">osd/button_more_nf.png</texturenofocus>
 					<onclick>SetFocus(2001)</onclick>
 				</control>
-				<control type="button" id="14">
+				<!--<control type="button" id="14">
 					<description>Open Subtitle</description>
 					<height>75</height>
 					<width>75</width>
@@ -129,7 +129,7 @@
 					<texturenofocus border="1">osd/button_sub_nf.png</texturenofocus>
 					<onclick>RunScript(q:/scripts/Alaska_OpenSubtitles_OSD/default.py, [MOVIE]$INFO[VideoPlayer.Title][/MOVIE])</onclick>
 					<visible>![Player.Forwarding | Player.Rewinding] + !IsEmpty(VideoPlayer.Title) + IsEmpty(VideoPlayer.TVShowTitle)</visible>
-				</control>
+				</control>-->
 				<control type="button" id="9">
 					<description>Previous</description>
 					<height>75</height>
