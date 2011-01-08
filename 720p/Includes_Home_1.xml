@@ -66,8 +66,8 @@
 					<control type="label">
 						<include>Home_MainMenuLabel</include>
 						<label>[UPPERCASE]$INFO[Listitem.Label][/UPPERCASE]</label>
-						<visible>[!ControlGroup(3800).HasFocus() + !ControlGroup(3900).HasFocus() + !ControlGroup(3300).HasFocus()]</visible>
-						<animation effect="slide" end="16,0" condition="[[!Container(300).HasFocus(1) + !Container(300).HasFocus(2) + [!Container(300).HasFocus(6) + Player.HasMedia]] | [!Container(300).HasFocus(1) + !Container(300).HasFocus(2)] + !Player.HasMedia]">Conditional</animation>
+						<visible>[!ControlGroup(3800).HasFocus() + !ControlGroup(3900).HasFocus() + !ControlGroup(3300).HasFocus() + !ControlGroup(3600).HasFocus()]</visible>
+						<animation effect="slide" end="16,0" condition="[[!Container(300).HasFocus(1) + !Container(300).HasFocus(2) + !Container(300).HasFocus(3) + [!Container(300).HasFocus(6) + Player.HasMedia]] | [!Container(300).HasFocus(1) + !Container(300).HasFocus(2) + !Container(300).HasFocus(3)] + !Player.HasMedia]">Conditional</animation>
 					</control>
 					<control type="image" id="398">
 						<posx>338</posx>
@@ -76,8 +76,8 @@
 						<height>24</height>
 						<texture>arrowhomeup.png</texture>
 						<colordiffuse>MainMenuLabel</colordiffuse>
-						<visible>[Container(3900).HasNext + ControlGroup(3900).HasFocus()] | [!Container(3900).HasNext + ControlGroup(3900).HasFocus()] | [Container(3800).HasNext + ControlGroup(3800).HasFocus()] | [!Container(3800).HasNext + ControlGroup(3800).HasFocus()] | [Container(3300).HasNext + ControlGroup(3300).HasFocus()] | [!Container(3300).HasNext + ControlGroup(3300).HasFocus()]</visible>
-						<animation effect="slide" end="0,6" condition="[Container(300).HasFocus(1) + !Container(3900).HasNext] | [Container(300).HasFocus(2) + !Container(3800).HasNext] | [Container(300).HasFocus(6) + !Container(3300).HasNext]">Conditional</animation>
+						<visible>[Container(3900).HasNext + ControlGroup(3900).HasFocus()] | [!Container(3900).HasNext + ControlGroup(3900).HasFocus()] | [Container(3800).HasNext + ControlGroup(3800).HasFocus()] | [!Container(3800).HasNext + ControlGroup(3800).HasFocus()] | [Container(3300).HasNext + ControlGroup(3300).HasFocus()] | [!Container(3300).HasNext + ControlGroup(3300).HasFocus()] | [Container(3600).HasNext + ControlGroup(3600).HasFocus()] | [!Container(3600).HasNext + ControlGroup(3600).HasFocus()]</visible>
+						<animation effect="slide" end="0,6" condition="[Container(300).HasFocus(1) + !Container(3900).HasNext] | [Container(300).HasFocus(2) + !Container(3800).HasNext] | [Container(300).HasFocus(6) + !Container(3300).HasNext] | [Container(300).HasFocus(3) + !Container(3600).HasNext]">Conditional</animation>
 					</control>
 					<control type="image" id="399">
 						<posx>338</posx>
@@ -86,8 +86,8 @@
 						<height>24</height>
 						<texture>arrowhomedown.png</texture>
 						<colordiffuse>MainMenuLabel</colordiffuse>
-						<visible>[[Container(300).HasFocus(1) + !ControlGroup(3900).HasFocus()]] | [Container(3900).HasNext + ControlGroup(3900).HasFocus()] | [[Container(300).HasFocus(2) + !ControlGroup(3800).HasFocus()]] | [Container(3800).HasNext + ControlGroup(3800).HasFocus()] | [[Container(300).HasFocus(6) + !ControlGroup(3300).HasFocus() + Player.HasMedia]] | [Container(3300).HasNext + ControlGroup(3300).HasFocus()]</visible>
-						<animation effect="slide" end="0,-6" condition="!ControlGroup(3900).HasFocus() + !ControlGroup(3800).HasFocus() + !ControlGroup(3300).HasFocus()">Conditional</animation>
+						<visible>[[Container(300).HasFocus(1) + !ControlGroup(3900).HasFocus()]] | [Container(3900).HasNext + ControlGroup(3900).HasFocus()] | [[Container(300).HasFocus(2) + !ControlGroup(3800).HasFocus()]] | [Container(3800).HasNext + ControlGroup(3800).HasFocus()] | [[Container(300).HasFocus(6) + !ControlGroup(3300).HasFocus() + Player.HasMedia]] | [Container(3300).HasNext + ControlGroup(3300).HasFocus()] | [[Container(300).HasFocus(3) + !ControlGroup(3600).HasFocus()]] | [Container(3600).HasNext + ControlGroup(3600).HasFocus()]</visible>
+						<animation effect="slide" end="0,-6" condition="!ControlGroup(3900).HasFocus() + !ControlGroup(3800).HasFocus() + !ControlGroup(3300).HasFocus() + !ControlGroup(3600).HasFocus()">Conditional</animation>
 					</control>
 				</control>
 			</focusedlayout>
@@ -164,6 +164,7 @@
 		</control>
 		<include>SubMenu_Quit</include>
 		<include>SubMenu_Settings</include>
+		<include>SubMenu_Plexonline</include>
 		<include condition="Player.HasMedia">SubMenu_Music</include>
 		<include>DummyButtons</include>
 	</include>
@@ -233,8 +234,8 @@
 					<control type="label">
 						<include>Home_MainMenuLabel</include>
 						<label>$INFO[Listitem.Label]</label>
-						<visible>[!ControlGroup(3200).HasFocus() + !ControlGroup(3400).HasFocus() + !ControlGroup(3500).HasFocus()]</visible>
-						<animation effect="slide" end="16,0" condition="[[!Container(200).HasFocus(1) + !Container(200).HasFocus(2) + [!Container(200).HasFocus(6) + Player.HasMedia] + !Container(200).HasFocus(8)] | [!Container(200).HasFocus(1) + !Container(200).HasFocus(2) + !Container(200).HasFocus(8)] + !Player.HasMedia]">Conditional</animation>
+						<visible>[!ControlGroup(3200).HasFocus() + !ControlGroup(3400).HasFocus() + !ControlGroup(3500).HasFocus() + !ControlGroup(3700).HasFocus()]</visible>
+						<animation effect="slide" end="16,0" condition="[[!Container(200).HasFocus(1) + !Container(200).HasFocus(2) + !Container(200).HasFocus(3) + [!Container(200).HasFocus(6) + Player.HasMedia] + !Container(200).HasFocus(8)] | [!Container(200).HasFocus(1) + !Container(200).HasFocus(2) + !Container(200).HasFocus(3) + !Container(200).HasFocus(8)] + !Player.HasMedia]">Conditional</animation>
 					</control>
 					<control type="image" id="398">
 						<posx>338</posx>
@@ -243,8 +244,8 @@
 						<height>24</height>
 						<texture>arrowhomeup.png</texture>
 						<colordiffuse>MainMenuLabel</colordiffuse>
-						<visible>[Container(3400).HasNext + ControlGroup(3400).HasFocus()] | [!Container(3400).HasNext + ControlGroup(3400).HasFocus()] | [Container(3200).HasNext + ControlGroup(3200).HasFocus()] | [!Container(3200).HasNext + ControlGroup(3200).HasFocus()] | [Container(3500).HasNext + ControlGroup(3500).HasFocus()] | [!Container(3500).HasNext + ControlGroup(3500).HasFocus()]</visible>
-						<animation effect="slide" end="0,6" condition="[Container(200).HasFocus(1) + !Container(3400).HasNext] | [Container(200).HasFocus(2) + !Container(3200).HasNext] | [Container(200).HasFocus(6) + !Container(3500).HasNext]">Conditional</animation>
+						<visible>[Container(3400).HasNext + ControlGroup(3400).HasFocus()] | [!Container(3400).HasNext + ControlGroup(3400).HasFocus()] | [Container(3200).HasNext + ControlGroup(3200).HasFocus()] | [!Container(3200).HasNext + ControlGroup(3200).HasFocus()] | [Container(3500).HasNext + ControlGroup(3500).HasFocus()] | [!Container(3500).HasNext + ControlGroup(3500).HasFocus()] | [Container(3700).HasNext + ControlGroup(3700).HasFocus()] | [!Container(3700).HasNext + ControlGroup(3700).HasFocus()]</visible>
+						<animation effect="slide" end="0,6" condition="[Container(200).HasFocus(1) + !Container(3400).HasNext] | [Container(200).HasFocus(2) + !Container(3200).HasNext] | [Container(200).HasFocus(3) + !Container(3700).HasNext] | [Container(200).HasFocus(6) + !Container(3500).HasNext]">Conditional</animation>
 					</control>
 					<control type="image" id="399">
 						<posx>338</posx>
@@ -253,8 +254,8 @@
 						<height>24</height>
 						<texture>arrowhomedown.png</texture>
 						<colordiffuse>MainMenuLabel</colordiffuse>
-						<visible>[[Container(200).HasFocus(1) + !ControlGroup(3400).HasFocus()]] | [Container(3400).HasNext + ControlGroup(3400).HasFocus()] | [[Container(200).HasFocus(2) + !ControlGroup(3200).HasFocus()]] | [Container(3200).HasNext + ControlGroup(3200).HasFocus()] | [[Container(200).HasFocus(6) + !ControlGroup(3500).HasFocus() + Player.HasMedia]] | [Container(3500).HasNext + ControlGroup(3500).HasFocus()] | Container(200).HasFocus(8)</visible>
-						<animation effect="slide" end="0,-6" condition="!ControlGroup(3400).HasFocus() + !ControlGroup(3200).HasFocus() + !ControlGroup(3500).HasFocus()">Conditional</animation>
+						<visible>[[Container(200).HasFocus(1) + !ControlGroup(3400).HasFocus()]] | [Container(3400).HasNext + ControlGroup(3400).HasFocus()] | [[Container(200).HasFocus(2) + !ControlGroup(3200).HasFocus()]] | [Container(3200).HasNext + ControlGroup(3200).HasFocus()] | [[Container(200).HasFocus(6) + !ControlGroup(3500).HasFocus() + Player.HasMedia]] | [Container(3500).HasNext + ControlGroup(3500).HasFocus()] | [[Container(200).HasFocus(3) + !ControlGroup(3700).HasFocus()]] | [Container(3700).HasNext + ControlGroup(3700).HasFocus()] | Container(200).HasFocus(8)</visible>
+						<animation effect="slide" end="0,-6" condition="!ControlGroup(3400).HasFocus() + !ControlGroup(3200).HasFocus() + !ControlGroup(3500).HasFocus() + !ControlGroup(3700).HasFocus()">Conditional</animation>
 					</control>
 				</control>
 			</focusedlayout>
@@ -340,6 +341,7 @@
 		</control>
 		<include>SubMenu_Quit_stacked</include>
 		<include>SubMenu_Settings_stacked</include>
+		<include>SubMenu_Plexonline_stacked</include>
 		<include condition="Player.HasMedia">SubMenu_Music_stacked</include>
 		<include>SubMenu_Media</include>
 		<include>DummyButtons_stacked</include>
@@ -425,6 +427,15 @@
 			<onfocus>SetFocus(300)</onfocus>
 			<visible>Container(300).HasFocus(6) + !Player.HasMedia</visible>
 		</control>
+		<!-- Plexonline -->
+		<control type="button" id="3999">
+			<onfocus>SetFocus(3601)</onfocus>
+			<visible>Container(300).HasFocus(3)</visible>
+		</control>
+		<control type="button" id="3999">
+			<onfocus>SetFocus(300)</onfocus>
+			<visible>Container(300).HasFocus(3)</visible>
+		</control>
 		<!-- Settings -->
 		<control type="button" id="3999">
 			<onfocus>SetFocus(3810)</onfocus>
@@ -508,6 +519,15 @@
 		<control type="button" id="3997">
 			<onfocus>SetFocus(300)</onfocus>
 			<visible>Container(200).HasFocus(8)</visible>
+		</control>
+		<!-- Plexonline -->
+		<control type="button" id="3997">
+			<onfocus>SetFocus(3701)</onfocus>
+			<visible>Container(200).HasFocus(3)</visible>
+		</control>
+		<control type="button" id="3997">
+			<onfocus>SetFocus(200)</onfocus>
+			<visible>Container(200).HasFocus(3)</visible>
 		</control>
 		<!-- Music -->
 		<control type="button" id="3997">
@@ -627,6 +647,54 @@
 				<onclick>XBMC.ActivateWindow(50)</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">Player.HasMedia</visible>
+			</control>
+		</control>
+	</include>
+
+	<include name="SubMenu_Plexonline">
+		<control type="grouplist" id="3600">
+			<posx>480</posx>
+			<posy>471</posy>
+			<visible>ControlGroup(3600).HasFocus() + Container(300).HasFocus(3)</visible>
+			<width>315</width>
+			<height>30</height>
+			<onup>300</onup>
+			<ondown>-</ondown>
+			<onleft>998</onleft>
+			<onright>999</onright>
+			<scrolltime>0</scrolltime>
+			<include>Animation_ZoomOutZoomIn</include>
+			<include>Animation_ZoomedByMenu</include>
+			<control type="button" id="3601">
+				<label>[UPPERCASE]$LOCALIZE[31009][/UPPERCASE]</label>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onclick>xbmc.activatewindow(1)</onclick>
+				<include>Home_MainMenuLabel</include> 
+			</control>
+		</control>
+	</include>
+
+	<include name="SubMenu_Plexonline_stacked">
+		<control type="grouplist" id="3700">
+			<posx>480</posx>
+			<posy>471</posy>
+			<visible>ControlGroup(3700).HasFocus() + Container(200).HasFocus(3)</visible>
+			<width>315</width>
+			<height>30</height>
+			<onup>200</onup>
+			<ondown>-</ondown>
+			<onleft>996</onleft>
+			<onright>997</onright>
+			<scrolltime>0</scrolltime>
+			<include>Animation_ZoomOutZoomIn</include>
+			<include>Animation_ZoomedByMenu</include>
+			<control type="button" id="3701">
+				<label>[UPPERCASE]$LOCALIZE[31009][/UPPERCASE]</label>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<onclick>xbmc.activatewindow(1)</onclick>
+				<include>Home_MainMenuLabel</include>
 			</control>
 		</control>
 	</include>

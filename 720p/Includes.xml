@@ -498,6 +498,7 @@
 				</item>
 			</content>
 		</control>
+		<include>submenu_plexonline</include>
 		<include condition="Player.HasMedia">submenu_music</include>
 		<!--<include>submenu_movies</include>
 		<include>submenu_tvshows</include>-->
@@ -1029,7 +1030,7 @@
 	<include name="submenu_dummybuttons">
 		<control type="button" id="351">
 			<onfocus>SetFocus(300)</onfocus>
-			<visible>!Container(300).HasFocus(1) + !Container(300).HasFocus(9)</visible>
+			<visible>!Container(300).HasFocus(1) + !Container(300).HasFocus(2) + !Container(300).HasFocus(9)</visible>
 		</control>
 		<control type="button" id="351">
 			<onfocus>SetFocus(944)</onfocus>
@@ -1038,6 +1039,10 @@
 		<control type="button" id="351">
 			<onfocus>SetFocus(300)</onfocus>
 			<visible>Container(300).HasFocus(1) + !Player.HasMedia</visible>
+		</control>
+		<control type="button" id="351">
+			<onfocus>SetFocus(945)</onfocus>
+			<visible>Container(300).HasFocus(2)</visible>
 		</control>
 		<control type="button" id="351">
 			<onfocus>SetFocus(940)</onfocus>
@@ -1325,6 +1330,51 @@
 					<include>submenubutton</include>
 					<label>$LOCALIZE[31004]</label>
 					<onclick>XBMC.ActivateWindow(50)</onclick>
+				</control>
+			</control>
+		</control>
+	</include>
+
+	<include name="submenu_plexonline">
+		<control type="group">
+			<posx>490</posx>
+			<posy>520</posy>
+			<visible>ControlGroup(945).HasFocus() + Container(300).HasFocus(2)</visible>
+			<include condition="Skin.HasSetting(home2)">Animation_Submenu_home2</include>
+			<control type="image">
+				<width>20</width>
+				<height>60</height>
+				<posx>0</posx>
+				<texture>mainmenu/submenu_left.png</texture>
+				<colordiffuse>HomeFrameColor</colordiffuse>
+			</control>
+			<control type="image">
+				<posx>20</posx>
+				<width>260</width>
+				<height>60</height>
+				<texture>mainmenu/submenu_mid.png</texture>
+				<colordiffuse>HomeFrameColor</colordiffuse>
+			</control>
+			<control type="image">
+				<width>20</width>
+				<height>60</height>
+				<posx>280</posx>
+				<texture>mainmenu/submenu_right.png</texture>
+				<colordiffuse>HomeFrameColor</colordiffuse>
+			</control>
+
+			<control type="grouplist" id="945">
+				<posx>70</posx>
+				<posy>13</posy>
+				<width>600</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<onup>300</onup>
+				<orientation>horizontal</orientation>
+				<control type="button" id="40">
+					<include>submenubutton</include>
+					<label>$LOCALIZE[31009]</label>
+					<onclick>XBMC.ActivateWindow(1)</onclick>
 				</control>
 			</control>
 		</control>
