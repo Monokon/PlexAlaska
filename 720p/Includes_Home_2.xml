@@ -195,12 +195,12 @@
 					</item>
 					<item id="2">
 						<description>Video Apps</description>
-						<label>$LOCALIZE[31015]</label>
+						<label>3</label>
 						<onclick>xbmc.activatewindow(6)</onclick>
 					</item>
 					<item id="3">
 						<description>Music Apps</description>
-						<label>$LOCALIZE[31010]</label>
+						<label>2</label>
 						<onclick>xbmc.activatewindow(5)</onclick>
 					</item>
 					<item id="5">

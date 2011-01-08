@@ -420,7 +420,7 @@
 			<content>
 				<item id="1">
 					<description>Music</description>
-					<label>2</label>
+					<label>$LOCALIZE[31010]</label>
 					<thumb>backdrops/musicicon.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
@@ -464,7 +464,7 @@
 				</item>-->
 				<item id="6">
 					<description>Video</description>
-					<label>3</label>
+					<label>$LOCALIZE[31015]</label>
 					<thumb>backdrops/videosicon.png</thumb>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
 					<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
@@ -603,7 +603,7 @@
 			</item>
 			<item id="2">
 				<description>Video</description>
-				<label>3</label>
+				<label>$LOCALIZE[31015]</label>
 				<thumb>backdrops/videos/video-3.jpg</thumb>
 				<onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick>
 				<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
@@ -612,7 +612,7 @@
 			</item>
 			<item id="3">
 				<description>Music</description>
-				<label>2</label>
+				<label>$LOCALIZE[31010]</label>
 				<thumb>backdrops/music/music-2.jpg</thumb>
 				<onclick>XBMC.ActivateWindow(MyMusic,return)</onclick>
 				<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
