@@ -743,12 +743,12 @@
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
-			<control type="button" id="3806">
+			<!--<control type="button" id="3806">
 				<label>[UPPERCASE]$LOCALIZE[705][/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(NetworkSettings)</onclick>
 				<include>Home_MainMenuLabel</include> 
 				<visible allowhiddenfocus="false">true</visible>
-			</control>
+			</control>-->
 			<control type="button" id="3807">
 				<label>[UPPERCASE]$LOCALIZE[13000][/UPPERCASE]</label>
 				<onclick>xbmc.activatewindow(SystemSettings)</onclick>
@@ -814,12 +814,12 @@
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">true</visible>
 			</control>
-			<control type="button" id="3206">
+			<!--<control type="button" id="3206">
 				<label>[UPPERCASE]$LOCALIZE[705][/UPPERCASE]</label>
 				<onclick>XBMC.ActivateWindow(NetworkSettings)</onclick>
 				<include>Home_MainMenuLabel</include>
 				<visible allowhiddenfocus="false">true</visible>
-			</control>
+			</control>-->
 			<control type="button" id="3207">
 				<label>[UPPERCASE]$LOCALIZE[13000][/UPPERCASE]</label>
 				<onclick>xbmc.activatewindow(SystemSettings)</onclick>

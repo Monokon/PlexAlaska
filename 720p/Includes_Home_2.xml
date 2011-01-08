@@ -292,11 +292,11 @@
 						<label>$LOCALIZE[8]</label>
 						<onclick>activatewindow(MyWeatherSettings)</onclick>
 					</item>
-					<item id="7">
+					<!--<item id="7">
 						<description>Network</description>
 						<label>$LOCALIZE[705]</label>
 						<onclick>activatewindow(NetworkSettings)</onclick>
-					</item>
+					</item>-->
 					<item id="8">
 						<description>System</description>
 						<label>$LOCALIZE[13000]</label>
