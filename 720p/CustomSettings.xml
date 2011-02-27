@@ -382,6 +382,18 @@
 					<selected>Skin.HasSetting(stackmedia)</selected>
 					<visible allowhiddenfocus="false">Skin.HasSetting(home1) | [!Skin.HasSetting(home1) + !Skin.HasSetting(home2) + !Skin.HasSetting(home3) + !Skin.HasSetting(home4)]</visible>
 				</control>
+				<control type="radiobutton" id="220">
+					<width>740</width>
+					<font>Font_Settings</font>
+					<textcolor>MenuValue</textcolor>
+					<focusedcolor>MenuValueFO</focusedcolor>
+					<label>$LOCALIZE[31953]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<onclick>Skin.ToggleSetting(noapps)</onclick>
+					<selected>Skin.HasSetting(noapps)</selected>
+					<visible allowhiddenfocus="false">Skin.HasSetting(home3)</visible>
+				</control>
 				<!--<control type="radiobutton" id="213">
 					<width>740</width>
 					<font>Font_Settings</font>

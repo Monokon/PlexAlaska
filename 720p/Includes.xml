@@ -601,6 +601,15 @@
 				<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
 				<visible>!Skin.HasSetting(noappstore)</visible>
 			</item>
+			<item id="4">
+				<description>Video</description>
+				<label>$LOCALIZE[31009]</label>
+				<thumb>backdrops/appstore/appstore-3.jpg</thumb>
+				<onclick>xbmc.activatewindow(1)</onclick>
+				<include condition="Skin.HasSetting(autom_themechange)">changethemebytime2</include>
+				<include condition="Skin.HasSetting(autom_themechange)">runThemeScript2</include>
+				<visible>!Skin.HasSetting(noapps)</visible>
+			</item>
 			<item id="2">
 				<description>Video</description>
 				<label>$LOCALIZE[31015]</label>
