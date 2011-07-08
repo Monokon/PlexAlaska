@@ -109,20 +109,34 @@
 						<effect type="fade" start="0" end="100" time="200" />
 					</animation>
 					<include>Animation_HiddenByInfo</include>
-					<visible>!Skin.HasSetting(notvshowoverlay)</visible>
+					<visible>Skin.HasSetting(overlaywatched)</visible>
 				</control>
 				<control type="image">
 					<posx>90</posx>
 					<posy>17</posy>
 					<width>12</width>
 					<height>12</height>
-					<texture>$INFO[ListItem.Overlay]</texture>
+					<texture>Icon$INFO[ListItem.Overlay]</texture>
 					<animation type="Focus" reversible="false">
 						<effect type="zoom" center="355,60" start="50" end="100" time="200" tween="cubic" easing="out" />
 						<effect type="fade" start="0" end="100" time="200" />
 					</animation>
 					<include>Animation_HiddenByInfo</include>
-					<visible>!Skin.HasSetting(notvshowoverlay)</visible>
+					<visible>Skin.HasSetting(overlaywatched)</visible>
+				</control>
+				<control type="image">
+					<posx>86</posx>
+					<posy>13</posy>
+					<width>20</width>
+					<height>20</height>
+					<texture>BG_$INFO[ListItem.Overlay]</texture>
+					<colordiffuse>WatchedOverlayFocusedColor</colordiffuse>
+					<animation type="Focus" reversible="false">
+						<effect type="zoom" center="355,60" start="50" end="100" time="200" tween="cubic" easing="out" />
+						<effect type="fade" start="0" end="100" time="200" />
+					</animation>
+					<include>Animation_HiddenByInfo</include>
+					<visible>Skin.HasSetting(overlayunwatched)</visible>
 				</control>
 			</focusedlayout>
 		</control>
